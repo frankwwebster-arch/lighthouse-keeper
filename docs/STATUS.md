@@ -61,6 +61,15 @@ selectable. The shared library therefore has 305 pictures and 333 versions.
 No story, `src/activityStories/` file, production/runtime art or deployment
 changed.
 
+The next action-imagery gate is the five-picture sandwich semantic set at
+`art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/`. It proposes
+V2 drawings for bread, ham, lettuce, tomato and the finished sandwich, with
+pinned V1 references, exact prompt/rejection provenance, deterministic
+fixed-palette normalization and light/dark/64 px evidence. It is unapproved
+and unregistered: all five current selectors remain on V1, the catalogue
+remains 305 pictures / 333 versions, and no story, activity-story runtime,
+production art or deployment changed.
+
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 
 ## Not built yet (agreed design)

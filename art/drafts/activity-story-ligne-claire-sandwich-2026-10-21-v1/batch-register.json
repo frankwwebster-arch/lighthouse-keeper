@@ -1,0 +1,362 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
+  "set": "activity-story-ligne-claire-sandwich-2026-10-21-v1",
+  "status": "review-candidate-unapproved",
+  "created": "2026-10-21",
+  "tool": "built-in image generation plus deterministic fixed-palette normalisation",
+  "families": [
+    "sandwich",
+    "cooking"
+  ],
+  "semanticSet": "sandwich ingredients and their finished result",
+  "visualAuthority": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components",
+  "preservationRule": "Translate each current asset's drawing language while preserving subject identity, viewpoint, object count, container, construction, state, recognisable contents, relative arrangement and broad silhouette.",
+  "visibleAlphaThreshold": 8,
+  "components": {
+    "sandwich-bread": {
+      "family": "sandwich",
+      "label": "Bread",
+      "intent": "unapproved-proposed-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly two overlapping square white-bread slices, with the front-left slice above the rear-right slice in the current low front three-quarter arrangement",
+      "currentReferenceFile": "review-archive/objects/11/11313cc6d0839d313ecb96ef4136e372904fe848de862034a2234637ecabb8c8.png",
+      "currentReferenceSha256": "11313cc6d0839d313ecb96ef4136e372904fe848de862034a2234637ecabb8c8",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/source/sandwich-bread-source.png",
+      "sourceSha256": "d2c08d33f023351d9c61c4c40b876e185ccd47341283b276896932cc396e0780",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-aeb4e10f-47d4-469f-bb15-8d1133e3cdc6.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#e7a638",
+        "#cf5c18"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/sandwich-bread.png",
+      "sha256": "c0a8eef145d403444d4643e4655fc512ca85e3eb7d504037ec25f2ef7d93f536",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        83,
+        273,
+        1186,
+        996
+      ],
+      "normalisedVisibleSize": [
+        216,
+        142
+      ],
+      "normalisedOffset": [
+        20,
+        57
+      ],
+      "bounds": [
+        20,
+        57,
+        236,
+        199
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "sandwich-ham": {
+      "family": "sandwich",
+      "label": "Ham",
+      "intent": "unapproved-proposed-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly two folded pink ham slices, stacked and curling into open ends on both sides in the current broad horizontal silhouette",
+      "currentReferenceFile": "review-archive/objects/d3/d3cdba07f6b695e7e9918fde92822aeb3f1d543aafde0b59bd204069641c4fb7.png",
+      "currentReferenceSha256": "d3cdba07f6b695e7e9918fde92822aeb3f1d543aafde0b59bd204069641c4fb7",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/source/sandwich-ham-source.png",
+      "sourceSha256": "bc373e94ebf6284b2eaa1485c754d6c95f67ca00118970c128af702227407ce6",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-7918ad10-4002-4ac1-95aa-f31f16a8491e.png",
+      "flatPalette": [
+        "#051824",
+        "#f57e6a",
+        "#d7493e",
+        "#f6e5b7"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/sandwich-ham.png",
+      "sha256": "07e339a460630b25417b7895441c3f87e7e56106bd490aca47a91664cec1f96f",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        88,
+        309,
+        1184,
+        956
+      ],
+      "normalisedVisibleSize": [
+        216,
+        128
+      ],
+      "normalisedOffset": [
+        20,
+        64
+      ],
+      "bounds": [
+        20,
+        64,
+        236,
+        192
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "sandwich-lettuce": {
+      "family": "sandwich",
+      "label": "Lettuce",
+      "intent": "unapproved-proposed-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly three overlapping loose lettuce leaves in the current compact fan, with ruffled edges and pale central ribs",
+      "currentReferenceFile": "review-archive/objects/3a/3addb510966c088b52b2d50a5a5e6088231a4e083798a95f8d98573e35b37ef5.png",
+      "currentReferenceSha256": "3addb510966c088b52b2d50a5a5e6088231a4e083798a95f8d98573e35b37ef5",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/source/sandwich-lettuce-source.png",
+      "sourceSha256": "fcdda809e1d16916497e663d019e696ba94607d20812c3a141af082e29ac6f2a",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-53624b20-2d29-4544-b1d9-0b8b7b13505b.png",
+      "flatPalette": [
+        "#051824",
+        "#106e3e",
+        "#399437",
+        "#8bcc23",
+        "#e7ec6f"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/sandwich-lettuce.png",
+      "sha256": "841c497b2dcec51451941c256f5aa729661ffed53c02c432c63202126578738c",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        86,
+        259,
+        1187,
+        1027
+      ],
+      "normalisedVisibleSize": [
+        216,
+        151
+      ],
+      "normalisedOffset": [
+        20,
+        52
+      ],
+      "bounds": [
+        20,
+        52,
+        236,
+        203
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "sandwich-tomato": {
+      "family": "sandwich",
+      "label": "Tomato",
+      "intent": "unapproved-proposed-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly one whole tomato behind-left and two overlapping slices in front-right, including the leafy calyx and visible seed chambers",
+      "currentReferenceFile": "review-archive/objects/10/10f760734f45b9cf6e2ee7ca815f7c89137cd64854bd71de98b07beaa871e2be.png",
+      "currentReferenceSha256": "10f760734f45b9cf6e2ee7ca815f7c89137cd64854bd71de98b07beaa871e2be",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/source/sandwich-tomato-source.png",
+      "sourceSha256": "9c992121b3fe06f1db4da9ea44d27daef671d2b798a2a9b95c65133edd9a8259",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-46ef36db-2b48-4d0f-8800-091e7c5ea731.png",
+      "flatPalette": [
+        "#051824",
+        "#c32b37",
+        "#e84833",
+        "#f57e6a",
+        "#f6e5b7",
+        "#399437"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/sandwich-tomato.png",
+      "sha256": "2b4069b867acf546e0f284d5e8e886522e54c962ebe6df2b21c4c1a4857d0731",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        104,
+        253,
+        1165,
+        1019
+      ],
+      "normalisedVisibleSize": [
+        216,
+        156
+      ],
+      "normalisedOffset": [
+        20,
+        50
+      ],
+      "bounds": [
+        20,
+        50,
+        236,
+        206
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cooking-sandwich": {
+      "family": "cooking",
+      "label": "Finished sandwich",
+      "intent": "unapproved-proposed-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly two overlapping triangular finished sandwiches in the current lower-left and taller rear-right arrangement, each with bread, lettuce, tomato and ham",
+      "currentReferenceFile": "review-archive/objects/b8/b88b28b259ebbf7b4729f54116605009cf120bc9abe9c37dce0a19e4dfe847e4.png",
+      "currentReferenceSha256": "b88b28b259ebbf7b4729f54116605009cf120bc9abe9c37dce0a19e4dfe847e4",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/source/cooking-sandwich-source.png",
+      "sourceSha256": "56c78ef7a279369d059ae9b244e855af9a3960d4b18d42580e4f00fa6b9333ee",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-8e4cc29f-07f4-41a5-80a2-134440e2f0ad.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#e7a638",
+        "#f57e6a",
+        "#e84833",
+        "#399437",
+        "#8bcc23"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/cooking-sandwich.png",
+      "sha256": "2f4a3db194f52f6feceefa238952103b00925d7adc3fd9d98cdfa992926af25f",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        88,
+        260,
+        1164,
+        1008
+      ],
+      "normalisedVisibleSize": [
+        216,
+        150
+      ],
+      "normalisedOffset": [
+        20,
+        53
+      ],
+      "bounds": [
+        20,
+        53,
+        236,
+        203
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejected": [
+    {
+      "file": "rejected/cooking-sandwich-square-v1.png",
+      "cache": "exec-524da84f-94ed-42da-ba10-6335e1a796d3.png",
+      "reason": "The finished sandwich pair drifted into square full-slice sandwiches instead of preserving the current triangular quarters.",
+      "sha256": "1dd644c52345e8be182b45aa174e560acb164b6976cfdc978c5398d697395f43"
+    },
+    {
+      "file": "rejected/cooking-sandwich-square-v2.png",
+      "cache": "exec-e41e2d61-d15e-4112-85aa-6240c4752ee4.png",
+      "reason": "The targeted edit retained four-corner bread faces, so the two objects still did not read as the current triangular sandwich quarters.",
+      "sha256": "6118a1b0b709b3a5fa0bcb8181f4ad746b6a414c7ad4874e768a7557b035211f"
+    },
+    {
+      "file": "rejected/cooking-sandwich-cheese-v3.png",
+      "cache": "exec-a47a6663-bc36-431d-9ce0-83fd08eaa9a4.png",
+      "reason": "The geometry was corrected, but yellow cheese was added even though the current asset contains bread, lettuce, tomato and ham only.",
+      "sha256": "03df05199e821dfe27f8c0d50dc4463b92b2f6f7f642dde4cd6e6d8958d8e7f6"
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/evidence/current-vs-ligne-claire-contact-sheet.png",
+    "sha256": "9f2e63fd15c4a28a3aaa406e892becc84e0422489f2d5f6431ef327032800815",
+    "columns": 5,
+    "rows": 5,
+    "coveredIds": [
+      "sandwich-bread",
+      "sandwich-ham",
+      "sandwich-lettuce",
+      "sandwich-tomato",
+      "cooking-sandwich"
+    ]
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "currentReferenceHashesPinned": true,
+    "exactPalettesRecorded": true,
+    "contactSheetCoversEveryCandidate": true,
+    "libraryVersionsAdded": false,
+    "storiesChanged": false,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "deployed": false
+  },
+  "approval": null,
+  "gate": "Stop at this contact sheet. Register no V2 until Frank explicitly approves this exact pack.",
+  "rollback": "Discard this V1 draft directory; no picture selector, earlier asset, story or runtime file has changed."
+}

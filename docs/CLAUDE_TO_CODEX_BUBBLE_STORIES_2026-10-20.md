@@ -44,6 +44,10 @@ unchanged. Frank subsequently approved the seven remaining `bbq` food and
 seven remaining `bbq-tools` translations; those 14 V2 versions are current and
 every V1 predecessor remains byte-identical and selectable. Continue the action imagery from
 `docs/CODEX_PROMPT_BUBBLE_STORIES_LIGNE_CLAIRE_ACTION_IMAGERY_2026-10-21.md`.
+The next five-picture sandwich set is prepared at
+`art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/` but remains
+an unapproved contact-sheet gate: do not register its proposed V2 versions or
+alter the sandwich story before Frank's verdict.
 Preserve
 each current picture's depicted content and composition while changing only
 the art language. Claude owns the proposed opaque activity-panel shell and

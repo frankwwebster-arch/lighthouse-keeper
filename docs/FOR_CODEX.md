@@ -52,6 +52,14 @@ All 14 candidates are registered as current V2 versions. The library now has
 byte-identical and selectable. The registration changed no story definition or
 file under `src/activityStories/`.
 
+The next gate is the complete five-picture sandwich semantic set at
+`art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/`: four
+`sandwich` ingredients plus `cooking-sandwich`. Its five-column contact sheet,
+sources, rejected attempts, prompt log, fixed-palette components and verifier
+are complete. It is unapproved and unregistered, so all five library selectors
+remain on V1 and the library totals remain 305 pictures / 333 versions. Stop
+for Frank's verdict before registration or another family.
+
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 
 Frank has authorised an exhaustive, reversible audit and redraft programme for

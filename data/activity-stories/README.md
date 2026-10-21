@@ -45,6 +45,15 @@ to 305 pictures and 333 immutable versions. Every V1 predecessor remains
 selectable and byte-identical; no story definition or activity-story runtime
 file changed.
 
+**Sandwich family review gate (21 October 2026):** the next immutable pack is
+`art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/`. It proposes
+V2 translations for the four `sandwich` ingredients and the shared
+`cooking-sandwich` result, with exact current-content preservation, prompt and
+rejection provenance, deterministic 256 px normalization, pinned hashes and a
+five-column light/dark/64 px contact sheet. It is unapproved and unregistered:
+the library remains at 305 pictures and 333 versions, all five current
+selectors remain V1, and no story or `src/activityStories/` file changed.
+
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A
 story has no upper length, only a five-second floor. Frank sets each

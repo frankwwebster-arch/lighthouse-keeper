@@ -2,7 +2,7 @@
 
 **Decision date:** 21 October 2026
 
-**Status:** active; pilot plus first two family packs approved; action-imagery programme only
+**Status:** active; BBQ packs approved; sandwich family at review gate; action-imagery programme only
 
 Frank approved the six-picture BBQ pilot with “agreed, these are superb”. This
 prompt turns that approval into a controlled conversion programme for Bubble
@@ -15,6 +15,15 @@ registered as current V2 versions from their immutable packs; all V1 versions
 remain byte-identical and selectable. The library now contains 305 pictures and
 333 versions. Continue with a new family pack rather than rebuilding either
 approved BBQ pack.
+
+**Next family gate (21 October 2026):** the five-picture sandwich semantic set
+is prepared at
+`art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/`. It covers
+`sandwich-bread`, `sandwich-ham`, `sandwich-lettuce`, `sandwich-tomato` and the
+shared result `cooking-sandwich`. Its V2 candidates are unapproved and are not
+registered; all five current selectors remain on byte-identical V1 versions.
+Stop for Frank's verdict on that exact contact sheet before registration or
+starting another family.
 
 ## Ready-to-paste prompt
 
@@ -37,8 +46,9 @@ command-line picture tool before drawing.
 Objective
 - Translate the Bubble stories picture library into the original
   ligne-claire-inspired language approved in the six-picture BBQ pilot.
-- Work in small, immutable, reviewable family batches. Start by completing the
-  remaining BBQ and BBQ-tools pictures around the six approved pilot versions.
+- Work in small, immutable, reviewable family batches. The BBQ and BBQ-tools
+  families are complete; review the pending sandwich gate before selecting the
+  next family.
 - The programme covers action objects, ingredients, tools, pictorial states,
   activity marks, emotions and independent comic reaction punctuation used by
   Bubble stories.
@@ -50,7 +60,7 @@ Objective
 
 Visual authority
 - The approved components in
-  art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/components/
+  art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components/
   are the visual authority for contour, flat colour, detail density and
   game-scale readability.
 - Draw original artwork: lively near-black contour of mostly even weight,
