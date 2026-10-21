@@ -2,8 +2,8 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { compileStory, type FrameItem } from './compile'
-import { STORY_DRAFTS, STORY_FILES, LIBRARY } from './drafts'
-import { canPlace, cleanStory, groupPictures, OTHER_GROUP, placePicture, playsText, type Library } from './format'
+import { STORY_DRAFTS, STORY_FILES, LIBRARY, STYLE_REVIEW } from './drafts'
+import { canPlace, styleOf, cleanStory, groupPictures, OTHER_GROUP, placePicture, playsText, type Library } from './format'
 
 const objects = <T extends { kind: string }>(items: T[]) => items.filter((i) => i.kind === 'object')
 
@@ -321,5 +321,16 @@ describe('dropping a picture from the library onto a story', () => {
     const hero = Object.entries(bbq.cast).find(([, m]) => m.role === 'hero')![0]
     expect(withMark.ambient.at(-1)).toMatchObject({ picture: 'symbol-heat-shimmer', on: hero })
     expect(placePicture(bbq, LIBRARY, 'tool-broom', { to: 'marks' })).toBeNull()
+  })
+})
+
+describe('the ligne-claire style review', () => {
+  it('names only pictures that exist, and goes stale when Codex adds a newer version', () => {
+    for (const id of Object.keys(STYLE_REVIEW.pictures)) expect(LIBRARY.pictures[id], id).toBeDefined()
+    const id = Object.keys(STYLE_REVIEW.pictures)[0]
+    expect(styleOf(STYLE_REVIEW, LIBRARY, id)).toBeDefined()
+    const lib = structuredClone(LIBRARY) as Library
+    lib.pictures[id].current = 99
+    expect(styleOf(STYLE_REVIEW, lib, id)).toBeUndefined()
   })
 })

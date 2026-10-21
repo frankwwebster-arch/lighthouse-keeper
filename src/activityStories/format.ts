@@ -337,6 +337,22 @@ export function placePicture(story: Story, lib: Library, picture: string, target
   }
 }
 
+/** Claude's style review of the library against Tintin-style ligne claire (data/activity-stories/style-review.json). */
+export type PictureStyle = 'ligne-claire' | 'close' | 'not-yet'
+export interface StyleReview {
+  schema: string
+  reviewed: string
+  by: string
+  standard: string
+  pictures: Record<string, { version: number; style: PictureStyle; note?: string }>
+}
+
+/** The style verdict for a picture's current version; undefined if it was never reviewed or Codex has added a newer version since. */
+export function styleOf(review: StyleReview, lib: Library, id: string): StyleReview['pictures'][string] | undefined {
+  const r = review.pictures[id]
+  return r && lib.pictures[id]?.current === r.version ? r : undefined
+}
+
 /** The version of a picture a cast member uses (pinned, or the library's current). */
 export function versionFor(lib: Library, picture: string, pinned?: number): PictureVersion | undefined {
   const p = lib.pictures[picture]

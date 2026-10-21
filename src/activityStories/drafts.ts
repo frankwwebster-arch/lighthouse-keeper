@@ -10,7 +10,8 @@ import gardenBbq from '../../data/activity-stories/stories/garden-bbq.json'
 import generalRepair from '../../data/activity-stories/stories/general-repair.json'
 import makeSandwich from '../../data/activity-stories/stories/make-sandwich.json'
 import washingUp from '../../data/activity-stories/stories/washing-up.json'
-import { cleanStory, type Library, type Story } from './format'
+import styleReview from '../../data/activity-stories/style-review.json'
+import { cleanStory, type Library, type Story, type StyleReview } from './format'
 
 export const STORY_FILES = {
   'garden-bbq': gardenBbq,
@@ -22,3 +23,5 @@ export const STORY_FILES = {
 export const STORY_DRAFTS: Story[] = Object.values(STORY_FILES).map((s) => cleanStory(s)).filter((s): s is Story => !!s)
 
 export const LIBRARY = pictures as unknown as Library
+/** Claude's ligne-claire review of each picture's current version. */
+export const STYLE_REVIEW = styleReview as unknown as StyleReview

@@ -1,0 +1,1466 @@
+{
+ "schema": "lighthouse-keeper/activity-picture-style-review@1",
+ "reviewed": "2026-10-21",
+ "by": "claude",
+ "standard": "Tintin-style ligne claire: one even, clean black outline; flat colour; no gradients, glossy highlights or painted texture.",
+ "pictures": {
+  "aquarium-aerator": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "aquarium-castle": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "aquarium-cleaning": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "aquarium-fish": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "aquarium-food": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "aquarium-plants": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "aquarium-treasure": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "art-brushes-pot": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "art-easel-and-canvas": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "art-ink-bottle-and-quill": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "art-lino-roller": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "art-origami-boat": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "art-paint-palette": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "art-sketchbook-and-pencil": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "art-watercolour-set": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "baking-flour": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bathroom-bad-smell": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "bathroom-bathtub": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "bathroom-bubbles": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "bathroom-flush-handle": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "bathroom-loo-brush": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "bathroom-privacy-latch": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "bathroom-rubber-duck": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "bathroom-toilet": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "bathroom-toilet-roll": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "bbq-basting-brush": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-burgers": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-charcoal": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-charcoal-bag": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-charcoal-chimney": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-grill": {
+   "version": 3,
+   "style": "ligne-claire"
+  },
+  "bbq-grill-fork": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-grill-unlit": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-heatproof-mitt": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-hotdogs": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-ketchup": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-lamb-chops": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-leg-lamb": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-raw-burger-patties": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-raw-steak": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-sausages": {
+   "version": 3,
+   "style": "ligne-claire"
+  },
+  "bbq-skewer-bundle": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-slotted-turner": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-steak": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "bbq-tongs": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "cleaner-bleach-bottle": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "cleaner-disinfectant-bottle": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "cleaner-furniture-polish": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "cleaner-glass-spray": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "cleaner-multisurface-spray": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "cleaner-toilet-bottle": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "cleaner-washing-up-liquid": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "condiment-honey-pot": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "condiment-ketchup-bottle": {
+   "version": 1,
+   "style": "close",
+   "note": "Flat and simple; only a light sheen to remove."
+  },
+  "condiment-malt-vinegar": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "condiment-mayonnaise-jar": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "condiment-mustard-bottle": {
+   "version": 1,
+   "style": "close",
+   "note": "Flat and simple; only a light sheen to remove."
+  },
+  "condiment-olive-oil": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "condiment-pepper-mill": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "condiment-pickle-jar": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "condiment-raspberry-jam": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "condiment-salt-mill": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "condiment-wholegrain-mustard-jar": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "consumable-bin-bag-roll": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "consumable-cellulose-sponge": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "consumable-microfiber-cloth": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "consumable-scouring-pad": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "cooking-bacon": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "cooking-cheese-slicing": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "cooking-cow": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "cooking-gravy": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "cooking-knife": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "cooking-pan": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "cooking-pig": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "cooking-sandwich": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "cooking-seasoning": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "cooking-sheep": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "cooking-spoon": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "cooking-steam": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "cooking-vegetables": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "dental-teeth": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "dental-toothbrush": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "dental-toothpaste": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "dental-water": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "dishwasher-rinse-aid": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "dishwasher-salt-carton": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "dishwasher-tablets-tub": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "eggs-basket": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "eggs-hen-coop": {
+   "version": 2,
+   "style": "ligne-claire",
+   "note": "Ligne claire, but the feathers and hatching are busier than the rest."
+  },
+  "eggs-nest": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "exercise-dumbbell": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "exercise-flexed-arm": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "exercise-heart-pulse": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "exercise-skipping-rope": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "exercise-sweat-drop": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "exercise-trainers": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "fishing-bait": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "fishing-caught-fish": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "fishing-creel-basket": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "fishing-float": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "fishing-folding-stool": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "fishing-landing-net": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "fishing-line-clippers": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "fishing-lure": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "fishing-rod": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "fishing-tackle-box": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "fishing-waders": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "games-board-and-pawns": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "games-chess-knight": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "games-dice": {
+   "version": 1,
+   "style": "close",
+   "note": "Clean shapes; soft shading on the faces."
+  },
+  "games-playing-cards": {
+   "version": 1,
+   "style": "close",
+   "note": "Clean shapes; soft shading."
+  },
+  "garden-compost-bag": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "garden-gloves": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "garden-rake": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "garden-secateurs": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "garden-seedling": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "garden-seeds": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "garden-trowel": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "garden-watering": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "garden-wheelbarrow": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "grooming-cologne-bottle": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "grooming-comb": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "grooming-deodorant-stick": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "grooming-electric-shaver": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "grooming-hairbrush": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "harvest-fruit": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "harvest-vegetables": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "hygiene-shampoo": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "hygiene-shower": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "ingredient-butter-block": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "inventing-brass-telescope": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "inventing-conical-flask": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "inventing-copper-coil": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "inventing-gyroscope": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "inventing-horseshoe-magnet": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "inventing-light-bulb": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "inventing-microscope": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "inventing-test-tubes": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "knife-bread": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "knife-chef": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "knife-paring": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "laundry-fabric-conditioner": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "laundry-liquid-detergent": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "laundry-stain-remover-tub": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "laundry-washing-powder-box": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "leisure-hardcover-book": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "leisure-over-ear-headphones": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "leisure-portable-radio": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "leisure-vinyl": {
+   "version": 1,
+   "style": "close",
+   "note": "Mostly flat; glossy highlight on the record."
+  },
+  "maintenance-lamp-polish": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "maintenance-welding": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "meal-breakfast": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "meal-dinner": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "meal-lunch": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "meal-steak-fries": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "mixing-bowl": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "mixing-egg": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "mixing-flour": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "mixing-whisk": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "music-album-abbey-road-homage": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture. Also a close copy of a real album cover."
+  },
+  "music-album-born-usa-homage": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture. Also a close copy of a real album cover."
+  },
+  "music-album-dark-side-homage": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture. Also a close copy of a real album cover."
+  },
+  "music-album-london-calling-homage": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture. Also a close copy of a real album cover."
+  },
+  "music-album-morning-glory-homage": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture. Also a close copy of a real album cover."
+  },
+  "music-album-never-mind-bollocks-homage": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture. Also a close copy of a real album cover."
+  },
+  "music-album-nevermind-homage": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture. Also a close copy of a real album cover."
+  },
+  "music-album-screamadelica-homage": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture. Also a close copy of a real album cover."
+  },
+  "music-album-sgt-pepper-homage": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture. Also a close copy of a real album cover."
+  },
+  "music-album-sticky-fingers-homage": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture. Also a close copy of a real album cover."
+  },
+  "music-album-tapestry-homage": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture. Also a close copy of a real album cover."
+  },
+  "music-album-velvet-banana-homage": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture. Also a close copy of a real album cover."
+  },
+  "music-composer": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "music-drummer": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "music-drums": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "music-guitar": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "music-guitarist": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "music-notation-bass-clef": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "music-notation-beamed-quavers": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "music-notation-quaver": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "music-notation-rising-stave": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "music-notation-sharp-note": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "music-notation-treble-clef": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "music-piano": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "personal-fountain-pen": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "personal-house-keys": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "personal-pocket-notebook": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "personal-reading-glasses": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "personal-wallet": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "personal-wristwatch": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pet-bone": {
+   "version": 1,
+   "style": "close",
+   "note": "Simple shape; soft shading."
+  },
+  "pet-cat": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pet-dog": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pet-feather-wand": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pet-fish": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pet-food-bag": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pet-food-bowl": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pet-heart": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pet-lead-and-collar": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pet-purr-marks": {
+   "version": 1,
+   "style": "close",
+   "note": "Simple shapes; gradient fill."
+  },
+  "pet-rabbit": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pet-tennis-ball": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pottery-hands-moulding": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pottery-vase": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pottery-wet-clay": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pottery-wheel": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "prep-bread-slicing": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pub-bar-stool": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pub-beer-pump": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pub-bitter-pint": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pub-crisps-bowl": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pub-dartboard": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pub-darts": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pub-pool-cue-and-balls": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "pub-tankard": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "reading-castle": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "reading-dragon": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "reading-open-book": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "reading-pirate-ship": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "reading-treasure-chest": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "repair-adjustable-spanner": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "repair-battery-leads": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "repair-boat-hull-patch": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "repair-boat-varnish": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "repair-c-clamp": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "repair-combination-pliers": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "repair-cordless-drill": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "repair-drill-bit-case": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "repair-fastener": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "repair-flat-head-screwdriver": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "repair-hammer-nails": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "repair-hand-saw": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "repair-oilcan": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "repair-outboard-motor": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "repair-petrol-fill": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "repair-phillips-screwdriver": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "repair-rope-knot": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "repair-soldering-iron": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "repair-sparks": {
+   "version": 1,
+   "style": "close",
+   "note": "Simple shapes; gradient stars."
+  },
+  "repair-spirit-level": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "repair-tape-measure": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "repair-toolbox": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "repair-tools": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "repair-tyre-pump": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "repair-wire-strippers": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "repair-wrench-cog": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "rest-armchair": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "rest-blanket-pillow": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "rest-counting-sheep": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "rest-sleep": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "rest-sleep-marks": {
+   "version": 1,
+   "style": "close",
+   "note": "Simple shapes; gradient fill."
+  },
+  "sandwich-bread": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "sandwich-ham": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "sandwich-lettuce": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "sandwich-tomato": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "sleep-alarm-clock": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "sleep-bedside-lamp": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "sleep-eye-mask": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "sleep-hot-water-bottle": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "symbol-clean-glint": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "symbol-cold-snowflake": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "symbol-electrical-arc": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "symbol-exclamation-mark": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "symbol-foul-odour": {
+   "version": 1,
+   "style": "close",
+   "note": "Flatter than most; gradient wisps."
+  },
+  "symbol-heat-curls": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "symbol-heat-shimmer": {
+   "version": 3,
+   "style": "close",
+   "note": "Flat bands, but no black outline; nearly there."
+  },
+  "symbol-impact-star": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "symbol-motion-ticks": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "symbol-pleasant-aroma": {
+   "version": 3,
+   "style": "not-yet",
+   "note": "Soft pastel wisps with no black outline."
+  },
+  "symbol-question-mark": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "symbol-sizzle-spark": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "symbol-soap-bubbles": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "symbol-water-droplets": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "symbol-welding-sparks": {
+   "version": 3,
+   "style": "not-yet",
+   "note": "Sketchy streaks with no outline."
+  },
+  "tea-kettle": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "tea-milk": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "tea-mug": {
+   "version": 1,
+   "style": "close",
+   "note": "Mostly flat; soft shading on the rim."
+  },
+  "toast-butter-jam": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "toast-slices": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "toast-toaster": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "tool-broom": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "tool-cleaning-bucket": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "tool-dustpan": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "tool-feather-duster": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "tool-hand-brush": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "tool-scrub-brush": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "tool-string-mop": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "washing-cutlery": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "washing-droplets": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "washing-liquid": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "washing-plate": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "washing-sponge": {
+   "version": 2,
+   "style": "ligne-claire"
+  },
+  "wear-bedroom-slippers-pair": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "wear-flat-cap": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "wear-folded-pyjamas": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "wear-folded-shirt": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "wear-leather-belt": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "wear-leather-shoes-pair": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "wear-necktie": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "wear-rubber-gloves-pair": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "wear-socks-pair": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "writing-eraser": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "writing-fountain-pen": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "writing-ink-bottle": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "writing-notebook": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  },
+  "writing-pencil": {
+   "version": 1,
+   "style": "not-yet",
+   "note": "Glossy original: gradients, highlights or painted texture."
+  }
+ }
+}

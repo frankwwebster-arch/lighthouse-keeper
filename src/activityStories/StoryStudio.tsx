@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type DragEvent, type MouseEvent } from 'react'
 import { bubbleOutline, compileStory, FPS, type Frame } from './compile'
-import { LIBRARY, STORY_DRAFTS } from './drafts'
-import { STORY_SCHEMA, VERBS, canPlace, cleanStory, describeStep, groupPictures, placePicture, playsText, versionFor, type Ambient, type DropTarget, type CastRole, type Flow, type Prop, type PropSlot, type Speed, type Step, type Story, type Verb } from './format'
+import { LIBRARY, STORY_DRAFTS, STYLE_REVIEW } from './drafts'
+import { STORY_SCHEMA, VERBS, canPlace, cleanStory, describeStep, groupPictures, placePicture, playsText, styleOf, versionFor, type PictureStyle, type Ambient, type DropTarget, type CastRole, type Flow, type Prop, type PropSlot, type Speed, type Step, type Story, type Verb } from './format'
 import { loadStories, resetStory, saveStory, storyHash, type SavedStory } from './store'
 
 const DRAFT_BY_ID = Object.fromEntries(STORY_DRAFTS.map((s) => [s.id, s]))
@@ -16,6 +16,8 @@ const SPEEDS: Speed[] = ['quick', 'normal', 'slow']
 const FLOWS: Record<Flow, string> = { around: 'From both sides', 'left-to-right': 'Left to right' }
 const SLOTS: Record<PropSlot, string> = { orbit: 'circling the bubble', 'top-left': 'top left', 'top-right': 'top right', 'bottom-left': 'bottom left', 'bottom-right': 'bottom right' }
 const picLabel = (id: string) => LIBRARY.pictures[id]?.label ?? id
+const STYLE_TEXT: Record<PictureStyle | 'unreviewed', string> = { 'ligne-claire': 'ligne claire', close: 'close to ligne claire', 'not-yet': 'not ligne claire yet', unreviewed: 'new version, not reviewed yet' }
+const styleKey = (id: string): PictureStyle | 'unreviewed' => styleOf(STYLE_REVIEW, LIBRARY, id)?.style ?? 'unreviewed'
 const stepText = (story: Story, s: Step | undefined) => describeStep(LIBRARY, story, s)
 const slug = (v: string) => v.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60)
 
@@ -104,6 +106,7 @@ export default function StoryStudio() {
 
   // ── Drag and drop from the library (Frank, 21 Oct): drag a picture onto the story, or tap it and tap where it goes ──
   const [carrying, setCarrying] = useState<{ id: string; tapped: boolean } | null>(null)
+  const [looking, setLooking] = useState<string | null>(null)
   const [over, setOver] = useState<string | null>(null)
   const carriedKind = carrying ? LIBRARY.pictures[carrying.id]?.kind : undefined
   useEffect(() => {
@@ -220,7 +223,7 @@ export default function StoryStudio() {
         )}
         <h2>Picture library</h2>
         <p className="st-dim">Drag a picture onto the story on the right: a step, the cast, Props or Extra marks. Or tap a picture, then tap where it goes. Codex adds and replaces pictures; a new version reaches every story straight away.</p>
-        <PictureLibrary story={story} editable={editable} carrying={carrying?.id ?? null} onCarry={setCarrying} />
+        <PictureLibrary story={story} editable={editable} carrying={carrying?.id ?? null} onCarry={setCarrying} onLook={setLooking} />
       </aside>
 
       <main className="st-main">
@@ -381,24 +384,68 @@ export default function StoryStudio() {
         {editable && <button type="button" className="st-add" onClick={() => edit({ ...story, props: [...story.props, { picture: OBJECTS[0][0], at: 'orbit', fromStep: 1, toStep: Math.max(1, story.steps.length - 1) }] })}>Add a prop</button>}
         {story.notes && <><h2>Notes</h2><p className="st-dim">{story.notes}</p></>}
       </aside>
+      {looking && <PictureView id={looking} onClose={() => setLooking(null)} />}
+    </div>
+  )
+}
+
+/** A closer look at one picture: large, every version side by side, and Claude's ligne-claire verdict. */
+function PictureView({ id, onClose }: { id: string; onClose: () => void }) {
+  const p = LIBRARY.pictures[id]
+  const [v, setV] = useState(p?.current ?? 1)
+  useEffect(() => {
+    const esc = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
+    addEventListener('keydown', esc)
+    return () => removeEventListener('keydown', esc)
+  }, [onClose])
+  if (!p) return null
+  const shown = p.versions.find((x) => x.v === v) ?? p.versions[0]
+  const verdict = styleOf(STYLE_REVIEW, LIBRARY, id)
+  const key = styleKey(id)
+  return (
+    <div className="ss-view-back" onClick={onClose}>
+      <div className="ss-view" role="dialog" aria-label={p.label} onClick={(e) => e.stopPropagation()}>
+        <button type="button" className="st-mini ss-view-close" onClick={onClose} title="Close (Esc)">✕</button>
+        <h2>{p.label}</h2>
+        <p className="st-dim"><code>{id}</code> · {p.kind} · {p.family} · v{shown.v}{shown.v === p.current ? ' (in use)' : ''} of {p.versions.length}</p>
+        <div className="ss-view-big"><img src={shown.url} alt={p.label} /></div>
+        <p className={`ss-style ss-style-${key}`}><b>{STYLE_TEXT[key]}</b>{verdict?.note ? ` · ${verdict.note}` : ''}{key === 'unreviewed' ? ' · Claude reviewed an earlier version.' : ''}</p>
+        {shown.note && <p className="st-dim">{shown.note}</p>}
+        {p.review?.note && <p className="st-dim">Review: {p.review.note}</p>}
+        {p.versions.length > 1 && (
+          <div className="ss-view-versions">
+            {p.versions.map((x) => (
+              <button type="button" key={x.v} className={x.v === shown.v ? 'on' : ''} onClick={() => setV(x.v)} title={x.note ?? ''}>
+                <img src={x.url} alt="" />
+                <span>v{x.v}{x.v === p.current ? ' · in use' : ''}<small> {x.added}</small></span>
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   )
 }
 
 /** The library in fold-out groups, with a search box. Groups holding a picture this story uses are marked. */
-function PictureLibrary({ story, editable, carrying, onCarry }: { story: Story; editable: boolean; carrying: string | null; onCarry: (c: { id: string; tapped: boolean } | null) => void }) {
+function PictureLibrary({ story, editable, carrying, onCarry, onLook }: { story: Story; editable: boolean; carrying: string | null; onCarry: (c: { id: string; tapped: boolean } | null) => void; onLook: (id: string) => void }) {
   const [q, setQ] = useState('')
+  const [notYet, setNotYet] = useState(false)
   const used = new Set([...Object.values(story.cast).map((m) => m.picture), ...story.ambient.map((a) => a.picture), ...story.props.map((p) => p.picture), ...story.steps.flatMap((s) => (s.mark ? [s.mark] : []))])
   const needle = q.trim().toLowerCase()
-  const groups = ALL_GROUPS.map((g) => ({ ...g, pictures: needle ? g.pictures.filter(([id, p]) => id.includes(needle) || p.label.toLowerCase().includes(needle) || g.label.toLowerCase().includes(needle)) : g.pictures })).filter((g) => g.pictures.length)
+  const match = ([id, p]: [string, { label: string }], group: string) =>
+    (!needle || id.includes(needle) || p.label.toLowerCase().includes(needle) || group.toLowerCase().includes(needle)) && (!notYet || styleKey(id) !== 'ligne-claire')
+  const groups = ALL_GROUPS.map((g) => ({ ...g, pictures: g.pictures.filter((e) => match(e, g.label)) })).filter((g) => g.pictures.length)
+  const filtering = !!needle || notYet
   return (
     <>
       <input className="ss-search" type="search" placeholder={`Search ${Object.keys(LIBRARY.pictures).length} pictures`} value={q} onChange={(e) => setQ(e.target.value)} />
+      <label className="st-dim ss-filter"><input type="checkbox" checked={notYet} onChange={(e) => setNotYet(e.target.checked)} /> Only pictures not yet in ligne claire</label>
       {groups.map((g) => {
         const inStory = g.pictures.filter(([id]) => used.has(id)).length
         return (
           // A search opens every matching group; the key change resets each group's own open state when the search clears.
-          <details key={`${g.label}-${needle ? 'search' : 'browse'}`} className="ss-group" open={!!needle || undefined}>
+          <details key={`${g.label}-${filtering ? 'search' : 'browse'}`} className="ss-group" open={(!!needle && filtering) || undefined}>
             <summary>{g.label} <small>{g.pictures.length}{inStory ? ` · ${inStory} in this story` : ''}</small></summary>
             <ul className="ss-lib">
               {g.pictures.map(([id, p]) => (
@@ -414,9 +461,11 @@ function PictureLibrary({ story, editable, carrying, onCarry }: { story: Story; 
                   }}
                   onDragEnd={() => onCarry(null)}
                   onClick={() => editable && onCarry(carrying === id ? null : { id, tapped: true })}
+                  onDoubleClick={() => { onCarry(null); onLook(id) }}
                 >
                   <img src={versionFor(LIBRARY, id)?.url} alt="" loading="lazy" draggable={false} />
-                  <span><span>{p.label}<small> · v{p.current}{p.versions.length > 1 ? ` of ${p.versions.length}` : ''}{p.review?.status === 'rework-requested' ? ' · rework asked' : ''}</small></span><code>{id}</code></span>
+                  <span><span>{p.label}<small> · v{p.current}{p.versions.length > 1 ? ` of ${p.versions.length}` : ''}{p.review?.status === 'rework-requested' ? ' · rework asked' : ''}</small></span><code>{id}</code>{styleKey(id) !== 'ligne-claire' && <small className={`ss-style-${styleKey(id)}`}>{STYLE_TEXT[styleKey(id)]}</small>}</span>
+                  <button type="button" className="st-mini ss-look" title="Look closer" onClick={(e) => { e.stopPropagation(); onLook(id) }}>⤢</button>
                 </li>
               ))}
             </ul>
