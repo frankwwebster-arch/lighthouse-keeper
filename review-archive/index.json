@@ -15,12 +15,12 @@
   ],
   "largeDataThresholdBytes": 24576,
   "stats": {
-    "setCount": 202,
-    "referenceCount": 4778,
-    "uniqueObjectCount": 2921,
-    "logicalBytes": 388476957,
-    "uniqueBytes": 224047682,
-    "deduplicatedBytes": 164429275
+    "setCount": 203,
+    "referenceCount": 4789,
+    "uniqueObjectCount": 2930,
+    "logicalBytes": 390300353,
+    "uniqueBytes": 225815681,
+    "deduplicatedBytes": 164484672
   },
   "legacyPaths": {
     "/keeper-review/activity-cloud-composer-v1/assets/bbq-burgers-5244d4289bbaf95f.png": {
@@ -27497,6 +27497,83 @@
       "bytes": 495999,
       "object": "review-archive/objects/c9/c9ad48fdd260aadbcbec66be515d74cf55bbc2b24a1e92276fba46dd0e0876f9.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c9/c9ad48fdd260aadbcbec66be515d74cf55bbc2b24a1e92276fba46dd0e0876f9.png"
+    },
+    "/keeper-review/kitchen-oven-broken-ligne-claire-v12/assets/approved-on-ghost-overlay-v12.png": {
+      "sha256": "191729840512a0f147ec554d04d980c519a30c3fc0fc35216bb6de1396aca064",
+      "extension": ".png",
+      "bytes": 39265,
+      "object": "review-archive/objects/19/191729840512a0f147ec554d04d980c519a30c3fc0fc35216bb6de1396aca064.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/19/191729840512a0f147ec554d04d980c519a30c3fc0fc35216bb6de1396aca064.png"
+    },
+    "/keeper-review/kitchen-oven-broken-ligne-claire-v12/assets/approved-v8-on-vs-v12-broken-family.png": {
+      "sha256": "252fdaa446507fb8d9827983b50a25e80ebffda7214078039e2b7949c842476e",
+      "extension": ".png",
+      "bytes": 536992,
+      "object": "review-archive/objects/25/252fdaa446507fb8d9827983b50a25e80ebffda7214078039e2b7949c842476e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/25/252fdaa446507fb8d9827983b50a25e80ebffda7214078039e2b7949c842476e.png"
+    },
+    "/keeper-review/kitchen-oven-broken-ligne-claire-v12/assets/candidate--oven-broken-cavity-flicker-f40.png": {
+      "sha256": "53f2ce1fbf79112a569103aa069ab67eeda02a7699aa18cdf2e9f79106a28c4f",
+      "extension": ".png",
+      "bytes": 22568,
+      "object": "review-archive/objects/53/53f2ce1fbf79112a569103aa069ab67eeda02a7699aa18cdf2e9f79106a28c4f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/53/53f2ce1fbf79112a569103aa069ab67eeda02a7699aa18cdf2e9f79106a28c4f.png"
+    },
+    "/keeper-review/kitchen-oven-broken-ligne-claire-v12/assets/candidate--oven-broken-warning-flicker-f40.png": {
+      "sha256": "c98f8c6dfefefb03e7ea2188eebfd3ea1623abe5b4e046f019b4cad0068ee652",
+      "extension": ".png",
+      "bytes": 17682,
+      "object": "review-archive/objects/c9/c98f8c6dfefefb03e7ea2188eebfd3ea1623abe5b4e046f019b4cad0068ee652.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c9/c98f8c6dfefefb03e7ea2188eebfd3ea1623abe5b4e046f019b4cad0068ee652.png"
+    },
+    "/keeper-review/kitchen-oven-broken-ligne-claire-v12/assets/complete-current-vs-candidate-contact-sheet.png": {
+      "sha256": "90dcf7712497e0e7ec493dfdf31cbd665e8de0d882526367dd773fb80f81b4d2",
+      "extension": ".png",
+      "bytes": 409650,
+      "object": "review-archive/objects/90/90dcf7712497e0e7ec493dfdf31cbd665e8de0d882526367dd773fb80f81b4d2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/90/90dcf7712497e0e7ec493dfdf31cbd665e8de0d882526367dd773fb80f81b4d2.png"
+    },
+    "/keeper-review/kitchen-oven-broken-ligne-claire-v12/assets/current--oven-broken-cavity-flicker-f40.png": {
+      "sha256": "94a6beec5979e81b4614b9596fe379a8193db0c1c179a7453f799c0bff2ade04",
+      "extension": ".png",
+      "bytes": 30275,
+      "object": "review-archive/objects/94/94a6beec5979e81b4614b9596fe379a8193db0c1c179a7453f799c0bff2ade04.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/94/94a6beec5979e81b4614b9596fe379a8193db0c1c179a7453f799c0bff2ade04.png"
+    },
+    "/keeper-review/kitchen-oven-broken-ligne-claire-v12/assets/current--oven-broken-warning-flicker-f40.png": {
+      "sha256": "e5cc0bbbabfb9632efd23d78b30ba8d322e735b19bfcc3c8e2145f65b43c48d1",
+      "extension": ".png",
+      "bytes": 25122,
+      "object": "review-archive/objects/e5/e5cc0bbbabfb9632efd23d78b30ba8d322e735b19bfcc3c8e2145f65b43c48d1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e5/e5cc0bbbabfb9632efd23d78b30ba8d322e735b19bfcc3c8e2145f65b43c48d1.png"
+    },
+    "/keeper-review/kitchen-oven-broken-ligne-claire-v12/assets/exact-datum-healing-current-vs-v10.png": {
+      "sha256": "920385d531ac293bcda88d44c89f335131089b822040c8114376ce451e551b50",
+      "extension": ".png",
+      "bytes": 393257,
+      "object": "review-archive/objects/92/920385d531ac293bcda88d44c89f335131089b822040c8114376ce451e551b50.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/92/920385d531ac293bcda88d44c89f335131089b822040c8114376ce451e551b50.png"
+    },
+    "/keeper-review/kitchen-oven-broken-ligne-claire-v12/assets/optional-broken-symbol-effect.png": {
+      "sha256": "c0622e75f9fcde56445bc379952fafdb7ed8ddcc2420f3cfaf5f809b151363a1",
+      "extension": ".png",
+      "bytes": 325890,
+      "object": "review-archive/objects/c0/c0622e75f9fcde56445bc379952fafdb7ed8ddcc2420f3cfaf5f809b151363a1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c0/c0622e75f9fcde56445bc379952fafdb7ed8ddcc2420f3cfaf5f809b151363a1.png"
+    },
+    "/keeper-review/kitchen-oven-broken-ligne-claire-v12/assets/oven-broken-both-lit.png": {
+      "sha256": "3b889d6c0e4c9ba18f124920a37573835a08dd6c7bb83a90badcf51a39b57e2d",
+      "extension": ".png",
+      "bytes": 11397,
+      "object": "review-archive/objects/3b/3b889d6c0e4c9ba18f124920a37573835a08dd6c7bb83a90badcf51a39b57e2d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3b/3b889d6c0e4c9ba18f124920a37573835a08dd6c7bb83a90badcf51a39b57e2d.png"
+    },
+    "/keeper-review/kitchen-oven-broken-ligne-claire-v12/assets/oven-on.png": {
+      "sha256": "0ee7572ec03021a7efb747254bc97974de380cdee45a49d47e74b7aba9fd3d80",
+      "extension": ".png",
+      "bytes": 11298,
+      "object": "review-archive/objects/0e/0ee7572ec03021a7efb747254bc97974de380cdee45a49d47e74b7aba9fd3d80.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0ee7572ec03021a7efb747254bc97974de380cdee45a49d47e74b7aba9fd3d80.png"
     },
     "/keeper-review/kitchen-oven-broken-ligne-claire-v9/assets/approved-v8-on-vs-v9-broken-family.png": {
       "sha256": "d7381e2e8c5238b6a3e75f6fe2c5799d3b0ef1a35e98327d174a1b4053c41d84",

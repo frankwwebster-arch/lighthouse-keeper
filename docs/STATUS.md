@@ -613,6 +613,16 @@ on repair. V9 is untouched; V10 is unapproved, unregistered, unpromoted and
 unwired with its registration gate closed. Delivery:
 `docs/KITCHEN_OVEN_BROKEN_LIGNE_CLAIRE_V10_2026-10-21.md`.
 
+Kitchen Oven Broken Ligne-Claire V12 at
+`/keeper-review/kitchen-oven-broken-ligne-claire-v12/` is the focused
+family-match successor. It rebuilds Broken from the exact approved V8 On
+authority rather than preserving V9/V10's globally different cabinet. Only the
+failed third dial, burnt roast and shallow ajar-door cue are locally different;
+the verifier requires zero pixel drift everywhere else and exact V8 alpha in
+all static states and all 40-frame strips. V8, V9 and V10 remain untouched.
+V12 is review-only, unregistered, unwired and blocked on explicit approval.
+Delivery: `docs/KITCHEN_OVEN_BROKEN_LIGNE_CLAIRE_V12_2026-10-21.md`.
+
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
 link with V6. The animation remains the exact V1/V2 six-pose motion inside its
