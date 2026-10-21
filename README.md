@@ -786,6 +786,19 @@ readiness. Approval:
 [`docs/review/kitchen-oven-ligne-claire-v8-approval-2026-10-21.json`](docs/review/kitchen-oven-ligne-claire-v8-approval-2026-10-21.json).
 See
 [`docs/KITCHEN_OVEN_LIGNE_CLAIRE_V8_2026-10-21.md`](docs/KITCHEN_OVEN_LIGNE_CLAIRE_V8_2026-10-21.md).
+Kitchen Oven Broken Ligne-Claire V9 is the separate successor review gate at
+`/keeper-review/kitchen-oven-broken-ligne-claire-v9/`. It carries the exact V8
+family language into all four Broken lighting states and both complete
+40-frame/4-fps flicker strips while keeping one fixed `92 × 85` alpha geometry,
+outer bounds `(4,4)–(88,81)`, translucent door glass, room datum and inherited
+healing. The V8 On candidate is copied byte-for-byte. Frank's supplied comic
+stars, spiral, burst and agitation-mark references are represented by an
+optional separate `92 × 40` oven-anchored effect that can be switched off and
+must disappear independently on repair; it is never baked into the oven,
+collision or flicker frames. Every dishwasher variant remains byte-identical
+V41 input and no dishwasher candidate exists. V9 is unapproved, unregistered,
+unpromoted and unwired; its closed gate requires explicit approval. See
+[`docs/KITCHEN_OVEN_BROKEN_LIGNE_CLAIRE_V9_2026-10-21.md`](docs/KITCHEN_OVEN_BROKEN_LIGNE_CLAIRE_V9_2026-10-21.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

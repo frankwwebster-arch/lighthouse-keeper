@@ -564,6 +564,21 @@ movement, interaction, repair and healing remain unchanged. Approval:
 `docs/review/kitchen-oven-ligne-claire-v8-approval-2026-10-21.json`; delivery:
 `docs/KITCHEN_OVEN_LIGNE_CLAIRE_V8_2026-10-21.md`.
 
+Kitchen Oven Broken Ligne-Claire V9 at
+`/keeper-review/kitchen-oven-broken-ligne-claire-v9/` is the new immutable
+Broken/flicker review gate. It derives all four Broken lighting states and both
+40-frame/4-fps strips from one high-resolution V8-calibrated Broken drawing,
+with exact `92 × 85` canvas, `(4,4)–(88,81)` outer padding and identical alpha
+in every state/frame. Door glass remains translucent; the attached open door,
+blackened roast, failed dial on two wires and warning lamp remain readable.
+The V8 On candidate is byte-identical. An optional separate oven-anchored
+`92 × 40` comic fault-symbol layer applies Frank's stars/spiral/burst references
+without changing oven geometry and is independently removable on repair. V3
+healing, exact oven/sink datums, movement locks, repair unlocks and every V41
+dishwasher byte are pinned. V9 is unapproved, unregistered, unpromoted and
+unwired; `batch-register.json` remains closed. Delivery:
+`docs/KITCHEN_OVEN_BROKEN_LIGNE_CLAIRE_V9_2026-10-21.md`.
+
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
 link with V6. The animation remains the exact V1/V2 six-pose motion inside its
