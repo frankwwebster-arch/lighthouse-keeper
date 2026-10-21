@@ -110,3 +110,11 @@ Cache: `exec-af487215-b1f7-4ca5-baf0-f3868f6ebe91.png`
 > golden ferrule and dark-blue metal wire cage coated with warm orange batter;
 > preserve the current separate batter drops. Keep credible working-whisk
 > construction and add no bowl.
+
+## Approval
+
+Frank approved the unchanged eight non-hen candidates together with the fresh
+observational hen correction by saying “approved, move on” on 2026-10-21.
+Those eight candidates were registered as immutable current V2s. The hen image
+from this family pack remains unregistered; the correction pack supplies the
+approved `eggs-hen-coop` V2 instead. Every V1 remains immutable and selectable.

@@ -536,7 +536,7 @@
       "kind": "object",
       "family": "baking",
       "label": "Baking flour",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -556,6 +556,25 @@
           "source": "baking-flour.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/baking-flour.png",
+          "sha256": "d9c1f1b0b3490fc43eb580947ec57756d96d9e0d01866161356a9ddf48d75802",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            39,
+            236,
+            216
+          ],
+          "added": "2026-10-21",
+          "source": "baking-flour.png",
+          "by": "codex",
+          "note": "Approved ligne-claire baking, eggs and mixing V2"
         }
       ]
     },
@@ -3082,7 +3101,7 @@
       "kind": "object",
       "family": "eggs",
       "label": "Eggs basket",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -3102,6 +3121,25 @@
           "source": "eggs-basket.png",
           "by": "codex",
           "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/eggs-basket.png",
+          "sha256": "e4238a4e53bb96296d7019979dabf04a3f21807ef1fd42c51c0be4c178b23394",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            20,
+            235,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "eggs-basket.png",
+          "by": "codex",
+          "note": "Approved ligne-claire baking, eggs and mixing V2"
         }
       ]
     },
@@ -3109,7 +3147,7 @@
       "kind": "object",
       "family": "eggs",
       "label": "Eggs hen coop",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -3129,6 +3167,25 @@
           "source": "eggs-hen-coop.png",
           "by": "codex",
           "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-eggs-hen-coop-correction-2026-10-21-v1/drafts/components/eggs-hen-coop.png",
+          "sha256": "b35aae7c589d795816fbd97c76cb464ae6f32e6ff270bb17c994f707009c10f3",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            28,
+            236,
+            227
+          ],
+          "added": "2026-10-21",
+          "source": "eggs-hen-coop.png",
+          "by": "codex",
+          "note": "Approved observational ligne-claire hen-and-coop correction V2"
         }
       ]
     },
@@ -3136,7 +3193,7 @@
       "kind": "object",
       "family": "eggs",
       "label": "Eggs nest",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -3156,6 +3213,25 @@
           "source": "eggs-nest.png",
           "by": "codex",
           "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/eggs-nest.png",
+          "sha256": "6b4245412d1b2ab88bc47c7c543e3a1a61548ce4b043a64412f2efc5eca35d05",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            43,
+            236,
+            212
+          ],
+          "added": "2026-10-21",
+          "source": "eggs-nest.png",
+          "by": "codex",
+          "note": "Approved ligne-claire baking, eggs and mixing V2"
         }
       ]
     },
@@ -4216,7 +4292,7 @@
       "kind": "object",
       "family": "ingredient",
       "label": "Butter",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -4236,6 +4312,25 @@
           "source": "ingredient-butter-block.png",
           "by": "codex",
           "note": "Codex kitchen condiments and prep pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/ingredient-butter-block.png",
+          "sha256": "00bf760c845df1c0ed3f6be761d0ce13cddcfaa8fb1b540e0d2744d6ff15b6d1",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            52,
+            236,
+            203
+          ],
+          "added": "2026-10-21",
+          "source": "ingredient-butter-block.png",
+          "by": "codex",
+          "note": "Approved ligne-claire baking, eggs and mixing V2"
         }
       ]
     },
@@ -4918,7 +5013,7 @@
       "kind": "object",
       "family": "mixing",
       "label": "Mixing bowl",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -4938,6 +5033,25 @@
           "source": "mixing-bowl.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/mixing-bowl.png",
+          "sha256": "d6acaf8de63d44cb26aed9a5fed348ffdc82dfe6976d5b2dee1163a6ada8f5c0",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            54,
+            236,
+            202
+          ],
+          "added": "2026-10-21",
+          "source": "mixing-bowl.png",
+          "by": "codex",
+          "note": "Approved ligne-claire baking, eggs and mixing V2"
         }
       ]
     },
@@ -4945,7 +5059,7 @@
       "kind": "object",
       "family": "mixing",
       "label": "Mixing egg",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -4965,6 +5079,25 @@
           "source": "mixing-egg.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/mixing-egg.png",
+          "sha256": "b8cdd2f82a11b8f5a8163ae96c5a7809bcb1b23c17696a0f75f689c60512cf59",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            70,
+            236,
+            186
+          ],
+          "added": "2026-10-21",
+          "source": "mixing-egg.png",
+          "by": "codex",
+          "note": "Approved ligne-claire baking, eggs and mixing V2"
         }
       ]
     },
@@ -4972,7 +5105,7 @@
       "kind": "object",
       "family": "mixing",
       "label": "Mixing flour",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -4992,6 +5125,25 @@
           "source": "mixing-flour.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/mixing-flour.png",
+          "sha256": "050fe21b2320d80cb07b174b62ca5759886d02d24db5c4d25149b1804b6825e1",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            52,
+            236,
+            203
+          ],
+          "added": "2026-10-21",
+          "source": "mixing-flour.png",
+          "by": "codex",
+          "note": "Approved ligne-claire baking, eggs and mixing V2"
         }
       ]
     },
@@ -4999,7 +5151,7 @@
       "kind": "object",
       "family": "mixing",
       "label": "Mixing whisk",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -5019,6 +5171,25 @@
           "source": "mixing-whisk.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/mixing-whisk.png",
+          "sha256": "eecdbb8d20d0aa5dd292bb35ff18c53858ab19aa6f51376e76569991aac16b59",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            32,
+            236,
+            224
+          ],
+          "added": "2026-10-21",
+          "source": "mixing-whisk.png",
+          "by": "codex",
+          "note": "Approved ligne-claire baking, eggs and mixing V2"
         }
       ]
     },

@@ -27,6 +27,7 @@ from build_activity_story_ligne_claire_bbq_family_2026_10_21_v1 import (
 ROOT = Path(__file__).resolve().parents[1]
 PACK = ROOT / "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1"
 SET = "activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1"
+CORRECTED_HEN = ROOT / "art/drafts/activity-story-ligne-claire-eggs-hen-coop-correction-2026-10-21-v1/drafts/components/eggs-hen-coop.png"
 
 CREAM = (246, 229, 183)
 LIGHT = (246, 205, 135)
@@ -172,7 +173,7 @@ def build() -> None:
         entries[str(spec["id"])] = {
             "family": str(spec["id"]).split("-")[0],
             "label": spec["label"],
-            "intent": "candidate-new-version-v2",
+            "intent": "superseded-unregistered-candidate" if spec["id"] == "eggs-hen-coop" else "approved-current-version-v2",
             "priorCurrentLibraryVersion": 1,
             "proposedLibraryVersion": 2,
             "preserves": spec["preserves"],
@@ -196,7 +197,7 @@ def build() -> None:
     register = {
         "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
         "set": SET,
-        "status": "review-gate-awaiting-approval",
+        "status": "approved-with-corrected-hen-registered",
         "created": "2026-10-21",
         "tool": "built-in image generation plus deterministic fixed-palette normalisation",
         "family": "baking-eggs-mixing",
@@ -225,15 +226,20 @@ def build() -> None:
             "currentReferenceHashesPinned": True,
             "exactPalettesRecorded": True,
             "contactSheetCoversEveryCandidate": True,
-            "libraryVersionsAdded": False,
+            "libraryVersionsAdded": True,
             "storyChanged": False,
             "activityStoriesRuntimeChanged": False,
             "approvedAuthorityChanged": False,
             "deployed": False,
         },
-        "approval": None,
-        "nextStep": "Frank reviews this exact nine-picture contact sheet. Register no candidate before explicit approval.",
-        "rollback": "Before approval, discard this pack alone. After approval, each V1 remains immutable and can be reselected independently.",
+        "approval": {
+            "by": "Frank",
+            "date": "2026-10-21",
+            "words": "approved, move on",
+            "scope": "The eight unchanged candidates plus the separately reviewed observational hen correction; the family-pack hen candidate remains rejected and unregistered.",
+        },
+        "nextStep": "Build the next coherent Food-and-meals family review gate without changing any registered version.",
+        "rollback": "Every V1 remains immutable and can be reselected independently; the added V2 files are immutable library versions.",
     }
     (PACK / "batch-register.json").write_text(json.dumps(register, indent=2) + "\n")
     write_hashes(PACK)
@@ -243,9 +249,9 @@ def build() -> None:
 
 def verify() -> None:
     register = json.loads((PACK / "batch-register.json").read_text())
-    if register["set"] != SET or register["status"] != "review-gate-awaiting-approval":
+    if register["set"] != SET or register["status"] != "approved-with-corrected-hen-registered":
         raise RuntimeError("register identity/status mismatch")
-    if register["family"] != "baking-eggs-mixing" or register["approval"] is not None:
+    if register["family"] != "baking-eggs-mixing" or register["approval"]["words"] != "approved, move on":
         raise RuntimeError("register family/approval mismatch")
     expected_ids = [str(spec["id"]) for spec in SPECS]
     if list(register["components"]) != expected_ids:
@@ -265,10 +271,15 @@ def verify() -> None:
         if sha256(current_path) != entry["currentReferenceSha256"]:
             raise RuntimeError(f"prior-current hash mismatch: {picture_id}")
         picture = library[picture_id]
-        if picture["current"] != 1 or len(picture["versions"]) != 1:
-            raise RuntimeError(f"candidate was registered before approval: {picture_id}")
+        if picture["current"] != 2 or len(picture["versions"]) != 2:
+            raise RuntimeError(f"approved V2 is not current: {picture_id}")
         if picture["versions"][0]["sha256"] != entry["currentReferenceSha256"]:
             raise RuntimeError(f"library V1 hash drift: {picture_id}")
+        expected_v2 = sha256(CORRECTED_HEN) if picture_id == "eggs-hen-coop" else entry["sha256"]
+        if picture["versions"][1]["sha256"] != expected_v2:
+            raise RuntimeError(f"library V2 hash mismatch: {picture_id}")
+        if picture_id == "eggs-hen-coop" and entry["sha256"] in {version["sha256"] for version in picture["versions"]}:
+            raise RuntimeError("superseded family-pack hen candidate was registered")
         source = Image.open(source_path)
         output = Image.open(output_path)
         if source.mode != "RGBA" or output.mode != "RGBA" or output.size != (CELL, CELL):
@@ -300,15 +311,15 @@ def verify() -> None:
         raise RuntimeError("contact sheet geometry mismatch")
     if evidence["coveredIds"] != expected_ids or evidence["rows"] != len(expected_ids) or evidence["columns"] != 5:
         raise RuntimeError("contact sheet coverage metadata mismatch")
-    if register["checks"]["libraryVersionsAdded"]:
-        raise RuntimeError("unapproved pack records registered versions")
+    if not register["checks"]["libraryVersionsAdded"]:
+        raise RuntimeError("approved pack does not record registered versions")
     expected_hash_lines = [
         f"{sha256(path)}  {path.relative_to(PACK).as_posix()}"
         for path in sorted(path for path in PACK.rglob("*") if path.is_file() and path.name != "HASHES.sha256")
     ]
     if (PACK / "HASHES.sha256").read_text().splitlines() != expected_hash_lines:
         raise RuntimeError("HASHES.sha256 is stale or incomplete")
-    print(f"Verified {SET}: {len(expected_ids)} unregistered candidates, contact sheet and retained V1 priors")
+    print(f"Verified {SET}: eight family candidates plus corrected hen registered as V2; all V1 priors retained")
 
 
 def main() -> None:

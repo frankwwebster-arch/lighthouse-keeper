@@ -1,0 +1,521 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
+  "set": "activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1",
+  "status": "review-gate-awaiting-approval",
+  "created": "2026-10-21",
+  "tool": "built-in image generation plus deterministic fixed-palette normalisation",
+  "family": "food-provenance-and-meal",
+  "semanticSet": "three fully redrafted adult farm animals plus four composition-preserving plated meals",
+  "styleChampions": {
+    "frank-horse-reference": "primary animal construction authority: weight-bearing anatomy, lively economical contour and sparse interior marks",
+    "washing-plate": "living hand-drawn shape and controlled minor imperfection",
+    "sandwich-tomato": "flat-colour economy and selective readable detail",
+    "repair-toolbox": "construction, detail hierarchy and confident object presence"
+  },
+  "animalRedraftRule": "Legacy animal drawings constrain only species, count, orientation and indispensable semantic attributes. Anatomy, stance, proportions, face, contour and interior construction are newly drawn from observation; this is not style transfer.",
+  "mealPreservationRule": "The current V1 remains sole semantic/compositional authority for each meal: preserve plate or bowl, food counts, state, viewpoint, overlap, relative arrangement and broad silhouette.",
+  "horseReference": {
+    "file": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/references/frank-horse-ligne-claire-reference.png",
+    "sha256": "941b5db66ef97e984de1075004ed297324b7da727f12d933929174f027db8feb",
+    "role": "user-supplied animal style/construction reference"
+  },
+  "visibleAlphaThreshold": 8,
+  "components": {
+    "cooking-cow": {
+      "family": "food-provenance",
+      "label": "Adult dairy cow \u2014 full redraft",
+      "intent": "candidate-new-version-v2",
+      "method": "full-redraft-from-observed-anatomy",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one adult black-and-cream dairy cow, standing left-to-right with small horns, udder, long tail and one small neck bell; legacy cartoon anatomy was deliberately discarded",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/cooking-cow.png",
+      "currentReferenceSha256": "596bc5a5cbb4eec1e48a34ca796b852aa303a027403f3aea5a29ae304af99dac",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/source/cooking-cow-source.png",
+      "sourceSha256": "b327c5e434202df56ec53fd876f7ab91b2034684c6d35e1a2113da948c483095",
+      "sourcePixels": [
+        1536,
+        1024
+      ],
+      "originalCacheFile": "exec-6faf94f0-7779-4cd6-ad3e-c98a74cbaed0.png",
+      "flatPalette": [
+        "#051824",
+        "#30343a",
+        "#f6e5b7",
+        "#ede9de",
+        "#f57e6a",
+        "#d75b52",
+        "#a65f2a",
+        "#744128",
+        "#e7a638"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/drafts/components/cooking-cow.png",
+      "sha256": "74729f9be4ea69e620a4ea45479250854c22e5238b51693b716f9495ac3ed5f1",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        111,
+        29,
+        1469,
+        971
+      ],
+      "normalisedVisibleSize": [
+        216,
+        150
+      ],
+      "normalisedOffset": [
+        20,
+        53
+      ],
+      "bounds": [
+        20,
+        53,
+        236,
+        203
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cooking-pig": {
+      "family": "food-provenance",
+      "label": "Adult farm pig \u2014 full redraft",
+      "intent": "candidate-new-version-v2",
+      "method": "full-redraft-from-observed-anatomy",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one adult warm-pink farm pig, standing left-to-right with folded ears, broad disk snout, cloven hooves and one curled tail; legacy cartoon anatomy was deliberately discarded",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/cooking-pig.png",
+      "currentReferenceSha256": "45e8deec49338efda30efeeb0f9eb4e26687c147487cfb9ec393132b1228ca9b",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/source/cooking-pig-source.png",
+      "sourceSha256": "33c348dffd73936fe7ff3f8cc7dc0e345a0fdd5facba4179fd19ae6c6a584a20",
+      "sourcePixels": [
+        1536,
+        1024
+      ],
+      "originalCacheFile": "exec-c2b3e5e0-9a11-4bd9-bbe8-034a77f1e064.png",
+      "flatPalette": [
+        "#051824",
+        "#f57e6a",
+        "#d75b52",
+        "#e84833",
+        "#c32b37",
+        "#a65f2a",
+        "#30343a"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/drafts/components/cooking-pig.png",
+      "sha256": "791e866bc8f79bba64879341488eafed7954800b381f682b0c608445c7d0bfdb",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        80,
+        114,
+        1468,
+        926
+      ],
+      "normalisedVisibleSize": [
+        216,
+        126
+      ],
+      "normalisedOffset": [
+        20,
+        65
+      ],
+      "bounds": [
+        20,
+        65,
+        236,
+        191
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cooking-sheep": {
+      "family": "food-provenance",
+      "label": "Adult sheep \u2014 full redraft",
+      "intent": "candidate-new-version-v2",
+      "method": "full-redraft-from-observed-anatomy",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one adult cream-fleeced sheep with charcoal face and legs, standing left-to-right with head at left; legacy cartoon anatomy and cloud-like fleece were deliberately discarded",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/cooking-sheep.png",
+      "currentReferenceSha256": "cc66915a7b0cd541332664b6c2233797b884c55c3ad46fe24af66794d659725e",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/source/cooking-sheep-source.png",
+      "sourceSha256": "b53beaee78abc2fa7b73389720037f4a591137f89bd7f6c840a7280e2d30fa74",
+      "sourcePixels": [
+        1390,
+        1132
+      ],
+      "originalCacheFile": "exec-7d2b1254-faaf-42eb-941c-35612c749727.png",
+      "flatPalette": [
+        "#051824",
+        "#30343a",
+        "#f6e5b7",
+        "#ede9de",
+        "#e7a638",
+        "#a65f2a"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/drafts/components/cooking-sheep.png",
+      "sha256": "3939e74f8001345a91f24524c4096c37572d016ceee5bcc635ac9087118d4a1b",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        70,
+        91,
+        1301,
+        1064
+      ],
+      "normalisedVisibleSize": [
+        216,
+        171
+      ],
+      "normalisedOffset": [
+        20,
+        42
+      ],
+      "bounds": [
+        20,
+        42,
+        236,
+        213
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "meal-breakfast": {
+      "family": "meal",
+      "label": "Breakfast",
+      "intent": "candidate-new-version-v2",
+      "method": "composition-preserving-style-translation",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one blue-rimmed plate, two toast slices, three bacon rashers, one fried egg with one yolk and two tomato halves with herb leaves in the current arrangement",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/meal-breakfast.png",
+      "currentReferenceSha256": "ec4665ac718fc8892fcfff9701c0f29c17e1667ae77ce68d3eb8446897f5a17c",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/source/meal-breakfast-source.png",
+      "sourceSha256": "7acc15e6f31304c37019f77bf4552ce6b98ee1afe3389ebbd17e4a608ae1ad92",
+      "sourcePixels": [
+        1536,
+        1024
+      ],
+      "originalCacheFile": "exec-9a039209-2f7e-4eff-b66a-169f412ff34e.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#e7a638",
+        "#e88b2d",
+        "#e84833",
+        "#c32b37",
+        "#499137",
+        "#256830",
+        "#1870a6",
+        "#0d4e75",
+        "#a65f2a"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/drafts/components/meal-breakfast.png",
+      "sha256": "f0806bce82fef078d72319d0d5b995daade3abcb27d5621e2cc00dc40716db17",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        47,
+        90,
+        1489,
+        945
+      ],
+      "normalisedVisibleSize": [
+        216,
+        128
+      ],
+      "normalisedOffset": [
+        20,
+        64
+      ],
+      "bounds": [
+        20,
+        64,
+        236,
+        192
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "meal-dinner": {
+      "family": "meal",
+      "label": "Roast dinner",
+      "intent": "candidate-new-version-v2",
+      "method": "composition-preserving-style-translation",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one blue-rimmed plate with three roast-poultry slices and gravy, three roast potatoes, two broccoli florets, three carrot pieces and the upper-right green sprig",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/meal-dinner.png",
+      "currentReferenceSha256": "b156ae100f31c4ee20ee1c7ae53df0d0bf16f25ec767ff0ddda898e0ad7f0237",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/source/meal-dinner-source.png",
+      "sourceSha256": "991eb3dc0a7b0f636b08d052f93ab1eaafe296b260949866f901fb52b64a5d86",
+      "sourcePixels": [
+        1536,
+        1024
+      ],
+      "originalCacheFile": "exec-7a397300-d4f4-4fd0-8615-ee07e77a9f6f.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#e7a638",
+        "#e88b2d",
+        "#a65f2a",
+        "#744128",
+        "#499137",
+        "#256830",
+        "#1870a6",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/drafts/components/meal-dinner.png",
+      "sha256": "1f6b64194a15aca5f12b5fddb3e31c765a9b789e73552d2168f4fb15bf99de96",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        42,
+        137,
+        1497,
+        925
+      ],
+      "normalisedVisibleSize": [
+        216,
+        117
+      ],
+      "normalisedOffset": [
+        20,
+        69
+      ],
+      "bounds": [
+        20,
+        69,
+        236,
+        186
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "meal-lunch": {
+      "family": "meal",
+      "label": "Vegetable soup lunch",
+      "intent": "candidate-new-version-v2",
+      "method": "composition-preserving-style-translation",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one cream footed bowl with two blue bands, orange vegetable soup, four potato cubes, two carrot chunks, green leaves and parsley, plus one bread slice and one front parsley sprig",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/meal-lunch.png",
+      "currentReferenceSha256": "72d65ca5186260c3cb99b802c0be79ed0cfc7d4cb1573a70ed210e5f5d10519c",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/source/meal-lunch-source.png",
+      "sourceSha256": "7ac3fdd9d5ab2825782b1a3af42c4b56365120043123c35286ad975848bfe958",
+      "sourcePixels": [
+        1536,
+        1024
+      ],
+      "originalCacheFile": "exec-23c9785e-370f-45ea-b919-88b8b546554a.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#e7a638",
+        "#e88b2d",
+        "#499137",
+        "#256830",
+        "#1870a6",
+        "#0d4e75",
+        "#a65f2a"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/drafts/components/meal-lunch.png",
+      "sha256": "d2c1a18521f34f76128cfef1b12db763c99e30843170f701d981bf7743fb5868",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        137,
+        161,
+        1434,
+        890
+      ],
+      "normalisedVisibleSize": [
+        216,
+        121
+      ],
+      "normalisedOffset": [
+        20,
+        67
+      ],
+      "bounds": [
+        20,
+        67,
+        236,
+        188
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "meal-steak-fries": {
+      "family": "meal",
+      "label": "Steak and fries",
+      "intent": "candidate-new-version-v2",
+      "method": "composition-preserving-style-translation",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one blue-rimmed plate with one thick rectangular steak at left/front, its fat edge and five diagonal grill bands, plus the compact overlapping pile of thick fries at right/rear",
+      "currentReferenceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/meal-steak-fries.png",
+      "currentReferenceSha256": "8aebdcafac1a8c2749f9876fc51d2fc1c7bbe78005120b0bb8b5ca5b657c99ae",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/source/meal-steak-fries-source.png",
+      "sourceSha256": "56d28328b7285978449da0e111ec74304bbd4c3f602d4688cc30594579de36fc",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-2dbe2575-79dd-401c-8304-b9ee3b8e4682.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#e7a638",
+        "#e88b2d",
+        "#e84833",
+        "#c32b37",
+        "#a65f2a",
+        "#744128",
+        "#1870a6",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/drafts/components/meal-steak-fries.png",
+      "sha256": "a528392fcfc3c4186b7f049eb1a467d054cf8132fbb6d726d0d8c697f391fcac",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        34,
+        159,
+        1224,
+        1101
+      ],
+      "normalisedVisibleSize": [
+        216,
+        171
+      ],
+      "normalisedOffset": [
+        20,
+        42
+      ],
+      "bounds": [
+        20,
+        42,
+        236,
+        213
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejected": [
+    {
+      "file": "rejected/cooking-cow-pre-horse-reference.png",
+      "cache": "exec-d60b6cac-ee3e-40f0-8ea0-93718c9b6ce6.png",
+      "reason": "Superseded before the gate when Frank supplied a specific ligne-claire horse reference for animal construction.",
+      "sha256": "92f5c2852d120e76d607746f970e44ce6ca93172397da2805a23e498aab7b96a"
+    },
+    {
+      "file": "rejected/cooking-pig-pre-horse-reference.png",
+      "cache": "exec-f2ddbeca-ebeb-48c5-8565-f31cafa74bb6.png",
+      "reason": "Superseded before the gate when Frank supplied a specific ligne-claire horse reference for animal construction.",
+      "sha256": "1ff62c9d74de69b3b82b5a2679fff418fa11bb05484228f65fb9559dc9c6f2e9"
+    },
+    {
+      "file": "rejected/cooking-sheep-pre-horse-reference.png",
+      "cache": "exec-f3ff2c06-bbce-45d2-8a65-3df01f444608.png",
+      "reason": "Superseded before the gate when Frank supplied a specific ligne-claire horse reference for animal construction.",
+      "sha256": "e993bdcfed9a244bce4acc325d8942ecd17abca35b6fa6513b562a9b5dfe4d37"
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/evidence/current-vs-ligne-claire-contact-sheet.png",
+    "sha256": "6680adf3e83caec3e1757ef2a98772a74b3d387d443f80e0105d8d8d54146014",
+    "columns": 5,
+    "rows": 7,
+    "coveredIds": [
+      "cooking-cow",
+      "cooking-pig",
+      "cooking-sheep",
+      "meal-breakfast",
+      "meal-dinner",
+      "meal-lunch",
+      "meal-steak-fries"
+    ]
+  },
+  "checks": {
+    "animalSourcesExcludeLegacyCartoonArt": true,
+    "horseReferencePinned": true,
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "currentReferenceHashesPinned": true,
+    "exactPalettesRecorded": true,
+    "contactSheetCoversEveryCandidate": true,
+    "libraryVersionsAdded": false,
+    "storyChanged": false,
+    "activityStoriesRuntimeChanged": false,
+    "deployed": false
+  },
+  "approval": null,
+  "nextStep": "Frank reviews this exact seven-picture sheet. Register no candidate before explicit approval.",
+  "rollback": "Discard this pack alone; every current V1 and all prior immutable packs remain untouched."
+}

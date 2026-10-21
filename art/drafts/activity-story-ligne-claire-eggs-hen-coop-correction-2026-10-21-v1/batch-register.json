@@ -1,7 +1,7 @@
 {
   "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
   "set": "activity-story-ligne-claire-eggs-hen-coop-correction-2026-10-21-v1",
-  "status": "review-gate-awaiting-approval",
+  "status": "approved-and-registered",
   "created": "2026-10-21",
   "tool": "built-in image generation plus deterministic fixed-palette normalisation",
   "family": "eggs",
@@ -16,7 +16,7 @@
     "eggs-hen-coop": {
       "family": "eggs",
       "label": "Hen and coop",
-      "intent": "replacement-candidate-for-unregistered-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one naturally proportioned adult brown-and-cream hen front-left of one small blue-green pitched-roof coop with dark doorway and spilling straw",
@@ -102,12 +102,17 @@
     "rejectedCandidateHashPinned": true,
     "exactPaletteRecorded": true,
     "contactSheetCoverage": true,
-    "libraryVersionAdded": false,
+    "libraryVersionAdded": true,
     "activityStoriesRuntimeChanged": false,
     "approvedAuthorityChanged": false,
     "deployed": false
   },
-  "approval": null,
-  "nextStep": "Frank reviews this exact hen-and-coop correction. Register nothing before explicit approval.",
-  "rollback": "Discard this correction pack alone; the family pack, V1 and all existing bytes remain immutable."
+  "approval": {
+    "by": "Frank",
+    "date": "2026-10-21",
+    "words": "approved, move on",
+    "scope": "This exact observational hen-and-coop correction as eggs-hen-coop V2."
+  },
+  "nextStep": "Build the next coherent Food-and-meals family review gate.",
+  "rollback": "V1 remains immutable and selectable; V2 is an immutable added version, and the prior proposed V2 remains rejected evidence only."
 }

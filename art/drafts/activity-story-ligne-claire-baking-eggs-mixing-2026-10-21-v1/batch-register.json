@@ -1,7 +1,7 @@
 {
   "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
   "set": "activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1",
-  "status": "review-gate-awaiting-approval",
+  "status": "approved-with-corrected-hen-registered",
   "created": "2026-10-21",
   "tool": "built-in image generation plus deterministic fixed-palette normalisation",
   "family": "baking-eggs-mixing",
@@ -18,7 +18,7 @@
     "baking-flour": {
       "family": "baking",
       "label": "Baking flour",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one open folded flour sack, one filled adult wooden scoop at front-right, and the current loose flour pile and scattered grains",
@@ -78,7 +78,7 @@
     "eggs-basket": {
       "family": "eggs",
       "label": "Eggs basket",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one low woven basket with one arched braided handle, exactly four visible eggs, one two-blue-stripe cream cloth and the side fastening",
@@ -140,7 +140,7 @@
     "eggs-hen-coop": {
       "family": "eggs",
       "label": "Eggs hen coop",
-      "intent": "candidate-new-version-v2",
+      "intent": "superseded-unregistered-candidate",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one adult brown-and-cream hen in front-left of one small blue-green pitched-roof coop with dark doorway and spilling straw",
@@ -204,7 +204,7 @@
     "eggs-nest": {
       "family": "eggs",
       "label": "Eggs nest",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one compact shallow straw nest with exactly four visible eggs, two warm brown and two cream, in the current overlap",
@@ -264,7 +264,7 @@
     "ingredient-butter-block": {
       "family": "ingredient",
       "label": "Butter",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one large golden butter block and exactly one thick front-right slice on one opened cream wrapper with dark-blue underside",
@@ -324,7 +324,7 @@
     "mixing-bowl": {
       "family": "mixing",
       "label": "Mixing bowl",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one low cream bowl with two blue bands, orange spiral batter, two detached left splash shapes and one small right-side batter dot",
@@ -385,7 +385,7 @@
     "mixing-egg": {
       "family": "mixing",
       "label": "Mixing egg",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one freshly cracked egg with exactly two shell halves, one intact yolk, pooled white and the current two detached drops",
@@ -445,7 +445,7 @@
     "mixing-flour": {
       "family": "mixing",
       "label": "Mixing flour",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one compact overlapping-lobe flour puff, the current detached-dot field and exactly two dark-blue upper-right emphasis rays",
@@ -502,7 +502,7 @@
     "mixing-whisk": {
       "family": "mixing",
       "label": "Mixing whisk",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one diagonal adult balloon whisk with tapered wooden handle, golden ferrule, dark-blue wire cage, batter coating and separate drops",
@@ -593,13 +593,18 @@
     "currentReferenceHashesPinned": true,
     "exactPalettesRecorded": true,
     "contactSheetCoversEveryCandidate": true,
-    "libraryVersionsAdded": false,
+    "libraryVersionsAdded": true,
     "storyChanged": false,
     "activityStoriesRuntimeChanged": false,
     "approvedAuthorityChanged": false,
     "deployed": false
   },
-  "approval": null,
-  "nextStep": "Frank reviews this exact nine-picture contact sheet. Register no candidate before explicit approval.",
-  "rollback": "Before approval, discard this pack alone. After approval, each V1 remains immutable and can be reselected independently."
+  "approval": {
+    "by": "Frank",
+    "date": "2026-10-21",
+    "words": "approved, move on",
+    "scope": "The eight unchanged candidates plus the separately reviewed observational hen correction; the family-pack hen candidate remains rejected and unregistered."
+  },
+  "nextStep": "Build the next coherent Food-and-meals family review gate without changing any registered version.",
+  "rollback": "Every V1 remains immutable and can be reselected independently; the added V2 files are immutable library versions."
 }

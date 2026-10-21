@@ -2,8 +2,8 @@
 
 **Decision date:** 21 October 2026
 
-**Status:** active; BBQ, sandwich, washing, General repair, repair hand-tool
-and cooking-core packs approved; action-imagery programme only
+**Status:** active; BBQ, sandwich, washing, General repair, repair hand-tool,
+cooking-core and baking/eggs/mixing packs approved; action-imagery programme only
 
 Frank approved the six-picture BBQ pilot with “agreed, these are superb”. This
 prompt turns that approval into a controlled conversion programme for Bubble
@@ -86,27 +86,45 @@ forbids accepting correct-looking pixels when provenance is wrong and treats
 speckling, patina and decorative distress as modelling rather than useful
 hand-drawn imperfection.
 
-**Seventh family review gate (21 October 2026):** nine related baking, egg,
+**Seventh family approval (21 October 2026):** nine related baking, egg,
 butter and mixing pictures are isolated at
 `art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/`:
 `baking-flour`, `eggs-basket`, `eggs-hen-coop`, `eggs-nest`,
 `ingredient-butter-block`, `mixing-bowl`, `mixing-egg`, `mixing-flour` and
-`mixing-whisk`. They remain unregistered, so the library stays at 305 pictures
-/ 365 versions. The pack preserves literal object/egg counts, ingredient state
+`mixing-whisk`. Frank approved the eight unchanged candidates plus the revised
+hen with “approved, move on”. All nine are current immutable V2s, so the
+library has 305 pictures / 374 versions. The pack preserves literal object/egg counts, ingredient state
 and detached action marks. A first hen pass was rejected for mascot-like eye
 scale and dense feather texture. The corrected pass adds this recipe rule:
 animals need restrained adult anatomy and natural expression, with feather or
 fibre detail simplified before it becomes texture rendering.
 
-**Hen correction gate (21 October 2026):** Frank said the chicken in that
+**Hen correction approval (21 October 2026):** Frank said the chicken in that
 nine-row sheet was “not quite right to my eye”. The family pack remains
 immutable; a replacement is isolated at
 `art/drafts/activity-story-ligne-claire-eggs-hen-coop-correction-2026-10-21-v1/`.
 The correction prioritises observed adult-hen anatomy over graphic charm: a
 small bead eye without visible sclera, smaller head, weight-bearing breast,
 credible shanks/toes and irregular feather groups. The prior candidate is
-retained as rejected evidence. Nothing is registered and the other eight
-family candidates remain unchanged.
+retained as rejected evidence. Frank approved this exact correction with
+“approved, move on”; it is current V2, every V1 remains selectable, and the
+other eight approved family candidates remain unchanged.
+
+**Eighth family review gate (21 October 2026):** three farm animals and four
+meal pictures are isolated at
+`art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/`:
+`cooking-cow`, `cooking-pig`, `cooking-sheep`, `meal-breakfast`,
+`meal-dinner`, `meal-lunch` and `meal-steak-fries`. Frank rejected using the
+very cartoon-like legacy animals as visual bases and required full redrafts,
+then supplied a ligne-claire horse as animal construction reference. Animal
+V1s now constrain only species, count, orientation and indispensable semantic
+attributes; anatomy, stance, proportions, face, contour and interior
+construction must be newly drawn from observation. The horse supplies
+weight-bearing quadruped construction, lively economical contour and sparse
+purposeful interior marks, never horse subject matter, rider, dog, pose or
+motion. The four meals still use strict V1 composition preservation. The seven
+candidates remain unregistered, so the library remains 305 pictures / 374
+versions.
 
 ## Ready-to-paste prompt
 
@@ -134,9 +152,11 @@ Objective
   are complete. All eight hand tools have approved current V2s, including
   Frank's explicitly selected fuller spirit level; every V1 remains selectable.
   The nine-picture cooking-core pack is approved and registered as current V2s.
-  The nine-picture baking/eggs/mixing pack is the current unregistered review
-  gate; do not register it before Frank's verdict. Continue later work in fresh
-  immutable family packs.
+  The nine-picture baking/eggs/mixing family is approved and registered,
+  using the separate observational hen correction rather than the rejected
+  family-pack hen. The current review gate is the seven-picture farm-animals
+  and meals pack; register nothing before Frank's verdict. Continue later work
+  in fresh immutable family packs.
 - The programme covers action objects, ingredients, tools, pictorial states,
   activity marks, emotions and independent comic reaction punctuation used by
   Bubble stories.
@@ -145,6 +165,16 @@ Objective
   the game UI, title/album art outside the picture catalogue, or any other
   whole-game asset. Record suggestions for that separate redirection, but do
   not implement them in this task.
+
+Animal-specific rule
+- If the legacy source is a cartoon animal, it is semantic evidence only, not
+  a visual drawing base. Preserve species, count, orientation and indispensable
+  attributes, then redraw adult anatomy, stance, proportions, face, contour
+  and interior construction from observation. Do not style-transfer or trace
+  the cartoon anatomy.
+- Use Frank's horse reference in the farm-animals/meals pack for weight-bearing
+  quadruped construction and economical ligne-claire marks, without copying
+  its subject, pose, rider, dog or motion.
 
 Visual authority
 - The approved components in

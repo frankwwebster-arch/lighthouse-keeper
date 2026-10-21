@@ -78,7 +78,7 @@ def build() -> None:
     register = {
         "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
         "set": SET,
-        "status": "review-gate-awaiting-approval",
+        "status": "approved-and-registered",
         "created": "2026-10-21",
         "tool": "built-in image generation plus deterministic fixed-palette normalisation",
         "family": "eggs",
@@ -93,7 +93,7 @@ def build() -> None:
             PICTURE_ID: {
                 "family": "eggs",
                 "label": "Hen and coop",
-                "intent": "replacement-candidate-for-unregistered-v2",
+                "intent": "approved-current-version-v2",
                 "priorCurrentLibraryVersion": 1,
                 "proposedLibraryVersion": 2,
                 "preserves": "one naturally proportioned adult brown-and-cream hen front-left of one small blue-green pitched-roof coop with dark doorway and spilling straw",
@@ -131,14 +131,19 @@ def build() -> None:
             "rejectedCandidateHashPinned": True,
             "exactPaletteRecorded": True,
             "contactSheetCoverage": True,
-            "libraryVersionAdded": False,
+            "libraryVersionAdded": True,
             "activityStoriesRuntimeChanged": False,
             "approvedAuthorityChanged": False,
             "deployed": False,
         },
-        "approval": None,
-        "nextStep": "Frank reviews this exact hen-and-coop correction. Register nothing before explicit approval.",
-        "rollback": "Discard this correction pack alone; the family pack, V1 and all existing bytes remain immutable.",
+        "approval": {
+            "by": "Frank",
+            "date": "2026-10-21",
+            "words": "approved, move on",
+            "scope": "This exact observational hen-and-coop correction as eggs-hen-coop V2.",
+        },
+        "nextStep": "Build the next coherent Food-and-meals family review gate.",
+        "rollback": "V1 remains immutable and selectable; V2 is an immutable added version, and the prior proposed V2 remains rejected evidence only.",
     }
     (PACK / "batch-register.json").write_text(json.dumps(register, indent=2) + "\n")
     write_hashes(PACK)
@@ -148,16 +153,18 @@ def build() -> None:
 
 def verify() -> None:
     register = json.loads((PACK / "batch-register.json").read_text())
-    if register["set"] != SET or register["status"] != "review-gate-awaiting-approval":
+    if register["set"] != SET or register["status"] != "approved-and-registered":
         raise RuntimeError("register identity/status mismatch")
-    if register["approval"] is not None or list(register["components"]) != [PICTURE_ID]:
+    if register["approval"]["words"] != "approved, move on" or list(register["components"]) != [PICTURE_ID]:
         raise RuntimeError("register approval/coverage mismatch")
     entry = register["components"][PICTURE_ID]
     picture = library_entry()
-    if picture["current"] != 1 or len(picture["versions"]) != 1:
-        raise RuntimeError("eggs-hen-coop was registered before approval")
+    if picture["current"] != 2 or len(picture["versions"]) != 2:
+        raise RuntimeError("approved eggs-hen-coop V2 is not current")
     if picture["versions"][0]["sha256"] != CURRENT_SHA256 or sha256(CURRENT) != CURRENT_SHA256:
         raise RuntimeError("current V1 hash drift")
+    if picture["versions"][1]["sha256"] != entry["sha256"]:
+        raise RuntimeError("current V2 hash mismatch")
     if sha256(REJECTED) != PRIOR_CANDIDATE_SHA256:
         raise RuntimeError("rejected prior candidate drift")
     for path, expected in ((SOURCE, entry["sourceSha256"]), (OUTPUT, entry["sha256"]), (CONTACT, register["evidence"]["sha256"])):
@@ -190,7 +197,7 @@ def verify() -> None:
     ]
     if (PACK / "HASHES.sha256").read_text().splitlines() != expected_hashes:
         raise RuntimeError("HASHES.sha256 is stale or incomplete")
-    print(f"Verified {SET}: correction remains unregistered; V1 and prior rejected candidate retained")
+    print(f"Verified {SET}: correction is current V2; V1 and prior rejected candidate retained")
 
 
 def main() -> None:

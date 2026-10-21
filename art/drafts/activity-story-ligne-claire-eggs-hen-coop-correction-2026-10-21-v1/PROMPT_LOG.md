@@ -46,3 +46,9 @@ Built-in image-generation cache:
 > cute pose, symmetrical fan tail, exaggerated comb, inflated breast, sticker,
 > glossy game icon, gradients, airbrush, bevels, speckling, patina, decorative
 > distress and dense feather texture.
+
+## Approval
+
+Frank approved this exact correction with “approved, move on” on 2026-10-21.
+It is registered as immutable current `eggs-hen-coop` V2. The original V1
+remains selectable, and both rejected hen candidates remain evidence only.

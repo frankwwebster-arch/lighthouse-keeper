@@ -16,7 +16,7 @@ new current V1 `clean` mark. The immutable authoring pack is
 list exposes all four while retaining the earlier versions for undo.
 
 The picture-library completeness correction is also finished (21 October
-2026). `pictures.json` now has 305 selectable pictures and 365 immutable
+2026). `pictures.json` now has 305 selectable pictures and 374 immutable
 versions and includes all 298
 review-ready isolated source components from Activity Cloud Composer V1–V7,
 the rear-work V2/V3 callout vocabulary and every component-bearing Claude or
@@ -107,24 +107,40 @@ corrections and the surface-only knife/pan corrections. Claude's story/runtime
 is unchanged. Continue the remaining Food and meals assets in a fresh,
 tightly related immutable review pack.
 
-The current unregistered Food and meals gate is
+The approved Food and meals baking/eggs/mixing family is
 `art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/`.
 It covers `baking-flour`, three egg-provenance pictures, butter block and four
-mixing pictures. The catalogue remains 305 pictures / 365 versions. Preserve
+mixing pictures. Frank approved the eight unchanged candidates plus the revised
+hen with “approved, move on”; the catalogue is 305 pictures / 374 versions. Preserve
 literal counts, ingredient state and detached action marks. The first hen pass
 was rejected for an enlarged mascot-like eye and dense feather treatment; the
 corrected candidate uses restrained adult anatomy, natural expression and
-simplified interior detail. Register nothing before Frank approves the exact
-nine-row contact sheet. Claude's stories/runtime remain unchanged.
+simplified interior detail. The eight family candidates and separate corrected
+hen are current V2s; the rejected family hen was never registered. Claude's
+stories/runtime remain unchanged.
 
 Frank then said the chicken was “not quite right to my eye”. Preserve the
 family pack unchanged and use the fresh correction gate at
 `art/drafts/activity-story-ligne-claire-eggs-hen-coop-correction-2026-10-21-v1/`.
-Its proposed replacement uses a bead eye without sclera, smaller adult head,
+Its approved replacement uses a bead eye without sclera, smaller adult head,
 weight-bearing legs/toes and irregular feather groups. The rejected family
-candidate is hash-pinned inside the correction pack. Register nothing before
-Frank approves this exact one-row correction sheet; the other eight candidates
-remain unchanged and unregistered.
+candidate is hash-pinned inside the correction pack. Frank approved it with
+“approved, move on”; it is current V2, the other eight candidates are also
+current V2s, and every V1 remains selectable.
+
+The current unregistered Food and meals gate is
+`art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/`.
+It covers cow, pig, sheep, breakfast, roast dinner, vegetable-soup lunch and
+steak with fries. Frank said the legacy animals looked “VERY cartoon like” and
+required full redrafts rather than style rerenders, then supplied a
+ligne-claire horse reference. For animal work, V1 is semantic evidence only:
+preserve species, count, orientation and indispensable attributes, but redraw
+adult anatomy, stance, proportions, face, contour and interior construction
+from observation. Use the horse's weight-bearing construction and economical
+marks without copying its horse subject, rider, dog, pose or motion. The meals
+still preserve V1 counts, state, viewpoint, overlap and arrangement. All seven
+candidates remain unregistered; the library stays at 305 pictures / 374
+versions.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 

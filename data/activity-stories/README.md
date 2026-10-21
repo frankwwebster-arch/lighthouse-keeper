@@ -11,7 +11,7 @@ versions remain selectable and byte-identical for undo.
 **Complete-catalogue update (21 October 2026):** the library now exposes all
 298 review-ready isolated source components from Activity Cloud Composer
 V1–V7, Prime rear-work activity-callout V2/V3 and every component-bearing
-Claude or Codex picture pack. The Studio therefore has 305 pictures and 365
+Claude or Codex picture pack. The Studio therefore has 305 pictures and 374
 immutable versions, including
 every V5 album homage, the complete aquarium and bedroom sets, and 54 new
 fishing, gardening, pet-play, fixing, pub, art and inventing pictures. Run
@@ -113,26 +113,40 @@ as current V2 versions, taking the catalogue to 305 pictures / 365 immutable
 versions. Every V1 remains byte-identical and selectable. No story definition
 or `src/activityStories/` file changed.
 
-**Baking, eggs and mixing review gate (21 October 2026):** the immutable pack
+**Baking, eggs and mixing approval (21 October 2026):** the immutable pack
 at `art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/`
 continues Food and meals with nine related pictures: baking flour, eggs basket,
 hen and coop, eggs nest, butter block, mixing bowl, cracked egg, flour puff and
-whisk. Every current V1 remains the sole semantic/compositional authority and
-all candidates remain unregistered, so the catalogue stays at 305 pictures /
-365 immutable versions. The pack preserves literal egg/object counts and
+whisk. Every V1 remains immutable and selectable. Frank approved the eight
+unchanged candidates and the separately reviewed observational hen correction
+with “approved, move on”. Those exact nine assets are current V2s, taking the
+catalogue to 305 pictures / 374 immutable versions. The pack preserves literal egg/object counts and
 detached action marks. Its corrected hen establishes a further recipe rule:
 animals retain restrained adult anatomy and natural eyes, with feather/fibre
 detail simplified before it becomes mascot or texture rendering. No story
 definition or `src/activityStories/` file changed.
 
-**Hen-and-coop correction gate (21 October 2026):** Frank said the hen in the
+**Hen-and-coop correction approval (21 October 2026):** Frank said the hen in the
 baking/eggs/mixing sheet was “not quite right to my eye”. The family pack stays
 immutable and the replacement candidate is isolated at
 `art/drafts/activity-story-ligne-claire-eggs-hen-coop-correction-2026-10-21-v1/`.
 It uses a small bead eye without sclera, a smaller naturally proportioned head,
 weight-bearing breast/legs/toes and irregular feather groups. The rejected
-candidate, current V1 and other eight family candidates remain byte-identical;
-nothing is registered, so the catalogue remains 305 pictures / 365 versions.
+candidate remains rejected and unregistered. Frank approved the exact revised
+hen with “approved, move on”; it is current V2 while V1 remains byte-identical
+and selectable. No story or `src/activityStories/` file changed.
+
+**Farm animals and meals review gate (21 October 2026):** the immutable pack
+at `art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/`
+covers `cooking-cow`, `cooking-pig`, `cooking-sheep`, `meal-breakfast`,
+`meal-dinner`, `meal-lunch` and `meal-steak-fries`. Frank said the legacy
+animals looked “VERY cartoon like” and required full redrafts rather than
+style rerenders, then supplied a ligne-claire horse reference. The animal V1s
+therefore constrain only species, count, orientation and indispensable story
+meaning; anatomy, stance, proportions, face, contour and internal construction
+are redrawn from observation. The meals remain exact composition-preserving
+translations. All seven candidates remain unregistered; the catalogue stays
+at 305 pictures / 374 versions and every V1 remains selectable.
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A
