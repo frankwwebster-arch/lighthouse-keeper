@@ -74,7 +74,8 @@ the studio's “Only pictures not yet in ligne claire” filter shows them.
 stories pick them up once Claude adds them):
 - Objects: a tea bag (`tea-bag`), the finished cake (`baking-cake`), a plain
   wooden plank (`repair-plank`), a ploughman's lunch on a plate
-  (`meal-ploughmans`), a single paintbrush (`art-paintbrush`), a clothes
+  (`meal-ploughmans`), a clean, plain dinner plate with no food and no suds
+  (`kitchen-plate`; `washing-plate` is the one being washed up), a single paintbrush (`art-paintbrush`), a clothes
   iron (`laundry-iron`), a little dust pile (`cleaning-dust-pile`).
 - Marks for the new actions (kind `mark`; the engine uses each the moment it
   exists): `symbol-sawdust`, `symbol-seasoning-flecks`, `symbol-spray-mist`,
