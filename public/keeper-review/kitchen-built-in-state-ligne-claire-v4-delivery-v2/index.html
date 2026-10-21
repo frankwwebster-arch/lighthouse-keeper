@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kitchen Built-In State Ligne-Claire V4 · Delivery V2</title>
+  <style>
+    :root{--ink:#051824;--paper:#fff9e8;--cream:#f6e5b7;--blue:#235b85;--amber:#e0a229;--red:#d2523b;--green:#2d765b}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.45 system-ui,sans-serif}header,main{max-width:1280px;margin:auto;padding:24px}header{border-bottom:4px solid var(--ink)}.status{display:inline-block;padding:7px 12px;border:2px solid var(--ink);background:var(--amber);font-weight:800;border-radius:999px}.ready .status{background:#b9d695}.warning{border-left:6px solid var(--red);padding-left:14px}.delivery{border-left:6px solid var(--green);padding-left:14px}article{position:relative;margin:22px 0;padding:15px;background:var(--paper);border:2px solid var(--ink);box-shadow:5px 5px 0 var(--blue)}article::before{content:"Loading verified evidence…";display:block;padding:12px;font-weight:800}.ready article::before{display:none}img{display:block;width:100%;height:auto;opacity:.04;image-rendering:auto}.ready img{opacity:1}a{color:#174562}code{font-size:.85em}#failure{display:none;padding:14px;border:3px solid var(--red);background:#fff;color:#781f19;font-weight:800}.failed #failure{display:block}.failed article::before{content:"Evidence failed to load"}
+  </style>
+</head>
+<body>
+  <header>
+    <span class="status" id="status">VERIFYING STATIC EVIDENCE</span>
+    <h1>Kitchen Built-In State Ligne-Claire V4</h1>
+    <p class="warning">STATIC REVIEW · NOT CURRENT. V3 fitted cabinetry is approved and immutable. V4 changes only oven and dishwasher On/Broken RGB drawing language. No candidate is registered or wired.</p>
+    <p class="delivery">Delivery V2 serves the exact immutable V4 evidence bytes through this site. It removes the external image redirect that the review surface could not display; no artwork, geometry or behaviour changed.</p>
+    <p>The sheets cover every appliance state, all eight dishwasher edge-healing variants, both 40-frame broken-oven strips and four exact-datum room arrangements. The sink remains fixed at its existing asset coordinates and declared room datum <code>(slot x − 4, 104)</code>.</p>
+    <p>All effects, timing, movement locks, repair unlocks, anchors, collisions and healing rules remain hash-pinned and byte-identical.</p>
+    <p id="failure">One or more evidence images could not be decoded. Reload this page; if the message remains, report it rather than approving the candidate.</p>
+  </header>
+  <main>
+    <article><a href="assets/evidence--on-broken-healing-current-vs-candidate.png"><h2>Complete On/Broken room proof</h2><img src="assets/evidence--on-broken-healing-current-vs-candidate.png" alt="Complete On/Broken room proof" decoding="async"></a></article>
+    <article><a href="assets/evidence--oven-on-broken-current-vs-candidate.png"><h2>Oven state contact sheet</h2><img src="assets/evidence--oven-on-broken-current-vs-candidate.png" alt="Oven state contact sheet" decoding="async"></a></article>
+    <article><a href="assets/evidence--dishwasher-on-broken-current-vs-candidate.png"><h2>Dishwasher state and edge-variant contact sheet</h2><img src="assets/evidence--dishwasher-on-broken-current-vs-candidate.png" alt="Dishwasher state and edge-variant contact sheet" decoding="async"></a></article>
+    <article><a href="assets/evidence--oven-broken-animation-sampler-current-vs-candidate.png"><h2>Broken-oven animation sampler</h2><img src="assets/evidence--oven-broken-animation-sampler-current-vs-candidate.png" alt="Broken-oven animation sampler" decoding="async"></a></article>
+  </main>
+  <script>
+    const images=[...document.images]
+    Promise.all(images.map(image=>image.decode())).then(()=>{
+      document.body.classList.add('ready')
+      document.querySelector('#status').textContent=`STATIC EVIDENCE READY · ${images.length}/${images.length} VERIFIED`
+    }).catch(()=>{
+      document.body.classList.add('failed')
+      document.querySelector('#status').textContent='EVIDENCE LOAD FAILED'
+    })
+  </script>
+</body>
+</html>

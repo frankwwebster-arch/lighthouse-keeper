@@ -15,6 +15,12 @@ deployment payload.
 - `/keeper-review/<set>/assets/<name>` and `/keeper-review/drafts/<name>` return
   short-lived temporary redirects to the declared external object URL. The
   route stays replaceable if the external host changes.
+- A review surface that cannot render the external redirect may receive a fresh
+  versioned page and asset prefix on a narrowly allow-listed same-origin path.
+  That route must fetch the declared object, verify both byte length and
+  SHA-256, fail closed on mismatch, and return the verified media bytes without
+  changing or reusing the original immutable page. Kitchen Built-In State V4
+  Delivery V2 is the first such correction.
 - `public/keeper-review` contains HTML, JavaScript and JSON smaller than 24 KiB.
   PNG, GIF, JPEG, WebP and AVIF review media is always archived; JSON and
   JSON.GZ at or above 24 KiB is archived as review data. Historical URLs for
@@ -72,8 +78,8 @@ objects or hashes. Never reuse an existing review directory for a new proposal.
 - historical sprite/reviewer verifiers still read the exact archived bytes;
 - known routes resolve and unknown archive paths fail closed.
 
-As verified on 21 October 2026, 4,562 legacy paths across 189 sets resolve to
-2,742 unique objects. They represent 339.19 MiB of logical review evidence;
-the retained unique store is 188.61 MiB. The clean-checkout `public/` payload
-is 44.9008 MiB: 5.0992 MiB below the unchanged 50 MiB guard. Runtime
+As verified on 21 October 2026, 4,747 legacy paths across 196 sets resolve to
+2,900 unique objects. They represent 358.54 MiB of logical review evidence;
+the retained unique store is 205.03 MiB. The clean-checkout `public/` payload
+is 45.03 MiB: 4.97 MiB below the unchanged 50 MiB guard. Runtime
 `public/sprites` is 36.9977 MiB and remains deliberately untouched.

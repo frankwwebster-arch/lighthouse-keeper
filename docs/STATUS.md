@@ -498,7 +498,7 @@ V3 remains unpromoted and unwired with immediate directory-only rollback. Delive
 `docs/KITCHEN_FITTED_CABINET_LIGNE_CLAIRE_V3_2026-10-21.md`.
 
 Kitchen Built-In State Ligne-Claire V4 at
-`/keeper-review/kitchen-built-in-state-ligne-claire-v4/` extends the approved
+`/keeper-review/kitchen-built-in-state-ligne-claire-v4-delivery-v2/` extends the approved
 V3 treatment to oven and dishwasher On/Broken states only. Its seventeen
 exact-alpha candidates include all eight dishwasher state/edge variants and
 both complete 40-frame broken-oven light strips. Approved V3 fridge, sink,
@@ -507,7 +507,12 @@ existing canvas coordinates and room datum. All separate effects, timing,
 movement locks, repair unlocks, ownership and 720-layout healing contracts are
 unchanged. Static comparisons are the primary review surface. V4 is reversible,
 unapproved, unregistered, unpromoted and unwired. Delivery:
-`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_2026-10-21.md`.
+`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_2026-10-21.md`. The original V4
+page is immutable but its external archive redirects did not display in the
+review surface. Delivery V2 uses a new page and asset prefix to return the exact
+same four evidence objects through SHA-256-verified same-origin responses. It
+changes no artwork or behavior. Correction:
+`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V2_2026-10-21.md`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

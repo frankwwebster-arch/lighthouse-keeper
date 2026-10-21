@@ -1,6 +1,6 @@
 import archiveIndex from '../../review-archive/index.json'
 
-type ArchiveEntry = {
+export type ArchiveEntry = {
   sha256: string
   extension: string
   bytes: number
