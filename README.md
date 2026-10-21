@@ -743,8 +743,8 @@ the immutable decision is recorded in
 V3 is the current approved fitted-family visual authority, remains fully
 reversible, and is still unpromoted and unwired. See
 [`docs/KITCHEN_FITTED_CABINET_LIGNE_CLAIRE_V3_2026-10-21.md`](docs/KITCHEN_FITTED_CABINET_LIGNE_CLAIRE_V3_2026-10-21.md).
-Kitchen Built-In State Ligne-Claire V4 extends that exact approved family to
-the oven and dishwasher On/Broken state assets. Its corrected review URL is
+Kitchen Built-In State Ligne-Claire V4 attempted to extend that exact approved
+family to the oven and dishwasher On/Broken state assets. Its corrected review URL is
 `/keeper-review/kitchen-built-in-state-ligne-claire-v4-delivery-v3/`. It contains seventeen
 new exact-alpha candidates: oven On, Broken, three Broken lighting combinations,
 both complete 40-frame Broken lighting strips, dishwasher On/Broken bases and
@@ -752,8 +752,11 @@ all eight On/Broken edge-healing variants. V3 fridge, sink, cabinet and healing
 files are reused byte-for-byte; the sink is fixed to its existing canvas and
 room datum. Separate drip, water and suds effects, 4 fps timing, Broken movement
 locks, repair unlocks, effect ownership and all V41 healing behavior remain
-unchanged and hash-pinned. V4 is a reversible static review candidate and is
-not approved, registered, promoted or wired. The original immutable page remains
+unchanged and hash-pinned. Frank rejected V4 on 21 October 2026: direct
+low-resolution RGB remapping destroyed sharpness, amplified pixel
+stair-stepping and turned dishwasher fascia tones into incorrect turquoise
+blocks. V4 remains immutable provenance and was never approved, registered,
+promoted or wired. The original immutable page remains
 at `/keeper-review/kitchen-built-in-state-ligne-claire-v4/`, but its external
 image redirects did not render in the review surface. Delivery V2 introduced
 same-origin responses but its relative image paths failed after Vercel removed
@@ -761,10 +764,24 @@ the trailing slash; it remains immutable failed-delivery provenance. Delivery
 V3 uses root-absolute paths and reuses the exact four V4 evidence objects through
 SHA-256-verified same-origin responses. It changes no art or behavior. See
 [`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_2026-10-21.md`](docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_2026-10-21.md)
-and
+and the pinned
+[`docs/review/kitchen-built-in-state-ligne-claire-v4-rejection-2026-10-21.json`](docs/review/kitchen-built-in-state-ligne-claire-v4-rejection-2026-10-21.json).
+Delivery history:
 [`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V2_2026-10-21.md`](docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V2_2026-10-21.md).
 The successful correction is
 [`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V3_2026-10-21.md`](docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V3_2026-10-21.md).
+Kitchen Built-In State Ligne-Claire V6 is the new sharp-redraw review candidate
+at `/keeper-review/kitchen-built-in-state-ligne-claire-v6/`. It replaces V4's
+low-resolution colour remap with genuinely authored 8× masters, one controlled
+native registration and the exact matching source alpha. Its 17 files cover
+oven On/Broken lighting states and strips plus every dishwasher On/Broken
+healing edge. Approved V3 fridge, sink, cabinets and healing layers are reused
+byte-for-byte; sink placement, 4 fps timing, movement locks, repair unlocks,
+effects, interactions and all 720 healing layouts remain unchanged and
+hash-pinned. The review uses root-absolute same-origin media paths and blocks
+its ready state until all four evidence images decode. V6 is immutable,
+reversible, unapproved, unregistered, unpromoted and unwired. See
+[`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V6_2026-10-21.md`](docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V6_2026-10-21.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
