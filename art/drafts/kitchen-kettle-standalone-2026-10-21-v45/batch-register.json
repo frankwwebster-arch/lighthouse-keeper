@@ -1,0 +1,114 @@
+{
+  "schema": "lighthouse-keeper/reversible-review-batch@1",
+  "set": "kitchen-kettle-standalone-v45",
+  "status": "reversible-unapproved-unpromoted",
+  "candidate": {
+    "catalogue": {
+      "file": "art/drafts/kitchen-kettle-standalone-2026-10-21-v45/candidate-catalogue.json",
+      "sha256": "2a5640c41fa72d685fadbf265a9657d8c4e1c49f974591bebbdc0123a6e1099d"
+    },
+    "publicShell": {
+      "file": "public/keeper-review/kitchen-kettle-standalone-v45/index.html",
+      "sha256": "90d7c298067c336312bb2d60b49c7d67a76829d74f07d36013910ed0aebaa4df"
+    }
+  },
+  "sources": [
+    {
+      "file": "art/drafts/kitchen-dishwasher-workbench-2026-10-20-v41/candidate-catalogue.json",
+      "sha256": "79d5a2780390ef2eea411f358ba3ed8746fb424fe432db7492c93c4e69c4ac13"
+    },
+    {
+      "file": "art/source/kitchen-kettle-standalone-2026-10-20-v43/generated/kettle-state-family-source.png",
+      "sha256": "036961f1e3728c88a6008faf63328469cdd376ea1c7aae3988def6d1ced4bc7a"
+    },
+    {
+      "file": "art/source/kitchen-kettle-standalone-2026-10-20-v43/generated/kettle-broken-source.png",
+      "sha256": "4d9252bd4d5abd38e6b5b9ff4bcc24b3ef84bf7e4b2df1b231897fed4b271d08"
+    },
+    {
+      "file": "art/source/kitchen-kettle-standalone-2026-10-20-v43/generated/kettle-steam-keyframes-source.png",
+      "sha256": "00d9c413a70044acd5738d8f5508c5a61011bd735b94a5d713b2a9fc1c36de67"
+    },
+    {
+      "file": "art/source/kitchen-kettle-standalone-2026-10-20-v43/generated/generation-provenance.json",
+      "sha256": "473ecb831b3df829d5ad1d5559dc122c109eeecaab05be667a975dadba26c902"
+    }
+  ],
+  "publishedAssets": [
+    {
+      "source": "art/raw/kitchen-kettle-standalone-2026-10-21-v45/approved-kitchen-counter-room.png",
+      "sourceSha256": "b5f53fa0578135a0c239e556e4229836321c7accdd12e0cf3d788292084e181e",
+      "publicAssemblyPath": "public/keeper-review/kitchen-kettle-standalone-v45/assets/approved-kitchen-counter-room.png"
+    },
+    {
+      "source": "art/raw/kitchen-kettle-standalone-2026-10-21-v45/approved-counter-bay.png",
+      "sourceSha256": "016968bcf538ffe7d29b95bfdc84d1952199e40ad565b11bdb1e2e081a45e47e",
+      "publicAssemblyPath": "public/keeper-review/kitchen-kettle-standalone-v45/assets/approved-counter-bay.png"
+    },
+    {
+      "source": "art/raw/kitchen-kettle-standalone-2026-10-21-v45/kettle-off.png",
+      "sourceSha256": "87136f11fae158ab120edd9d5396d34f37548dde9f0f965ba6823b2bdcc1ac20",
+      "publicAssemblyPath": "public/keeper-review/kitchen-kettle-standalone-v45/assets/kettle-off.png"
+    },
+    {
+      "source": "art/raw/kitchen-kettle-standalone-2026-10-21-v45/kettle-on.png",
+      "sourceSha256": "87136f11fae158ab120edd9d5396d34f37548dde9f0f965ba6823b2bdcc1ac20",
+      "publicAssemblyPath": "public/keeper-review/kitchen-kettle-standalone-v45/assets/kettle-on.png"
+    },
+    {
+      "source": "art/raw/kitchen-kettle-standalone-2026-10-21-v45/kettle-broken.png",
+      "sourceSha256": "93fa724e35d2417822df38b2a591c4218b55827d54772f300b8b31fbdedfc20b",
+      "publicAssemblyPath": "public/keeper-review/kitchen-kettle-standalone-v45/assets/kettle-broken.png"
+    },
+    {
+      "source": "art/raw/kitchen-kettle-standalone-2026-10-21-v45/fx-kettle-on-steam--compact-f40.png",
+      "sourceSha256": "a247d8d8dba67cffe2802fee6c75fc47f9bd7e74bee9c4949d564aa979a38c9f",
+      "publicAssemblyPath": "public/keeper-review/kitchen-kettle-standalone-v45/assets/fx-kettle-on-steam--compact-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-kettle-standalone-2026-10-21-v45/fx-kettle-on-steam--regular-f40.png",
+      "sourceSha256": "826187699a458b953955b8ad989f73337b101a6a9bb59c3aa4331751afd7346c",
+      "publicAssemblyPath": "public/keeper-review/kitchen-kettle-standalone-v45/assets/fx-kettle-on-steam--regular-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-kettle-standalone-2026-10-21-v45/fx-kettle-on-steam--emphatic-f40.png",
+      "sourceSha256": "3c27522b47fce3ee86373a45a0fbe35c136168f54f0f36e574cf670c12e2aa85",
+      "publicAssemblyPath": "public/keeper-review/kitchen-kettle-standalone-v45/assets/fx-kettle-on-steam--emphatic-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-kettle-standalone-2026-10-21-v45/fx-kettle-broken-steam--compact-f40.png",
+      "sourceSha256": "7e89ebc3caa45275941d8c348816b36b33715fbc6a7493099c202a8b52af9422",
+      "publicAssemblyPath": "public/keeper-review/kitchen-kettle-standalone-v45/assets/fx-kettle-broken-steam--compact-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-kettle-standalone-2026-10-21-v45/fx-kettle-broken-steam--regular-f40.png",
+      "sourceSha256": "0c7c1b9c65fadda2379afbf95e0e310942540bea88fb97f44b88c8c0322ba101",
+      "publicAssemblyPath": "public/keeper-review/kitchen-kettle-standalone-v45/assets/fx-kettle-broken-steam--regular-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-kettle-standalone-2026-10-21-v45/fx-kettle-broken-steam--emphatic-f40.png",
+      "sourceSha256": "648a575474526183f000d75798604f67a3afa024d599ef5e7b17bd6fa723f31d",
+      "publicAssemblyPath": "public/keeper-review/kitchen-kettle-standalone-v45/assets/fx-kettle-broken-steam--emphatic-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-kettle-standalone-2026-10-21-v45/kettle-off-retina-room.png",
+      "sourceSha256": "df0db95683004b7f6ffac9f61d19c72b237734f7bb5f8612a17e5ffeec8903c8",
+      "publicAssemblyPath": "public/keeper-review/kitchen-kettle-standalone-v45/assets/kettle-off-retina-room.png"
+    },
+    {
+      "source": "art/raw/kitchen-kettle-standalone-2026-10-21-v45/kettle-on-retina-room.png",
+      "sourceSha256": "268ec25b42acde69e00f37d340f48e66b473a6e8ab43e60ef01bb4465d60295d",
+      "publicAssemblyPath": "public/keeper-review/kitchen-kettle-standalone-v45/assets/kettle-on-retina-room.png"
+    },
+    {
+      "source": "art/raw/kitchen-kettle-standalone-2026-10-21-v45/kettle-broken-retina-room.png",
+      "sourceSha256": "0032ca5195efea5fbe50b5183d473117021205a69fa5189d16b35972dd543b02",
+      "publicAssemblyPath": "public/keeper-review/kitchen-kettle-standalone-v45/assets/kettle-broken-retina-room.png"
+    },
+    {
+      "source": "art/raw/kitchen-kettle-standalone-2026-10-21-v45/kettle-off-fridge-retina-room.png",
+      "sourceSha256": "25874667711a64c799fced5cfa8a743196139f285e9051da7d21e505e9490a50",
+      "publicAssemblyPath": "public/keeper-review/kitchen-kettle-standalone-v45/assets/kettle-off-fridge-retina-room.png"
+    }
+  ]
+}

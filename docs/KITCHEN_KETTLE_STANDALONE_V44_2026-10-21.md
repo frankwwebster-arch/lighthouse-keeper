@@ -2,8 +2,7 @@
 
 Date: 21 October 2026
 
-Status: reversible visual/behaviour review draft; unapproved, unpromoted and
-unwired.
+Status: rejected visual draft; immutable, unpromoted and unwired.
 
 Review: `/keeper-review/kitchen-kettle-standalone-v44/`
 
@@ -13,6 +12,12 @@ sprite; the reduction lost the enamel finish and made the review page look
 materially worse than its source. V44 makes the distinction explicit. It shows
 the full-quality concept as review reference and uses an existing
 kitchen-native kettle drawing for production without resizing it.
+
+Frank rejected V44 on 21 October 2026 because its production redraw looked
+poor beside the concept references. Its scale and seating evidence remains
+useful, but it is not a visual authority. V45 promotes the preferred concept
+pixels themselves to high-resolution production masters while keeping logical
+counter scale independent of raster resolution.
 
 ## Production scale and placement
 

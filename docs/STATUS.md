@@ -1,4 +1,4 @@
-# Lighthouse Keeper: status write-up (20 Oct 2026)
+# Lighthouse Keeper: status write-up (21 Oct 2026)
 
 ## What it is
 A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthouse; kids type commands (typo-tolerant, curated, no live AI) or click objects (Sims-style menus, auto-zoom camera). Needs and mood, credits, phone, bedtime, multi-day play, a day report, quiz pop-ins, time-aware chat, cheeky humour.
@@ -389,22 +389,23 @@ runtime integration. The exact approval is pinned in
 remains unpromoted, and V40 art, approved cabinetry and Final assets are
 unchanged.
 
-Kitchen Kettle Standalone V42 and V43 are preserved but rejected. V42 was too
-small and floated at y134. V43 seated correctly at y140, but its 44-pixel
-downsample lost the finish of the polished source and looked poor on the review
-page. Kitchen Kettle Standalone V44 at
-`/keeper-review/kitchen-kettle-standalone-v44/` is the active reversible gate.
-It separates full-quality concept reference from actual production art and
-uses the retained kitchen-native turquoise enamel kettle at its exact authored
-`48 × 34 px` size, without resizing. Off and On are byte-identical. Broken
-splits and displaces the handle, leaves a detached shard, displaces the lid,
-breaks the spout and opens a jagged metal cavity; its stronger base-pinned
-eight-frame rattle is accompanied by separate kettle-owned steam, sparks and
-debris pulses. The fridge, both cabinets and dishwasher remain valid support
-surfaces, each deriving Prime's dynamic `make-cup-of-tea` stop from the bay
-midpoint. Broken locks itself and its current support until repaired. V44 is
-unapproved, unpromoted and unwired. Dishwasher V41, cabinetry, V42/V43, Final
-and runtime remain unchanged. Toaster and mixing-bowl work has not started.
+Kitchen Kettle Standalone V42–V44 are preserved but rejected. V42 was too
+small and floated at y134. V43 seated correctly but crushed its polished
+concept into a muddy 44-pixel sprite. V44 fixed the delivery and scale but its
+tiny replacement redraw looked poor beside the concept references. Kitchen
+Kettle Standalone V45 at `/keeper-review/kitchen-kettle-standalone-v45/` is the
+active reversible gate. It promotes the preferred concept pixels themselves:
+the intact 588 × 540 and severely Broken 976 × 928 components become the
+actual production masters without repainting or source resize. Separate
+logical metadata renders them at 56 × 51 and 62 × 59 pixels inside one
+84-pixel/60 cm bay; the room uses a 2× backing. Off and On are byte-identical.
+Broken has the torn handle, open lid, displaced spout cap, crushed panel and
+jagged metal rupture of the strong concept plus a support-pinned ±4.1° rattle,
+steam, sparks and debris. The fridge, both cabinets and dishwasher remain
+valid support surfaces with dynamic `make-cup-of-tea` stops. Broken locks
+itself and its current support until repaired. V45 is unapproved, unpromoted
+and unwired. Dishwasher V41, cabinetry, V42–V44, Final and runtime remain
+unchanged. Toaster and mixing-bowl work has not started.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
