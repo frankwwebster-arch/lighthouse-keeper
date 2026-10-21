@@ -28,7 +28,7 @@ Read `data/activity-stories/README.md`. In short:
 
 - `data/activity-stories/pictures.json` is the picture library. It began with
   33 pictures (V2's 20 objects and 6 symbols, plus the 7 V7 symbols). As of
-  21 October it exposes 305 pictures and 333 immutable versions: all 298 review-ready isolated source
+  21 October it exposes 305 pictures and 338 immutable versions: all 298 review-ready isolated source
   components from Activity Cloud Composer V1–V7, rear-work activity-callout
   V2/V3 and every component-bearing Claude or Codex picture pack (including
   the bedroom pack and Codex's 54-picture family expansion), plus the original inherited marks. It references immutable pack files
@@ -44,10 +44,10 @@ unchanged. Frank subsequently approved the seven remaining `bbq` food and
 seven remaining `bbq-tools` translations; those 14 V2 versions are current and
 every V1 predecessor remains byte-identical and selectable. Continue the action imagery from
 `docs/CODEX_PROMPT_BUBBLE_STORIES_LIGNE_CLAIRE_ACTION_IMAGERY_2026-10-21.md`.
-The next five-picture sandwich set is prepared at
-`art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/` but remains
-an unapproved contact-sheet gate: do not register its proposed V2 versions or
-alter the sandwich story before Frank's verdict.
+Frank also approved the next five-picture sandwich set at
+`art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/`; its five V2
+versions are current while every V1 predecessor remains byte-identical and
+selectable. No sandwich story or runtime file changed.
 Preserve
 each current picture's depicted content and composition while changing only
 the art language. Claude owns the proposed opaque activity-panel shell and

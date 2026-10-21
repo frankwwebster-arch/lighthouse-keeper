@@ -11,7 +11,7 @@ versions remain selectable and byte-identical for undo.
 **Complete-catalogue update (21 October 2026):** the library now exposes all
 298 review-ready isolated source components from Activity Cloud Composer
 V1–V7, Prime rear-work activity-callout V2/V3 and every component-bearing
-Claude or Codex picture pack. The Studio therefore has 305 pictures and 333
+Claude or Codex picture pack. The Studio therefore has 305 pictures and 338
 immutable versions, including
 every V5 album homage, the complete aquarium and bedroom sets, and 54 new
 fishing, gardening, pet-play, fixing, pub, art and inventing pictures. Run
@@ -45,14 +45,15 @@ to 305 pictures and 333 immutable versions. Every V1 predecessor remains
 selectable and byte-identical; no story definition or activity-story runtime
 file changed.
 
-**Sandwich family review gate (21 October 2026):** the next immutable pack is
-`art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/`. It proposes
+**Sandwich family approval (21 October 2026):** Frank approved the immutable pack at
+`art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/`. It provides
 V2 translations for the four `sandwich` ingredients and the shared
 `cooking-sandwich` result, with exact current-content preservation, prompt and
 rejection provenance, deterministic 256 px normalization, pinned hashes and a
-five-column light/dark/64 px contact sheet. It is unapproved and unregistered:
-the library remains at 305 pictures and 333 versions, all five current
-selectors remain V1, and no story or `src/activityStories/` file changed.
+five-column light/dark/64 px contact sheet. All five are registered as current
+V2 versions, taking the library to 305 pictures and 338 versions. Every V1
+predecessor remains selectable and byte-identical; no story definition or
+`src/activityStories/` file changed.
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A

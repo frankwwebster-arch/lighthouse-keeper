@@ -2,7 +2,7 @@
 
 **Decision date:** 21 October 2026
 
-**Status:** active; BBQ packs approved; sandwich family at review gate; action-imagery programme only
+**Status:** active; BBQ and sandwich packs approved; action-imagery programme only
 
 Frank approved the six-picture BBQ pilot with “agreed, these are superb”. This
 prompt turns that approval into a controlled conversion programme for Bubble
@@ -12,18 +12,17 @@ not authorise the more ambitious whole-game art-direction change.
 **Progress (21 October 2026):** Frank also approved the seven-picture `bbq`
 food and seven-picture `bbq-tools` continuation sheets. Their 14 components are
 registered as current V2 versions from their immutable packs; all V1 versions
-remain byte-identical and selectable. The library now contains 305 pictures and
-333 versions. Continue with a new family pack rather than rebuilding either
-approved BBQ pack.
+remain byte-identical and selectable. At that gate the library contained 305
+pictures and 333 versions.
 
-**Next family gate (21 October 2026):** the five-picture sandwich semantic set
-is prepared at
+**Second family approval (21 October 2026):** Frank approved the five-picture
+sandwich semantic set at
 `art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/`. It covers
 `sandwich-bread`, `sandwich-ham`, `sandwich-lettuce`, `sandwich-tomato` and the
-shared result `cooking-sandwich`. Its V2 candidates are unapproved and are not
-registered; all five current selectors remain on byte-identical V1 versions.
-Stop for Frank's verdict on that exact contact sheet before registration or
-starting another family.
+shared result `cooking-sandwich`. Its five components are registered as current
+V2 versions; all five V1 versions remain byte-identical and selectable. The
+library now contains 305 pictures and 338 immutable versions. Continue with a
+new family pack rather than rebuilding an approved family.
 
 ## Ready-to-paste prompt
 
@@ -46,9 +45,8 @@ command-line picture tool before drawing.
 Objective
 - Translate the Bubble stories picture library into the original
   ligne-claire-inspired language approved in the six-picture BBQ pilot.
-- Work in small, immutable, reviewable family batches. The BBQ and BBQ-tools
-  families are complete; review the pending sandwich gate before selecting the
-  next family.
+- Work in small, immutable, reviewable family batches. The BBQ, BBQ-tools and
+  sandwich families are complete; select a new family for the next gate.
 - The programme covers action objects, ingredients, tools, pictorial states,
   activity marks, emotions and independent comic reaction punctuation used by
   Bubble stories.

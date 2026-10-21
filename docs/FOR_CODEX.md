@@ -16,7 +16,7 @@ new current V1 `clean` mark. The immutable authoring pack is
 list exposes all four while retaining the earlier versions for undo.
 
 The picture-library completeness correction is also finished (21 October
-2026). `pictures.json` now has 305 selectable pictures and 333 immutable
+2026). `pictures.json` now has 305 selectable pictures and 338 immutable
 versions and includes all 298
 review-ready isolated source components from Activity Cloud Composer V1–V7,
 the rear-work V2/V3 callout vocabulary and every component-bearing Claude or
@@ -47,18 +47,19 @@ seven unconverted `bbq` pictures and
 seven unconverted `bbq-tools` pictures. Both have five-column prior/current,
 light, dark and 64 px contact sheets plus deterministic verification through
 `scripts/build_activity_story_ligne_claire_bbq_family_2026_10_21_v1.py`.
-All 14 candidates are registered as current V2 versions. The library now has
-305 pictures and 333 immutable versions; every V1 predecessor remains
+All 14 candidates are registered as current V2 versions. At that gate the
+library reached 305 pictures and 333 immutable versions; every V1 predecessor remains
 byte-identical and selectable. The registration changed no story definition or
 file under `src/activityStories/`.
 
-The next gate is the complete five-picture sandwich semantic set at
+Frank approved the complete five-picture sandwich semantic set at
 `art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/`: four
 `sandwich` ingredients plus `cooking-sandwich`. Its five-column contact sheet,
 sources, rejected attempts, prompt log, fixed-palette components and verifier
-are complete. It is unapproved and unregistered, so all five library selectors
-remain on V1 and the library totals remain 305 pictures / 333 versions. Stop
-for Frank's verdict before registration or another family.
+are complete. All five candidates are registered as current V2 versions, while
+every V1 remains byte-identical and selectable. The library now totals 305
+pictures / 338 versions. Continue with a new family rather than rebuilding an
+approved pack.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 

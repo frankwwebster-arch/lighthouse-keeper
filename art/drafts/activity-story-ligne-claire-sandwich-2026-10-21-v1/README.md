@@ -1,10 +1,11 @@
 # Bubble stories ligne-claire sandwich family V1
 
-This immutable, reversible review pack translates the complete five-picture
+This immutable, reversible pack translates the complete five-picture
 sandwich story set into the approved ligne-claire language. It contains the
 four `sandwich` ingredients and the existing `cooking-sandwich` result used by
-the same story. The pack is **unapproved**: all five library pictures remain on
-their byte-identical V1 versions, and no story or runtime file has changed.
+the same story. Frank approved the exact contact sheet on 21 October 2026 with
+“approved”. All five candidates are registered as current V2 versions, while
+their byte-identical V1 versions remain selectable for rollback.
 
 | Picture | Preserved content | Proposed version |
 | --- | --- | --- |
@@ -33,9 +34,10 @@ Build and verify with:
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_activity_story_ligne_claire_sandwich_2026_10_21_v1.py --verify
 ```
 
-Stop at the contact-sheet gate. If Frank approves this exact sheet, add each
-component as a new immutable V2 with the activity-story picture tool. Until
-then, rejection remains reversible by discarding only this directory.
+`data/activity-stories/pictures.json` references each component in place from
+this pack. Registration added one immutable V2 per id and changed only the
+library's current selectors. Roll back by selecting V1; do not overwrite or
+remove either version.
 
 The built-in image generator supplied one transparent source at a time. The
 builder then performed deterministic fixed-palette normalisation; it did not

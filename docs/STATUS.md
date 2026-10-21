@@ -35,7 +35,7 @@ and ordered in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`. `npm test` rejects new
 or regressed endpoint failures against that frozen migration boundary.
 
 The Bubble stories Studio has a complete shared picture catalogue: 305
-selectable pictures and 333 immutable versions grouped by activity. This includes every review-ready
+selectable pictures and 338 immutable versions grouped by activity. This includes every review-ready
 isolated source component from Activity Cloud Composer V1–V7, the rear-work
 V2/V3 callout packs and every component-bearing Claude or Codex picture pack,
 including all V5 album homages, the complete aquarium and bedroom sets, and 54
@@ -57,18 +57,19 @@ isolated into two immutable V1 packs with fixed-palette 256 × 256 RGBA
 components, pinned prior hashes, prompt/rejection records, deterministic
 verification and light/dark/64 px contact sheets. All 14 are registered as
 current V2 versions; their V1 predecessors remain byte-identical and
-selectable. The shared library therefore has 305 pictures and 333 versions.
+selectable. At the BBQ gate the shared library therefore had 305 pictures and
+333 versions.
 No story, `src/activityStories/` file, production/runtime art or deployment
 changed.
 
-The next action-imagery gate is the five-picture sandwich semantic set at
+Frank approved the next five-picture sandwich semantic set at
 `art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/`. It proposes
 V2 drawings for bread, ham, lettuce, tomato and the finished sandwich, with
 pinned V1 references, exact prompt/rejection provenance, deterministic
-fixed-palette normalization and light/dark/64 px evidence. It is unapproved
-and unregistered: all five current selectors remain on V1, the catalogue
-remains 305 pictures / 333 versions, and no story, activity-story runtime,
-production art or deployment changed.
+fixed-palette normalization and light/dark/64 px evidence. All five candidates
+are registered as current V2 versions, while every V1 remains byte-identical
+and selectable. The catalogue now has 305 pictures / 338 versions; no story,
+activity-story runtime, production art or deployment changed.
 
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 

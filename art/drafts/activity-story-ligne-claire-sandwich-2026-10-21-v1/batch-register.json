@@ -1,7 +1,7 @@
 {
   "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
   "set": "activity-story-ligne-claire-sandwich-2026-10-21-v1",
-  "status": "review-candidate-unapproved",
+  "status": "approved-and-registered",
   "created": "2026-10-21",
   "tool": "built-in image generation plus deterministic fixed-palette normalisation",
   "families": [
@@ -16,9 +16,9 @@
     "sandwich-bread": {
       "family": "sandwich",
       "label": "Bread",
-      "intent": "unapproved-proposed-new-version-v2",
+      "intent": "approved-new-version-v2",
       "priorLibraryVersion": 1,
-      "currentLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "exactly two overlapping square white-bread slices, with the front-left slice above the rear-right slice in the current low front three-quarter arrangement",
       "currentReferenceFile": "review-archive/objects/11/11313cc6d0839d313ecb96ef4136e372904fe848de862034a2234637ecabb8c8.png",
@@ -74,9 +74,9 @@
     "sandwich-ham": {
       "family": "sandwich",
       "label": "Ham",
-      "intent": "unapproved-proposed-new-version-v2",
+      "intent": "approved-new-version-v2",
       "priorLibraryVersion": 1,
-      "currentLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "exactly two folded pink ham slices, stacked and curling into open ends on both sides in the current broad horizontal silhouette",
       "currentReferenceFile": "review-archive/objects/d3/d3cdba07f6b695e7e9918fde92822aeb3f1d543aafde0b59bd204069641c4fb7.png",
@@ -132,9 +132,9 @@
     "sandwich-lettuce": {
       "family": "sandwich",
       "label": "Lettuce",
-      "intent": "unapproved-proposed-new-version-v2",
+      "intent": "approved-new-version-v2",
       "priorLibraryVersion": 1,
-      "currentLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "exactly three overlapping loose lettuce leaves in the current compact fan, with ruffled edges and pale central ribs",
       "currentReferenceFile": "review-archive/objects/3a/3addb510966c088b52b2d50a5a5e6088231a4e083798a95f8d98573e35b37ef5.png",
@@ -191,9 +191,9 @@
     "sandwich-tomato": {
       "family": "sandwich",
       "label": "Tomato",
-      "intent": "unapproved-proposed-new-version-v2",
+      "intent": "approved-new-version-v2",
       "priorLibraryVersion": 1,
-      "currentLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "exactly one whole tomato behind-left and two overlapping slices in front-right, including the leafy calyx and visible seed chambers",
       "currentReferenceFile": "review-archive/objects/10/10f760734f45b9cf6e2ee7ca815f7c89137cd64854bd71de98b07beaa871e2be.png",
@@ -251,9 +251,9 @@
     "cooking-sandwich": {
       "family": "cooking",
       "label": "Finished sandwich",
-      "intent": "unapproved-proposed-new-version-v2",
+      "intent": "approved-new-version-v2",
       "priorLibraryVersion": 1,
-      "currentLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "exactly two overlapping triangular finished sandwiches in the current lower-left and taller rear-right arrangement, each with bread, lettuce, tomato and ham",
       "currentReferenceFile": "review-archive/objects/b8/b88b28b259ebbf7b4729f54116605009cf120bc9abe9c37dce0a19e4dfe847e4.png",
@@ -350,13 +350,17 @@
     "currentReferenceHashesPinned": true,
     "exactPalettesRecorded": true,
     "contactSheetCoversEveryCandidate": true,
-    "libraryVersionsAdded": false,
+    "libraryVersionsAdded": true,
     "storiesChanged": false,
     "activityStoriesRuntimeChanged": false,
     "approvedAuthorityChanged": false,
     "deployed": false
   },
-  "approval": null,
-  "gate": "Stop at this contact sheet. Register no V2 until Frank explicitly approves this exact pack.",
-  "rollback": "Discard this V1 draft directory; no picture selector, earlier asset, story or runtime file has changed."
+  "approval": {
+    "by": "Frank",
+    "date": "2026-10-21",
+    "words": "approved",
+    "scope": "the exact five-picture sandwich family contact sheet"
+  },
+  "rollback": "Set each picture's current selector back to V1; the approved V2 assets and all earlier bytes remain immutable and selectable."
 }

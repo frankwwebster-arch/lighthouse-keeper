@@ -2542,7 +2542,7 @@
       "kind": "object",
       "family": "cooking",
       "label": "Finished sandwich",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2561,6 +2561,25 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v3",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/cooking-sandwich.png",
+          "sha256": "2f4a3db194f52f6feceefa238952103b00925d7adc3fd9d98cdfa992926af25f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            53,
+            236,
+            203
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-sandwich.png",
+          "by": "codex",
+          "note": "Approved ligne-claire sandwich family V2"
         }
       ]
     },
@@ -7288,7 +7307,7 @@
       "kind": "object",
       "family": "sandwich",
       "label": "Bread",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -7307,6 +7326,25 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v3",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/sandwich-bread.png",
+          "sha256": "c0a8eef145d403444d4643e4655fc512ca85e3eb7d504037ec25f2ef7d93f536",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            57,
+            236,
+            199
+          ],
+          "added": "2026-10-21",
+          "source": "sandwich-bread.png",
+          "by": "codex",
+          "note": "Approved ligne-claire sandwich family V2"
         }
       ]
     },
@@ -7314,7 +7352,7 @@
       "kind": "object",
       "family": "sandwich",
       "label": "Ham",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -7333,6 +7371,25 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v3",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/sandwich-ham.png",
+          "sha256": "07e339a460630b25417b7895441c3f87e7e56106bd490aca47a91664cec1f96f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            64,
+            236,
+            192
+          ],
+          "added": "2026-10-21",
+          "source": "sandwich-ham.png",
+          "by": "codex",
+          "note": "Approved ligne-claire sandwich family V2"
         }
       ]
     },
@@ -7340,7 +7397,7 @@
       "kind": "object",
       "family": "sandwich",
       "label": "Lettuce",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -7359,6 +7416,25 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v3",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/sandwich-lettuce.png",
+          "sha256": "841c497b2dcec51451941c256f5aa729661ffed53c02c432c63202126578738c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            52,
+            236,
+            203
+          ],
+          "added": "2026-10-21",
+          "source": "sandwich-lettuce.png",
+          "by": "codex",
+          "note": "Approved ligne-claire sandwich family V2"
         }
       ]
     },
@@ -7366,7 +7442,7 @@
       "kind": "object",
       "family": "sandwich",
       "label": "Tomato",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -7385,6 +7461,25 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v3",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/sandwich-tomato.png",
+          "sha256": "2b4069b867acf546e0f284d5e8e886522e54c962ebe6df2b21c4c1a4857d0731",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            50,
+            236,
+            206
+          ],
+          "added": "2026-10-21",
+          "source": "sandwich-tomato.png",
+          "by": "codex",
+          "note": "Approved ligne-claire sandwich family V2"
         }
       ]
     },
