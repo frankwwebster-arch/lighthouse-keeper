@@ -1,7 +1,8 @@
 # Kitchen Oven Ligne-Claire V8
 
 Date: 21 October 2026  
-Status: immutable reversible Oven On mapping gate; not registered, promoted or current
+Status: immutable reversible Oven On mapping gate; exact candidate approved as
+the current Oven On visual authority; not promoted or runtime-wired
 
 ## Correction
 
@@ -47,3 +48,13 @@ npm run maintain:keeper-review
 
 Rollback is immediate: discard only the V8 draft, review set, builder and this
 record. V7 and every earlier source/review version remain immutable.
+
+## Approval
+
+Frank approved the corrected V8 mapping with the word “approved” on 21 October
+2026. The external hash-pinned decision is
+`docs/review/kitchen-oven-ligne-claire-v8-approval-2026-10-21.json`. That record
+makes the exact V8 candidate the current Oven On visual authority without
+rewriting this immutable pack, its closed pre-approval register, V41 source art,
+Final assets or runtime selectors. Broken/flicker states and the dishwasher are
+still outside this approval and remain separate future review gates.

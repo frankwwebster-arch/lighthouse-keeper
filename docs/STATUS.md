@@ -541,10 +541,13 @@ authority but its mapping is rejected because byte-exact reuse of the old alpha
 trimmed the new top contour. Kitchen Oven Ligne-Claire V8 at
 `/keeper-review/kitchen-oven-ligne-claire-v8/` retains the authority's own
 complete contour and antialiasing inside the unchanged 92 × 85 canvas and exact
-transparent bounds `(4,4)–(88,81)`. V8 remains an Oven On gate only; Broken
-states and the dishwasher are unpropagated. Registration, promotion, selectors,
-runtime, dimensions, anchors, movement, interaction, repair and healing remain
-unchanged. Delivery: `docs/KITCHEN_OVEN_LIGNE_CLAIRE_V8_2026-10-21.md`.
+transparent bounds `(4,4)–(88,81)`. Frank approved exact V8 on 21 October 2026;
+it is now the current hash-pinned Oven On visual authority. The immutable pack,
+closed pre-approval register and V41 source remain byte-identical. Broken states
+and the dishwasher are unpropagated; Final, runtime, dimensions, anchors,
+movement, interaction, repair and healing remain unchanged. Approval:
+`docs/review/kitchen-oven-ligne-claire-v8-approval-2026-10-21.json`; delivery:
+`docs/KITCHEN_OVEN_LIGNE_CLAIRE_V8_2026-10-21.md`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

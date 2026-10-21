@@ -777,9 +777,14 @@ copying the obsolete source alpha pixel-for-pixel trimmed the new hob contour.
 Kitchen Oven Ligne-Claire V8 is the corrected narrow gate at
 `/keeper-review/kitchen-oven-ligne-claire-v8/`. It keeps the exact authority's
 complete contour inside the unchanged 92 × 85 canvas and exact transparent
-padding bounds `(4,4)–(88,81)`. V8 does not propagate Broken states or touch
-the dishwasher; nothing is registered, promoted, wired or current. The
-root-absolute route decodes both images before declaring readiness. See
+padding bounds `(4,4)–(88,81)`. Frank approved the exact V8 candidate, now the
+current hash-pinned Oven On visual authority. The immutable pack and its closed
+pre-approval register remain unchanged; no source, Final, production or runtime
+file was overwritten. Broken states and the dishwasher remain unpropagated and
+separately gated. The root-absolute route decodes both images before declaring
+readiness. Approval:
+[`docs/review/kitchen-oven-ligne-claire-v8-approval-2026-10-21.json`](docs/review/kitchen-oven-ligne-claire-v8-approval-2026-10-21.json).
+See
 [`docs/KITCHEN_OVEN_LIGNE_CLAIRE_V8_2026-10-21.md`](docs/KITCHEN_OVEN_LIGNE_CLAIRE_V8_2026-10-21.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
