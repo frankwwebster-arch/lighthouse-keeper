@@ -130,6 +130,8 @@ APPROVED_IDS = {
     "repair-tape-measure",
 }
 
+SELECTED_SPIRIT_LEVEL_V2_SHA256 = "c4cfba72a34cc83acffdae234c416d4947be99fa4393a56ec528631fc0246d56"
+
 
 def rel(path: Path) -> str:
     return path.relative_to(ROOT).as_posix()
@@ -269,8 +271,13 @@ def verify() -> None:
                 raise RuntimeError(f"approved V2 is not current: {picture_id}")
             if picture["versions"][1]["sha256"] != entry["sha256"]:
                 raise RuntimeError(f"approved V2 hash drift: {picture_id}")
-        elif picture["current"] != 1 or len(picture["versions"]) != 1:
-            raise RuntimeError(f"rejected spirit-level candidate was registered: {picture_id}")
+        else:
+            if picture["current"] != 2 or len(picture["versions"]) != 2:
+                raise RuntimeError(f"user-selected spirit-level V2 is not current: {picture_id}")
+            if picture["versions"][1]["sha256"] != SELECTED_SPIRIT_LEVEL_V2_SHA256:
+                raise RuntimeError(f"unexpected spirit-level V2: {picture_id}")
+            if picture["versions"][1]["sha256"] == entry["sha256"]:
+                raise RuntimeError(f"rejected first-pack spirit-level candidate was registered: {picture_id}")
         source = Image.open(source_path)
         output = Image.open(output_path)
         if source.mode != "RGBA" or output.mode != "RGBA" or output.size != (CELL, CELL):

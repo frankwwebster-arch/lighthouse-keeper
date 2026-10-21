@@ -1,0 +1,108 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
+  "set": "activity-story-ligne-claire-repair-spirit-level-user-selected-2026-10-21-v1",
+  "status": "approved-current-v2",
+  "created": "2026-10-21",
+  "tool": "built-in image generation plus deterministic fixed-palette normalisation",
+  "family": "repair",
+  "semanticSet": "Frank's selected less-cartoonish repair spirit level",
+  "styleChampions": {
+    "washing-plate": "living hand-drawn shape and controlled minor imperfection",
+    "sandwich-tomato": "flat colour economy and selective readable detail",
+    "repair-toolbox": "construction, detail hierarchy and confident object presence"
+  },
+  "evolvingRecipe": "Observational ligne claire, not cartoon: credible adult-tool proportions, straight technical construction, fine mostly-even contour, flat matte spot colour and only restrained hand-drawn irregularity.",
+  "components": {
+    "repair-spirit-level": {
+      "family": "repair",
+      "label": "Spirit level",
+      "intent": "approved-current-v2",
+      "priorCurrentLibraryVersion": 1,
+      "currentLibraryVersion": 2,
+      "preserves": "one low horizontal teal level with exactly three vial stations: vertical left, horizontal centre and diagonal right",
+      "currentReferenceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-spirit-level.png",
+      "currentReferenceSha256": "97594e40eeef16d383f5f39ac35e55e8b4a40a2fd2e2e735de9ad99b3f5f9998",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-repair-spirit-level-user-selected-2026-10-21-v1/source/repair-spirit-level-source.png",
+      "sourceSha256": "fed10a02beb244715ffd1ea6ff652fc80607900d2c67288ad2135e4c54ec83f0",
+      "sourcePixels": [
+        1983,
+        793
+      ],
+      "originalCacheFile": "exec-92f3522c-4484-48ce-bdb8-77c3cea6388a.png",
+      "flatPalette": [
+        "#051824",
+        "#0d4e75",
+        "#0d7e8c",
+        "#23a2b4",
+        "#494c52",
+        "#c48926",
+        "#e7a638",
+        "#a7c957",
+        "#d9eb4d",
+        "#f6e5b7"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-repair-spirit-level-user-selected-2026-10-21-v1/drafts/components/repair-spirit-level.png",
+      "sha256": "c4cfba72a34cc83acffdae234c416d4947be99fa4393a56ec528631fc0246d56",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        260,
+        282,
+        1732,
+        517
+      ],
+      "normalisedVisibleSize": [
+        216,
+        34
+      ],
+      "normalisedOffset": [
+        20,
+        111
+      ],
+      "bounds": [
+        20,
+        111,
+        236,
+        145
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-repair-spirit-level-user-selected-2026-10-21-v1/evidence/current-vs-user-selected-contact-sheet.png",
+    "sha256": "a2d3c9546afaad6b3a4bd834a340323c8e54e890d8a50d7da71ef5596af61aaf",
+    "columns": 5,
+    "rows": 1,
+    "coveredIds": [
+      "repair-spirit-level"
+    ]
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGutterAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "priorCurrentHashPinned": true,
+    "exactPaletteRecorded": true,
+    "contactSheetCoverage": true,
+    "libraryVersionAdded": true,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "deployed": false
+  },
+  "approval": {
+    "date": "2026-10-21",
+    "verdict": "approved",
+    "words": "this one is good",
+    "approvedSource": "exec-92f3522c-4484-48ce-bdb8-77c3cea6388a.png"
+  },
+  "rollback": "Set repair-spirit-level current back to V1; both immutable versions remain selectable. Discarding this pack alone removes no prior art."
+}

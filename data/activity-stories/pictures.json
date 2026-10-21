@@ -7156,7 +7156,7 @@
       "kind": "object",
       "family": "repair",
       "label": "Spirit level",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -7176,6 +7176,25 @@
           "source": "repair-spirit-level.png",
           "by": "codex",
           "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-repair-spirit-level-user-selected-2026-10-21-v1/drafts/components/repair-spirit-level.png",
+          "sha256": "c4cfba72a34cc83acffdae234c416d4947be99fa4393a56ec528631fc0246d56",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            111,
+            236,
+            145
+          ],
+          "added": "2026-10-21",
+          "source": "repair-spirit-level.png",
+          "by": "codex",
+          "note": "Approved user-selected ligne-claire spirit level V2"
         }
       ]
     },

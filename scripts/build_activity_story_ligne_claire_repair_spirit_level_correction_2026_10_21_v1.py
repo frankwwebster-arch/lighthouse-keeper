@@ -30,6 +30,7 @@ SET = "activity-story-ligne-claire-repair-spirit-level-correction-2026-10-21-v1"
 PICTURE_ID = "repair-spirit-level"
 CURRENT = ROOT / "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-spirit-level.png"
 CURRENT_SHA256 = "97594e40eeef16d383f5f39ac35e55e8b4a40a2fd2e2e735de9ad99b3f5f9998"
+SELECTED_V2_SHA256 = "c4cfba72a34cc83acffdae234c416d4947be99fa4393a56ec528631fc0246d56"
 SOURCE = PACK / "source/repair-spirit-level-source.png"
 OUTPUT = PACK / "drafts/components/repair-spirit-level.png"
 CONTACT = PACK / "evidence/current-vs-correction-contact-sheet.png"
@@ -150,10 +151,14 @@ def verify() -> None:
         raise RuntimeError("register approval/coverage mismatch")
     entry = register["components"][PICTURE_ID]
     picture = library_entry()
-    if picture["current"] != 1 or len(picture["versions"]) != 1:
-        raise RuntimeError("correction was registered before approval")
+    if picture["current"] != 2 or len(picture["versions"]) != 2:
+        raise RuntimeError("user-selected spirit-level V2 is not current")
     if picture["versions"][0]["sha256"] != CURRENT_SHA256 or sha256(CURRENT) != CURRENT_SHA256:
         raise RuntimeError("current V1 hash drift")
+    if picture["versions"][1]["sha256"] != SELECTED_V2_SHA256:
+        raise RuntimeError("unexpected spirit-level V2")
+    if picture["versions"][1]["sha256"] == entry["sha256"]:
+        raise RuntimeError("this pack's later correction was registered")
     for path, expected in ((SOURCE, entry["sourceSha256"]), (OUTPUT, entry["sha256"]), (CONTACT, register["evidence"]["sha256"])):
         if not path.is_file() or sha256(path) != expected:
             raise RuntimeError(f"missing or changed pack file: {path}")
@@ -188,7 +193,7 @@ def verify() -> None:
     ]
     if (PACK / "HASHES.sha256").read_text().splitlines() != expected_hashes:
         raise RuntimeError("HASHES.sha256 is stale or incomplete")
-    print(f"Verified {SET}: unregistered correction, retained V1 and three rejected sources")
+    print(f"Verified {SET}: its correction remains unregistered; user-selected V2 and V1 retained")
 
 
 def main() -> None:
