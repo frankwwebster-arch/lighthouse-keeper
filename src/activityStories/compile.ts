@@ -382,6 +382,12 @@ export function compileStory(input: Story, lib: Library): Compiled {
     const height = stacks[target].reduce((sum, m) => sum + ext(m, baseScale(m)).h * 0.7, 0)
     return { x: t.x, y: t.y - th * 0.55 - ext(add, baseScale(add)).h * 0.5 - height }
   }
+  /** Everything sitting on a picture, and on those, in pile order. */
+  const ridersOf = (who: string) => {
+    const out: string[] = []
+    for (let k = 0; k < out.length + 1; k++) for (const m of stacks[k === 0 ? who : out[k - 1]] ?? []) if (last[m] && last[m]!.o > 0 && !out.includes(m)) out.push(m)
+    return out
+  }
   let stepEnd = 0
   /** A touch: a four-frame mark at the touching edge, a small bump on the target, and a record to measure later. Marks never spill into the next step. */
   const touch = (n: number, f: number, actor: string, target: string, at: { x: number; y: number }, pic: string, s = SCALE.contact, measure = true) => {
@@ -469,6 +475,8 @@ export function compileStory(input: Story, lib: Library): Compiled {
       // Nothing moves.
     } else if (step.do === 'arrive' || step.do === 'present') {
       const prev = members.find((m) => status[m] === 'focus' && m !== who)
+      // What sits on the one stepping aside goes with it, shrinking about its centre.
+      const riding = prev ? ridersOf(prev).filter((m) => m !== who) : []
       const s = story.cast[who].role === 'support' ? SCALE.hero * 0.9 : baseScale(who)
       for (let i = 0; i < total; i++) {
         const t = ease((i + 1) / total)
@@ -477,7 +485,12 @@ export function compileStory(input: Story, lib: Library): Compiled {
         set(who, f0 + i, { x: lerp(from.x, HOME.x, t), y: lerp(from.y, HOME.y, t), s: lerp(from.s, s, t) * pop, r: 0, o: Math.min(1, from.o + 0.5), z: 4 })
         if (prev && last[prev]) {
           const p = last[prev]!
-          set(prev, f0 + i, { ...p, x: lerp(p.x, ASIDE.x, t), y: lerp(p.y, ASIDE.y, t), s: lerp(p.s, SCALE.aside, t), z: 3 })
+          const at = { ...p, x: lerp(p.x, ASIDE.x, t), y: lerp(p.y, ASIDE.y, t), s: lerp(p.s, SCALE.aside, t), z: 3 }
+          for (const m of riding) {
+            const q = last[m]!, k = at.s / p.s
+            set(m, f0 + i, { ...q, x: at.x + (q.x - p.x) * k, y: at.y + (q.y - p.y) * k, s: q.s * k, z: 3.5 })
+          }
+          set(prev, f0 + i, at)
         }
       }
       if (prev) status[prev] = 'aside'
@@ -717,8 +730,7 @@ export function compileStory(input: Story, lib: Library): Compiled {
       const owner = members.find((m) => m !== who && stacks[m].includes(who))
       if (owner) stacks[owner] = stacks[owner].filter((m) => m !== who)
       // Whatever sits on it goes with it (the toast on its plate).
-      const riders: string[] = []
-      for (let k = 0; k < riders.length + 1; k++) for (const m of stacks[k === 0 ? who : riders[k - 1]] ?? []) if (last[m] && !riders.includes(m)) riders.push(m)
+      const riders = ridersOf(who)
       for (let i = 0; i < total; i++) {
         const t = ease((i + 1) / total)
         const lift = i === 0 ? -4 : 0
