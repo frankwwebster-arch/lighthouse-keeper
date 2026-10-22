@@ -1,0 +1,404 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
+  "set": "activity-story-ligne-claire-tea-toast-2026-10-22-v1",
+  "status": "review-awaiting-frank-approval",
+  "created": "2026-10-22",
+  "tool": "built-in image editing plus deterministic reduced-palette normalisation",
+  "families": [
+    "tea",
+    "toast"
+  ],
+  "semanticSet": "six legacy tea-and-toast objects; the already-line-clear commissioned tea-bag V1 remains untouched",
+  "visualAuthority": [
+    "art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/sandwich-tomato.png",
+    "art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/drafts/components/washing-plate.png",
+    "art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/drafts/components/repair-toolbox.png",
+    "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-raspberry-jam.png"
+  ],
+  "bindingTaxonomy": "one even black outline; a line only for a real edge; every closed area one flat colour; no gradient, shine or glow; accurate adult object construction; clear at 64px; black only for outlines and true black/dark openings; marks use the same line",
+  "components": {
+    "tea-kettle": {
+      "family": "tea",
+      "label": "Tea kettle",
+      "intent": "unapproved-proposed-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one squat cream stovetop kettle in the same right-facing three-quarter view, with navy arched handle and base, two warm-metal handle hinges, lid and knob, short right spout and one steam plume",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/tea-kettle.png",
+      "currentReferenceSha256": "7014b90c1465cbf0b1b9559f57be78a4a36c354ba13033c9639aa048253dd7cf",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/source/tea-kettle-source.png",
+      "sourceSha256": "8534bb30fe87ff3224b68932c88b64a25c4aefc389c21aa99c0d92b3656c4457",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-99020388-bfe0-4580-9d0e-c9e1719881b6.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#97cada",
+        "#0d4e75",
+        "#e88b2d"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/drafts/components/tea-kettle.png",
+      "sha256": "1369f3486e6d736b09d7ac685a2ee697d16fd145172577a8492d89e4cd607d8a",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        92,
+        132,
+        1207,
+        1131
+      ],
+      "normalisedVisibleSize": [
+        216,
+        194
+      ],
+      "normalisedOffset": [
+        20,
+        31
+      ],
+      "bounds": [
+        20,
+        31,
+        236,
+        225
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "tea-milk": {
+      "family": "tea",
+      "label": "Tea milk",
+      "intent": "unapproved-proposed-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly one tall open glass bottle filled with milk at left and one small cream pouring jug with a single loop handle at right, in the same overlap and viewpoint",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/tea-milk.png",
+      "currentReferenceSha256": "01eb45bb370455c770702cc7cb25334fccc3d2a6d3cc0cf376733da2f9dfeadc",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/source/tea-milk-source.png",
+      "sourceSha256": "b54ba1fad36754feef466ff863109f0b7471b39c5e978e45eba855085feb6ba3",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-4d6a723a-3f83-4792-afda-9acd20215972.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#97cada"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/drafts/components/tea-milk.png",
+      "sha256": "1926bb1b6f83180ef7a565b0994e0e91057f672332d61399e3652edd86534d92",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        134,
+        138,
+        1171,
+        1124
+      ],
+      "normalisedVisibleSize": [
+        216,
+        205
+      ],
+      "normalisedOffset": [
+        20,
+        25
+      ],
+      "bounds": [
+        20,
+        25,
+        236,
+        230
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "tea-mug": {
+      "family": "tea",
+      "label": "Tea mug",
+      "intent": "unapproved-proposed-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one squat cream enamel mug with left loop handle, navy rolled rim and handle edging, and one visible warm-brown tea surface in the same front three-quarter view",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/tea-mug.png",
+      "currentReferenceSha256": "af8fb40591e8165cfb4ec8f9f30be0df24abd733cc412d086c3920a37242bff3",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/source/tea-mug-source.png",
+      "sourceSha256": "b4d5d1c88c8448d265d09e48018b43a84fee2a5e90f92e2284247f389b99a5cf",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-7134eeba-b66f-4aa4-967c-1f31a510903c.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#0d4e75",
+        "#a65f2a"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/drafts/components/tea-mug.png",
+      "sha256": "2119e2890775ce0b3ee94f4bef354bf910e0d91ea8873838e77c0e0a58d6bf57",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        112,
+        218,
+        1142,
+        1038
+      ],
+      "normalisedVisibleSize": [
+        216,
+        172
+      ],
+      "normalisedOffset": [
+        20,
+        42
+      ],
+      "bounds": [
+        20,
+        42,
+        236,
+        214
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "toast-butter-jam": {
+      "family": "toast",
+      "label": "Toast butter jam",
+      "intent": "unapproved-proposed-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "front-left teal-rimmed butter dish and cream cover with teal knob, exactly one large butter block and one smaller cut pat, plus one rear-right raspberry-jam jar with blue-and-cream checked cloth and one tied cord bow",
+      "currentReferenceFile": "art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/toast-butter-jam.png",
+      "currentReferenceSha256": "c75e23294215d751b315296776b39e53fc5690e0a8b2216c62e7dc29da77a134",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/source/toast-butter-jam-source.png",
+      "sourceSha256": "31b26923cf7a5a642f42ef3c6731df12082f49becf7fc3c556ca7380687619bf",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-880acf66-908e-4c1b-81ff-fc8f6cb9bbd3.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#2a8494",
+        "#e7a638",
+        "#1870a6",
+        "#c32b37",
+        "#e88b2d"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/drafts/components/toast-butter-jam.png",
+      "sha256": "6c70f77625dd1a93768c3fb0d75b4cbfc57594607e70a7ee48910f74f06d77fc",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        109,
+        292,
+        1182,
+        979
+      ],
+      "normalisedVisibleSize": [
+        216,
+        138
+      ],
+      "normalisedOffset": [
+        20,
+        59
+      ],
+      "bounds": [
+        20,
+        59,
+        236,
+        197
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "toast-slices": {
+      "family": "toast",
+      "label": "Toast slices",
+      "intent": "unapproved-proposed-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly two overlapping diagonal toast slices, rear upper-left and front lower-right, plus exactly five detached cereal-grain marks below in a group of three and a group of two",
+      "currentReferenceFile": "art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/toast-slices.png",
+      "currentReferenceSha256": "4a1344273465976f1c69b858e1ada925a69432242450c2838c68d9fe63e25a27",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/source/toast-slices-source.png",
+      "sourceSha256": "f7e6339428b3bf12624e989ad87284b204623b687bc39da64ccd84334e625aaf",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-e03337f5-f03b-4584-826a-8ef96d8ddc6a.png",
+      "flatPalette": [
+        "#051824",
+        "#e7a638",
+        "#e88b2d"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/drafts/components/toast-slices.png",
+      "sha256": "feae3ddae538f8651790f1c2bf692a05bfa69473427d8f54bd482431bd1f72a0",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        149,
+        110,
+        1139,
+        1143
+      ],
+      "normalisedVisibleSize": [
+        207,
+        216
+      ],
+      "normalisedOffset": [
+        24,
+        20
+      ],
+      "bounds": [
+        24,
+        20,
+        231,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "toast-toaster": {
+      "family": "toast",
+      "label": "Toast toaster",
+      "intent": "unapproved-proposed-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one compact vintage toaster in the same front-right three-quarter view, with exactly two top slots, teal front, cream top and right side, ochre base and feet, one right lever in its slot and one round browning control below",
+      "currentReferenceFile": "art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/toast-toaster.png",
+      "currentReferenceSha256": "92845e8574dbbb507267f89a65bfcc0fe0933f389bb6dd052120a891a828ef98",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/source/toast-toaster-source.png",
+      "sourceSha256": "b45cfe7f8900f78c18283b7316fc663069844a51f19bad1ec01431c6d5b408d4",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-c86f6db9-4a83-4af9-b307-079d5d036df4.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#2a8494",
+        "#e7a638"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/drafts/components/toast-toaster.png",
+      "sha256": "1663eb49ee733b137aa66fe6cae30907bb49e2f0dd23f32ac615ea92db97880a",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        95,
+        123,
+        1170,
+        1137
+      ],
+      "normalisedVisibleSize": [
+        216,
+        204
+      ],
+      "normalisedOffset": [
+        20,
+        26
+      ],
+      "bounds": [
+        20,
+        26,
+        236,
+        230
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejected": [
+    {
+      "file": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/rejected/tea-kettle-gradient-inflated-v1.png",
+      "sha256": "4caf8e49aacb0460198419a5061d77823c064dfe0efbce51e5b0d82c7c3ba3bb",
+      "originalCacheFile": "exec-11f19f9e-b6b1-4e05-a270-b0f9c8ce13c9.png",
+      "reason": "Rejected before the gate: gradient fills, a white specular spout stripe and inflated toy-like kettle proportions violated the binding taxonomy."
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/evidence/current-vs-proposed-v2-contact-sheet.png",
+    "sha256": "0aacbe56ec1f611b423e479aa48233df07b09bfff73d5d159934ea64ef05efab",
+    "columns": 5,
+    "rows": 6,
+    "coveredIds": [
+      "tea-kettle",
+      "tea-milk",
+      "tea-mug",
+      "toast-butter-jam",
+      "toast-slices",
+      "toast-toaster"
+    ]
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "currentReferenceHashesPinned": true,
+    "exactPalettesRecorded": true,
+    "flatColourOnly": true,
+    "contactSheetCoversEveryCandidate": true,
+    "libraryVersionsAdded": false,
+    "storiesChanged": false,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "deployed": false
+  },
+  "nextStep": "Stop at this contact-sheet gate. Register these six immutable candidates as V2 only after Frank approves the exact sheet.",
+  "rollback": "No library selector or story changed. Rejecting the gate requires discarding only this new versioned draft directory."
+}

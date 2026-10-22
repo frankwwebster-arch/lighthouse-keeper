@@ -177,11 +177,21 @@ contact sheet on his behalf. The immutable pack at
 objects and six action marks as new V1 IDs. All 15 pass the flat-colour,
 one-even-line, 64 px, gutter, ownership and hash checks; nine rejected attempts
 remain pinned. They are registered for Claude to review and wire, not recorded
-as Claude-approved yet. The library now has 320 pictures / 405 immutable
-versions: 77 approved ligne-claire conversions, 15 commissioned new pictures
-awaiting Claude's sheet review and 228 earlier pictures still to convert. No
-story or `src/activityStories/` file changed, and nothing was pushed or
-deployed.
+as Frank-approved conversions. Claude subsequently reviewed the sheet and
+wired the relevant objects and marks into the stories and action demos on 22
+October. The library has 320 pictures / 405 immutable versions: 77
+Frank-approved ligne-claire conversions, 15 Claude-reviewed commissioned new
+pictures and 228 earlier pictures still to convert.
+
+**Tea-and-toast review gate (22 October 2026; awaiting Frank):** the immutable
+pack at `art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/`
+proposes V2 translations for the three legacy tea objects (`tea-kettle`,
+`tea-milk`, `tea-mug`) and all three legacy toast pictures. The commissioned
+line-clear `tea-bag` V1 remains untouched. Every candidate uses only fixed flat
+colours, preserves exact count/construction/overlap, has at least 20 px clear
+gutter and is compared with V1 on light, dark and at 64 px. No version is
+registered: the library remains 320 pictures / 405 versions and each of these
+six IDs remains current V1 pending approval of the exact contact sheet.
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A

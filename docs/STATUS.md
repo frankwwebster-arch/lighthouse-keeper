@@ -34,8 +34,8 @@ The remaining 300 legacy endpoint repairs are measured from real RGBA pixels
 and ordered in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`. `npm test` rejects new
 or regressed endpoint failures against that frozen migration boundary.
 
-The Bubble stories Studio has a complete shared picture catalogue: 305
-selectable pictures and 381 immutable versions grouped by activity. This includes every review-ready
+The Bubble stories Studio has a complete shared picture catalogue: 320
+selectable pictures and 405 immutable versions grouped by activity. This includes every review-ready
 isolated source component from Activity Cloud Composer V1–V7, the rear-work
 V2/V3 callout packs and every component-bearing Claude or Codex picture pack,
 including all V5 album homages, the complete aquarium and bedroom sets, and 54
@@ -130,11 +130,19 @@ Claude's first direct picture commission under Frank's 21 October standing
 instruction is complete at
 `art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/`. Nine new
 objects and six new action marks are registered as V1 IDs, taking the catalogue
-to 320 pictures / 405 versions. The exact light/dark/64 px sheet awaits Claude's
-review before Claude wires the stories, pushes or releases. All 15 pass the
+to 320 pictures / 405 versions. Claude reviewed the exact light/dark/64 px sheet
+and wired the new pictures into the relevant stories and action demos on 22
+October. All 15 pass the
 flat-palette, line, 64 px, gutter, ownership and hash checks; nine rejected
-attempts remain pinned. No story, activity-story runtime or approved authority
-changed.
+attempts remain pinned. The later wiring changed only story/demo data; it did
+not change the activity-story runtime or an approved art authority.
+
+The current open art gate is
+`art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/`. Its six
+flat-colour proposals cover the legacy kettle, milk, mug, butter-and-jam,
+toast-slices and toaster pictures. The contact sheet includes light, dark and
+64 px proofs. Nothing is registered: all six selectors remain V1 and the
+catalogue stays at 320 pictures / 405 versions pending Frank's verdict.
 
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 

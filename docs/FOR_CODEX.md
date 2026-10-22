@@ -164,13 +164,23 @@ and 228 remaining.
 
 Claude's first direct commission is complete in
 `art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/`: nine new
-objects and six new action marks, all registered as V1 IDs and awaiting
-Claude's review of `evidence/light-dark-64-contact-sheet.png`. The catalogue is
-now 320 pictures / 405 versions: 77 approved conversions, 15 commissioned new
-pictures awaiting Claude's verdict and 228 earlier pictures still to convert.
+objects and six new action marks, all registered as V1 IDs. Claude reviewed
+`evidence/light-dark-64-contact-sheet.png` and wired the relevant pictures into
+stories and action demos on 22 October. The catalogue is now 320 pictures / 405
+versions: 77 Frank-approved conversions, 15 Claude-reviewed commissioned new
+pictures and 228 earlier pictures still to convert.
 The pack includes exact prompts, accepted sources, nine retained rejections,
 flat-palette 256 px components, measured ownership/gutter metadata and its own
 verifier. Do not edit this pack; corrections require a fresh immutable version.
+
+The next open art gate is
+`art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/`. It contains
+six unregistered proposed V2s for `tea-kettle`, `tea-milk`, `tea-mug`,
+`toast-butter-jam`, `toast-slices` and `toast-toaster`, plus pinned sources,
+one rejected first kettle and a five-column current/light/dark/64 px contact
+sheet. The commissioned `tea-bag` V1 is deliberately untouched. All six
+library entries remain current V1; do not register them or begin another family
+until Frank resolves the exact sheet.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 
