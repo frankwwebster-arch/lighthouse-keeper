@@ -13,7 +13,7 @@ import { spawnSync } from 'node:child_process'
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
-import { bubbleOutline, compileStory, FPS, type Frame } from '../src/activityStories/compile'
+import { bubbleOutline, compileStory, FPS, itemTransform, type Frame } from '../src/activityStories/compile'
 import { LIBRARY, STORY_FILES } from '../src/activityStories/drafts'
 import { cleanStory, describeStep, groupPictures, playsText, STORY_SCHEMA, versionFor, type Story } from '../src/activityStories/format'
 
@@ -193,7 +193,7 @@ function render(ref?: string) {
     const body = rear[Math.floor((f / FPS) * 4) % rear.length]
     const rings = fr.bubble.rings ?? [fr.bubble.opacity, fr.bubble.opacity]
     const items = fr.items
-      .map((i) => `<img class="piece${i.kind === 'mark' ? ' mark' : ''}" src="${src(i.url)}" style="opacity:${i.opacity};z-index:${i.z};transform:translate(calc(-50% + ${i.x}px),calc(-50% + ${i.y}px)) rotate(${i.rotation}deg) scale(${i.scale})">`)
+      .map((i) => `<img class="piece${i.kind === 'mark' ? ' mark' : ''}" src="${src(i.url)}" style="opacity:${i.opacity};z-index:${i.z};transform:${itemTransform(i)}">`)
       .join('')
     const what = (restart && k === 9 ? '↻ retelling: ' : '') + (fr.step === 0 ? 'the bubble opens' : `step ${fr.step}: ${describeStep(LIBRARY, story, story.steps[fr.step - 1])}${fr.phase === 'quiet' ? ' · quiet' : fr.phase === 'clear' ? ' · clearing' : ''}`)
     return `<figure><div class="clip"><div class="stage"><img class="actor" src="${src(body.url)}"><div class="cloud"><svg class="bubble" viewBox="0 0 360 230" style="opacity:${fr.bubble.opacity}"><path d="${bubbleOutline(f, fr.bubble.scale)}"/></svg><div class="ring r1" style="opacity:${rings[0]}"></div><div class="ring r2" style="opacity:${rings[1]}"></div>${items}</div></div></div><figcaption><b>${f + 1}</b> ${esc(what)}</figcaption></figure>`

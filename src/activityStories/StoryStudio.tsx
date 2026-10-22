@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type DragEvent, type MouseEvent } from 'react'
-import { bubbleOutline, compileStory, FPS, type Frame } from './compile'
+import { bubbleOutline, compileStory, FPS, itemTransform, type Frame } from './compile'
 import { LIBRARY, STORY_DRAFTS, STYLE_REVIEW } from './drafts'
 import { STORY_SCHEMA, VERBS, canPlace, cleanStory, describeStep, groupPictures, placePicture, playsText, styleOf, swapPicture, versionFor, type PictureStyle, type Ambient, type DropTarget, type CastRole, type Flow, type Prop, type PropSlot, type Speed, type Step, type Story, type Verb } from './format'
 import { loadStories, resetStory, saveStory, storyHash, type SavedStory } from './store'
@@ -588,7 +588,7 @@ export function BubbleStage({ frame, t, body, showMarks, showBubble }: { frame: 
             className={`ss-piece${i.kind === 'mark' ? ' ss-mark' : ''}`}
             src={i.url}
             alt=""
-            style={{ opacity: i.opacity, zIndex: i.z, transform: `translate(calc(-50% + ${i.x}px), calc(-50% + ${i.y}px)) rotate(${i.rotation}deg) scale(${i.scale})` }}
+            style={{ opacity: i.opacity, zIndex: i.z, transform: itemTransform(i) }}
           />
         ))}
       </div>

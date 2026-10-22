@@ -367,6 +367,19 @@ saw → `symbol-sawdust`, shake → `symbol-seasoning-flecks`, spray →
 iron → `symbol-steam-puff`. Until then motion ticks, water droplets or heat
 curls stand in. A step's own `mark` always wins.
 
+### Hergé's ink marks (Frank's m1 answer, 22 Oct)
+
+Marks move the way Hergé's do. They snap on at full strength and off again,
+never fading. A touch whose mark is drawn as one small piece (impact star,
+drop, glint, sizzle spark, steam, dust puff, ink star, zigzag, swirl, spiral,
+? and !) throws a scattered cluster of two to four of them at different
+angles and sizes. Every mark “boils”: every two frames it shifts a pixel or
+two, turns a few degrees and may flip (never ? or !, or music), like
+hand-drawn animation. Fast movement trails `symbol-speed-lines` once Codex
+has drawn them (motion ticks until then). The rules are `SCATTER`, `boil`
+and `trailMark` in `compile.ts`; Codex's ink set is commissioned in
+`docs/CODEX_PROMPT_BUBBLE_STORIES_INK_MARKS_AND_RECIPE_PICTURES_2026-10-22.md`.
+
 ### A mark as a picture appears
 
 A cast member can carry `"appear": "<mark id>"`: that mark bursts for about

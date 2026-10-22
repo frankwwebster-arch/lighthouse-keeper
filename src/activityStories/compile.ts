@@ -44,7 +44,12 @@ export interface FrameItem {
   rotation: number
   opacity: number
   z: number
+  /** Drawn mirrored left to right (a boiling mark). */
+  flip?: boolean
 }
+
+/** The CSS transform for a frame item, shared by the studio and the command-line sheets. */
+export const itemTransform = (i: FrameItem) => `translate(calc(-50% + ${i.x}px), calc(-50% + ${i.y}px)) rotate(${i.rotation}deg) scale(${i.flip ? -i.scale : i.scale}, ${i.scale})`
 
 export interface Frame {
   step: number
@@ -171,6 +176,28 @@ const DEFAULT_MARK: Partial<Record<Verb, string | string[]>> = {
   brush: 'symbol-clean-glint',
   iron: ['symbol-steam-puff', 'symbol-heat-curls'],
 }
+/**
+ * Hergé's ink marks (Frank's m1 answer, 22 Oct). Marks snap on at full strength and off again, never fading; a touch
+ * with a mark drawn as one small piece throws a scattered cluster of two to four of them at different angles and
+ * sizes; and every mark "boils": every two frames it shifts a pixel or two, turns a few degrees and may flip, like
+ * hand-drawn animation. Fast movement trails speed lines.
+ */
+const SCATTER = new Set(['symbol-impact-star', 'symbol-water-droplets', 'symbol-clean-glint', 'symbol-sizzle-spark', 'symbol-ink-star', 'symbol-steam-puff', 'symbol-dust-puff', 'symbol-zigzag', 'symbol-swirl', 'symbol-spiral', 'symbol-accent-red-star', 'symbol-question-mark', 'symbol-exclamation-mark'])
+/** Marks that must never be mirrored (letters and music). */
+const NO_FLIP = (pic: string) => pic === 'symbol-question-mark' || pic === 'symbol-exclamation-mark' || pic.startsWith('music-notation-')
+const hash = (text: string) => {
+  let h = 2166136261
+  for (let i = 0; i < text.length; i++) h = Math.imul(h ^ text.charCodeAt(i), 16777619)
+  return h >>> 0
+}
+/** The boil for one mark on frame f: it changes every two frames. */
+export function boil(id: string, pic: string, f: number) {
+  const h = hash(`${id}:${Math.floor(f / 2)}`)
+  return { dx: ((h % 7) - 3) * 0.5, dy: (((h >> 3) % 7) - 3) * 0.5, dr: ((h >> 6) % 11) - 5, flip: !NO_FLIP(pic) && ((h >> 10) & 1) === 1 }
+}
+/** Trails behind fast movement: Codex's speed lines once they exist, the old motion ticks until then. */
+const trailMark = (lib: Library) => (lib.pictures['symbol-speed-lines']?.kind === 'mark' ? 'symbol-speed-lines' : 'symbol-motion-ticks')
+
 /** The mark a verb uses by default, from those the library has. */
 export function defaultMark(verb: Verb, lib: Library): string {
   const want = DEFAULT_MARK[verb] ?? 'symbol-impact-star'
@@ -358,10 +385,18 @@ export function compileStory(input: Story, lib: Library): Compiled {
   let stepEnd = 0
   /** A touch: a four-frame mark at the touching edge, a small bump on the target, and a record to measure later. Marks never spill into the next step. */
   const touch = (n: number, f: number, actor: string, target: string, at: { x: number; y: number }, pic: string, s = SCALE.contact, measure = true) => {
-    const id = `contact-${n}-${marks.length}`
-    const r = ((n * 37 + marks.length * 23) % 31) - 15
-    const life = [{ s: s * 1.15, o: 1 }, { s, o: 1 }, { s: s * 0.92, o: 0.6 }, { s: s * 0.85, o: 0.25 }]
-    marks.push({ id, picture: pic, frames: Object.fromEntries(life.flatMap((l, i) => (f + i < stepEnd ? [[f + i, { ...at, s: l.s, r, o: l.o }]] : []))) })
+    // On for four frames at full strength, then gone (m1). A one-piece mark scatters into a small cluster.
+    const seed = n * 37 + marks.length * 23
+    const pieces = SCATTER.has(pic) ? 2 + (seed % 3) : 1
+    for (let k = 0; k < pieces; k++) {
+      const id = `contact-${n}-${marks.length}`
+      const a = ((seed * 0.7 + k / pieces) % 1) * Math.PI * 2
+      const reach = k === 0 ? 0 : 14 + ((seed + k * 5) % 7)
+      const size = k === 0 ? s : s * (0.55 + ((seed + k * 11) % 4) * 0.1)
+      const r = ((seed + k * 41) % 51) - 25
+      const p = { x: at.x + reach * Math.cos(a), y: at.y + reach * Math.sin(a) * 0.8 }
+      marks.push({ id, picture: pic, frames: Object.fromEntries([0, 1, 2, 3].flatMap((i) => (f + i < stepEnd ? [[f + i, { ...p, s: size, r, o: 1 }]] : []))) })
+    }
     pulse[target][f] = 1.05
     if (measure) contacts.push({ frame: f, step: n, actor, target, gap: 0 })
     firstContact[n] ??= f
@@ -399,7 +434,7 @@ export function compileStory(input: Story, lib: Library): Compiled {
     const frames: (typeof marks)[number]['frames'] = {}
     for (let j = 0; j < life; j++) {
       const t = (j + 1) / life
-      if (f + j < stepEnd) frames[f + j] = { x: lerp(a.x, b.x, t), y: lerp(a.y, b.y, t), s: s * (0.8 + 0.4 * t), r: ((n * 29 + j * 17) % 21) - 10, o: j === life - 1 ? 0.5 : 1 }
+      if (f + j < stepEnd) frames[f + j] = { x: lerp(a.x, b.x, t), y: lerp(a.y, b.y, t), s: s * (0.8 + 0.4 * t), r: ((n * 29 + j * 17) % 21) - 10, o: 1 }
     }
     marks.push({ id, picture: pic, frames })
     firstContact[n] ??= f
@@ -756,7 +791,7 @@ export function compileStory(input: Story, lib: Library): Compiled {
   const quiet: [number, number] = [windows[quietStep - 1].start, storyFrames - 1]
   // A mark that bursts as a picture appears (Frank's a2 answer, 21 Oct): about a second at the picture's top, rising a
   // little and following it, then gone. It never runs into the quiet moment.
-  const BURST = [[0.75, 0.7], [1, 1], [1.1, 1], [1.1, 1], [1.05, 1], [1, 0.9], [0.95, 0.6], [0.9, 0.3]]
+  const BURST = Array.from({ length: 8 }, () => [1, 1])
   for (const m of members) {
     const pic = story.cast[m].appear
     if (!pic) continue
@@ -817,15 +852,17 @@ export function compileStory(input: Story, lib: Library): Compiled {
     if (f < posed) {
       for (const mk of marks) {
         const st = mk.frames[f]
-        if (st && st.o > 0) items.push({ id: mk.id, picture: mk.picture, url: markUrl(mk.picture), kind: 'mark', x: r2(st.x), y: r2(st.y), scale: r2(st.s), rotation: st.r, opacity: st.o, z: 20 })
+        if (!st || st.o <= 0) continue
+        const b = boil(mk.id, mk.picture, f)
+        items.push({ id: mk.id, picture: mk.picture, url: markUrl(mk.picture), kind: 'mark', x: r2(st.x + b.dx), y: r2(st.y + b.dy), scale: r2(st.s), rotation: r2(st.r + b.dr), opacity: 1, z: 20, ...(b.flip ? { flip: true } : {}) })
       }
       for (const a of ambient) {
         const p = poses[a.on][f]
         // The quiet moment has no marks, even where an extra mark's steps run on into a dish served after it.
         if (!p || p.o < 0.5 || f < a.from || f >= a.to || (f >= quiet[0] && f <= quiet[1])) continue
         const h = ext(a.on, p.s).h
-        const fadeIn = Math.min(1, (f - a.from + 1) / 2), fadeOut = Math.min(1, (a.to - f) / 2)
-        items.push({ id: a.id, picture: a.picture, url: markUrl(a.picture), kind: 'mark', x: r2(p.x + 4 * Math.sin(f * 0.8)), y: r2(p.y - h - 14 - (f % 8) * 1.2), scale: SCALE.mark, rotation: r2(6 * Math.sin(f * 0.6)), opacity: r2(Math.min(fadeIn, fadeOut)), z: 15 })
+        const b = boil(a.id, a.picture, f)
+        items.push({ id: a.id, picture: a.picture, url: markUrl(a.picture), kind: 'mark', x: r2(p.x + b.dx * 2), y: r2(p.y - h - 14 - (Math.floor(f / 2) % 4) * 2 + b.dy), scale: SCALE.mark, rotation: r2(b.dr), opacity: 1, z: 15, ...(b.flip ? { flip: true } : {}) })
       }
       // Motion trails: only while something moves fast, always beneath the objects.
       for (const m of members) {
@@ -834,7 +871,8 @@ export function compileStory(input: Story, lib: Library): Compiled {
         const vx = a.x - b.x, vy = a.y - b.y, v = Math.hypot(vx, vy)
         if (v <= 6) continue
         const e = ext(m, a.s)
-        items.push({ id: `trail-${m}`, picture: 'symbol-motion-ticks', url: markUrl('symbol-motion-ticks'), kind: 'mark', x: r2(a.x - (vx / v) * (e.w + 8)), y: r2(a.y - (vy / v) * (e.h * 0.6 + 6)), scale: r2(SCALE.trail + Math.min(0.15, v / 120)), rotation: r2((Math.atan2(vy, vx) * 180) / Math.PI), opacity: r2(Math.min(1, 0.5 + (v - 6) / 12)), z: 2 })
+        const tm = trailMark(lib)
+        items.push({ id: `trail-${m}`, picture: tm, url: markUrl(tm), kind: 'mark', x: r2(a.x - (vx / v) * (e.w + 8)), y: r2(a.y - (vy / v) * (e.h * 0.6 + 6)), scale: r2(SCALE.trail + Math.min(0.15, v / 120)), rotation: r2((Math.atan2(vy, vx) * 180) / Math.PI), opacity: 1, z: 2 })
       }
     }
     // Props: scene-setting pictures beneath everything. Corner props bob in place; orbiting ones circle inside the

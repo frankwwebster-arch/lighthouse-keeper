@@ -509,3 +509,32 @@ describe('a mark as a picture appears (Frank’s a2 answer, 21 Oct)', () => {
     expect(compileStory(wrong, LIBRARY).issues.some((i) => i.level === 'error' && i.text.includes('tool-broom'))).toBe(true)
   })
 })
+
+describe('Hergé ink marks (Frank’s m1, 22 Oct)', () => {
+  const all = STORY_DRAFTS.map((s) => compileStory(s, LIBRARY))
+  const marksOf = (c: (typeof all)[number]) => c.full.flatMap((f) => f.items.filter((i) => i.kind === 'mark'))
+
+  it('snap on and off at full strength, never fading', () => {
+    for (const c of all) for (const m of marksOf(c)) expect(m.opacity, m.id).toBe(1)
+  })
+
+  it('a touch with a one-piece mark throws a small cluster of two to four pieces', () => {
+    const c = all[STORY_DRAFTS.findIndex((s) => s.id === 'general-repair')]
+    const strike = c.contacts.find((t) => t.actor === 'hammer')!
+    const stars = c.full[strike.frame].items.filter((i) => i.picture === 'symbol-impact-star')
+    expect(stars.length).toBeGreaterThanOrEqual(2)
+    expect(stars.length).toBeLessThanOrEqual(4 * 2)
+    expect(new Set(stars.map((i) => i.scale)).size).toBeGreaterThan(1)
+  })
+
+  it('boils: a mark that stays shifts or turns every two frames', () => {
+    const c = all[STORY_DRAFTS.findIndex((s) => s.id === 'garden-bbq')]
+    const heat = c.full.map((f) => f.items.find((i) => i.id === 'extra-0')).filter((i): i is FrameItem => !!i)
+    const looks = new Set(heat.map((i) => `${i.x},${i.y},${i.rotation},${!!i.flip}`))
+    expect(looks.size).toBeGreaterThan(heat.length / 4)
+  })
+
+  it('never mirrors a question mark or exclamation mark', () => {
+    for (const c of all) for (const m of marksOf(c)) if (m.picture === 'symbol-question-mark' || m.picture === 'symbol-exclamation-mark') expect(m.flip).toBeFalsy()
+  })
+})
