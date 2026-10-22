@@ -111,8 +111,11 @@ shine, reflection, bevel, texture, distress, cast shadow, toy or mascot
 treatment. Accepted source cache:
 `exec-c86f6db9-4a83-4af9-b307-079d5d036df4.png`.
 
-## Gate
+## Approval
 
 The exact review authority is
-`evidence/current-vs-proposed-v2-contact-sheet.png`. The six candidates remain
-unregistered until Frank approves that sheet.
+`evidence/current-vs-proposed-v2-contact-sheet.png`. Frank approved all six on
+22 October 2026: “These are superb, I think the best yet, and they follow the
+direction very well.” They are registered as immutable V2s; the V1s remain
+byte-identical for rollback. `toast-slices` later advanced to a separate
+mark-free V3 without changing this approved V2.

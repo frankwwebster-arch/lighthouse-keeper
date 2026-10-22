@@ -1,0 +1,41 @@
+{
+  "schema": "lighthouse-keeper/activity-story-requested-variant@1",
+  "set": "activity-story-ligne-claire-tea-mug-empty-2026-10-22-v1",
+  "status": "approved-and-registered",
+  "created": "2026-10-22",
+  "request": "Do a version of the mug without any contents in it.",
+  "id": "tea-mug-empty",
+  "version": 1,
+  "source": {
+    "file": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/drafts/components/tea-mug.png",
+    "sha256": "2119e2890775ce0b3ee94f4bef354bf910e0d91ea8873838e77c0e0a58d6bf57"
+  },
+  "candidate": {
+    "file": "art/drafts/activity-story-ligne-claire-tea-mug-empty-2026-10-22-v1/drafts/components/tea-mug-empty.png",
+    "sha256": "3ce1d21abe5579ab5bbc99bbb6d522662a25953896069c9020cf219ffa3830a1",
+    "cell": [
+      256,
+      256
+    ],
+    "bounds": [
+      20,
+      42,
+      236,
+      214
+    ],
+    "gutter": 20,
+    "changedPixels": 2733,
+    "edit": "replace every visible flat tea-brown pixel #a65f2a with the existing enamel cream #f6e5b7; preserve every other RGBA byte"
+  },
+  "rejectedAttempt": {
+    "file": "art/drafts/activity-story-ligne-claire-tea-mug-empty-2026-10-22-v1/rejected/tea-mug-empty-generated-gradient-v1.png",
+    "sha256": "6cf359d17ca4543bdf8b42efaa2440abec25e03920d02b4a65c014381fc5a280",
+    "reason": "The generative edit redrew the mug and introduced tonal modelling, so it was retained only as rejected provenance."
+  },
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-tea-mug-empty-2026-10-22-v1/evidence/filled-v2-vs-empty-v1-contact-sheet.png",
+    "sha256": "6eb328dbae02f25fc5bb1e2ad39d4debc8e45ba63e4fcb62a84bcdb35b2beeda"
+  },
+  "behaviour": "new optional picture id; the filled tea-mug V2 and every existing story reference remain unchanged",
+  "rollback": "Select or remove only tea-mug-empty V1; never overwrite the filled mug or this file."
+}

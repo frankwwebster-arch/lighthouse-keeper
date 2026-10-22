@@ -1,7 +1,7 @@
 {
   "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
   "set": "activity-story-ligne-claire-tea-toast-2026-10-22-v1",
-  "status": "review-awaiting-frank-approval",
+  "status": "approved-and-registered",
   "created": "2026-10-22",
   "tool": "built-in image editing plus deterministic reduced-palette normalisation",
   "families": [
@@ -20,7 +20,7 @@
     "tea-kettle": {
       "family": "tea",
       "label": "Tea kettle",
-      "intent": "unapproved-proposed-version-v2",
+      "intent": "frank-approved-library-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one squat cream stovetop kettle in the same right-facing three-quarter view, with navy arched handle and base, two warm-metal handle hinges, lid and knob, short right spout and one steam plume",
@@ -79,7 +79,7 @@
     "tea-milk": {
       "family": "tea",
       "label": "Tea milk",
-      "intent": "unapproved-proposed-version-v2",
+      "intent": "frank-approved-library-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "exactly one tall open glass bottle filled with milk at left and one small cream pouring jug with a single loop handle at right, in the same overlap and viewpoint",
@@ -135,7 +135,7 @@
     "tea-mug": {
       "family": "tea",
       "label": "Tea mug",
-      "intent": "unapproved-proposed-version-v2",
+      "intent": "frank-approved-library-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one squat cream enamel mug with left loop handle, navy rolled rim and handle edging, and one visible warm-brown tea surface in the same front three-quarter view",
@@ -192,7 +192,7 @@
     "toast-butter-jam": {
       "family": "toast",
       "label": "Toast butter jam",
-      "intent": "unapproved-proposed-version-v2",
+      "intent": "frank-approved-library-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "front-left teal-rimmed butter dish and cream cover with teal knob, exactly one large butter block and one smaller cut pat, plus one rear-right raspberry-jam jar with blue-and-cream checked cloth and one tied cord bow",
@@ -252,7 +252,7 @@
     "toast-slices": {
       "family": "toast",
       "label": "Toast slices",
-      "intent": "unapproved-proposed-version-v2",
+      "intent": "frank-approved-library-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "exactly two overlapping diagonal toast slices, rear upper-left and front lower-right, plus exactly five detached cereal-grain marks below in a group of three and a group of two",
@@ -308,7 +308,7 @@
     "toast-toaster": {
       "family": "toast",
       "label": "Toast toaster",
-      "intent": "unapproved-proposed-version-v2",
+      "intent": "frank-approved-library-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one compact vintage toaster in the same front-right three-quarter view, with exactly two top slots, teal front, cream top and right side, ochre base and feet, one right lever in its slot and one round browning control below",
@@ -373,7 +373,7 @@
   ],
   "evidence": {
     "file": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/evidence/current-vs-proposed-v2-contact-sheet.png",
-    "sha256": "0aacbe56ec1f611b423e479aa48233df07b09bfff73d5d159934ea64ef05efab",
+    "sha256": "058f07bfb2197affd05ff948f0c11ac42a38a474ecc8f5434f6aa53e9df0e987",
     "columns": 5,
     "rows": 6,
     "coveredIds": [
@@ -393,12 +393,18 @@
     "exactPalettesRecorded": true,
     "flatColourOnly": true,
     "contactSheetCoversEveryCandidate": true,
-    "libraryVersionsAdded": false,
+    "libraryVersionsAdded": true,
     "storiesChanged": false,
     "activityStoriesRuntimeChanged": false,
     "approvedAuthorityChanged": false,
     "deployed": false
   },
-  "nextStep": "Stop at this contact-sheet gate. Register these six immutable candidates as V2 only after Frank approves the exact sheet.",
-  "rollback": "No library selector or story changed. Rejecting the gate requires discarding only this new versioned draft directory."
+  "approval": {
+    "by": "Frank",
+    "date": "2026-10-22",
+    "words": "These are superb, I think the best yet, and they follow the direction very well.",
+    "scope": "the exact six-picture tea-and-toast contact sheet"
+  },
+  "nextStep": "Keep these exact six immutable files as their approved V2s; any later correction must be a new version.",
+  "rollback": "Set each picture selector back to its byte-identical retained V1. Never overwrite either version."
 }

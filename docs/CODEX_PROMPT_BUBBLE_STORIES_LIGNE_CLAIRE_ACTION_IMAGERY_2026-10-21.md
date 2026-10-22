@@ -148,7 +148,7 @@ taxonomy: **one even black outline, flat colour, no shine**. All nine are curren
 immutable V2s. The library contains 305 pictures / 390 versions; 77 current
 pictures are approved ligne-claire conversions and 228 remain.
 
-**Tenth family review gate (22 October 2026; awaiting Frank):** six legacy
+**Tenth family approval (22 October 2026):** six legacy
 tea-and-toast pictures are isolated at
 `art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/`:
 `tea-kettle`, `tea-milk`, `tea-mug`, `toast-butter-jam`, `toast-slices` and
@@ -158,9 +158,11 @@ eight-rule direction literally: one even black outline; real edges only; every
 closed area one flat colour; no gradient, shine or glow; own colour in even
 daylight; accurate adult construction rather than cute simplification; 64 px
 clarity; and marks under the same line rule. The exact five-column contact
-sheet is `evidence/current-vs-proposed-v2-contact-sheet.png`. Stop at this gate:
-no candidate is registered and all six current selectors remain V1 until Frank
-approves the exact sheet.
+sheet is `evidence/current-vs-proposed-v2-contact-sheet.png`. Frank approved
+the exact sheet; all six candidates are registered immutable V2s and every V1 is
+retained. His subsequent requested empty `tea-mug-empty` V1 and mark-free
+`toast-slices` V3 are also current from fresh immutable packs; filled mug V2
+and marked toast V2 remain byte-identical.
 
 ## Ready-to-paste prompt
 
@@ -195,9 +197,10 @@ Objective
   flat-glass condiment correction pack is approved and registered; the first
   condiment gate remains immutable unregistered history. Continue later work
   in fresh immutable family packs.
-  A six-picture tea-and-toast gate now awaits Frank's approval in
-  `art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/`; do not
-  register it or start another family until that exact sheet is resolved.
+  The six-picture tea-and-toast gate in
+  `art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/` is
+  approved and registered. Preserve its V1/V2 history and the later empty-mug
+  V1 / mark-free toast V3 exactly.
 - The programme covers action objects, ingredients, tools, pictorial states,
   activity marks, emotions and independent comic reaction punctuation used by
   Bubble stories.

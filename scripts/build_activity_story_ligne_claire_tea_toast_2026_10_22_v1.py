@@ -124,7 +124,7 @@ def contact_sheet(rows: list[tuple[dict[str, object], Image.Image]]) -> Image.Im
     columns = 5
     sheet = Image.new("RGBA", (CELL * columns, HEADER + ROW_HEIGHT * len(rows)), DARK_BACK)
     draw = ImageDraw.Draw(sheet)
-    titles = ("CURRENT V1", "PROPOSED V2 / CREAM", "PROPOSED V2 / DARK", "CURRENT / 64PX", "PROPOSED / 64PX")
+    titles = ("PRIOR V1", "APPROVED V2 / CREAM", "APPROVED V2 / DARK", "PRIOR / 64PX", "APPROVED / 64PX")
     for index, title in enumerate(titles):
         draw.text((index * CELL + 8, 14), title, fill=CREAM_BACK)
     for row_index, (spec, candidate) in enumerate(rows):
@@ -138,7 +138,7 @@ def contact_sheet(rows: list[tuple[dict[str, object], Image.Image]]) -> Image.Im
             cell = Image.new("RGBA", (CELL, CELL), CREAM_BACK)
             cell.alpha_composite(small, (96, 96))
             sheet.alpha_composite(cell, (CELL * column, y))
-        label = f"{spec['id']} / V1 retained / proposed V2"
+        label = f"{spec['id']} / V1 retained / approved V2"
         for column in range(columns):
             draw.text((column * CELL + 8, y + CELL + 8), label, fill=CREAM_BACK)
     return sheet
@@ -160,8 +160,8 @@ def build() -> None:
         if sha256(current_path) != spec["currentSha256"]:
             raise RuntimeError(f"current source drift: {picture_id}")
         picture = library[picture_id]
-        if picture["current"] != 1 or len(picture["versions"]) != 1:
-            raise RuntimeError(f"review gate requires untouched V1 library entry: {picture_id}")
+        if len(picture["versions"]) < 2:
+            raise RuntimeError(f"approved pack requires registered V2 library entry: {picture_id}")
         if picture["versions"][0]["sha256"] != spec["currentSha256"]:
             raise RuntimeError(f"library V1 hash drift: {picture_id}")
         source = Image.open(source_path)
@@ -176,7 +176,7 @@ def build() -> None:
         entries[picture_id] = {
             "family": spec["family"],
             "label": spec["label"],
-            "intent": "unapproved-proposed-version-v2",
+            "intent": "frank-approved-library-version-v2",
             "priorCurrentLibraryVersion": 1,
             "proposedLibraryVersion": 2,
             "preserves": spec["preserves"],
@@ -201,7 +201,7 @@ def build() -> None:
     register = {
         "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
         "set": SET,
-        "status": "review-awaiting-frank-approval",
+        "status": "approved-and-registered",
         "created": "2026-10-22",
         "tool": "built-in image editing plus deterministic reduced-palette normalisation",
         "families": ["tea", "toast"],
@@ -237,27 +237,33 @@ def build() -> None:
             "exactPalettesRecorded": True,
             "flatColourOnly": True,
             "contactSheetCoversEveryCandidate": True,
-            "libraryVersionsAdded": False,
+            "libraryVersionsAdded": True,
             "storiesChanged": False,
             "activityStoriesRuntimeChanged": False,
             "approvedAuthorityChanged": False,
             "deployed": False,
         },
-        "nextStep": "Stop at this contact-sheet gate. Register these six immutable candidates as V2 only after Frank approves the exact sheet.",
-        "rollback": "No library selector or story changed. Rejecting the gate requires discarding only this new versioned draft directory.",
+        "approval": {
+            "by": "Frank",
+            "date": "2026-10-22",
+            "words": "These are superb, I think the best yet, and they follow the direction very well.",
+            "scope": "the exact six-picture tea-and-toast contact sheet",
+        },
+        "nextStep": "Keep these exact six immutable files as their approved V2s; any later correction must be a new version.",
+        "rollback": "Set each picture selector back to its byte-identical retained V1. Never overwrite either version.",
     }
     (PACK / "batch-register.json").write_text(json.dumps(register, indent=2) + "\n")
     write_hashes(PACK)
     verify()
-    print(f"Built and verified {len(SPECS)} unregistered candidates in {SET}")
+    print(f"Built and verified {len(SPECS)} approved V2s in {SET}")
 
 
 def verify() -> None:
     register = json.loads((PACK / "batch-register.json").read_text())
-    if register["set"] != SET or register["status"] != "review-awaiting-frank-approval":
+    if register["set"] != SET or register["status"] != "approved-and-registered":
         raise RuntimeError("register identity/status mismatch")
-    if register["checks"]["libraryVersionsAdded"]:
-        raise RuntimeError("unapproved review gate claims registered library versions")
+    if not register["checks"]["libraryVersionsAdded"]:
+        raise RuntimeError("approved review gate does not record registered library versions")
     expected_ids = [str(spec["id"]) for spec in SPECS]
     if list(register["components"]) != expected_ids:
         raise RuntimeError("register component order/coverage mismatch")
@@ -276,10 +282,12 @@ def verify() -> None:
         if sha256(current_path) != entry["currentReferenceSha256"]:
             raise RuntimeError(f"current reference drift: {picture_id}")
         picture = library[picture_id]
-        if picture["current"] != 1 or len(picture["versions"]) != 1:
-            raise RuntimeError(f"unapproved candidate altered library: {picture_id}")
+        if len(picture["versions"]) < 2:
+            raise RuntimeError(f"approved candidate is not registered as V2: {picture_id}")
         if picture["versions"][0]["sha256"] != entry["currentReferenceSha256"]:
             raise RuntimeError(f"library V1 drift: {picture_id}")
+        if picture["versions"][1]["sha256"] != entry["sha256"]:
+            raise RuntimeError(f"library V2 drift: {picture_id}")
         output = Image.open(output_path)
         if output.mode != "RGBA" or output.size != (CELL, CELL) or edge_alpha_pixels(output):
             raise RuntimeError(f"candidate geometry/edge mismatch: {picture_id}")
@@ -310,7 +318,7 @@ def verify() -> None:
     ]
     if (PACK / "HASHES.sha256").read_text().splitlines() != expected_hashes:
         raise RuntimeError("HASHES.sha256 is stale or incomplete")
-    print(f"Verified {SET}: six flat-colour candidates, pinned priors and immutable review evidence")
+    print(f"Verified {SET}: six approved flat-colour V2s, pinned priors and immutable review evidence")
 
 
 def main() -> None:

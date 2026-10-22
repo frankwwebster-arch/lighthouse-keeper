@@ -9411,7 +9411,7 @@
       "kind": "object",
       "family": "tea",
       "label": "Tea kettle",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -9431,6 +9431,25 @@
           "source": "tea-kettle.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/drafts/components/tea-kettle.png",
+          "sha256": "1369f3486e6d736b09d7ac685a2ee697d16fd145172577a8492d89e4cd607d8a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            31,
+            236,
+            225
+          ],
+          "added": "2026-10-22",
+          "source": "tea-kettle.png",
+          "by": "codex",
+          "note": "Frank-approved tea-and-toast ligne-claire translation; one even black outline, flat colour, no shine"
         }
       ]
     },
@@ -9438,7 +9457,7 @@
       "kind": "object",
       "family": "tea",
       "label": "Tea milk",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -9458,6 +9477,25 @@
           "source": "tea-milk.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/drafts/components/tea-milk.png",
+          "sha256": "1926bb1b6f83180ef7a565b0994e0e91057f672332d61399e3652edd86534d92",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            25,
+            236,
+            230
+          ],
+          "added": "2026-10-22",
+          "source": "tea-milk.png",
+          "by": "codex",
+          "note": "Frank-approved tea-and-toast ligne-claire translation; one even black outline, flat colour, no shine"
         }
       ]
     },
@@ -9465,7 +9503,7 @@
       "kind": "object",
       "family": "tea",
       "label": "Tea mug",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -9485,6 +9523,52 @@
           "source": "tea-mug.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/drafts/components/tea-mug.png",
+          "sha256": "2119e2890775ce0b3ee94f4bef354bf910e0d91ea8873838e77c0e0a58d6bf57",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            42,
+            236,
+            214
+          ],
+          "added": "2026-10-22",
+          "source": "tea-mug.png",
+          "by": "codex",
+          "note": "Frank-approved tea-and-toast ligne-claire translation; one even black outline, flat colour, no shine"
+        }
+      ]
+    },
+    "tea-mug-empty": {
+      "kind": "object",
+      "family": "tea",
+      "label": "Empty tea mug",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-tea-mug-empty-2026-10-22-v1/drafts/components/tea-mug-empty.png",
+          "sha256": "3ce1d21abe5579ab5bbc99bbb6d522662a25953896069c9020cf219ffa3830a1",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            42,
+            236,
+            214
+          ],
+          "added": "2026-10-22",
+          "source": "tea-mug-empty.png",
+          "by": "codex",
+          "note": "Frank-requested empty variant of the approved ligne-claire mug; exact geometry retained and only the flat tea fill removed"
         }
       ]
     },
@@ -9492,7 +9576,7 @@
       "kind": "object",
       "family": "toast",
       "label": "Toast butter jam",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -9512,6 +9596,25 @@
           "source": "toast-butter-jam.png",
           "by": "codex",
           "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/drafts/components/toast-butter-jam.png",
+          "sha256": "6c70f77625dd1a93768c3fb0d75b4cbfc57594607e70a7ee48910f74f06d77fc",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            59,
+            236,
+            197
+          ],
+          "added": "2026-10-22",
+          "source": "toast-butter-jam.png",
+          "by": "codex",
+          "note": "Frank-approved tea-and-toast ligne-claire translation; one even black outline, flat colour, no shine"
         }
       ]
     },
@@ -9519,7 +9622,7 @@
       "kind": "object",
       "family": "toast",
       "label": "Toast slices",
-      "current": 1,
+      "current": 3,
       "versions": [
         {
           "v": 1,
@@ -9539,6 +9642,44 @@
           "source": "toast-slices.png",
           "by": "codex",
           "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/drafts/components/toast-slices.png",
+          "sha256": "feae3ddae538f8651790f1c2bf692a05bfa69473427d8f54bd482431bd1f72a0",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            24,
+            20,
+            231,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "toast-slices.png",
+          "by": "codex",
+          "note": "Frank-approved tea-and-toast ligne-claire translation; one even black outline, flat colour, no shine"
+        },
+        {
+          "v": 3,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-toast-slices-no-slashes-2026-10-22-v1/drafts/components/toast-slices.png",
+          "sha256": "cee74c894c2f917b6641858aa33ba54fd648206cc0993549faa8cbdcb95e8108",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            24,
+            20,
+            231,
+            210
+          ],
+          "added": "2026-10-22",
+          "source": "toast-slices.png",
+          "by": "codex",
+          "note": "Frank-requested clean toast slices; five detached action slashes removed for separate animation ownership"
         }
       ]
     },
@@ -9546,7 +9687,7 @@
       "kind": "object",
       "family": "toast",
       "label": "Toast toaster",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -9566,6 +9707,25 @@
           "source": "toast-toaster.png",
           "by": "codex",
           "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/drafts/components/toast-toaster.png",
+          "sha256": "1663eb49ee733b137aa66fe6cae30907bb49e2f0dd23f32ac615ea92db97880a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            26,
+            236,
+            230
+          ],
+          "added": "2026-10-22",
+          "source": "toast-toaster.png",
+          "by": "codex",
+          "note": "Frank-approved tea-and-toast ligne-claire translation; one even black outline, flat colour, no shine"
         }
       ]
     },

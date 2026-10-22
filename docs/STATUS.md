@@ -34,8 +34,8 @@ The remaining 300 legacy endpoint repairs are measured from real RGBA pixels
 and ordered in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`. `npm test` rejects new
 or regressed endpoint failures against that frozen migration boundary.
 
-The Bubble stories Studio has a complete shared picture catalogue: 320
-selectable pictures and 405 immutable versions grouped by activity. This includes every review-ready
+The Bubble stories Studio has a complete shared picture catalogue: 321
+selectable pictures and 413 immutable versions grouped by activity. This includes every review-ready
 isolated source component from Activity Cloud Composer V1–V7, the rear-work
 V2/V3 callout packs and every component-bearing Claude or Codex picture pack,
 including all V5 album homages, the complete aquarium and bedroom sets, and 54
@@ -137,12 +137,17 @@ flat-palette, line, 64 px, gutter, ownership and hash checks; nine rejected
 attempts remain pinned. The later wiring changed only story/demo data; it did
 not change the activity-story runtime or an approved art authority.
 
-The current open art gate is
+The tea-and-toast art gate at
 `art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/`. Its six
-flat-colour proposals cover the legacy kettle, milk, mug, butter-and-jam,
+flat-colour V2s cover the legacy kettle, milk, mug, butter-and-jam,
 toast-slices and toaster pictures. The contact sheet includes light, dark and
-64 px proofs. Nothing is registered: all six selectors remain V1 and the
-catalogue stays at 320 pictures / 405 versions pending Frank's verdict.
+64 px proofs. Frank approved the exact sheet with “These are superb, I think
+the best yet, and they follow the direction very well”; all six are registered
+and every V1 remains selectable. His requested `tea-mug-empty` V1 and clean
+`toast-slices` V3 are also current; the latter removes exactly five detached
+action-slash components so the marks can be added separately. The catalogue is
+321 pictures / 413 versions, with 83 approved conversions and 222 earlier
+pictures still to convert.
 
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 
@@ -528,6 +533,24 @@ and unwired. Dishwasher V41, cabinetry, V42–V44, Final and runtime remain
 unchanged. The later closed Kitchen Complete Review V44 now supplies separate
 unapproved toaster and mixing-bowl candidates without changing this V45
 contract.
+
+Kitchen Kettle Bubble Authority V46 is preserved unapproved history. Frank
+liked its broken handle but asked for less restrained damage and a fully
+detached lid so steam could pour from the top. V47 is the active immutable
+review gate at
+`art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/`. Off and On use
+the approved Bubble `tea-kettle` V2 body pixel-for-pixel; the builder removes
+only its one detached steam component and preserves that component separately.
+The new Broken candidate is normalised to the same fixed flat palette and keeps
+the failed left handle mount and right-attached handle, while adding a wholly
+detached airborne lid, unobstructed open top, broad dent/cracks and larger
+enamel loss. Exact V45 support slots, support plane, interaction,
+Broken lock/rattle and six 40-frame/4-fps effect strips are hash-pinned or
+copied byte-for-byte. A state-family sheet and exact-room Retina proof are
+included. Only the Broken steam's asset-local x anchor moves so the unchanged
+animation rises from the open top. V47 remains unapproved, unpromoted and
+unwired pending Frank's verdict on the complete state family; V45, Bubble V2,
+runtime and production remain unchanged.
 
 Kitchen Ligne-Claire Sweep V1 at
 `/keeper-review/kitchen-ligne-claire-sweep-v1/` is a separate coordinated

@@ -11,11 +11,12 @@ versions remain selectable and byte-identical for undo.
 **Complete-catalogue update (22 October 2026):** the library now exposes all
 298 review-ready isolated source components from Activity Cloud Composer
 V1–V7, Prime rear-work activity-callout V2/V3 and every component-bearing
-Claude or Codex picture pack. The Studio therefore has 320 pictures and 405
+Claude or Codex picture pack. The Studio therefore has 321 pictures and 413
 immutable versions, including
 every V5 album homage, the complete aquarium and bedroom sets, and 54 new
 fishing, gardening, pet-play, fixing, pub, art and inventing pictures. It also
-contains the 15 commissioned batch-2 Bubble-story pictures described below. Run
+contains the 15 commissioned batch-2 Bubble-story pictures described below,
+plus the later requested empty-mug variant. Run
 `node scripts/import_activity_story_picture_catalogue.mjs` to reconcile those
 immutable source packs; `npm run verify:activity-stories` fails if any source
 component is absent or has lost its pinned version.
@@ -179,19 +180,26 @@ one-even-line, 64 px, gutter, ownership and hash checks; nine rejected attempts
 remain pinned. They are registered for Claude to review and wire, not recorded
 as Frank-approved conversions. Claude subsequently reviewed the sheet and
 wired the relevant objects and marks into the stories and action demos on 22
-October. The library has 320 pictures / 405 immutable versions: 77
+October. At that checkpoint the library had 320 pictures / 405 immutable versions: 77
 Frank-approved ligne-claire conversions, 15 Claude-reviewed commissioned new
 pictures and 228 earlier pictures still to convert.
 
-**Tea-and-toast review gate (22 October 2026; awaiting Frank):** the immutable
+**Tea-and-toast approval and requested variants (22 October 2026):** the immutable
 pack at `art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/`
-proposes V2 translations for the three legacy tea objects (`tea-kettle`,
+contains V2 translations for the three legacy tea objects (`tea-kettle`,
 `tea-milk`, `tea-mug`) and all three legacy toast pictures. The commissioned
 line-clear `tea-bag` V1 remains untouched. Every candidate uses only fixed flat
 colours, preserves exact count/construction/overlap, has at least 20 px clear
-gutter and is compared with V1 on light, dark and at 64 px. No version is
-registered: the library remains 320 pictures / 405 versions and each of these
-six IDs remains current V1 pending approval of the exact contact sheet.
+gutter and is compared with V1 on light, dark and at 64 px. Frank approved the
+exact six-picture sheet with “These are superb, I think the best yet, and they
+follow the direction very well”; all six are immutable registered V2s. He then
+requested an empty mug at
+`art/drafts/activity-story-ligne-claire-tea-mug-empty-2026-10-22-v1/` and
+toast without its five detached action slashes at
+`art/drafts/activity-story-ligne-claire-toast-slices-no-slashes-2026-10-22-v1/`.
+`tea-mug-empty` V1 and clean `toast-slices` V3 are current; filled mug V2 and
+marked toast V2 remain byte-identical. The library now has 321 pictures / 413
+versions, 83 approved conversions and 222 earlier pictures still to convert.
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A

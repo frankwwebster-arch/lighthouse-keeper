@@ -1,0 +1,38 @@
+{
+  "schema": "lighthouse-keeper/activity-story-requested-variant@1",
+  "set": "activity-story-ligne-claire-toast-slices-no-slashes-2026-10-22-v1",
+  "status": "approved-and-registered",
+  "created": "2026-10-22",
+  "request": "Remove the action slashes below the slices; those will all be separately added.",
+  "id": "toast-slices",
+  "version": 3,
+  "source": {
+    "file": "art/drafts/activity-story-ligne-claire-tea-toast-2026-10-22-v1/drafts/components/toast-slices.png",
+    "sha256": "feae3ddae538f8651790f1c2bf692a05bfa69473427d8f54bd482431bd1f72a0",
+    "libraryVersion": 2
+  },
+  "candidate": {
+    "file": "art/drafts/activity-story-ligne-claire-toast-slices-no-slashes-2026-10-22-v1/drafts/components/toast-slices.png",
+    "sha256": "cee74c894c2f917b6641858aa33ba54fd648206cc0993549faa8cbdcb95e8108",
+    "cell": [
+      256,
+      256
+    ],
+    "bounds": [
+      24,
+      20,
+      231,
+      210
+    ],
+    "gutter": 20,
+    "removedComponents": 5,
+    "removedPixels": 2257,
+    "edit": "retain the single connected two-slice object byte-for-byte and clear only the five detached mark components"
+  },
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-toast-slices-no-slashes-2026-10-22-v1/evidence/marked-v2-vs-clean-v3-contact-sheet.png",
+    "sha256": "089a4cc25a73c0e24ed198b555c2255a45b51b7de3441fe615e067ce21fb2e6c"
+  },
+  "behaviour": "same toast-slices id; immutable V3 becomes current while V1 and marked V2 remain available; marks are now separate animation-owned art",
+  "rollback": "Select retained toast-slices V2 or V1; never overwrite any version."
+}
