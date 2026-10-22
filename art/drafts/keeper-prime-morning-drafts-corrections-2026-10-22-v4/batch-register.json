@@ -1,0 +1,535 @@
+{
+  "schema": "lighthouse-keeper/reversible-review-batch@1",
+  "set": "keeper-prime-morning-drafts-v4",
+  "status": "feedback-corrected-review-only",
+  "candidate": {
+    "publicShell": {
+      "file": "public/keeper-review/keeper-prime-morning-drafts-v4/index.html",
+      "sha256": "f888cdfcb0350501f2c65b3430e5d866ca5050ad3378a8616519ec9a21968dc0"
+    }
+  },
+  "publishedAssets": [
+    {
+      "source": "review-archive/objects/93/93b52ca1f0acdc193f51083defd301b7bb28a01cc27d037f6065b4d7382a0017.png",
+      "sourceSha256": "93b52ca1f0acdc193f51083defd301b7bb28a01cc27d037f6065b4d7382a0017",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-93b52ca1f0acdc19.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-93b52ca1f0acdc19.png"
+    },
+    {
+      "source": "review-archive/objects/72/72735c61a746456d96b8c45c15d7279b6401462877fe3e3e3bdaf9501dea5ca0.png",
+      "sourceSha256": "72735c61a746456d96b8c45c15d7279b6401462877fe3e3e3bdaf9501dea5ca0",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-72735c61a746456d.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-72735c61a746456d.png"
+    },
+    {
+      "source": "review-archive/objects/50/5096eef239926236272ba3b1ae521bb83e4375f66dcbcdb84417a9ec1810a77a.png",
+      "sourceSha256": "5096eef239926236272ba3b1ae521bb83e4375f66dcbcdb84417a9ec1810a77a",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-5096eef239926236.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-5096eef239926236.png"
+    },
+    {
+      "source": "review-archive/objects/e6/e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df.png",
+      "sourceSha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-e6520aab48100c44.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-e6520aab48100c44.png"
+    },
+    {
+      "source": "review-archive/objects/b9/b9928540e08b0f172a2dd680e15e896190c5fa420f53bfa880c3100aa6189c07.png",
+      "sourceSha256": "b9928540e08b0f172a2dd680e15e896190c5fa420f53bfa880c3100aa6189c07",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-b9928540e08b0f17.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-b9928540e08b0f17.png"
+    },
+    {
+      "source": "review-archive/objects/b9/b943a6c6b0077ed4500f0b27db0de3392411230091141e8b6cd3d6dab1d324ca.png",
+      "sourceSha256": "b943a6c6b0077ed4500f0b27db0de3392411230091141e8b6cd3d6dab1d324ca",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-b943a6c6b0077ed4.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-b943a6c6b0077ed4.png"
+    },
+    {
+      "source": "review-archive/objects/28/287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c.png",
+      "sourceSha256": "287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-287c42001ae5c757.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-287c42001ae5c757.png"
+    },
+    {
+      "source": "review-archive/objects/fe/fed54ffc26cb63921093ebcaa0e4eb9832352718bbe1110ab9c101872fad5fde.png",
+      "sourceSha256": "fed54ffc26cb63921093ebcaa0e4eb9832352718bbe1110ab9c101872fad5fde",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-fed54ffc26cb6392.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-fed54ffc26cb6392.png"
+    },
+    {
+      "source": "review-archive/objects/2b/2b61df90e5d790f807d41a28545c79bbad703607356659b6daba93fe4cd808e3.png",
+      "sourceSha256": "2b61df90e5d790f807d41a28545c79bbad703607356659b6daba93fe4cd808e3",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-2b61df90e5d790f8.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-2b61df90e5d790f8.png"
+    },
+    {
+      "source": "review-archive/objects/bd/bdd99d3ea9fb93f8f17ce52f1f0b7bc2c58b41e28da8758c2faa0cd44e317c74.png",
+      "sourceSha256": "bdd99d3ea9fb93f8f17ce52f1f0b7bc2c58b41e28da8758c2faa0cd44e317c74",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-bdd99d3ea9fb93f8.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-bdd99d3ea9fb93f8.png"
+    },
+    {
+      "source": "review-archive/objects/7f/7fa8ae953391a50c68a24ebe738285116af78bad39e221e18bf65c0c73779ef3.png",
+      "sourceSha256": "7fa8ae953391a50c68a24ebe738285116af78bad39e221e18bf65c0c73779ef3",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-7fa8ae953391a50c.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-7fa8ae953391a50c.png"
+    },
+    {
+      "source": "review-archive/objects/33/335c9f5cb66efe5aaccfe4076d47a95e1bbff4237f936390dbcb67a81ff3da05.png",
+      "sourceSha256": "335c9f5cb66efe5aaccfe4076d47a95e1bbff4237f936390dbcb67a81ff3da05",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-335c9f5cb66efe5a.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-335c9f5cb66efe5a.png"
+    },
+    {
+      "source": "review-archive/objects/04/04857d6f91011559272d4a0db933f1465a600c221cc307c38899bd491a55c17c.png",
+      "sourceSha256": "04857d6f91011559272d4a0db933f1465a600c221cc307c38899bd491a55c17c",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-04857d6f91011559.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-04857d6f91011559.png"
+    },
+    {
+      "source": "review-archive/objects/61/61055a4d5458c900d1f3ea2b2178b999d4d620e5ff2a09f054e9bc4948ee0c67.png",
+      "sourceSha256": "61055a4d5458c900d1f3ea2b2178b999d4d620e5ff2a09f054e9bc4948ee0c67",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-61055a4d5458c900.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-61055a4d5458c900.png"
+    },
+    {
+      "source": "review-archive/objects/ef/ef05e53367d8dde66b9a6b5dd7874d5e21b2845516b9db4b168195ab9188e95f.png",
+      "sourceSha256": "ef05e53367d8dde66b9a6b5dd7874d5e21b2845516b9db4b168195ab9188e95f",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-ef05e53367d8dde6.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-ef05e53367d8dde6.png"
+    },
+    {
+      "source": "review-archive/objects/8e/8e2ac49592a295f37c4a8a166d350e9ea7558d0ed73cc64238ffb9670cb4a29e.png",
+      "sourceSha256": "8e2ac49592a295f37c4a8a166d350e9ea7558d0ed73cc64238ffb9670cb4a29e",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-8e2ac49592a295f3.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-8e2ac49592a295f3.png"
+    },
+    {
+      "source": "review-archive/objects/03/03d2fe44ecb6c1c7da84eb7ad09220310ca32f8821e174fd01c8e5d9e11cf2e0.png",
+      "sourceSha256": "03d2fe44ecb6c1c7da84eb7ad09220310ca32f8821e174fd01c8e5d9e11cf2e0",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-03d2fe44ecb6c1c7.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-03d2fe44ecb6c1c7.png"
+    },
+    {
+      "source": "review-archive/objects/eb/ebbe47a512db90631fc77244ca6ccc835420ff00379eac66cb7f3655b98dddc5.png",
+      "sourceSha256": "ebbe47a512db90631fc77244ca6ccc835420ff00379eac66cb7f3655b98dddc5",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-ebbe47a512db9063.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-ebbe47a512db9063.png"
+    },
+    {
+      "source": "review-archive/objects/8c/8cb7f70cdc2b164b35d50e40e210bbf33ebf68507979db9f9416bbc317a9f5bb.png",
+      "sourceSha256": "8cb7f70cdc2b164b35d50e40e210bbf33ebf68507979db9f9416bbc317a9f5bb",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-8cb7f70cdc2b164b.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-8cb7f70cdc2b164b.png"
+    },
+    {
+      "source": "review-archive/objects/b4/b46d44b661a050489cbe56a1369665e4cd9afea9edfe098f4e380e4c234713e3.png",
+      "sourceSha256": "b46d44b661a050489cbe56a1369665e4cd9afea9edfe098f4e380e4c234713e3",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-b46d44b661a05048.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-b46d44b661a05048.png"
+    },
+    {
+      "source": "review-archive/objects/d7/d7e5a3cf4b4bb6e56efaa62b5ffc44f3e7cf6a95ca7b43ebbc0caf9a8dc5d837.png",
+      "sourceSha256": "d7e5a3cf4b4bb6e56efaa62b5ffc44f3e7cf6a95ca7b43ebbc0caf9a8dc5d837",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-d7e5a3cf4b4bb6e5.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-d7e5a3cf4b4bb6e5.png"
+    },
+    {
+      "source": "review-archive/objects/6e/6e54735564c51ad4b7b7b0e7dcaa34059e5300eac6e9931946f5ccf28d721c48.png",
+      "sourceSha256": "6e54735564c51ad4b7b7b0e7dcaa34059e5300eac6e9931946f5ccf28d721c48",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-6e54735564c51ad4.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-6e54735564c51ad4.png"
+    },
+    {
+      "source": "review-archive/objects/8a/8ae2a8f98ba881749372c8c077e92c045c8bf2958ec28a7f7801135a6efce63e.png",
+      "sourceSha256": "8ae2a8f98ba881749372c8c077e92c045c8bf2958ec28a7f7801135a6efce63e",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-8ae2a8f98ba88174.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-8ae2a8f98ba88174.png"
+    },
+    {
+      "source": "review-archive/objects/2e/2efd21d6ab050e303dad0499e9f499a7ee99be6b337619208a5e35d1e98415d1.png",
+      "sourceSha256": "2efd21d6ab050e303dad0499e9f499a7ee99be6b337619208a5e35d1e98415d1",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-2efd21d6ab050e30.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-2efd21d6ab050e30.png"
+    },
+    {
+      "source": "review-archive/objects/bd/bd6ee94860f8d100853409b67d63b34a6012d4f7d1f42631d46da2139b8fe033.png",
+      "sourceSha256": "bd6ee94860f8d100853409b67d63b34a6012d4f7d1f42631d46da2139b8fe033",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-bd6ee94860f8d100.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-bd6ee94860f8d100.png"
+    },
+    {
+      "source": "review-archive/objects/41/4155f30b4c612eab1b109e730e9496a3c6b984d020c3139a5b0d77ee288fe30f.png",
+      "sourceSha256": "4155f30b4c612eab1b109e730e9496a3c6b984d020c3139a5b0d77ee288fe30f",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-4155f30b4c612eab.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-4155f30b4c612eab.png"
+    },
+    {
+      "source": "review-archive/objects/79/79ba6f2c4853ffb7835cb967f6eafdced6d0e4ce9fcdfd3f47428ee0f5a82ca2.png",
+      "sourceSha256": "79ba6f2c4853ffb7835cb967f6eafdced6d0e4ce9fcdfd3f47428ee0f5a82ca2",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-79ba6f2c4853ffb7.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-79ba6f2c4853ffb7.png"
+    },
+    {
+      "source": "review-archive/objects/65/650c252696fc6a0bb9bf9fb299a7ff41e4c6064fce87ce14dd7548851921f668.png",
+      "sourceSha256": "650c252696fc6a0bb9bf9fb299a7ff41e4c6064fce87ce14dd7548851921f668",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-650c252696fc6a0b.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-650c252696fc6a0b.png"
+    },
+    {
+      "source": "review-archive/objects/b2/b2be40f3dd06045ec04296ce6cb35c5a76bdf2f3beaa23a7e05f4b0497bada0b.png",
+      "sourceSha256": "b2be40f3dd06045ec04296ce6cb35c5a76bdf2f3beaa23a7e05f4b0497bada0b",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-b2be40f3dd06045e.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-b2be40f3dd06045e.png"
+    },
+    {
+      "source": "review-archive/objects/36/365949f320390bf25a789eca23f2276f4004e26d32a2daec701cfa2978b20694.png",
+      "sourceSha256": "365949f320390bf25a789eca23f2276f4004e26d32a2daec701cfa2978b20694",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-365949f320390bf2.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-365949f320390bf2.png"
+    },
+    {
+      "source": "review-archive/objects/f0/f0a861592bc6e596581d3fb4ef0b92e3ef9b8932623ff12511ebd50a61ddd731.png",
+      "sourceSha256": "f0a861592bc6e596581d3fb4ef0b92e3ef9b8932623ff12511ebd50a61ddd731",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-f0a861592bc6e596.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-f0a861592bc6e596.png"
+    },
+    {
+      "source": "review-archive/objects/c9/c96a8ae11d32215ccdc6504e3834ea18a1de7148bc9b13f2fd9e38a00addf1dd.png",
+      "sourceSha256": "c96a8ae11d32215ccdc6504e3834ea18a1de7148bc9b13f2fd9e38a00addf1dd",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-c96a8ae11d32215c.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-c96a8ae11d32215c.png"
+    },
+    {
+      "source": "review-archive/objects/f8/f818e2174fc7c51d6922287512ae0610d92f908859d5798b1ae1dc3250c5477b.png",
+      "sourceSha256": "f818e2174fc7c51d6922287512ae0610d92f908859d5798b1ae1dc3250c5477b",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-f818e2174fc7c51d.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-f818e2174fc7c51d.png"
+    },
+    {
+      "source": "review-archive/objects/3f/3fa9add5b0354a0936693d7c7396b9eca2648e435d8d3bfa71714c255bf5dc2a.png",
+      "sourceSha256": "3fa9add5b0354a0936693d7c7396b9eca2648e435d8d3bfa71714c255bf5dc2a",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-3fa9add5b0354a09.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-3fa9add5b0354a09.png"
+    },
+    {
+      "source": "review-archive/objects/52/52697586d00e7ab99d0b2cb6b5ae301d0c383de352a73aca58d0cb637d9ff16f.png",
+      "sourceSha256": "52697586d00e7ab99d0b2cb6b5ae301d0c383de352a73aca58d0cb637d9ff16f",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-52697586d00e7ab9.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-52697586d00e7ab9.png"
+    },
+    {
+      "source": "review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png",
+      "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-a172a8a01a387a21.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-a172a8a01a387a21.png"
+    },
+    {
+      "source": "review-archive/objects/c0/c0a87d5460ce0af134d6e9dc64dab22625f5a1eda1f631e021052701d91077c1.png",
+      "sourceSha256": "c0a87d5460ce0af134d6e9dc64dab22625f5a1eda1f631e021052701d91077c1",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-c0a87d5460ce0af1.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-c0a87d5460ce0af1.png"
+    },
+    {
+      "source": "review-archive/objects/10/109c211066926cb2b3f140755bfe51a4636106c03d75c052e826d6610791d8a1.png",
+      "sourceSha256": "109c211066926cb2b3f140755bfe51a4636106c03d75c052e826d6610791d8a1",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-109c211066926cb2.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-109c211066926cb2.png"
+    },
+    {
+      "source": "review-archive/objects/7f/7f23f761b211ee53f80c15bf3a0cccdfd90f9e9ab490c260ede66c46174995f0.png",
+      "sourceSha256": "7f23f761b211ee53f80c15bf3a0cccdfd90f9e9ab490c260ede66c46174995f0",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-7f23f761b211ee53.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-7f23f761b211ee53.png"
+    },
+    {
+      "source": "review-archive/objects/6f/6ffe5f0af90c0aa312f4dad276f22642b74360ca396fae743a3c13f640b58c21.png",
+      "sourceSha256": "6ffe5f0af90c0aa312f4dad276f22642b74360ca396fae743a3c13f640b58c21",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-6ffe5f0af90c0aa3.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-6ffe5f0af90c0aa3.png"
+    },
+    {
+      "source": "review-archive/objects/82/8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b.png",
+      "sourceSha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-8226a15137fc6973.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-8226a15137fc6973.png"
+    },
+    {
+      "source": "review-archive/objects/c0/c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8.png",
+      "sourceSha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-c097d78aac2d2c52.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-c097d78aac2d2c52.png"
+    },
+    {
+      "source": "review-archive/objects/e1/e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5.png",
+      "sourceSha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-e1dc020aabfe8f3b.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-e1dc020aabfe8f3b.png"
+    },
+    {
+      "source": "review-archive/objects/34/34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859.png",
+      "sourceSha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-34028d8821a7272a.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-34028d8821a7272a.png"
+    },
+    {
+      "source": "review-archive/objects/0d/0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655.png",
+      "sourceSha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-0d278363a0e7e4f1.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-0d278363a0e7e4f1.png"
+    },
+    {
+      "source": "review-archive/objects/f8/f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc.png",
+      "sourceSha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-f827ac61f45aaaa4.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-f827ac61f45aaaa4.png"
+    },
+    {
+      "source": "review-archive/objects/fe/fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c.png",
+      "sourceSha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-fe06522abd0cd55c.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-fe06522abd0cd55c.png"
+    },
+    {
+      "source": "review-archive/objects/d5/d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e.png",
+      "sourceSha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-d55afae023051e29.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-d55afae023051e29.png"
+    },
+    {
+      "source": "review-archive/objects/bb/bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132.png",
+      "sourceSha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-bb530610cf0e17bf.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-bb530610cf0e17bf.png"
+    },
+    {
+      "source": "review-archive/objects/31/31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35.png",
+      "sourceSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-31dbac4efc00089f.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-31dbac4efc00089f.png"
+    },
+    {
+      "source": "review-archive/objects/6e/6e2556684150ce43a26a5c5d084afeba0fc722a87be3878587a2ae3385ccce47.png",
+      "sourceSha256": "6e2556684150ce43a26a5c5d084afeba0fc722a87be3878587a2ae3385ccce47",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-6e2556684150ce43.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-6e2556684150ce43.png"
+    },
+    {
+      "source": "review-archive/objects/c2/c2acf591a17577fdfdf3eba958b47ddfd4c8044dce8abe2fcf85d25d0ffab767.png",
+      "sourceSha256": "c2acf591a17577fdfdf3eba958b47ddfd4c8044dce8abe2fcf85d25d0ffab767",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-c2acf591a17577fd.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-c2acf591a17577fd.png"
+    },
+    {
+      "source": "review-archive/objects/92/922deb4bf0d9d0b74d1950e2157709bae82e1823913bb332754ad7733b165264.png",
+      "sourceSha256": "922deb4bf0d9d0b74d1950e2157709bae82e1823913bb332754ad7733b165264",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-922deb4bf0d9d0b7.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-922deb4bf0d9d0b7.png"
+    },
+    {
+      "source": "review-archive/objects/7c/7c8075cfb3c3237d852e7dc4ed5e646f1f397cdb7ddc678ba0535aa27e8f7e5a.png",
+      "sourceSha256": "7c8075cfb3c3237d852e7dc4ed5e646f1f397cdb7ddc678ba0535aa27e8f7e5a",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-7c8075cfb3c3237d.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-7c8075cfb3c3237d.png"
+    },
+    {
+      "source": "review-archive/objects/6f/6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa.png",
+      "sourceSha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-6fdfe3359ed63445.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-6fdfe3359ed63445.png"
+    },
+    {
+      "source": "review-archive/objects/85/85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9.png",
+      "sourceSha256": "85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-85f897ef55e76813.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-85f897ef55e76813.png"
+    },
+    {
+      "source": "review-archive/objects/8c/8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb.png",
+      "sourceSha256": "8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-8c20fc0436d4982d.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-8c20fc0436d4982d.png"
+    },
+    {
+      "source": "review-archive/objects/2e/2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5.png",
+      "sourceSha256": "2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-2e118ca8d10d126f.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-2e118ca8d10d126f.png"
+    },
+    {
+      "source": "review-archive/objects/08/081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a.png",
+      "sourceSha256": "081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-081272e51f799f6d.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-081272e51f799f6d.png"
+    },
+    {
+      "source": "review-archive/objects/5b/5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41.png",
+      "sourceSha256": "5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-5b4f9406f68e15d2.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-5b4f9406f68e15d2.png"
+    },
+    {
+      "source": "review-archive/objects/af/af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e.png",
+      "sourceSha256": "af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-af20e9290fb79d16.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-af20e9290fb79d16.png"
+    },
+    {
+      "source": "review-archive/objects/4e/4efd077ac6046b67e286f22b8b38546492042d0ed8e0f43da0e34840a32d23ab.png",
+      "sourceSha256": "4efd077ac6046b67e286f22b8b38546492042d0ed8e0f43da0e34840a32d23ab",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-4efd077ac6046b67.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-4efd077ac6046b67.png"
+    },
+    {
+      "source": "review-archive/objects/36/36482028337fe7b00b09eaab1d11a5ed275fe7edf36acacf08e7341f4f5e54d5.png",
+      "sourceSha256": "36482028337fe7b00b09eaab1d11a5ed275fe7edf36acacf08e7341f4f5e54d5",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-36482028337fe7b0.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-36482028337fe7b0.png"
+    },
+    {
+      "source": "review-archive/objects/80/80e4eaa09c8adaad583242e585f883e5fca244ed465b76d9e2ab0e25c0b1b89f.png",
+      "sourceSha256": "80e4eaa09c8adaad583242e585f883e5fca244ed465b76d9e2ab0e25c0b1b89f",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-80e4eaa09c8adaad.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-80e4eaa09c8adaad.png"
+    },
+    {
+      "source": "review-archive/objects/f6/f60db0bc99420b3412efa4cb7623f8b264718606b3af69e079f9f2962e695f4c.png",
+      "sourceSha256": "f60db0bc99420b3412efa4cb7623f8b264718606b3af69e079f9f2962e695f4c",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-f60db0bc99420b34.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-f60db0bc99420b34.png"
+    },
+    {
+      "source": "review-archive/objects/50/501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce.png",
+      "sourceSha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-501151a426f81251.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-501151a426f81251.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-f922ff8396bac64d.png",
+      "sourceSha256": "f922ff8396bac64df18a09197e1ec8c7d4b421032788b6b2c79a9cbf2941193f",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-f922ff8396bac64d.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-f922ff8396bac64d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-21c80a1275fdb7c3.png",
+      "sourceSha256": "21c80a1275fdb7c340bc61107a21ee634af08d0625704d938c77068b6e941300",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-21c80a1275fdb7c3.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-21c80a1275fdb7c3.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-0c7d99ea20eb0d30.png",
+      "sourceSha256": "0c7d99ea20eb0d30c7ef4df08d803d6e56e111a5d4508a2c73fccce9e85b8d26",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-0c7d99ea20eb0d30.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-0c7d99ea20eb0d30.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-5155205d2433d1ca.png",
+      "sourceSha256": "5155205d2433d1cac74c27d8e806a7eb53b01c23f70f16f819c2839a48c7b6a5",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-5155205d2433d1ca.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-5155205d2433d1ca.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-6112bf901da7cd4c.png",
+      "sourceSha256": "6112bf901da7cd4c4b84fbf3c75a2a60e2e31414382e1632e2d38e7acd9cac12",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-6112bf901da7cd4c.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-6112bf901da7cd4c.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-62578902da7a4909.png",
+      "sourceSha256": "62578902da7a49092e214e1e2624798f3fe964084660da249589fe1f3c435f57",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-62578902da7a4909.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-62578902da7a4909.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-22e89bdc73ca9076.png",
+      "sourceSha256": "22e89bdc73ca907642254004bc2aafe5ed312ab5747d9d487dd141dbb3918c57",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-22e89bdc73ca9076.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-22e89bdc73ca9076.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-dba121a6a286f20c.png",
+      "sourceSha256": "dba121a6a286f20cb31664997b82d4d4627f39dde8da2c435f9890b54b665b54",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-dba121a6a286f20c.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-dba121a6a286f20c.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-01300d14ef6c698e.png",
+      "sourceSha256": "01300d14ef6c698e8dc633b6ce2f6c224d7cf043477e938f664027876c8a8520",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-01300d14ef6c698e.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-01300d14ef6c698e.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-53d35b7ae698800d.png",
+      "sourceSha256": "53d35b7ae698800d9406eda13c15c0095c6b86b651a3d693b350088b5a12387f",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-53d35b7ae698800d.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-53d35b7ae698800d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-c08991115f777db7.png",
+      "sourceSha256": "c08991115f777db758043fea63d21741f63bd71ed368c4212bcda527c0c1e8c2",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-c08991115f777db7.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-c08991115f777db7.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-0c83976d665b4e35.png",
+      "sourceSha256": "0c83976d665b4e359dcea45a857bf4c5aada71c7bf0b911cedd9c6829e80d203",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-0c83976d665b4e35.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-0c83976d665b4e35.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-aa5cee06982f0bc9.png",
+      "sourceSha256": "aa5cee06982f0bc923fc7677e3c64f4b42a3b3cfb030f33d8cec2759252dc2cd",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-aa5cee06982f0bc9.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-aa5cee06982f0bc9.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-229fb3117fc5785b.png",
+      "sourceSha256": "229fb3117fc5785bee221f1063a1b42a48d833ecc5271de058ee6af0b4f12426",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-229fb3117fc5785b.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-229fb3117fc5785b.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-e080ddee1dfc87c8.png",
+      "sourceSha256": "e080ddee1dfc87c81dabdd90ddcb6d93b8cc954c15f541b0363145e128b6a108",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-e080ddee1dfc87c8.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-e080ddee1dfc87c8.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-60faf7c1494decb6.png",
+      "sourceSha256": "60faf7c1494decb6d8263146172ff3b1419b0ba0c15d02fd9473d96fa486215a",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-60faf7c1494decb6.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-60faf7c1494decb6.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-3f7cd9fefa9adc0a.png",
+      "sourceSha256": "3f7cd9fefa9adc0af76750812ccec1110b3fd2394acb13c9e0f6e901210e9f5f",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-3f7cd9fefa9adc0a.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-3f7cd9fefa9adc0a.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-d13f8a721ddbe20b.png",
+      "sourceSha256": "d13f8a721ddbe20b55cff34cd34c6726ba2fbb21a95f43385a3656efaa032936",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-d13f8a721ddbe20b.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-d13f8a721ddbe20b.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-9a33895eeb53f363.png",
+      "sourceSha256": "9a33895eeb53f363dba7826d481fa9ab6bdaa04f74b45b48bfb866acd719076c",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-9a33895eeb53f363.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-9a33895eeb53f363.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-ad8856ae7dddcff9.png",
+      "sourceSha256": "ad8856ae7dddcff9f67c4250d26e996c23836576da7cda0d86b439e5c7091a31",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-ad8856ae7dddcff9.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-ad8856ae7dddcff9.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v4/frames/frame-00a29a287a67b256.png",
+      "sourceSha256": "00a29a287a67b25625b14064bfb9cc032d0bee29aa21716b34ee8eca38c91e8c",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-00a29a287a67b256.png",
+      "url": "/keeper-review/keeper-prime-morning-drafts-v4/assets/frame-00a29a287a67b256.png"
+    }
+  ]
+}

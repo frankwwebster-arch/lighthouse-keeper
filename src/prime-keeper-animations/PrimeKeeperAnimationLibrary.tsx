@@ -273,7 +273,7 @@ export default function PrimeKeeperAnimationLibrary({ catalogue, gaps }: { catal
 
   return <main className={styles.page}>
     <header className={styles.hero}>
-      <nav><a href="/">Lighthouse Keeper</a><span>/</span><strong>Prime animation library</strong><span>·</span><a href="/prime-keeper-animation-drafts-v3">Open corrected review V3 →</a></nav>
+      <nav><a href="/">Lighthouse Keeper</a><span>/</span><strong>Prime animation library</strong><span>·</span><a href="/prime-keeper-animation-drafts-v4">Open corrected review V4 →</a></nav>
       <div className={styles.heroGrid}>
         <div><p className={styles.eyebrow}>Approved motion · one living index</p><h1>The Prime Keeper<br />in motion.</h1><p className={styles.lede}>Every playable animation with an explicit approval record or approved core-motion authority, gathered in one place. Inspect them together, one frame at a time, then assemble your own sequence below.</p></div>
         <div className={styles.statusCard}><span className={styles.beacon} /><strong>{catalogue.summary.approvedPlayableClips}</strong><p>approved playable clips</p><dl><div><dt>Unique source images</dt><dd>{catalogue.summary.uniqueFrameImages}</dd></div><div><dt>Installed source clips</dt><dd>{catalogue.summary.runtimePromotions}</dd></div><div><dt>Last reconciled</dt><dd>{catalogue.generatedOn}</dd></div></dl></div>

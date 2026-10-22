@@ -1,0 +1,189 @@
+{
+  "schema": "lighthouse-keeper/prime-animation-feedback-corrections@1",
+  "version": 4,
+  "generatedOn": "2026-10-22",
+  "sourceBatch": "data/keeper_prime_animation_drafts_v3.json",
+  "sourceBatchSha256": "be59b0de101211a1b6a6bed93c6801ce72b4d825f3cdf295a64f240c1ef9b062",
+  "authority": {
+    "rearBody": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+  },
+  "rejectedAmendment": {
+    "version": 3,
+    "scope": "rear-work-turn-return-v1 positions 11–31 only",
+    "reason": "Two vertical cut seams remained at the bottom of the jumper because V3 replaced only a central rectangle of the hem."
+  },
+  "frames": [
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 11,
+      "sourceV2Sha256": "a829593415b8262502cda85267aea01c2763eb6b36e003039542267a8b12c529",
+      "rejectedV3Sha256": "cda0bb9aff2214abdf8556bb0723331e34a8e6a41f3d7cedc03147dfb14bc8c6",
+      "draftV4Sha256": "f922ff8396bac64df18a09197e1ec8c7d4b421032788b6b2c79a9cbf2941193f",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 12,
+      "sourceV2Sha256": "278573c9601a1ba3b7f3d90629a551585ac908a44bdd472b375ebe4b0724bcf2",
+      "rejectedV3Sha256": "80f627fcb8db3fa426da5a09659a8978f5b79168098c64281ec8aedc8d304eb6",
+      "draftV4Sha256": "21c80a1275fdb7c340bc61107a21ee634af08d0625704d938c77068b6e941300",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 13,
+      "sourceV2Sha256": "e54f4d6f669d2c9e0fd4e36cc57bb7502f0b25b5ac6cc3edea6b7682d52dd00a",
+      "rejectedV3Sha256": "bdba7fab114bfa7e3408910eceb6f90f6f0a7f2f6f2b9a2aa2079d5a6486bacb",
+      "draftV4Sha256": "0c7d99ea20eb0d30c7ef4df08d803d6e56e111a5d4508a2c73fccce9e85b8d26",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 14,
+      "sourceV2Sha256": "b42cb772f708ad857b76253450dbcf72f93af96edbc92b2c5bd272caeef8026b",
+      "rejectedV3Sha256": "5f8df85a50e6924d81364cf21a0fe25c0e72bdb4c21e482ca27fabe70cf7f040",
+      "draftV4Sha256": "5155205d2433d1cac74c27d8e806a7eb53b01c23f70f16f819c2839a48c7b6a5",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 15,
+      "sourceV2Sha256": "acf9f752ad1292937312c4dab5f3abeb82e2b459ed0656ded2cc857165ae6bfc",
+      "rejectedV3Sha256": "e93c0c8abe3a70d0d80075713cbbea6b1803666330f3a033cd7fe7a8753b546b",
+      "draftV4Sha256": "6112bf901da7cd4c4b84fbf3c75a2a60e2e31414382e1632e2d38e7acd9cac12",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 16,
+      "sourceV2Sha256": "21cc593701ed485ede395ce978478714ef7f9205d4a5b46bec605bd251bc75ac",
+      "rejectedV3Sha256": "1e023e806b8e17a0cedcc047ef6bd0ee4eb4e1b1b367628ae8fbfc1ac000045d",
+      "draftV4Sha256": "62578902da7a49092e214e1e2624798f3fe964084660da249589fe1f3c435f57",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 17,
+      "sourceV2Sha256": "4b285d73a4d9a180d2c679aa52007d25f98504fe515528fed35dba3a0bf162d4",
+      "rejectedV3Sha256": "b99a2bdb432e112e77acb9a2bad5a4ca540660bd9319da489f2411e7d9352596",
+      "draftV4Sha256": "22e89bdc73ca907642254004bc2aafe5ed312ab5747d9d487dd141dbb3918c57",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 18,
+      "sourceV2Sha256": "8ada2fa0b22eabb1631e04e34e963ffca2a1b67fb5c8aaef1c0aa241f353ab68",
+      "rejectedV3Sha256": "516aa78bc3323457065bd0940cf939eca601433ff6a072d78cdb347210394a60",
+      "draftV4Sha256": "dba121a6a286f20cb31664997b82d4d4627f39dde8da2c435f9890b54b665b54",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 19,
+      "sourceV2Sha256": "36d72ad8807819354e6a8844c236460b5648c228c9756e74d46ebd0aa9a7df83",
+      "rejectedV3Sha256": "0dc2b1985e6d5f66c7fd86686e3f1d8ac2feab6dec67cc55819a4a9970d59f3c",
+      "draftV4Sha256": "01300d14ef6c698e8dc633b6ce2f6c224d7cf043477e938f664027876c8a8520",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 20,
+      "sourceV2Sha256": "3663dc10ab588428977532bfe86a6d2946eca61def161d500d15a910cfcd5788",
+      "rejectedV3Sha256": "636fe547de4e0da0a59fb0a8d770f057697d57227bbeafac60d121e801497be2",
+      "draftV4Sha256": "53d35b7ae698800d9406eda13c15c0095c6b86b651a3d693b350088b5a12387f",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 21,
+      "sourceV2Sha256": "01e33037f4564abbbeedaf4bef260503f6ef572bfe1220d3fdb381c963e4a9e5",
+      "rejectedV3Sha256": "adc6d2fa9935266bc5cac8b3e4229d4b54d6dd49788fbeea45122e958b4a880d",
+      "draftV4Sha256": "c08991115f777db758043fea63d21741f63bd71ed368c4212bcda527c0c1e8c2",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 22,
+      "sourceV2Sha256": "3a624f695960be2a74f2bc10869a98b7ccc731de1e927dcc4dd258f980499b03",
+      "rejectedV3Sha256": "9e8ef6fe3647e70badfb7b9b1ae9bc96e2206909c16db930d88dd5e73996e148",
+      "draftV4Sha256": "0c83976d665b4e359dcea45a857bf4c5aada71c7bf0b911cedd9c6829e80d203",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 23,
+      "sourceV2Sha256": "60bf939c0d9a0c8eb5be5680248170136406e62a1cea981427a8ffb03fdda38b",
+      "rejectedV3Sha256": "02f20f18705528a7640d582655560ae891d7ff205e3d052531d017edc2acd81b",
+      "draftV4Sha256": "aa5cee06982f0bc923fc7677e3c64f4b42a3b3cfb030f33d8cec2759252dc2cd",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 24,
+      "sourceV2Sha256": "b1c199001d4eb6c00c104f963cbefdc07b5efc08f0532666e3c36f9327b2f268",
+      "rejectedV3Sha256": "9337d66d7ee1a3fa4f249bd21f6d9053413df59bad03f84aa57f034348617470",
+      "draftV4Sha256": "229fb3117fc5785bee221f1063a1b42a48d833ecc5271de058ee6af0b4f12426",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 25,
+      "sourceV2Sha256": "3b0a4be452b355b6489e4d778945f0d79f315c3aaf3d9dbe96d7b6474c77536d",
+      "rejectedV3Sha256": "f50bf54b9b81487acd1d8a5fe22a45e6730616d51894ea2fb7da85c66b5fc507",
+      "draftV4Sha256": "e080ddee1dfc87c81dabdd90ddcb6d93b8cc954c15f541b0363145e128b6a108",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 26,
+      "sourceV2Sha256": "528da5df6d009fcb76c8a8340ffe0e1152cae9bf615ab43ad1c860b63330d66c",
+      "rejectedV3Sha256": "2dd137251531a7f9a2fcdad0ffc81d298cb3abab1e67b7ee4fb61b7395a21398",
+      "draftV4Sha256": "60faf7c1494decb6d8263146172ff3b1419b0ba0c15d02fd9473d96fa486215a",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 27,
+      "sourceV2Sha256": "4d1bbf5f883a74bb9d581f05e71b9cf9e862d510b9d360d9345d031ca7eebefe",
+      "rejectedV3Sha256": "35ab3065322e9e8102e463f89ec03d41136203fdbb58a88e7a2f3b0ad6e873e6",
+      "draftV4Sha256": "3f7cd9fefa9adc0af76750812ccec1110b3fd2394acb13c9e0f6e901210e9f5f",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 28,
+      "sourceV2Sha256": "3cb8650e3cfdd7fdef4a96ad4a99903a2fb58585cc02feb25bd67014a2eaf946",
+      "rejectedV3Sha256": "27e2bc9fb9744975fcf700014bf6985b6c4eddb57c9596e05edfe3a07324a2ba",
+      "draftV4Sha256": "d13f8a721ddbe20b55cff34cd34c6726ba2fbb21a95f43385a3656efaa032936",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 29,
+      "sourceV2Sha256": "47665f1a5663e293cfee4c24ef8c6f0d0af22aeb6c9db066c67303c637b14d28",
+      "rejectedV3Sha256": "48af25ae9b6dafbf5427fc39926bf74377ebe2505ef0fa5061e48f8399dfeaab",
+      "draftV4Sha256": "9a33895eeb53f363dba7826d481fa9ab6bdaa04f74b45b48bfb866acd719076c",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 30,
+      "sourceV2Sha256": "e8a97566e58cd055fbf66da844dc89496c04c84a9f6a1bc4b991f32c22c08760",
+      "rejectedV3Sha256": "28acff6cbb7b6d60b7f004adf9aab047ecb6dec0e117e5b017883b6188b7b6d2",
+      "draftV4Sha256": "ad8856ae7dddcff9f67c4250d26e996c23836576da7cda0d86b439e5c7091a31",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 31,
+      "sourceV2Sha256": "efd7ca6da147fc8613c08443d1adb4d282c322d44f5b2f58a4610cfa447e2e2d",
+      "rejectedV3Sha256": "d92e0b2e02300fa2dfde982d7926f1e65b90b08e96ce88a05cde8b290915103e",
+      "draftV4Sha256": "00a29a287a67b25625b14064bfb9cc032d0bee29aa21716b34ee8eca38c91e8c",
+      "correction": "V3 seam rejected: continuous authority hem and lower body replace the entire generated cut region; action upper body remains unchanged and recentered"
+    }
+  ],
+  "imageGeneration": {
+    "usedInDelivery": false,
+    "reason": "This identity-critical correction is an exact deterministic composite from hash-pinned Prime source and authority pixels."
+  }
+}

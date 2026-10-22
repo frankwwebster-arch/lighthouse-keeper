@@ -19,15 +19,16 @@ recorded contact-beard masks. V16 and the current runtime remain immutable
 until this correction is explicitly approved.
 
 The current versioned review batch is
-`/prime-keeper-animation-drafts-v3` (also served at
+`/prime-keeper-animation-drafts-v4` (also served at
 `/prime-keeper-animation-drafts`). It contains ten independently redraftable
-sequences and 162 frame occurrences. V3 preserves V2 while implementing the
-first review notes: lift frame 2 is omitted; passive front/back jumpers use the
-brighter measured Prime colour family; the non-writing seated route is renamed;
-and rear-task frames 11–31 have their upper bodies recentered over one exact,
-fixed waist/leg block with the old black seam fragments removed. These V3
-corrections remain review-only and have not replaced the installed runtime
-sprites. V1 and V2 remain immutable.
+sequences and 162 frame occurrences. V4 preserves V3's lift omission, brighter
+passive front/back jumpers and accurate seated-route title. Frank rejected the
+V3 rear-task amendment because two vertical cut seams remained in the jumper
+hem. V4 changes only rear-task positions 11–31: their action upper bodies stay
+recentered and unchanged, while one continuous exact-authority hem/lower body
+removes both seams and every hip fragment. These V4 corrections remain
+review-only and have not replaced the installed runtime sprites. V1–V3 remain
+immutable.
 
 The next work is not one undifferentiated art list:
 
@@ -69,7 +70,7 @@ the reaction batch is counted by motion family rather than by line of dialogue.
 
 ## Recommended next batch
 
-Review the ten V3 sequences first. On approval, register object planes and
+Review the ten V4 sequences first. On approval, register object planes and
 promote only accepted action frames or accepted composite choreography. Then
 complete the P0 ladder/darts/left-seat consumers and continue P1 in this order:
 fridge snack/eat, toast and serving; bed entry/sleep/exit; basin and loo;

@@ -2,6 +2,10 @@
 
 Date: 22 October 2026
 
+Status: preserved predecessor. Frank rejected only the rear-task V3 amendment
+because two vertical seams remained in the bottom jumper hem. V4 retains the
+other V3 feedback corrections and replaces those 21 frames separately.
+
 Current route: `/prime-keeper-animation-drafts`
 
 Versioned route: `/prime-keeper-animation-drafts-v3`
