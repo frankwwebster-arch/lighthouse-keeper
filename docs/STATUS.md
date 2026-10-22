@@ -846,6 +846,15 @@ derivatives and runtime promotion remain closed; approved Kettle V47 and
 existing behaviour are unchanged. Delivery:
 `docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V2_2026-10-22.md`.
 
+Kitchen Complete Room Layout V3 supersedes only the V2 review-page delivery at
+`/keeper-review/kitchen-complete-room-layout-v3`. A cold V2 visit could appear
+stuck while nineteen separate archived PNG redirects loaded and decoded. V3
+packs those same nineteen drawings losslessly into one content-addressed atlas,
+adds a bounded 30-second failure state and otherwise preserves every V2 pixel,
+datum and interaction. V2 remains immutable provenance; no runtime or
+production asset changed. Delivery:
+`docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V3_2026-10-22.md`.
+
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
 link with V6. The animation remains the exact V1/V2 six-pose motion inside its
