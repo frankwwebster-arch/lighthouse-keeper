@@ -867,8 +867,8 @@ implemented and no artwork change is authorised by it.
 The review-payload housekeeping pass completed on 21 October 2026. The exact
 clean-checkout baseline failed at 53.3148 MiB; the content-addressed sweep now
 archives every review image plus JSON/JSON.GZ at or above 24 KiB, leaving HTML
-and small JSON public. After Kitchen Complete Review V45, 5,328 references
-across 223 set manifests resolve to 3,062 immutable objects; `public/` is 48.72
+and small JSON public. After Kitchen Complete Review V45, 5,492 references
+across 224 set manifests resolve to 3,063 immutable objects; `public/` is 48.72
 MiB, 1.28 MiB below the unchanged 50 MiB guard. Runtime
 `public/sprites` is now 40.1033 MiB, including the 27 versioned Prime sheets.
 Use `npm run maintain:keeper-review` after any review builder; it archives,
