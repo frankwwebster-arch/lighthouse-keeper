@@ -3,13 +3,16 @@
 A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by typing or tapping objects, then keep him happy through the day. The playable cutaway currently has a kitchen, living room, bedroom with en suite, and lamp room.
 
 The current Prime animation review is
-`/prime-keeper-animation-drafts`: five versioned, unapproved sequences (36
-isolated frames) cover lift passage, front-door passage, rear cooking, rear
-tooth-brushing and a front wave. Every player has pause/stop/frame controls,
-the page includes a sequence sandbox and frame-specific redraft notes, and
-exact approved Prime standing endpoints replace generated approximations. Four
-unsafe source sheets are visibly withheld by the isolation gate. See
-`docs/PRIME_KEEPER_MORNING_ANIMATION_DRAFTS_V1_2026-10-22.md`.
+`/prime-keeper-animation-drafts` (versioned permalink
+`/prime-keeper-animation-drafts-v2`): ten reversible sequences with 163
+frame occurrences. It preserves the five V1 action drafts and adds an isolated
+broom-sweep candidate plus four choreography previews assembled only from
+byte-exact approved front, side and rear component frames. Every player has
+pause/stop/frame controls, the page includes a sequence sandbox and
+frame-specific redraft notes, and exact approved Prime endpoints are never
+redrawn. Unsafe snack, bed and original broom source sheets remain visibly
+withheld by the isolation gate. See
+`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V2_2026-10-22.md`.
 
 The historical whole-bank gate is the reversible Prime Keeper whole-bank
 normalisation programme. Its new selector is
@@ -1240,8 +1243,9 @@ sprites / 217 registered frames are installed, with Prime idle, walk
 start/cycle/stop, stairs and generic rear work active in the game. The page now
 shows approved sources beside their installed deliveries. Turns now bridge
 rear work and seats, side leisure uses sit/hold/stand, and diary uses the rear
-turn/sit/hold/stand/turn route. Ladder, darts and front/left seats still await
-matching gameplay consumers.
+turn/sit/hold/stand/turn route. Ladder, darts and left-facing seating still
+await matching gameplay consumers; the new front-seat route is available for
+choreography review but is not yet a runtime binding.
 The held-implement POC V3 remains excluded because its proxy body art is
 explicitly non-production. Full contract and remaining work:
 `docs/PRIME_KEEPER_ANIMATION_LIBRARY_2026-10-21.md` and

@@ -1,0 +1,297 @@
+{
+  "schema": "lighthouse-keeper/prime-choreography-composition@1",
+  "id": "rear-work-turn-return-v1",
+  "status": "approved-components-choreography-review",
+  "sourceAuthority": "public/prime-keeper-animations/catalogue.json",
+  "sourceAuthoritySha256": "88772c6ea73e39bb0b5d9f6f1a71db1ef7b4f65750ea18dfc2afdb04e9cc4587",
+  "rule": "Every occurrence copies a hash-pinned isolated source frame byte-for-byte. No approved source pixel is rewritten.",
+  "frames": [
+    {
+      "occurrence": 1,
+      "label": "turn to task 1",
+      "phase": "turn to back",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame1-c097d78aac2d2c52.png",
+      "sourceSha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8"
+    },
+    {
+      "occurrence": 2,
+      "label": "turn to task 2",
+      "phase": "turn to back",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame2-e1dc020aabfe8f3b.png",
+      "sourceSha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5"
+    },
+    {
+      "occurrence": 3,
+      "label": "turn to task 3",
+      "phase": "turn to back",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame3-34028d8821a7272a.png",
+      "sourceSha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859"
+    },
+    {
+      "occurrence": 4,
+      "label": "turn to task 4",
+      "phase": "turn to back",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame4-0d278363a0e7e4f1.png",
+      "sourceSha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655"
+    },
+    {
+      "occurrence": 5,
+      "label": "turn to task 5",
+      "phase": "turn to back",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame5-f827ac61f45aaaa4.png",
+      "sourceSha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc"
+    },
+    {
+      "occurrence": 6,
+      "label": "turn to task 6",
+      "phase": "turn to back",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame6-fe06522abd0cd55c.png",
+      "sourceSha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c"
+    },
+    {
+      "occurrence": 7,
+      "label": "turn to task 7",
+      "phase": "turn to back",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame7-d55afae023051e29.png",
+      "sourceSha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e"
+    },
+    {
+      "occurrence": 8,
+      "label": "turn to task 8",
+      "phase": "turn to back",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame8-bb530610cf0e17bf.png",
+      "sourceSha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132"
+    },
+    {
+      "occurrence": 9,
+      "label": "turn to task 9",
+      "phase": "turn to back",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame9-31dbac4efc00089f.png",
+      "sourceSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+    },
+    {
+      "occurrence": 10,
+      "label": "rear work 1",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f1-31dbac4efc00089f.png",
+      "sourceSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+    },
+    {
+      "occurrence": 11,
+      "label": "rear work 2",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f2-a829593415b82625.png",
+      "sourceSha256": "a829593415b8262502cda85267aea01c2763eb6b36e003039542267a8b12c529"
+    },
+    {
+      "occurrence": 12,
+      "label": "rear work 3",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f3-278573c9601a1ba3.png",
+      "sourceSha256": "278573c9601a1ba3b7f3d90629a551585ac908a44bdd472b375ebe4b0724bcf2"
+    },
+    {
+      "occurrence": 13,
+      "label": "rear work 4",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f4-e54f4d6f669d2c9e.png",
+      "sourceSha256": "e54f4d6f669d2c9e0fd4e36cc57bb7502f0b25b5ac6cc3edea6b7682d52dd00a"
+    },
+    {
+      "occurrence": 14,
+      "label": "rear work 5",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f5-b42cb772f708ad85.png",
+      "sourceSha256": "b42cb772f708ad857b76253450dbcf72f93af96edbc92b2c5bd272caeef8026b"
+    },
+    {
+      "occurrence": 15,
+      "label": "rear work 6",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f6-acf9f752ad129293.png",
+      "sourceSha256": "acf9f752ad1292937312c4dab5f3abeb82e2b459ed0656ded2cc857165ae6bfc"
+    },
+    {
+      "occurrence": 16,
+      "label": "rear work 7",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f7-21cc593701ed485e.png",
+      "sourceSha256": "21cc593701ed485ede395ce978478714ef7f9205d4a5b46bec605bd251bc75ac"
+    },
+    {
+      "occurrence": 17,
+      "label": "rear work 8",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f8-4b285d73a4d9a180.png",
+      "sourceSha256": "4b285d73a4d9a180d2c679aa52007d25f98504fe515528fed35dba3a0bf162d4"
+    },
+    {
+      "occurrence": 18,
+      "label": "rear work 9",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f9-8ada2fa0b22eabb1.png",
+      "sourceSha256": "8ada2fa0b22eabb1631e04e34e963ffca2a1b67fb5c8aaef1c0aa241f353ab68"
+    },
+    {
+      "occurrence": 19,
+      "label": "rear work 10",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f10-36d72ad880781935.png",
+      "sourceSha256": "36d72ad8807819354e6a8844c236460b5648c228c9756e74d46ebd0aa9a7df83"
+    },
+    {
+      "occurrence": 20,
+      "label": "rear work 11",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f11-3663dc10ab588428.png",
+      "sourceSha256": "3663dc10ab588428977532bfe86a6d2946eca61def161d500d15a910cfcd5788"
+    },
+    {
+      "occurrence": 21,
+      "label": "rear work 12",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f12-01e33037f4564abb.png",
+      "sourceSha256": "01e33037f4564abbbeedaf4bef260503f6ef572bfe1220d3fdb381c963e4a9e5"
+    },
+    {
+      "occurrence": 22,
+      "label": "rear work 13",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f13-3a624f695960be2a.png",
+      "sourceSha256": "3a624f695960be2a74f2bc10869a98b7ccc731de1e927dcc4dd258f980499b03"
+    },
+    {
+      "occurrence": 23,
+      "label": "rear work 14",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f14-60bf939c0d9a0c8e.png",
+      "sourceSha256": "60bf939c0d9a0c8eb5be5680248170136406e62a1cea981427a8ffb03fdda38b"
+    },
+    {
+      "occurrence": 24,
+      "label": "rear work 15",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f15-b1c199001d4eb6c0.png",
+      "sourceSha256": "b1c199001d4eb6c00c104f963cbefdc07b5efc08f0532666e3c36f9327b2f268"
+    },
+    {
+      "occurrence": 25,
+      "label": "rear work 16",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f16-3b0a4be452b355b6.png",
+      "sourceSha256": "3b0a4be452b355b6489e4d778945f0d79f315c3aaf3d9dbe96d7b6474c77536d"
+    },
+    {
+      "occurrence": 26,
+      "label": "rear work 17",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f17-528da5df6d009fcb.png",
+      "sourceSha256": "528da5df6d009fcb76c8a8340ffe0e1152cae9bf615ab43ad1c860b63330d66c"
+    },
+    {
+      "occurrence": 27,
+      "label": "rear work 18",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f18-4d1bbf5f883a74bb.png",
+      "sourceSha256": "4d1bbf5f883a74bb9d581f05e71b9cf9e862d510b9d360d9345d031ca7eebefe"
+    },
+    {
+      "occurrence": 28,
+      "label": "rear work 19",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f19-3cb8650e3cfdd7fd.png",
+      "sourceSha256": "3cb8650e3cfdd7fdef4a96ad4a99903a2fb58585cc02feb25bd67014a2eaf946"
+    },
+    {
+      "occurrence": 29,
+      "label": "rear work 20",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f20-47665f1a5663e293.png",
+      "sourceSha256": "47665f1a5663e293cfee4c24ef8c6f0d0af22aeb6c9db066c67303c637b14d28"
+    },
+    {
+      "occurrence": 30,
+      "label": "rear work 21",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f21-e8a97566e58cd055.png",
+      "sourceSha256": "e8a97566e58cd055fbf66da844dc89496c04c84a9f6a1bc4b991f32c22c08760"
+    },
+    {
+      "occurrence": 31,
+      "label": "rear work 22",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f22-efd7ca6da147fc86.png",
+      "sourceSha256": "efd7ca6da147fc8613c08443d1adb4d282c322d44f5b2f58a4610cfa447e2e2d"
+    },
+    {
+      "occurrence": 32,
+      "label": "rear work 23",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f1-31dbac4efc00089f.png",
+      "sourceSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+    },
+    {
+      "occurrence": 33,
+      "label": "rear work 24",
+      "phase": "work",
+      "source": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f1-31dbac4efc00089f.png",
+      "sourceSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+    },
+    {
+      "occurrence": 34,
+      "label": "return to side 1",
+      "phase": "turn to side",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame8-bb530610cf0e17bf.png",
+      "sourceSha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132"
+    },
+    {
+      "occurrence": 35,
+      "label": "return to side 2",
+      "phase": "turn to side",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame7-d55afae023051e29.png",
+      "sourceSha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e"
+    },
+    {
+      "occurrence": 36,
+      "label": "return to side 3",
+      "phase": "turn to side",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame6-fe06522abd0cd55c.png",
+      "sourceSha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c"
+    },
+    {
+      "occurrence": 37,
+      "label": "return to side 4",
+      "phase": "turn to side",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame5-f827ac61f45aaaa4.png",
+      "sourceSha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc"
+    },
+    {
+      "occurrence": 38,
+      "label": "return to side 5",
+      "phase": "turn to side",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame4-0d278363a0e7e4f1.png",
+      "sourceSha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655"
+    },
+    {
+      "occurrence": 39,
+      "label": "return to side 6",
+      "phase": "turn to side",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame3-34028d8821a7272a.png",
+      "sourceSha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859"
+    },
+    {
+      "occurrence": 40,
+      "label": "return to side 7",
+      "phase": "turn to side",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame2-e1dc020aabfe8f3b.png",
+      "sourceSha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5"
+    },
+    {
+      "occurrence": 41,
+      "label": "return to side 8",
+      "phase": "turn to side",
+      "source": "/keeper-review/keeper-prime-turn-side-back-v10/assets/frame1-c097d78aac2d2c52.png",
+      "sourceSha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8"
+    }
+  ]
+}

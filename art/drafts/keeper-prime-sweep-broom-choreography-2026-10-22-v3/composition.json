@@ -1,0 +1,87 @@
+{
+  "schema": "lighthouse-keeper/prime-choreography-composition@1",
+  "id": "sweep-broom-isolated-v2",
+  "status": "unapproved-isolated-action-candidate",
+  "sourceAuthority": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/keeper-prime-sweep-broom-v2.json",
+  "sourceAuthoritySha256": "12184f82aab242880b95de7628a22b763d1f1699b14ee11ebedf7e26a6060d56",
+  "rule": "Every occurrence copies a hash-pinned isolated source frame byte-for-byte. No approved source pixel is rewritten.",
+  "frames": [
+    {
+      "occurrence": 1,
+      "label": "Prime endpoint; broom staged",
+      "phase": "endpoint",
+      "source": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/drafts/frames/keeper_prime_sweep-broom-neutral-exact.png",
+      "sourceSha256": "365949f320390bf25a789eca23f2276f4004e26d32a2daec701cfa2978b20694"
+    },
+    {
+      "occurrence": 2,
+      "label": "take two-hand grip",
+      "phase": "acquire",
+      "source": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/drafts/frames/keeper_prime_sweep-broom-acquire.png",
+      "sourceSha256": "f0a861592bc6e596581d3fb4ef0b92e3ef9b8932623ff12511ebd50a61ddd731"
+    },
+    {
+      "occurrence": 3,
+      "label": "outward sweep 1",
+      "phase": "sweep",
+      "source": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/drafts/frames/keeper_prime_sweep-broom-phase1.png",
+      "sourceSha256": "c96a8ae11d32215ccdc6504e3834ea18a1de7148bc9b13f2fd9e38a00addf1dd"
+    },
+    {
+      "occurrence": 4,
+      "label": "outward sweep 2",
+      "phase": "sweep",
+      "source": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/drafts/frames/keeper_prime_sweep-broom-phase2.png",
+      "sourceSha256": "f818e2174fc7c51d6922287512ae0610d92f908859d5798b1ae1dc3250c5477b"
+    },
+    {
+      "occurrence": 5,
+      "label": "outward sweep 3",
+      "phase": "sweep",
+      "source": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/drafts/frames/keeper_prime_sweep-broom-phase3.png",
+      "sourceSha256": "3fa9add5b0354a0936693d7c7396b9eca2648e435d8d3bfa71714c255bf5dc2a"
+    },
+    {
+      "occurrence": 6,
+      "label": "furthest planted sweep",
+      "phase": "sweep",
+      "source": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/drafts/frames/keeper_prime_sweep-broom-phase4.png",
+      "sourceSha256": "52697586d00e7ab99d0b2cb6b5ae301d0c383de352a73aca58d0cb637d9ff16f"
+    },
+    {
+      "occurrence": 7,
+      "label": "return sweep 1",
+      "phase": "recover",
+      "source": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/drafts/frames/keeper_prime_sweep-broom-phase3.png",
+      "sourceSha256": "3fa9add5b0354a0936693d7c7396b9eca2648e435d8d3bfa71714c255bf5dc2a"
+    },
+    {
+      "occurrence": 8,
+      "label": "return sweep 2",
+      "phase": "recover",
+      "source": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/drafts/frames/keeper_prime_sweep-broom-phase2.png",
+      "sourceSha256": "f818e2174fc7c51d6922287512ae0610d92f908859d5798b1ae1dc3250c5477b"
+    },
+    {
+      "occurrence": 9,
+      "label": "return sweep 3",
+      "phase": "recover",
+      "source": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/drafts/frames/keeper_prime_sweep-broom-phase1.png",
+      "sourceSha256": "c96a8ae11d32215ccdc6504e3834ea18a1de7148bc9b13f2fd9e38a00addf1dd"
+    },
+    {
+      "occurrence": 10,
+      "label": "release two-hand grip",
+      "phase": "release",
+      "source": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/drafts/frames/keeper_prime_sweep-broom-acquire.png",
+      "sourceSha256": "f0a861592bc6e596581d3fb4ef0b92e3ef9b8932623ff12511ebd50a61ddd731"
+    },
+    {
+      "occurrence": 11,
+      "label": "Prime endpoint; broom staged",
+      "phase": "endpoint",
+      "source": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/drafts/frames/keeper_prime_sweep-broom-neutral-exact.png",
+      "sourceSha256": "365949f320390bf25a789eca23f2276f4004e26d32a2daec701cfa2978b20694"
+    }
+  ]
+}

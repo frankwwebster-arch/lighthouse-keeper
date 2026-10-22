@@ -66,10 +66,13 @@ seating remain installed but await matching gameplay consumers. The library
 labels that distinction and renders approved source and installed delivery
 side-by-side. This promotion does not expand any original art approval.
 
-The separate `/prime-keeper-animation-drafts` page contains the next five
-unapproved, versioned review sequences. It is deliberately not part of this
-approved library or runtime bank. See
-`docs/PRIME_KEEPER_MORNING_ANIMATION_DRAFTS_V1_2026-10-22.md`.
+The separate `/prime-keeper-animation-drafts` page now serves the V2 review:
+the five preserved V1 drafts, one isolated broom candidate and four
+approved-component choreography previews. These ten sequences remain outside
+the approved library and runtime bank until their complete choreography is
+accepted. V1 remains at `/prime-keeper-animation-drafts-v1`; the current
+versioned route is `/prime-keeper-animation-drafts-v2`. See
+`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V2_2026-10-22.md`.
 
 The held-implement POC remains excluded. Its motion feasibility and
 `hold_shaft_two_hand` concept are approved, but the proxy body art is not.

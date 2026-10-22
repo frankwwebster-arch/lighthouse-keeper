@@ -2,7 +2,12 @@
 
 Date: 22 October 2026
 
-Review page: `/prime-keeper-animation-drafts`
+Immutable review route: `/prime-keeper-animation-drafts-v1`
+
+This batch remains byte-identical and independently reviewable. The current
+expanded review is V2 at `/prime-keeper-animation-drafts-v2` (also served by
+`/prime-keeper-animation-drafts`) and is documented in
+`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V2_2026-10-22.md`.
 
 ## Delivered for review
 

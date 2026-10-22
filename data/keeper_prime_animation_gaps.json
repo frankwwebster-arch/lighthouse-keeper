@@ -26,19 +26,28 @@
   },
   "reviewDrafts": {
     "reviewUrl": "/prime-keeper-animation-drafts",
-    "status": "unapproved-versioned-drafts",
+    "versionedReviewUrl": "/prime-keeper-animation-drafts-v2",
+    "preservedV1Url": "/prime-keeper-animation-drafts-v1",
+    "status": "mixed-review-unapproved-sequences-and-approved-source-compositions",
     "sequences": [
       "lift entry, ride-neutral handoff and exit",
       "front-door approach, open and pass-through",
       "cook at counter",
       "brush teeth at basin",
-      "friendly front wave"
+      "friendly front wave",
+      "collect broom, sweep and recover",
+      "side leisure: sit, hold and stand",
+      "diary: turn, sit, hold, stand and return",
+      "front seat consumer route",
+      "rear task: turn, work and return"
     ],
-    "isolatedFrames": 36,
+    "frameOccurrences": 163,
+    "approvedComponentChoreographySequences": 4,
+    "unapprovedActionCandidateSequences": 6,
     "quarantinedForSourceOverlap": [
       "fridge snack and eat",
       "bed daytime nap",
-      "sweep with broom",
+      "original sweep-with-broom sheet (superseded for review by independently isolated Prime Sweep V2 candidate)",
       "first wave render (superseded by isolated V1)"
     ]
   },
@@ -51,7 +60,8 @@
       "required": [
         "complete: turn controller now binds installed front/side/back transitions to rear work and seating",
         "complete: side-facing leisure and back-facing diary now use sit → activity → stand choreography",
-        "remaining: bind front- and left-facing seats when a matching interaction is introduced",
+        "review choreography ready: complete side-right → front seat → side-right route",
+        "remaining: bind left-facing seating when a matching interaction is introduced; approve and bind the front route",
         "ladder routing when a ladder layout is active",
         "darts activity route and board/dart ownership"
       ],
@@ -89,10 +99,8 @@
       "kind": "new-prime-actions-plus-installed-seating",
       "why": "The sit/stand foundation is installed, but each activity still needs its own approved performance and furniture registration.",
       "required": [
-        "watch TV",
-        "armchair snooze",
-        "read a book",
-        "play piano",
+        "review choreography ready from exact approved art: side leisure sit → hold → stand and front seat route",
+        "activity-specific performance and prop continuity for TV, armchair snooze, reading and piano",
         "get into bed, sleep/nap loop and get out (first generated source quarantined for pose overlap)"
       ],
       "interactionIds": ["tv_watch", "tv_nature", "tv_nap", "read_book", "play_piano", "bed_sleep", "bed_nap"]
@@ -116,8 +124,9 @@
       "kind": "new-prime-actions",
       "why": "These actions use different hand positions, tools and viewpoints; the held-implement proxy cannot be reused as approved body art.",
       "required": [
-        "write in diary",
-        "sweep, basic hoover and upgraded hoover with production-approved held-tool bodies",
+        "review choreography ready from exact approved art: turn → rear sit → diary hold → stand → return",
+        "isolated sweep candidate ready for review; approval and runtime wiring still required",
+        "diary writing performance and prop; basic and upgraded hoover with production-approved held-tool bodies",
         "light the lamp",
         "polish the lamp",
         "look through telescope"

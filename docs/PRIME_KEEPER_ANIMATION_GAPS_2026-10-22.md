@@ -13,17 +13,21 @@ nature TV, armchair nap, reading and piano use side sit → hold → stand; diar
 uses turn → back sit → hold → stand → turn.
 
 The current versioned review batch is
-`/prime-keeper-animation-drafts`. It contains 36 isolated, independently
-redraftable frames across lift entry/exit, front-door passage, rear cooking,
-rear tooth-brushing and a front wave. These are review-only drafts and have not
-entered the runtime bank. Every standing endpoint that has a matching approved
-Prime authority is replaced with that exact authority byte-for-byte.
+`/prime-keeper-animation-drafts-v2` (also served at
+`/prime-keeper-animation-drafts`). It contains ten independently redraftable
+sequences and 163 frame occurrences: the five preserved V1 drafts, an isolated
+broom candidate, and exact-approved-component choreography for side leisure,
+diary, front seating and a rear task. These are review-only sequences and have
+not entered the runtime bank. The four component-only additions copy approved
+source frames byte-for-byte; every standing endpoint with a matching authority
+is likewise exact.
 
 The next work is not one undifferentiated art list:
 
 1. **Finish consuming installed assets:** ladder and darts still need gameplay
-   routes; front/left seats need matching interactions. Turn routing, side
-   leisure seating and back diary seating are complete.
+   routes; left seating needs a matching interaction. Turn routing, side
+   leisure seating and back diary seating are complete in-game; a complete
+   front-seat route is now available for choreography review.
 2. **Review and finish the circulation connectors:** lift entry/ride/exit and
    front-door passage now have V1 review drafts. Visitor greeting is deferred.
    Approved revisions still need prop registration and runtime integration.
@@ -36,12 +40,12 @@ The next work is not one undifferentiated art list:
 
 | Priority | Batch | What is required |
 | --- | --- | --- |
-| P0 | Installed choreography | **Complete:** action turn controller, side leisure seating and back diary seating. **Remaining:** front/left consumer routes, ladder layout route and darts board ownership. |
+| P0 | Installed choreography | **Complete in-game:** action turn controller, side leisure seating and back diary seating. **Review choreography:** front seat route. **Remaining:** left-seat consumer, ladder layout route and darts board ownership. |
 | P0 | Circulation connectors | **Review draft:** lift enter/ride handoff/exit and front-door approach/open/pass-through. **Remaining:** feedback revisions, prop registration, runtime wiring; visitor greeting deferred. |
 | P1 | Food and kitchen | **Review draft:** rear cooking. **Remaining:** fridge snack/eat, toast, carry/serve/eat endpoints. |
-| P1 | Rest and indoor leisure | TV, armchair snooze, reading, piano, bed entry/sleep/exit. Reuse the installed sit/stand foundation. |
+| P1 | Rest and indoor leisure | **Review choreography:** side leisure sit/hold/stand and front seat route, using byte-exact approved components. **Remaining:** activity-specific performance/props and bed entry/sleep/exit. |
 | P1 | Bathroom | **Review draft:** rear tooth-brushing. **Remaining:** basin wash, private loo entry/exit and discreet loo performances. |
-| P1 | Household and lamp | Diary, production-approved broom/hoovers, light/polish lamp, telescope. |
+| P1 | Household and lamp | **Review choreography:** diary turn/sit/hold/stand/return and isolated broom sweep. **Remaining:** diary writing performance/prop, approval and runtime wiring, hoovers, light/polish lamp and telescope. |
 | P1 | Phone and visitors | Call/answer/order pizza, chat, cards and TV together. |
 | P2 | Outside and pets | Fishing, gardening/harvest, shop, feed/play with pet. |
 | P2 | Unlocked rooms | Aquarium watch/feed, weather, radio, secret computer and gadgets. |
@@ -58,18 +62,22 @@ the reaction batch is counted by motion family rather than by line of dialogue.
 
 ## Recommended next batch
 
-Review the five V1 draft sequences first. On approval, register their object
-planes and promote only the accepted frames. Then complete the P0 ladder/darts
-consumers and continue P1 in this order: fridge snack/eat, toast and serving;
-bed entry/sleep/exit; basin and loo; production held tools; lamp/telescope; then
-phone. Visitors and pets are explicitly deferred for this batch.
+Review the ten V2 sequences first. On approval, register object planes and
+promote only accepted action frames or accepted composite choreography. Then
+complete the P0 ladder/darts/left-seat consumers and continue P1 in this order:
+fridge snack/eat, toast and serving; bed entry/sleep/exit; basin and loo;
+production held tools; lamp/telescope; then phone. Visitors and pets are
+explicitly deferred for this batch.
 
-The isolation gate withheld four generated sources: snack, bed nap, broom and
-the first wave. Their adjacent poses shared opaque pixels, so they were neither
-cropped nor exported for review. Wave V2 was rerendered with true gaps and is
-the six-frame wave now shown. The other three remain quarantined in their own
-versioned directories for later per-frame rerendering.
+The isolation gate withheld four generated sources: snack, bed nap, the
+original broom sheet and the first wave. Their adjacent poses shared opaque
+pixels, so they were neither cropped nor exported for review. Wave V2 was
+rerendered with true gaps and is the six-frame wave now shown. The original
+broom source remains quarantined, but a separate genuinely isolated Prime Sweep
+V2 candidate is now in the V2 review. Snack and bed still need per-frame
+rerendering.
 
 The held-implement feasibility POC is not an exception. It proved the motion
-model, but its proxy body art remains excluded. Sweeping and hoovering therefore
-still require production-approved Prime held-tool bodies.
+model, but its proxy body art remains excluded. The new sweep candidate uses a
+separately isolated exact-Prime source and still requires choreography approval;
+hoovering still requires production-approved Prime held-tool bodies.

@@ -1,0 +1,115 @@
+{
+  "schema": "lighthouse-keeper/prime-choreography-composition@1",
+  "id": "side-leisure-sit-hold-stand-v1",
+  "status": "approved-components-choreography-review",
+  "sourceAuthority": "public/prime-keeper-animations/catalogue.json",
+  "sourceAuthoritySha256": "88772c6ea73e39bb0b5d9f6f1a71db1ef7b4f65750ea18dfc2afdb04e9cc4587",
+  "rule": "Every occurrence copies a hash-pinned isolated source frame byte-for-byte. No approved source pixel is rewritten.",
+  "frames": [
+    {
+      "occurrence": 1,
+      "label": "sit 1",
+      "phase": "sit",
+      "source": "/keeper-review/keeper-prime-sit-stand-side-v2/assets/sit-frame-a172a8a01a387a21.png",
+      "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+    },
+    {
+      "occurrence": 2,
+      "label": "sit 2",
+      "phase": "sit",
+      "source": "/keeper-review/keeper-prime-sit-stand-side-v2/assets/sit-frame-c0a87d5460ce0af1.png",
+      "sourceSha256": "c0a87d5460ce0af134d6e9dc64dab22625f5a1eda1f631e021052701d91077c1"
+    },
+    {
+      "occurrence": 3,
+      "label": "sit 3",
+      "phase": "sit",
+      "source": "/keeper-review/keeper-prime-sit-stand-side-v2/assets/sit-frame-109c211066926cb2.png",
+      "sourceSha256": "109c211066926cb2b3f140755bfe51a4636106c03d75c052e826d6610791d8a1"
+    },
+    {
+      "occurrence": 4,
+      "label": "sit 4",
+      "phase": "sit",
+      "source": "/keeper-review/keeper-prime-sit-stand-side-v2/assets/sit-frame-7f23f761b211ee53.png",
+      "sourceSha256": "7f23f761b211ee53f80c15bf3a0cccdfd90f9e9ab490c260ede66c46174995f0"
+    },
+    {
+      "occurrence": 5,
+      "label": "sit 5",
+      "phase": "sit",
+      "source": "/keeper-review/keeper-prime-sit-stand-side-v2/assets/sit-frame-6ffe5f0af90c0aa3.png",
+      "sourceSha256": "6ffe5f0af90c0aa312f4dad276f22642b74360ca396fae743a3c13f640b58c21"
+    },
+    {
+      "occurrence": 6,
+      "label": "sit 6",
+      "phase": "sit",
+      "source": "/keeper-review/keeper-prime-sit-stand-side-v2/assets/sit-frame-8226a15137fc6973.png",
+      "sourceSha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b"
+    },
+    {
+      "occurrence": 7,
+      "label": "seated hold 1",
+      "phase": "hold",
+      "source": "/keeper-review/keeper-prime-sit-stand-side-v2/assets/sit-frame-8226a15137fc6973.png",
+      "sourceSha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b"
+    },
+    {
+      "occurrence": 8,
+      "label": "seated hold 2",
+      "phase": "hold",
+      "source": "/keeper-review/keeper-prime-sit-stand-side-v2/assets/sit-frame-8226a15137fc6973.png",
+      "sourceSha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b"
+    },
+    {
+      "occurrence": 9,
+      "label": "seated hold 3",
+      "phase": "hold",
+      "source": "/keeper-review/keeper-prime-sit-stand-side-v2/assets/sit-frame-8226a15137fc6973.png",
+      "sourceSha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b"
+    },
+    {
+      "occurrence": 10,
+      "label": "seated hold 4",
+      "phase": "hold",
+      "source": "/keeper-review/keeper-prime-sit-stand-side-v2/assets/sit-frame-8226a15137fc6973.png",
+      "sourceSha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b"
+    },
+    {
+      "occurrence": 11,
+      "label": "stand 1",
+      "phase": "stand",
+      "source": "/keeper-review/keeper-prime-sit-stand-side-v2/assets/sit-frame-6ffe5f0af90c0aa3.png",
+      "sourceSha256": "6ffe5f0af90c0aa312f4dad276f22642b74360ca396fae743a3c13f640b58c21"
+    },
+    {
+      "occurrence": 12,
+      "label": "stand 2",
+      "phase": "stand",
+      "source": "/keeper-review/keeper-prime-sit-stand-side-v2/assets/sit-frame-7f23f761b211ee53.png",
+      "sourceSha256": "7f23f761b211ee53f80c15bf3a0cccdfd90f9e9ab490c260ede66c46174995f0"
+    },
+    {
+      "occurrence": 13,
+      "label": "stand 3",
+      "phase": "stand",
+      "source": "/keeper-review/keeper-prime-sit-stand-side-v2/assets/sit-frame-109c211066926cb2.png",
+      "sourceSha256": "109c211066926cb2b3f140755bfe51a4636106c03d75c052e826d6610791d8a1"
+    },
+    {
+      "occurrence": 14,
+      "label": "stand 4",
+      "phase": "stand",
+      "source": "/keeper-review/keeper-prime-sit-stand-side-v2/assets/sit-frame-c0a87d5460ce0af1.png",
+      "sourceSha256": "c0a87d5460ce0af134d6e9dc64dab22625f5a1eda1f631e021052701d91077c1"
+    },
+    {
+      "occurrence": 15,
+      "label": "stand 5",
+      "phase": "stand",
+      "source": "/keeper-review/keeper-prime-sit-stand-side-v2/assets/sit-frame-a172a8a01a387a21.png",
+      "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "schema": "lighthouse-keeper/prime-choreography-composition@1",
+  "id": "front-seat-complete-route-v1",
+  "status": "approved-components-choreography-review",
+  "sourceAuthority": "public/prime-keeper-animations/catalogue.json",
+  "sourceAuthoritySha256": "88772c6ea73e39bb0b5d9f6f1a71db1ef7b4f65750ea18dfc2afdb04e9cc4587",
+  "rule": "Every occurrence copies a hash-pinned isolated source frame byte-for-byte. No approved source pixel is rewritten.",
+  "frames": [
+    {
+      "occurrence": 1,
+      "label": "turn to front 1",
+      "phase": "turn to front",
+      "source": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame8-a172a8a01a387a21.png",
+      "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+    },
+    {
+      "occurrence": 2,
+      "label": "turn to front 2",
+      "phase": "turn to front",
+      "source": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame7-85f897ef55e76813.png",
+      "sourceSha256": "85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9"
+    },
+    {
+      "occurrence": 3,
+      "label": "turn to front 3",
+      "phase": "turn to front",
+      "source": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame6-8c20fc0436d4982d.png",
+      "sourceSha256": "8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb"
+    },
+    {
+      "occurrence": 4,
+      "label": "turn to front 4",
+      "phase": "turn to front",
+      "source": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame5-2e118ca8d10d126f.png",
+      "sourceSha256": "2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5"
+    },
+    {
+      "occurrence": 5,
+      "label": "turn to front 5",
+      "phase": "turn to front",
+      "source": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame4-081272e51f799f6d.png",
+      "sourceSha256": "081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a"
+    },
+    {
+      "occurrence": 6,
+      "label": "turn to front 6",
+      "phase": "turn to front",
+      "source": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame3-5b4f9406f68e15d2.png",
+      "sourceSha256": "5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41"
+    },
+    {
+      "occurrence": 7,
+      "label": "turn to front 7",
+      "phase": "turn to front",
+      "source": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame2-af20e9290fb79d16.png",
+      "sourceSha256": "af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e"
+    },
+    {
+      "occurrence": 8,
+      "label": "turn to front 8",
+      "phase": "turn to front",
+      "source": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame1-a9a5c37fe7222199.png",
+      "sourceSha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e"
+    },
+    {
+      "occurrence": 9,
+      "label": "sit front 1",
+      "phase": "sit",
+      "source": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f2-4efd077ac6046b67.png",
+      "sourceSha256": "4efd077ac6046b67e286f22b8b38546492042d0ed8e0f43da0e34840a32d23ab"
+    },
+    {
+      "occurrence": 10,
+      "label": "sit front 2",
+      "phase": "sit",
+      "source": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f3-36482028337fe7b0.png",
+      "sourceSha256": "36482028337fe7b00b09eaab1d11a5ed275fe7edf36acacf08e7341f4f5e54d5"
+    },
+    {
+      "occurrence": 11,
+      "label": "sit front 3",
+      "phase": "sit",
+      "source": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f4-80e4eaa09c8adaad.png",
+      "sourceSha256": "80e4eaa09c8adaad583242e585f883e5fca244ed465b76d9e2ab0e25c0b1b89f"
+    },
+    {
+      "occurrence": 12,
+      "label": "sit front 4",
+      "phase": "sit",
+      "source": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f5-f60db0bc99420b34.png",
+      "sourceSha256": "f60db0bc99420b3412efa4cb7623f8b264718606b3af69e079f9f2962e695f4c"
+    },
+    {
+      "occurrence": 13,
+      "label": "sit front 5",
+      "phase": "sit",
+      "source": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f6-501151a426f81251.png",
+      "sourceSha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce"
+    },
+    {
+      "occurrence": 14,
+      "label": "front seated hold 1",
+      "phase": "hold",
+      "source": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f6-501151a426f81251.png",
+      "sourceSha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce"
+    },
+    {
+      "occurrence": 15,
+      "label": "front seated hold 2",
+      "phase": "hold",
+      "source": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f6-501151a426f81251.png",
+      "sourceSha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce"
+    },
+    {
+      "occurrence": 16,
+      "label": "front seated hold 3",
+      "phase": "hold",
+      "source": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f6-501151a426f81251.png",
+      "sourceSha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce"
+    },
+    {
+      "occurrence": 17,
+      "label": "front seated hold 4",
+      "phase": "hold",
+      "source": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f6-501151a426f81251.png",
+      "sourceSha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce"
+    },
+    {
+      "occurrence": 18,
+      "label": "stand front 1",
+      "phase": "stand",
+      "source": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f5-f60db0bc99420b34.png",
+      "sourceSha256": "f60db0bc99420b3412efa4cb7623f8b264718606b3af69e079f9f2962e695f4c"
+    },
+    {
+      "occurrence": 19,
+      "label": "stand front 2",
+      "phase": "stand",
+      "source": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f4-80e4eaa09c8adaad.png",
+      "sourceSha256": "80e4eaa09c8adaad583242e585f883e5fca244ed465b76d9e2ab0e25c0b1b89f"
+    },
+    {
+      "occurrence": 20,
+      "label": "stand front 3",
+      "phase": "stand",
+      "source": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f3-36482028337fe7b0.png",
+      "sourceSha256": "36482028337fe7b00b09eaab1d11a5ed275fe7edf36acacf08e7341f4f5e54d5"
+    },
+    {
+      "occurrence": 21,
+      "label": "stand front 4",
+      "phase": "stand",
+      "source": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f2-4efd077ac6046b67.png",
+      "sourceSha256": "4efd077ac6046b67e286f22b8b38546492042d0ed8e0f43da0e34840a32d23ab"
+    },
+    {
+      "occurrence": 22,
+      "label": "stand front 5",
+      "phase": "stand",
+      "source": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f1-a9a5c37fe7222199.png",
+      "sourceSha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e"
+    },
+    {
+      "occurrence": 23,
+      "label": "turn to side 1",
+      "phase": "turn to side",
+      "source": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame2-af20e9290fb79d16.png",
+      "sourceSha256": "af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e"
+    },
+    {
+      "occurrence": 24,
+      "label": "turn to side 2",
+      "phase": "turn to side",
+      "source": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame3-5b4f9406f68e15d2.png",
+      "sourceSha256": "5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41"
+    },
+    {
+      "occurrence": 25,
+      "label": "turn to side 3",
+      "phase": "turn to side",
+      "source": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame4-081272e51f799f6d.png",
+      "sourceSha256": "081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a"
+    },
+    {
+      "occurrence": 26,
+      "label": "turn to side 4",
+      "phase": "turn to side",
+      "source": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame5-2e118ca8d10d126f.png",
+      "sourceSha256": "2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5"
+    },
+    {
+      "occurrence": 27,
+      "label": "turn to side 5",
+      "phase": "turn to side",
+      "source": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame6-8c20fc0436d4982d.png",
+      "sourceSha256": "8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb"
+    },
+    {
+      "occurrence": 28,
+      "label": "turn to side 6",
+      "phase": "turn to side",
+      "source": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame7-85f897ef55e76813.png",
+      "sourceSha256": "85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9"
+    },
+    {
+      "occurrence": 29,
+      "label": "turn to side 7",
+      "phase": "turn to side",
+      "source": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame8-a172a8a01a387a21.png",
+      "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+    }
+  ]
+}

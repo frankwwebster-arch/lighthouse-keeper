@@ -3,9 +3,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import styles from './primeKeeperDraftReview.module.css'
 
-type Frame = { id: string; label: string; src: string; sha256: string; durationMs: number; redraftSlot: string }
+type Frame = { id: string; label: string; phase?: string; src: string; sha256: string; durationMs: number; redraftSlot: string }
 type Sequence = { id: string; title: string; status: string; fps: number; startPose: string; endPose: string; source: { path: string; sha256: string }; draftStrip: { path: string; sha256: string }; frames: Frame[] }
 type Batch = {
+  version: number
   generatedOn: string
   status: string
   note: string
@@ -128,6 +129,8 @@ export default function PrimeKeeperDraftReview({ batch }: { batch: Batch }) {
     const frames = sequenceMap.get(entry.sequenceId)?.frames ?? []
     return entry.reverse ? [...frames].reverse() : frames
   }), [sandbox, sequenceMap])
+  const frameCount = batch.sequences.reduce((sum, sequence) => sum + sequence.frames.length, 0)
+  const approvedCompositionCount = batch.sequences.filter((sequence) => sequence.status === 'approved-components-choreography-review').length
   const broadcast = (type: Command['type']) => setCommand((current) => ({ type, nonce: current.nonce + 1 }))
   const addSequence = (sequence: Sequence) => setSandbox((items) => [...items, { key: `${sequence.id}-${Date.now()}`, sequenceId: sequence.id, reverse: false }])
   const move = (index: number, direction: -1 | 1) => setSandbox((items) => {
@@ -138,10 +141,10 @@ export default function PrimeKeeperDraftReview({ batch }: { batch: Batch }) {
 
   return <main className={styles.page}>
     <header className={styles.hero}>
-      <nav><a href="/prime-keeper-animations">Approved library</a><span>/</span><strong>Morning draft batch V1</strong></nav>
+      <nav><a href="/prime-keeper-animations">Approved library</a><span>/</span><strong>{batch.version < 2 ? 'Morning draft batch V1' : `Expanded review batch V${batch.version}`}</strong>{batch.version < 2 && <><span>/</span><a href="/prime-keeper-animation-drafts-v2">Open expanded V2 →</a></>}</nav>
       <p className={styles.eyebrow}>Versioned · reversible · frame-addressable</p>
       <h1>Prime Keeper<br />next motions.</h1>
-      <p className={styles.lede}>P0 circulation plus the first food, rest, hygiene, household and reaction motions, held outside the production bank until you approve or request individual frame changes.</p>
+      <p className={styles.lede}>{batch.version < 2 ? 'P0 circulation plus the first food, hygiene and reaction motions, held outside the production bank until you approve or request individual frame changes.' : 'P0 circulation and daily-life drafts, plus exact approved-component choreography for seating, diary and rear tasks. Candidate sequences remain outside the production bank until their complete motion is accepted.'}</p>
     </header>
 
     <section className={styles.readiness}><strong>{loadError ? 'Playback locked' : ready ? `All ${sources.length} images decoded` : `Preparing ${sources.length} images…`}</strong><span>{loadError || 'No player starts until every frame is available.'}</span></section>
@@ -151,16 +154,16 @@ export default function PrimeKeeperDraftReview({ batch }: { batch: Batch }) {
       <p><strong>32×40 logical pixels · 256×320 authoring · 8 px/lp · anchor 128,320.</strong> Cap top y18; opaque floor y316. Jumper, cream band, trousers and boots are colour-locked to the measured Prime palette below.</p>
       <div className={styles.authorities}>{Object.entries(batch.canonicalAuthorities).map(([name, authority]) => <article key={name}><div className={styles.authorityStage}><img src={AUTHORITY_SPRITES[name]} alt={`Canonical ${name} Prime Keeper`} /></div><strong>{name.replace(/([A-Z])/g, ' $1')}</strong><code>{authority.sha256.slice(0, 16)}…</code></article>)}</div>
       <dl className={styles.palette}>{Object.entries(batch.colourLock).map(([name, rgb]) => <div key={name}><i style={{ background: `rgb(${rgb.join(',')})` }} /><dt>{name}</dt><dd>{rgb.join(', ')}</dd></div>)}</dl>
-      <p className={styles.boundary}><strong>Review boundary:</strong> these {batch.sequences.reduce((sum, sequence) => sum + sequence.frames.length, 0)} frames are unapproved drafts. Canonical Prime art and approved animations are unchanged. Each frame has a stable redraft slot, so one pose can be replaced without disturbing its neighbours.</p>
+      <p className={styles.boundary}><strong>Review boundary:</strong> this page contains {frameCount} frame occurrences. {approvedCompositionCount ? `${approvedCompositionCount} sequences reuse byte-exact approved component art; their order, holds and joins are still presented for choreography review. ` : ''}Generated action drafts and the isolated broom candidate remain unapproved. Canonical Prime art and approved sources are unchanged. Every occurrence has a stable feedback slot.</p>
       <div className={styles.quarantine}><strong>{batch.quarantinedSources.length} generated sources withheld by the isolation gate</strong><ul>{batch.quarantinedSources.map((item) => <li key={item.id}><span>{item.title}</span> — {item.reason}</li>)}</ul></div>
     </section>
 
     <section className={styles.review}>
       <div className={styles.sectionTitle}><div><span>02</span><h2>Animation review</h2></div><div className={styles.global}><button disabled={!ready} onClick={() => broadcast('play')}>▶ All</button><button disabled={!ready} onClick={() => broadcast('pause')}>Ⅱ All</button><button disabled={!ready} onClick={() => broadcast('previous')}>← Frame</button><button disabled={!ready} onClick={() => broadcast('next')}>Frame →</button><button disabled={!ready} onClick={() => broadcast('stop')}>■ Stop</button></div></div>
       <div className={styles.sequenceGrid}>{batch.sequences.map((sequence) => <article className={styles.sequence} key={sequence.id}>
-        <header><div><span>Review draft</span><h3>{sequence.title}</h3><p>{sequence.startPose} → {sequence.endPose} · {sequence.frames.length} frames at {sequence.fps} fps</p></div><button onClick={() => addSequence(sequence)}>＋ Sandbox</button></header>
+        <header><div><span>{sequence.status === 'approved-components-choreography-review' ? 'Approved art · choreography review' : sequence.id.includes('sweep') ? 'Isolated action candidate' : 'Review draft'}</span><h3>{sequence.title}</h3><p>{sequence.startPose} → {sequence.endPose} · {sequence.frames.length} frames at {sequence.fps} fps</p></div><button onClick={() => addSequence(sequence)}>＋ Sandbox</button></header>
         <Player frames={sequence.frames} ready={ready} command={command} onFrame={setActiveFrame} />
-        <details><summary>Source and draft hashes</summary><dl><div><dt>Generated source</dt><dd><code>{sequence.source.sha256}</code></dd></div><div><dt>Normalised strip</dt><dd><code>{sequence.draftStrip.sha256}</code></dd></div></dl></details>
+        <details><summary>Source and draft hashes</summary><dl><div><dt>Source authority</dt><dd><code>{sequence.source.sha256}</code></dd></div><div><dt>Versioned strip</dt><dd><code>{sequence.draftStrip.sha256}</code></dd></div></dl></details>
       </article>)}</div>
     </section>
 
@@ -172,7 +175,7 @@ export default function PrimeKeeperDraftReview({ batch }: { batch: Batch }) {
 
     <section className={styles.sandbox}>
       <div className={styles.sectionTitle}><div><span>04</span><h2>Draft sequence sandbox</h2></div><p>Combine, reverse and inspect without altering any source frame.</p></div>
-      <div className={styles.sandboxGrid}><article className={styles.sandboxPlayer}>{sandboxFrames.length ? <Player frames={sandboxFrames} ready={ready} command={command} large /> : <div className={styles.empty}><strong>No draft sequence yet.</strong><p>Use “＋ Sandbox” on either animation.</p></div>}</article><article className={styles.builder}><header><strong>Sequence order</strong><button onClick={() => setSandbox([])}>Clear</button></header>{sandbox.map((entry, index) => { const sequence = sequenceMap.get(entry.sequenceId); return <div className={styles.builderRow} key={entry.key}><span>{index + 1}</span><strong>{sequence?.title}</strong><label><input type="checkbox" checked={entry.reverse} onChange={(event) => setSandbox((items) => items.map((item) => item.key === entry.key ? { ...item, reverse: event.target.checked } : item))} /> reverse</label><button disabled={index === 0} onClick={() => move(index, -1)}>↑</button><button disabled={index === sandbox.length - 1} onClick={() => move(index, 1)}>↓</button><button onClick={() => setSandbox((items) => items.filter((item) => item.key !== entry.key))}>×</button></div>})}</article></div>
+      <div className={styles.sandboxGrid}><article className={styles.sandboxPlayer}>{sandboxFrames.length ? <Player frames={sandboxFrames} ready={ready} command={command} large /> : <div className={styles.empty}><strong>No draft sequence yet.</strong><p>Use “＋ Sandbox” on any animation.</p></div>}</article><article className={styles.builder}><header><strong>Sequence order</strong><button onClick={() => setSandbox([])}>Clear</button></header>{sandbox.map((entry, index) => { const sequence = sequenceMap.get(entry.sequenceId); return <div className={styles.builderRow} key={entry.key}><span>{index + 1}</span><strong>{sequence?.title}</strong><label><input type="checkbox" checked={entry.reverse} onChange={(event) => setSandbox((items) => items.map((item) => item.key === entry.key ? { ...item, reverse: event.target.checked } : item))} /> reverse</label><button disabled={index === 0} onClick={() => move(index, -1)}>↑</button><button disabled={index === sandbox.length - 1} onClick={() => move(index, 1)}>↓</button><button onClick={() => setSandbox((items) => items.filter((item) => item.key !== entry.key))}>×</button></div>})}</article></div>
     </section>
   </main>
 }
