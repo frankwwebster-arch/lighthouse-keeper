@@ -2,8 +2,9 @@
 
 Date: 22 October 2026
 
-Status: immutable reversible review candidate; not approved, registered,
-promoted, selected as current or wired to production/runtime.
+Status: immutable reversible review; inherited kettle motion/SFX presentation
+approved; Dishwasher V3 not approved, registered, promoted or wired to
+production/runtime.
 
 Review route: `/keeper-review/kitchen-ligne-claire-complete-review-v50/index.html`
 
@@ -15,7 +16,9 @@ V50 is the full movable Kitchen V46 broken-appliance motion workbench with only
 the rejected Dishwasher V1 family replaced by geometry-locked Dishwasher V3.
 It retains the three exact approved Kettle V47 states, the separate kettle lid
 motion, appliance tremor modes, independently anchored effects and replaceable
-review SFX from V46. It contains 60 object/state records, 16 effect records and
+review SFX from V46. Frank approved that exact kettle presentation on 22
+October 2026; V50 inherits its kettle art, layers, placeholder audio and
+normalised workbench JavaScript byte-for-byte. It contains 60 object/state records, 16 effect records and
 16 contact/evidence sheets.
 
 V48 is retained as an immutable intermediate: its first build stopped before
@@ -80,6 +83,7 @@ and decode before interaction or playback is enabled.
 ```sh
 npm run verify:kitchen-dishwasher-ligne-claire-v3
 npm run verify:kitchen-broken-motion-workbench-v46
+npm run verify:kitchen-broken-motion-workbench-v46-kettle-approval
 npm run verify:kitchen-ligne-claire-complete-review-v50
 npm run maintain:keeper-review
 npm test
@@ -93,8 +97,9 @@ normalised V46 workbench JavaScript, root-absolute delivery and a closed gate.
 ## Approval and rollback
 
 `batch-register.json` remains closed: `register:false`, `promote:false`, no
-selector changes and no production writes. Explicit approval is required
-before any Dishwasher V3 candidate can become current.
+selector changes and no production writes. The external kettle approval does
+not open that gate. Explicit approval is still required before any Dishwasher
+V3 candidate can become current.
 
 Rollback is immediate: discard only the V50 draft, shell, archive set, new
 content-addressed objects, builder and this record. V46, V49, Dishwasher V3,

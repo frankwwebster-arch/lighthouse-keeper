@@ -906,8 +906,12 @@ over the open top. SFX has an independent toggle and a short intermittent
 metal-rattle placeholder which can be replaced for the current browser session
 by dropping an audio file onto the slot or using its file picker. Repair zeros
 motion and stops pending/active sound immediately while preserving V41 movement
-locking and healing. V46 is unapproved, unpromoted and unwired; approved/static
-art and production/runtime selectors are unchanged. Claude's game-wide runtime
+locking and healing. Frank approved the exact kettle motion/SFX presentation
+on 22 October 2026; the hash-pinned decision is
+[`docs/review/kitchen-broken-motion-workbench-v46-kettle-approval-2026-10-22.json`](docs/review/kitchen-broken-motion-workbench-v46-kettle-approval-2026-10-22.json).
+That approval covers only the kettle presentation and reusable contract: V46's
+Dishwasher V1 drawing is rejected, nothing is promoted or wired, and
+approved/static art and production/runtime selectors are unchanged. Claude's game-wide runtime
 handoff for Standard/On/Broken and transition SFX slots is at
 [`docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md`](docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md).
 Delivery:
@@ -923,8 +927,9 @@ copies the matching approved Cabinet V3 cap across worktop rows `4–15`. The
 complete ghost proves the dishwasher silhouette is not squatter and that the
 worktops form one continuous run. Only Frank's authorised steeper right-hand
 Broken handle angle changes internally. V50's normalised JavaScript is
-byte-identical to V46, so movement, healing, locks, repair, effects, motion and
-SFX remain unchanged. The gate remains closed. See
+byte-identical to V46, so the approved kettle motion/SFX presentation carries
+forward exactly while Dishwasher V3 remains the sole unapproved visual
+candidate. The registration/promotion gate remains closed. See
 [`docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V3_2026-10-22.md`](docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V3_2026-10-22.md)
 and
 [`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V50_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V50_2026-10-22.md).

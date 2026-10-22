@@ -1,7 +1,7 @@
 # Kitchen Broken-Appliance Motion Workbench V46
 
 Date: 22 October 2026
-Status: immutable review candidate; motion/SFX approval required; not promoted or wired
+Status: kettle motion/SFX presentation approved by Frank; Dishwasher V1 rejected; not promoted or wired
 
 ## Outcome
 
@@ -63,14 +63,23 @@ maintenance were:
 - derived Broken lid: `b8ffe1192eaac084cafd78c2037b4563ab6c20ddb665109a60a493bda2aca9a0`
 - placeholder WAV: `72f9b08156118717f14edcd6b73321cd14e0bd94dc419bb59490e4eb35ea4d47`
 
-The registration gate remains closed. Reject V46 by deleting only its draft
-pack, archive-set manifest, review shell and routes. V45, V47, all approval
-records, production assets and runtime remain untouched.
+Frank approved the kettle with “kettle is approved” on 22 October 2026. The
+external record
+`docs/review/kitchen-broken-motion-workbench-v46-kettle-approval-2026-10-22.json`
+pins the exact shell, manifest, kettle states, derived body/lid layers and
+placeholder WAV. The same decision explicitly rejects Dishwasher V1. Complete
+Review V50 carries the approved kettle presentation forward byte-for-byte and
+offers Dishwasher V3 as a separate unapproved correction.
+
+The registration gate remains closed. Revoking the approval requires removing
+only its external record; V46, V47, V50, production assets and runtime remain
+untouched.
 
 ## Verification
 
 ```bash
 npm run verify:kitchen-broken-motion-workbench-v46
+npm run verify:kitchen-broken-motion-workbench-v46-kettle-approval
 npm run maintain:keeper-review
 npm test
 npm run typecheck
