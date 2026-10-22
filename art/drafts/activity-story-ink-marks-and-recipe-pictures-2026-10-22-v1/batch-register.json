@@ -1,0 +1,2853 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ink-marks-and-recipe-picture-pack@1",
+  "set": "activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1",
+  "status": "commissioned-and-registered-awaiting-claude-review",
+  "created": "2026-10-22",
+  "commissionedBy": "Claude on Frank's behalf under Frank's standing instruction of 2026-10-21",
+  "reviewOwner": "Claude",
+  "tool": "built-in image generation/editing plus deterministic fixed-palette normalisation",
+  "bindingTaxonomy": "one even black outline, flat colour, no shine; ligne claire, not cartoon; marks are one black ink and one weight when accent colour is covered",
+  "visibleAlphaThreshold": 8,
+  "components": {
+    "symbol-impact-star": {
+      "kind": "mark",
+      "family": "impact",
+      "label": "Impact star",
+      "intent": "commissioned-new-immutable-version",
+      "description": "solid black star with seven short radiating strokes",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "review-archive/objects/24/24bd4e85982758910682eee6e7963a3c197b4de8b20f5e4f07caf2ec1ef3635f.png",
+        "currentReferenceSha256": "24bd4e85982758910682eee6e7963a3c197b4de8b20f5e4f07caf2ec1ef3635f"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-impact-star-source.png",
+      "sourceSha256": "a3ff8b2b9afecd726ebab57cb4d1bcf44a3be9c5b48684fa62da3883e79a86d0",
+      "sourcePixels": [
+        1334,
+        1179
+      ],
+      "originalCacheFile": "exec-411efbe5-7c04-4d7c-9d87-32d646e9381b.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-impact-star.png",
+      "sha256": "fea013ee9e312c9163a6097eacdbdc947a4bb94f1a03e3026d25e1235783a942",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        410,
+        324,
+        925,
+        810
+      ],
+      "normalisationCrop": [
+        410,
+        324,
+        925,
+        810
+      ],
+      "normalisedVisibleSize": [
+        216,
+        204
+      ],
+      "normalisedOffset": [
+        20,
+        26
+      ],
+      "bounds": [
+        20,
+        26,
+        236,
+        230
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-motion-ticks": {
+      "kind": "mark",
+      "family": "motion",
+      "label": "Motion ticks",
+      "intent": "commissioned-new-immutable-version",
+      "description": "three short curved parallel whoosh strokes",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "review-archive/objects/a9/a91599e13c96e96cff6a247815bb30840d1376493f5c123ab73c3b20a7d4630d.png",
+        "currentReferenceSha256": "a91599e13c96e96cff6a247815bb30840d1376493f5c123ab73c3b20a7d4630d"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-motion-ticks-source.png",
+      "sourceSha256": "2958db47c9250915c494737516fc9ba443289afb5e47b7cef69c9e3048036db1",
+      "sourcePixels": [
+        1230,
+        1278
+      ],
+      "originalCacheFile": "exec-3cd010cc-6980-4429-ab18-47b72e390507.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-motion-ticks.png",
+      "sha256": "8db4c54d3908e54f27d5489c64fe3d884642a03a6ef547951d714fd3d4ac9de9",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        324,
+        431,
+        1003,
+        905
+      ],
+      "normalisationCrop": [
+        324,
+        431,
+        1003,
+        905
+      ],
+      "normalisedVisibleSize": [
+        216,
+        151
+      ],
+      "normalisedOffset": [
+        20,
+        52
+      ],
+      "bounds": [
+        20,
+        52,
+        236,
+        203
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-water-droplets": {
+      "kind": "mark",
+      "family": "water",
+      "label": "Water droplets",
+      "intent": "commissioned-new-immutable-version",
+      "description": "one outlined teardrop with pale interior",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "review-archive/objects/2b/2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc.png",
+        "currentReferenceSha256": "2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-water-droplets-source.png",
+      "sourceSha256": "120bfcd3df7e1c1771197f0f23a29bdace5f525ac4a8621a81d5cfb5713efa8e",
+      "sourcePixels": [
+        1134,
+        1387
+      ],
+      "originalCacheFile": "exec-44243001-646b-4c7c-9b83-52e6df2c81e4.png",
+      "flatPalette": [
+        "#051824",
+        "#ede9de"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-water-droplets.png",
+      "sha256": "a00879321afee9b7ddaf692ce69596793b3eda462c347c4fc4187d4008a0d5ba",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        242,
+        237,
+        888,
+        1202
+      ],
+      "normalisationCrop": [
+        242,
+        237,
+        888,
+        1202
+      ],
+      "normalisedVisibleSize": [
+        145,
+        216
+      ],
+      "normalisedOffset": [
+        55,
+        20
+      ],
+      "bounds": [
+        55,
+        20,
+        200,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-soap-bubbles": {
+      "kind": "mark",
+      "family": "water",
+      "label": "Soap bubbles",
+      "intent": "commissioned-new-immutable-version",
+      "description": "three differently sized outlined circles",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "review-archive/objects/a1/a1946758a07299ee5625b99499c5b4f4ed2bbcb9453737be23f091b42685bef7.png",
+        "currentReferenceSha256": "a1946758a07299ee5625b99499c5b4f4ed2bbcb9453737be23f091b42685bef7"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-soap-bubbles-source.png",
+      "sourceSha256": "1c00262e20c41f0f1e92218d212200452fb4bf45d41035960f98d567c18f99df",
+      "sourcePixels": [
+        1368,
+        1150
+      ],
+      "originalCacheFile": "exec-a098abc2-338a-4430-bed6-99843613deae.png",
+      "flatPalette": [
+        "#051824",
+        "#ede9de"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-soap-bubbles.png",
+      "sha256": "e6f9fa435d82397a0199ca39f0b75054183dad0fcad0f22682350d2f47f890f8",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        374,
+        336,
+        994,
+        843
+      ],
+      "normalisationCrop": [
+        374,
+        336,
+        994,
+        843
+      ],
+      "normalisedVisibleSize": [
+        216,
+        177
+      ],
+      "normalisedOffset": [
+        20,
+        39
+      ],
+      "bounds": [
+        20,
+        39,
+        236,
+        216
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-heat-curls": {
+      "kind": "mark",
+      "family": "heat",
+      "label": "Heat curls",
+      "intent": "commissioned-new-immutable-version",
+      "description": "three vertical wavy ink strokes",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "review-archive/objects/05/053ec220575142bbfd5d7d822254bf661c0881c481d33224d2c94f5006611f48.png",
+        "currentReferenceSha256": "053ec220575142bbfd5d7d822254bf661c0881c481d33224d2c94f5006611f48"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-heat-curls-source.png",
+      "sourceSha256": "fac8182aa230e813d6daaf2f5555f1c2c710e0069e163de3e98257d44dce083c",
+      "sourcePixels": [
+        1218,
+        1291
+      ],
+      "originalCacheFile": "exec-416c51e9-b77d-436f-82f4-06c55130d6a5.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-heat-curls.png",
+      "sha256": "ee4850c467a6fd407335626346428ad9790d93b6fe871e651f4ba7cdb4845cb8",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        375,
+        325,
+        862,
+        1048
+      ],
+      "normalisationCrop": [
+        375,
+        325,
+        862,
+        1048
+      ],
+      "normalisedVisibleSize": [
+        145,
+        216
+      ],
+      "normalisedOffset": [
+        55,
+        20
+      ],
+      "bounds": [
+        55,
+        20,
+        200,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-sizzle-spark": {
+      "kind": "mark",
+      "family": "impact",
+      "label": "Sizzle spark",
+      "intent": "commissioned-new-immutable-version",
+      "description": "five-stroke tiny burst",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "review-archive/objects/7f/7fd4e839c3505e0be040ac56301be8bd7fc1ce99f77e720a1aca581d0dad76db.png",
+        "currentReferenceSha256": "7fd4e839c3505e0be040ac56301be8bd7fc1ce99f77e720a1aca581d0dad76db"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-sizzle-spark-source.png",
+      "sourceSha256": "42456b5211faf8f855b6690552b06ae3a9f29df21480aaa5ae5747b16d95e7e3",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-d3bc8e05-d2da-4f41-bd82-3f7b7b695943.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-sizzle-spark.png",
+      "sha256": "4018634000ee0077f131b41e932e4f4cc5ba43d5097861843ea55c1d2afec0e1",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        419,
+        421,
+        835,
+        819
+      ],
+      "normalisationCrop": [
+        419,
+        421,
+        835,
+        819
+      ],
+      "normalisedVisibleSize": [
+        216,
+        207
+      ],
+      "normalisedOffset": [
+        20,
+        24
+      ],
+      "bounds": [
+        20,
+        24,
+        236,
+        231
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-clean-glint": {
+      "kind": "mark",
+      "family": "clean",
+      "label": "Clean glint",
+      "intent": "commissioned-new-immutable-version",
+      "description": "slim solid four-point cross-star",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "art/drafts/activity-story-symbol-redraws-2026-10-21-v1/drafts/components/symbol-clean-glint.png",
+        "currentReferenceSha256": "66aca08ead270bd15a31b8149f6dfcf691bbaa59e38c3e3448d93476d8b8c86a"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-clean-glint-source.png",
+      "sourceSha256": "b990c20fff05975e3e7cf7564850f9a046f8d04793c9464ba2a0e319400e3b3b",
+      "sourcePixels": [
+        1219,
+        1290
+      ],
+      "originalCacheFile": "exec-f5285b22-b76a-4bff-92b7-1f4aacecc69c.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-clean-glint.png",
+      "sha256": "9e008d766a36aeb57feb65f266ce6b844726abaeb4789906a00adfdbccd0a69c",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        276,
+        240,
+        944,
+        1048
+      ],
+      "normalisationCrop": [
+        276,
+        240,
+        944,
+        1048
+      ],
+      "normalisedVisibleSize": [
+        179,
+        216
+      ],
+      "normalisedOffset": [
+        38,
+        20
+      ],
+      "bounds": [
+        38,
+        20,
+        217,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-dust-puff": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Dust puff",
+      "intent": "commissioned-new-immutable-version",
+      "description": "outlined five-lobed cloud with pale-grey interior",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-dust-puff.png",
+        "currentReferenceSha256": "349be125a3bf51067f54178e9ac563f37a63ded45ae31edb91b6bf1487283ea1"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-dust-puff-source.png",
+      "sourceSha256": "23644cce3661e84162866b7c6526b289808332b969031fc1b657764d63a048d9",
+      "sourcePixels": [
+        1312,
+        1199
+      ],
+      "originalCacheFile": "exec-52572180-11a9-4116-9f01-6f1a3fcf4725.png",
+      "flatPalette": [
+        "#051824",
+        "#c4c2b8"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-dust-puff.png",
+      "sha256": "bc619b33f6a9e62bb9b0688b57a079bcb6ee20df935df71e7094fd2c8782791e",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        264,
+        306,
+        1052,
+        906
+      ],
+      "normalisationCrop": [
+        264,
+        306,
+        1052,
+        906
+      ],
+      "normalisedVisibleSize": [
+        216,
+        164
+      ],
+      "normalisedOffset": [
+        20,
+        46
+      ],
+      "bounds": [
+        20,
+        46,
+        236,
+        210
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-earth-clods": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Earth clods",
+      "intent": "commissioned-new-immutable-version",
+      "description": "three outlined flat-brown clods",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-earth-clods.png",
+        "currentReferenceSha256": "f0722457179c58e9028686e0abf928a97f566745abd9c46212a63a657b0c29ec"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-earth-clods-source.png",
+      "sourceSha256": "316d0a321fbd3a15b6d6b32b9bb4dc79823bc50c75449fb964ee0ef514ea4f91",
+      "sourcePixels": [
+        1536,
+        1024
+      ],
+      "originalCacheFile": "exec-995b69ef-f5ab-4426-aae1-2f978e77ad7e.png",
+      "flatPalette": [
+        "#051824",
+        "#905231"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-earth-clods.png",
+      "sha256": "1b6e66c0209ed0b94bf050399817c293591c8d5944f232c5333ccea52657ca3b",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        468,
+        351,
+        1071,
+        754
+      ],
+      "normalisationCrop": [
+        468,
+        351,
+        1071,
+        754
+      ],
+      "normalisedVisibleSize": [
+        216,
+        144
+      ],
+      "normalisedOffset": [
+        20,
+        56
+      ],
+      "bounds": [
+        20,
+        56,
+        236,
+        200
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-sawdust": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Sawdust",
+      "intent": "commissioned-new-immutable-version",
+      "description": "six black flecks and curls",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-sawdust.png",
+        "currentReferenceSha256": "b71ffd513a80e98b2764669dfb706497846d50d5a803041607ebe0587a86f43e"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-sawdust-source.png",
+      "sourceSha256": "08ca034f80e143a53731fbb96f920096ffc451579e330025e56dd7da89766362",
+      "sourcePixels": [
+        1357,
+        1159
+      ],
+      "originalCacheFile": "exec-a1aefcad-fb33-4f47-8c1d-fb1cf5209554.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-sawdust.png",
+      "sha256": "ce0d35be417c51738ebb7284793dae0337799133f32d0ab143189a619404cba2",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        457,
+        320,
+        960,
+        844
+      ],
+      "normalisationCrop": [
+        457,
+        320,
+        960,
+        844
+      ],
+      "normalisedVisibleSize": [
+        207,
+        216
+      ],
+      "normalisedOffset": [
+        24,
+        20
+      ],
+      "bounds": [
+        24,
+        20,
+        231,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-seasoning-flecks": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Seasoning flecks",
+      "intent": "commissioned-new-immutable-version",
+      "description": "seven black dots and flecks",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-seasoning-flecks.png",
+        "currentReferenceSha256": "227c321eff94416aaf465d3580117931f1ebec982157d953ed4b6dd687446db5"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-seasoning-flecks-source.png",
+      "sourceSha256": "9d049ab64587a077c5baae597b5774776f138a2ea2ed5de2b8883d61d52944cc",
+      "sourcePixels": [
+        1295,
+        1214
+      ],
+      "originalCacheFile": "exec-fc776287-0baa-4443-839c-43706dff9f52.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-seasoning-flecks.png",
+      "sha256": "abfeff1c184c8d48fb8ff0b6bdfd425205a2ec8f61b0d2f2a9c344c2ee43f771",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        478,
+        440,
+        812,
+        765
+      ],
+      "normalisationCrop": [
+        478,
+        440,
+        812,
+        765
+      ],
+      "normalisedVisibleSize": [
+        216,
+        210
+      ],
+      "normalisedOffset": [
+        20,
+        23
+      ],
+      "bounds": [
+        20,
+        23,
+        236,
+        233
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-spray-mist": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Spray mist",
+      "intent": "commissioned-new-immutable-version",
+      "description": "fan of fine black dots",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-spray-mist.png",
+        "currentReferenceSha256": "9fede4cb0e4d7d55e9e05d8f28ad28e7e1b6e57c5f7bf05b4f9db18d3d974c11"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-spray-mist-source.png",
+      "sourceSha256": "6042f84d8dc5f71ead565d99897b4661a97779244ac05c517980dec709b2a6e8",
+      "sourcePixels": [
+        1230,
+        1278
+      ],
+      "originalCacheFile": "exec-5736a599-a6e7-47e0-80f0-851607889cf9.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-spray-mist.png",
+      "sha256": "0c84bd60c7b63f2571bbe132f533e94429fe20c94dab87dee11da31e8aba4667",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        445,
+        389,
+        926,
+        955
+      ],
+      "normalisationCrop": [
+        445,
+        389,
+        926,
+        955
+      ],
+      "normalisedVisibleSize": [
+        184,
+        216
+      ],
+      "normalisedOffset": [
+        36,
+        20
+      ],
+      "bounds": [
+        36,
+        20,
+        220,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-steam-puff": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Steam puff",
+      "intent": "commissioned-new-immutable-version",
+      "description": "one outlined rising curl with pale interior",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-steam-puff.png",
+        "currentReferenceSha256": "45c3f871eb3f51676fcc3cdcde8e1b3cc0c4aee60f64ebf3683c0951b711e9b2"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-steam-puff-source.png",
+      "sourceSha256": "7d3dbd0643524f769bc7783a463a3dfb6d27af435fa7165fcc5793cdec6ddd53",
+      "sourcePixels": [
+        1024,
+        1536
+      ],
+      "originalCacheFile": "exec-08b89cf2-c7ae-4fdf-b377-ed4d349de6bf.png",
+      "flatPalette": [
+        "#051824",
+        "#ede9de"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-steam-puff.png",
+      "sha256": "0c821f9198385ce6a3ee6dbcbcb21e424cf757a153f482081755fb6bfd176da3",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        371,
+        164,
+        676,
+        1353
+      ],
+      "normalisationCrop": [
+        371,
+        164,
+        676,
+        1353
+      ],
+      "normalisedVisibleSize": [
+        55,
+        216
+      ],
+      "normalisedOffset": [
+        100,
+        20
+      ],
+      "bounds": [
+        100,
+        20,
+        155,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-question-mark": {
+      "kind": "mark",
+      "family": "notation",
+      "label": "Question mark",
+      "intent": "commissioned-new-immutable-version",
+      "description": "solid heavy hand-brushed question mark",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "review-archive/objects/a4/a4ef40dab1f00c00b0a11bb0d21c44e1acc38cbf90a6c0e12d5528854d307734.png",
+        "currentReferenceSha256": "a4ef40dab1f00c00b0a11bb0d21c44e1acc38cbf90a6c0e12d5528854d307734"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-question-mark-source.png",
+      "sourceSha256": "0dc7f1f9270a923cde95e2f4571ece147465a0fa7a26385ef3b818c815359a4e",
+      "sourcePixels": [
+        1024,
+        1536
+      ],
+      "originalCacheFile": "exec-1dc68a66-b516-4cb4-9bca-f31843fda22f.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-question-mark.png",
+      "sha256": "83575b2a1ed0a456e6dc9e688567538dbf136836725785058992a4b4d6e1c7ad",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        194,
+        170,
+        897,
+        1376
+      ],
+      "normalisationCrop": [
+        194,
+        170,
+        897,
+        1376
+      ],
+      "normalisedVisibleSize": [
+        126,
+        216
+      ],
+      "normalisedOffset": [
+        65,
+        20
+      ],
+      "bounds": [
+        65,
+        20,
+        191,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-exclamation-mark": {
+      "kind": "mark",
+      "family": "notation",
+      "label": "Exclamation mark",
+      "intent": "commissioned-new-immutable-version",
+      "description": "solid heavy hand-brushed exclamation mark",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "review-archive/objects/b1/b16054b0c4fe4c26f6dcdbb2ca6e5ce52bd2b90a21e8037d57925498167c425f.png",
+        "currentReferenceSha256": "b16054b0c4fe4c26f6dcdbb2ca6e5ce52bd2b90a21e8037d57925498167c425f"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-exclamation-mark-source.png",
+      "sourceSha256": "b89fbb1d7fea2d0e1243f95ba20d26d29c59ca7ee4e8e4ba5aa5fa8ea3ac7953",
+      "sourcePixels": [
+        1024,
+        1536
+      ],
+      "originalCacheFile": "exec-8bd3d402-6483-497a-8e0c-6e19526fe330.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-exclamation-mark.png",
+      "sha256": "f762c0ae5ee15129fdd2ca0d735a95ffb563ad3dacfcae1185c75580339da8ba",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        401,
+        239,
+        677,
+        1293
+      ],
+      "normalisationCrop": [
+        401,
+        239,
+        677,
+        1293
+      ],
+      "normalisedVisibleSize": [
+        57,
+        216
+      ],
+      "normalisedOffset": [
+        99,
+        20
+      ],
+      "bounds": [
+        99,
+        20,
+        156,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-foul-odour": {
+      "kind": "mark",
+      "family": "scent",
+      "label": "Foul odour",
+      "intent": "commissioned-new-immutable-version",
+      "description": "three wavy rising ink lines",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "review-archive/objects/6a/6ad163119859fa51df31b05dc3460ac5a87cf0d7765657bc78abbb4b2508e7cb.png",
+        "currentReferenceSha256": "6ad163119859fa51df31b05dc3460ac5a87cf0d7765657bc78abbb4b2508e7cb"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-foul-odour-source.png",
+      "sourceSha256": "295b3e3636993de128f9c01a581e34dacba249a4382a5fc5a9f99e2fa9cd3ce9",
+      "sourcePixels": [
+        1240,
+        1269
+      ],
+      "originalCacheFile": "exec-7edf7926-e215-4d3a-aff4-7a2b0f046613.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-foul-odour.png",
+      "sha256": "db4f3d46ae7616f8dd21d264670036a10c8d3abcce0ac56141d52610912831b3",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        411,
+        295,
+        852,
+        1029
+      ],
+      "normalisationCrop": [
+        411,
+        295,
+        852,
+        1029
+      ],
+      "normalisedVisibleSize": [
+        130,
+        216
+      ],
+      "normalisedOffset": [
+        63,
+        20
+      ],
+      "bounds": [
+        63,
+        20,
+        193,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-pleasant-aroma": {
+      "kind": "mark",
+      "family": "scent",
+      "label": "Pleasant aroma",
+      "intent": "commissioned-new-immutable-version",
+      "description": "two smooth rising curls with tiny pink accent",
+      "prior": {
+        "currentLibraryVersion": 3,
+        "currentReferenceFile": "art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/drafts/components/symbol-pleasant-aroma.png",
+        "currentReferenceSha256": "44bf92fae235c647148704cce65d68da976d3c9b7b2e8ce3a25f917661cdd729"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-pleasant-aroma-source.png",
+      "sourceSha256": "47ae0c92038d920d2aa2a41234523732cc164881b50700aed467b94adc75c2aa",
+      "sourcePixels": [
+        1102,
+        1428
+      ],
+      "originalCacheFile": "exec-ebd2941d-5f1d-4f8c-bd6a-e5572c1d689a.png",
+      "flatPalette": [
+        "#051824",
+        "#db6a79"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-pleasant-aroma.png",
+      "sha256": "e57dec975046852dec025d76bdafbc32598f0df6c38ef405589e38ec78ef8ba6",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        405,
+        346,
+        736,
+        1024
+      ],
+      "normalisationCrop": [
+        405,
+        346,
+        736,
+        1024
+      ],
+      "normalisedVisibleSize": [
+        105,
+        216
+      ],
+      "normalisedOffset": [
+        75,
+        20
+      ],
+      "bounds": [
+        75,
+        20,
+        180,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-heat-shimmer": {
+      "kind": "mark",
+      "family": "heat",
+      "label": "Heat shimmer",
+      "intent": "commissioned-new-immutable-version",
+      "description": "three horizontal wavy strokes with one red accent",
+      "prior": {
+        "currentLibraryVersion": 3,
+        "currentReferenceFile": "art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/drafts/components/symbol-heat-shimmer.png",
+        "currentReferenceSha256": "1cb0e2ec0351c395b1a400c598c852ed4e751911b08e478b6a593988e2071d5c"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-heat-shimmer-source.png",
+      "sourceSha256": "0f1dccba93d4b981ba41c0037b7d441cd04fa2001cc180144700f26d850814d1",
+      "sourcePixels": [
+        1234,
+        1275
+      ],
+      "originalCacheFile": "exec-1de547ca-0d15-4096-bad5-5b1b154fa086.png",
+      "flatPalette": [
+        "#051824",
+        "#c32b37"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-heat-shimmer.png",
+      "sha256": "fc12227e966ee7066398f759bb3351aecaf286cdfd7716d9bb16d806b4c16930",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        344,
+        449,
+        961,
+        873
+      ],
+      "normalisationCrop": [
+        344,
+        449,
+        961,
+        873
+      ],
+      "normalisedVisibleSize": [
+        216,
+        148
+      ],
+      "normalisedOffset": [
+        20,
+        54
+      ],
+      "bounds": [
+        20,
+        54,
+        236,
+        202
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-welding-sparks": {
+      "kind": "mark",
+      "family": "welding",
+      "label": "Welding sparks",
+      "intent": "commissioned-new-immutable-version",
+      "description": "seven straight black sparks with yellow-orange origin",
+      "prior": {
+        "currentLibraryVersion": 3,
+        "currentReferenceFile": "art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/drafts/components/symbol-welding-sparks.png",
+        "currentReferenceSha256": "c7ac21b95e08a1a6cb9b4f0991225860e241c70b660c05658fb3bd4da1a8219a"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-welding-sparks-source.png",
+      "sourceSha256": "64ee67f90b00eed937a2349dfa4b8ef6ac5dee844343a5ef55bbf1aa51515c7b",
+      "sourcePixels": [
+        1351,
+        1164
+      ],
+      "originalCacheFile": "exec-b017d049-aeeb-4a42-a549-2e540554c85e.png",
+      "flatPalette": [
+        "#051824",
+        "#e88b2d"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-welding-sparks.png",
+      "sha256": "2f1438e8c0b527d965d4d2e9304b64bf87a173ff93ad0a380123602568019866",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        423,
+        297,
+        933,
+        804
+      ],
+      "normalisationCrop": [
+        423,
+        297,
+        933,
+        804
+      ],
+      "normalisedVisibleSize": [
+        216,
+        215
+      ],
+      "normalisedOffset": [
+        20,
+        20
+      ],
+      "bounds": [
+        20,
+        20,
+        236,
+        235
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-cold-snowflake": {
+      "kind": "mark",
+      "family": "cold",
+      "label": "Cold snowflake",
+      "intent": "commissioned-new-immutable-version",
+      "description": "simple six-arm black snowflake",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/drafts/components/symbol-cold-snowflake.png",
+        "currentReferenceSha256": "b7f8c39735904d612144450eb891cbea28f41a40945d2873290d312239724936"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-cold-snowflake-source.png",
+      "sourceSha256": "d27d889689f5a936e0f752c8bef1f4fa28938ca9ef872aa3da800018be7f909e",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-b4119c53-846b-4872-9c02-3f84675d7313.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-cold-snowflake.png",
+      "sha256": "004f8205079d97c88ef365bb25f2382f3ae484f90443ef3475fdfd536a50cb41",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        292,
+        276,
+        962,
+        1009
+      ],
+      "normalisationCrop": [
+        292,
+        276,
+        962,
+        1009
+      ],
+      "normalisedVisibleSize": [
+        197,
+        216
+      ],
+      "normalisedOffset": [
+        29,
+        20
+      ],
+      "bounds": [
+        29,
+        20,
+        226,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-electrical-arc": {
+      "kind": "mark",
+      "family": "electrical",
+      "label": "Electrical arc",
+      "intent": "commissioned-new-immutable-version",
+      "description": "black zigzag bolt with flat yellow interior",
+      "prior": {
+        "currentLibraryVersion": 1,
+        "currentReferenceFile": "review-archive/objects/dc/dc12888c17f6ff30a1519653ec9b8534e6f1510e2478ce42586739e291491fa9.png",
+        "currentReferenceSha256": "dc12888c17f6ff30a1519653ec9b8534e6f1510e2478ce42586739e291491fa9"
+      },
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-electrical-arc-source.png",
+      "sourceSha256": "97a5f81e0292d6870966335d32b34c4d90bb31224add4fe70281f6d7f3e38642",
+      "sourcePixels": [
+        1024,
+        1536
+      ],
+      "originalCacheFile": "exec-a8c52395-814c-4660-b840-21b068632d9d.png",
+      "flatPalette": [
+        "#051824",
+        "#e7a638"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-electrical-arc.png",
+      "sha256": "1393bd96ae0ea5d310664a34f2e614da0632a323d3ca29a77dab0e1d1cb2d3e3",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        294,
+        286,
+        725,
+        1206
+      ],
+      "normalisationCrop": [
+        294,
+        286,
+        725,
+        1206
+      ],
+      "normalisedVisibleSize": [
+        101,
+        216
+      ],
+      "normalisedOffset": [
+        77,
+        20
+      ],
+      "bounds": [
+        77,
+        20,
+        178,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-speed-lines": {
+      "kind": "mark",
+      "family": "motion",
+      "label": "Speed lines",
+      "intent": "commissioned-new-v1",
+      "description": "three straight parallel horizontal ink strokes",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-speed-lines-source.png",
+      "sourceSha256": "2979e3c47e765cc3d616b1d0ef881186b32077a9b352e6d13a0c5def97f9d763",
+      "sourcePixels": [
+        1536,
+        1024
+      ],
+      "originalCacheFile": "exec-4515027c-d598-4451-b693-44c857565e6c.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-speed-lines.png",
+      "sha256": "001fd64458944c9f62631bf040c8c82c08c20aae6b0171cb196312059d516256",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        502,
+        412,
+        1035,
+        624
+      ],
+      "normalisationCrop": [
+        502,
+        412,
+        1035,
+        624
+      ],
+      "normalisedVisibleSize": [
+        216,
+        86
+      ],
+      "normalisedOffset": [
+        20,
+        85
+      ],
+      "bounds": [
+        20,
+        85,
+        236,
+        171
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-swirl": {
+      "kind": "mark",
+      "family": "motion",
+      "label": "Swirl",
+      "intent": "commissioned-new-v1",
+      "description": "one loose black swirl stroke",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-swirl-source.png",
+      "sourceSha256": "e00fca540cbe065bc09458717660d4eaefb8cf03d9c0385dc134a7f7b9c0489c",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-9195fc0a-195c-48be-b7ce-6639610bb620.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-swirl.png",
+      "sha256": "c14c93f526aa7d277d8bfa145c3227fe253a126dd29031d07415f0597c84c0a8",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        263,
+        276,
+        1053,
+        951
+      ],
+      "normalisationCrop": [
+        263,
+        276,
+        1053,
+        951
+      ],
+      "normalisedVisibleSize": [
+        216,
+        185
+      ],
+      "normalisedOffset": [
+        20,
+        35
+      ],
+      "bounds": [
+        20,
+        35,
+        236,
+        220
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-spiral": {
+      "kind": "mark",
+      "family": "notation",
+      "label": "Spiral",
+      "intent": "commissioned-new-v1",
+      "description": "one tight black spiral",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-spiral-source.png",
+      "sourceSha256": "e7ea982d6e1f485e4c9fe87e305d6e03cc7eb364f8d3d4a79c6d021922e1e556",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-450c738e-96ad-4507-9f95-97740269b80a.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-spiral.png",
+      "sha256": "865aca367dc2414e7120b1d0395bd472b81282ff585a9e5295ec409b42053c21",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        294,
+        291,
+        950,
+        996
+      ],
+      "normalisationCrop": [
+        294,
+        291,
+        950,
+        996
+      ],
+      "normalisedVisibleSize": [
+        201,
+        216
+      ],
+      "normalisedOffset": [
+        27,
+        20
+      ],
+      "bounds": [
+        27,
+        20,
+        228,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-zigzag": {
+      "kind": "mark",
+      "family": "notation",
+      "label": "Zigzag",
+      "intent": "commissioned-new-v1",
+      "description": "one short sharp black zigzag",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-zigzag-source.png",
+      "sourceSha256": "f2f457ceebc1d98d6399a06ec505755de1560830710a05e89c1275994512732a",
+      "sourcePixels": [
+        1244,
+        1264
+      ],
+      "originalCacheFile": "exec-f4bc1328-a68f-4adb-88f6-38260a4173ef.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-zigzag.png",
+      "sha256": "cc73739d4c6761fcffb87bdac8d12d8d70e252d1e6659f2e7c5825ddef4455d7",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        455,
+        315,
+        768,
+        931
+      ],
+      "normalisationCrop": [
+        455,
+        315,
+        768,
+        931
+      ],
+      "normalisedVisibleSize": [
+        110,
+        216
+      ],
+      "normalisedOffset": [
+        73,
+        20
+      ],
+      "bounds": [
+        73,
+        20,
+        183,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-ink-star": {
+      "kind": "mark",
+      "family": "impact",
+      "label": "Ink star",
+      "intent": "commissioned-new-v1",
+      "description": "one small solid black five-point star",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-ink-star-source.png",
+      "sourceSha256": "2c6ddfd3fb95def4602b3b35ba79831fe9dcf70d769a41ac942c629e2fb36ac9",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-e526da4c-e766-4943-9eb1-ca2d5ec8e163.png",
+      "flatPalette": [
+        "#051824"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-ink-star.png",
+      "sha256": "4fe6d0f1bfb39a9c0575e933c94c74709cf6c00d21f69df411f850d3e011c05b",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        391,
+        422,
+        862,
+        851
+      ],
+      "normalisationCrop": [
+        391,
+        422,
+        862,
+        851
+      ],
+      "normalisedVisibleSize": [
+        216,
+        197
+      ],
+      "normalisedOffset": [
+        20,
+        29
+      ],
+      "bounds": [
+        20,
+        29,
+        236,
+        226
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-accent-red-star": {
+      "kind": "mark",
+      "family": "notation",
+      "label": "Red star",
+      "intent": "commissioned-new-v1",
+      "description": "black-outlined flat-red grawlix star",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-accent-red-star-source.png",
+      "sourceSha256": "93da58035284e0c02905195ff96c55603ac7c594d9d0fe699c5657ecd70f49b4",
+      "sourcePixels": [
+        1264,
+        1244
+      ],
+      "originalCacheFile": "exec-1506e621-a4be-481d-9295-8b72f24d41aa.png",
+      "flatPalette": [
+        "#051824",
+        "#c32b37"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-accent-red-star.png",
+      "sha256": "36ce9717777927938b384bcf3024c9162f7c4018c95a8b863dd75bba0f978552",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        350,
+        357,
+        915,
+        885
+      ],
+      "normalisationCrop": [
+        350,
+        357,
+        915,
+        885
+      ],
+      "normalisedVisibleSize": [
+        216,
+        202
+      ],
+      "normalisedOffset": [
+        20,
+        27
+      ],
+      "bounds": [
+        20,
+        27,
+        236,
+        229
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-accent-yellow-sun": {
+      "kind": "mark",
+      "family": "notation",
+      "label": "Yellow sun",
+      "intent": "commissioned-new-v1",
+      "description": "flat-yellow disc with eight short black rays",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-accent-yellow-sun-source.png",
+      "sourceSha256": "03e9f0aa9a4c2253373e2c384f2eb8ddad954bb0799fa451dbf72c022756f085",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-9ee7a833-9a67-44aa-99c3-b6c8418c8d06.png",
+      "flatPalette": [
+        "#051824",
+        "#e7a638"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-accent-yellow-sun.png",
+      "sha256": "88b37fe792b686cd7dc57fe8b88baad232a1e265d92399e9f1b6ab562c565d1e",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        217,
+        218,
+        1037,
+        1028
+      ],
+      "normalisationCrop": [
+        217,
+        218,
+        1037,
+        1028
+      ],
+      "normalisedVisibleSize": [
+        216,
+        213
+      ],
+      "normalisedOffset": [
+        20,
+        21
+      ],
+      "bounds": [
+        20,
+        21,
+        236,
+        234
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-accent-blue-spiral": {
+      "kind": "mark",
+      "family": "notation",
+      "label": "Blue spiral",
+      "intent": "commissioned-new-v1",
+      "description": "flat-blue spiral bounded by black ink",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/symbol-accent-blue-spiral-source.png",
+      "sourceSha256": "e00ac0bae81d9cb676967562ce77614e2118f5374e4356069913f45219bfc29a",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-92606079-788c-4c67-ba65-254790233192.png",
+      "flatPalette": [
+        "#051824",
+        "#1870a6"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-accent-blue-spiral.png",
+      "sha256": "f8778101656de6fda1a07582971a0fab097b61f3062880710bdac0ad56f37593",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22",
+        "colourCoveredLeavesOneBlackInkOneWeight": true,
+        "readsAt40Px": true
+      },
+      "sourceVisibleBounds": [
+        152,
+        182,
+        1126,
+        1131
+      ],
+      "normalisationCrop": [
+        152,
+        182,
+        1126,
+        1131
+      ],
+      "normalisedVisibleSize": [
+        216,
+        210
+      ],
+      "normalisedOffset": [
+        20,
+        23
+      ],
+      "bounds": [
+        20,
+        23,
+        236,
+        233
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "dishwasher-machine": {
+      "kind": "object",
+      "family": "dishwasher",
+      "label": "Dishwasher, door open",
+      "intent": "commissioned-new-v1",
+      "description": "built-in dishwasher, door down, empty lower rack half out",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/dishwasher-machine-source.png",
+      "sourceSha256": "1aff9559e7d90011eda842f0e9031c3710550f96c56fe91e20f55c92041a92c6",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-fdab153e-ea66-4da3-8b5d-ac3c23aad1e4.png",
+      "flatPalette": [
+        "#051824",
+        "#f7eccc",
+        "#ede9de",
+        "#97cada",
+        "#1870a6"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/dishwasher-machine.png",
+      "sha256": "d9ef17605fa2d4aa02d57bf1f9cfa2f319cf5bed4419b53d57a00763c7a3fd71",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        122,
+        171,
+        1127,
+        1096
+      ],
+      "normalisationCrop": [
+        122,
+        171,
+        1127,
+        1096
+      ],
+      "normalisedVisibleSize": [
+        216,
+        199
+      ],
+      "normalisedOffset": [
+        20,
+        28
+      ],
+      "bounds": [
+        20,
+        28,
+        236,
+        227
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "laundry-washing-machine": {
+      "kind": "object",
+      "family": "laundry",
+      "label": "Washing machine",
+      "intent": "commissioned-new-v1",
+      "description": "front-loading washing machine with closed porthole, dial and soap drawer",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/laundry-washing-machine-source.png",
+      "sourceSha256": "ba1d24ce64495bdb171e082db4a07ab7256fb0843bcc375a3c11ed132a95d354",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-28b0c715-82de-4f3a-9585-89e5b64df3c2.png",
+      "flatPalette": [
+        "#051824",
+        "#f7eccc",
+        "#ede9de",
+        "#97cada",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/laundry-washing-machine.png",
+      "sha256": "d25fceabd8cebad85893d2b8e50d0bb671ef3f86fc71e886e7df4a0441267d54",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        171,
+        67,
+        1087,
+        1195
+      ],
+      "normalisationCrop": [
+        171,
+        67,
+        1087,
+        1195
+      ],
+      "normalisedVisibleSize": [
+        175,
+        216
+      ],
+      "normalisedOffset": [
+        40,
+        20
+      ],
+      "bounds": [
+        40,
+        20,
+        215,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "laundry-basket-dirty": {
+      "kind": "object",
+      "family": "laundry",
+      "label": "Laundry basket of dirty clothes",
+      "intent": "commissioned-new-v1",
+      "description": "wicker basket heaped with crumpled clothes",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/laundry-basket-dirty-source.png",
+      "sourceSha256": "cc52779bfbd485069da7fcca648384aefa941bea26ccd05c7659140d1e6d8bd6",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-c2f30b2e-212d-483d-8e8c-29cbf9e5e381.png",
+      "flatPalette": [
+        "#051824",
+        "#f7eccc",
+        "#ede9de",
+        "#e7a638",
+        "#905231",
+        "#97cada",
+        "#1870a6",
+        "#7d8789"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/laundry-basket-dirty.png",
+      "sha256": "8f194ea2fc3616a66c0e80abafd4f3250634ffb1792ac2418d5ab0a1f3577cf0",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        61,
+        210,
+        1200,
+        1122
+      ],
+      "normalisationCrop": [
+        61,
+        210,
+        1200,
+        1122
+      ],
+      "normalisedVisibleSize": [
+        216,
+        173
+      ],
+      "normalisedOffset": [
+        20,
+        41
+      ],
+      "bounds": [
+        20,
+        41,
+        236,
+        214
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "wear-shirt-muddy": {
+      "kind": "object",
+      "family": "wearable",
+      "label": "Muddy shirt",
+      "intent": "commissioned-new-v1",
+      "description": "crumpled work shirt with three flat brown mud patches",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/wear-shirt-muddy-source.png",
+      "sourceSha256": "71d234517e299ec95a458c1457f35b772410e2ab7c541aca88188ba8fa0ce03f",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-27a7abdc-e279-4dd4-8abf-b51961c39457.png",
+      "flatPalette": [
+        "#051824",
+        "#ede9de",
+        "#97cada",
+        "#1870a6",
+        "#905231"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/wear-shirt-muddy.png",
+      "sha256": "1bcf0bf33847f85afc640394178e6772b4c2298e6a2d06455e6f51bf42a82065",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        59,
+        178,
+        1239,
+        1055
+      ],
+      "normalisationCrop": [
+        59,
+        178,
+        1239,
+        1055
+      ],
+      "normalisedVisibleSize": [
+        216,
+        161
+      ],
+      "normalisedOffset": [
+        20,
+        47
+      ],
+      "bounds": [
+        20,
+        47,
+        236,
+        208
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "floor-muddy": {
+      "kind": "object",
+      "family": "household",
+      "label": "Muddy floor",
+      "intent": "commissioned-new-v1",
+      "description": "four-board floor patch with three muddy boot prints",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/floor-muddy-source.png",
+      "sourceSha256": "f06f5cdf09b3c5183154a4ed90938f6a7c2beb5890a4fb2c8e2f1fb03545772c",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-6ad0a641-106f-4739-b178-49b3aa77b529.png",
+      "flatPalette": [
+        "#051824",
+        "#e7a638",
+        "#905231",
+        "#5c3a2d"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/floor-muddy.png",
+      "sha256": "74bb99603a348f77555fdef905e3d8c763d50b3b429ead573c61356e0aaa7024",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        59,
+        343,
+        1209,
+        1026
+      ],
+      "normalisationCrop": [
+        59,
+        343,
+        1209,
+        1026
+      ],
+      "normalisedVisibleSize": [
+        216,
+        128
+      ],
+      "normalisedOffset": [
+        20,
+        64
+      ],
+      "bounds": [
+        20,
+        64,
+        236,
+        192
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "floor-clean": {
+      "kind": "object",
+      "family": "household",
+      "label": "Clean floor",
+      "intent": "commissioned-new-v1",
+      "description": "same four-board floor patch, clean",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/floor-clean-source.png",
+      "sourceSha256": "8802f9d1ac0a4fb73b20beac3357e3073661d691f30fbdd5bbd6c43874466fb2",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-16e9ce9f-7398-46e0-b2fe-6e7d9c7f6bae.png",
+      "flatPalette": [
+        "#051824",
+        "#e7a638",
+        "#905231",
+        "#5c3a2d"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/floor-clean.png",
+      "sha256": "055711b011e982ab5f2991e2a6d99d120ccc87a3095e3937f83ff37db5898532",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        59,
+        344,
+        1209,
+        1027
+      ],
+      "normalisationCrop": [
+        59,
+        343,
+        1209,
+        1026
+      ],
+      "normalisedVisibleSize": [
+        216,
+        128
+      ],
+      "normalisedOffset": [
+        20,
+        64
+      ],
+      "bounds": [
+        20,
+        64,
+        236,
+        192
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "furniture-side-table-dusty": {
+      "kind": "object",
+      "family": "household",
+      "label": "Dusty side table",
+      "intent": "commissioned-new-v1",
+      "description": "small four-legged wooden side table with flat grey dust and three fluff balls",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/furniture-side-table-dusty-source.png",
+      "sourceSha256": "43ab9d2b467535f5b471b981f68caa865f95348925fd9732956ce51b93b6d5dd",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-8959385a-3180-4983-a0cd-f4c7d3ce7138.png",
+      "flatPalette": [
+        "#051824",
+        "#e7a638",
+        "#905231",
+        "#5c3a2d",
+        "#c4c2b8"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/furniture-side-table-dusty.png",
+      "sha256": "555b33366e2c5f6ed669991d0fd04edde9d24549b059f880d23d3d90cd3e4bbb",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        158,
+        223,
+        1127,
+        1085
+      ],
+      "normalisationCrop": [
+        158,
+        223,
+        1127,
+        1085
+      ],
+      "normalisedVisibleSize": [
+        216,
+        192
+      ],
+      "normalisedOffset": [
+        20,
+        32
+      ],
+      "bounds": [
+        20,
+        32,
+        236,
+        224
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "furniture-side-table-clean": {
+      "kind": "object",
+      "family": "household",
+      "label": "Clean side table",
+      "intent": "commissioned-new-v1",
+      "description": "same small four-legged wooden side table, clean",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/furniture-side-table-clean-source.png",
+      "sourceSha256": "6ec5c4d86e3cfbffc20f077f4ee1d95df0b2767d5988eedcf5ca6ed33308e87e",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-ddb750cc-f154-4826-90c8-f016797e3320.png",
+      "flatPalette": [
+        "#051824",
+        "#e7a638",
+        "#905231",
+        "#5c3a2d"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/furniture-side-table-clean.png",
+      "sha256": "fd2ae90237b3b711471d3cc31ee6ce82aa48df735fdd5f86ca9a7081d850aa9e",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        158,
+        223,
+        1126,
+        1084
+      ],
+      "normalisationCrop": [
+        158,
+        223,
+        1127,
+        1085
+      ],
+      "normalisedVisibleSize": [
+        216,
+        192
+      ],
+      "normalisedOffset": [
+        20,
+        32
+      ],
+      "bounds": [
+        20,
+        32,
+        236,
+        224
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "garden-plant-pot": {
+      "kind": "object",
+      "family": "garden",
+      "label": "Plant pot of soil",
+      "intent": "commissioned-new-v1",
+      "description": "terracotta flower pot filled with dark soil, nothing growing",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/garden-plant-pot-source.png",
+      "sourceSha256": "536dc200fcba814c75f53b65f4560e272fa5e655066aa5cf6773f78a22d74155",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-52888b9c-1a0d-4f5c-a38a-3fef68d18297.png",
+      "flatPalette": [
+        "#051824",
+        "#be5b36",
+        "#905231",
+        "#5c3a2d"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/garden-plant-pot.png",
+      "sha256": "ae8df8257a4961eef8069b5a6f8541cb6fd1ed78a342ffcd5985eacb33c3c1fb",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        236,
+        256,
+        1016,
+        1036
+      ],
+      "normalisationCrop": [
+        236,
+        256,
+        1016,
+        1036
+      ],
+      "normalisedVisibleSize": [
+        216,
+        216
+      ],
+      "normalisedOffset": [
+        20,
+        20
+      ],
+      "bounds": [
+        20,
+        20,
+        236,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "fishing-sea-water": {
+      "kind": "object",
+      "family": "fishing",
+      "label": "Sea water",
+      "intent": "commissioned-new-v1",
+      "description": "small flat blue calm-sea band with three ripple lines",
+      "sourceFile": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/source/fishing-sea-water-source.png",
+      "sourceSha256": "778ced47e7aa71c7eed55d81a8541ef2e3c431f93c5383d5a47d75bc7dbefacf",
+      "sourcePixels": [
+        1774,
+        887
+      ],
+      "originalCacheFile": "exec-1ce3d4d1-54e0-4574-8923-27a4d6e73c35.png",
+      "flatPalette": [
+        "#051824",
+        "#97cada",
+        "#1870a6"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest declared fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/fishing-sea-water.png",
+      "sha256": "8a8b8aba23486419d9c7e8783857f4b669c5509767f4d432f6cdb9cd78673635",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        285,
+        343,
+        1490,
+        579
+      ],
+      "normalisationCrop": [
+        285,
+        343,
+        1490,
+        579
+      ],
+      "normalisedVisibleSize": [
+        216,
+        42
+      ],
+      "normalisedOffset": [
+        20,
+        107
+      ],
+      "bounds": [
+        20,
+        107,
+        236,
+        149
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejected": [
+    {
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/rejected/laundry-basket-dirty-overworked-v1.png",
+      "sha256": "27a5272bad7366ea14fc73ce37bbf0c9e818db9891c0cc3034a47c1ce8136e85",
+      "originalCacheFile": "exec-40ab1614-05fe-415d-b9d1-9358d50b8a27.png",
+      "reason": "Dense tiny wicker crossings and fabric wrinkles failed the purposeful-line and 64 px clarity tests."
+    },
+    {
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/rejected/floor-muddy-independent-base-v1.png",
+      "sha256": "dff426850228501129a8259126b553c0c910786f0d8a97c3d87922f1f90c1595",
+      "originalCacheFile": "exec-f62189cf-a9cd-4d72-9ccd-eb3364d077fc.png",
+      "reason": "The independently rendered floor did not preserve the clean partner exactly enough for a transformation swap."
+    },
+    {
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/rejected/furniture-side-table-dusty-textured-v1.png",
+      "sha256": "d5034b2b816ccc9668af4dc2a581a1e305967b2af17cf3520d3a0212c3467c53",
+      "originalCacheFile": "exec-f53d8084-f3ac-4ede-903b-9514155bfdc3.png",
+      "reason": "Mottled dust, ragged speckles and curled fluff interiors failed the flat-colour and real-edge tests."
+    }
+  ],
+  "evidence": {
+    "marks": {
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/evidence/marks-pale-game-size-and-current-contact-sheet.png",
+      "sha256": "84e7850a713bcf9a6d1d81fc1739e00705f1618ae17702c4e9b1764e10961352",
+      "columns": 4,
+      "rows": 29,
+      "coveredIds": [
+        "symbol-impact-star",
+        "symbol-motion-ticks",
+        "symbol-water-droplets",
+        "symbol-soap-bubbles",
+        "symbol-heat-curls",
+        "symbol-sizzle-spark",
+        "symbol-clean-glint",
+        "symbol-dust-puff",
+        "symbol-earth-clods",
+        "symbol-sawdust",
+        "symbol-seasoning-flecks",
+        "symbol-spray-mist",
+        "symbol-steam-puff",
+        "symbol-question-mark",
+        "symbol-exclamation-mark",
+        "symbol-foul-odour",
+        "symbol-pleasant-aroma",
+        "symbol-heat-shimmer",
+        "symbol-welding-sparks",
+        "symbol-cold-snowflake",
+        "symbol-electrical-arc",
+        "symbol-speed-lines",
+        "symbol-swirl",
+        "symbol-spiral",
+        "symbol-zigzag",
+        "symbol-ink-star",
+        "symbol-accent-red-star",
+        "symbol-accent-yellow-sun",
+        "symbol-accent-blue-spiral"
+      ]
+    },
+    "objects": {
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/evidence/objects-light-dark-64-contact-sheet.png",
+      "sha256": "b2482917b32ac2dd7d40c057cd2ae679920c2c2b3e20848ffd84753ed585ee24",
+      "columns": 3,
+      "rows": 10,
+      "coveredIds": [
+        "dishwasher-machine",
+        "laundry-washing-machine",
+        "laundry-basket-dirty",
+        "wear-shirt-muddy",
+        "floor-muddy",
+        "floor-clean",
+        "furniture-side-table-dusty",
+        "furniture-side-table-clean",
+        "garden-plant-pot",
+        "fishing-sea-water"
+      ]
+    }
+  },
+  "checks": {
+    "selfTestPassedForEveryPicture": true,
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "exactPalettesRecorded": true,
+    "pairedGeometryLocked": true,
+    "contactSheetsCoverEveryCandidate": true,
+    "libraryPicturesAdded": true,
+    "storiesChanged": false,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "pushed": false,
+    "deployed": false
+  },
+  "rollback": "Remove only the versions registered from this pack and discard this versioned draft directory; no older version or approved authority was overwritten."
+}

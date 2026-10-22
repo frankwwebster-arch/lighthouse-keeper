@@ -3325,6 +3325,33 @@
         }
       ]
     },
+    "dishwasher-machine": {
+      "kind": "object",
+      "family": "dishwasher",
+      "label": "Dishwasher, door open",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/dishwasher-machine.png",
+          "sha256": "d9ef17605fa2d4aa02d57bf1f9cfa2f319cf5bed4419b53d57a00763c7a3fd71",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            28,
+            236,
+            227
+          ],
+          "added": "2026-10-22",
+          "source": "dishwasher-machine.png",
+          "by": "codex",
+          "note": "Commissioned recipe picture (22 Oct)"
+        }
+      ]
+    },
     "dishwasher-rinse-aid": {
       "kind": "object",
       "family": "dishwasher",
@@ -3976,6 +4003,33 @@
         }
       ]
     },
+    "fishing-sea-water": {
+      "kind": "object",
+      "family": "fishing",
+      "label": "Sea water",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/fishing-sea-water.png",
+          "sha256": "8a8b8aba23486419d9c7e8783857f4b669c5509767f4d432f6cdb9cd78673635",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            107,
+            236,
+            149
+          ],
+          "added": "2026-10-22",
+          "source": "fishing-sea-water.png",
+          "by": "codex",
+          "note": "Commissioned recipe picture (22 Oct)"
+        }
+      ]
+    },
     "fishing-tackle-box": {
       "kind": "object",
       "family": "fishing",
@@ -4027,6 +4081,114 @@
           "source": "fishing-waders.png",
           "by": "codex",
           "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "floor-clean": {
+      "kind": "object",
+      "family": "household",
+      "label": "Clean floor",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/floor-clean.png",
+          "sha256": "055711b011e982ab5f2991e2a6d99d120ccc87a3095e3937f83ff37db5898532",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            64,
+            236,
+            192
+          ],
+          "added": "2026-10-22",
+          "source": "floor-clean.png",
+          "by": "codex",
+          "note": "Commissioned recipe picture (22 Oct)"
+        }
+      ]
+    },
+    "floor-muddy": {
+      "kind": "object",
+      "family": "household",
+      "label": "Muddy floor",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/floor-muddy.png",
+          "sha256": "74bb99603a348f77555fdef905e3d8c763d50b3b429ead573c61356e0aaa7024",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            64,
+            236,
+            192
+          ],
+          "added": "2026-10-22",
+          "source": "floor-muddy.png",
+          "by": "codex",
+          "note": "Commissioned recipe picture (22 Oct)"
+        }
+      ]
+    },
+    "furniture-side-table-clean": {
+      "kind": "object",
+      "family": "household",
+      "label": "Clean side table",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/furniture-side-table-clean.png",
+          "sha256": "fd2ae90237b3b711471d3cc31ee6ce82aa48df735fdd5f86ca9a7081d850aa9e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            32,
+            236,
+            224
+          ],
+          "added": "2026-10-22",
+          "source": "furniture-side-table-clean.png",
+          "by": "codex",
+          "note": "Commissioned recipe picture (22 Oct)"
+        }
+      ]
+    },
+    "furniture-side-table-dusty": {
+      "kind": "object",
+      "family": "household",
+      "label": "Dusty side table",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/furniture-side-table-dusty.png",
+          "sha256": "555b33366e2c5f6ed669991d0fd04edde9d24549b059f880d23d3d90cd3e4bbb",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            32,
+            236,
+            224
+          ],
+          "added": "2026-10-22",
+          "source": "furniture-side-table-dusty.png",
+          "by": "codex",
+          "note": "Commissioned recipe picture (22 Oct)"
         }
       ]
     },
@@ -4189,6 +4351,33 @@
           "source": "garden-gloves.png",
           "by": "codex",
           "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "garden-plant-pot": {
+      "kind": "object",
+      "family": "garden",
+      "label": "Plant pot of soil",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/garden-plant-pot.png",
+          "sha256": "ae8df8257a4961eef8069b5a6f8541cb6fd1ed78a342ffcd5985eacb33c3c1fb",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            20,
+            236,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "garden-plant-pot.png",
+          "by": "codex",
+          "note": "Commissioned recipe picture (22 Oct)"
         }
       ]
     },
@@ -4994,6 +5183,33 @@
         }
       ]
     },
+    "laundry-basket-dirty": {
+      "kind": "object",
+      "family": "laundry",
+      "label": "Laundry basket of dirty clothes",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/laundry-basket-dirty.png",
+          "sha256": "8f194ea2fc3616a66c0e80abafd4f3250634ffb1792ac2418d5ab0a1f3577cf0",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            41,
+            236,
+            214
+          ],
+          "added": "2026-10-22",
+          "source": "laundry-basket-dirty.png",
+          "by": "codex",
+          "note": "Commissioned recipe picture (22 Oct)"
+        }
+      ]
+    },
     "laundry-fabric-conditioner": {
       "kind": "object",
       "family": "laundry",
@@ -5099,6 +5315,33 @@
           "source": "laundry-stain-remover-tub.png",
           "by": "codex",
           "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "laundry-washing-machine": {
+      "kind": "object",
+      "family": "laundry",
+      "label": "Washing machine",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/laundry-washing-machine.png",
+          "sha256": "d25fceabd8cebad85893d2b8e50d0bb671ef3f86fc71e886e7df4a0441267d54",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            40,
+            20,
+            215,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "laundry-washing-machine.png",
+          "by": "codex",
+          "note": "Commissioned recipe picture (22 Oct)"
         }
       ]
     },
@@ -8700,11 +8943,92 @@
         }
       ]
     },
+    "symbol-accent-blue-spiral": {
+      "kind": "mark",
+      "family": "notation",
+      "label": "Blue spiral",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-accent-blue-spiral.png",
+          "sha256": "f8778101656de6fda1a07582971a0fab097b61f3062880710bdac0ad56f37593",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            23,
+            236,
+            233
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-accent-blue-spiral.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
+        }
+      ]
+    },
+    "symbol-accent-red-star": {
+      "kind": "mark",
+      "family": "notation",
+      "label": "Red star",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-accent-red-star.png",
+          "sha256": "36ce9717777927938b384bcf3024c9162f7c4018c95a8b863dd75bba0f978552",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            27,
+            236,
+            229
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-accent-red-star.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
+        }
+      ]
+    },
+    "symbol-accent-yellow-sun": {
+      "kind": "mark",
+      "family": "notation",
+      "label": "Yellow sun",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-accent-yellow-sun.png",
+          "sha256": "88b37fe792b686cd7dc57fe8b88baad232a1e265d92399e9f1b6ab562c565d1e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            21,
+            236,
+            234
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-accent-yellow-sun.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
+        }
+      ]
+    },
     "symbol-clean-glint": {
       "kind": "mark",
       "family": "clean",
       "label": "Clean glint",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -8724,6 +9048,25 @@
           "source": "symbol-clean-glint.png",
           "by": "codex",
           "note": "Small four-point glint for freshly clean or finished objects."
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-clean-glint.png",
+          "sha256": "9e008d766a36aeb57feb65f266ce6b844726abaeb4789906a00adfdbccd0a69c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            38,
+            20,
+            217,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-clean-glint.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -8731,7 +9074,7 @@
       "kind": "mark",
       "family": "cold",
       "label": "Cold snowflake",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -8751,6 +9094,25 @@
           "source": "symbol-cold-snowflake.png",
           "by": "codex",
           "note": "New icy-blue inverse counterpart to heat shimmer."
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-cold-snowflake.png",
+          "sha256": "004f8205079d97c88ef365bb25f2382f3ae484f90443ef3475fdfd536a50cb41",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            29,
+            20,
+            226,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-cold-snowflake.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -8758,7 +9120,7 @@
       "kind": "mark",
       "family": "symbol",
       "label": "Dust puff",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -8778,6 +9140,25 @@
           "source": "symbol-dust-puff.png",
           "by": "codex",
           "note": "Commissioned Bubble stories batch 2 ligne-claire action mark; Claude review sheet pending"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-dust-puff.png",
+          "sha256": "bc619b33f6a9e62bb9b0688b57a079bcb6ee20df935df71e7094fd2c8782791e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            46,
+            236,
+            210
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-dust-puff.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -8785,7 +9166,7 @@
       "kind": "mark",
       "family": "symbol",
       "label": "Earth clods",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -8805,6 +9186,25 @@
           "source": "symbol-earth-clods.png",
           "by": "codex",
           "note": "Commissioned Bubble stories batch 2 ligne-claire action mark; Claude review sheet pending"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-earth-clods.png",
+          "sha256": "1b6e66c0209ed0b94bf050399817c293591c8d5944f232c5333ccea52657ca3b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            56,
+            236,
+            200
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-earth-clods.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -8812,7 +9212,7 @@
       "kind": "mark",
       "family": "electrical",
       "label": "Electrical arc",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -8831,6 +9231,25 @@
           "added": "2026-10-20",
           "source": "activity-cloud-composer-v7",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-electrical-arc.png",
+          "sha256": "1393bd96ae0ea5d310664a34f2e614da0632a323d3ca29a77dab0e1d1cb2d3e3",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            77,
+            20,
+            178,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-electrical-arc.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -8838,7 +9257,7 @@
       "kind": "mark",
       "family": "notation",
       "label": "Exclamation mark",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -8857,6 +9276,25 @@
           "added": "2026-10-20",
           "source": "activity-cloud-composer-v7",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-exclamation-mark.png",
+          "sha256": "f762c0ae5ee15129fdd2ca0d735a95ffb563ad3dacfcae1185c75580339da8ba",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            99,
+            20,
+            156,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-exclamation-mark.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -8864,7 +9302,7 @@
       "kind": "mark",
       "family": "scent",
       "label": "Foul odour",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -8883,6 +9321,25 @@
           "added": "2026-10-20",
           "source": "activity-cloud-composer-v7",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-foul-odour.png",
+          "sha256": "db4f3d46ae7616f8dd21d264670036a10c8d3abcce0ac56141d52610912831b3",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            63,
+            20,
+            193,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-foul-odour.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -8890,7 +9347,7 @@
       "kind": "mark",
       "family": "heat",
       "label": "Heat curls",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -8909,6 +9366,25 @@
           "added": "2026-10-20",
           "source": "keeper-prime-rear-action-choreography-v1",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-heat-curls.png",
+          "sha256": "ee4850c467a6fd407335626346428ad9790d93b6fe871e651f4ba7cdb4845cb8",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            55,
+            20,
+            200,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-heat-curls.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -8916,7 +9392,7 @@
       "kind": "mark",
       "family": "heat",
       "label": "Heat shimmer",
-      "current": 3,
+      "current": 4,
       "versions": [
         {
           "v": 1,
@@ -8973,18 +9449,37 @@
           "source": "symbol-heat-shimmer.png",
           "by": "codex",
           "note": "V3: coral-red and vermilion heat-distortion bands replace the generic golden colour language; V1 and V2 remain selectable."
+        },
+        {
+          "v": 4,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-heat-shimmer.png",
+          "sha256": "fc12227e966ee7066398f759bb3351aecaf286cdfd7716d9bb16d806b4c16930",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            54,
+            236,
+            202
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-heat-shimmer.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ],
       "review": {
         "status": "approved",
-        "note": "Replaced by v3; awaiting Frank's look."
+        "note": "Replaced by v4; awaiting Frank's look."
       }
     },
     "symbol-impact-star": {
       "kind": "mark",
       "family": "impact",
       "label": "Impact star",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -9003,6 +9498,52 @@
           "added": "2026-10-20",
           "source": "keeper-prime-rear-action-choreography-v1",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-impact-star.png",
+          "sha256": "fea013ee9e312c9163a6097eacdbdc947a4bb94f1a03e3026d25e1235783a942",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            26,
+            236,
+            230
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-impact-star.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
+        }
+      ]
+    },
+    "symbol-ink-star": {
+      "kind": "mark",
+      "family": "impact",
+      "label": "Ink star",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-ink-star.png",
+          "sha256": "4fe6d0f1bfb39a9c0575e933c94c74709cf6c00d21f69df411f850d3e011c05b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            29,
+            236,
+            226
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-ink-star.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -9010,7 +9551,7 @@
       "kind": "mark",
       "family": "motion",
       "label": "Motion ticks",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -9029,6 +9570,25 @@
           "added": "2026-10-20",
           "source": "keeper-prime-rear-action-choreography-v1",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-motion-ticks.png",
+          "sha256": "8db4c54d3908e54f27d5489c64fe3d884642a03a6ef547951d714fd3d4ac9de9",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            52,
+            236,
+            203
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-motion-ticks.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -9036,7 +9596,7 @@
       "kind": "mark",
       "family": "scent",
       "label": "Pleasant aroma",
-      "current": 3,
+      "current": 4,
       "versions": [
         {
           "v": 1,
@@ -9093,18 +9653,37 @@
           "source": "symbol-pleasant-aroma.png",
           "by": "codex",
           "note": "V3: comic fragrance curls, flowers and sparkle make the good-smell meaning explicit; V1 and V2 remain selectable."
+        },
+        {
+          "v": 4,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-pleasant-aroma.png",
+          "sha256": "e57dec975046852dec025d76bdafbc32598f0df6c38ef405589e38ec78ef8ba6",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            75,
+            20,
+            180,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-pleasant-aroma.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ],
       "review": {
         "status": "approved",
-        "note": "Replaced by v3; awaiting Frank's look."
+        "note": "Replaced by v4; awaiting Frank's look."
       }
     },
     "symbol-question-mark": {
       "kind": "mark",
       "family": "notation",
       "label": "Question mark",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -9123,6 +9702,25 @@
           "added": "2026-10-20",
           "source": "activity-cloud-composer-v7",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-question-mark.png",
+          "sha256": "83575b2a1ed0a456e6dc9e688567538dbf136836725785058992a4b4d6e1c7ad",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            65,
+            20,
+            191,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-question-mark.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -9130,7 +9728,7 @@
       "kind": "mark",
       "family": "symbol",
       "label": "Sawdust",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -9150,6 +9748,25 @@
           "source": "symbol-sawdust.png",
           "by": "codex",
           "note": "Commissioned Bubble stories batch 2 ligne-claire action mark; Claude review sheet pending"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-sawdust.png",
+          "sha256": "ce0d35be417c51738ebb7284793dae0337799133f32d0ab143189a619404cba2",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            24,
+            20,
+            231,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-sawdust.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -9157,7 +9774,7 @@
       "kind": "mark",
       "family": "symbol",
       "label": "Seasoning flecks",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -9177,6 +9794,25 @@
           "source": "symbol-seasoning-flecks.png",
           "by": "codex",
           "note": "Commissioned Bubble stories batch 2 ligne-claire action mark; Claude review sheet pending"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-seasoning-flecks.png",
+          "sha256": "abfeff1c184c8d48fb8ff0b6bdfd425205a2ec8f61b0d2f2a9c344c2ee43f771",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            23,
+            236,
+            233
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-seasoning-flecks.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -9184,7 +9820,7 @@
       "kind": "mark",
       "family": "impact",
       "label": "Sizzle spark",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -9203,6 +9839,25 @@
           "added": "2026-10-20",
           "source": "keeper-prime-rear-action-choreography-v1",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-sizzle-spark.png",
+          "sha256": "4018634000ee0077f131b41e932e4f4cc5ba43d5097861843ea55c1d2afec0e1",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            24,
+            236,
+            231
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-sizzle-spark.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -9210,7 +9865,7 @@
       "kind": "mark",
       "family": "water",
       "label": "Soap bubbles",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -9229,6 +9884,79 @@
           "added": "2026-10-20",
           "source": "keeper-prime-rear-action-choreography-v1",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-soap-bubbles.png",
+          "sha256": "e6f9fa435d82397a0199ca39f0b75054183dad0fcad0f22682350d2f47f890f8",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            39,
+            236,
+            216
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-soap-bubbles.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
+        }
+      ]
+    },
+    "symbol-speed-lines": {
+      "kind": "mark",
+      "family": "motion",
+      "label": "Speed lines",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-speed-lines.png",
+          "sha256": "001fd64458944c9f62631bf040c8c82c08c20aae6b0171cb196312059d516256",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            85,
+            236,
+            171
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-speed-lines.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
+        }
+      ]
+    },
+    "symbol-spiral": {
+      "kind": "mark",
+      "family": "notation",
+      "label": "Spiral",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-spiral.png",
+          "sha256": "865aca367dc2414e7120b1d0395bd472b81282ff585a9e5295ec409b42053c21",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            27,
+            20,
+            228,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-spiral.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -9236,7 +9964,7 @@
       "kind": "mark",
       "family": "symbol",
       "label": "Spray mist",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -9256,6 +9984,25 @@
           "source": "symbol-spray-mist.png",
           "by": "codex",
           "note": "Commissioned Bubble stories batch 2 ligne-claire action mark; Claude review sheet pending"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-spray-mist.png",
+          "sha256": "0c84bd60c7b63f2571bbe132f533e94429fe20c94dab87dee11da31e8aba4667",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            36,
+            20,
+            220,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-spray-mist.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -9263,7 +10010,7 @@
       "kind": "mark",
       "family": "symbol",
       "label": "Steam puff",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -9283,6 +10030,52 @@
           "source": "symbol-steam-puff.png",
           "by": "codex",
           "note": "Commissioned Bubble stories batch 2 ligne-claire action mark; Claude review sheet pending"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-steam-puff.png",
+          "sha256": "0c821f9198385ce6a3ee6dbcbcb21e424cf757a153f482081755fb6bfd176da3",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            100,
+            20,
+            155,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-steam-puff.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
+        }
+      ]
+    },
+    "symbol-swirl": {
+      "kind": "mark",
+      "family": "motion",
+      "label": "Swirl",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-swirl.png",
+          "sha256": "c14c93f526aa7d277d8bfa145c3227fe253a126dd29031d07415f0597c84c0a8",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            35,
+            236,
+            220
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-swirl.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -9290,7 +10083,7 @@
       "kind": "mark",
       "family": "water",
       "label": "Water droplets",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -9309,6 +10102,25 @@
           "added": "2026-10-20",
           "source": "keeper-prime-rear-action-choreography-v1",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-water-droplets.png",
+          "sha256": "a00879321afee9b7ddaf692ce69596793b3eda462c347c4fc4187d4008a0d5ba",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            55,
+            20,
+            200,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-water-droplets.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ]
     },
@@ -9316,7 +10128,7 @@
       "kind": "mark",
       "family": "welding",
       "label": "Welding sparks",
-      "current": 3,
+      "current": 4,
       "versions": [
         {
           "v": 1,
@@ -9373,12 +10185,58 @@
           "source": "symbol-welding-sparks.png",
           "by": "codex",
           "note": "V3: electric blue-white arc and cyan/cobalt metal sparks replace the generic golden burst; V1 and V2 remain selectable."
+        },
+        {
+          "v": 4,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-welding-sparks.png",
+          "sha256": "2f1438e8c0b527d965d4d2e9304b64bf87a173ff93ad0a380123602568019866",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            20,
+            236,
+            235
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-welding-sparks.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
         }
       ],
       "review": {
         "status": "approved",
-        "note": "Replaced by v3; awaiting Frank's look."
+        "note": "Replaced by v4; awaiting Frank's look."
       }
+    },
+    "symbol-zigzag": {
+      "kind": "mark",
+      "family": "notation",
+      "label": "Zigzag",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-zigzag.png",
+          "sha256": "cc73739d4c6761fcffb87bdac8d12d8d70e252d1e6659f2e7c5825ddef4455d7",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            73,
+            20,
+            183,
+            236
+          ],
+          "added": "2026-10-22",
+          "source": "symbol-zigzag.png",
+          "by": "codex",
+          "note": "Hergé black-ink mark (m1)"
+        }
+      ]
     },
     "tea-bag": {
       "kind": "object",
@@ -10196,6 +11054,33 @@
           "source": "wear-rubber-gloves-pair.png",
           "by": "codex",
           "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "wear-shirt-muddy": {
+      "kind": "object",
+      "family": "wearable",
+      "label": "Muddy shirt",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/wear-shirt-muddy.png",
+          "sha256": "1bcf0bf33847f85afc640394178e6772b4c2298e6a2d06455e6f51bf42a82065",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            47,
+            236,
+            208
+          ],
+          "added": "2026-10-22",
+          "source": "wear-shirt-muddy.png",
+          "by": "codex",
+          "note": "Commissioned recipe picture (22 Oct)"
         }
       ]
     },
