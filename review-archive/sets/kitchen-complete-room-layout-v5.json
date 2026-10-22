@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "set": "kitchen-complete-room-layout-v5",
+  "page": {
+    "path": "public/keeper-review/kitchen-complete-room-layout-v5/index.html",
+    "sha256": "2ec931831c61893188afec1c1f7cce26b517654c162bbfe6589f5342e3ac9d1d",
+    "bytes": 21836
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-complete-room-layout-v5/assets/kitchen-complete-room-atlas-v5.png": {
+      "sha256": "2608845d459fc1d03bc3ab250f6595728efce73ac91e8318ef0fa5f8f2aaca54",
+      "extension": ".png",
+      "bytes": 4428949,
+      "object": "review-archive/objects/26/2608845d459fc1d03bc3ab250f6595728efce73ac91e8318ef0fa5f8f2aaca54.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/26/2608845d459fc1d03bc3ab250f6595728efce73ac91e8318ef0fa5f8f2aaca54.png"
+    }
+  }
+}

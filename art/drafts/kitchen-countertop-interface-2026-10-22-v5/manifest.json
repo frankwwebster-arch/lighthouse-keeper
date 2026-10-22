@@ -1,0 +1,1066 @@
+{
+  "schema": "lighthouse-keeper/kitchen-complete-room-layout@5",
+  "set": "kitchen-countertop-interface-2026-10-22-v5",
+  "status": "unapproved-countertop-interface-and-cabinet-owned-objects",
+  "approvedAuthoritiesPreserved": {
+    "foundation": {
+      "path": "art/source/kitchen-cabinetry-foundation-2026-10-22-v1/cabinetry-module-construction-sheet-approved.png",
+      "sha256": "898c212690c2db8a52a6c8ea7bd962afcf12c1df8e577dcc98c4508359cccee3",
+      "changed": false
+    },
+    "states": {
+      "path": "art/drafts/kitchen-cabinetry-state-derivatives-2026-10-22-v1/candidate-v4-red-fault-lights-fridge-leak.png",
+      "sha256": "d53b7565558acf6dc5544dde8b415fe50ac9eec1683eb374d996114ad5a902e8",
+      "changed": false
+    },
+    "changed": false
+  },
+  "candidateSources": {
+    "foundation": {
+      "path": "art/drafts/kitchen-countertop-interface-2026-10-22-v5/source/cabinetry-foundation-interface-hob-sink-corrected.png",
+      "sha256": "4b7c25ef2ea006225f465360479b73fac3ea2ab02650ea471a1fdb6f5fd35032"
+    },
+    "states": {
+      "path": "art/drafts/kitchen-countertop-interface-2026-10-22-v5/source/cabinetry-states-interface-hob-sink-corrected.png",
+      "sha256": "6ab62d05bbc0fa7b24357abddbca8e5828ae0bb5a34a90b7dc79f88358721d10"
+    },
+    "rejectedHobColourAttempts": [
+      {
+        "path": "art/drafts/kitchen-countertop-interface-2026-10-22-v5/source/cabinetry-foundation-interface-candidate.png",
+        "sha256": "54de8e9b70e75ec1ca034e0555ceb855afa901b5b2ea0e9d5952ffe5636bd586"
+      },
+      {
+        "path": "art/drafts/kitchen-countertop-interface-2026-10-22-v5/source/cabinetry-states-interface-candidate.png",
+        "sha256": "babd01621ebb25fc2787b9ae23e292bd4863530aaf8366b15b70da81442c116b"
+      }
+    ],
+    "supersededBeforeStraightSinkDatum": [
+      {
+        "path": "art/drafts/kitchen-countertop-interface-2026-10-22-v5/source/cabinetry-foundation-interface-hob-corrected.png",
+        "sha256": "e598617b257ffbf2899dc9393e86d89a39db0677f9b3faf066efff5b623bbf75"
+      },
+      {
+        "path": "art/drafts/kitchen-countertop-interface-2026-10-22-v5/source/cabinetry-states-interface-hob-corrected.png",
+        "sha256": "18b35f2faea27124113d77d9ec913cc9a06ea5cf6dd9299dcb60349d898335c9"
+      }
+    ]
+  },
+  "deliveryPredecessor": {
+    "set": "kitchen-complete-room-layout-2026-10-22-v4",
+    "manifestSha256": "6340d9cddddabd430872af08dd2b6672b38f08cd2cedad4256016512f164c4f6",
+    "v4Changed": false
+  },
+  "room": {
+    "logicalPixels": [
+      772,
+      224
+    ],
+    "bayWidth": 84,
+    "bodySize": [
+      84,
+      74
+    ],
+    "bodyTopY": 134,
+    "bodyBaselineY": 208,
+    "originsX": [
+      84,
+      168,
+      252,
+      336,
+      420,
+      504
+    ],
+    "defaultOrder": [
+      "cupboard",
+      "drawers",
+      "sink",
+      "dishwasher",
+      "oven",
+      "fridge"
+    ]
+  },
+  "states": {
+    "sink": {
+      "off": "sink",
+      "on": "sink-on",
+      "broken": "sink-broken"
+    },
+    "dishwasher": {
+      "on": "dishwasher-on",
+      "broken": "dishwasher-broken",
+      "offUnavailable": "dark-lamp production extraction is not yet authored"
+    },
+    "oven": {
+      "on": "oven",
+      "off": "oven-off",
+      "broken": "oven-broken"
+    },
+    "fridge": {
+      "standard": "fridge-standard",
+      "broken": "fridge-broken"
+    }
+  },
+  "canonicalAssets": {
+    "cupboard": {
+      "bodyRect": [
+        11,
+        16,
+        416,
+        369
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-foundation",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        8,
+        439,
+        393
+      ]
+    },
+    "drawers": {
+      "bodyRect": [
+        12,
+        16,
+        408,
+        369
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-foundation",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        409,
+        432,
+        393
+      ]
+    },
+    "sink": {
+      "bodyRect": [
+        10,
+        136,
+        416,
+        369
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-foundation",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        810,
+        437,
+        513
+      ]
+    },
+    "dishwasher": {
+      "bodyRect": [
+        11,
+        22,
+        418,
+        389
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-foundation",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        1331,
+        439,
+        420
+      ]
+    },
+    "oven": {
+      "bodyRect": [
+        13,
+        23,
+        428,
+        396
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-foundation",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        1759,
+        452,
+        428
+      ]
+    },
+    "fridge": {
+      "bodyRect": [
+        10,
+        22,
+        416,
+        389
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-foundation",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        2195,
+        437,
+        420
+      ]
+    },
+    "sink-on": {
+      "bodyRect": [
+        11,
+        102,
+        345,
+        270
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        2623,
+        369,
+        383
+      ]
+    },
+    "sink-broken": {
+      "bodyRect": [
+        48,
+        102,
+        352,
+        270
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        3014,
+        504,
+        412
+      ]
+    },
+    "dishwasher-on": {
+      "bodyRect": [
+        11,
+        11,
+        344,
+        305
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        3434,
+        368,
+        326
+      ]
+    },
+    "dishwasher-broken": {
+      "bodyRect": [
+        56,
+        11,
+        352,
+        305
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        3768,
+        504,
+        356
+      ]
+    },
+    "oven-off": {
+      "bodyRect": [
+        9,
+        8,
+        358,
+        327
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        4132,
+        377,
+        344
+      ]
+    },
+    "oven-broken": {
+      "bodyRect": [
+        9,
+        8,
+        352,
+        327
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        4484,
+        425,
+        344
+      ]
+    },
+    "fridge-standard": {
+      "bodyRect": [
+        9,
+        9,
+        349,
+        335
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        4836,
+        370,
+        353
+      ]
+    },
+    "fridge-broken": {
+      "bodyRect": [
+        9,
+        9,
+        352,
+        335
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        5197,
+        425,
+        401
+      ]
+    }
+  },
+  "assets": {
+    "cupboard": {
+      "bodyRect": [
+        8,
+        8,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "unapproved-interface-foundation-v5",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        5606,
+        434,
+        386
+      ]
+    },
+    "drawers": {
+      "bodyRect": [
+        6,
+        8,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "unapproved-interface-foundation-v5",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        6000,
+        431,
+        386
+      ]
+    },
+    "sink": {
+      "bodyRect": [
+        7,
+        133,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "unapproved-interface-foundation-v5",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        6394,
+        432,
+        511
+      ]
+    },
+    "dishwasher": {
+      "bodyRect": [
+        8,
+        9,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "unapproved-interface-foundation-v5",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        6913,
+        434,
+        387
+      ]
+    },
+    "oven": {
+      "bodyRect": [
+        7,
+        16,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "unapproved-interface-foundation-v5",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        7308,
+        431,
+        394
+      ]
+    },
+    "fridge": {
+      "bodyRect": [
+        7,
+        9,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "unapproved-interface-foundation-v5",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        7710,
+        432,
+        387
+      ]
+    },
+    "sink-on": {
+      "bodyRect": [
+        10,
+        114,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "unapproved-interface-states-v5",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        8105,
+        440,
+        492
+      ]
+    },
+    "sink-broken": {
+      "bodyRect": [
+        58,
+        114,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "unapproved-interface-states-v5",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        8605,
+        547,
+        514
+      ]
+    },
+    "dishwasher-on": {
+      "bodyRect": [
+        10,
+        7,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "unapproved-interface-states-v5",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        9127,
+        440,
+        384
+      ]
+    },
+    "dishwasher-broken": {
+      "bodyRect": [
+        58,
+        7,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "unapproved-interface-states-v5",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        9519,
+        547,
+        403
+      ]
+    },
+    "oven-off": {
+      "bodyRect": [
+        10,
+        16,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "unapproved-interface-states-v5",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        9930,
+        440,
+        392
+      ]
+    },
+    "oven-broken": {
+      "bodyRect": [
+        10,
+        16,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "unapproved-interface-states-v5",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        10330,
+        442,
+        392
+      ]
+    },
+    "fridge-standard": {
+      "bodyRect": [
+        10,
+        9,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "unapproved-interface-states-v5",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        10730,
+        440,
+        385
+      ]
+    },
+    "fridge-broken": {
+      "bodyRect": [
+        10,
+        9,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "unapproved-interface-states-v5",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        11123,
+        442,
+        441
+      ]
+    }
+  },
+  "looseAssets": {
+    "toaster": {
+      "sha256": "75de96915b5038ea1c756f62cd0d7814412a2a517e1ef5e6eac94e6b755c287b",
+      "pixels": [
+        200,
+        144
+      ],
+      "sourceRect": [
+        100,
+        80,
+        560,
+        430
+      ],
+      "support": "worktop",
+      "label": "Toaster",
+      "masterScale": 4,
+      "logicalSize": [
+        42,
+        28
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        42,
+        28
+      ],
+      "logicalCanvas": [
+        50,
+        36
+      ],
+      "sourceFile": "toaster-loose-object-foundation-v1.png",
+      "sourceSha256": "75de96915b5038ea1c756f62cd0d7814412a2a517e1ef5e6eac94e6b755c287b",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        11572,
+        200,
+        144
+      ]
+    },
+    "kettle": {
+      "sha256": "73e881f6eeb34df257b55e324daf02b40f6c99f00f613a1fbb2fdbe995fad00a",
+      "pixels": [
+        184,
+        168
+      ],
+      "sourceRect": [
+        600,
+        55,
+        1000,
+        430
+      ],
+      "support": "worktop",
+      "label": "Kettle",
+      "masterScale": 4,
+      "logicalSize": [
+        38,
+        34
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        38,
+        34
+      ],
+      "logicalCanvas": [
+        46,
+        42
+      ],
+      "sourceFile": "kettle-loose-object-foundation-v1.png",
+      "sourceSha256": "73e881f6eeb34df257b55e324daf02b40f6c99f00f613a1fbb2fdbe995fad00a",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        11724,
+        184,
+        168
+      ]
+    },
+    "bin": {
+      "sha256": "0246dd50519cd897a034705cd758f23b60d9db61840107a75b8353ac95508aa6",
+      "pixels": [
+        160,
+        240
+      ],
+      "sourceRect": [
+        1040,
+        15,
+        1400,
+        430
+      ],
+      "support": "floor",
+      "label": "Bin",
+      "masterScale": 4,
+      "logicalSize": [
+        32,
+        52
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        32,
+        52
+      ],
+      "logicalCanvas": [
+        40,
+        60
+      ],
+      "sourceFile": "bin-loose-object-foundation-v1.png",
+      "sourceSha256": "0246dd50519cd897a034705cd758f23b60d9db61840107a75b8353ac95508aa6",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        11900,
+        160,
+        240
+      ]
+    },
+    "table": {
+      "sha256": "1e5410475c6117b89650b34d84eb6781a46aaaf9ffc0fcbec5c5e4763d926da4",
+      "pixels": [
+        352,
+        264
+      ],
+      "sourceRect": [
+        100,
+        430,
+        930,
+        1000
+      ],
+      "support": "floor",
+      "label": "Table",
+      "masterScale": 4,
+      "logicalSize": [
+        80,
+        58
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        80,
+        58
+      ],
+      "logicalCanvas": [
+        88,
+        66
+      ],
+      "sourceFile": "table-loose-object-foundation-v1.png",
+      "sourceSha256": "1e5410475c6117b89650b34d84eb6781a46aaaf9ffc0fcbec5c5e4763d926da4",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        12148,
+        352,
+        264
+      ]
+    },
+    "chair": {
+      "sha256": "395aaf0ec88674444afbc757cd184f8e11470e35a0b085ad1b540937ad037d56",
+      "pixels": [
+        172,
+        348
+      ],
+      "sourceRect": [
+        950,
+        430,
+        1400,
+        1000
+      ],
+      "support": "floor",
+      "label": "Chair",
+      "masterScale": 4,
+      "logicalSize": [
+        35,
+        79
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        35,
+        79
+      ],
+      "logicalCanvas": [
+        43,
+        87
+      ],
+      "sourceFile": "chair-loose-object-foundation-v1.png",
+      "sourceSha256": "395aaf0ec88674444afbc757cd184f8e11470e35a0b085ad1b540937ad037d56",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        12420,
+        172,
+        348
+      ]
+    }
+  },
+  "interfaceAssets": {
+    "standard-standard": {
+      "logicalSize": [
+        6,
+        13
+      ],
+      "role": "master-resolution internal worktop connector",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        12776,
+        30,
+        65
+      ]
+    },
+    "standard-oven": {
+      "logicalSize": [
+        6,
+        13
+      ],
+      "role": "master-resolution internal worktop connector",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        12849,
+        30,
+        65
+      ]
+    },
+    "oven-standard": {
+      "logicalSize": [
+        6,
+        13
+      ],
+      "role": "master-resolution internal worktop connector",
+      "file": "kitchen-complete-room-atlas-v5.png",
+      "atlasRect": [
+        8,
+        12922,
+        30,
+        65
+      ]
+    }
+  },
+  "roomGrid": {
+    "schema": "lighthouse-keeper/kitchen-room-grid@2",
+    "room": "kitchen",
+    "logicalSize": [
+      772,
+      224
+    ],
+    "fittedGrid": {
+      "slotOriginsX": [
+        84,
+        168,
+        252,
+        336,
+        420,
+        504
+      ],
+      "slotCentresX": [
+        126,
+        210,
+        294,
+        378,
+        462,
+        546
+      ],
+      "bayWidthPixels": 84,
+      "bayWidthLogicalPixels": 21,
+      "bodySizePixels": [
+        84,
+        74
+      ],
+      "worktopSupportY": 141,
+      "floorSupportY": 208,
+      "keeperStopTurnY": 218
+    },
+    "countertopObjectOwnership": {
+      "placementModel": "supporting-unit-identity",
+      "eligibleOwnerTypes": [
+        "cupboard",
+        "drawers"
+      ],
+      "objects": [
+        "kettle",
+        "toaster"
+      ],
+      "oneObjectPerOwner": true,
+      "ownerMovesObject": true,
+      "rawCoordinatesPersisted": false,
+      "defaultOwners": {
+        "kettle": "cupboard",
+        "toaster": "drawers"
+      },
+      "dropOnOccupiedOwner": "swap-object-owners"
+    },
+    "floorSlots": {
+      "supportY": 208,
+      "oneObjectPerSlot": true,
+      "sections": [
+        {
+          "id": "floor-west",
+          "boundsX": [
+            0,
+            84
+          ],
+          "centreX": 42
+        },
+        {
+          "id": "floor-dining-left",
+          "boundsX": [
+            604,
+            688
+          ],
+          "centreX": 646
+        },
+        {
+          "id": "floor-dining-right",
+          "boundsX": [
+            688,
+            772
+          ],
+          "centreX": 730
+        }
+      ],
+      "defaultAssignments": {
+        "bin": "floor-west",
+        "chair": "floor-dining-left",
+        "table": "floor-dining-right"
+      }
+    },
+    "invariants": {
+      "cabinetOrderPersistsByUnitIdentity": true,
+      "counterObjectsTravelWithOwner": true,
+      "counterObjectsNeverOccupySinkDishwasherOvenOrFridge": true,
+      "maximumCentreErrorPixels": 0.5,
+      "roomSpecific": true
+    }
+  },
+  "countertopOwnership": {
+    "placementModel": "supporting-unit-identity",
+    "eligibleOwnerTypes": [
+      "cupboard",
+      "drawers"
+    ],
+    "objects": [
+      "kettle",
+      "toaster"
+    ],
+    "oneObjectPerOwner": true,
+    "ownerMovesObject": true,
+    "rawCoordinatesPersisted": false,
+    "defaultOwners": {
+      "kettle": "cupboard",
+      "toaster": "drawers"
+    },
+    "dropOnOccupiedOwner": "swap-object-owners"
+  },
+  "looseGeometry": {
+    "worktopSupportY": 141,
+    "floorSupportY": 208,
+    "chairSeatTopHeightLp": 7.75,
+    "chairSeatTopHeightRoomPixels": 31,
+    "tableTopHeightLp": 14.5,
+    "defaultPositions": null,
+    "positionStorage": "slot identifiers only; pointer coordinates are never persisted",
+    "defaultSlotAssignments": {
+      "bin": "floor-west",
+      "chair": "floor-dining-left",
+      "table": "floor-dining-right"
+    },
+    "countertopPositionStorage": "supporting cabinet identity only"
+  },
+  "countertopInterface": {
+    "bodyMasterPixels": [
+      420,
+      370
+    ],
+    "allBodyRectsExact": true,
+    "internalEdges": "square; no baked exposed-end bevels",
+    "joinSelection": "standard-standard, standard-oven or oven-standard from current neighbours",
+    "legacyV22V32HealingUsed": false,
+    "approved": false
+  },
+  "atlas": {
+    "file": "kitchen-complete-room-atlas-v5.png",
+    "sha256": "2608845d459fc1d03bc3ab250f6595728efce73ac91e8318ef0fa5f8f2aaca54",
+    "pixels": [
+      563,
+      12995
+    ],
+    "drawingCount": 36,
+    "uniqueImageRequests": 1,
+    "lossless": true
+  },
+  "boundaries": {
+    "productionChanged": false,
+    "runtimeChanged": false,
+    "approvedSourceOverwritten": false,
+    "candidateReviewOnly": true
+  }
+}

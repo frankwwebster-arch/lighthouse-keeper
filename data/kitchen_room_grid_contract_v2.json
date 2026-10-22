@@ -1,0 +1,49 @@
+{
+  "schema": "lighthouse-keeper/kitchen-room-grid@2",
+  "room": "kitchen",
+  "logicalSize": [772, 224],
+  "fittedGrid": {
+    "slotOriginsX": [84, 168, 252, 336, 420, 504],
+    "slotCentresX": [126, 210, 294, 378, 462, 546],
+    "bayWidthPixels": 84,
+    "bayWidthLogicalPixels": 21,
+    "bodySizePixels": [84, 74],
+    "worktopSupportY": 141,
+    "floorSupportY": 208,
+    "keeperStopTurnY": 218
+  },
+  "countertopObjectOwnership": {
+    "placementModel": "supporting-unit-identity",
+    "eligibleOwnerTypes": ["cupboard", "drawers"],
+    "objects": ["kettle", "toaster"],
+    "oneObjectPerOwner": true,
+    "ownerMovesObject": true,
+    "rawCoordinatesPersisted": false,
+    "defaultOwners": {
+      "kettle": "cupboard",
+      "toaster": "drawers"
+    },
+    "dropOnOccupiedOwner": "swap-object-owners"
+  },
+  "floorSlots": {
+    "supportY": 208,
+    "oneObjectPerSlot": true,
+    "sections": [
+      {"id": "floor-west", "boundsX": [0, 84], "centreX": 42},
+      {"id": "floor-dining-left", "boundsX": [604, 688], "centreX": 646},
+      {"id": "floor-dining-right", "boundsX": [688, 772], "centreX": 730}
+    ],
+    "defaultAssignments": {
+      "bin": "floor-west",
+      "chair": "floor-dining-left",
+      "table": "floor-dining-right"
+    }
+  },
+  "invariants": {
+    "cabinetOrderPersistsByUnitIdentity": true,
+    "counterObjectsTravelWithOwner": true,
+    "counterObjectsNeverOccupySinkDishwasherOvenOrFridge": true,
+    "maximumCentreErrorPixels": 0.5,
+    "roomSpecific": true
+  }
+}

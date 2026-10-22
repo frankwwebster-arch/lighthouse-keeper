@@ -205,21 +205,23 @@ Nothing is promoted or wired yet. A future kitchen-assets version may split
 the airborne lid into its own animation layer and add user-controlled Broken
 vibration/SFX; do not mutate V47 to do so.
 
-## Kitchen room-grid integration V4 (22 Oct 2026)
+## Kitchen room-grid integration V5 (23 Oct 2026)
 
 The current unapproved complete-room integration gate is
-`/keeper-review/kitchen-complete-room-layout-v4`. It preserves every V3 art
-pixel, compares Raw, Narrow and established V22/V32 pair-aware healing, and
-replaces free loose-object x coordinates with exact room slot IDs. Read
-`data/kitchen_room_grid_contract_v1.json` and
-`docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V4_2026-10-22.md` before changing kitchen
+`/keeper-review/kitchen-complete-room-layout-v5`. It preserves exact V4
+drawings as the immutable first comparison, then shows corrected raw modules
+and a neighbour-derived fitted interface without the rejected five-layer
+V22/V32 healing stack. Read `data/kitchen_room_grid_contract_v2.json` and
+`docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V5_2026-10-23.md` before changing kitchen
 placement. The visual support lines (`y=141` counter, `y=208` floor) are not
-the Keeper walking/interaction plane (`y=218`). Kettle/toaster cannot share a
-counter slot or sit above the sink/hob; bin/chair/table occupy distinct floor
-sections. This contract is kitchen-specific: every other room must declare and
-verify its own grid rather than inheriting these coordinates implicitly. V4's
-single archived atlas must remain in the same-origin proxy allowlist: direct
-browser redirects to GitHub's raw-file host failed in Frank's session.
+the Keeper walking/interaction plane (`y=218`). Kettle/toaster belong to
+distinct cupboard or drawers identities and travel with those cabinets;
+bin/chair/table occupy distinct floor sections. No raw pointer coordinate is
+persisted. All bodies map exactly to `84 × 74`; every sink state shares a
+straight rear countertop datum; and the hob remains even deep blue. This
+contract is kitchen-specific: every other room must declare and verify its own
+grid rather than inheriting these coordinates implicitly. V5's single archived
+atlas must remain in the same-origin proxy allowlist.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 

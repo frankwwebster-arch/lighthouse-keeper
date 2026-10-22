@@ -15,11 +15,11 @@
   ],
   "largeDataThresholdBytes": 24576,
   "stats": {
-    "setCount": 259,
-    "referenceCount": 8092,
-    "uniqueObjectCount": 3371,
-    "logicalBytes": 644093657,
-    "uniqueBytes": 263277778,
+    "setCount": 260,
+    "referenceCount": 8093,
+    "uniqueObjectCount": 3372,
+    "logicalBytes": 648522606,
+    "uniqueBytes": 267706727,
     "deduplicatedBytes": 380815879
   },
   "legacyPaths": {
@@ -29541,6 +29541,13 @@
       "bytes": 2120911,
       "object": "review-archive/objects/3e/3e5e3f561292188a6349bf07282c295746479bb1e429480c0a98bb65e5be514b.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3e/3e5e3f561292188a6349bf07282c295746479bb1e429480c0a98bb65e5be514b.png"
+    },
+    "/keeper-review/kitchen-complete-room-layout-v5/assets/kitchen-complete-room-atlas-v5.png": {
+      "sha256": "2608845d459fc1d03bc3ab250f6595728efce73ac91e8318ef0fa5f8f2aaca54",
+      "extension": ".png",
+      "bytes": 4428949,
+      "object": "review-archive/objects/26/2608845d459fc1d03bc3ab250f6595728efce73ac91e8318ef0fa5f8f2aaca54.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/26/2608845d459fc1d03bc3ab250f6595728efce73ac91e8318ef0fa5f8f2aaca54.png"
     },
     "/keeper-review/kitchen-continuous-run-approved-v23/assets/full-kitchen-approved.png": {
       "sha256": "5d5451acbaa81a48918268d25482a1d3f657a77c441c9d5b4f87ed547d4f9707",

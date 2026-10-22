@@ -855,7 +855,7 @@ datum and interaction. V2 remains immutable provenance; no runtime or
 production asset changed. Delivery:
 `docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V3_2026-10-22.md`.
 
-Kitchen Complete Room Layout V4 is the active unapproved integration gate at
+Kitchen Complete Room Layout V4 is immutable rejected integration provenance at
 `/keeper-review/kitchen-complete-room-layout-v4`. It preserves the complete V3
 atlas pixel-for-pixel, adds the established five-layer V22/V32 healing method
 as a third synchronized comparison, and replaces every loose object's free x
@@ -868,6 +868,18 @@ centres; all expose the established `y=218` Keeper anchor independently of the
 own declared grids. Its one content-addressed atlas now passes through the
 same-origin integrity-checking archive proxy, after the direct GitHub redirect
 proved unreliable in Frank's browser. Nothing is promoted or wired.
+
+Kitchen Complete Room Layout V5 is the active unapproved integration gate at
+`/keeper-review/kitchen-complete-room-layout-v5`. It preserves the full V4
+reference byte-for-byte inside one new atlas and compares it with corrected
+square-boundary modules and a neighbour-derived fitted interface. Corrected
+bodies map exactly to `84 × 74`; the hob is even deep blue; and standard, On
+and Broken sink drawings share one straight rear countertop datum. Kettle and
+toaster placement is now owned by distinct cupboard/drawers identities, so a
+cabinet drag carries its object and raw coordinates are never persisted. Exact
+geometry and ownership are declared in `data/kitchen_room_grid_contract_v2.json`.
+Delivery: `docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V5_2026-10-23.md`. No approved
+source, runtime behavior or production asset changed.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
@@ -1024,10 +1036,10 @@ implemented and no artwork change is authorised by it.
 The review-payload housekeeping pass completed on 21 October 2026. The exact
 clean-checkout baseline failed at 53.3148 MiB; the content-addressed sweep now
 archives every review image plus JSON/JSON.GZ at or above 24 KiB, leaving HTML
-and small JSON public. After Kitchen Complete Room Layout V4, 257 set manifests
-resolve 7,918 references to 3,329 immutable objects;
-6,162 literal page references resolve and `public/` is 49.68
-MiB, 0.32 MiB below the unchanged 50 MiB guard. Runtime
+and small JSON public. After Kitchen Complete Room Layout V5, 260 set manifests
+resolve 8,093 references to 3,372 immutable objects;
+6,162 literal page references resolve and `public/` is 49.72 MiB, below the
+unchanged 50 MiB guard. Runtime
 `public/sprites` is now 40.1033 MiB, including the 27 versioned Prime sheets.
 Use `npm run maintain:keeper-review` after any review builder; it archives,
 verifies object and manifest hashes, checks historical URL resolution and then
