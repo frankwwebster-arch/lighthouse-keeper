@@ -1,6 +1,6 @@
 {
   "schema": "lighthouse-keeper/kitchen-high-resolution-foundation-source@1",
-  "status": "unapproved-review-foundation",
+  "status": "style-authority-with-approved-cabinetry-successor",
   "selectedPrimaryView": {
     "file": "kitchen-fitted-run-first-render-authority.png",
     "originalGenerationFile": "exec-b28bb76f-bdd9-4d95-bae6-4d25ab665468.png",
@@ -8,6 +8,20 @@
     "draftCopySha256": "bb37dc2e3e47c7c26649e627bae32eed04801c2e20571cbee7996d13e6e06bf2",
     "dimensions": [2203, 714],
     "role": "sole primary composition, style and review exemplar"
+  },
+  "confirmedStyleAuthority": {
+    "file": "kitchen-complete-atlas-warm-dimensional-style-authority.png",
+    "originalGenerationFile": "exec-2ca4376d-5a3f-44b7-bf48-8c18593fd1ed.png",
+    "originalSha256": "7c13cd5c2c51cd966c9c8a760a87a3ae1cc1bd86a6ab0869b288c67263293689",
+    "sourceCopySha256": "7c13cd5c2c51cd966c9c8a760a87a3ae1cc1bd86a6ab0869b288c67263293689",
+    "dimensions": [1536, 1024],
+    "scope": "Warm, soft, restrained dimensional finish confirmed for future zoom; content and geometry in this uncorrected atlas are not approved."
+  },
+  "approvedCabinetrySuccessor": {
+    "path": "../kitchen-cabinetry-foundation-2026-10-22-v1/cabinetry-module-construction-sheet-approved.png",
+    "sha256": "898c212690c2db8a52a6c8ea7bd962afcf12c1df8e577dcc98c4508359cccee3",
+    "approvalRecord": "../../../docs/review/kitchen-cabinetry-foundation-v1-approval-2026-10-22.json",
+    "scope": "Approved visual/body foundation only; production crops, state variants and runtime remain gated."
   },
   "supersededExploration": [
     {

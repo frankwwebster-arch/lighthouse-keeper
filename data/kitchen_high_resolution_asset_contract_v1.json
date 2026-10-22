@@ -1,6 +1,6 @@
 {
   "schema": "lighthouse-keeper/kitchen-high-resolution-asset-contract@1",
-  "status": "review-foundation-not-approved-not-registered",
+  "status": "cabinetry-visual-foundation-approved-not-production-not-registered",
   "decisionDate": "2026-10-22",
   "purpose": "Rebuild the complete kitchen as zoom-safe high-resolution adult cinematic ligne-claire art with restrained three-dimensional modelling, without changing gameplay geometry, state semantics, anchors or approved behaviour.",
   "authorities": {
@@ -12,6 +12,13 @@
       "sourceGeneration": "exec-b28bb76f-bdd9-4d95-bae6-4d25ab665468.png",
       "dimensions": [2203, 714],
       "scope": "Primary review view, composition baseline and style exemplar: fitted-set coherence, rear-set centred sink, relative visual presence, retained high-resolution clarity, warmth and restrained three-dimensional modelling. It is not a crop-ready sprite sheet."
+    },
+    "approvedCabinetryFoundation": {
+      "path": "art/source/kitchen-cabinetry-foundation-2026-10-22-v1/cabinetry-module-construction-sheet-approved.png",
+      "sha256": "898c212690c2db8a52a6c8ea7bd962afcf12c1df8e577dcc98c4508359cccee3",
+      "sourceGeneration": "exec-e3c53515-09df-45b2-b5f3-0cf65cc185b9.png",
+      "dimensions": [1536, 1024],
+      "scope": "Approved coordinated visual/body foundation for cupboard, drawers, sink, dishwasher, oven and basic undercounter fridge. It is not yet a production crop or state atlas."
     },
     "stateFamilyExploration": "art/source/kitchen-high-resolution-foundation-2026-10-22-v1/kitchen-complete-state-family-atlas-v5-strict-ligne-claire.png",
     "compositionViewExclusions": [
@@ -104,6 +111,7 @@
     "continuousPlinth": "One aligned high-resolution plinth language; modules may not introduce independent base colours or heights."
   },
   "stateLayerContract": {
+    "bodyReuseRule": "Every Off, On and Broken fitted-appliance state must reuse the exact approved cabinetry-foundation body. Whole-object regeneration is forbidden after foundation approval; only explicitly named component, indicator, contents and environmental-effect layers may differ.",
     "requiredPerStatefulAsset": [
       "static base/body layer",
       "named indicator layer when powered",
@@ -127,21 +135,21 @@
     "fridge": {
       "offOnVisualIdentical": true,
       "onIndicator": false,
-      "components": ["side-hinged door attached at one surviving upper hinge"],
+      "components": ["mostly closed door hanging down-left from the surviving lower-right hinge"],
       "contents": "restrained hint only: milk, one container and wilted greens",
       "loops": ["small irregular hinge-supported door tremor"],
-      "postHocEffects": ["water drip", "floor ripple", "restrained bad-food smell curls"]
+      "postHocEffects": ["water leak", "floor ripple"]
     },
     "sink": {
-      "components": ["failed tap/handle"],
-      "loops": ["tap handle tremor"],
+      "components": ["intact rear-set tap and centred sink body"],
+      "loops": [],
       "postHocEffects": ["leak stream", "drips", "floor puddle/ripple"]
     },
     "dishwasher": {
-      "components": ["bottom door hanging from one surviving lower-left hinge", "one-ended hanging handle", "error LED"],
+      "components": ["door flopped open on its full lower hinge", "handle on the door underside", "error LED"],
       "contents": "restrained hint only: one rack, a few plates and one cup",
-      "loops": ["error LED blink", "door tremor", "hanging handle rattle"],
-      "postHocEffects": ["soap suds floor pool"]
+      "loops": ["error LED blink", "door tremor"],
+      "postHocEffects": ["water flood", "soap suds floor pool"]
     },
     "oven": {
       "components": ["ajar door", "dangling dial", "warning LED", "cavity light"],
@@ -169,8 +177,8 @@
       "required": true
     },
     "mixingBowl": {
-      "components": ["cracked/tilted bowl", "spoon when present"],
-      "loops": ["small bowl/spoon rattle"],
+      "components": ["cracked/tilted bowl", "whisk beside bowl"],
+      "loops": ["small bowl/whisk rattle"],
       "postHocEffects": ["spill"]
     }
   },
@@ -182,7 +190,11 @@
     "repairStopsImmediately": true
   },
   "approvalBoundary": {
-    "approvedArtChanged": false,
+    "approvedArtChanged": true,
+    "approvedScope": "visual/body foundation only",
+    "approvedCabinetryFoundation": true,
+    "productionCropsApproved": false,
+    "stateVariantsApproved": false,
     "productionChanged": false,
     "runtimeChanged": false,
     "registrationOpen": false,

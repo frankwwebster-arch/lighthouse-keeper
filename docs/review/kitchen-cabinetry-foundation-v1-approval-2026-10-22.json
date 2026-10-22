@@ -1,0 +1,30 @@
+{
+  "schema": "lighthouse-keeper/kitchen-review-approval@1",
+  "set": "kitchen-cabinetry-foundation-2026-10-22-v1",
+  "approvedOn": "2026-10-22",
+  "approvedBy": "Frank",
+  "approvalWords": "approved",
+  "approvedFile": "art/source/kitchen-cabinetry-foundation-2026-10-22-v1/cabinetry-module-construction-sheet-approved.png",
+  "approvedSha256": "898c212690c2db8a52a6c8ea7bd962afcf12c1df8e577dcc98c4508359cccee3",
+  "dimensions": [1536, 1024],
+  "sourceGeneration": "exec-e3c53515-09df-45b2-b5f3-0cf65cc185b9.png",
+  "reviewRoute": "/keeper-review/kitchen-cabinetry-foundation-v1/index.html",
+  "scope": [
+    "Approve the exact six-module construction sheet as the cabinetry and fitted-appliance body foundation.",
+    "The coordinated cupboard, drawers, sink, dishwasher, oven and basic undercounter fridge establish the visual family to reuse without whole-object redraws.",
+    "Retain exec-b28bb76f-bdd9-4d95-bae6-4d25ab665468.png as the primary warmth, finish and fitted-run visual authority.",
+    "Build later Off, On and Broken variants from the approved bodies with separately registered component, indicator and effect layers.",
+    "Loose objects including kettle, toaster, bowl and bin remain outside this approval and follow after the fitted modules are locked."
+  ],
+  "notApproved": [
+    "the review sheet's dark presentation backdrop as game art",
+    "production cropping, exact logical registration or runtime sprites",
+    "Off, On or Broken variants",
+    "animation, effects, SFX or gameplay integration"
+  ],
+  "promotion": "none",
+  "runtimeChanged": false,
+  "finalChanged": false,
+  "sourceOverwritten": false,
+  "rollback": "Remove only the new cabinetry-foundation draft/source directories and this approval record. Existing production and historical review assets remain untouched."
+}

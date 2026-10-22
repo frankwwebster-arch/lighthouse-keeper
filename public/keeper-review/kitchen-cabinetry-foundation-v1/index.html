@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kitchen Cabinetry Foundation V1 — Approved</title>
+  <style>
+    :root{--ink:#071922;--paper:#fff8e7;--wall:#f1dfb9;--blue:#07558d;--sea:#39b9bd;--orange:#ef7818;--muted:#d9caa9}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--wall);color:var(--ink);font:16px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    header,main{max-width:1600px;margin:auto;padding:22px}
+    header{border-bottom:4px solid var(--ink)}
+    h1{margin:.55rem 0 .25rem;font-size:clamp(1.8rem,4vw,3.5rem);line-height:1.03}
+    h2{margin:.1rem 0 .7rem}
+    p{max-width:88ch}
+    .badge{display:inline-block;border:2px solid var(--ink);background:var(--sea);padding:6px 10px;font-weight:800;margin:0 8px 8px 0}
+    .ready{background:var(--muted)}
+    .panel{background:var(--paper);border:2px solid var(--ink);margin:18px 0;padding:14px}
+    .controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+    button{border:2px solid var(--ink);background:var(--paper);color:var(--ink);padding:7px 12px;font:inherit;font-weight:750;cursor:pointer}
+    button[aria-pressed="true"]{background:var(--sea)}
+    button:disabled{cursor:wait;opacity:.55}
+    .viewport{overflow:auto;min-height:250px;background:#d8c79f;border:2px solid var(--ink)}
+    .viewport.dark{background:#071922}
+    .viewport img{display:block;width:100%;height:auto;max-width:none;image-rendering:auto;transform-origin:0 0}
+    .caption{display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap;margin:.65rem 0 0;font-size:.92rem}
+    .caption code{overflow-wrap:anywhere}
+    .columns{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .lock{border-left:7px solid var(--sea)}
+    .exclude{border-left:7px solid var(--orange)}
+    ul{padding-left:1.35rem}
+    li+li{margin-top:.35rem}
+    @media(max-width:800px){.columns{grid-template-columns:1fr}.viewport{min-height:160px}}
+  </style>
+</head>
+<body>
+  <header>
+    <span class="badge">APPROVED VISUAL/BODY FOUNDATION</span>
+    <span class="badge ready" id="ready">LOADING BOTH AUTHORITIES</span>
+    <h1>Kitchen cabinetry foundation V1</h1>
+    <p>The six fitted modules below were drawn together and are now the fixed cabinetry/appliance family. The original fitted-run image remains the warmth and finish authority. No production sprite or runtime behaviour has been promoted.</p>
+  </header>
+  <main>
+    <section class="panel">
+      <h2>Approved six-module construction sheet</h2>
+      <div class="controls" aria-label="Approved sheet scale">
+        <strong>Inspect:</strong>
+        <button type="button" data-target="approved" data-scale="fit" aria-pressed="true" disabled>Fit</button>
+        <button type="button" data-target="approved" data-scale="1" aria-pressed="false" disabled>Native 100%</button>
+        <button type="button" data-target="approved" data-scale="2" aria-pressed="false" disabled>200%</button>
+      </div>
+      <div class="viewport dark" id="approved-viewport">
+        <img id="approved" src="/keeper-review/kitchen-cabinetry-foundation-v1/assets/cabinetry-module-construction-sheet-approved.png" width="1536" height="1024" alt="Approved coordinated cupboard, drawers, sink, dishwasher, oven and undercounter fridge construction sheet">
+      </div>
+      <div class="caption">
+        <span>Exact source: <code>exec-e3c53515-09df-45b2-b5f3-0cf65cc185b9.png</code></span>
+        <span>1536 × 1024 RGBA · SHA-256 <code>898c2126…ccee3</code></span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Original fitted-run warmth and finish authority</h2>
+      <div class="controls" aria-label="Original authority scale">
+        <strong>Inspect:</strong>
+        <button type="button" data-target="authority" data-scale="fit" aria-pressed="true" disabled>Fit</button>
+        <button type="button" data-target="authority" data-scale="1" aria-pressed="false" disabled>Native 100%</button>
+        <button type="button" data-target="authority" data-scale="2" aria-pressed="false" disabled>200%</button>
+      </div>
+      <div class="viewport" id="authority-viewport">
+        <img id="authority" src="/keeper-review/kitchen-cabinetry-foundation-v1/assets/kitchen-fitted-run-first-render-authority.png" width="2203" height="714" alt="Original warm dimensional fitted-kitchen authority">
+      </div>
+      <div class="caption">
+        <span>Exact source: <code>exec-b28bb76f-bdd9-4d95-bae6-4d25ab665468.png</code></span>
+        <span>2203 × 714 RGBA · SHA-256 <code>bb37dc2e…06bf2</code></span>
+      </div>
+    </section>
+
+    <div class="columns">
+      <section class="panel lock">
+        <h2>Locked by this approval</h2>
+        <ul>
+          <li>one coordinated fitted family: cupboard, drawers, centred rear-set sink, dishwasher, oven and basic undercounter fridge;</li>
+          <li>the exact approved bodies are reused for all later Off, On and Broken work;</li>
+          <li>state differences are separate doors, contents, indicators and effects—not whole-object redraws;</li>
+          <li>the original reference remains authoritative for warmth, restrained depth and adult ligne-claire finish.</li>
+        </ul>
+      </section>
+      <section class="panel exclude">
+        <h2>Still outside approval</h2>
+        <ul>
+          <li>the dark construction-sheet backdrop and halo are not game art;</li>
+          <li>production crop bounds, transparent isolation and exact logical registration remain a separate gate;</li>
+          <li>Off, On and Broken variants, component animation, effects and SFX are not yet approved;</li>
+          <li>kettle, toaster, bowl and bin follow later as a separate coordinated loose-object family.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <script>
+    (()=>{
+      const ready=document.getElementById('ready');
+      const images=[...document.querySelectorAll('img')];
+      const buttons=[...document.querySelectorAll('[data-target][data-scale]')];
+      const widths={approved:1536,authority:2203};
+      const setScale=(target,value)=>{
+        const image=document.getElementById(target);
+        const viewport=document.getElementById(`${target}-viewport`);
+        image.style.width=value==='fit'?'100%':`${widths[target]*Number(value)}px`;
+        buttons.filter(button=>button.dataset.target===target).forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.scale===value)));
+        viewport.scrollTo({left:0,top:0});
+      };
+      const decode=async image=>{
+        if(!image.complete)await new Promise((resolve,reject)=>{image.onload=resolve;image.onerror=reject});
+        await image.decode();
+      };
+      Promise.all(images.map(decode)).then(()=>{
+        buttons.forEach(button=>{button.disabled=false;button.addEventListener('click',()=>setScale(button.dataset.target,button.dataset.scale))});
+        ready.textContent='BOTH EXACT FILES READY';
+        ready.style.background='var(--sea)';
+      }).catch(error=>{ready.textContent=`REVIEW LOCKED — ${error.message}`;throw error});
+    })();
+  </script>
+</body>
+</html>

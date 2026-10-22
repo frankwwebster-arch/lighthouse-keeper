@@ -773,9 +773,9 @@ Delivery: `docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V8_2026-10-22.md` and
 `docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V59_2026-10-22.md` and
 `docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V60_2026-10-22.md`.
 
-The active unapproved kitchen review is High-resolution Foundation V1 at
-`/keeper-review/kitchen` (versioned route
-`/keeper-review/kitchen-high-resolution-foundation-v1/index.html`). Its sole
+The active kitchen art programme is High-resolution Foundation V1. The original
+style page remains immutable at
+`/keeper-review/kitchen-high-resolution-foundation-v1/index.html`. Its sole
 primary composition view is the byte-exact `2203 × 714` first fitted-run render
 `exec-b28bb76f-bdd9-4d95-bae6-4d25ab665468.png`, selected for its centred,
 rear-set sink, coherent fitted-set relationships and retained detail under
@@ -786,7 +786,24 @@ harsh schematic flatness. Later state atlases are diagnostic history only. The
 selected image is not a crop-ready sprite sheet: the basic fridge remains
 undercounter, game geometry and anchors stay fixed, and production assets must
 avoid cute, juvenile, toy-like or candy-gloss treatment. Approved Kettle V47
-art/motion, runtime assets and state behaviour remain unchanged. Contract and delivery:
+art/motion, runtime assets and state behaviour remain unchanged.
+
+Frank approved the exact coordinated six-module cabinetry construction sheet
+on 22 October 2026. Its `1536 × 1024` RGBA bytes are preserved at
+`art/source/kitchen-cabinetry-foundation-2026-10-22-v1/cabinetry-module-construction-sheet-approved.png`
+with SHA-256
+`898c212690c2db8a52a6c8ea7bd962afcf12c1df8e577dcc98c4508359cccee3`.
+Cupboard, drawers, sink, dishwasher, oven and basic undercounter fridge are now
+the approved fitted-family visual/body foundation. Production extraction,
+transparent crops, Off/On/Broken layers and runtime registration are not yet
+approved. Future states must reuse the exact bodies and change only named
+doors, contents, indicator and effect layers; loose countertop objects follow
+later. The external approval record is
+`docs/review/kitchen-cabinetry-foundation-v1-approval-2026-10-22.json`.
+The current `/keeper-review/kitchen` route now opens the fresh immutable
+`/keeper-review/kitchen-cabinetry-foundation-v1/index.html` page, which decodes
+and presents the approved construction sheet and original authority together.
+Contract and delivery:
 `docs/KITCHEN_HIGH_RESOLUTION_FOUNDATION_V1_2026-10-22.md`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains

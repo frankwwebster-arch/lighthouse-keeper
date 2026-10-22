@@ -941,9 +941,9 @@ and
 V60 delivery:
 [`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V60_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V60_2026-10-22.md).
 
-The active unapproved kitchen review is now the high-resolution whole-kitchen
-foundation at `/keeper-review/kitchen` (versioned route:
-`/keeper-review/kitchen-high-resolution-foundation-v1/index.html`). The primary
+The active kitchen art programme is now the high-resolution whole-kitchen
+foundation. Its original style page remains immutable at
+`/keeper-review/kitchen-high-resolution-foundation-v1/index.html`. The primary
 view is the byte-exact first fitted-run render
 `exec-b28bb76f-bdd9-4d95-bae6-4d25ab665468.png`, rather than any of the later
 state-atlas experiments. It locks the chosen centred, rear-set sink, the fitted
@@ -954,8 +954,22 @@ the exemplar's restrained three-dimensional warmth while avoiding cute,
 juvenile, toy-like or candy-gloss treatment. The later strict-flat
 `exec-036d9986-abce-4f47-9e6a-2896bc245f8e.png` direction is rejected as too
 harsh. Approved Kettle V47 art and
-motion, all runtime assets and all state behaviour remain unchanged. Contract
-and delivery notes:
+motion, all runtime assets and all state behaviour remain unchanged.
+
+Frank has approved the exact coordinated cabinetry/appliance construction
+sheet at
+`art/source/kitchen-cabinetry-foundation-2026-10-22-v1/cabinetry-module-construction-sheet-approved.png`
+(SHA-256
+`898c212690c2db8a52a6c8ea7bd962afcf12c1df8e577dcc98c4508359cccee3`).
+It fixes the visual/body family for cupboard, drawers, centred rear-set sink,
+dishwasher, oven and basic undercounter fridge. This is not production
+promotion: transparent production crops, exact registrations, state layers and
+runtime wiring remain gated. Off/On/Broken work must reuse these approved
+bodies rather than regenerate complete appliances; kettle, toaster, bowl and
+bin remain a later loose-object pass. `/keeper-review/kitchen` now opens the
+fresh immutable versioned page
+`/keeper-review/kitchen-cabinetry-foundation-v1/index.html`, showing the exact
+approved sheet beside the original authority. Contract and delivery notes:
 [`docs/KITCHEN_HIGH_RESOLUTION_FOUNDATION_V1_2026-10-22.md`](docs/KITCHEN_HIGH_RESOLUTION_FOUNDATION_V1_2026-10-22.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:

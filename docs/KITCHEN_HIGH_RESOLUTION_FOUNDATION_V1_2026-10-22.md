@@ -1,7 +1,40 @@
 # Kitchen high-resolution foundation V1
 
 **Decision date:** 22 October 2026
-**Status:** new whole-kitchen review foundation; not approved, registered or wired
+**Status:** cabinetry/appliance visual foundation approved; production crops,
+state variants, registration and runtime remain gated
+
+## Approved coordinated cabinetry foundation
+
+Frank approved the exact six-module construction sheet on 22 October 2026:
+
+`art/source/kitchen-cabinetry-foundation-2026-10-22-v1/cabinetry-module-construction-sheet-approved.png`
+
+It is the byte-exact `1536 × 1024` RGBA
+`exec-e3c53515-09df-45b2-b5f3-0cf65cc185b9.png`, SHA-256
+`898c212690c2db8a52a6c8ea7bd962afcf12c1df8e577dcc98c4508359cccee3`.
+The sheet draws cupboard, drawers, sink, dishwasher, oven and the basic
+undercounter fridge together. This is the fixed visual/body foundation for the
+fitted family. Its approval ends the practice of independently redrawing a
+complete appliance for each state.
+
+The next gated stage must derive Off, On and Broken art from these exact bodies.
+Doors, contents, indicator fills and environmental effects live in separately
+registered layers; the approved body pixels do not move or get regenerated.
+Loose objects—kettle, toaster, bowl and bin—follow as a separate coordinated
+family after the fitted state system is stable.
+
+The sheet is a visual construction authority, not a production atlas. Its dark
+presentation background/halo is not game art, its grid is not a declaration of
+logical crop bounds, and no runtime selector changed. Exact production
+extraction, transparent isolation, logical geometry and native-size proofs have
+their own review gate. The approval is pinned at
+`docs/review/kitchen-cabinetry-foundation-v1-approval-2026-10-22.json`.
+The exact approved sheet and the original fitted-run authority are available
+together at `/keeper-review/kitchen` (immutable versioned route
+`/keeper-review/kitchen-cabinetry-foundation-v1/index.html`). The preceding
+`/keeper-review/kitchen-high-resolution-foundation-v1/index.html` page remains
+unchanged as historical evidence.
 
 ## Why the earlier candidate path stops here
 
@@ -129,5 +162,7 @@ transforms and SFX synchronously.
 
 Nothing in this foundation changes approved Kettle V47 files, approved V46
 motion/SFX behaviour, historical review pages, runtime assets, selectors or
-production sprites. Rejecting the direction requires discarding only the new
-foundation pack, source references, contract and review shell.
+production sprites. The approved construction sheet is preserved byte-exactly
+in separate draft and source directories. Rejecting it requires discarding only
+those directories and its external approval record; canonical runtime and
+historical art remain untouched.
