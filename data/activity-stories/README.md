@@ -534,6 +534,7 @@ npm run stories -- check washing-up       # steps with frame numbers, and every 
 npm run stories -- render washing-up      # a PNG sheet of frames to look at
 npm run stories -- render washing-up --from 20 --to 40 --every 1   # one stretch, every frame
 npm run stories -- render washing-up --reduced
+npm run stories -- movie washing-up       # the story playing, as a looping animated WebP
 npm run stories -- new sweep-floor --label "Sweeping the floor" --like washing-up
 ```
 
@@ -542,6 +543,13 @@ story can be tried without listing it. Sheets go to `tmp/activity-stories/`
 (not committed). Rendering uses Chrome (or the Playwright headless shell);
 set `CHROME_PATH` if neither is found. Frame numbers include the bubble's
 opening, as in the studio's frame counter.
+
+`movie` draws every frame at 8 fps (the bubble opening, one telling, then
+one retelling, or the held ending) and joins them into a looping animated
+WebP with `ffmpeg` and `img2webp` (`brew install ffmpeg webp`). Claude uses
+it for the story previews on Frank's project page, so he can watch every
+story without opening the studio; remake them whenever a story or one of
+its pictures changes.
 
 **Who does what with it.** Claude drafts and changes stories (`new`, edit
 the JSON, `check`, `render`, look, commit). Codex uses `pictures`,

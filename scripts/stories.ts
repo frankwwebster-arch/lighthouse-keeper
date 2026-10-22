@@ -44,6 +44,13 @@ const HELP = `Bubble stories: the command-line tool (same engine as the studio)
         --restart        the last frames of a telling, then the retelling's first
         --out DIR        where to write (default tmp/activity-stories/)
 
+  npm run stories -- movie <story-id | path/to/story.json> [options]
+      The story playing, as a looping animated WebP at 8 fps: the bubble
+      opening, one telling, then one retelling. Needs ffmpeg and img2webp.
+        --reduced        the reduced-motion version
+        --quality Q      0–100 (default 70)
+        --out DIR        where to write (default tmp/activity-stories/)
+
   npm run stories -- new <story-id> --label "Name" [--like garden-bbq]
       Starts a story file and lists it in the studio. --like copies an
       existing story to start from.
@@ -177,41 +184,40 @@ function render(ref?: string) {
     if (picked[picked.length - 1] !== to - 1) picked.push(to - 1)
   }
 
-  const missing = new Set<string>()
-  const src = (url: string) => {
-    const file = fileFor(url)
-    if (!file || !fs.existsSync(file)) {
-      missing.add(url)
-      return ''
-    }
-    return pathToFileURL(file).href
-  }
+  const pics = pictureSources()
   const esc = (s: string) => s.replace(/[&<>"]/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[ch]!)
-  const rear = LIBRARY.keeper.rearWork
   const cells = picked.map((f, k) => {
     const fr = frames[f]
-    const body = rear[Math.floor((f / FPS) * 4) % rear.length]
-    const rings = fr.bubble.rings ?? [fr.bubble.opacity, fr.bubble.opacity]
-    const items = fr.items
-      .map((i) => `<img class="piece${i.kind === 'mark' ? ' mark' : ''}" src="${src(i.url)}" style="opacity:${i.opacity};z-index:${i.z};transform:${itemTransform(i)}">`)
-      .join('')
     const what = (restart && k === 9 ? '↻ retelling: ' : '') + (fr.step === 0 ? 'the bubble opens' : `step ${fr.step}: ${describeStep(LIBRARY, story, story.steps[fr.step - 1])}${fr.phase === 'quiet' ? ' · quiet' : fr.phase === 'clear' ? ' · clearing' : ''}`)
-    return `<figure><div class="clip"><div class="stage"><img class="actor" src="${src(body.url)}"><div class="cloud"><svg class="bubble" viewBox="0 0 360 230" style="opacity:${fr.bubble.opacity}"><path d="${bubbleOutline(f, fr.bubble.scale)}"/></svg><div class="ring r1" style="opacity:${rings[0]}"></div><div class="ring r2" style="opacity:${rings[1]}"></div>${items}</div></div></div><figcaption><b>${f + 1}</b> ${esc(what)}</figcaption></figure>`
+    return `<figure><div class="clip">${stageHtml(fr, f, pics.src)}</div><figcaption><b>${f + 1}</b> ${esc(what)}</figcaption></figure>`
   })
-  if (missing.size) fail(`these pictures are not on disk:\n  ${[...missing].join('\n  ')}`)
+  pics.check()
 
   const COLS = 6
-  const CELL_W = 285
   const CELL_H = 248 + 34
   const width = COLS * CELL_W + (COLS + 1) * 8
   const height = 44 + Math.ceil(cells.length / COLS) * (CELL_H + 8) + 8
-  // The stage copies the studio's BubbleStage (stories.css), drawn at 0.75 size.
   const html = `<!doctype html><meta charset="utf-8"><style>
 body{margin:0;background:#0f1d23;font:12px -apple-system,system-ui,sans-serif;color:#e6edf6}
 h1{font-size:15px;margin:0;padding:12px 8px 8px}
 main{display:grid;grid-template-columns:repeat(${COLS},${CELL_W}px);gap:8px;padding:0 8px 8px}
 figure{margin:0;width:${CELL_W}px}
-.clip{width:${CELL_W}px;height:248px;overflow:hidden;border-radius:4px}
+.clip{border-radius:4px}
+${STAGE_CSS}
+figcaption{height:30px;padding-top:4px;line-height:1.25;overflow:hidden}
+figcaption b{color:#f0c24f}
+</style><h1>${esc(story.label)}${reduced ? ' · reduced motion' : ''} · ${restart ? 'the restart: last 9 frames, then the retelling' : `frames ${from}–${to} of ${frames.length}, every ${every}`} · ${c.seconds.toFixed(1)} s · ${playsText(c.tellings)} in 20–30 s</h1><main>${cells.join('')}</main>`
+
+  const out = path.resolve(flag('out') ?? OUT_DIR)
+  const base = `${story.id}${reduced ? '-reduced' : ''}${restart ? '-restart' : from > 1 || to < frames.length ? `-${from}-${to}` : ''}`
+  const png = screenshot(html, out, base, width, height)
+  console.log(`✓ ${picked.length} frames drawn: ${png}`)
+}
+
+const CELL_W = 285
+const CELL_H = 248
+// The stage copies the studio's BubbleStage (stories.css), drawn at 0.75 size inside a CELL_W × CELL_H clip.
+const STAGE_CSS = `.clip{width:${CELL_W}px;height:${CELL_H}px;overflow:hidden}
 .stage{position:relative;width:380px;height:330px;overflow:hidden;background:linear-gradient(#24414c 0 73%,#1b333b 73%);transform:scale(.75);transform-origin:top left}
 .actor{position:absolute;left:62px;top:250px;width:256px;height:320px;object-fit:contain}
 .cloud{position:absolute;left:10px;top:4px;width:360px;height:230px}
@@ -220,20 +226,93 @@ figure{margin:0;width:${CELL_W}px}
 .ring{position:absolute;border:3px solid rgba(239,246,245,.72);border-radius:50%;background:rgba(246,239,211,.16)}
 .r1{width:22px;height:18px;left:169px;top:214px}.r2{width:12px;height:10px;left:174px;top:236px}
 .piece{position:absolute;left:50%;top:50%;width:140px;height:140px;object-fit:contain;filter:drop-shadow(0 5px 4px rgba(2,10,15,.24))}
-.mark{width:92px;height:92px;filter:drop-shadow(0 0 1.5px rgba(255,255,255,.85))}
-figcaption{height:30px;padding-top:4px;line-height:1.25;overflow:hidden}
-figcaption b{color:#f0c24f}
-</style><h1>${esc(story.label)}${reduced ? ' · reduced motion' : ''} · ${restart ? 'the restart: last 9 frames, then the retelling' : `frames ${from}–${to} of ${frames.length}, every ${every}`} · ${c.seconds.toFixed(1)} s · ${playsText(c.tellings)} in 20–30 s</h1><main>${cells.join('')}</main>`
+.mark{width:92px;height:92px;filter:drop-shadow(0 0 1.5px rgba(255,255,255,.85))}`
 
-  const out = path.resolve(flag('out') ?? OUT_DIR)
+/** file:// URLs for library pictures; check() stops with the list of any not on disk. */
+function pictureSources() {
+  const missing = new Set<string>()
+  return {
+    src(url: string) {
+      const file = fileFor(url)
+      if (!file || !fs.existsSync(file)) {
+        missing.add(url)
+        return ''
+      }
+      return pathToFileURL(file).href
+    },
+    check() {
+      if (missing.size) fail(`these pictures are not on disk:\n  ${[...missing].join('\n  ')}`)
+    },
+  }
+}
+
+/** One frame on the stage: the keeper's back-work loop, the bubble and its pictures. `f` paces the keeper and the bubble's wobble. */
+function stageHtml(fr: Frame, f: number, src: (url: string) => string): string {
+  const rear = LIBRARY.keeper.rearWork
+  const body = rear[Math.floor((f / FPS) * 4) % rear.length]
+  const rings = fr.bubble.rings ?? [fr.bubble.opacity, fr.bubble.opacity]
+  const items = fr.items
+    .map((i) => `<img class="piece${i.kind === 'mark' ? ' mark' : ''}" src="${src(i.url)}" style="opacity:${i.opacity};z-index:${i.z};transform:${itemTransform(i)}">`)
+    .join('')
+  return `<div class="stage"><img class="actor" src="${src(body.url)}"><div class="cloud"><svg class="bubble" viewBox="0 0 360 230" style="opacity:${fr.bubble.opacity}"><path d="${bubbleOutline(f, fr.bubble.scale)}"/></svg><div class="ring r1" style="opacity:${rings[0]}"></div><div class="ring r2" style="opacity:${rings[1]}"></div>${items}</div></div>`
+}
+
+/** Writes `html` to out/base.html and has headless Chrome photograph it at width × height; returns the PNG's path. */
+function screenshot(html: string, out: string, base: string, width: number, height: number): string {
   fs.mkdirSync(out, { recursive: true })
-  const base = `${story.id}${reduced ? '-reduced' : ''}${restart ? '-restart' : from > 1 || to < frames.length ? `-${from}-${to}` : ''}`
   const htmlFile = path.join(out, `${base}.html`)
   const png = path.join(out, `${base}.png`)
+  fs.rmSync(png, { force: true })
   fs.writeFileSync(htmlFile, html)
   const run = spawnSync(chrome(), ['--headless', '--disable-gpu', '--hide-scrollbars', '--allow-file-access-from-files', '--force-device-scale-factor=1', `--window-size=${width},${height}`, '--virtual-time-budget=15000', `--screenshot=${png}`, pathToFileURL(htmlFile).href], { encoding: 'utf8' })
   if (!fs.existsSync(png) || run.status !== 0) fail(`Chrome could not draw the sheet:\n${run.stderr}`)
-  console.log(`✓ ${picked.length} frames drawn: ${png}`)
+  return png
+}
+
+function tool(name: string, args: string[]) {
+  const run = spawnSync(name, args, { encoding: 'utf8' })
+  if (run.error) fail(`${name} is needed for movies (brew install ${name === 'img2webp' ? 'webp' : name})`)
+  if (run.status !== 0) fail(`${name} failed:\n${run.stderr}`)
+}
+
+/**
+ * The story as a looping animated WebP, at the studio's 8 fps: the bubble
+ * opening, the first telling, then one retelling (or the held ending), so a
+ * page can show it playing without the studio. Drawn as one sheet of frames,
+ * cut up by ffmpeg and joined by img2webp.
+ */
+function movie(ref?: string) {
+  const story = loadStory(ref)
+  const c = compileStory(story, LIBRARY)
+  const reduced = has('reduced')
+  const telling = reduced ? c.reduced : c.full
+  const back = c.afterStory === 'loop' ? c.loopStart : 0
+  const frames: Frame[] = [...(reduced ? c.introReduced : c.intro), ...telling, ...(c.afterStory === 'hold' ? [] : telling.slice(back))]
+
+  const pics = pictureSources()
+  const cells = frames.map((fr, f) => `<div class="clip">${stageHtml(fr, f, pics.src)}</div>`)
+  pics.check()
+  const COLS = 10
+  const rows = Math.ceil(frames.length / COLS)
+  const html = `<!doctype html><meta charset="utf-8"><style>
+body{margin:0;background:#0f1d23}
+main{display:grid;grid-template-columns:repeat(${COLS},${CELL_W}px)}
+${STAGE_CSS}
+</style><main>${cells.join('')}</main>`
+
+  const out = path.resolve(flag('out') ?? OUT_DIR)
+  const base = `${story.id}${reduced ? '-reduced' : ''}-movie`
+  const sheet = screenshot(html, out, base, COLS * CELL_W, rows * CELL_H)
+  const dir = path.join(out, `${base}-frames`)
+  fs.rmSync(dir, { recursive: true, force: true })
+  fs.mkdirSync(dir)
+  tool('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-i', sheet, '-vf', `untile=${COLS}x${rows}`, path.join(dir, '%04d.png')])
+  // The last row's empty tiles come out as frames too; keep only the story's.
+  const pngs = fs.readdirSync(dir).filter((n) => n.endsWith('.png')).sort().slice(0, frames.length).map((n) => path.join(dir, n))
+  const webp = path.join(out, `${base}.webp`)
+  tool('img2webp', ['-loop', '0', '-lossy', '-q', String(Number(flag('quality') ?? 70)), '-m', '6', '-d', String(Math.round(1000 / FPS)), ...pngs, '-o', webp])
+  fs.rmSync(dir, { recursive: true, force: true })
+  console.log(`✓ ${frames.length} frames (${(frames.length / FPS).toFixed(1)} s), ${Math.round(fs.statSync(webp).size / 1024)} KB: ${webp}`)
 }
 
 function create(id?: string) {
@@ -272,6 +351,9 @@ switch (command) {
     break
   case 'render':
     render(target)
+    break
+  case 'movie':
+    movie(target)
     break
   case 'new':
     create(target)
