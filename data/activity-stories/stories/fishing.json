@@ -1,0 +1,128 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "fishing",
+  "label": "Fishing from the jetty",
+  "appliesTo": {
+    "assetId": "outdoor.jetty",
+    "label": "Jetty"
+  },
+  "cast": {
+    "sea": {
+      "picture": "fishing-sea-water",
+      "role": "hero"
+    },
+    "float": {
+      "picture": "fishing-float",
+      "role": "support"
+    },
+    "fish": {
+      "picture": "fishing-caught-fish",
+      "role": "support",
+      "appear": "symbol-water-droplets"
+    },
+    "net": {
+      "picture": "fishing-landing-net",
+      "role": "support"
+    },
+    "creel": {
+      "picture": "fishing-creel-basket",
+      "role": "support"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "sea"
+    },
+    {
+      "do": "land-on",
+      "who": "float",
+      "onto": "sea",
+      "speed": "slow",
+      "mark": "symbol-water-droplets"
+    },
+    {
+      "do": "pause",
+      "speed": "slow"
+    },
+    {
+      "do": "reveal",
+      "who": "fish",
+      "onto": "float",
+      "replace": true,
+      "mark": "symbol-exclamation-mark"
+    },
+    {
+      "do": "present",
+      "who": "creel"
+    },
+    {
+      "do": "drop-in",
+      "who": "fish",
+      "onto": "creel"
+    },
+    {
+      "do": "p",
+      "who": "a",
+      "onto": "u"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [
+    {
+      "picture": "symbol-question-mark",
+      "on": "float",
+      "fromStep": 3,
+      "toStep": 3
+    }
+  ],
+  "props": [
+    {
+      "picture": "fishing-rod",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 7
+    },
+    {
+      "picture": "fishing-bait",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 7
+    },
+    {
+      "picture": "fishing-tackle-box",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 7
+    },
+    {
+      "picture": "fishing-folding-stool",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 7
+    }
+  ],
+  "sfx": [
+    {
+      "step": 2,
+      "at": "contact",
+      "cue": "float-plop",
+      "owner": "fishing",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 4,
+      "at": "start",
+      "cue": "fish-splash",
+      "owner": "fishing",
+      "kind": "completion"
+    }
+  ],
+  "notes": "Draft by Claude, 22 Oct 2026, from Frank's ticked recipe list. Calm sea, the float plops onto it and bobs, a long wait (a question mark), then a bite: the fish leaps out in its place with an exclamation and a splash, the creel comes and the fish drops in. The rod, bait, tackle box and stool circle."
+}

@@ -1,0 +1,112 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "planting",
+  "label": "Plant seeds",
+  "appliesTo": {
+    "assetId": "garden.vegetable-bed",
+    "label": "Garden"
+  },
+  "cast": {
+    "pot": {
+      "picture": "garden-plant-pot",
+      "role": "hero"
+    },
+    "compost": {
+      "picture": "garden-compost-bag",
+      "role": "support"
+    },
+    "trowel": {
+      "picture": "garden-trowel",
+      "role": "support"
+    },
+    "seeds": {
+      "picture": "garden-seeds",
+      "role": "support"
+    },
+    "can": {
+      "picture": "garden-watering",
+      "role": "support"
+    },
+    "shoot": {
+      "picture": "garden-seedling",
+      "role": "result",
+      "appear": "symbol-clean-glint"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "pot"
+    },
+    {
+      "do": "pour",
+      "who": "compost",
+      "onto": "pot",
+      "mark": "symbol-earth-clods"
+    },
+    {
+      "do": "dig",
+      "who": "trowel",
+      "onto": "pot"
+    },
+    {
+      "do": "shake",
+      "who": "seeds",
+      "onto": "pot"
+    },
+    {
+      "do": "pour",
+      "who": "can",
+      "onto": "pot",
+      "speed": "slow"
+    },
+    {
+      "do": "pause",
+      "speed": "slow"
+    },
+    {
+      "do": "reveal",
+      "who": "shoot",
+      "onto": "pot",
+      "replace": true
+    },
+    {
+      "do": "p",
+      "who": "a",
+      "onto": "u"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [],
+  "props": [
+    {
+      "picture": "garden-gloves",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 8
+    }
+  ],
+  "sfx": [
+    {
+      "step": 3,
+      "at": "contact",
+      "cue": "trowel-dig",
+      "owner": "planting",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 5,
+      "at": "start",
+      "cue": "watering",
+      "owner": "planting",
+      "kind": "activity-beat"
+    }
+  ],
+  "notes": "Draft by Claude, 22 Oct 2026, from Frank's ticked recipe list. A pot of soil, compost pours in, the trowel digs, seeds are shaken in, the watering can waters them, a pause, and a seedling sprouts in its place. Garden gloves circle. Nothing is served: the seedling stays."
+}

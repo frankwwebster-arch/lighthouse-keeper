@@ -1,0 +1,154 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "laundry",
+  "label": "Do the laundry",
+  "appliesTo": {
+    "assetId": "kitchen.laundry",
+    "label": "Washing machine"
+  },
+  "cast": {
+    "basket": {
+      "picture": "laundry-basket-dirty",
+      "role": "hero"
+    },
+    "machine": {
+      "picture": "laundry-washing-machine",
+      "role": "support"
+    },
+    "shirt": {
+      "picture": "wear-shirt-muddy",
+      "role": "support"
+    },
+    "socks": {
+      "picture": "wear-socks-pair",
+      "role": "support"
+    },
+    "powder": {
+      "picture": "laundry-washing-powder-box",
+      "role": "support"
+    },
+    "softener": {
+      "picture": "laundry-fabric-conditioner",
+      "role": "support"
+    },
+    "folded": {
+      "picture": "wear-folded-shirt",
+      "role": "result",
+      "appear": "symbol-clean-glint"
+    },
+    "iron": {
+      "picture": "laundry-iron",
+      "role": "support"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "basket"
+    },
+    {
+      "do": "present",
+      "who": "machine"
+    },
+    {
+      "do": "drop-in",
+      "who": "shirt",
+      "onto": "machine"
+    },
+    {
+      "do": "drop-in",
+      "who": "socks",
+      "onto": "machine",
+      "speed": "quick"
+    },
+    {
+      "do": "pour",
+      "who": "powder",
+      "onto": "machine",
+      "mark": "symbol-soap-bubbles"
+    },
+    {
+      "do": "pour",
+      "who": "softener",
+      "onto": "machine",
+      "speed": "quick"
+    },
+    {
+      "do": "pause",
+      "speed": "slow"
+    },
+    {
+      "do": "reveal",
+      "who": "folded",
+      "onto": "machine"
+    },
+    {
+      "do": "iron",
+      "who": "iron",
+      "onto": "folded"
+    },
+    {
+      "do": "serve",
+      "who": "folded"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [
+    {
+      "picture": "symbol-foul-odour",
+      "on": "basket",
+      "fromStep": 1,
+      "toStep": 2
+    },
+    {
+      "picture": "symbol-soap-bubbles",
+      "on": "machine",
+      "fromStep": 7,
+      "toStep": 7
+    }
+  ],
+  "props": [
+    {
+      "picture": "laundry-stain-remover-tub",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 10
+    },
+    {
+      "picture": "laundry-liquid-detergent",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 10
+    }
+  ],
+  "sfx": [
+    {
+      "step": 3,
+      "at": "contact",
+      "cue": "clothes-thump",
+      "owner": "laundry",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 7,
+      "at": "start",
+      "cue": "washing-machine-run",
+      "owner": "kitchen.laundry",
+      "kind": "asset-state"
+    },
+    {
+      "step": 9,
+      "at": "contact",
+      "cue": "iron-hiss",
+      "owner": "laundry",
+      "kind": "activity-beat"
+    }
+  ],
+  "notes": "Draft by Claude, 22 Oct 2026, from Frank's ticked recipe list. A smelly basket of dirty clothes, the washing machine, the muddy shirt and socks go in, washing powder and conditioner, it washes (bubbles), the clean shirt comes out folded, the iron glides over it with steam, and it is served. Stain remover and detergent circle."
+}

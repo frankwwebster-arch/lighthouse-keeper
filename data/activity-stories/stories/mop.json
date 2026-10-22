@@ -1,0 +1,119 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "mop",
+  "label": "Mop the floor",
+  "appliesTo": {
+    "assetId": "kitchen.cleaning-cupboard",
+    "label": "Cleaning cupboard (mop)"
+  },
+  "cast": {
+    "floor": {
+      "picture": "floor-muddy",
+      "role": "hero"
+    },
+    "bucket": {
+      "picture": "tool-cleaning-bucket",
+      "role": "support"
+    },
+    "cleaner": {
+      "picture": "cleaner-multisurface-spray",
+      "role": "support"
+    },
+    "dip": {
+      "picture": "tool-string-mop",
+      "role": "support"
+    },
+    "mop": {
+      "picture": "tool-string-mop",
+      "role": "support"
+    },
+    "clean": {
+      "picture": "floor-clean",
+      "role": "result",
+      "appear": "symbol-clean-glint"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "floor"
+    },
+    {
+      "do": "present",
+      "who": "bucket"
+    },
+    {
+      "do": "pour",
+      "who": "cleaner",
+      "onto": "bucket",
+      "mark": "symbol-soap-bubbles"
+    },
+    {
+      "do": "dig",
+      "who": "dip",
+      "onto": "bucket",
+      "mark": "symbol-water-droplets"
+    },
+    {
+      "do": "present",
+      "who": "floor"
+    },
+    {
+      "do": "wipe",
+      "who": "mop",
+      "onto": "floor",
+      "mark": "symbol-water-droplets"
+    },
+    {
+      "do": "reveal",
+      "who": "clean",
+      "onto": "floor",
+      "replace": true
+    },
+    {
+      "do": "p",
+      "who": "a",
+      "onto": "u"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [
+    {
+      "picture": "symbol-clean-glint",
+      "on": "clean",
+      "fromStep": 8,
+      "toStep": 8
+    }
+  ],
+  "props": [
+    {
+      "picture": "wear-rubber-gloves-pair",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 8
+    }
+  ],
+  "sfx": [
+    {
+      "step": 3,
+      "at": "start",
+      "cue": "bucket-fill",
+      "owner": "mop",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 6,
+      "at": "contact",
+      "cue": "mop-swish",
+      "owner": "mop",
+      "kind": "activity-beat"
+    }
+  ],
+  "notes": "Draft by Claude, 22 Oct 2026, from Frank's ticked recipe list. A muddy floor, the bucket, a splash of cleaner, the mop dips in, back to the floor, the mop works across it, and the clean floor gleams. Rubber gloves circle. Nothing is served: the clean floor stays."
+}

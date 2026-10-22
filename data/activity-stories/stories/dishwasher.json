@@ -1,0 +1,137 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "dishwasher",
+  "label": "Load the dishwasher",
+  "appliesTo": {
+    "assetId": "kitchen.dishwasher",
+    "label": "Dishwasher (sink upgrade)"
+  },
+  "cast": {
+    "machine": {
+      "picture": "dishwasher-machine",
+      "role": "hero"
+    },
+    "dirty": {
+      "picture": "washing-plate",
+      "role": "support"
+    },
+    "cutlery": {
+      "picture": "washing-cutlery",
+      "role": "support"
+    },
+    "tablets": {
+      "picture": "dishwasher-tablets-tub",
+      "role": "support"
+    },
+    "rinse": {
+      "picture": "dishwasher-rinse-aid",
+      "role": "support"
+    },
+    "clean": {
+      "picture": "kitchen-plate",
+      "role": "result",
+      "appear": "symbol-clean-glint"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "machine"
+    },
+    {
+      "do": "drop-in",
+      "who": "dirty",
+      "onto": "machine"
+    },
+    {
+      "do": "drop-in",
+      "who": "cutlery",
+      "onto": "machine",
+      "speed": "quick"
+    },
+    {
+      "do": "drop-in",
+      "who": "tablets",
+      "onto": "machine",
+      "speed": "quick"
+    },
+    {
+      "do": "pour",
+      "who": "rinse",
+      "onto": "machine",
+      "mark": "symbol-water-droplets"
+    },
+    {
+      "do": "pause",
+      "speed": "slow"
+    },
+    {
+      "do": "reveal",
+      "who": "clean",
+      "onto": "machine"
+    },
+    {
+      "do": "serve",
+      "who": "clean"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [
+    {
+      "picture": "symbol-soap-bubbles",
+      "on": "machine",
+      "fromStep": 6,
+      "toStep": 6
+    },
+    {
+      "picture": "symbol-steam-puff",
+      "on": "machine",
+      "fromStep": 6,
+      "toStep": 7
+    }
+  ],
+  "props": [
+    {
+      "picture": "dishwasher-salt-carton",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 8
+    },
+    {
+      "picture": "consumable-microfiber-cloth",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 8
+    }
+  ],
+  "sfx": [
+    {
+      "step": 2,
+      "at": "contact",
+      "cue": "plate-clink",
+      "owner": "dishwasher",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 6,
+      "at": "start",
+      "cue": "dishwasher-run",
+      "owner": "kitchen.dishwasher",
+      "kind": "asset-state"
+    },
+    {
+      "step": 7,
+      "at": "start",
+      "cue": "clean-clink",
+      "owner": "dishwasher",
+      "kind": "completion"
+    }
+  ],
+  "notes": "Draft by Claude, 22 Oct 2026, from Frank's ticked recipe list. The dishwasher opens, the dirty plate and the cutlery go in, a tablet and the rinse aid, it washes (bubbles and steam), and a clean plate comes out with a glint and is served. Salt and a cloth circle."
+}

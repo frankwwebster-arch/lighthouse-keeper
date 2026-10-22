@@ -1,0 +1,105 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "dusting",
+  "label": "Dust and polish",
+  "appliesTo": {
+    "assetId": "lounge.side-table",
+    "label": "Side table"
+  },
+  "cast": {
+    "table": {
+      "picture": "furniture-side-table-dusty",
+      "role": "hero"
+    },
+    "duster": {
+      "picture": "tool-feather-duster",
+      "role": "support"
+    },
+    "polish": {
+      "picture": "cleaner-furniture-polish",
+      "role": "support"
+    },
+    "cloth": {
+      "picture": "consumable-microfiber-cloth",
+      "role": "support"
+    },
+    "clean": {
+      "picture": "furniture-side-table-clean",
+      "role": "result",
+      "appear": "symbol-clean-glint"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "table"
+    },
+    {
+      "do": "brush",
+      "who": "duster",
+      "onto": "table",
+      "mark": "symbol-dust-puff"
+    },
+    {
+      "do": "spray",
+      "who": "polish",
+      "onto": "table"
+    },
+    {
+      "do": "wipe",
+      "who": "cloth",
+      "onto": "table"
+    },
+    {
+      "do": "reveal",
+      "who": "clean",
+      "onto": "table",
+      "replace": true
+    },
+    {
+      "do": "p",
+      "who": "a",
+      "onto": "u"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [
+    {
+      "picture": "symbol-clean-glint",
+      "on": "clean",
+      "fromStep": 6,
+      "toStep": 6
+    }
+  ],
+  "props": [
+    {
+      "picture": "cleaner-glass-spray",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 6
+    }
+  ],
+  "sfx": [
+    {
+      "step": 2,
+      "at": "contact",
+      "cue": "duster-flick",
+      "owner": "dusting",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 3,
+      "at": "start",
+      "cue": "spray-puff",
+      "owner": "dusting",
+      "kind": "activity-beat"
+    }
+  ],
+  "notes": "Draft by Claude, 22 Oct 2026, from Frank's ticked recipe list. A dusty side table, the feather duster flicks the dust off, polish sprays, the cloth rubs in small circles, and the clean table gleams. The glass spray circles."
+}

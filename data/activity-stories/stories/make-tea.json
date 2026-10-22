@@ -16,7 +16,7 @@
       "role": "hero"
     },
     "mug": {
-      "picture": "tea-mug",
+      "picture": "tea-mug-empty",
       "role": "support"
     },
     "milk": {
@@ -30,6 +30,10 @@
     "teabag": {
       "picture": "tea-bag",
       "role": "support"
+    },
+    "tea": {
+      "picture": "tea-mug",
+      "role": "result"
     }
   },
   "steps": [
@@ -58,22 +62,28 @@
       "speed": "slow"
     },
     {
+      "do": "reveal",
+      "who": "tea",
+      "onto": "mug",
+      "replace": true
+    },
+    {
       "do": "pour",
       "who": "milk",
-      "onto": "mug",
+      "onto": "tea",
       "speed": "quick"
     },
     {
       "do": "stir",
       "who": "spoon",
-      "onto": "mug"
+      "onto": "tea"
     },
     {
       "do": "pause"
     },
     {
       "do": "serve",
-      "who": "mug"
+      "who": "tea"
     },
     {
       "do": "settle"
@@ -88,9 +98,9 @@
     },
     {
       "picture": "symbol-pleasant-aroma",
-      "on": "mug",
-      "fromStep": 7,
-      "toStep": 9
+      "on": "tea",
+      "fromStep": 8,
+      "toStep": 10
     }
   ],
   "sfx": [
@@ -109,13 +119,13 @@
       "kind": "activity-beat"
     },
     {
-      "step": 7,
+      "step": 8,
       "at": "contact",
       "cue": "spoon-clink",
       "owner": "make-tea",
       "kind": "completion"
     }
   ],
-  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. The kettle boils (heat curls), the mug takes the middle, a tea bag drops in, hot water and milk pour in, the spoon stirs, the tea smells good and is served.",
+  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. The kettle boils (heat curls), the mug takes the middle, a tea bag drops in, hot water and milk pour in, the spoon stirs, the tea smells good and is served. 22 Oct: the mug arrives empty (Frank's empty mug) and fills as the kettle pours.",
   "props": []
 }
