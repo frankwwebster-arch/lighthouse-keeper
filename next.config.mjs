@@ -414,6 +414,11 @@ export default {
         permanent: false,
       },
       {
+        source: '/keeper-review/kitchen-complete-room-layout-v2',
+        destination: '/keeper-review/kitchen-complete-room-layout-v2/index.html',
+        permanent: false,
+      },
+      {
         source: '/keeper-review/kitchen-high-resolution-foundation-v1',
         destination: '/keeper-review/kitchen-high-resolution-foundation-v1/index.html',
         permanent: false,

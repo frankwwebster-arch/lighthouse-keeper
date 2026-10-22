@@ -835,6 +835,17 @@ masks, join diagnostic, production registration and runtime remain unapproved
 and unchanged. Delivery:
 `docs/KITCHEN_CABINETRY_ROOM_LAYOUT_V1_2026-10-22.md`.
 
+Kitchen Complete Room Layout V2 is now the active complete-room visual gate at
+`/keeper-review/kitchen-complete-room-layout-v2`. It preserves all V1 cabinetry
+and fitted states byte-for-byte while adding toaster, kettle, bin, table and
+chair from one coordinated high-resolution source. The five are independently
+movable on fixed worktop/floor support planes; the table is 14.5 lp high and
+the chair seat is exactly 7.75 lp above the floor. Both join comparisons and
+direct-source `1×`/`2×`/`4×` zoom remain available. Loose-object art, state
+derivatives and runtime promotion remain closed; approved Kettle V47 and
+existing behaviour are unchanged. Delivery:
+`docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V2_2026-10-22.md`.
+
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
 link with V6. The animation remains the exact V1/V2 six-pose motion inside its
