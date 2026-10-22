@@ -2,7 +2,7 @@
 
 A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by typing or tapping objects, then keep him happy through the day. The playable cutaway currently has a kitchen, living room, bedroom with en suite, and lamp room.
 
-The current Prime animation review is
+The current Prime animation review evidence is
 `/prime-keeper-animation-drafts` (versioned permalink
 `/prime-keeper-animation-drafts-v9`): ten reversible sequences with 162
 frame occurrences. V9 retains V3's accepted first-review changes without
@@ -16,15 +16,23 @@ moving-hem/fixed-trouser cut made the waist worse, then rejected V6 because all
 the duplicate but was rejected because its lower-body ownership began too high
 and produced a visible side-outline step. V8 corrected that alignment but
 exposed the approved trousers' dark top edge directly below the moving hem,
-recreating a doubled seam. V9 keeps V8's per-frame outline registration while
-occluding that fixed waistband edge behind the moving hem. No generated,
-rescaled or repainted pixels enter V9.
+recreating a doubled seam. V9 attempted to occlude that edge but Frank rejected
+it on 23 October because a separate dark waistband line remains visible.
+No generated, rescaled or repainted pixels enter V9.
 Every player has
 pause/stop/frame controls, the page includes a sequence sandbox and
 frame-specific redraft notes; changed V8/V9 frames are also shown side-by-side.
 All corrections remain separate review-only copies. Unsafe snack, bed and original broom source sheets remain visibly
 withheld by the isolation gate. See
 `docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V9_2026-10-23.md`.
+
+The active fallback is `/prime-keeper-rear-task-alignment`: a local-only,
+per-frame workbench exposing the exact V6 moving torso and hash-pinned approved
+rear legs as separate draggable layers. It supports one-pixel nudging, two crop
+boundaries, 4× waist inspection, frame stepping/playback, per-frame completion,
+PNG download and hash-addressed JSON handback without changing any source or
+runtime art. See
+`docs/PRIME_KEEPER_REAR_TASK_ALIGNMENT_WORKBENCH_V1_2026-10-23.md`.
 
 The historical whole-bank gate is the reversible Prime Keeper whole-bank
 normalisation programme. Its new selector is

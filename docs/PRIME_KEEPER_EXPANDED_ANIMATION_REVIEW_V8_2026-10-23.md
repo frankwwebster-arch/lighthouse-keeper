@@ -4,8 +4,9 @@ Date: 23 October 2026
 
 Status: preserved rejected evidence. V7 remains preserved too. Frank rejected
 V8 because the approved trousers' dark top edge remained visible directly
-under the moving jumper hem, recreating a doubled bottom seam. V9 occludes that
-fixed edge while retaining V8's corrected outline registration.
+under the moving jumper hem, recreating a doubled bottom seam. V9 attempted to
+occlude that edge while retaining V8's corrected outline registration, but was
+also rejected because a separate dark waistband line remained visible.
 
 Current route: `/prime-keeper-animation-drafts`
 

@@ -66,19 +66,24 @@ seating remain installed but await matching gameplay consumers. The library
 labels that distinction and renders approved source and installed delivery
 side-by-side. This promotion does not expand any original art approval.
 
-The separate `/prime-keeper-animation-drafts` page now serves the V9 review:
+The separate `/prime-keeper-animation-drafts` page now preserves the rejected V9 review:
 the five preserved V1 drafts, one isolated broom candidate and four
 approved-component choreography previews, plus reversible feedback corrections.
 V9 retains the accepted V3 palette, lift and naming amendments, and replaces
-only rejected V8 rear-task positions 11–31. The complete moving torso and its
-single hem remain exact through row 213; the fixed trouser waistband edge is
-occluded behind that hem while the exact V8 outline registration and authority
-boots remain. These ten
+only rejected V8 rear-task positions 11–31. Frank rejected V9 on 23 October
+because a separate dark waistband line remains visible beneath the moving hem.
+These ten
 sequences remain outside the approved library and runtime bank until their
 complete choreography is accepted. V1–V8
 remain at their versioned routes; the current versioned route is
 `/prime-keeper-animation-drafts-v9`. See
 `docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V9_2026-10-23.md`.
+
+The active correction surface is `/prime-keeper-rear-task-alignment`. It keeps
+the immutable V6 torso and approved rear legs separate for manual drag, pixel
+nudge and crop alignment across frames 11–31, then exports hash-addressed JSON.
+It does not alter or promote source art. See
+`docs/PRIME_KEEPER_REAR_TASK_ALIGNMENT_WORKBENCH_V1_2026-10-23.md`.
 
 The held-implement POC remains excluded. Its motion feasibility and
 `hold_shaft_two_hand` concept are approved, but the proxy body art is not.

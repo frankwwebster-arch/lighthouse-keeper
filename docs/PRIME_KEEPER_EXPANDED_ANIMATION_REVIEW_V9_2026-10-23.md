@@ -2,7 +2,7 @@
 
 Date: 23 October 2026
 
-Status: review candidate. V8 is preserved as rejected evidence.
+Status: rejected review evidence. V8 is also preserved as rejected evidence.
 
 Current route: `/prime-keeper-animation-drafts`
 
@@ -48,6 +48,12 @@ redraft slots.
 
 ## Approval boundary
 
-V9 remains review-only. It does not approve the rear-task choreography or
-promote it into the runtime bank. V1–V8, canonical art and runtime sprites
-remain unchanged.
+Frank rejected V9 on 23 October 2026 because the authority trousers' dark
+waistband still reads as a second line beneath the moving jumper hem. V9 is not
+an approval candidate and is not promoted into the runtime bank. V1–V8,
+canonical art and runtime sprites remain unchanged.
+
+The active fallback is `/prime-keeper-rear-task-alignment`, where the exact
+torso and approved legs are independently draggable and crop-adjustable for all
+21 affected frames. See
+`docs/PRIME_KEEPER_REAR_TASK_ALIGNMENT_WORKBENCH_V1_2026-10-23.md`.
