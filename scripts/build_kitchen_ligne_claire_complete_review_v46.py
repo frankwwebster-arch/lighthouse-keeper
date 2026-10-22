@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Build immutable V46: V45 with the geometry-locked dishwasher V3 family."""
+"""Retained pre-rebase builder plan; its V46 identifier collided upstream.
+
+Do not run this historical script. The existing immutable V46 motion workbench
+is authoritative for that identifier; the dishwasher integration was rebuilt
+without overwrite as V48–V50 by the later builders.
+"""
 
 from __future__ import annotations
 

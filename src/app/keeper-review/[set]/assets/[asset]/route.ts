@@ -14,6 +14,10 @@ const SAME_ORIGIN_ARCHIVE_SETS = new Set([
   'kitchen-ligne-claire-complete-review-v44',
   'kitchen-ligne-claire-complete-review-v45',
   'kitchen-ligne-claire-complete-review-v46',
+  'kitchen-dishwasher-ligne-claire-v3',
+  'kitchen-ligne-claire-complete-review-v48',
+  'kitchen-ligne-claire-complete-review-v49',
+  'kitchen-ligne-claire-complete-review-v50',
 ])
 
 export async function GET(_request: Request, context: { params: { set: string; asset: string } }) {

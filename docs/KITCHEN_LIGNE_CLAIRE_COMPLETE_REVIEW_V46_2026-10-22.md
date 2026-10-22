@@ -1,5 +1,11 @@
 # Kitchen Ligne-Claire Complete Review V46
 
+> Historical pre-rebase build-plan record only. The V46 identifier was already
+> occupied by the immutable Broken-Appliance Motion Workbench when remote main
+> was reconciled, so this plan was never allowed to overwrite that pack. The
+> completed non-destructive integration is Kitchen Complete Review V50. The
+> original text below is retained as provenance.
+
 Date: 22 October 2026
 
 Status: immutable reversible review candidate; not approved, registered,

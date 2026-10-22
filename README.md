@@ -895,8 +895,8 @@ tea proof is retained only as failed provenance because its milk vessels and
 bread knife did not separate clearly at 64 px.
 See
 [`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V45_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V45_2026-10-22.md).
-Kitchen Broken-Appliance Motion Workbench V46 is the active closed review at
-`/keeper-review/kitchen` (versioned route:
+Kitchen Broken-Appliance Motion Workbench V46 is preserved at its versioned
+route:
 `/keeper-review/kitchen-ligne-claire-complete-review-v46/index.html`). It removes
 all superseded kettle choices from the selectable review and presents only the
 three exact, approved V47 states. Its presentation-only contract offers
@@ -912,6 +912,22 @@ handoff for Standard/On/Broken and transition SFX slots is at
 [`docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md`](docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md).
 Delivery:
 [`docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md`](docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md).
+Kitchen Ligne-Claire Complete Review V50 is now the active closed review at
+`/keeper-review/kitchen` (versioned route:
+`/keeper-review/kitchen-ligne-claire-complete-review-v50/index.html`). It keeps
+the complete V46 Kettle V47 motion/SFX workbench and changes only the rejected
+dishwasher family. Dishwasher V3 preserves every V41 `98 × 82 px` canvas and
+alpha channel; uses one control-panel geometry in Off, On and Broken; restores
+the tiny lamp beside the selector; removes the erroneous black strip; and
+copies the matching approved Cabinet V3 cap across worktop rows `4–15`. The
+complete ghost proves the dishwasher silhouette is not squatter and that the
+worktops form one continuous run. Only Frank's authorised steeper right-hand
+Broken handle angle changes internally. V50's normalised JavaScript is
+byte-identical to V46, so movement, healing, locks, repair, effects, motion and
+SFX remain unchanged. The gate remains closed. See
+[`docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V3_2026-10-22.md`](docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V3_2026-10-22.md)
+and
+[`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V50_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V50_2026-10-22.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
