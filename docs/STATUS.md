@@ -750,22 +750,25 @@ to Claude in
 `docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md`. Delivery:
 `docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md`.
 
-Kitchen Ligne-Claire Complete Review V53 at `/keeper-review/kitchen` and
-`/keeper-review/kitchen-ligne-claire-complete-review-v53/index.html` is the
+Kitchen Ligne-Claire Complete Review V54 at `/keeper-review/kitchen` and
+`/keeper-review/kitchen-ligne-claire-complete-review-v54/index.html` is the
 active closed kitchen review. It retains V46's exact Kettle V47 selection,
 movement/healing/motion/SFX JavaScript and all non-dishwasher bytes. Dishwasher
 V4 is rejected because its simplified flat construction remained profoundly
 different from the approved oven and left turquoise pixels under the worktop
-overhang. V5 keeps all 15 exact V41 `98 × 82 px` canvases and alpha channels
+overhang. V6 keeps all 15 exact V41 `98 × 82 px` canvases and alpha channels
 while fully adopting the oven's dimensional enamel, contour, blue structure
 and orange/copper hardware language. Exact Cabinet V3 pixels supply the full
 worktop through row `16` and both cabinet shoulders beneath the overhang through
-row `29`. Panel, 64 px, alpha-ghost and a clean primary
+row `29`. V6 supersedes V5's weak Broken read: it removes the unexplained bolt,
+opens the door substantially farther on a failed lower-right hinge and hangs the
+slender handle from its left attachment. Off and On are byte-identical to V5;
+the regular forty-frame dishwasher-owned suds layer remains the default floor
+puddle. Panel, 64 px, alpha-ghost and a clean primary
 cabinet–dishwasher–oven run are included. Registration remains closed;
 production, runtime, room layout, collision and gameplay remain unchanged.
-V53 corrects only V52's inherited V46 rollback sentence. Delivery:
-`docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V5_2026-10-22.md` and
-`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V53_2026-10-22.md`.
+Delivery: `docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V6_2026-10-22.md` and
+`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V54_2026-10-22.md`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
@@ -922,9 +925,9 @@ implemented and no artwork change is authorised by it.
 The review-payload housekeeping pass completed on 21 October 2026. The exact
 clean-checkout baseline failed at 53.3148 MiB; the content-addressed sweep now
 archives every review image plus JSON/JSON.GZ at or above 24 KiB, leaving HTML
-and small JSON public. After Kitchen Complete Review V53, 6,511 references
-across 235 set manifests resolve to 3,124 immutable objects; `public/` is 49.11
-MiB, 0.89 MiB below the unchanged 50 MiB guard. Runtime
+and small JSON public. After Kitchen Complete Review V54, 6,661 references
+across 237 set manifests resolve to 3,132 immutable objects; `public/` is 49.17
+MiB, 0.83 MiB below the unchanged 50 MiB guard. Runtime
 `public/sprites` is now 40.1033 MiB, including the 27 versioned Prime sheets.
 Use `npm run maintain:keeper-review` after any review builder; it archives,
 verifies object and manifest hashes, checks historical URL resolution and then

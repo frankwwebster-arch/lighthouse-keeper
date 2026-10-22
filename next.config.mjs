@@ -395,7 +395,7 @@ export default {
       },
       {
         source: '/keeper-review/kitchen',
-        destination: '/keeper-review/kitchen-ligne-claire-complete-review-v53/index.html',
+        destination: '/keeper-review/kitchen-ligne-claire-complete-review-v54/index.html',
         permanent: false,
       },
       {
@@ -431,6 +431,16 @@ export default {
       {
         source: '/keeper-review/kitchen-ligne-claire-complete-review-v53',
         destination: '/keeper-review/kitchen-ligne-claire-complete-review-v53/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/kitchen-dishwasher-ligne-claire-v6',
+        destination: '/keeper-review/kitchen-dishwasher-ligne-claire-v6/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/kitchen-ligne-claire-complete-review-v54',
+        destination: '/keeper-review/kitchen-ligne-claire-complete-review-v54/index.html',
         permanent: false,
       },
     ]
