@@ -434,6 +434,11 @@ export default {
         permanent: false,
       },
       {
+        source: '/keeper-review/kitchen-fixed-shell-layout-v6',
+        destination: '/keeper-review/kitchen-fixed-shell-layout-v6/index.html',
+        permanent: false,
+      },
+      {
         source: '/keeper-review/kitchen-high-resolution-foundation-v1',
         destination: '/keeper-review/kitchen-high-resolution-foundation-v1/index.html',
         permanent: false,

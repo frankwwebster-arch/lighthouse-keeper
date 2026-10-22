@@ -1048,8 +1048,8 @@ See
 [`docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V4_2026-10-22.md`](docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V4_2026-10-22.md).
 
 Kitchen Complete Room Layout V5 at
-`/keeper-review/kitchen-complete-room-layout-v5` is the current unapproved
-integration gate. It compares the exact V4 drawings, corrected modules without
+`/keeper-review/kitchen-complete-room-layout-v5` is immutable rejected
+integration provenance. It compares the exact V4 drawings, corrected modules without
 a connector, and an occupancy-derived fitted interface in three synchronized
 views. All corrected fitted bodies map exactly to `84 × 74`; the oven hob is
 the required even deep blue; and every sink state has one straight rear
@@ -1059,6 +1059,17 @@ cabinet moves. The machine-readable contract is
 [`data/kitchen_room_grid_contract_v2.json`](data/kitchen_room_grid_contract_v2.json).
 No approved source, runtime behavior or production asset changed. See
 [`docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V5_2026-10-23.md`](docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V5_2026-10-23.md).
+
+Kitchen Fixed Shell Layout V6 at
+`/keeper-review/kitchen-fixed-shell-layout-v6` is the current unapproved room
+gate. It is a deterministic decomposition of the approved cabinetry and state
+sheets, not another model redraw. A single fixed `504 px` worktop, single
+continuous plinth and fixed six-aperture carcass own all fitted geometry. Only
+fronts, doors, contents, indicators, water, the registered sink insert and the
+oven's separate hob overlay move. The six exact `84 × 74` bodies and their
+centres are unchanged; kettle and toaster remain centred on and owned by
+distinct cupboard/drawers identities. No healing layer is used. See
+[`docs/KITCHEN_FIXED_SHELL_LAYOUT_V6_2026-10-23.md`](docs/KITCHEN_FIXED_SHELL_LAYOUT_V6_2026-10-23.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

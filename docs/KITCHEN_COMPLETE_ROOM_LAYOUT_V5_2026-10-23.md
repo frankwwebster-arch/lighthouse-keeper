@@ -2,13 +2,13 @@
 
 Date: 23 October 2026
 
-Status: unapproved review candidate; no runtime or production promotion
+Status: rejected integration provenance; no runtime or production promotion
 
 Review route: `/keeper-review/kitchen-complete-room-layout-v5`
 
 ## Outcome
 
-V5 replaces the rejected V4 healing result with a new reversible countertop-interface candidate. It preserves V4 as immutable provenance and presents three synchronized views:
+V5 attempted to replace the rejected V4 healing result with a reversible countertop-interface candidate. Frank rejected the assembled result on 23 October 2026 because the model-generated unit shells still carried incompatible worktop/end geometry: the oven top, right-hand cabinet outline and sink/tap join remained visibly wrong. V5 is preserved as immutable provenance and presents three synchronized views:
 
 1. the exact V4 drawings copied byte-for-byte into the V5 atlas;
 2. the corrected high-resolution modules with no connector;
@@ -74,4 +74,4 @@ The V5 verifier checks source hashes, immutable V4 pixels, exact body sizes, the
 
 ## Boundary
 
-V5 is a review-only candidate. It does not alter approved Kettle V47, appliance behavior, effects, SFX, production sprites, runtime selectors or game code. Approval of the fitted art/interface remains with Frank.
+V5 is rejected review provenance. It does not alter approved Kettle V47, appliance behavior, effects, SFX, production sprites, runtime selectors or game code. Kitchen Fixed Shell Layout V6 supersedes it as the active room-fit review.
