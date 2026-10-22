@@ -181,9 +181,23 @@ one rejected first kettle and a five-column current/light/dark/64 px contact
 sheet. The commissioned `tea-bag` V1 is deliberately untouched. All six were
 approved by Frank on the exact sheet. His later requested `tea-mug-empty` V1
 and mark-free `toast-slices` V3 are also current from fresh immutable packs,
-while filled mug V2 and marked toast V2 remain byte-identical. The catalogue
-is 321 pictures / 413 versions: 83 approved conversions, 16 separately
+while filled mug V2 and marked toast V2 remain byte-identical. At that approval
+checkpoint the catalogue was 321 pictures / 413 versions. The later
+Claude-reviewed black-ink/recipe commission brings the current library to 339
+pictures / 452 versions: 83 Frank-approved conversions, 34 separately
 introduced pictures and 222 earlier pictures still to convert.
+
+## Kitchen kettle V47 approval (22 Oct 2026)
+
+Frank approved the exact state-family sheet in
+`art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/` with “Approve
+Kettle V47.” Treat its Off, On and Broken art as the current approved kitchen
+kettle visual authority. The immutable review manifest remains closed and its
+external approval record is
+`docs/review/kitchen-kettle-bubble-authority-v47-approval-2026-10-22.json`.
+Nothing is promoted or wired yet. A future kitchen-assets version may split
+the airborne lid into its own animation layer and add user-controlled Broken
+vibration/SFX; do not mutate V47 to do so.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 

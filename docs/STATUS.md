@@ -34,8 +34,8 @@ The remaining 300 legacy endpoint repairs are measured from real RGBA pixels
 and ordered in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`. `npm test` rejects new
 or regressed endpoint failures against that frozen migration boundary.
 
-The Bubble stories Studio has a complete shared picture catalogue: 321
-selectable pictures and 413 immutable versions grouped by activity. This includes every review-ready
+The Bubble stories Studio has a complete shared picture catalogue: 339
+selectable pictures and 452 immutable versions grouped by activity. This includes every review-ready
 isolated source component from Activity Cloud Composer V1–V7, the rear-work
 V2/V3 callout packs and every component-bearing Claude or Codex picture pack,
 including all V5 album homages, the complete aquarium and bedroom sets, and 54
@@ -145,9 +145,12 @@ toast-slices and toaster pictures. The contact sheet includes light, dark and
 the best yet, and they follow the direction very well”; all six are registered
 and every V1 remains selectable. His requested `tea-mug-empty` V1 and clean
 `toast-slices` V3 are also current; the latter removes exactly five detached
-action-slash components so the marks can be added separately. The catalogue is
-321 pictures / 413 versions, with 83 approved conversions and 222 earlier
-pictures still to convert.
+action-slash components so the marks can be added separately. At that approval
+checkpoint the catalogue was 321 pictures / 413 versions, with 83 approved
+conversions and 222 earlier pictures still to convert. The later
+Claude-reviewed black-ink/recipe commission brings the current totals to 339
+pictures / 452 versions without changing the 83 Frank-approved conversion
+count or the 222-picture earlier-art queue.
 
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 
@@ -536,8 +539,8 @@ contract.
 
 Kitchen Kettle Bubble Authority V46 is preserved unapproved history. Frank
 liked its broken handle but asked for less restrained damage and a fully
-detached lid so steam could pour from the top. V47 is the active immutable
-review gate at
+detached lid so steam could pour from the top. V47 is the approved immutable
+visual authority at
 `art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/`. Off and On use
 the approved Bubble `tea-kettle` V2 body pixel-for-pixel; the builder removes
 only its one detached steam component and preserves that component separately.
@@ -548,9 +551,12 @@ enamel loss. Exact V45 support slots, support plane, interaction,
 Broken lock/rattle and six 40-frame/4-fps effect strips are hash-pinned or
 copied byte-for-byte. A state-family sheet and exact-room Retina proof are
 included. Only the Broken steam's asset-local x anchor moves so the unchanged
-animation rises from the open top. V47 remains unapproved, unpromoted and
-unwired pending Frank's verdict on the complete state family; V45, Bubble V2,
-runtime and production remain unchanged.
+animation rises from the open top. Frank approved the exact V47 sheet on 22
+October 2026. The approval is recorded externally and hash-pins every state,
+effect and evidence image without rewriting the immutable pre-approval pack.
+V47 remains unpromoted and unwired; separated-lid animation, configurable
+Broken vibration and new SFX are explicitly deferred to a new kitchen-assets
+version. V45, Bubble V2, runtime and production remain unchanged.
 
 Kitchen Ligne-Claire Sweep V1 at
 `/keeper-review/kitchen-ligne-claire-sweep-v1/` is a separate coordinated
@@ -703,9 +709,12 @@ kitchen-wide review. It retains V44 byte-for-byte and contains 60
 current/candidate object-state records, 16 effect records, 14 family contact
 sheets and nine approved/current condiment V2 calibration references. Approved V3/V8/V12 authorities
 remain preserved; V13 Off, V15 ajar Broken, the corrected-control-rail
-dishwasher, table/chair, bin, kettle, toaster and bowl remain unapproved
-candidates. Ten new mask-locked knives, mills, preparation and tea candidates
-retain their current 256 × 256 alpha bytes exactly. V41 movement, swapping, Broken position locking, repair unlocking,
+dishwasher, table/chair, bin, toaster and bowl remain unapproved candidates.
+V45's inherited kettle candidate remains unapproved historical evidence and is
+superseded by the separately approved V47 Bubble kettle authority. Ten new
+mask-locked knives, mills, preparation and tea candidates retain their current
+256 × 256 alpha bytes exactly. V41 movement, swapping, Broken position locking,
+repair unlocking,
 asset-local effects and countertop healing are unchanged and mechanically
 verified. Every route is root-absolute through the same-origin archive proxy.
 No current selector, production asset, runtime, gameplay, collision or room

@@ -211,8 +211,10 @@ requested an empty mug at
 toast without its five detached action slashes at
 `art/drafts/activity-story-ligne-claire-toast-slices-no-slashes-2026-10-22-v1/`.
 `tea-mug-empty` V1 and clean `toast-slices` V3 are current; filled mug V2 and
-marked toast V2 remain byte-identical. The library now has 321 pictures / 413
-versions, 83 approved conversions and 222 earlier pictures still to convert.
+marked toast V2 remain byte-identical. At that approval checkpoint the library
+had 321 pictures / 413 versions, 83 approved conversions and 222 earlier
+pictures still to convert. The later black-ink/recipe commission is reflected
+in the current totals at the top of this document.
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A
