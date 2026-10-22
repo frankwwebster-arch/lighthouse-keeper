@@ -23,6 +23,7 @@
     "verify:codex-bubble-story-families-v1": "node scripts/verify_codex_bubble_story_families_v1.mjs",
     "activity-stories:add-picture": "node scripts/add_activity_story_picture.mjs",
     "stories": "vite-node scripts/stories.ts",
+    "story-notes": "node --env-file=.env.local scripts/story_notes.mjs",
     "verify:kitchen-basic-assets-v5": "node scripts/verify_kitchen_basic_assets_v5.mjs",
     "verify:kitchen-fitted-galley-v20": "node scripts/verify_kitchen_fitted_galley_v20.mjs",
     "verify:kitchen-final-assets-v21": "node scripts/verify_kitchen_final_assets_v21.mjs",

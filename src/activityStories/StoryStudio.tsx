@@ -3,6 +3,7 @@ import { bubbleOutline, compileStory, FPS, type Frame } from './compile'
 import { LIBRARY, STORY_DRAFTS, STYLE_REVIEW } from './drafts'
 import { STORY_SCHEMA, VERBS, canPlace, cleanStory, describeStep, groupPictures, placePicture, playsText, styleOf, swapPicture, versionFor, type PictureStyle, type Ambient, type DropTarget, type CastRole, type Flow, type Prop, type PropSlot, type Speed, type Step, type Story, type Verb } from './format'
 import { loadStories, resetStory, saveStory, storyHash, type SavedStory } from './store'
+import { NOTE_MAX, removeNote, sendNote, waitingForClaude, type StoryNotes } from './notes'
 
 const DRAFT_BY_ID = Object.fromEntries(STORY_DRAFTS.map((s) => [s.id, s]))
 const OBJECTS = Object.entries(LIBRARY.pictures).filter(([, p]) => p.kind === 'object').sort(([a], [b]) => a.localeCompare(b))
@@ -30,11 +31,13 @@ export default function StoryStudio() {
   const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle')
   const [docId, setDocId] = useState(() => (typeof location !== 'undefined' && location.hash.slice(1)) || STORY_DRAFTS[0].id)
   const [newName, setNewName] = useState('')
+  const [notes, setNotes] = useState<Record<string, StoryNotes>>({})
 
   useEffect(() => {
     void loadStories().then((r) => {
       setDb(r.db)
       setSaved(r.saved)
+      setNotes(r.notes)
       setDocs({ ...DRAFT_BY_ID, ...r.saved })
       setLoaded(true)
     })
@@ -211,6 +214,7 @@ export default function StoryStudio() {
                 {s.label}
                 {dirty.has(s.id) && <small> · unsaved</small>}
                 {saved[s.id] && !dirty.has(s.id) && <small> · yours</small>}
+                {waitingForClaude(notes[s.id]) && <small className="ss-note-flag"> · note for Claude</small>}
               </button>
             </li>
           ))}
@@ -263,6 +267,8 @@ export default function StoryStudio() {
         ) : (
           <p className="st-ok">No problems: every step can play, every touch mark lands where two pictures meet, and the story takes its time (at least 5 seconds).</p>
         )}
+
+        <TellClaude story={story.id} notes={notes[story.id]} db={db} loaded={loaded} onSaved={(n) => setNotes((all) => ({ ...all, [story.id]: n }))} />
 
         <h2>How it ends</h2>
         <div className="ss-row">
@@ -395,6 +401,56 @@ export default function StoryStudio() {
       </aside>
       {looking && <PictureView id={looking} onClose={() => setLooking(null)} />}
     </div>
+  )
+}
+
+/**
+ * “Tell Claude” (Frank, 21 Oct): describe a tweak in plain words. It saves for everyone straight away (no Save
+ * needed); Claude reads every note at the start of a session, makes the change and replies here.
+ */
+function TellClaude({ story, notes, db, loaded, onSaved }: { story: string; notes: StoryNotes | undefined; db: boolean; loaded: boolean; onSaved: (n: StoryNotes) => void }) {
+  const [text, setText] = useState('')
+  const [state, setState] = useState<'idle' | 'sending' | 'error'>('idle')
+  useEffect(() => { setText(''); setState('idle') }, [story])
+  const thread = notes?.thread ?? []
+  const send = async () => {
+    if (!text.trim()) return
+    setState('sending')
+    const next = await sendNote(story, text, db)
+    if (next) {
+      onSaved(next)
+      setText('')
+      setState('idle')
+    } else setState('error')
+  }
+  const takeBack = async (id: string) => {
+    const next = await removeNote(story, id, db)
+    if (next) onSaved(next)
+  }
+  const when = (at: string) => new Date(at).toLocaleString(undefined, { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })
+  return (
+    <section className="ss-tell" aria-label="Tell Claude">
+      <h2>Tell Claude</h2>
+      <p className="st-dim">Describe a change to this story in your own words, like “use the clean plate, not the soapy one”. It’s saved for everyone at once. Claude reads every note at the start of each session, makes the change and replies here.</p>
+      {thread.length > 0 && (
+        <ol className="ss-thread">
+          {thread.map((n) => (
+            <li key={n.id} className={n.by === 'claude' ? 'ss-from-claude' : 'ss-from-you'}>
+              <span className="ss-who">{n.by === 'claude' ? 'Claude' : 'You'} · {when(n.at)}</span>
+              <p>{n.text}</p>
+              {n.by === 'frank' && thread.at(-1)?.id === n.id && <button type="button" className="st-mini" onClick={() => void takeBack(n.id)} title="Take this note back">Take back</button>}
+            </li>
+          ))}
+        </ol>
+      )}
+      {waitingForClaude(notes) && <p className="ss-waiting">Waiting for Claude: it will be done next session.</p>}
+      <textarea className="ss-tell-text" rows={3} maxLength={NOTE_MAX} placeholder="What would you like changed?" value={text} onChange={(e) => { setText(e.target.value); if (state === 'error') setState('idle') }} />
+      <div className="ss-row">
+        <button type="button" disabled={!loaded || !text.trim() || state === 'sending'} onClick={() => void send()}>{state === 'sending' ? 'Sending…' : 'Send to Claude'}</button>
+        {state === 'error' && <span className="ss-err">Not sent. Try again in a moment.</span>}
+        {loaded && !db && <span className="st-dim">Local copy: notes stay in this browser.</span>}
+      </div>
+    </section>
   )
 }
 

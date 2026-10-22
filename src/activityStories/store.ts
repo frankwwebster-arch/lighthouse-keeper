@@ -7,6 +7,7 @@
  */
 
 import { cleanStory, type Story } from './format'
+import { notesFrom, type StoryNotes } from './notes'
 
 export interface SavedStory extends Story {
   /** The draft it was edited from, so the studio can tell when the draft has changed since. */
@@ -36,7 +37,8 @@ function readLocal(): Record<string, SavedStory> {
   }
 }
 
-export async function loadStories(): Promise<{ db: boolean; saved: Record<string, SavedStory> }> {
+/** Frank's saved stories and every story's “Tell Claude” notes. */
+export async function loadStories(): Promise<{ db: boolean; saved: Record<string, SavedStory>; notes: Record<string, StoryNotes> }> {
   try {
     const res = await fetch('/api/studio')
     const r = res.ok ? ((await res.json()) as { db: boolean; docs: { id: string; doc: unknown }[] }) : null
@@ -47,12 +49,12 @@ export async function loadStories(): Promise<{ db: boolean; saved: Record<string
         const s = cleanStory(d.doc)
         if (s) saved[s.id] = { ...s, draftHash: (d.doc as SavedStory).draftHash }
       }
-      return { db: true, saved }
+      return { db: true, saved, notes: notesFrom(r.docs) }
     }
   } catch {
     // no server: work locally
   }
-  return { db: false, saved: readLocal() }
+  return { db: false, saved: readLocal(), notes: notesFrom(null) }
 }
 
 export async function saveStory(story: SavedStory, db: boolean): Promise<boolean> {

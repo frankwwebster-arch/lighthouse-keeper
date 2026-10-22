@@ -73,8 +73,10 @@ export interface Compiled {
   fps: number
   full: Frame[]
   reduced: Frame[]
-  /** Frames that tell the story, before any clearing frames. */
+  /** Frames that tell the story, up to the end of the quiet moment. */
   storyFrames: number
+  /** Frames after the quiet moment where the finished dish is served off (Frank's e1 answer), before any clearing frames. */
+  sendOff: number
   /** Seconds from one telling to the next (the story plus its clearing frames, or from loopFrom to the end). */
   loopSeconds: number
   /** Frame a retelling starts from (0, or the start of loopFrom). */
@@ -299,6 +301,12 @@ export function compileStory(input: Story, lib: Library): Compiled {
   }
   const pace = story.pace || 1
   const members = Object.keys(story.cast)
+  // Frank's e1 answer (22 Oct): in a retold story that ends by serving, the finished dish stays in view through the
+  // quiet moment and is served off as the retelling begins. So trailing serves play after the quiet moment.
+  const lastStep = story.steps.length - 1
+  let firstServe = lastStep
+  while (story.afterStory === 'loop' && firstServe > 0 && story.steps[firstServe - 1].do === 'serve') firstServe--
+  const order = [...story.steps.keys()].filter((i) => i < firstServe || i === lastStep).concat([...story.steps.keys()].slice(firstServe, lastStep))
   const url = (as: string) => versionFor(lib, story.cast[as].picture, story.cast[as].version)?.url ?? ''
   const markUrl = (pic: string) => versionFor(lib, pic)?.url ?? ''
   /** Half width and height of a picture's visible pixels at scale s. */
@@ -401,7 +409,8 @@ export function compileStory(input: Story, lib: Library): Compiled {
     status[as] = 'gone'
   }
 
-  story.steps.forEach((step, idx) => {
+  for (const idx of order) {
+    const step = story.steps[idx]
     const n = idx + 1
     const total = stepFrames(step, pace)
     const f0 = frame
@@ -710,9 +719,13 @@ export function compileStory(input: Story, lib: Library): Compiled {
     // Everyone not moved this step holds still.
     for (const m of members) for (let i = 0; i < total; i++) if (poses[m][f0 + i] === undefined) poses[m][f0 + i] = last[m] && last[m]!.o > 0 ? { ...last[m]!, z: zFor(m) } : null
     frame += total
-  })
+  }
+  windows.sort((a, b) => a.step - b.step)
 
-  const storyFrames = frame
+  const posed = frame
+  const quietStep = story.steps.length
+  const storyFrames = windows[quietStep - 1].end
+  const sendOff = posed - storyFrames
   // Measure every touch now that all poses are known.
   for (const c of contacts) {
     const a = poses[c.actor][c.frame], b = poses[c.target][c.frame]
@@ -723,7 +736,6 @@ export function compileStory(input: Story, lib: Library): Compiled {
     const ea = ext(c.actor, a.s), eb = ext(c.target, b.s)
     c.gap = r2(Math.max(0, Math.abs(a.x - b.x) - (ea.w + eb.w), Math.abs(a.y - b.y) - (ea.h + eb.h)))
   }
-  const quietStep = story.steps.length
   const quiet: [number, number] = [windows[quietStep - 1].start, storyFrames - 1]
   // A mark that bursts as a picture appears (Frank's a2 answer, 21 Oct): about a second at the picture's top, rising a
   // little and following it, then gone. It never runs into the quiet moment.
@@ -745,9 +757,11 @@ export function compileStory(input: Story, lib: Library): Compiled {
     }
   }
   const loopStart = story.loopFrom && windows[story.loopFrom - 1] ? windows[story.loopFrom - 1].start : 0
-  // A story that retells from a later step flows straight on, so it needs no clearing frames.
-  const clear = story.afterStory === 'hold' || loopStart > 0 ? 0 : CLEAR_FRAMES
-  const totalFrames = storyFrames + clear
+  // A story that retells from a later step flows straight on, so it needs no clearing frames; nor does one whose
+  // dish is served off after the quiet moment: anything else still on show fades while it goes (e1, so the bubble never sits empty).
+  const clear = story.afterStory === 'hold' || loopStart > 0 || sendOff > 0 ? 0 : CLEAR_FRAMES
+  const servedLast = new Set(order.slice(order.indexOf(lastStep) + 1).map((i) => story.steps[i].who))
+  const totalFrames = posed + clear
 
   const url2 = (pic: string) => versionFor(lib, pic)?.url ?? ''
   // A prop that runs to the end of a retold story persists (Frank, 21 Oct): it stays up through the quiet moment
@@ -774,23 +788,24 @@ export function compileStory(input: Story, lib: Library): Compiled {
 
   const objectItems = (f: number): FrameItem[] =>
     members.flatMap((m) => {
-      const p = poses[m][Math.min(f, storyFrames - 1)]
+      const p = poses[m][Math.min(f, posed - 1)]
       if (!p || p.o <= 0) return []
-      const fade = f >= storyFrames ? 1 - (f - storyFrames + 1) / (CLEAR_FRAMES + 0) : 1
+      const fade = f >= posed ? 1 - (f - posed + 1) / CLEAR_FRAMES : f >= storyFrames && loopStart === 0 && !servedLast.has(m) ? 1 - (f - storyFrames + 1) / sendOff : 1
       return [{ id: m, picture: story.cast[m].picture, url: url(m), kind: 'object' as const, x: r2(p.x), y: r2(p.y), scale: r2(p.s * (pulse[m][f] ?? 1)), rotation: r2(p.r), opacity: r2(Math.max(0, p.o * fade)), z: p.z }]
     }).filter((i) => i.opacity > 0)
 
   const full: Frame[] = []
   for (let f = 0; f < totalFrames; f++) {
     const items = objectItems(f)
-    if (f < storyFrames) {
+    if (f < posed) {
       for (const mk of marks) {
         const st = mk.frames[f]
         if (st && st.o > 0) items.push({ id: mk.id, picture: mk.picture, url: markUrl(mk.picture), kind: 'mark', x: r2(st.x), y: r2(st.y), scale: r2(st.s), rotation: st.r, opacity: st.o, z: 20 })
       }
       for (const a of ambient) {
         const p = poses[a.on][f]
-        if (!p || p.o < 0.5 || f < a.from || f >= a.to) continue
+        // The quiet moment has no marks, even where an extra mark's steps run on into a dish served after it.
+        if (!p || p.o < 0.5 || f < a.from || f >= a.to || (f >= quiet[0] && f <= quiet[1])) continue
         const h = ext(a.on, p.s).h
         const fadeIn = Math.min(1, (f - a.from + 1) / 2), fadeOut = Math.min(1, (a.to - f) / 2)
         items.push({ id: a.id, picture: a.picture, url: markUrl(a.picture), kind: 'mark', x: r2(p.x + 4 * Math.sin(f * 0.8)), y: r2(p.y - h - 14 - (f % 8) * 1.2), scale: SCALE.mark, rotation: r2(6 * Math.sin(f * 0.6)), opacity: r2(Math.min(fadeIn, fadeOut)), z: 15 })
@@ -824,14 +839,14 @@ export function compileStory(input: Story, lib: Library): Compiled {
       items.push({ id: `prop-${k}`, picture: pr.picture, url: url2(pr.picture), kind: 'object', x: at.x, y: r2(at.y + 2 * Math.sin((f + k * 3) * 0.5)), scale: SCALE.prop, rotation: r2(4 * Math.sin((f + k * 5) * 0.35)), opacity: r2(fade), z: 1 })
     }
     const step = windows.find((w) => f >= w.start && f < w.end)?.step ?? quietStep
-    const bubbleOut = story.afterStory === 'hide' && f >= storyFrames ? 1 - (f - storyFrames + 1) / CLEAR_FRAMES : 1
+    const bubbleOut = story.afterStory === 'hide' && f >= posed ? 1 - (f - posed + 1) / CLEAR_FRAMES : 1
     full.push({ step, phase: f >= storyFrames ? 'clear' : f >= quiet[0] ? 'quiet' : 'story', bubble: { opacity: r2(bubbleOut), scale: 1 }, items: items.sort((x, y) => x.z - y.z) })
   }
 
   // Reduced motion: the same steps and ending, two objects at most, one mark, nothing travels.
   const reduced: Frame[] = []
   let pair: string[] = []
-  for (const w of windows) {
+  for (const w of [...windows].sort((a, b) => a.start - b.start)) {
     const s = story.steps[w.step - 1]
     const atTouch = TOOLS.has(s.do) || s.do === 'drop-in'
     const still = s.do === 'settle' || s.do === 'pause'
@@ -864,14 +879,14 @@ export function compileStory(input: Story, lib: Library): Compiled {
         const pic = story.cast[burst].appear!
         items.push({ id: `appear-${burst}`, picture: pic, url: markUrl(pic), kind: 'mark', x: r2(p.x + e.w * 0.35), y: r2(p.y - e.h - 4), scale: SCALE.mark, rotation: 0, opacity: 1, z: 20 })
       }
-      reduced.push({ step: w.step, phase: f >= quiet[0] ? 'quiet' : 'story', bubble: { opacity: 1, scale: 1 }, items: items.sort((x, y) => x.z - y.z) })
+      reduced.push({ step: w.step, phase: f >= storyFrames ? 'clear' : f >= quiet[0] ? 'quiet' : 'story', bubble: { opacity: 1, scale: 1 }, items: items.sort((x, y) => x.z - y.z) })
     }
     // A served picture has left the bubble, so it isn't carried into the next step.
     pair = s.do === 'serve' ? shown.filter((m) => m !== s.who) : shown
   }
-  for (let f = storyFrames; f < totalFrames; f++) {
-    const fade = 1 - (f - storyFrames + 1) / CLEAR_FRAMES
-    const lastFrame = reduced[storyFrames - 1]
+  for (let f = posed; f < totalFrames; f++) {
+    const fade = 1 - (f - posed + 1) / CLEAR_FRAMES
+    const lastFrame = reduced[posed - 1]
     reduced.push({ ...lastFrame, phase: 'clear', bubble: { opacity: story.afterStory === 'hide' ? r2(fade) : 1, scale: 1 }, items: lastFrame.items.filter((i) => i.kind === 'object').map((i) => ({ ...i, opacity: r2(i.opacity * fade) })) })
   }
 
@@ -882,7 +897,7 @@ export function compileStory(input: Story, lib: Library): Compiled {
     return [{ frame: at, cue: c.cue, owner: c.owner, kind: c.kind }]
   })
 
-  const seconds = storyFrames / FPS
+  const seconds = posed / FPS
   // The game takes its time (Frank, 20 Oct): no upper limit, only a floor so a story is never a blur.
   if (seconds < 5) issues.push({ level: 'warn', text: `The story lasts only ${seconds.toFixed(1)} s; give it at least 5 s so it doesn’t rush` })
   const loopSeconds = (totalFrames - loopStart) / FPS
@@ -906,5 +921,5 @@ export function compileStory(input: Story, lib: Library): Compiled {
   const intro: Frame[] = opening.map(([r1, r2b, o, s]) => ({ step: 0, phase: 'story', bubble: { opacity: o, scale: s, rings: [r1, r2b] }, items: [] }))
   const introReduced: Frame[] = [0.35, 0.7].map((o) => ({ step: 0, phase: 'story', bubble: { opacity: o, scale: 1, rings: [o, o] }, items: [] }))
 
-  return { fps: FPS, full, reduced, storyFrames, loopSeconds, loopStart, intro, introReduced, tellings, quiet, afterStory: story.afterStory, windows, contacts, sfx, seconds, issues }
+  return { fps: FPS, full, reduced, storyFrames, sendOff, loopSeconds, loopStart, intro, introReduced, tellings, quiet, afterStory: story.afterStory, windows, contacts, sfx, seconds, issues }
 }

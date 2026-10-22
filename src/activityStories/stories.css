@@ -67,3 +67,16 @@
 .ss-appear { display: inline-flex; gap: 4px; align-items: center; border: 1.5px dashed var(--st-line); border-radius: 6px; padding: 2px 4px; }
 .ss-appear img { width: 24px; height: 24px; }
 .ss-appear select { max-width: 190px; }
+/* “Tell Claude” notes under each story (Frank, 21 Oct). */
+.ss-tell { margin: 10px 0 4px; padding: 10px 12px; background: #fff; border: 1.5px solid var(--st-line); border-left: 4px solid var(--st-sea); border-radius: 6px; }
+.ss-tell h2 { margin-top: 0; }
+.ss-thread { list-style: none; margin: 6px 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.ss-thread li { padding: 6px 9px; border-radius: 6px; max-width: 90%; }
+.ss-thread li p { margin: 2px 0 0; white-space: pre-wrap; font-size: 14px; }
+.ss-from-you { align-self: flex-start; background: #eef5fb; }
+.ss-from-claude { align-self: flex-end; background: #fbf0d2; }
+.ss-who { font-size: 11px; color: var(--st-dim); font-weight: 700; }
+.ss-thread .st-mini { margin-top: 3px; }
+.ss-waiting { margin: 4px 0; font-size: 12px; color: #8a6a00; }
+.ss-tell-text { width: 100%; box-sizing: border-box; font: inherit; font-size: 14px; padding: 6px 8px; border: 1.5px solid var(--st-line); border-radius: 6px; resize: vertical; }
+.ss-note-flag { color: #8a6a00; }

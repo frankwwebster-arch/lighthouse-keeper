@@ -42,6 +42,15 @@ describe('bubble story drafts', () => {
         }
       })
 
+      it('keeps a served dish in view through the quiet moment, then serves it off before the retelling (Frank’s e1)', () => {
+        const last = story.steps.at(-2)
+        if (story.afterStory !== 'loop' || last?.do !== 'serve') return expect(c.sendOff).toBe(0)
+        expect(c.sendOff).toBeGreaterThan(0)
+        for (const f of c.full.slice(c.quiet[0], c.quiet[1] + 1)) expect(f.items.some((i) => i.id === last.who), `frame ${c.full.indexOf(f)}`).toBe(true)
+        expect(c.full.at(-1)!.items.some((i) => i.id === last.who)).toBe(false)
+        expect(c.reduced[c.quiet[0]].items.some((i) => i.id === last.who)).toBe(true)
+      })
+
       it('draws motion trails beneath every object', () => {
         for (const f of c.full) {
           const lowest = Math.min(...objects(f.items).filter((i) => !i.id.startsWith('prop-')).map((i) => i.z))
@@ -75,10 +84,10 @@ describe('bubble story drafts', () => {
         if (c.loopStart > 0) {
           // The end must look exactly like the moment before the retelling starts (the hot BBQ alone).
           const shown = (f: number) => objects(c.full[f].items).filter((i) => !i.id.startsWith('prop-')).map((i) => [i.id, i.x, i.y, i.scale])
-          expect(c.full.length).toBe(c.storyFrames)
+          expect(c.full.length).toBe(c.storyFrames + c.sendOff)
           expect(shown(c.full.length - 1)).toEqual(shown(c.loopStart - 1))
         } else {
-          expect(c.full.length).toBe(c.storyFrames + 3)
+          expect(c.full.length).toBe(c.storyFrames + (c.sendOff || 3))
           const left = objects(c.full.at(-1)!.items).filter((i) => !i.id.startsWith('prop-'))
           expect(left.every((i) => i.opacity < 0.05)).toBe(true)
         }

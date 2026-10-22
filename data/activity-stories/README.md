@@ -350,7 +350,7 @@ never disappears between them.
 | `brush` | brushes | Long slow strokes across it, always the same way, each a little lower. Then leaves. |
 | `iron` | irons | Glides flat across it and back, steam rising behind. Then leaves. |
 | `reveal` | appears from | Bursts out; anything stacked on it is used up. `replace: true` takes its place. |
-| `serve` | is served | Leaves the bubble: off to the right in a left-to-right story, otherwise upwards. |
+| `serve` | is served | Leaves the bubble: off to the right in a left-to-right story, otherwise upwards. In a retold story whose last steps serve, the dish stays in view through the quiet moment and is served off just after it, as the retelling begins (Frank's e1 answer, 22 Oct). |
 | `pause` | pause | A beat where nothing new happens; heat, marks and props carry on. |
 | `settle` | quiet moment | Nothing in the story moves (at least five frames); circling props carry on. Always last. |
 
@@ -392,7 +392,9 @@ rules, which came out of the 20 October review of the V2 examples:
 4. Motion trails show only while something moves fast, and always draw
    beneath the pictures.
 5. The quiet moment is completely still, with no marks; only persisting
-   props keep circling.
+   props keep circling. A retold story that ends by serving keeps the dish
+   in view through it, then serves it off (`sendOff` frames) while anything
+   else still showing fades, so the bubble never sits empty.
 6. Reduced motion has the same steps, timing and ending, with at most two
    pictures and one mark, and nothing travels.
 7. A story never rushes: the studio warns below five seconds.
@@ -406,6 +408,16 @@ step it becomes the one acting (a mark becomes the step's touch mark), on
 the cast it joins as a helper or swaps a member's picture, on Props it
 circles the bubble for the retold part, on Extra marks it rides on the main
 picture. The logic is `placePicture` in `format.ts`.
+
+**Frank tells Claude.** Under every story in the studio is a “Tell Claude”
+box: Frank writes a tweak in plain English and sends it; it is saved for
+everyone straight away (`studio_docs` row `notes-<story id>`, format
+`lighthouse-keeper/story-notes@1` in `src/activityStories/notes.ts`), and the
+story is flagged “note for Claude”. At the start of every bubble-stories
+session Claude runs `npm run story-notes` (every thread, waiting ones first),
+makes each change, and replies with
+`npm run story-notes -- reply <story-id> "Done: …"`. Frank can take back his
+latest note until Claude replies.
 
 **Codex replaces a picture.** Draw the new version to the standard, then:
 
