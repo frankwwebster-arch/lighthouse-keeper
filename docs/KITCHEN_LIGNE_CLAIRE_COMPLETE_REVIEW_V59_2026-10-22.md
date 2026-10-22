@@ -1,8 +1,8 @@
 # Kitchen Ligne-Claire Complete Review V59 — 22 October 2026
 
-V59 is the active, closed kitchen review candidate at `/keeper-review/kitchen`.
-It replaces V56 in the short review route without approving, registering or
-promoting any new production asset.
+V59 is the immutable fitted-carcase predecessor now inherited by active V60.
+It replaced V56 in the short review route without approving, registering or
+promoting any new production asset; its versioned route remains available.
 
 ## Fitted-kitchen construction
 

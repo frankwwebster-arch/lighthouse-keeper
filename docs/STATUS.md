@@ -744,16 +744,20 @@ An independent, default-off SFX control plays an intermittent metal-rattle
 placeholder; dropping an audio file onto its slot or using the file picker
 replaces it for that browser session without touching canonical audio. Repair
 synchronously zeros transforms, cancels timers, stops active nodes and releases
-the V41 movement lock. V46 motion/SFX remains unapproved, unpromoted and
-unwired. The game-wide asset-state SFX implementation is deliberately handed
+the V41 movement lock. Frank approved the exact kettle motion/SFX presentation
+on 22 October 2026; the dishwasher remains only a reusable demonstration.
+Nothing is promoted or wired. The game-wide asset-state SFX implementation is deliberately handed
 to Claude in
 `docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md`. Delivery:
 `docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md`.
 
-Kitchen Ligne-Claire Complete Review V59 at `/keeper-review/kitchen` and
-`/keeper-review/kitchen-ligne-claire-complete-review-v59/index.html` is the
+Kitchen Ligne-Claire Complete Review V60 at `/keeper-review/kitchen` and
+`/keeper-review/kitchen-ligne-claire-complete-review-v60/index.html` is the
 active closed kitchen review. It retains the approved Kettle V47 art and V46
-motion/SFX presentation. Cabinet V11 is now the fitted-carcase authority for
+motion/SFX behaviour. The kettle remains anchored to Cabinet A rather than
+independently movable and is presented approximately 20% smaller, centred on
+the same bay x42 and seated on the same y141 support plane; approved source
+bytes are unchanged. Cabinet V11 remains the fitted-carcase authority for
 both appliances: its worktop, blue shell geometry/colours and plinth surround
 the Dishwasher V8 and approved-oven inserts. Cupboard-only hinges/knobs are
 excluded from those appliance shells. The oven's old separate glossy blue slab
@@ -763,10 +767,12 @@ above the exact common plinth; the failed Broken door may hang in front of it.
 All adjacencies use the same flat cabinet join. The healer's former light first
 cap row is replaced in all foreground masks by a composite-matched dark row, so
 the rear worktop line crosses every placement boundary without interruption.
-Registration remains closed; source/production art, state semantics, motion,
-sound, repair locking, room layout, collision and gameplay remain unchanged.
+Registration remains closed; the smaller kettle registration and inherited V59
+fitted-carcase integration are unapproved. Source/production art, state semantics,
+motion, sound, repair locking, room layout, collision and gameplay remain unchanged.
 Delivery: `docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V8_2026-10-22.md` and
-`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V59_2026-10-22.md`.
+`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V59_2026-10-22.md` and
+`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V60_2026-10-22.md`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
@@ -923,10 +929,10 @@ implemented and no artwork change is authorised by it.
 The review-payload housekeeping pass completed on 21 October 2026. The exact
 clean-checkout baseline failed at 53.3148 MiB; the content-addressed sweep now
 archives every review image plus JSON/JSON.GZ at or above 24 KiB, leaving HTML
-and small JSON public. After Kitchen Complete Review V59, 244 set manifests
-resolve 7,384 references to 3,216 immutable objects;
-6,071 literal page references resolve and `public/` is 49.44
-MiB, 0.83 MiB below the unchanged 50 MiB guard. Runtime
+and small JSON public. After Kitchen Complete Review V60, 245 set manifests
+resolve 7,526 references to 3,217 immutable objects;
+6,095 literal page references resolve and `public/` is 49.49
+MiB, 0.51 MiB below the unchanged 50 MiB guard. Runtime
 `public/sprites` is now 40.1033 MiB, including the 27 versioned Prime sheets.
 Use `npm run maintain:keeper-review` after any review builder; it archives,
 verifies object and manifest hashes, checks historical URL resolution and then

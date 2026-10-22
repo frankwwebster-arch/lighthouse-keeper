@@ -916,11 +916,14 @@ handoff for Standard/On/Broken and transition SFX slots is at
 [`docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md`](docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md).
 Delivery:
 [`docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md`](docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md).
-Kitchen Ligne-Claire Complete Review V59 is now the active closed review at
+Kitchen Ligne-Claire Complete Review V60 is now the active closed review at
 `/keeper-review/kitchen` (versioned route:
-`/keeper-review/kitchen-ligne-claire-complete-review-v59/index.html`). It keeps
-the complete approved V46 Kettle V47 motion/SFX presentation and treats the
-kitchen as one fitted set. Exact Cabinet V11 geometry and colours now supply
+`/keeper-review/kitchen-ligne-claire-complete-review-v60/index.html`). It keeps
+the complete approved V46 Kettle V47 motion/SFX behaviour and treats the
+kitchen as one fitted set. V60 presents that kettle approximately 20% smaller
+at native room scale while retaining its exact centre, countertop contact,
+cabinet anchor and Broken support lock; its approved PNGs remain byte-identical.
+Exact Cabinet V11 geometry and colours supply
 the common worktop, side shells and plinth around the Dishwasher V8 and
 approved-oven inserts. Cupboard-only hinges are excluded from appliance
 shells, the two control bands share one room-height baseline, and the oven's
@@ -930,11 +933,14 @@ the dark rear worktop line at placement boundaries, is replaced by a
 composite-matched dark row. Dishwasher V8's narrower fascia, failed lower-right
 hinge, attached lower-left hinge, one-ended hanging handle and separate suds
 effect remain. State behaviour, movement locking, repair, motion, SFX and
-production selectors are unchanged. V59 is unapproved and its registration
-gate remains closed. See
+production selectors are unchanged. The V60 scale/registration and inherited
+V59 fitted-carcase candidate are unapproved and the registration gate remains
+closed. See
 [`docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V8_2026-10-22.md`](docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V8_2026-10-22.md)
 and
 [`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V59_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V59_2026-10-22.md).
+V60 delivery:
+[`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V60_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V60_2026-10-22.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

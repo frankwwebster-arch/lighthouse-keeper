@@ -395,7 +395,7 @@ export default {
       },
       {
         source: '/keeper-review/kitchen',
-        destination: '/keeper-review/kitchen-ligne-claire-complete-review-v59/index.html',
+        destination: '/keeper-review/kitchen-ligne-claire-complete-review-v60/index.html',
         permanent: false,
       },
       {
@@ -476,6 +476,11 @@ export default {
       {
         source: '/keeper-review/kitchen-ligne-claire-complete-review-v59',
         destination: '/keeper-review/kitchen-ligne-claire-complete-review-v59/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/kitchen-ligne-claire-complete-review-v60',
+        destination: '/keeper-review/kitchen-ligne-claire-complete-review-v60/index.html',
         permanent: false,
       },
     ]
