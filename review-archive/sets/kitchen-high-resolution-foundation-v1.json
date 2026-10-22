@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "set": "kitchen-high-resolution-foundation-v1",
+  "page": {
+    "path": "public/keeper-review/kitchen-high-resolution-foundation-v1/index.html",
+    "sha256": "33c4c54981857b06873f0669b5f518e737b142141c7240fa1bd58f4f1160ac6d",
+    "bytes": 5825
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-high-resolution-foundation-v1/assets/kitchen-fitted-run-first-render-authority.png": {
+      "sha256": "bb37dc2e3e47c7c26649e627bae32eed04801c2e20571cbee7996d13e6e06bf2",
+      "extension": ".png",
+      "bytes": 1105081,
+      "object": "review-archive/objects/bb/bb37dc2e3e47c7c26649e627bae32eed04801c2e20571cbee7996d13e6e06bf2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bb/bb37dc2e3e47c7c26649e627bae32eed04801c2e20571cbee7996d13e6e06bf2.png"
+    }
+  }
+}

@@ -395,7 +395,12 @@ export default {
       },
       {
         source: '/keeper-review/kitchen',
-        destination: '/keeper-review/kitchen-ligne-claire-complete-review-v60/index.html',
+        destination: '/keeper-review/kitchen-high-resolution-foundation-v1/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/kitchen-high-resolution-foundation-v1',
+        destination: '/keeper-review/kitchen-high-resolution-foundation-v1/index.html',
         permanent: false,
       },
       {

@@ -15,11 +15,11 @@
   ],
   "largeDataThresholdBytes": 24576,
   "stats": {
-    "setCount": 245,
-    "referenceCount": 7526,
-    "uniqueObjectCount": 3217,
-    "logicalBytes": 596728553,
-    "uniqueBytes": 244655083,
+    "setCount": 246,
+    "referenceCount": 7527,
+    "uniqueObjectCount": 3218,
+    "logicalBytes": 597833634,
+    "uniqueBytes": 245760164,
     "deduplicatedBytes": 352073470
   },
   "legacyPaths": {
@@ -27658,6 +27658,13 @@
       "bytes": 190195,
       "object": "review-archive/objects/69/69df58a0db864cdb02064d4b236dcb7f31e56269dde61162d5f4cb388453558b.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/69/69df58a0db864cdb02064d4b236dcb7f31e56269dde61162d5f4cb388453558b.png"
+    },
+    "/keeper-review/kitchen-high-resolution-foundation-v1/assets/kitchen-fitted-run-first-render-authority.png": {
+      "sha256": "bb37dc2e3e47c7c26649e627bae32eed04801c2e20571cbee7996d13e6e06bf2",
+      "extension": ".png",
+      "bytes": 1105081,
+      "object": "review-archive/objects/bb/bb37dc2e3e47c7c26649e627bae32eed04801c2e20571cbee7996d13e6e06bf2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bb/bb37dc2e3e47c7c26649e627bae32eed04801c2e20571cbee7996d13e6e06bf2.png"
     },
     "/keeper-review/kitchen-kettle-ligne-claire-v1/assets/candidate--kettle-broken.png": {
       "sha256": "39282cf6ac5c7fb0043969a0d894b20ec8b43e37bfcf2c2d8052376ac984e000",

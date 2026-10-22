@@ -916,9 +916,8 @@ handoff for Standard/On/Broken and transition SFX slots is at
 [`docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md`](docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md).
 Delivery:
 [`docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md`](docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md).
-Kitchen Ligne-Claire Complete Review V60 is now the active closed review at
-`/keeper-review/kitchen` (versioned route:
-`/keeper-review/kitchen-ligne-claire-complete-review-v60/index.html`). It keeps
+Kitchen Ligne-Claire Complete Review V60 remains immutable superseded evidence
+at `/keeper-review/kitchen-ligne-claire-complete-review-v60/index.html`. It keeps
 the complete approved V46 Kettle V47 motion/SFX behaviour and treats the
 kitchen as one fitted set. V60 presents that kettle approximately 20% smaller
 at native room scale while retaining its exact centre, countertop contact,
@@ -941,6 +940,23 @@ and
 [`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V59_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V59_2026-10-22.md).
 V60 delivery:
 [`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V60_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V60_2026-10-22.md).
+
+The active unapproved kitchen review is now the high-resolution whole-kitchen
+foundation at `/keeper-review/kitchen` (versioned route:
+`/keeper-review/kitchen-high-resolution-foundation-v1/index.html`). The primary
+view is the byte-exact first fitted-run render
+`exec-b28bb76f-bdd9-4d95-bae6-4d25ab665468.png`, rather than any of the later
+state-atlas experiments. It locks the chosen centred, rear-set sink, the fitted
+set composition and the expected zoom-retained sharpness. It is not itself a
+crop-ready production sheet: the basic fridge stays undercounter, all logical
+sizes and anchors stay fixed, and production redraw/extraction must preserve
+the exemplar's restrained three-dimensional warmth while avoiding cute,
+juvenile, toy-like or candy-gloss treatment. The later strict-flat
+`exec-036d9986-abce-4f47-9e6a-2896bc245f8e.png` direction is rejected as too
+harsh. Approved Kettle V47 art and
+motion, all runtime assets and all state behaviour remain unchanged. Contract
+and delivery notes:
+[`docs/KITCHEN_HIGH_RESOLUTION_FOUNDATION_V1_2026-10-22.md`](docs/KITCHEN_HIGH_RESOLUTION_FOUNDATION_V1_2026-10-22.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

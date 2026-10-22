@@ -751,9 +751,8 @@ to Claude in
 `docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md`. Delivery:
 `docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md`.
 
-Kitchen Ligne-Claire Complete Review V60 at `/keeper-review/kitchen` and
-`/keeper-review/kitchen-ligne-claire-complete-review-v60/index.html` is the
-active closed kitchen review. It retains the approved Kettle V47 art and V46
+Kitchen Ligne-Claire Complete Review V60 remains immutable superseded evidence
+at `/keeper-review/kitchen-ligne-claire-complete-review-v60/index.html`. It retains the approved Kettle V47 art and V46
 motion/SFX behaviour. The kettle remains anchored to Cabinet A rather than
 independently movable and is presented approximately 20% smaller, centred on
 the same bay x42 and seated on the same y141 support plane; approved source
@@ -773,6 +772,22 @@ motion, sound, repair locking, room layout, collision and gameplay remain unchan
 Delivery: `docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V8_2026-10-22.md` and
 `docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V59_2026-10-22.md` and
 `docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V60_2026-10-22.md`.
+
+The active unapproved kitchen review is High-resolution Foundation V1 at
+`/keeper-review/kitchen` (versioned route
+`/keeper-review/kitchen-high-resolution-foundation-v1/index.html`). Its sole
+primary composition view is the byte-exact `2203 × 714` first fitted-run render
+`exec-b28bb76f-bdd9-4d95-bae6-4d25ab665468.png`, selected for its centred,
+rear-set sink, coherent fitted-set relationships and retained detail under
+zoom. It is also the kitchen style exemplar: retain its warmth and restrained
+three-dimensional modelling, with an adult cinematic ligne-claire tone rather
+than the later `exec-036d9986-abce-4f47-9e6a-2896bc245f8e.png` exploration's
+harsh schematic flatness. Later state atlases are diagnostic history only. The
+selected image is not a crop-ready sprite sheet: the basic fridge remains
+undercounter, game geometry and anchors stay fixed, and production assets must
+avoid cute, juvenile, toy-like or candy-gloss treatment. Approved Kettle V47
+art/motion, runtime assets and state behaviour remain unchanged. Contract and delivery:
+`docs/KITCHEN_HIGH_RESOLUTION_FOUNDATION_V1_2026-10-22.md`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
