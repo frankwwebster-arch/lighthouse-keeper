@@ -19,20 +19,22 @@ recorded contact-beard masks. V16 and the current runtime remain immutable
 until this correction is explicitly approved.
 
 The current versioned review batch is
-`/prime-keeper-animation-drafts-v8` (also served at
+`/prime-keeper-animation-drafts-v9` (also served at
 `/prime-keeper-animation-drafts`). It contains ten independently redraftable
-sequences and 162 frame occurrences. V8 preserves V3's lift omission, brighter
+sequences and 162 frame occurrences. V9 preserves V3's lift omission, brighter
 passive front/back jumpers and accurate seated-route title. Frank rejected the
 V4 rear-task amendment because detached black fragments returned and its
 moving hem was cut across a second fixed hem, then rejected V5 because its hard
 waist cut made the result worse, then rejected V6 because the generated lower
 jumper still contained two ribbed bands in every affected frame. V7 removed
 the duplicate but was rejected because its row-180 join made both side outlines
-step inward. V8 changes only rear-task positions 11–31: the complete moving
-torso and its single natural hem stay byte-identical through row 213, then exact
-approved rear-authority trousers meet the same per-frame outline. These V8
+step inward. V8 corrected the outline but exposed a fixed dark trouser edge
+directly beneath the moving hem, recreating a second seam. V9 changes only
+rear-task positions 11–31: the complete moving torso and hem stay exact through
+row 213, the fixed waistband edge is occluded, and approved rear-authority
+trousers retain the same per-frame outline. These V9
 corrections remain review-only and have not replaced the installed runtime
-sprites. V1–V7 remain
+sprites. V1–V8 remain
 immutable.
 
 The next work is not one undifferentiated art list:
@@ -75,7 +77,7 @@ the reaction batch is counted by motion family rather than by line of dialogue.
 
 ## Recommended next batch
 
-Review the ten V8 sequences first. On approval, register object planes and
+Review the ten V9 sequences first. On approval, register object planes and
 promote only accepted action frames or accepted composite choreography. Then
 complete the P0 ladder/darts/left-seat consumers and continue P1 in this order:
 fridge snack/eat, toast and serving; bed entry/sleep/exit; basin and loo;
