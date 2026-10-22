@@ -916,9 +916,9 @@ handoff for Standard/On/Broken and transition SFX slots is at
 [`docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md`](docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md).
 Delivery:
 [`docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md`](docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md).
-Kitchen Ligne-Claire Complete Review V52 is now the active closed review at
+Kitchen Ligne-Claire Complete Review V53 is now the active closed review at
 `/keeper-review/kitchen` (versioned route:
-`/keeper-review/kitchen-ligne-claire-complete-review-v52/index.html`). It keeps
+`/keeper-review/kitchen-ligne-claire-complete-review-v53/index.html`). It keeps
 the complete V46 Kettle V47 motion/SFX workbench and changes only the rejected
 Dishwasher V4. V4 is rejected because its flat simplified drawing remained
 profoundly different from the approved oven and still exposed turquoise pixels
@@ -929,13 +929,13 @@ controlled black contours, saturated blue structure and orange/copper hardware.
 The generated face contains no worktop. Exact approved Cabinet V3 pixels supply
 the complete worktop through row `16` and both under-overhang cabinet shoulders
 through row `29`. The primary evidence shows the cabinet–dishwasher–oven run
-clean at native origins before any diagnostic ghost. V52's normalised JavaScript is
+clean at native origins before any diagnostic ghost. V53's normalised JavaScript is
 byte-identical to V46, so the approved kettle motion/SFX presentation carries
 forward exactly while Dishwasher V5 remains the sole unapproved visual
 candidate. The registration/promotion gate remains closed. See
 [`docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V5_2026-10-22.md`](docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V5_2026-10-22.md)
 and
-[`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V52_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V52_2026-10-22.md).
+[`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V53_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V53_2026-10-22.md). V53 differs from V52 only by correcting the inherited rollback sentence.
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
