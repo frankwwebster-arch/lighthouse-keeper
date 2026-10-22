@@ -24,10 +24,6 @@
       "role": "support",
       "appear": "symbol-water-droplets"
     },
-    "net": {
-      "picture": "fishing-landing-net",
-      "role": "support"
-    },
     "creel": {
       "picture": "fishing-creel-basket",
       "role": "support"
@@ -90,7 +86,7 @@
       "toStep": 7
     },
     {
-      "picture": "fishing-bait",
+      "picture": "fishing-landing-net",
       "at": "orbit",
       "fromStep": 2,
       "toStep": 7
@@ -124,5 +120,5 @@
       "kind": "completion"
     }
   ],
-  "notes": "Draft by Claude, 22 Oct 2026, from Frank's ticked recipe list. Calm sea, the float plops onto it and bobs, a long wait (a question mark), then a bite: the fish leaps out in its place with an exclamation and a splash, the creel comes and the fish drops in. The rod, bait, tackle box and stool circle."
+  "notes": "Draft by Claude, 22 Oct 2026, from Frank's ticked recipe list. Calm sea, the float plops onto it and bobs, a long wait (a question mark), then a bite: the fish leaps out in its place with an exclamation and a splash, the creel comes and the fish drops in. The rod, landing net, tackle box and stool circle."
 }

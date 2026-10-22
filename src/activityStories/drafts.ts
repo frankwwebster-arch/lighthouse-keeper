@@ -21,6 +21,12 @@ import toast from '../../data/activity-stories/stories/toast.json'
 import sweep from '../../data/activity-stories/stories/sweep.json'
 import cleanLoo from '../../data/activity-stories/stories/clean-loo.json'
 import harvest from '../../data/activity-stories/stories/harvest.json'
+import dishwasher from '../../data/activity-stories/stories/dishwasher.json'
+import mop from '../../data/activity-stories/stories/mop.json'
+import dusting from '../../data/activity-stories/stories/dusting.json'
+import laundry from '../../data/activity-stories/stories/laundry.json'
+import planting from '../../data/activity-stories/stories/planting.json'
+import fishing from '../../data/activity-stories/stories/fishing.json'
 import styleReview from '../../data/activity-stories/style-review.json'
 import { cleanStory, type Library, type Story, type StyleReview } from './format'
 
@@ -40,6 +46,12 @@ export const STORY_FILES = {
   sweep,
   'clean-loo': cleanLoo,
   harvest,
+  dishwasher,
+  mop,
+  dusting,
+  laundry,
+  planting,
+  fishing,
 } as const
 
 export const STORY_DRAFTS: Story[] = Object.values(STORY_FILES).map((s) => cleanStory(s)).filter((s): s is Story => !!s)
