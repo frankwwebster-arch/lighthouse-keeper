@@ -1847,6 +1847,16 @@ that's done, had enough of refining it.” V17 is an approval-only pack: it pins
 the exact V16 register, rig, page and four frame hashes without duplicating art
 or changing Final/runtime/production.
 
+The reversible V18 correction is
+`/keeper-review/keeper-prime-stair-ascent-v18/`. It responds to Frank's report
+that the bottom of the beard jumps during ascent. V16 remains immutable; V18
+changes only recorded lower-beard masks in the two contact drawings, copying
+the exact approved passing-left beard pixels. The two passing drawings are
+byte-identical. All four beard cores now have 1,685 pixels and identical
+x=79..132, y=97..157 source bounds. The 27-frame route, timing, root positions,
+contacts, other body pixels, palette and geometry remain exact. Runtime and
+production are unchanged pending explicit approval.
+
 For the later staircase build, retain the approved fourteen-riser, 7-lp-tread,
 98 × 60-lp flight and add exactly two newel posts, at the lower entrance and
 upper landing. Join them with a continuous handrail over a foreground

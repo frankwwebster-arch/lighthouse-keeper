@@ -1,0 +1,18 @@
+{
+  "schema": "lighthouse-keeper/prime-stair-ascent@18",
+  "status": "beard-continuity-correction-awaiting-review",
+  "scope": "Correct only the contact-pose lower beards while retaining the exact approved V16 stair choreography.",
+  "promoted": false,
+  "immutableAuthority": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/batch-register.json",
+  "unchanged": {
+    "timeline": true,
+    "timing": true,
+    "rootPositions": true,
+    "stairContacts": true,
+    "bodyPosesOutsideMasks": true,
+    "palette": true,
+    "cellGeometry": true,
+    "runtime": true,
+    "production": true
+  }
+}

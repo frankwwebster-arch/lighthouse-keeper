@@ -12,6 +12,12 @@ loop. Approved front/side/back turns now bridge rear work and seating; TV,
 nature TV, armchair nap, reading and piano use side sit → hold → stand; diary
 uses turn → back sit → hold → stand → turn.
 
+Stair ascent has one open corrective review: V18 normalises the lower beard
+across its four unique drawings after a visible contact/passing jump was found.
+It preserves the complete approved V16 choreography and changes only two
+recorded contact-beard masks. V16 and the current runtime remain immutable
+until this correction is explicitly approved.
+
 The current versioned review batch is
 `/prime-keeper-animation-drafts-v2` (also served at
 `/prime-keeper-animation-drafts`). It contains ten independently redraftable

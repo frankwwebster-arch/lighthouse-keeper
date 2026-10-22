@@ -1112,7 +1112,19 @@ edge and retains 1.59-lp stair clearance; the detached flesh remnant is removed
 from LEFT contact; and RIGHT contact receives a complete forward-boot toecap
 without changing its sole/contact row. Frank accepted exact V16 on 15 October
 2026; the no-art V17 approval pack pins its four images, 27-frame rig and page.
-Nothing is wired into runtime yet.
+V16 was subsequently packaged into the Prime runtime bank as the active stair
+ascent, pending any later approved corrective artwork.
+
+The reversible beard-continuity correction is
+`/keeper-review/keeper-prime-stair-ascent-v18/`. Review revealed that V16's
+two contact drawings and two passing drawings used different lower-beard
+silhouettes, producing a visible jump during playback. V18 leaves immutable
+V16 untouched and changes only recorded beard masks in the two contact
+drawings. All four drawings now share the exact approved passing-pose beard
+core (1,685 pixels; source bounds x=79..132, y=97..157). The full 27-frame
+timeline, timing, root positions, stair contacts, body pixels outside the
+masks, palette and cell geometry are unchanged. V18 is review-only and has not
+been promoted into the runtime or production bank.
 
 The later staircase scenery must use two newel posts—one at the lower entrance
 and one at the upper landing—with a foreground balustrade and continuous

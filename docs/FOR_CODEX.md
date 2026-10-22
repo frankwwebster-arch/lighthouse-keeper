@@ -616,6 +616,15 @@ The no-art V17 approval pack pins all four frame hashes, the 27-frame rig and
 the review-page hash. Approval permits later Final preparation but performs no
 runtime or production promotion.
 
+The current corrective review is
+`/keeper-review/keeper-prime-stair-ascent-v18/`. Frank identified a visible
+lower-beard jump between V16's contact and passing drawings. V18 preserves V16
+as immutable authority and uses a deterministic recorded mask to transplant
+the exact approved passing-left beard into the two contact drawings. All four
+drawings therefore share the same 1,685-pixel beard core and x=79..132,
+y=97..157 source bounds. Timing, root motion, stair contacts, other body art,
+palette and cell geometry are unchanged. V18 is not approved or promoted.
+
 The staircase scenery is a separate later review gate. It must have exactly two
 newel posts (lower entrance and upper landing), a foreground open-side
 balustrade with regularly spaced balusters and one continuous handrail. The

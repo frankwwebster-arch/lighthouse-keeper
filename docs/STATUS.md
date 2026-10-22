@@ -202,6 +202,9 @@ actively uses Prime side idle, walk start/cycle/stop, stair ascent/descent and
 generic rear work. Turns, ladder, four-way sit/stand and darts are installed
 but await gameplay choreography. The legacy Workbench Final lane remains
 untouched because this promotion has its own hash-pinned register and draft.
+Stair-ascent V18 is now a separate corrective review after Frank identified a
+contact/passing lower-beard jump in the approved V16 source. It modifies only
+two recorded beard masks and has not replaced the V16-derived runtime asset.
 
 The consolidated Prime Keeper animation library is now available at
 `/prime-keeper-animations`. It indexes 14 approved playable authorities across
