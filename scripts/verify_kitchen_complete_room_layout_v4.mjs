@@ -126,4 +126,9 @@ assert.equal(fs.existsSync(path.join(root, 'public/keeper-review/kitchen-complet
 const config = fs.readFileSync(path.join(root, 'next.config.mjs'), 'utf8')
 assert.ok(config.includes("source: '/keeper-review/kitchen-complete-room-layout-v4'"))
 assert.ok(config.includes("destination: '/keeper-review/kitchen-complete-room-layout-v4/index.html'"))
-console.log('Kitchen Complete Room Layout V4 verification passed: exact grid slots, direct master atlas, and three synchronized healing views.')
+const archiveRoute = fs.readFileSync(path.join(root, 'src/app/keeper-review/[set]/assets/[asset]/route.ts'), 'utf8')
+assert.ok(
+  archiveRoute.includes("'kitchen-complete-room-layout-v4'"),
+  'V4 atlas must be served through the same-origin integrity-checking archive proxy',
+)
+console.log('Kitchen Complete Room Layout V4 verification passed: exact grid slots, direct same-origin master atlas, and three synchronized healing views.')

@@ -217,7 +217,9 @@ placement. The visual support lines (`y=141` counter, `y=208` floor) are not
 the Keeper walking/interaction plane (`y=218`). Kettle/toaster cannot share a
 counter slot or sit above the sink/hob; bin/chair/table occupy distinct floor
 sections. This contract is kitchen-specific: every other room must declare and
-verify its own grid rather than inheriting these coordinates implicitly.
+verify its own grid rather than inheriting these coordinates implicitly. V4's
+single archived atlas must remain in the same-origin proxy allowlist: direct
+browser redirects to GitHub's raw-file host failed in Frank's session.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 

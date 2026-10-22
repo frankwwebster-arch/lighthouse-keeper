@@ -865,7 +865,9 @@ centres; all expose the established `y=218` Keeper anchor independently of the
 `y=141`/`y=208` artwork supports. The contract and verifier are in
 `data/kitchen_room_grid_contract_v1.json` and
 `docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V4_2026-10-22.md`. Other rooms retain their
-own declared grids. Nothing is promoted or wired.
+own declared grids. Its one content-addressed atlas now passes through the
+same-origin integrity-checking archive proxy, after the direct GitHub redirect
+proved unreliable in Frank's browser. Nothing is promoted or wired.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

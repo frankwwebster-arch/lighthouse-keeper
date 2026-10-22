@@ -85,6 +85,10 @@ stronger silhouette decisions at game scale.
   against the complete V3 atlas.
 - Five existing healing templates are appended; the page still makes one
   unique image request and unlocks only after it decodes.
+- The archived atlas is streamed through the Lighthouse Keeper origin with
+  byte-count and SHA-256 verification. The browser is not redirected to
+  GitHub, so review loading does not depend on direct access to GitHub's raw
+  asset host.
 - Fitted geometry, appliance states, Broken locks, source art, runtime,
   production selectors and Kettle V47 are unchanged.
 - No artwork or placement contract is promoted by this page.
