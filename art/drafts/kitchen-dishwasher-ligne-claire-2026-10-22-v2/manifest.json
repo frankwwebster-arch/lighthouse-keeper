@@ -1,0 +1,652 @@
+{
+  "schema": "lighthouse-keeper/kitchen-dishwasher-ligne-claire@2",
+  "set": "kitchen-dishwasher-ligne-claire-v2",
+  "created": "2026-10-22",
+  "status": "immutable-review-candidate-not-approved-not-registered",
+  "sourceAuthority": {
+    "set": "kitchen-dishwasher-workbench-v41",
+    "approval": "docs/review/kitchen-dishwasher-workbench-v41-approval-2026-10-20.json",
+    "approvalSha256": "f079fc0b09d6221f9e13d15a678c15ad5315c7e535be75cb94f71e98988679f2",
+    "preserved": true
+  },
+  "visualAuthority": {
+    "asset": "art/drafts/kitchen-oven-ligne-claire-2026-10-21-v8/masters/oven-on-top-safe-master-8x.png",
+    "sha256": "42ba118f4072e2fbd83069039a51ac09255d865aff871acf3f9ca68efb9f52bb"
+  },
+  "corrections": [
+    "restored exact V41 panel placement",
+    "same panel geometry in every state",
+    "restored tiny lamp to the right of selector",
+    "removed V1 black worktop band",
+    "steeper Broken handle angle explicitly authorised by Frank",
+    "exact V41 approved cabinet-run worktop rows preserved byte-for-byte"
+  ],
+  "authorizedGeometryChange": "Broken handle right attachment rotated downward; door, carcass and all other geometry remain V41-locked",
+  "records": [
+    {
+      "state": "off",
+      "suffix": "",
+      "filename": "dishwasher-off.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off.png",
+      "sourceSha256": "d006ccfa83bf5c754a7f1249d3969ffe464d3853a15131f64cf0c48d8239b31d",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "07532f7fc7d627930af0b89cdb8e1d99fddc24365487a6c85de3ce36a3add087",
+      "masterFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/masters/dishwasher-off-master-16x.png",
+      "masterSha256": "08fe219a1b6b2f8b088bac7ec8f85ab8bdc368bacc3bfce3f3de9c3290c9a6c2",
+      "masterPixels": [
+        1568,
+        1312
+      ],
+      "candidateFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/candidates/dishwasher-off.png",
+      "candidateSha256": "3937102b6ae1cbd5c23029a31014d7ac76df4f77731a5e694e395f6b5b98bb01",
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaSha256": "07532f7fc7d627930af0b89cdb8e1d99fddc24365487a6c85de3ce36a3add087",
+      "alphaExact": true
+    },
+    {
+      "state": "off",
+      "suffix": "-le-re",
+      "filename": "dishwasher-off-le-re.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off-le-re.png",
+      "sourceSha256": "d006ccfa83bf5c754a7f1249d3969ffe464d3853a15131f64cf0c48d8239b31d",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "07532f7fc7d627930af0b89cdb8e1d99fddc24365487a6c85de3ce36a3add087",
+      "masterFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/masters/dishwasher-off-le-re-master-16x.png",
+      "masterSha256": "08fe219a1b6b2f8b088bac7ec8f85ab8bdc368bacc3bfce3f3de9c3290c9a6c2",
+      "masterPixels": [
+        1568,
+        1312
+      ],
+      "candidateFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/candidates/dishwasher-off-le-re.png",
+      "candidateSha256": "3937102b6ae1cbd5c23029a31014d7ac76df4f77731a5e694e395f6b5b98bb01",
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaSha256": "07532f7fc7d627930af0b89cdb8e1d99fddc24365487a6c85de3ce36a3add087",
+      "alphaExact": true
+    },
+    {
+      "state": "off",
+      "suffix": "-le-rj",
+      "filename": "dishwasher-off-le-rj.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off-le-rj.png",
+      "sourceSha256": "b26d295f09e74a589feeb548cd3a90906ad832288ed2b68083f7129256664241",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "17ff412f62bfa1c56519ce6476c689faa480e5ad6fb36c8e2b7037c2185f50b9",
+      "masterFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/masters/dishwasher-off-le-rj-master-16x.png",
+      "masterSha256": "2e70fbd4518e5a29a785872284cb90f620336ca5888a084023bcec01d0696110",
+      "masterPixels": [
+        1568,
+        1312
+      ],
+      "candidateFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/candidates/dishwasher-off-le-rj.png",
+      "candidateSha256": "abebce622d788eed2bd1b5350af1512a21f9cbde5ef4546657a8be359df0021b",
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaSha256": "17ff412f62bfa1c56519ce6476c689faa480e5ad6fb36c8e2b7037c2185f50b9",
+      "alphaExact": true
+    },
+    {
+      "state": "off",
+      "suffix": "-lj-re",
+      "filename": "dishwasher-off-lj-re.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off-lj-re.png",
+      "sourceSha256": "69fb2c3f0c165a5d5653508a901983126ef05084997d60afc75aabcf53b5da53",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "1660eb7f557c998568f4ccb094f206d26823eec55359ed0530068a029b96d31f",
+      "masterFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/masters/dishwasher-off-lj-re-master-16x.png",
+      "masterSha256": "2816fb1c43d079019cd1176e11937ff979bf1359c2479932cc4ed4e680d5adf3",
+      "masterPixels": [
+        1568,
+        1312
+      ],
+      "candidateFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/candidates/dishwasher-off-lj-re.png",
+      "candidateSha256": "d2da05699a983ab9dc4773ba89474fc5b26ec8b1aa93903493bb28ded1e6e68a",
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaSha256": "1660eb7f557c998568f4ccb094f206d26823eec55359ed0530068a029b96d31f",
+      "alphaExact": true
+    },
+    {
+      "state": "off",
+      "suffix": "-lj-rj",
+      "filename": "dishwasher-off-lj-rj.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off-lj-rj.png",
+      "sourceSha256": "5cc2ecfa87fe1fe54e97ced54ee3bc8a1124d47076da151301b75c3ca5fd1bc3",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "16f4092ffa1b00d48fb8f7795834a417a106e25fb6932576ef499b78ea603f20",
+      "masterFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/masters/dishwasher-off-lj-rj-master-16x.png",
+      "masterSha256": "b35064312bbbf0b873ef17bc3169d5c2f28ac6cb974637325ffc2063014a5755",
+      "masterPixels": [
+        1568,
+        1312
+      ],
+      "candidateFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/candidates/dishwasher-off-lj-rj.png",
+      "candidateSha256": "4adf67927e3c5693df94cb9b710cb1276648c554a47e740ef5a2ff56ff5e8837",
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaSha256": "16f4092ffa1b00d48fb8f7795834a417a106e25fb6932576ef499b78ea603f20",
+      "alphaExact": true
+    },
+    {
+      "state": "on",
+      "suffix": "",
+      "filename": "dishwasher-on.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on.png",
+      "sourceSha256": "f7a8976bc9cfaf83feb443a65c8b20bf075bff821a4053be5ace71fecb124953",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "95e3f93d35e9897facda5e822e3b89e998581470e3960af9f56214024492c14c",
+      "masterFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/masters/dishwasher-on-master-16x.png",
+      "masterSha256": "ecbfed60220cfc30f0d28b9ae9eab2d5f142e747a4bc9cf3b8aeda31ab0d920c",
+      "masterPixels": [
+        1568,
+        1312
+      ],
+      "candidateFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/candidates/dishwasher-on.png",
+      "candidateSha256": "28ab9c0fbd220a8bbe77d173d6710fab62727ad8b85294423705c17acf36ca74",
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaSha256": "95e3f93d35e9897facda5e822e3b89e998581470e3960af9f56214024492c14c",
+      "alphaExact": true
+    },
+    {
+      "state": "on",
+      "suffix": "-le-re",
+      "filename": "dishwasher-on-le-re.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on-le-re.png",
+      "sourceSha256": "f7a8976bc9cfaf83feb443a65c8b20bf075bff821a4053be5ace71fecb124953",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "95e3f93d35e9897facda5e822e3b89e998581470e3960af9f56214024492c14c",
+      "masterFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/masters/dishwasher-on-le-re-master-16x.png",
+      "masterSha256": "ecbfed60220cfc30f0d28b9ae9eab2d5f142e747a4bc9cf3b8aeda31ab0d920c",
+      "masterPixels": [
+        1568,
+        1312
+      ],
+      "candidateFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/candidates/dishwasher-on-le-re.png",
+      "candidateSha256": "28ab9c0fbd220a8bbe77d173d6710fab62727ad8b85294423705c17acf36ca74",
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaSha256": "95e3f93d35e9897facda5e822e3b89e998581470e3960af9f56214024492c14c",
+      "alphaExact": true
+    },
+    {
+      "state": "on",
+      "suffix": "-le-rj",
+      "filename": "dishwasher-on-le-rj.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on-le-rj.png",
+      "sourceSha256": "256b9c5b960c1edd262f9461bd71e252ed473b4125a082a9ce748a97b9e6beee",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "143689f38f07dda1db7b1fb4a0ac36996ff4ebb97b38fbbefc4eaff1187b9c8f",
+      "masterFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/masters/dishwasher-on-le-rj-master-16x.png",
+      "masterSha256": "72cce0ba29272318d9f3f22ae7415b9bc8f758d40c25ad613d8e93eeefd4f7cf",
+      "masterPixels": [
+        1568,
+        1312
+      ],
+      "candidateFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/candidates/dishwasher-on-le-rj.png",
+      "candidateSha256": "0d73a9b30be634725e7246e03eeee7566db9acbbd7a9f66cb92455eab45a114b",
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaSha256": "143689f38f07dda1db7b1fb4a0ac36996ff4ebb97b38fbbefc4eaff1187b9c8f",
+      "alphaExact": true
+    },
+    {
+      "state": "on",
+      "suffix": "-lj-re",
+      "filename": "dishwasher-on-lj-re.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on-lj-re.png",
+      "sourceSha256": "72861c9f53167c831e72800deefd67e5fe0d1c86fcf9d98e1ea65d1b779334e1",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "409de84f21f6930b2141f145a80ae0cd62401e58f2ec925c1f9c17a8c88e1833",
+      "masterFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/masters/dishwasher-on-lj-re-master-16x.png",
+      "masterSha256": "779b23075c7372bad7e5b7190eb3bec35bea69a91350c88485515d7eafc98a03",
+      "masterPixels": [
+        1568,
+        1312
+      ],
+      "candidateFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/candidates/dishwasher-on-lj-re.png",
+      "candidateSha256": "3d04bd02c874f174f2a88333a964693b8d56b5a3eae6d3b2921bbcc77c1aeba1",
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaSha256": "409de84f21f6930b2141f145a80ae0cd62401e58f2ec925c1f9c17a8c88e1833",
+      "alphaExact": true
+    },
+    {
+      "state": "on",
+      "suffix": "-lj-rj",
+      "filename": "dishwasher-on-lj-rj.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on-lj-rj.png",
+      "sourceSha256": "53310feca0aff82aca07d6d6ba401b24fc9912e70b5614e3648401f2dd7e6296",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "3a449d14e867350f2f0bdd9e6cb74ac621ceccc1f8140c1274e70fcf5db33822",
+      "masterFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/masters/dishwasher-on-lj-rj-master-16x.png",
+      "masterSha256": "00b230140bde61b466bfe80bee792c1e7d4d555db871552facbf307800b2f831",
+      "masterPixels": [
+        1568,
+        1312
+      ],
+      "candidateFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/candidates/dishwasher-on-lj-rj.png",
+      "candidateSha256": "be0844234464e80883a11795c5e823e29d67e241106029d48c3dff70053aef7a",
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaSha256": "3a449d14e867350f2f0bdd9e6cb74ac621ceccc1f8140c1274e70fcf5db33822",
+      "alphaExact": true
+    },
+    {
+      "state": "broken",
+      "suffix": "",
+      "filename": "dishwasher-broken.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken.png",
+      "sourceSha256": "061aad8aa14ee97a8cf8b239820a3a8cba8ba5766975ac4a1fa1142762511616",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "sourceAlphaSha256": "86daaeb2d741b0d5eddf5758b5320d7bb526c51c79f933c9fd58def7f03e42d1",
+      "masterFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/masters/dishwasher-broken-master-16x.png",
+      "masterSha256": "9e6e6e11e7dab3a9cd4723b13ba612c9528f5f5ecb0ca327b268bff01ac18c21",
+      "masterPixels": [
+        1568,
+        1312
+      ],
+      "candidateFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/candidates/dishwasher-broken.png",
+      "candidateSha256": "2ad76fa71fa81aeced5f297541d571e5598a8980c897db845c1aaffd8a589399",
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "candidateAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "candidateAlphaSha256": "86daaeb2d741b0d5eddf5758b5320d7bb526c51c79f933c9fd58def7f03e42d1",
+      "alphaExact": true
+    },
+    {
+      "state": "broken",
+      "suffix": "-le-re",
+      "filename": "dishwasher-broken-le-re.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken-le-re.png",
+      "sourceSha256": "061aad8aa14ee97a8cf8b239820a3a8cba8ba5766975ac4a1fa1142762511616",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "sourceAlphaSha256": "86daaeb2d741b0d5eddf5758b5320d7bb526c51c79f933c9fd58def7f03e42d1",
+      "masterFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/masters/dishwasher-broken-le-re-master-16x.png",
+      "masterSha256": "9e6e6e11e7dab3a9cd4723b13ba612c9528f5f5ecb0ca327b268bff01ac18c21",
+      "masterPixels": [
+        1568,
+        1312
+      ],
+      "candidateFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/candidates/dishwasher-broken-le-re.png",
+      "candidateSha256": "2ad76fa71fa81aeced5f297541d571e5598a8980c897db845c1aaffd8a589399",
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "candidateAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "candidateAlphaSha256": "86daaeb2d741b0d5eddf5758b5320d7bb526c51c79f933c9fd58def7f03e42d1",
+      "alphaExact": true
+    },
+    {
+      "state": "broken",
+      "suffix": "-le-rj",
+      "filename": "dishwasher-broken-le-rj.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken-le-rj.png",
+      "sourceSha256": "9e0cbf5e8bfb7ddaef0fb9c43c1e73fec6cc2f633ad3232eb44bfe23ddff08c6",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "sourceAlphaSha256": "1fc259acec15e94e646353ab08dc72a3cbfc6df79af25244cc9d0529a34b7e9e",
+      "masterFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/masters/dishwasher-broken-le-rj-master-16x.png",
+      "masterSha256": "ab109f624f46ba5d5b6346d70621d7b0e640a5be70e43410445d4bbe2367d66b",
+      "masterPixels": [
+        1568,
+        1312
+      ],
+      "candidateFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/candidates/dishwasher-broken-le-rj.png",
+      "candidateSha256": "c4cc5724019d3304819c2404a8723e99c629a0f4ef01c93989d681be81a43f5e",
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "candidateAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "candidateAlphaSha256": "1fc259acec15e94e646353ab08dc72a3cbfc6df79af25244cc9d0529a34b7e9e",
+      "alphaExact": true
+    },
+    {
+      "state": "broken",
+      "suffix": "-lj-re",
+      "filename": "dishwasher-broken-lj-re.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken-lj-re.png",
+      "sourceSha256": "65859526d5ee0c93bb929e0532e3402b922ef8b84347f265cfa273112170a271",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "sourceAlphaSha256": "c86ace2c06e9c589ce07425bd6a1eed891c39d04dea65ac89e3fdf087188ac20",
+      "masterFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/masters/dishwasher-broken-lj-re-master-16x.png",
+      "masterSha256": "0f1219fe28896cafc124d626447d413d0383d9a5ebea6fe2167380dee5b4bceb",
+      "masterPixels": [
+        1568,
+        1312
+      ],
+      "candidateFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/candidates/dishwasher-broken-lj-re.png",
+      "candidateSha256": "169c58e45b7bf1235d4838a48b52c8f5a44afc21f62fa94c6e7699f4099e8c22",
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "candidateAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "candidateAlphaSha256": "c86ace2c06e9c589ce07425bd6a1eed891c39d04dea65ac89e3fdf087188ac20",
+      "alphaExact": true
+    },
+    {
+      "state": "broken",
+      "suffix": "-lj-rj",
+      "filename": "dishwasher-broken-lj-rj.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken-lj-rj.png",
+      "sourceSha256": "8c3fe277f4d269beee18879104c2a478d6ef1f5c1e9db138bce30ddde4d268e1",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "sourceAlphaSha256": "80e3db453d488bf4dcb4aba5f51fba6cdb37a2e775591f6c5beaa1e9e6abca59",
+      "masterFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/masters/dishwasher-broken-lj-rj-master-16x.png",
+      "masterSha256": "4a567310226e5447fdae0ca0eaf67029e71a9d6c76a3930b0eae8e1459b8b3dd",
+      "masterPixels": [
+        1568,
+        1312
+      ],
+      "candidateFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/candidates/dishwasher-broken-lj-rj.png",
+      "candidateSha256": "c77e862b98141c08b48c6ca6a8b94dfbce9d6531d60164a4c3b5be65d1d20b66",
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "candidateAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "candidateAlphaSha256": "80e3db453d488bf4dcb4aba5f51fba6cdb37a2e775591f6c5beaa1e9e6abca59",
+      "alphaExact": true
+    }
+  ],
+  "generatedReferences": [
+    {
+      "file": "art/raw/kitchen-dishwasher-ligne-claire-references-2026-10-22-v2/dishwasher-broken-handle-angle-imagegen-reference.png",
+      "sha256": "aad4cd7ca30aea5ef68adc84b8907679f94afacca6996120566f99a12fe52ac2",
+      "role": "visual reference only; not registered directly"
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-ligne-claire-references-2026-10-22-v2/dishwasher-broken-imagegen-reference.png",
+      "sha256": "f96cdae33a9e7e74b46b3f5c22216c9c53fb3bbb7ce643c5981c3b5ae90cf36b",
+      "role": "visual reference only; not registered directly"
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-ligne-claire-references-2026-10-22-v2/dishwasher-off-imagegen-reference.png",
+      "sha256": "a5688c7ef03411224c8ff23d86551e29d001abd62fd36341dd4097ee9621f4cc",
+      "role": "visual reference only; not registered directly"
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-ligne-claire-references-2026-10-22-v2/dishwasher-on-imagegen-reference.png",
+      "sha256": "d2d5ca4b5394123b19afed92c735e216d05dc852fa09ebb0c9a0fd904452f980",
+      "role": "visual reference only; not registered directly"
+    }
+  ],
+  "evidence": [
+    {
+      "file": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/evidence/dishwasher-v41-v2-ghost.png",
+      "sha256": "1f00fdbe6e6f1606771c197b048547aa088e25bfd0fc93461c016b40e8a3db98"
+    },
+    {
+      "file": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/evidence/dishwasher-control-panel-invariance.png",
+      "sha256": "465ee2c3a4a5fb5412995baad2abf1add2f41d9d7e6654e31949e6cdfa7b9d66"
+    },
+    {
+      "file": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/evidence/dishwasher-64px-proof.png",
+      "sha256": "2c31b9c2a5bcf9fd58ba7cc94928932513a280eea2cc9d09f418053a517ccb4c"
+    },
+    {
+      "file": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v2/evidence/dishwasher-worktop-run-ghost.png",
+      "sha256": "f9d20d9a6e58ffe388e94ab74c68e6e8669f1009110cd51eef33f86c176bbc15"
+    }
+  ],
+  "verification": {
+    "canvasExact": true,
+    "alphaExact": true,
+    "panelCoordinatesInvariant": true,
+    "countertopRowsFourToFifteenExact": true,
+    "movementAnimationInteractionHealingRuntimeChanged": false
+  },
+  "registration": {
+    "register": false,
+    "promote": false,
+    "currentSelectorChanges": [],
+    "productionWrites": [],
+    "approvalRequired": true
+  },
+  "rollback": "Discard only this V2 pack, archive set and review shell; V1, V41 and production remain byte-for-byte unchanged."
+}

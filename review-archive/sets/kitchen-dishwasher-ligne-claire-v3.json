@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "set": "kitchen-dishwasher-ligne-claire-v3",
+  "page": {
+    "path": "public/keeper-review/kitchen-dishwasher-ligne-claire-v3/index.html",
+    "sha256": "22e89252644f9f4a76f549d01931c356f25335863edb83887e6c71ec738e13ec",
+    "bytes": 3968
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-dishwasher-ligne-claire-v3/assets/candidate--dishwasher-broken.png": {
+      "sha256": "9e750d0d3a41bfcc138e03a1d52fa26bbad9cc04123cd98fd0433be6df103b0a",
+      "extension": ".png",
+      "bytes": 9524,
+      "object": "review-archive/objects/9e/9e750d0d3a41bfcc138e03a1d52fa26bbad9cc04123cd98fd0433be6df103b0a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9e/9e750d0d3a41bfcc138e03a1d52fa26bbad9cc04123cd98fd0433be6df103b0a.png"
+    },
+    "/keeper-review/kitchen-dishwasher-ligne-claire-v3/assets/candidate--dishwasher-off.png": {
+      "sha256": "089a6988bbf1513f45c038b1435248285979ac9751de9aa94173de952ffd4d6c",
+      "extension": ".png",
+      "bytes": 4509,
+      "object": "review-archive/objects/08/089a6988bbf1513f45c038b1435248285979ac9751de9aa94173de952ffd4d6c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/08/089a6988bbf1513f45c038b1435248285979ac9751de9aa94173de952ffd4d6c.png"
+    },
+    "/keeper-review/kitchen-dishwasher-ligne-claire-v3/assets/candidate--dishwasher-on.png": {
+      "sha256": "b6c108de12a8d54aba434eb80e1c5bd18afd0ede5c579450361c58a853d97243",
+      "extension": ".png",
+      "bytes": 4629,
+      "object": "review-archive/objects/b6/b6c108de12a8d54aba434eb80e1c5bd18afd0ede5c579450361c58a853d97243.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b6/b6c108de12a8d54aba434eb80e1c5bd18afd0ede5c579450361c58a853d97243.png"
+    },
+    "/keeper-review/kitchen-dishwasher-ligne-claire-v3/assets/current--dishwasher-broken.png": {
+      "sha256": "061aad8aa14ee97a8cf8b239820a3a8cba8ba5766975ac4a1fa1142762511616",
+      "extension": ".png",
+      "bytes": 14092,
+      "object": "review-archive/objects/06/061aad8aa14ee97a8cf8b239820a3a8cba8ba5766975ac4a1fa1142762511616.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/06/061aad8aa14ee97a8cf8b239820a3a8cba8ba5766975ac4a1fa1142762511616.png"
+    },
+    "/keeper-review/kitchen-dishwasher-ligne-claire-v3/assets/current--dishwasher-off.png": {
+      "sha256": "d006ccfa83bf5c754a7f1249d3969ffe464d3853a15131f64cf0c48d8239b31d",
+      "extension": ".png",
+      "bytes": 9696,
+      "object": "review-archive/objects/d0/d006ccfa83bf5c754a7f1249d3969ffe464d3853a15131f64cf0c48d8239b31d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d0/d006ccfa83bf5c754a7f1249d3969ffe464d3853a15131f64cf0c48d8239b31d.png"
+    },
+    "/keeper-review/kitchen-dishwasher-ligne-claire-v3/assets/current--dishwasher-on.png": {
+      "sha256": "f7a8976bc9cfaf83feb443a65c8b20bf075bff821a4053be5ace71fecb124953",
+      "extension": ".png",
+      "bytes": 9550,
+      "object": "review-archive/objects/f7/f7a8976bc9cfaf83feb443a65c8b20bf075bff821a4053be5ace71fecb124953.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f7/f7a8976bc9cfaf83feb443a65c8b20bf075bff821a4053be5ace71fecb124953.png"
+    },
+    "/keeper-review/kitchen-dishwasher-ligne-claire-v3/assets/dishwasher-64px-proof.png": {
+      "sha256": "eb1bafc051a467ac798cb19f5fc1f91933c8e1b9100650ecb626c8a2acb05347",
+      "extension": ".png",
+      "bytes": 17037,
+      "object": "review-archive/objects/eb/eb1bafc051a467ac798cb19f5fc1f91933c8e1b9100650ecb626c8a2acb05347.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/eb/eb1bafc051a467ac798cb19f5fc1f91933c8e1b9100650ecb626c8a2acb05347.png"
+    },
+    "/keeper-review/kitchen-dishwasher-ligne-claire-v3/assets/dishwasher-control-panel-invariance.png": {
+      "sha256": "0a628c57c260c33849a88e7ac4d1521c65a684dbb7bd0b5a511d6ecf07022e58",
+      "extension": ".png",
+      "bytes": 14664,
+      "object": "review-archive/objects/0a/0a628c57c260c33849a88e7ac4d1521c65a684dbb7bd0b5a511d6ecf07022e58.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0a/0a628c57c260c33849a88e7ac4d1521c65a684dbb7bd0b5a511d6ecf07022e58.png"
+    },
+    "/keeper-review/kitchen-dishwasher-ligne-claire-v3/assets/dishwasher-v41-v3-ghost.png": {
+      "sha256": "c340b1b43415b130c8ccbc3ec17fcbcba4756bc5168b14614d42ebd0bd1510a6",
+      "extension": ".png",
+      "bytes": 119970,
+      "object": "review-archive/objects/c3/c340b1b43415b130c8ccbc3ec17fcbcba4756bc5168b14614d42ebd0bd1510a6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c3/c340b1b43415b130c8ccbc3ec17fcbcba4756bc5168b14614d42ebd0bd1510a6.png"
+    },
+    "/keeper-review/kitchen-dishwasher-ligne-claire-v3/assets/dishwasher-worktop-run-ghost.png": {
+      "sha256": "bcd7d5be5bc904b0abcc2a8d5e240e6d5aca2bcbebfc48ba53cc86edf3ea760c",
+      "extension": ".png",
+      "bytes": 64042,
+      "object": "review-archive/objects/bc/bcd7d5be5bc904b0abcc2a8d5e240e6d5aca2bcbebfc48ba53cc86edf3ea760c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bc/bcd7d5be5bc904b0abcc2a8d5e240e6d5aca2bcbebfc48ba53cc86edf3ea760c.png"
+    }
+  }
+}
