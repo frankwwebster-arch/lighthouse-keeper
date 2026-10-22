@@ -22,7 +22,7 @@
     "fish": {
       "picture": "fishing-caught-fish",
       "role": "support",
-      "appear": "symbol-water-droplets"
+      "appear": "symbol-exclamation-mark"
     },
     "creel": {
       "picture": "fishing-creel-basket",
@@ -50,7 +50,7 @@
       "who": "fish",
       "onto": "float",
       "replace": true,
-      "mark": "symbol-exclamation-mark"
+      "mark": "symbol-water-droplets"
     },
     {
       "do": "present",

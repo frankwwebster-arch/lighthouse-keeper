@@ -33,7 +33,7 @@
     },
     "clean": {
       "picture": "floor-clean",
-      "role": "result",
+      "role": "hero",
       "appear": "symbol-clean-glint"
     }
   },
