@@ -1,0 +1,40 @@
+{
+  "schema": "lighthouse-keeper/kitchen-review-approval@1",
+  "set": "kitchen-kettle-bubble-authority-v47",
+  "approvedOn": "2026-10-22",
+  "approvedBy": "Frank",
+  "approvalWords": "Approve Kettle V47.",
+  "reviewCommit": "d35a4837",
+  "scope": [
+    "The exact V47 Off, On and Broken kettle art is the current approved kitchen-kettle visual authority.",
+    "Off and On retain the approved Bubble tea-kettle V2 body pixel-for-pixel after only its detached steam plume is isolated as a separate layer.",
+    "Broken retains the failed handle, fully detached airborne lid, unobstructed open top, broad dent and cracks, and the larger single enamel-loss area shown on the approved sheet.",
+    "The exact V47 room fit and the inherited V45 support slots, support plane, tea interaction, Broken movement lock, whole-body rattle, effect timing and six steam strips remain the approved review/specification contract.",
+    "Broken steam remains a separate kettle-owned effect anchored over the open top.",
+    "The immutable V47 review pack remains unchanged. This approval does not promote or wire runtime assets and does not approve a separated animated lid, configurable vibration or new sound effects; those remain a later kitchen-assets task."
+  ],
+  "hashes": {
+    "manifest": "e397089daa8cc58060772fc15e9dd8c5c106da863382ed825ffb5815bf3b1ddf",
+    "hashRegister": "e23fdc7372e0c12f9234db37314112ba0e26d313d3bfc314074c51fe962bb57f",
+    "kettleOff": "0d9b8776418bc8d26b76eb55ba82b7731d153f0ea11e730026cb4dc6a4e2abeb",
+    "kettleOn": "0d9b8776418bc8d26b76eb55ba82b7731d153f0ea11e730026cb4dc6a4e2abeb",
+    "kettleBroken": "231f7eb5f0a9d20077eede2d4264f97d71f5efd47da5303b2a1bfd83c097ef3b",
+    "approvedSteam": "66ad7390eaefad8f444b228882c426136363e02cd7bd87d7d79696cfef3fd42f",
+    "stateFamilyEvidence": "51833bcd5b81d33edd539dbe24f0ae2283c53076e9a6b431ea1b62aaf961e610",
+    "roomEvidence": "972c93dcf287c4fc7bb90004ab2ca28b085a8293aef786c034f2ffe5b0e49c7e",
+    "brokenSteamCompact": "7e89ebc3caa45275941d8c348816b36b33715fbc6a7493099c202a8b52af9422",
+    "brokenSteamRegular": "0c7c1b9c65fadda2379afbf95e0e310942540bea88fb97f44b88c8c0322ba101",
+    "brokenSteamEmphatic": "648a575474526183f000d75798604f67a3afa024d599ef5e7b17bd6fa723f31d",
+    "onSteamCompact": "a247d8d8dba67cffe2802fee6c75fc47f9bd7e74bee9c4949d564aa979a38c9f",
+    "onSteamRegular": "826187699a458b953955b8ad989f73337b101a6a9bb59c3aa4331751afd7346c",
+    "onSteamEmphatic": "3c27522b47fce3ee86373a45a0fbe35c136168f54f0f36e574cf670c12e2aa85"
+  },
+  "visualAuthority": "current-approved-kitchen-kettle-family",
+  "registration": "approval decision registered externally; immutable pre-approval V47 manifest remains closed",
+  "promotion": "none",
+  "runtimeChanged": false,
+  "finalChanged": false,
+  "sourceOverwritten": false,
+  "futureWork": "In the kitchen-assets workstream, promote V47 through a new immutable integration version and consider Off/Subtle/Emphatic Broken vibration with independent SFX control; separating the lid for animation requires a new version.",
+  "rollback": "Remove only this approval record to revoke the decision; V45, V46, V47, Bubble V2 and every source, production and runtime byte remain untouched."
+}

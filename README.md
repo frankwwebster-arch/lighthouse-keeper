@@ -710,15 +710,20 @@ Keeper's tea-making stop from its bay midpoint. The later closed V44
 ligne-claire review includes toaster and bowl candidates without changing this
 V45 runtime contract. Kitchen Kettle Bubble Authority V46 is preserved
 unapproved history: Frank liked the broken handle but requested less restrained
-damage and a fully detached lid. V47 is the active immutable review gate at
+damage and a fully detached lid. V47 is the approved immutable visual authority at
 `art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/`. Its Off and On
 states use the approved Bubble `tea-kettle` V2 body pixel-for-pixel after only
 the detached steam component is separated. Its fixed-palette Broken state keeps
 the failed handle, fully detaches the airborne lid, opens the top and increases
 the dent/crack/enamel damage. V45's six 40-frame/4-fps effect strips plus every
 support, interaction, rattle and Broken-lock contract remain exact; only
-Broken steam is re-anchored over the opening. The sheet and exact room proof
-are awaiting Frank's verdict; nothing is promoted or wired. See
+Broken steam is re-anchored over the opening. Frank approved the exact V47
+sheet on 22 October 2026. The external approval record hash-pins the immutable
+review pack and explicitly leaves runtime promotion, lid-layer animation,
+configurable vibration and new SFX to a later kitchen-assets version; nothing
+is promoted or wired. See
+[`docs/review/kitchen-kettle-bubble-authority-v47-approval-2026-10-22.json`](docs/review/kitchen-kettle-bubble-authority-v47-approval-2026-10-22.json).
+See
 [`docs/KITCHEN_DISHWASHER_WORKBENCH_V39_2026-10-20.md`](docs/KITCHEN_DISHWASHER_WORKBENCH_V39_2026-10-20.md).
 See also
 [`docs/KITCHEN_DISHWASHER_WORKBENCH_V40_2026-10-20.md`](docs/KITCHEN_DISHWASHER_WORKBENCH_V40_2026-10-20.md).
@@ -1399,7 +1404,7 @@ must remain paused to avoid duplicate alerts.
 ## Where things are
 
 - `src/game/` — rules (`config.ts` has every number, `commands.ts` the command book and silly reactions, `engine.ts` the rules).
-- `data/activity-stories/`, `src/activityStories/` and `scripts/import_activity_story_picture_catalogue.mjs` — the Bubble stories formats, Studio engine and complete picture-catalogue reconciliation. The shared library currently exposes 321 pictures and 413 immutable versions, including all 298 review-ready isolated source components from Activity Cloud Composer V1–V7, rear-work callout V2/V3 and every component-bearing Claude or Codex picture pack. The latest 54-picture expansion adds dedicated Fishing, Gardening, Pet care and play, Fixing things, Pub, Art, and Scientific and inventing groups; a new cold mark and later heat/aroma/welding versions are also available. Frank approved the ligne-claire BBQ pilot and continuation, sandwich, washing, General repair, repair hand tools, cooking core, baking/eggs/mixing, farm-animals-and-meals, corrected condiments, and the six tea-and-toast translations; each translation is a new current version and every predecessor remains available. Exactly 83 current pictures are approved ligne-claire conversions and 222 earlier pictures remain to convert. A separate 15-picture batch commissioned by Claude under Frank's standing instruction is registered as new V1 IDs. Frank's later requested `tea-mug-empty` V1 and mark-free `toast-slices` V3 are also current, while filled mug V2 and marked toast V2 remain selectable. Washing plate, sandwich tomato and repair tool chest are the three co-equal style champions; the binding taxonomy is **one even black outline, flat colour, no shine**. The broader hard rule is observational ligne claire, not cartoon: credible proportions, construction and weight, without cute, toy-like, inflated, caricature, mascot or sticker treatment. No story/runtime file changed. Continue later families with `docs/CODEX_PROMPT_BUBBLE_STORIES_LIGNE_CLAIRE_ACTION_IMAGERY_2026-10-21.md`. Whole-game restyling remains a separately gated future decision. `npm run verify:activity-stories` checks the library and approved provenance; each family builder verifies its pack and retained priors.
+- `data/activity-stories/`, `src/activityStories/` and `scripts/import_activity_story_picture_catalogue.mjs` — the Bubble stories formats, Studio engine and complete picture-catalogue reconciliation. The shared library currently exposes 339 pictures and 452 immutable versions, including all 298 review-ready isolated source components from Activity Cloud Composer V1–V7, rear-work callout V2/V3 and every component-bearing Claude or Codex picture pack. The latest 54-picture expansion adds dedicated Fishing, Gardening, Pet care and play, Fixing things, Pub, Art, and Scientific and inventing groups; a new cold mark and later heat/aroma/welding versions are also available. Frank approved the ligne-claire BBQ pilot and continuation, sandwich, washing, General repair, repair hand tools, cooking core, baking/eggs/mixing, farm-animals-and-meals, corrected condiments, and the six tea-and-toast translations; each translation is a new current version and every predecessor remains available. Exactly 83 current pictures are Frank-approved ligne-claire conversions and 222 earlier pictures remain to convert. Claude's two commissioned batches contribute 33 new V1 IDs, and Frank's requested `tea-mug-empty` supplies the 34th separately introduced picture; the later black-ink batch also supersedes 21 existing mark selectors with immutable new versions. `tea-mug-empty` V1 and mark-free `toast-slices` V3 are current, while filled mug V2 and marked toast V2 remain selectable. Washing plate, sandwich tomato and repair tool chest are the three co-equal style champions; the binding taxonomy is **one even black outline, flat colour, no shine**. The broader hard rule is observational ligne claire, not cartoon: credible proportions, construction and weight, without cute, toy-like, inflated, caricature, mascot or sticker treatment. Continue later families with `docs/CODEX_PROMPT_BUBBLE_STORIES_LIGNE_CLAIRE_ACTION_IMAGERY_2026-10-21.md`. Whole-game restyling remains a separately gated future decision. `npm run verify:activity-stories` checks the library and approved provenance; each family builder verifies its pack and retained priors.
 - `src/ui/floors.tsx` — fixed-width room definitions and the reserved diving geometry, which follows the bedroom.
 - `src/ui/art.tsx` and `src/ui/Sprite.tsx` — vector fallbacks, the three-state renderer, and production strip playback.
 - `public/sprites/` — production room, TV/effect and keeper review PNGs plus their runtime manifest.

@@ -55,6 +55,13 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def flattened_pixels(image: Image.Image):
+    """Return pixels across both current and macOS system Pillow releases."""
+    if hasattr(image, "get_flattened_data"):
+        return image.get_flattened_data()
+    return image.getdata()
+
+
 def rel(path: Path) -> str:
     return path.relative_to(ROOT).as_posix()
 
@@ -242,15 +249,15 @@ def verify() -> None:
     off = Image.open(PACK / "states/kettle-off.png").convert("RGBA")
     on = Image.open(PACK / "states/kettle-on.png").convert("RGBA")
     steam = Image.open(PACK / "states/kettle-approved-steam-isolated.png").convert("RGBA")
-    if list(off.get_flattened_data()) != list(expected_body.get_flattened_data()) or list(on.get_flattened_data()) != list(expected_body.get_flattened_data()):
+    if list(flattened_pixels(off)) != list(flattened_pixels(expected_body)) or list(flattened_pixels(on)) != list(flattened_pixels(expected_body)):
         raise RuntimeError("intact kitchen body differs from approved Bubble body")
-    if list(steam.get_flattened_data()) != list(expected_steam.get_flattened_data()):
+    if list(flattened_pixels(steam)) != list(flattened_pixels(expected_steam)):
         raise RuntimeError("approved steam isolation drift")
     broken = Image.open(PACK / "states/kettle-broken.png").convert("RGBA")
     if broken.size != (CELL, CELL) or edge_alpha_pixels(broken) or manifest["brokenNormalisation"]["transparentGutterPx"] < 20:
         raise RuntimeError("unsafe Broken candidate")
     allowed = set(PALETTE)
-    actual = {pixel[:3] for pixel in broken.get_flattened_data() if pixel[3] > VISIBLE_ALPHA}
+    actual = {pixel[:3] for pixel in flattened_pixels(broken) if pixel[3] > VISIBLE_ALPHA}
     if not actual.issubset(allowed):
         raise RuntimeError("Broken candidate contains non-flat palette colours")
     for record in manifest["preservedV45Contract"]["effectsByteIdentical"]:
