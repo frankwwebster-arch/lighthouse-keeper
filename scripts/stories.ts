@@ -220,7 +220,7 @@ figure{margin:0;width:${CELL_W}px}
 .ring{position:absolute;border:3px solid rgba(239,246,245,.72);border-radius:50%;background:rgba(246,239,211,.16)}
 .r1{width:22px;height:18px;left:169px;top:214px}.r2{width:12px;height:10px;left:174px;top:236px}
 .piece{position:absolute;left:50%;top:50%;width:140px;height:140px;object-fit:contain;filter:drop-shadow(0 5px 4px rgba(2,10,15,.24))}
-.mark{width:92px;height:92px}
+.mark{width:92px;height:92px;filter:drop-shadow(0 0 1.5px rgba(255,255,255,.85))}
 figcaption{height:30px;padding-top:4px;line-height:1.25;overflow:hidden}
 figcaption b{color:#f0c24f}
 </style><h1>${esc(story.label)}${reduced ? ' · reduced motion' : ''} · ${restart ? 'the restart: last 9 frames, then the retelling' : `frames ${from}–${to} of ${frames.length}, every ${every}`} · ${c.seconds.toFixed(1)} s · ${playsText(c.tellings)} in 20–30 s</h1><main>${cells.join('')}</main>`

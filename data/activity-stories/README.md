@@ -393,10 +393,10 @@ curls stand in. A step's own `mark` always wins.
 Marks move the way Hergé's do. They snap on at full strength and off again,
 never fading. A touch whose mark is drawn as one small piece (impact star,
 drop, glint, sizzle spark, steam, dust puff, ink star, zigzag, swirl, spiral,
-? and !) throws a scattered cluster of two to four of them at different
+? and !) throws a scattered cluster of two or three of them at different
 angles and sizes. Every mark “boils”: every two frames it shifts a pixel or
 two, turns a few degrees and may flip (never ? or !, or music), like
-hand-drawn animation. Fast movement trails `symbol-speed-lines` once Codex
+hand-drawn animation. Marks carry a faint paper-white glow so they read over dark pictures. Fast movement trails `symbol-speed-lines` once Codex
 has drawn them (motion ticks until then). The rules are `SCATTER`, `boil`
 and `trailMark` in `compile.ts`; Codex's ink set is commissioned in
 `docs/CODEX_PROMPT_BUBBLE_STORIES_INK_MARKS_AND_RECIPE_PICTURES_2026-10-22.md`.

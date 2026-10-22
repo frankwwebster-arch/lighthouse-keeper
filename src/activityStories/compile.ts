@@ -138,7 +138,8 @@ const EXIT_X = 172
 export const BUBBLE = { cx: 180, cy: 110, rx: 162, ry: 100, bottom: 210 }
 /** Orbiting props circle inside the bubble, within its rim and beneath the main action, all the way round. */
 const ORBIT = { rx: 128, ry: 74, cy: BUBBLE.cy - 115 }
-const SCALE = { hero: 0.78, support: 0.5, result: 0.7, aside: 0.44, mark: 0.42, contact: 0.48, trail: 0.36, prop: 0.34, orbit: 0.39 }
+// Ink marks (m1) are thinner than the old filled ones, so they draw a little larger.
+const SCALE = { hero: 0.78, support: 0.5, result: 0.7, aside: 0.44, mark: 0.52, contact: 0.62, trail: 0.4, prop: 0.34, orbit: 0.39 }
 const APPROACH: Record<Speed, number> = { quick: 3, normal: 4, slow: 6 }
 const WORK: Record<Speed, number> = { quick: 4, normal: 6, slow: 9 }
 const LAND: Record<Speed, number> = { quick: 3, normal: 4, slow: 6 }
@@ -391,13 +392,13 @@ export function compileStory(input: Story, lib: Library): Compiled {
   let stepEnd = 0
   /** A touch: a four-frame mark at the touching edge, a small bump on the target, and a record to measure later. Marks never spill into the next step. */
   const touch = (n: number, f: number, actor: string, target: string, at: { x: number; y: number }, pic: string, s = SCALE.contact, measure = true) => {
-    // On for four frames at full strength, then gone (m1). A one-piece mark scatters into a small cluster.
+    // On for four frames at full strength, then gone (m1). A one-piece mark scatters into a cluster of two or three.
     const seed = n * 37 + marks.length * 23
-    const pieces = SCATTER.has(pic) ? 2 + (seed % 3) : 1
+    const pieces = SCATTER.has(pic) ? 2 + (seed % 2) : 1
     for (let k = 0; k < pieces; k++) {
       const id = `contact-${n}-${marks.length}`
       const a = ((seed * 0.7 + k / pieces) % 1) * Math.PI * 2
-      const reach = k === 0 ? 0 : 14 + ((seed + k * 5) % 7)
+      const reach = k === 0 ? 0 : 18 + ((seed + k * 5) % 8)
       const size = k === 0 ? s : s * (0.55 + ((seed + k * 11) % 4) * 0.1)
       const r = ((seed + k * 41) % 51) - 25
       const p = { x: at.x + reach * Math.cos(a), y: at.y + reach * Math.sin(a) * 0.8 }

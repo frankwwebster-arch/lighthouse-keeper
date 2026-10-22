@@ -518,7 +518,7 @@ describe('Hergé ink marks (Frank’s m1, 22 Oct)', () => {
     for (const c of all) for (const m of marksOf(c)) expect(m.opacity, m.id).toBe(1)
   })
 
-  it('a touch with a one-piece mark throws a small cluster of two to four pieces', () => {
+  it('a touch with a one-piece mark throws a small cluster of two or three pieces', () => {
     const c = all[STORY_DRAFTS.findIndex((s) => s.id === 'general-repair')]
     const strike = c.contacts.find((t) => t.actor === 'hammer')!
     const stars = c.full[strike.frame].items.filter((i) => i.picture === 'symbol-impact-star')

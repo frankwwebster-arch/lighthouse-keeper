@@ -10,7 +10,8 @@
 .ss-ring { position: absolute; border: 3px solid rgba(239, 246, 245, .72); border-radius: 50%; background: rgba(246, 239, 211, .16); }
 .ss-ring1 { width: 22px; height: 18px; left: 169px; top: 214px; } .ss-ring2 { width: 12px; height: 10px; left: 174px; top: 236px; }
 .ss-piece { position: absolute; left: 50%; top: 50%; width: 140px; height: 140px; object-fit: contain; filter: drop-shadow(0 5px 4px rgba(2, 10, 15, .24)); pointer-events: none; }
-.ss-mark { width: 92px; height: 92px; filter: drop-shadow(0 3px 2px rgba(2, 10, 15, .18)); }
+/* Ink marks (m1) carry a thin paper-white edge, as if on Hergé's white page, so they read over dark pictures. */
+.ss-mark { width: 92px; height: 92px; filter: drop-shadow(0 0 1.5px rgba(255, 255, 255, .85)); }
 .ss-beat { color: #e6edf6; font-size: 13px; }
 .ss-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
 .ss-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
