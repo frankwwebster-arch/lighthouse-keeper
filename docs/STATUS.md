@@ -822,7 +822,7 @@ native-scale proof and runtime remain closed. Approval record:
 `docs/review/kitchen-cabinetry-state-derivatives-v1-approval-2026-10-22.json`.
 Delivery: `docs/KITCHEN_CABINETRY_STATE_DERIVATIVES_V1_2026-10-22.md`.
 
-Kitchen Cabinetry Room Layout V1 is the active room-fit review at
+Kitchen Cabinetry Room Layout V1 is the immutable cabinetry-only room-fit review at
 `/keeper-review/kitchen-cabinetry-room-layout-v1/index.html`. Fourteen
 transparent review crops come only from the exact approved cabinetry foundation
 and V4 state authority. All six units drag-and-swap between the fixed `84`-pixel
@@ -835,7 +835,7 @@ masks, join diagnostic, production registration and runtime remain unapproved
 and unchanged. Delivery:
 `docs/KITCHEN_CABINETRY_ROOM_LAYOUT_V1_2026-10-22.md`.
 
-Kitchen Complete Room Layout V2 is now the active complete-room visual gate at
+Kitchen Complete Room Layout V2 is the immutable first complete-room visual gate at
 `/keeper-review/kitchen-complete-room-layout-v2`. It preserves all V1 cabinetry
 and fitted states byte-for-byte while adding toaster, kettle, bin, table and
 chair from one coordinated high-resolution source. The five are independently
@@ -854,6 +854,18 @@ adds a bounded 30-second failure state and otherwise preserves every V2 pixel,
 datum and interaction. V2 remains immutable provenance; no runtime or
 production asset changed. Delivery:
 `docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V3_2026-10-22.md`.
+
+Kitchen Complete Room Layout V4 is the active unapproved integration gate at
+`/keeper-review/kitchen-complete-room-layout-v4`. It preserves the complete V3
+atlas pixel-for-pixel, adds the established five-layer V22/V32 healing method
+as a third synchronized comparison, and replaces every loose object's free x
+coordinate with an exact kitchen-grid slot ID. Kettle/toaster occupy distinct
+eligible fitted-bay centres; bin/chair/table occupy distinct floor-section
+centres; all expose the established `y=218` Keeper anchor independently of the
+`y=141`/`y=208` artwork supports. The contract and verifier are in
+`data/kitchen_room_grid_contract_v1.json` and
+`docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V4_2026-10-22.md`. Other rooms retain their
+own declared grids. Nothing is promoted or wired.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
@@ -1010,10 +1022,10 @@ implemented and no artwork change is authorised by it.
 The review-payload housekeeping pass completed on 21 October 2026. The exact
 clean-checkout baseline failed at 53.3148 MiB; the content-addressed sweep now
 archives every review image plus JSON/JSON.GZ at or above 24 KiB, leaving HTML
-and small JSON public. After Kitchen Complete Review V60, 245 set manifests
-resolve 7,526 references to 3,217 immutable objects;
-6,095 literal page references resolve and `public/` is 49.49
-MiB, 0.51 MiB below the unchanged 50 MiB guard. Runtime
+and small JSON public. After Kitchen Complete Room Layout V4, 257 set manifests
+resolve 7,918 references to 3,329 immutable objects;
+6,162 literal page references resolve and `public/` is 49.68
+MiB, 0.32 MiB below the unchanged 50 MiB guard. Runtime
 `public/sprites` is now 40.1033 MiB, including the 27 versioned Prime sheets.
 Use `npm run maintain:keeper-review` after any review builder; it archives,
 verifies object and manifest hashes, checks historical URL resolution and then

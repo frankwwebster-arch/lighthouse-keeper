@@ -1,0 +1,1014 @@
+{
+  "schema": "lighthouse-keeper/kitchen-complete-room-layout@4",
+  "set": "kitchen-complete-room-layout-2026-10-22-v4",
+  "status": "unapproved-grid-snap-and-healing-comparison",
+  "source": {
+    "path": "art/source/kitchen-cabinetry-foundation-2026-10-22-v1/cabinetry-module-construction-sheet-approved.png",
+    "sha256": "898c212690c2db8a52a6c8ea7bd962afcf12c1df8e577dcc98c4508359cccee3",
+    "changed": false
+  },
+  "stateSource": {
+    "path": "art/drafts/kitchen-cabinetry-state-derivatives-2026-10-22-v1/candidate-v4-red-fault-lights-fridge-leak.png",
+    "sha256": "d53b7565558acf6dc5544dde8b415fe50ac9eec1683eb374d996114ad5a902e8",
+    "changed": false
+  },
+  "room": {
+    "logicalPixels": [
+      772,
+      224
+    ],
+    "bayWidth": 84,
+    "bodySize": [
+      84,
+      74
+    ],
+    "bodyTopY": 134,
+    "bodyBaselineY": 208,
+    "originsX": [
+      84,
+      168,
+      252,
+      336,
+      420,
+      504
+    ],
+    "defaultOrder": [
+      "cupboard",
+      "drawers",
+      "sink",
+      "dishwasher",
+      "oven",
+      "fridge"
+    ]
+  },
+  "assets": {
+    "cupboard": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "345435481769d15ba7b545687fa304adfac595b62bf0955bc645b18023922270",
+      "pixels": [
+        439,
+        393
+      ],
+      "bodyRect": [
+        11,
+        16,
+        416,
+        369
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "sourceCrop": [
+        64,
+        135,
+        503,
+        528
+      ],
+      "maskMethod": "declared outer silhouette; sink tap uses source-colour-connected mask",
+      "authority": "approved-cabinetry-foundation",
+      "sourceFile": "cupboard-approved-review-crop.png",
+      "sourceSha256": "345435481769d15ba7b545687fa304adfac595b62bf0955bc645b18023922270",
+      "atlasRect": [
+        8,
+        8,
+        439,
+        393
+      ]
+    },
+    "drawers": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "9b1d60926b52562913b3008be71b8f548a5ca1b28f78429adab0c7e57f78d960",
+      "pixels": [
+        432,
+        393
+      ],
+      "bodyRect": [
+        12,
+        16,
+        408,
+        369
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "sourceCrop": [
+        552,
+        135,
+        984,
+        528
+      ],
+      "maskMethod": "declared outer silhouette; sink tap uses source-colour-connected mask",
+      "authority": "approved-cabinetry-foundation",
+      "sourceFile": "drawers-approved-review-crop.png",
+      "sourceSha256": "9b1d60926b52562913b3008be71b8f548a5ca1b28f78429adab0c7e57f78d960",
+      "atlasRect": [
+        8,
+        409,
+        432,
+        393
+      ]
+    },
+    "sink": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "d374ddd766bef9e3d1d29436c8c64f5e323a1c3272a7e86d9babb3ad7a0a8e6a",
+      "pixels": [
+        437,
+        513
+      ],
+      "bodyRect": [
+        10,
+        136,
+        416,
+        369
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "sourceCrop": [
+        1034,
+        15,
+        1471,
+        528
+      ],
+      "maskMethod": "declared outer silhouette; sink tap uses source-colour-connected mask",
+      "authority": "approved-cabinetry-foundation",
+      "sourceFile": "sink-approved-review-crop.png",
+      "sourceSha256": "d374ddd766bef9e3d1d29436c8c64f5e323a1c3272a7e86d9babb3ad7a0a8e6a",
+      "atlasRect": [
+        8,
+        810,
+        437,
+        513
+      ]
+    },
+    "dishwasher": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "98f70b3193e2c7a51b7d6075c74c3a05e11dcd4b6c09ad7a702441952587b1d2",
+      "pixels": [
+        439,
+        420
+      ],
+      "bodyRect": [
+        11,
+        22,
+        418,
+        389
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "sourceCrop": [
+        64,
+        548,
+        503,
+        968
+      ],
+      "maskMethod": "declared outer silhouette; sink tap uses source-colour-connected mask",
+      "authority": "approved-cabinetry-foundation",
+      "sourceFile": "dishwasher-approved-review-crop.png",
+      "sourceSha256": "98f70b3193e2c7a51b7d6075c74c3a05e11dcd4b6c09ad7a702441952587b1d2",
+      "atlasRect": [
+        8,
+        1331,
+        439,
+        420
+      ]
+    },
+    "oven": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "3b4798115ceb4519e7125e0a4fd72157fea3fa89da91ccbfb616604bc705728a",
+      "pixels": [
+        452,
+        428
+      ],
+      "bodyRect": [
+        13,
+        23,
+        428,
+        396
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "sourceCrop": [
+        542,
+        540,
+        994,
+        968
+      ],
+      "maskMethod": "declared outer silhouette; sink tap uses source-colour-connected mask",
+      "authority": "approved-cabinetry-foundation",
+      "sourceFile": "oven-approved-review-crop.png",
+      "sourceSha256": "3b4798115ceb4519e7125e0a4fd72157fea3fa89da91ccbfb616604bc705728a",
+      "atlasRect": [
+        8,
+        1759,
+        452,
+        428
+      ]
+    },
+    "fridge": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "88bdce1214a3fe48ea008b57df764b968f0e66df228718e107f89ba9e79f00bc",
+      "pixels": [
+        437,
+        420
+      ],
+      "bodyRect": [
+        10,
+        22,
+        416,
+        389
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "sourceCrop": [
+        1034,
+        548,
+        1471,
+        968
+      ],
+      "maskMethod": "declared outer silhouette; sink tap uses source-colour-connected mask",
+      "authority": "approved-cabinetry-foundation",
+      "sourceFile": "fridge-approved-review-crop.png",
+      "sourceSha256": "88bdce1214a3fe48ea008b57df764b968f0e66df228718e107f89ba9e79f00bc",
+      "atlasRect": [
+        8,
+        2195,
+        437,
+        420
+      ]
+    },
+    "sink-on": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "91adb674600e7549f6f30c2a37e3cddee68b45b9a4c3496602c9eb7b666c20bc",
+      "pixels": [
+        369,
+        383
+      ],
+      "bodyRect": [
+        11,
+        102,
+        345,
+        270
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "sourceCrop": [
+        105,
+        0,
+        474,
+        383
+      ],
+      "maskMethod": "declared outer silhouette with source-colour-connected tap/water mask where required",
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "sourceFile": "sink-on-approved-review-crop.png",
+      "sourceSha256": "91adb674600e7549f6f30c2a37e3cddee68b45b9a4c3496602c9eb7b666c20bc",
+      "atlasRect": [
+        8,
+        2623,
+        369,
+        383
+      ]
+    },
+    "sink-broken": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "c652e6aa6ff02630425bb8f314638563a01ac65763ad23e3efbd16cb1153137b",
+      "pixels": [
+        504,
+        412
+      ],
+      "bodyRect": [
+        48,
+        102,
+        352,
+        270
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "sourceCrop": [
+        512,
+        0,
+        1016,
+        412
+      ],
+      "maskMethod": "declared outer silhouette with source-colour-connected tap/water mask where required",
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "sourceFile": "sink-broken-approved-review-crop.png",
+      "sourceSha256": "c652e6aa6ff02630425bb8f314638563a01ac65763ad23e3efbd16cb1153137b",
+      "atlasRect": [
+        8,
+        3014,
+        504,
+        412
+      ]
+    },
+    "dishwasher-on": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "f4c6cf4d6eb7214c2864b634a246996c5e86cbf0c9b4b85da99c597afe2bad24",
+      "pixels": [
+        368,
+        326
+      ],
+      "bodyRect": [
+        11,
+        11,
+        344,
+        305
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "sourceCrop": [
+        106,
+        392,
+        474,
+        718
+      ],
+      "maskMethod": "declared outer silhouette with source-colour-connected tap/water mask where required",
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "sourceFile": "dishwasher-on-approved-review-crop.png",
+      "sourceSha256": "f4c6cf4d6eb7214c2864b634a246996c5e86cbf0c9b4b85da99c597afe2bad24",
+      "atlasRect": [
+        8,
+        3434,
+        368,
+        326
+      ]
+    },
+    "dishwasher-broken": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "19a811f21d2dc7f7ffb36fba530d5b4a629a68b9472b5ca41c6437ad15b4637d",
+      "pixels": [
+        504,
+        356
+      ],
+      "bodyRect": [
+        56,
+        11,
+        352,
+        305
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "sourceCrop": [
+        504,
+        392,
+        1008,
+        748
+      ],
+      "maskMethod": "declared outer silhouette with source-colour-connected tap/water mask where required",
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "sourceFile": "dishwasher-broken-approved-review-crop.png",
+      "sourceSha256": "19a811f21d2dc7f7ffb36fba530d5b4a629a68b9472b5ca41c6437ad15b4637d",
+      "atlasRect": [
+        8,
+        3768,
+        504,
+        356
+      ]
+    },
+    "oven-off": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "0dc83d6ace6c1d192f5f628b93f9e14b162b49ad1ac339ad7a4ca289ec40f5ea",
+      "pixels": [
+        377,
+        344
+      ],
+      "bodyRect": [
+        9,
+        8,
+        358,
+        327
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "sourceCrop": [
+        103,
+        741,
+        480,
+        1085
+      ],
+      "maskMethod": "declared outer silhouette with source-colour-connected tap/water mask where required",
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "sourceFile": "oven-off-approved-review-crop.png",
+      "sourceSha256": "0dc83d6ace6c1d192f5f628b93f9e14b162b49ad1ac339ad7a4ca289ec40f5ea",
+      "atlasRect": [
+        8,
+        4132,
+        377,
+        344
+      ]
+    },
+    "oven-broken": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "9d5f245e44276faca3a74e0b7d0a7e3f6352429d778e298aafa1c4898a1094cc",
+      "pixels": [
+        425,
+        344
+      ],
+      "bodyRect": [
+        9,
+        8,
+        352,
+        327
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "sourceCrop": [
+        551,
+        741,
+        976,
+        1085
+      ],
+      "maskMethod": "declared outer silhouette with source-colour-connected tap/water mask where required",
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "sourceFile": "oven-broken-approved-review-crop.png",
+      "sourceSha256": "9d5f245e44276faca3a74e0b7d0a7e3f6352429d778e298aafa1c4898a1094cc",
+      "atlasRect": [
+        8,
+        4484,
+        425,
+        344
+      ]
+    },
+    "fridge-standard": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "90c4c2babc15028f96f9f033ec1b5bdfe1ebd337e18e60dea86bf4fd3b7cbacc",
+      "pixels": [
+        370,
+        353
+      ],
+      "bodyRect": [
+        9,
+        9,
+        349,
+        335
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "sourceCrop": [
+        103,
+        1099,
+        473,
+        1452
+      ],
+      "maskMethod": "declared outer silhouette with source-colour-connected tap/water mask where required",
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "sourceFile": "fridge-standard-approved-review-crop.png",
+      "sourceSha256": "90c4c2babc15028f96f9f033ec1b5bdfe1ebd337e18e60dea86bf4fd3b7cbacc",
+      "atlasRect": [
+        8,
+        4836,
+        370,
+        353
+      ]
+    },
+    "fridge-broken": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "a91275f407424ad0fddf52e79237749aa0ab0e20ac02bd5440ebc64eabde7f73",
+      "pixels": [
+        425,
+        401
+      ],
+      "bodyRect": [
+        9,
+        9,
+        352,
+        335
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "sourceCrop": [
+        551,
+        1099,
+        976,
+        1500
+      ],
+      "maskMethod": "declared outer silhouette with source-colour-connected tap/water mask where required",
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "sourceFile": "fridge-broken-approved-review-crop.png",
+      "sourceSha256": "a91275f407424ad0fddf52e79237749aa0ab0e20ac02bd5440ebc64eabde7f73",
+      "atlasRect": [
+        8,
+        5197,
+        425,
+        401
+      ]
+    }
+  },
+  "states": {
+    "sink": {
+      "off": "sink",
+      "on": "sink-on",
+      "broken": "sink-broken"
+    },
+    "dishwasher": {
+      "on": "dishwasher-on",
+      "broken": "dishwasher-broken",
+      "offUnavailable": "dark-lamp production extraction is not yet authored"
+    },
+    "oven": {
+      "on": "oven",
+      "off": "oven-off",
+      "broken": "oven-broken"
+    },
+    "fridge": {
+      "standard": "fridge-standard",
+      "broken": "fridge-broken"
+    }
+  },
+  "comparison": {
+    "raw": "approved review crops with no join treatment",
+    "diagnostic": "same crops and positions plus narrow join-only overlay; not approved healing art",
+    "bothViewsSynchronized": true
+  },
+  "boundaries": {
+    "productionChanged": false,
+    "runtimeChanged": false,
+    "approvedSourceOverwritten": false,
+    "stateArtChanged": false,
+    "healingApproved": false,
+    "looseObjectArtApproved": false,
+    "looseObjectStatesAuthored": false
+  },
+  "cabinetryPredecessor": {
+    "set": "kitchen-cabinetry-room-layout-2026-10-22-v1",
+    "manifestSha256": "18cfad03b5d466e447e8bf7f66f4c5c0d9628c29e37398eecfa8bd74f13d6ffb",
+    "assetsByteExact": true
+  },
+  "looseObjectSource": {
+    "path": "art/source/kitchen-loose-object-foundation-2026-10-22-v1/loose-object-construction-sheet.png",
+    "sha256": "3f7be0874d6a3320d89f5c15e5c467d1f71af58d5ed594530e5aef82a4b2df33",
+    "generatedTogether": true,
+    "changed": false
+  },
+  "looseAssets": {
+    "toaster": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "75de96915b5038ea1c756f62cd0d7814412a2a517e1ef5e6eac94e6b755c287b",
+      "pixels": [
+        200,
+        144
+      ],
+      "sourceRect": [
+        100,
+        80,
+        560,
+        430
+      ],
+      "support": "worktop",
+      "label": "Toaster",
+      "masterScale": 4,
+      "logicalSize": [
+        42,
+        28
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        42,
+        28
+      ],
+      "logicalCanvas": [
+        50,
+        36
+      ],
+      "sourceFile": "toaster-loose-object-foundation-v1.png",
+      "sourceSha256": "75de96915b5038ea1c756f62cd0d7814412a2a517e1ef5e6eac94e6b755c287b",
+      "atlasRect": [
+        8,
+        5606,
+        200,
+        144
+      ]
+    },
+    "kettle": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "73e881f6eeb34df257b55e324daf02b40f6c99f00f613a1fbb2fdbe995fad00a",
+      "pixels": [
+        184,
+        168
+      ],
+      "sourceRect": [
+        600,
+        55,
+        1000,
+        430
+      ],
+      "support": "worktop",
+      "label": "Kettle",
+      "masterScale": 4,
+      "logicalSize": [
+        38,
+        34
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        38,
+        34
+      ],
+      "logicalCanvas": [
+        46,
+        42
+      ],
+      "sourceFile": "kettle-loose-object-foundation-v1.png",
+      "sourceSha256": "73e881f6eeb34df257b55e324daf02b40f6c99f00f613a1fbb2fdbe995fad00a",
+      "atlasRect": [
+        8,
+        5758,
+        184,
+        168
+      ]
+    },
+    "bin": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "0246dd50519cd897a034705cd758f23b60d9db61840107a75b8353ac95508aa6",
+      "pixels": [
+        160,
+        240
+      ],
+      "sourceRect": [
+        1040,
+        15,
+        1400,
+        430
+      ],
+      "support": "floor",
+      "label": "Bin",
+      "masterScale": 4,
+      "logicalSize": [
+        32,
+        52
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        32,
+        52
+      ],
+      "logicalCanvas": [
+        40,
+        60
+      ],
+      "sourceFile": "bin-loose-object-foundation-v1.png",
+      "sourceSha256": "0246dd50519cd897a034705cd758f23b60d9db61840107a75b8353ac95508aa6",
+      "atlasRect": [
+        8,
+        5934,
+        160,
+        240
+      ]
+    },
+    "table": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "1e5410475c6117b89650b34d84eb6781a46aaaf9ffc0fcbec5c5e4763d926da4",
+      "pixels": [
+        352,
+        264
+      ],
+      "sourceRect": [
+        100,
+        430,
+        930,
+        1000
+      ],
+      "support": "floor",
+      "label": "Table",
+      "masterScale": 4,
+      "logicalSize": [
+        80,
+        58
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        80,
+        58
+      ],
+      "logicalCanvas": [
+        88,
+        66
+      ],
+      "sourceFile": "table-loose-object-foundation-v1.png",
+      "sourceSha256": "1e5410475c6117b89650b34d84eb6781a46aaaf9ffc0fcbec5c5e4763d926da4",
+      "atlasRect": [
+        8,
+        6182,
+        352,
+        264
+      ]
+    },
+    "chair": {
+      "file": "kitchen-complete-room-atlas-v4.png",
+      "sha256": "395aaf0ec88674444afbc757cd184f8e11470e35a0b085ad1b540937ad037d56",
+      "pixels": [
+        172,
+        348
+      ],
+      "sourceRect": [
+        950,
+        430,
+        1400,
+        1000
+      ],
+      "support": "floor",
+      "label": "Chair",
+      "masterScale": 4,
+      "logicalSize": [
+        35,
+        79
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        35,
+        79
+      ],
+      "logicalCanvas": [
+        43,
+        87
+      ],
+      "sourceFile": "chair-loose-object-foundation-v1.png",
+      "sourceSha256": "395aaf0ec88674444afbc757cd184f8e11470e35a0b085ad1b540937ad037d56",
+      "atlasRect": [
+        8,
+        6454,
+        172,
+        348
+      ]
+    }
+  },
+  "looseGeometry": {
+    "worktopSupportY": 141,
+    "floorSupportY": 208,
+    "chairSeatTopHeightLp": 7.75,
+    "chairSeatTopHeightRoomPixels": 31,
+    "tableTopHeightLp": 14.5,
+    "defaultPositions": null,
+    "positionStorage": "slot identifiers only; pointer coordinates are never persisted",
+    "defaultSlotAssignments": {
+      "kettle": "counter-4",
+      "toaster": "counter-6",
+      "bin": "floor-west",
+      "chair": "floor-dining-left",
+      "table": "floor-dining-right"
+    }
+  },
+  "deliveryPredecessor": {
+    "set": "kitchen-complete-room-layout-2026-10-22-v3",
+    "manifestSha256": "cb80afc71a42b9e3b1ed43dc910d018a0ec746fc6380732f719e78689e3ea9c1",
+    "drawingPixelsChanged": false,
+    "fittedGeometryChanged": false,
+    "stateBehaviourChanged": false,
+    "loosePlacementChangedToExactGridSlots": true
+  },
+  "atlas": {
+    "file": "kitchen-complete-room-atlas-v4.png",
+    "sha256": "3e5e3f561292188a6349bf07282c295746479bb1e429480c0a98bb65e5be514b",
+    "pixels": [
+      520,
+      6961
+    ],
+    "drawingCount": 24,
+    "uniqueImageRequests": 1,
+    "lossless": true,
+    "v3AtlasPixelsCopiedAtOrigin": true
+  },
+  "healingAssets": {
+    "join-body-backfill-template": {
+      "sourceFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/join-body-backfill-template.png",
+      "sourceSha256": "a6eb7269c068986f38ba771f48e77266b91899b611d31cdbc068c48dfd5eec64",
+      "pixels": [
+        14,
+        63
+      ],
+      "atlasRect": [
+        8,
+        6818,
+        14,
+        63
+      ]
+    },
+    "countertop-join-cap-template": {
+      "sourceFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/countertop-join-cap-template.png",
+      "sourceSha256": "1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96",
+      "pixels": [
+        24,
+        12
+      ],
+      "atlasRect": [
+        8,
+        6889,
+        24,
+        12
+      ]
+    },
+    "countertop-triangle-underlay-template": {
+      "sourceFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/countertop-triangle-underlay-template.png",
+      "sourceSha256": "1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96",
+      "pixels": [
+        24,
+        12
+      ],
+      "atlasRect": [
+        8,
+        6909,
+        24,
+        12
+      ]
+    },
+    "neighbour-seam-cleanup-left": {
+      "sourceFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/neighbour-seam-cleanup-left.png",
+      "sourceSha256": "c7fb536832e470a86d3b1e6f6342ba9984d09c30cdd35aca1dfba6a07a3d6430",
+      "pixels": [
+        6,
+        12
+      ],
+      "atlasRect": [
+        8,
+        6929,
+        6,
+        12
+      ]
+    },
+    "neighbour-seam-cleanup-right": {
+      "sourceFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/neighbour-seam-cleanup-right.png",
+      "sourceSha256": "b07982a45d3e8cca1ccc1f45b681a5ba4a6d35de6d8592adf863a7422da6af1f",
+      "pixels": [
+        6,
+        12
+      ],
+      "atlasRect": [
+        8,
+        6949,
+        6,
+        12
+      ]
+    }
+  },
+  "roomGrid": {
+    "schema": "lighthouse-keeper/room-grid-contract@1",
+    "roomId": "kitchen",
+    "status": "review-contract-unpromoted",
+    "logicalPixelScale": 4,
+    "roomPixels": [
+      772,
+      224
+    ],
+    "fittedGrid": {
+      "bayWidthPixels": 84,
+      "bayWidthLogicalPixels": 21,
+      "slotOriginsX": [
+        84,
+        168,
+        252,
+        336,
+        420,
+        504
+      ],
+      "slotCentresX": [
+        126,
+        210,
+        294,
+        378,
+        462,
+        546
+      ],
+      "bodyTopY": 134,
+      "bodySizePixels": [
+        84,
+        74
+      ],
+      "worktopSupportY": 141,
+      "floorSupportY": 208,
+      "keeperStopTurnY": 218,
+      "committedOriginMustBeExact": true,
+      "interactionAnchorDerivedFromBayCentre": true
+    },
+    "countertopSlots": {
+      "ids": [
+        "counter-1",
+        "counter-2",
+        "counter-3",
+        "counter-4",
+        "counter-5",
+        "counter-6"
+      ],
+      "centresX": [
+        126,
+        210,
+        294,
+        378,
+        462,
+        546
+      ],
+      "supportY": 141,
+      "keeperAnchorY": 218,
+      "eligibleSupportingUnits": [
+        "cupboard",
+        "drawers",
+        "dishwasher",
+        "fridge"
+      ],
+      "objects": [
+        "kettle",
+        "toaster"
+      ],
+      "oneObjectPerSlot": true,
+      "pointerCoordinatesPersisted": false
+    },
+    "floorSlots": {
+      "sections": [
+        {
+          "id": "floor-west",
+          "boundsX": [
+            0,
+            84
+          ],
+          "centreX": 42
+        },
+        {
+          "id": "floor-dining-left",
+          "boundsX": [
+            604,
+            688
+          ],
+          "centreX": 646
+        },
+        {
+          "id": "floor-dining-right",
+          "boundsX": [
+            688,
+            772
+          ],
+          "centreX": 730
+        }
+      ],
+      "supportY": 208,
+      "keeperAnchorY": 218,
+      "objects": [
+        "bin",
+        "chair",
+        "table"
+      ],
+      "oneObjectPerSlot": true,
+      "pointerCoordinatesPersisted": false
+    },
+    "defaultAssignments": {
+      "kettle": "counter-4",
+      "toaster": "counter-6",
+      "bin": "floor-west",
+      "chair": "floor-dining-left",
+      "table": "floor-dining-right"
+    },
+    "invariants": {
+      "visualOpaqueCentreMatchesSlotCentre": true,
+      "maximumCentreErrorPixels": 0.5,
+      "counterObjectsCannotShareSlot": true,
+      "floorObjectsCannotShareSlot": true,
+      "cabinetSwapCannotInvalidateOccupiedCounterSlot": true,
+      "roomSpecificGrid": true,
+      "crossRoomCoordinateReuseForbidden": true
+    }
+  },
+  "healingComparison": {
+    "views": [
+      "raw",
+      "narrow-join-diagnostic",
+      "established-pair-aware-v22-v32"
+    ],
+    "fullMethodDrawOrder": [
+      "room background",
+      "six-pixel body backfills and oven triangular underlays",
+      "unchanged fitted assets",
+      "flat countertop caps or oven-neighbour cleanup masks",
+      "unchanged loose objects"
+    ],
+    "sourceAuthority": "Kitchen Split Cabinet Workbench V38 / V22 and V32 compositor contract",
+    "approvedForTheseNewAssets": false
+  }
+}

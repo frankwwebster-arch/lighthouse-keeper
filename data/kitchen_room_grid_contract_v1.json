@@ -1,0 +1,58 @@
+{
+  "schema": "lighthouse-keeper/room-grid-contract@1",
+  "roomId": "kitchen",
+  "status": "review-contract-unpromoted",
+  "logicalPixelScale": 4,
+  "roomPixels": [772, 224],
+  "fittedGrid": {
+    "bayWidthPixels": 84,
+    "bayWidthLogicalPixels": 21,
+    "slotOriginsX": [84, 168, 252, 336, 420, 504],
+    "slotCentresX": [126, 210, 294, 378, 462, 546],
+    "bodyTopY": 134,
+    "bodySizePixels": [84, 74],
+    "worktopSupportY": 141,
+    "floorSupportY": 208,
+    "keeperStopTurnY": 218,
+    "committedOriginMustBeExact": true,
+    "interactionAnchorDerivedFromBayCentre": true
+  },
+  "countertopSlots": {
+    "ids": ["counter-1", "counter-2", "counter-3", "counter-4", "counter-5", "counter-6"],
+    "centresX": [126, 210, 294, 378, 462, 546],
+    "supportY": 141,
+    "keeperAnchorY": 218,
+    "eligibleSupportingUnits": ["cupboard", "drawers", "dishwasher", "fridge"],
+    "objects": ["kettle", "toaster"],
+    "oneObjectPerSlot": true,
+    "pointerCoordinatesPersisted": false
+  },
+  "floorSlots": {
+    "sections": [
+      {"id": "floor-west", "boundsX": [0, 84], "centreX": 42},
+      {"id": "floor-dining-left", "boundsX": [604, 688], "centreX": 646},
+      {"id": "floor-dining-right", "boundsX": [688, 772], "centreX": 730}
+    ],
+    "supportY": 208,
+    "keeperAnchorY": 218,
+    "objects": ["bin", "chair", "table"],
+    "oneObjectPerSlot": true,
+    "pointerCoordinatesPersisted": false
+  },
+  "defaultAssignments": {
+    "kettle": "counter-4",
+    "toaster": "counter-6",
+    "bin": "floor-west",
+    "chair": "floor-dining-left",
+    "table": "floor-dining-right"
+  },
+  "invariants": {
+    "visualOpaqueCentreMatchesSlotCentre": true,
+    "maximumCentreErrorPixels": 0.5,
+    "counterObjectsCannotShareSlot": true,
+    "floorObjectsCannotShareSlot": true,
+    "cabinetSwapCannotInvalidateOccupiedCounterSlot": true,
+    "roomSpecificGrid": true,
+    "crossRoomCoordinateReuseForbidden": true
+  }
+}

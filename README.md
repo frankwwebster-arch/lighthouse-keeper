@@ -1020,6 +1020,18 @@ delivery-only correction: the same nineteen V2 drawings and all geometry are
 packed losslessly into one content-addressed atlas, reducing a cold page load
 from nineteen redirected image requests to one. V2 remains immutable. See
 [`docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V3_2026-10-22.md`](docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V3_2026-10-22.md).
+
+Kitchen Complete Room Layout V4 at
+`/keeper-review/kitchen-complete-room-layout-v4` is the current integration
+test. It retains every V3 art pixel, changes loose objects from free horizontal
+coordinates to exact room-grid slot IDs, prevents kettle/toaster co-location or
+placement over the sink/hob, and exposes each slot-centre Keeper anchor on the
+established `y=218` walking plane. A third synchronized canvas applies the
+existing V22/V32 pair-aware healing layers beside Raw and Narrow views. The
+kitchen-specific grid is declared in
+[`data/kitchen_room_grid_contract_v1.json`](data/kitchen_room_grid_contract_v1.json);
+other rooms must declare their own grids. See
+[`docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V4_2026-10-22.md`](docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V4_2026-10-22.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
