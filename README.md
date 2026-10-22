@@ -866,22 +866,30 @@ repair/healing contract remain fixed. V14 is retained as rejected internal
 proof because its foreshortened glass read as a displaced handle. V15 is
 immutable, reversible, unregistered and blocked on explicit approval. See
 [`docs/KITCHEN_OVEN_BROKEN_AJAR_LIGNE_CLAIRE_V15_2026-10-22.md`](docs/KITCHEN_OVEN_BROKEN_AJAR_LIGNE_CLAIRE_V15_2026-10-22.md).
-Kitchen Ligne-Claire Complete Review V44 is the coordinated closed review at
-`/keeper-review/kitchen-ligne-claire-complete-review-v44/index.html`. It preserves the
+Kitchen Ligne-Claire Complete Review V45 is the coordinated closed review at
+`/keeper-review/kitchen-ligne-claire-complete-review-v45/index.html`. It preserves the
 approved V3 fitted family, V8 Oven On and V12 Broken body; includes the
 unapproved V13 Off and V15 ajar-door candidates; and adds exact-size
 Dishwasher V1, table/chair V3, bin V2, kettle V1, toaster V4 and mixing-bowl V1
-candidates. The dishwasher LCD and lamp are attached to the door's top control
+candidates. V45 continues the sweep with mask-locked chef's, bread and paring
+knives, salt and pepper mills, tea kettle, milk bottle/jug, mug, toast and bread
+slicing preparation. Those ten new candidates retain their current 256 × 256
+alpha channels byte-for-byte. Nine already approved/current flat-glass
+condiment V2 assets are included byte-for-byte as palette authority, not
+redrawn. The dishwasher LCD and lamp are attached to the door's top control
 rail rather than floating on its front. Fifty object/state files, sixteen
-effect files and eleven complete current/candidate/alpha-ghost sheets are
-hash-pinned. The live tool carries the approved V41 movement, swap,
+effect files and eleven complete current/candidate/alpha-ghost sheets from V44
+remain hash-pinned; V45 totals sixty object/state rows, sixteen effects and
+fourteen sheets. The live tool carries the approved V41 movement, swap,
 Broken-lock, repair-unlock, effect ownership and countertop-healing JavaScript
 unchanged. All review URLs are root-absolute through the same-origin archive
 route, so Vercel trailing-slash canonicalisation cannot break image loading.
 Nothing is registered, promoted, selected as current or copied to production.
-V43 remains failed predecessor provenance for an effect-manifest field mismatch.
+V44 remains the immutable large-furniture predecessor. The first preparation/
+tea proof is retained only as failed provenance because its milk vessels and
+bread knife did not separate clearly at 64 px.
 See
-[`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V44_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V44_2026-10-22.md).
+[`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V45_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V45_2026-10-22.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

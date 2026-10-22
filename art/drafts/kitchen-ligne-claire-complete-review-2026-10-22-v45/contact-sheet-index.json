@@ -1,0 +1,100 @@
+{
+  "set": "kitchen-ligne-claire-complete-review-v45",
+  "sheets": [
+    {
+      "family": "cabinets",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v45/evidence/contact-cabinets.png",
+      "sha256": "d20d44fa5d27c7b41100e99f399f9ebe0ead9706e2d8c9be648b69d6ae0e67fd",
+      "rows": 8,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v44"
+    },
+    {
+      "family": "fridge",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v45/evidence/contact-fridge.png",
+      "sha256": "9982ed72e0f4a49660ddc6d3a9e818d6503a74bd8b05e0b0d07b13331f7ba751",
+      "rows": 2,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v44"
+    },
+    {
+      "family": "sink",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v45/evidence/contact-sink.png",
+      "sha256": "7045394b28138c9047fbaa8b24763df653d928f119bb04219edb5f9e8b6d46fd",
+      "rows": 3,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v44"
+    },
+    {
+      "family": "healing",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v45/evidence/contact-healing.png",
+      "sha256": "57dd806e29817b56d2dd00cea0106cc827ce2a21d4751582c7e422483ba9a600",
+      "rows": 5,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v44"
+    },
+    {
+      "family": "oven",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v45/evidence/contact-oven.png",
+      "sha256": "9be4eb7fd89406c210352a59ca7a226004677a8d6175d5e29314257bb7975258",
+      "rows": 6,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v44"
+    },
+    {
+      "family": "dishwasher",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v45/evidence/contact-dishwasher.png",
+      "sha256": "f541fe22d08abc5d2deb39117219c962fdb01c4ece7b4f8faf95950f843b8b98",
+      "rows": 15,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v44"
+    },
+    {
+      "family": "table-chair",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v45/evidence/contact-table-chair.png",
+      "sha256": "9374b04f529430966e47f4f8b0ab4df7cae3d9cd371254d0d2d85543fcdc472c",
+      "rows": 1,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v44"
+    },
+    {
+      "family": "bin",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v45/evidence/contact-bin.png",
+      "sha256": "a3ec0293ed8de23a266eddc323d04638778ed326aaa720bcd4dbffb5167036fd",
+      "rows": 2,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v44"
+    },
+    {
+      "family": "kettle",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v45/evidence/contact-kettle.png",
+      "sha256": "e076a489a9af217967df00601e00bd0764a963b88027a7cbff90643df935a49e",
+      "rows": 3,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v44"
+    },
+    {
+      "family": "toaster",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v45/evidence/contact-toaster.png",
+      "sha256": "925d7396551a7111caf28df97fd211849f7d2b2a01a3596a3a71e27dbf372c06",
+      "rows": 3,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v44"
+    },
+    {
+      "family": "mixing-bowl",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v45/evidence/contact-mixing-bowl.png",
+      "sha256": "24616beadd52edd134a3c5e8d1b513efb2bf37518154d4689738e6c3b8b0c695",
+      "rows": 2,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v44"
+    },
+    {
+      "family": "small-objects",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v45/evidence/contact-small-objects.png",
+      "sha256": "9bfdb55d5adedebd27d610380c78cfd2b74f7f663469df5f94294f5cd9fb766e",
+      "rows": 5
+    },
+    {
+      "family": "preparation-tea",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v45/evidence/contact-preparation-tea.png",
+      "sha256": "9a594e5fec796cf1fd06380c93d13b3e529c06089b64ed54ee97839cdbb7646d",
+      "rows": 5
+    },
+    {
+      "family": "condiments-approved-current-v2",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v45/evidence/contact-condiments-approved-current-v2.png",
+      "sha256": "df9819f65fc984ee1c43fb4cd7925892bb203cee8f908b3a73278102a6578878",
+      "rows": 9
+    }
+  ]
+}

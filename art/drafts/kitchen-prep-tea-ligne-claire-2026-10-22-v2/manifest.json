@@ -1,0 +1,197 @@
+{
+  "schema": "lighthouse-keeper/kitchen-prep-tea-ligne-claire@2",
+  "set": "kitchen-prep-tea-ligne-claire-v2",
+  "created": "2026-10-22",
+  "status": "immutable-review-candidate-not-approved-not-registered",
+  "supersedesReviewOnly": "kitchen-prep-tea-ligne-claire-v1",
+  "v1Failure": "milk bottle and jug merged visually; bread-slicing knife handle did not separate from loaf at 64 px",
+  "visualAuthority": "sandwich-tomato V2; approved flat-glass condiment V2 family",
+  "method": "mask-locked deterministic redraw; V2 changes only two interior real-edge/material assignments",
+  "objects": [
+    {
+      "id": "tea-kettle",
+      "label": "Tea kettle",
+      "sourceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/tea-kettle.png",
+      "sourceSha256": "7014b90c1465cbf0b1b9559f57be78a4a36c354ba13033c9639aa048253dd7cf",
+      "candidateFile": "art/drafts/kitchen-prep-tea-ligne-claire-2026-10-22-v2/candidates/tea-kettle.png",
+      "candidateSha256": "61e73b8666f7d551d03098ccd74fa382f324e3c1f911a203659ac32c632144f4",
+      "canvas": [
+        256,
+        256
+      ],
+      "sourceBounds": [
+        20,
+        24,
+        236,
+        232
+      ],
+      "candidateBounds": [
+        20,
+        24,
+        236,
+        232
+      ],
+      "alphaSha256": "901045e449027f944668c7c2147f786b548cbcdc497498ddf8967255ff8b898b",
+      "v1CandidateSha256": "61e73b8666f7d551d03098ccd74fa382f324e3c1f911a203659ac32c632144f4",
+      "v2Change": "byte-identical V1 carry-forward",
+      "registration": {
+        "anchor": "unchanged-current-library-anchor",
+        "pivot": "unchanged",
+        "footprint": "byte-exact-alpha"
+      }
+    },
+    {
+      "id": "tea-milk",
+      "label": "Milk bottle and jug",
+      "sourceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/tea-milk.png",
+      "sourceSha256": "01eb45bb370455c770702cc7cb25334fccc3d2a6d3cc0cf376733da2f9dfeadc",
+      "candidateFile": "art/drafts/kitchen-prep-tea-ligne-claire-2026-10-22-v2/candidates/tea-milk.png",
+      "candidateSha256": "38de8f99f9464a9e832e2f90cd85926027927b27fed7a687b04711a1512caef8",
+      "canvas": [
+        256,
+        256
+      ],
+      "sourceBounds": [
+        20,
+        25,
+        236,
+        230
+      ],
+      "candidateBounds": [
+        20,
+        25,
+        236,
+        230
+      ],
+      "alphaSha256": "1c4679d4eeb08ee0bb21fe905a599b5a5237be412fd4147e015d6dfe9d50b260",
+      "v1CandidateSha256": "e840e8c558bf6bfe9bace18408e65c638f192e194aaa6c658208a54017847d49",
+      "v2Change": "interior separation only",
+      "registration": {
+        "anchor": "unchanged-current-library-anchor",
+        "pivot": "unchanged",
+        "footprint": "byte-exact-alpha"
+      }
+    },
+    {
+      "id": "tea-mug",
+      "label": "Mug of tea",
+      "sourceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/tea-mug.png",
+      "sourceSha256": "af8fb40591e8165cfb4ec8f9f30be0df24abd733cc412d086c3920a37242bff3",
+      "candidateFile": "art/drafts/kitchen-prep-tea-ligne-claire-2026-10-22-v2/candidates/tea-mug.png",
+      "candidateSha256": "3fc84999b8c75aaa5cc0b3ccf96310bd2ed498cdc03417e92f8fcb2adb5cf59c",
+      "canvas": [
+        256,
+        256
+      ],
+      "sourceBounds": [
+        20,
+        38,
+        236,
+        218
+      ],
+      "candidateBounds": [
+        20,
+        38,
+        236,
+        218
+      ],
+      "alphaSha256": "2bf5702f711518a5b57c6547f9c2fc922540605d0e287d26a298e6c55786ce55",
+      "v1CandidateSha256": "3fc84999b8c75aaa5cc0b3ccf96310bd2ed498cdc03417e92f8fcb2adb5cf59c",
+      "v2Change": "byte-identical V1 carry-forward",
+      "registration": {
+        "anchor": "unchanged-current-library-anchor",
+        "pivot": "unchanged",
+        "footprint": "byte-exact-alpha"
+      }
+    },
+    {
+      "id": "toast-slices",
+      "label": "Toast slices",
+      "sourceFile": "art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/toast-slices.png",
+      "sourceSha256": "4a1344273465976f1c69b858e1ada925a69432242450c2838c68d9fe63e25a27",
+      "candidateFile": "art/drafts/kitchen-prep-tea-ligne-claire-2026-10-22-v2/candidates/toast-slices.png",
+      "candidateSha256": "953b3ea16565bd3e9a449947174691a77790cac167ffe3010e037741a7d9b721",
+      "canvas": [
+        256,
+        256
+      ],
+      "sourceBounds": [
+        25,
+        20,
+        230,
+        236
+      ],
+      "candidateBounds": [
+        25,
+        20,
+        230,
+        236
+      ],
+      "alphaSha256": "40fbd3b30ac2537e63a3dc77e48aaeb3ca20523f0703c0cff72c18e6eb7d8740",
+      "v1CandidateSha256": "953b3ea16565bd3e9a449947174691a77790cac167ffe3010e037741a7d9b721",
+      "v2Change": "byte-identical V1 carry-forward",
+      "registration": {
+        "anchor": "unchanged-current-library-anchor",
+        "pivot": "unchanged",
+        "footprint": "byte-exact-alpha"
+      }
+    },
+    {
+      "id": "prep-bread-slicing",
+      "label": "Bread slicing preparation",
+      "sourceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/prep-bread-slicing.png",
+      "sourceSha256": "d665a9df3462d9543137b9134610181d84081cff0311d2b17293985a0a5234fb",
+      "candidateFile": "art/drafts/kitchen-prep-tea-ligne-claire-2026-10-22-v2/candidates/prep-bread-slicing.png",
+      "candidateSha256": "9e16cb0c645ec31fc9f18576915c6be287eb9fc9823efa87b26c4907cb88632a",
+      "canvas": [
+        256,
+        256
+      ],
+      "sourceBounds": [
+        20,
+        65,
+        236,
+        190
+      ],
+      "candidateBounds": [
+        20,
+        65,
+        236,
+        190
+      ],
+      "alphaSha256": "e942d697304a32eaf1b7411ce0568262fefe98515c6e2611809c0cb9a4b4e80d",
+      "v1CandidateSha256": "35cdf962e85418b5c9e1a11291f2b4f10ae4b39b18de4a95aed42c11a07a2837",
+      "v2Change": "interior separation only",
+      "registration": {
+        "anchor": "unchanged-current-library-anchor",
+        "pivot": "unchanged",
+        "footprint": "byte-exact-alpha"
+      }
+    }
+  ],
+  "unchanged": [
+    "canvas",
+    "alpha bytes",
+    "transparent padding",
+    "bounds",
+    "orientation",
+    "footprint",
+    "anchors",
+    "pivots",
+    "identifiers",
+    "library selection",
+    "stories",
+    "runtime"
+  ],
+  "registration": {
+    "register": false,
+    "promote": false,
+    "currentSelectorChanges": [],
+    "approvalRequired": true
+  },
+  "evidence": {
+    "file": "art/drafts/kitchen-prep-tea-ligne-claire-2026-10-22-v2/evidence/current-candidate-ghost-64px.png",
+    "sha256": "9a594e5fec796cf1fd06380c93d13b3e529c06089b64ed54ee97839cdbb7646d"
+  },
+  "rollback": "Discard only this V2 pack and review route; V1 and every current/production file remain untouched."
+}

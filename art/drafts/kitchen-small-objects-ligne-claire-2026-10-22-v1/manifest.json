@@ -1,0 +1,194 @@
+{
+  "schema": "lighthouse-keeper/kitchen-small-objects-ligne-claire@1",
+  "set": "kitchen-small-objects-ligne-claire-v1",
+  "created": "2026-10-22",
+  "status": "immutable-review-candidate-not-approved-not-registered",
+  "visualAuthority": "sandwich-tomato V2; approved flat-glass condiment V2 family",
+  "method": "mask-locked deterministic redraw after rejecting generated geometry/tonal drift",
+  "objects": [
+    {
+      "id": "knife-chef",
+      "label": "Chef's knife",
+      "sourceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/knife-chef.png",
+      "sourceSha256": "292543ab725d9cadd473539847e25c08ba9c867720af7b71888690293a6ccb20",
+      "candidateFile": "art/drafts/kitchen-small-objects-ligne-claire-2026-10-22-v1/candidates/knife-chef.png",
+      "candidateSha256": "34fe104fecf9c2a3119ce83ef8aadd27cd7d152e84c3ed053633a168d22cd481",
+      "canvas": [
+        256,
+        256
+      ],
+      "sourceBounds": [
+        20,
+        69,
+        236,
+        187
+      ],
+      "candidateBounds": [
+        20,
+        69,
+        236,
+        187
+      ],
+      "alphaSha256": "9c843873dac5f984d7fd4329d61893db998dfb25f65a7cabcfb96fb2aaf86248",
+      "registration": {
+        "anchor": "unchanged-current-library-anchor",
+        "pivot": "unchanged",
+        "footprint": "byte-exact-alpha"
+      }
+    },
+    {
+      "id": "knife-bread",
+      "label": "Bread knife",
+      "sourceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/knife-bread.png",
+      "sourceSha256": "ea7fe35cd1487d4c1ee22539dc1ceb2e7f65143298b89e84eb9c9625228bc4d6",
+      "candidateFile": "art/drafts/kitchen-small-objects-ligne-claire-2026-10-22-v1/candidates/knife-bread.png",
+      "candidateSha256": "420a6020c1729bf349d96d46de0f1dd7221f954d181fb07a60bf2a42871692d5",
+      "canvas": [
+        256,
+        256
+      ],
+      "sourceBounds": [
+        20,
+        77,
+        236,
+        179
+      ],
+      "candidateBounds": [
+        20,
+        77,
+        236,
+        179
+      ],
+      "alphaSha256": "8ad1e05b46923665654c63905f9dc04e7e58e50ef453b07422b718980f2cc38b",
+      "registration": {
+        "anchor": "unchanged-current-library-anchor",
+        "pivot": "unchanged",
+        "footprint": "byte-exact-alpha"
+      }
+    },
+    {
+      "id": "knife-paring",
+      "label": "Paring knife",
+      "sourceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/knife-paring.png",
+      "sourceSha256": "7d69426fd494b75186b23b33e21b69e89fd83b0747af006af227d241bdb01fb1",
+      "candidateFile": "art/drafts/kitchen-small-objects-ligne-claire-2026-10-22-v1/candidates/knife-paring.png",
+      "candidateSha256": "f11e5344018fb216e81c59ab0bb445effbf10725f781f51ef375f059eaeabe2f",
+      "canvas": [
+        256,
+        256
+      ],
+      "sourceBounds": [
+        20,
+        69,
+        236,
+        186
+      ],
+      "candidateBounds": [
+        20,
+        69,
+        236,
+        186
+      ],
+      "alphaSha256": "60de492d342b5c35d6e15b092c82ee6328b1f59741f906ae6e82b7e924a48b32",
+      "registration": {
+        "anchor": "unchanged-current-library-anchor",
+        "pivot": "unchanged",
+        "footprint": "byte-exact-alpha"
+      }
+    },
+    {
+      "id": "condiment-salt-mill",
+      "label": "Salt mill",
+      "sourceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-salt-mill.png",
+      "sourceSha256": "a0eadd6a9f3b760191d69cafca84e83dca5e6b9e1d76aed6f09886ace93b3259",
+      "candidateFile": "art/drafts/kitchen-small-objects-ligne-claire-2026-10-22-v1/candidates/condiment-salt-mill.png",
+      "candidateSha256": "a6602ad49605e236d2742aee0daf9fa9ec1c7dfe0b8e49edd4a92cb78a3919a2",
+      "canvas": [
+        256,
+        256
+      ],
+      "sourceBounds": [
+        79,
+        20,
+        177,
+        236
+      ],
+      "candidateBounds": [
+        79,
+        20,
+        177,
+        236
+      ],
+      "alphaSha256": "f43e8a13c853a922a98283132bd99fcf614102d051a404d77a16a59995b55264",
+      "registration": {
+        "anchor": "unchanged-current-library-anchor",
+        "pivot": "unchanged",
+        "footprint": "byte-exact-alpha"
+      }
+    },
+    {
+      "id": "condiment-pepper-mill",
+      "label": "Pepper mill",
+      "sourceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-pepper-mill.png",
+      "sourceSha256": "762f50f6954bb69afbbdef0b41d43eef13c7d4dee0dfcb3910acf42fff1fad38",
+      "candidateFile": "art/drafts/kitchen-small-objects-ligne-claire-2026-10-22-v1/candidates/condiment-pepper-mill.png",
+      "candidateSha256": "577c6748251ec234babf9dfdf925c1d8ae9245206d5c23cee98ae5451177e4c8",
+      "canvas": [
+        256,
+        256
+      ],
+      "sourceBounds": [
+        80,
+        20,
+        175,
+        236
+      ],
+      "candidateBounds": [
+        80,
+        20,
+        175,
+        236
+      ],
+      "alphaSha256": "fa5f7277147ec232aedffaa3dde3683bfe23a2aab295005897d87c43f3b67beb",
+      "registration": {
+        "anchor": "unchanged-current-library-anchor",
+        "pivot": "unchanged",
+        "footprint": "byte-exact-alpha"
+      }
+    }
+  ],
+  "rules": [
+    "one even near-black line",
+    "real edges only",
+    "closed flat colours",
+    "no shine or gradients",
+    "accurate adult tool construction",
+    "clear at 64 px",
+    "black only for black material"
+  ],
+  "unchanged": [
+    "canvas",
+    "alpha bytes",
+    "transparent padding",
+    "bounds",
+    "orientation",
+    "footprint",
+    "anchors",
+    "pivots",
+    "identifiers",
+    "library selection",
+    "stories",
+    "runtime"
+  ],
+  "registration": {
+    "register": false,
+    "promote": false,
+    "currentSelectorChanges": [],
+    "approvalRequired": true
+  },
+  "evidence": {
+    "file": "art/drafts/kitchen-small-objects-ligne-claire-2026-10-22-v1/evidence/current-candidate-ghost-64px.png",
+    "sha256": "9bfdb55d5adedebd27d610380c78cfd2b74f7f663469df5f94294f5cd9fb766e"
+  },
+  "rollback": "Discard only this V1 pack and review route; no current or production file was changed."
+}
