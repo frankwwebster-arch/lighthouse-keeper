@@ -916,29 +916,25 @@ handoff for Standard/On/Broken and transition SFX slots is at
 [`docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md`](docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md).
 Delivery:
 [`docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md`](docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md).
-Kitchen Ligne-Claire Complete Review V55 is now the active closed review at
+Kitchen Ligne-Claire Complete Review V59 is now the active closed review at
 `/keeper-review/kitchen` (versioned route:
-`/keeper-review/kitchen-ligne-claire-complete-review-v55/index.html`). It keeps
-the complete V46 Kettle V47 motion/SFX workbench and changes only the
-dishwasher candidate. Dishwasher V7 preserves every
-V41 `98 × 82 px` canvas and alpha channel but is fully redrawn under the
-approved oven's dimensional ligne-claire authority: warm shaded enamel,
-controlled black contours, saturated blue structure and orange/copper hardware.
-V6 is rejected because sparse near-transparent pixels above its generated
-references lowered the appliance's blue top trim beneath the exact overlaid
-worktop, creating a second turquoise strip in Off, On and Broken. V7 derives
-the crop from meaningful alpha, so the cream fascia begins directly beneath
-one exact Cabinet V3 worktop through row `16`; the cabinet-side shoulders remain
-exact. Broken retains the good high-resolution reference's wider-open failed
-lower-right hinge, attached lower-left hinge, one-ended hanging handle and no
-floating bolt. The inherited forty-frame suds remain a separate
-dishwasher-owned floor-puddle effect. V55's normalised JavaScript is
-byte-identical to V46, so the approved kettle motion/SFX presentation carries
-forward exactly while Dishwasher V7 remains the sole unapproved visual
-candidate. The registration/promotion gate remains closed. See
-[`docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V7_2026-10-22.md`](docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V7_2026-10-22.md)
+`/keeper-review/kitchen-ligne-claire-complete-review-v59/index.html`). It keeps
+the complete approved V46 Kettle V47 motion/SFX presentation and treats the
+kitchen as one fitted set. Exact Cabinet V11 geometry and colours now supply
+the common worktop, side shells and plinth around the Dishwasher V8 and
+approved-oven inserts. Cupboard-only hinges are excluded from appliance
+shells, the two control bands share one room-height baseline, and the oven's
+former glossy blue slab pixels do not survive. Every adjacent pair now uses
+the same flat cabinet join. The healer's light first cap row, which interrupted
+the dark rear worktop line at placement boundaries, is replaced by a
+composite-matched dark row. Dishwasher V8's narrower fascia, failed lower-right
+hinge, attached lower-left hinge, one-ended hanging handle and separate suds
+effect remain. State behaviour, movement locking, repair, motion, SFX and
+production selectors are unchanged. V59 is unapproved and its registration
+gate remains closed. See
+[`docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V8_2026-10-22.md`](docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V8_2026-10-22.md)
 and
-[`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V55_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V55_2026-10-22.md).
+[`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V59_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V59_2026-10-22.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

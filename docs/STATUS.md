@@ -750,27 +750,23 @@ to Claude in
 `docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md`. Delivery:
 `docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md`.
 
-Kitchen Ligne-Claire Complete Review V55 at `/keeper-review/kitchen` and
-`/keeper-review/kitchen-ligne-claire-complete-review-v55/index.html` is the
-active closed kitchen review. It retains V46's exact Kettle V47 selection,
-movement/healing/motion/SFX JavaScript and all non-dishwasher bytes. Dishwasher
-V6 is rejected because sparse near-transparent pixels above its generated
-sources enlarged the crop and lowered the appliance-blue top trim beneath the
-exact cabinet worktop. That produced a second turquoise layer in Off, On and
-Broken. V7 keeps all 15 exact V41 `98 × 82 px` canvases and alpha channels
-while fully adopting the oven's dimensional enamel, contour, blue structure
-and orange/copper hardware language. Exact Cabinet V3 pixels supply the full
-worktop through row `16` and both cabinet-side shoulders. Meaningful-alpha
-source bounds now seat the cream fascia immediately beneath that single
-worktop in every state. Broken retains V6's good high-resolution reference:
-the door opens substantially farther on a failed lower-right hinge and the
-slender handle hangs from its left attachment; the bolt remains absent. The
-regular forty-frame dishwasher-owned suds layer remains the default floor
-puddle. Panel, 64 px, alpha-ghost and a clean primary
-cabinet–dishwasher–oven run are included. Registration remains closed;
-production, runtime, room layout, collision and gameplay remain unchanged.
-Delivery: `docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V7_2026-10-22.md` and
-`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V55_2026-10-22.md`.
+Kitchen Ligne-Claire Complete Review V59 at `/keeper-review/kitchen` and
+`/keeper-review/kitchen-ligne-claire-complete-review-v59/index.html` is the
+active closed kitchen review. It retains the approved Kettle V47 art and V46
+motion/SFX presentation. Cabinet V11 is now the fitted-carcase authority for
+both appliances: its worktop, blue shell geometry/colours and plinth surround
+the Dishwasher V8 and approved-oven inserts. Cupboard-only hinges/knobs are
+excluded from those appliance shells. The oven's old separate glossy blue slab
+is excluded, its approved hob/control/cavity art remains, and its controls now
+share the dishwasher's room-height baseline. Closed dishwasher states stop
+above the exact common plinth; the failed Broken door may hang in front of it.
+All adjacencies use the same flat cabinet join. The healer's former light first
+cap row is replaced in all foreground masks by a composite-matched dark row, so
+the rear worktop line crosses every placement boundary without interruption.
+Registration remains closed; source/production art, state semantics, motion,
+sound, repair locking, room layout, collision and gameplay remain unchanged.
+Delivery: `docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V8_2026-10-22.md` and
+`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V59_2026-10-22.md`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
@@ -927,8 +923,9 @@ implemented and no artwork change is authorised by it.
 The review-payload housekeeping pass completed on 21 October 2026. The exact
 clean-checkout baseline failed at 53.3148 MiB; the content-addressed sweep now
 archives every review image plus JSON/JSON.GZ at or above 24 KiB, leaving HTML
-and small JSON public. After Kitchen Complete Review V55, 6,811 references
-across 239 set manifests resolve to 3,148 immutable objects; `public/` is 49.22
+and small JSON public. After Kitchen Complete Review V59, 244 set manifests
+resolve 7,384 references to 3,216 immutable objects;
+6,071 literal page references resolve and `public/` is 49.44
 MiB, 0.83 MiB below the unchanged 50 MiB guard. Runtime
 `public/sprites` is now 40.1033 MiB, including the 27 versioned Prime sheets.
 Use `npm run maintain:keeper-review` after any review builder; it archives,

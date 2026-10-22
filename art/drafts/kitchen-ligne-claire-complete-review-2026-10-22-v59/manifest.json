@@ -1,0 +1,3157 @@
+{
+  "schema": "lighthouse-keeper/kitchen-ligne-claire-complete-review@1",
+  "set": "kitchen-ligne-claire-complete-review-v59",
+  "version": 59,
+  "created": "2026-10-22",
+  "status": "immutable-review-candidate-not-approved-not-registered",
+  "scope": "Cabinet V11 shell geometry/blue/plinth and flat continuous joins; opaque approved hob/selector components only, with no translucent cooker-surface remnants",
+  "styleRules": [
+    "one even line weight",
+    "real edges only",
+    "closed flat spot colours",
+    "no gradients shine glow hatching or texture",
+    "even daylight object colour",
+    "accurate machines simplified only by omission",
+    "clarity at 64 px",
+    "black only for black materials",
+    "marks use contour weight"
+  ],
+  "contracts": [
+    {
+      "role": "approved fitted geometry/palette/healing",
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/manifest.json",
+      "sha256": "50f01ee27bdc8de9caaae9ba400326b56048d0ca7dc98bed1cb6cc318740a3ea",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "approvalSha256": "7ede9df04e7e45fec5dda8530b4dcb7c55f22305bf1b5e71a3c518b73839859a"
+    },
+    {
+      "role": "approved oven On visual",
+      "file": "art/drafts/kitchen-oven-ligne-claire-2026-10-21-v8/manifest.json",
+      "sha256": "67a514d1ad2598ad420ca74224692f177af20b860058522fdf0ec040d4cc4f9a",
+      "approval": "docs/review/kitchen-oven-ligne-claire-v8-approval-2026-10-21.json",
+      "approvalSha256": "bc8e87715610e900cbaa25d33d16bd95964f5408270e36c58b01fba85a4ccdc6"
+    },
+    {
+      "role": "approved V12 body plus requested ajar-door V15 candidate",
+      "file": "art/drafts/kitchen-oven-broken-ajar-ligne-claire-2026-10-22-v15/manifest.json",
+      "sha256": "002181c03110d3a4c3104d31a5d0cfab15df2afa41575475c027b928312cce74",
+      "approval": "docs/review/kitchen-oven-broken-ligne-claire-v12-approval-2026-10-22.json",
+      "approvalSha256": "319ccae7aa426ef4534af87491ed43859b6821202608e68d54f7558c4822dbee"
+    },
+    {
+      "role": "dishwasher states and healing variants",
+      "file": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/manifest.json",
+      "sha256": "940727a7489b0db4f7aad95ea5280612b2a53a1635ed1a2831b9a3f3dcfe4a97",
+      "approval": null
+    },
+    {
+      "role": "table-chair candidate",
+      "file": "art/drafts/kitchen-table-chair-ligne-claire-2026-10-22-v3/manifest.json",
+      "sha256": "04de4369217f1456527d6517ded78f5df1632fcf75cc37528d041cb877ef2149",
+      "approval": null
+    },
+    {
+      "role": "bin candidate",
+      "file": "art/drafts/kitchen-bin-ligne-claire-2026-10-22-v2/manifest.json",
+      "sha256": "687512ebe1f1c18caeb79c3c66e515253137e26a8abb1f09ab4fc5692aa37799",
+      "approval": null
+    },
+    {
+      "role": "toaster candidate",
+      "file": "art/drafts/kitchen-toaster-ligne-claire-2026-10-22-v4/manifest.json",
+      "sha256": "dc1f4b3cfd3edbad971f5724ad6ba9f6df0e79c240df0e8c22281f4236dbb681",
+      "approval": null
+    },
+    {
+      "role": "mixing-bowl candidate",
+      "file": "art/drafts/kitchen-mixing-bowl-ligne-claire-2026-10-22-v1/manifest.json",
+      "sha256": "bc134b94950ad82cec5a2d9173867b046c77a096cecf9b0007391613e940abcb",
+      "approval": null
+    },
+    {
+      "role": "mask-locked knives and mills",
+      "file": "art/drafts/kitchen-small-objects-ligne-claire-2026-10-22-v1/manifest.json",
+      "sha256": "620538d7eaeb502bc6513eefd93f7f37ad1a30b6ae3c562deb3ef115878eea51",
+      "approval": null
+    },
+    {
+      "role": "mask-locked preparation and tea V2",
+      "file": "art/drafts/kitchen-prep-tea-ligne-claire-2026-10-22-v2/manifest.json",
+      "sha256": "6dd3ffa51193f0ce7e9795f0805b0c65744c82a2a09b21f85bab988f322eca7c",
+      "approval": null
+    },
+    {
+      "role": "approved current condiment V2 authority",
+      "file": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/batch-register.json",
+      "sha256": "1508b334bf1a099918244d1a251cccfba24837d701932761bd8d509ece4dad8b",
+      "approval": "existing-approved-and-registered"
+    },
+    {
+      "role": "sole approved kettle visual authority; replaces every earlier kettle candidate in this review",
+      "file": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/manifest.json",
+      "sha256": "e397089daa8cc58060772fc15e9dd8c5c106da863382ed825ffb5815bf3b1ddf",
+      "approval": "docs/review/kitchen-kettle-bubble-authority-v47-approval-2026-10-22.json",
+      "approvalSha256": "aa3718a300d77d20f9cd8a37c14dfe3ea5465ed4c71fb6356ee2f113dd73c055",
+      "authority": "kitchen-kettle-bubble-authority-v47"
+    },
+    {
+      "role": "Dishwasher V8 correction; meaningful-alpha source bounds remove the rejected second turquoise worktop layer from Off, On and Broken while retaining the V6 wider-open failed door, hanging handle, exact approved worktop, cabinet shoulders and V41 alpha",
+      "file": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v8/manifest.json",
+      "sha256": "af2ae9645587a58d2cd82497b5fc33099575a37f5a6ee35ea15d724c7939875e",
+      "approval": null
+    }
+  ],
+  "objects": [
+    {
+      "family": "cabinets",
+      "filename": "cabinet-a-le-re.png",
+      "authority": "kitchen-fitted-cabinet-ligne-claire-v3",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-split-cabinet-workbench-2026-10-20-v38/cabinet-a-le-re.png",
+      "sourceSha256": "016968bcf538ffe7d29b95bfdc84d1952199e40ad565b11bdb1e2e081a45e47e",
+      "candidateFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-a-le-re.png",
+      "candidateSha256": "ead4922bbec6070afdc7bf2db7ae184d3abe6cd3901d3454ae7876822852608a",
+      "sourcePixels": [
+        92,
+        82
+      ],
+      "candidatePixels": [
+        92,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        88,
+        78
+      ],
+      "candidateAlphaBounds": [
+        4,
+        4,
+        88,
+        78
+      ],
+      "sourceAlphaSha256": "2b0062991afe215427238312ff40da41cc47713b518c5ea002b5a9aa79174e41",
+      "candidateAlphaSha256": "2b0062991afe215427238312ff40da41cc47713b518c5ea002b5a9aa79174e41",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/cabinets--cabinet-a-le-re.png",
+      "reviewSha256": "ead4922bbec6070afdc7bf2db7ae184d3abe6cd3901d3454ae7876822852608a"
+    },
+    {
+      "family": "cabinets",
+      "filename": "cabinet-a-le-rj.png",
+      "authority": "kitchen-fitted-cabinet-ligne-claire-v3",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-split-cabinet-workbench-2026-10-20-v38/cabinet-a-le-rj.png",
+      "sourceSha256": "781ec54ab4bb47c7432fc95b9d14b67a3b941e2a9c9e072a15fbf5adc3c0a535",
+      "candidateFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-a-le-rj.png",
+      "candidateSha256": "80cbefc9682886da4e59c4130170260e8f8d6e12999a73deb780a195ed3e62df",
+      "sourcePixels": [
+        92,
+        82
+      ],
+      "candidatePixels": [
+        92,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "candidateAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "sourceAlphaSha256": "fa7fa236a9cd5ee63607feb2307b6952a7fc737ad4633085d5025aa50e012e27",
+      "candidateAlphaSha256": "fa7fa236a9cd5ee63607feb2307b6952a7fc737ad4633085d5025aa50e012e27",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/cabinets--cabinet-a-le-rj.png",
+      "reviewSha256": "80cbefc9682886da4e59c4130170260e8f8d6e12999a73deb780a195ed3e62df"
+    },
+    {
+      "family": "cabinets",
+      "filename": "cabinet-a-lj-re.png",
+      "authority": "kitchen-fitted-cabinet-ligne-claire-v3",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-split-cabinet-workbench-2026-10-20-v38/cabinet-a-lj-re.png",
+      "sourceSha256": "6ab884ed46a9314fb8ad3d65f799b59564044f770bc027fc7828f9953aacc560",
+      "candidateFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-a-lj-re.png",
+      "candidateSha256": "e037cee106efcc38d568e51d0c0665b86c872bff1d30c8bbe9d6a1897cfdb125",
+      "sourcePixels": [
+        92,
+        82
+      ],
+      "candidatePixels": [
+        92,
+        82
+      ],
+      "sourceAlphaBounds": [
+        0,
+        4,
+        88,
+        78
+      ],
+      "candidateAlphaBounds": [
+        0,
+        4,
+        88,
+        78
+      ],
+      "sourceAlphaSha256": "c8e096f02935c992d435137af45bc472c4351791ca9d64e6eac3f5c5af7c96df",
+      "candidateAlphaSha256": "c8e096f02935c992d435137af45bc472c4351791ca9d64e6eac3f5c5af7c96df",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/cabinets--cabinet-a-lj-re.png",
+      "reviewSha256": "e037cee106efcc38d568e51d0c0665b86c872bff1d30c8bbe9d6a1897cfdb125"
+    },
+    {
+      "family": "cabinets",
+      "filename": "cabinet-a-lj-rj.png",
+      "authority": "kitchen-fitted-cabinet-ligne-claire-v3",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-split-cabinet-workbench-2026-10-20-v38/cabinet-a-lj-rj.png",
+      "sourceSha256": "85f936c55c206b376ba71862c763a893725efcfb1540dc9762b415d426b63422",
+      "candidateFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-a-lj-rj.png",
+      "candidateSha256": "debdba3d49a9a631f788538cff3f5480713ffe27358c3fee6bfbf871c2428417",
+      "sourcePixels": [
+        92,
+        82
+      ],
+      "candidatePixels": [
+        92,
+        82
+      ],
+      "sourceAlphaBounds": [
+        0,
+        4,
+        92,
+        78
+      ],
+      "candidateAlphaBounds": [
+        0,
+        4,
+        92,
+        78
+      ],
+      "sourceAlphaSha256": "da34827d037287179c0ee5a7a418c05b9ef0d320894bcb26d6a19184f162283d",
+      "candidateAlphaSha256": "da34827d037287179c0ee5a7a418c05b9ef0d320894bcb26d6a19184f162283d",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/cabinets--cabinet-a-lj-rj.png",
+      "reviewSha256": "debdba3d49a9a631f788538cff3f5480713ffe27358c3fee6bfbf871c2428417"
+    },
+    {
+      "family": "cabinets",
+      "filename": "cabinet-b-le-re.png",
+      "authority": "kitchen-fitted-cabinet-ligne-claire-v3",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-split-cabinet-workbench-2026-10-20-v38/cabinet-b-le-re.png",
+      "sourceSha256": "d0f2210cb4efd5ca9056e7d6386360b629570c419bb6d35911b7eee09acb6161",
+      "candidateFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-b-le-re.png",
+      "candidateSha256": "98f029f6e34385a7f3cadbbe97006a2cdcc231056996c1852e928e0c9169ea18",
+      "sourcePixels": [
+        92,
+        82
+      ],
+      "candidatePixels": [
+        92,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        88,
+        78
+      ],
+      "candidateAlphaBounds": [
+        4,
+        4,
+        88,
+        78
+      ],
+      "sourceAlphaSha256": "ec10fc81f1899d16c39e4981346154b5f11bc6f36238b3e5e3a9571c3528e58a",
+      "candidateAlphaSha256": "ec10fc81f1899d16c39e4981346154b5f11bc6f36238b3e5e3a9571c3528e58a",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/cabinets--cabinet-b-le-re.png",
+      "reviewSha256": "98f029f6e34385a7f3cadbbe97006a2cdcc231056996c1852e928e0c9169ea18"
+    },
+    {
+      "family": "cabinets",
+      "filename": "cabinet-b-le-rj.png",
+      "authority": "kitchen-fitted-cabinet-ligne-claire-v3",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-split-cabinet-workbench-2026-10-20-v38/cabinet-b-le-rj.png",
+      "sourceSha256": "0a10e2811e684578396d8646861b63613bfb0c512cbb0455356ad3631ac01856",
+      "candidateFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-b-le-rj.png",
+      "candidateSha256": "7ee338ce6c54be300d239b4856c0a85eb87d33a2585a50933e4ffaf8af88ac87",
+      "sourcePixels": [
+        92,
+        82
+      ],
+      "candidatePixels": [
+        92,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "candidateAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "sourceAlphaSha256": "7285fddb4486d2ee27ab08c68e8eb5ea844473eb46988c9a51194f7ae9f5ab9f",
+      "candidateAlphaSha256": "7285fddb4486d2ee27ab08c68e8eb5ea844473eb46988c9a51194f7ae9f5ab9f",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/cabinets--cabinet-b-le-rj.png",
+      "reviewSha256": "7ee338ce6c54be300d239b4856c0a85eb87d33a2585a50933e4ffaf8af88ac87"
+    },
+    {
+      "family": "cabinets",
+      "filename": "cabinet-b-lj-re.png",
+      "authority": "kitchen-fitted-cabinet-ligne-claire-v3",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-split-cabinet-workbench-2026-10-20-v38/cabinet-b-lj-re.png",
+      "sourceSha256": "e6d272a90a943930735c7b07bbd4a24107726529ea67a486d806d1acf6fe0363",
+      "candidateFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-b-lj-re.png",
+      "candidateSha256": "ee626220ceaf122a4b30773dfaa07e9de3d062d3014820d35b3e82256efd2643",
+      "sourcePixels": [
+        92,
+        82
+      ],
+      "candidatePixels": [
+        92,
+        82
+      ],
+      "sourceAlphaBounds": [
+        0,
+        4,
+        88,
+        78
+      ],
+      "candidateAlphaBounds": [
+        0,
+        4,
+        88,
+        78
+      ],
+      "sourceAlphaSha256": "262987e2861da3c9b31b11df4e0cac8b63fb8c5767799645721a3952cd91d167",
+      "candidateAlphaSha256": "262987e2861da3c9b31b11df4e0cac8b63fb8c5767799645721a3952cd91d167",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/cabinets--cabinet-b-lj-re.png",
+      "reviewSha256": "ee626220ceaf122a4b30773dfaa07e9de3d062d3014820d35b3e82256efd2643"
+    },
+    {
+      "family": "cabinets",
+      "filename": "cabinet-b-lj-rj.png",
+      "authority": "kitchen-fitted-cabinet-ligne-claire-v3",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-split-cabinet-workbench-2026-10-20-v38/cabinet-b-lj-rj.png",
+      "sourceSha256": "6e8fd99dd81b24727829febbaa76db36d9a570b8083dc736fc43f7a723615401",
+      "candidateFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-b-lj-rj.png",
+      "candidateSha256": "9d7bc802f1eefab2974aef460afcaf7e3f596d7e4a09f303bd8f1a4d6485d4a2",
+      "sourcePixels": [
+        92,
+        82
+      ],
+      "candidatePixels": [
+        92,
+        82
+      ],
+      "sourceAlphaBounds": [
+        0,
+        4,
+        92,
+        78
+      ],
+      "candidateAlphaBounds": [
+        0,
+        4,
+        92,
+        78
+      ],
+      "sourceAlphaSha256": "c224774658f89081806470bedb535dc4b0fe1d7e9184480bfda3ec4f5ef64f4f",
+      "candidateAlphaSha256": "c224774658f89081806470bedb535dc4b0fe1d7e9184480bfda3ec4f5ef64f4f",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/cabinets--cabinet-b-lj-rj.png",
+      "reviewSha256": "9d7bc802f1eefab2974aef460afcaf7e3f596d7e4a09f303bd8f1a4d6485d4a2"
+    },
+    {
+      "family": "fridge",
+      "filename": "fridge-standard.png",
+      "authority": "kitchen-fitted-cabinet-ligne-claire-v3",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v37/fridge-standard.png",
+      "sourceSha256": "a93f05df2013dfd406291311ee14621eb9a4f9c5029f6f2a8c0807d7dd692cee",
+      "candidateFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/fridge/fridge-standard.png",
+      "candidateSha256": "14bd88c1219accf8258958b7a8c70f0e31f84a06401b802e503fa7645377b9b3",
+      "sourcePixels": [
+        144,
+        90
+      ],
+      "candidatePixels": [
+        144,
+        90
+      ],
+      "sourceAlphaBounds": [
+        28,
+        4,
+        116,
+        81
+      ],
+      "candidateAlphaBounds": [
+        28,
+        4,
+        116,
+        81
+      ],
+      "sourceAlphaSha256": "3ac39b677978d6aded279709aa29fa5a3b77d3123804d0299550cb719540177a",
+      "candidateAlphaSha256": "3ac39b677978d6aded279709aa29fa5a3b77d3123804d0299550cb719540177a",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/fridge--fridge-standard.png",
+      "reviewSha256": "14bd88c1219accf8258958b7a8c70f0e31f84a06401b802e503fa7645377b9b3"
+    },
+    {
+      "family": "fridge",
+      "filename": "fridge-broken-hinge-failed.png",
+      "authority": "kitchen-fitted-cabinet-ligne-claire-v3",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v37/fridge-broken-hinge-failed.png",
+      "sourceSha256": "e150fc6f02c85a78f5a4330095dd507d38eec837566275df029017dc18a4c1b2",
+      "candidateFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/fridge/fridge-broken-hinge-failed.png",
+      "candidateSha256": "c30e76fe857b10f2494be87c32152ae305545a10305db8df61231147054f329b",
+      "sourcePixels": [
+        144,
+        90
+      ],
+      "candidatePixels": [
+        144,
+        90
+      ],
+      "sourceAlphaBounds": [
+        26,
+        4,
+        118,
+        87
+      ],
+      "candidateAlphaBounds": [
+        26,
+        4,
+        118,
+        87
+      ],
+      "sourceAlphaSha256": "d9926c104efd7bae9d436d62277dc56e378d23a5b3970f045c10286f3b5a4748",
+      "candidateAlphaSha256": "d9926c104efd7bae9d436d62277dc56e378d23a5b3970f045c10286f3b5a4748",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/fridge--fridge-broken-hinge-failed.png",
+      "reviewSha256": "c30e76fe857b10f2494be87c32152ae305545a10305db8df61231147054f329b"
+    },
+    {
+      "family": "sink",
+      "filename": "sink-cabinet-standard.png",
+      "authority": "kitchen-fitted-cabinet-ligne-claire-v3",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-sink-smooth-join-2026-10-19-v19/sink-cabinet-standard.png",
+      "sourceSha256": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+      "candidateFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/sink/sink-cabinet-standard.png",
+      "candidateSha256": "fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2",
+      "sourcePixels": [
+        92,
+        108
+      ],
+      "candidatePixels": [
+        92,
+        108
+      ],
+      "sourceAlphaBounds": [
+        1,
+        6,
+        88,
+        104
+      ],
+      "candidateAlphaBounds": [
+        1,
+        6,
+        88,
+        104
+      ],
+      "sourceAlphaSha256": "0427262c1607d62be62712192d0fd4c1fa84c1aecd55271b6c3abf961ce98791",
+      "candidateAlphaSha256": "0427262c1607d62be62712192d0fd4c1fa84c1aecd55271b6c3abf961ce98791",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/sink--sink-cabinet-standard.png",
+      "reviewSha256": "fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2"
+    },
+    {
+      "family": "sink",
+      "filename": "sink-cabinet-on-base.png",
+      "authority": "kitchen-fitted-cabinet-ligne-claire-v3",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-sink-smooth-join-2026-10-19-v19/sink-cabinet-on-base.png",
+      "sourceSha256": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+      "candidateFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/sink/sink-cabinet-on-base.png",
+      "candidateSha256": "fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2",
+      "sourcePixels": [
+        92,
+        108
+      ],
+      "candidatePixels": [
+        92,
+        108
+      ],
+      "sourceAlphaBounds": [
+        1,
+        6,
+        88,
+        104
+      ],
+      "candidateAlphaBounds": [
+        1,
+        6,
+        88,
+        104
+      ],
+      "sourceAlphaSha256": "0427262c1607d62be62712192d0fd4c1fa84c1aecd55271b6c3abf961ce98791",
+      "candidateAlphaSha256": "0427262c1607d62be62712192d0fd4c1fa84c1aecd55271b6c3abf961ce98791",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/sink--sink-cabinet-on-base.png",
+      "reviewSha256": "fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2"
+    },
+    {
+      "family": "sink",
+      "filename": "sink-cabinet-broken-base.png",
+      "authority": "kitchen-fitted-cabinet-ligne-claire-v3",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-sink-smooth-join-2026-10-19-v19/sink-cabinet-broken-base.png",
+      "sourceSha256": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+      "candidateFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/sink/sink-cabinet-broken-base.png",
+      "candidateSha256": "fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2",
+      "sourcePixels": [
+        92,
+        108
+      ],
+      "candidatePixels": [
+        92,
+        108
+      ],
+      "sourceAlphaBounds": [
+        1,
+        6,
+        88,
+        104
+      ],
+      "candidateAlphaBounds": [
+        1,
+        6,
+        88,
+        104
+      ],
+      "sourceAlphaSha256": "0427262c1607d62be62712192d0fd4c1fa84c1aecd55271b6c3abf961ce98791",
+      "candidateAlphaSha256": "0427262c1607d62be62712192d0fd4c1fa84c1aecd55271b6c3abf961ce98791",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/sink--sink-cabinet-broken-base.png",
+      "reviewSha256": "fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2"
+    },
+    {
+      "family": "healing",
+      "filename": "join-body-backfill-template.png",
+      "authority": "kitchen-fitted-cabinet-ligne-claire-v3",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/join-body-backfill-template.png",
+      "sourceSha256": "e8bd0080ca426e6d2d750b0c5cbb0b912fe659ec1a49867e740b9216c6b68040",
+      "candidateFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/join-body-backfill-template.png",
+      "candidateSha256": "a6eb7269c068986f38ba771f48e77266b91899b611d31cdbc068c48dfd5eec64",
+      "sourcePixels": [
+        14,
+        63
+      ],
+      "candidatePixels": [
+        14,
+        63
+      ],
+      "sourceAlphaBounds": [
+        0,
+        0,
+        14,
+        63
+      ],
+      "candidateAlphaBounds": [
+        0,
+        0,
+        14,
+        63
+      ],
+      "sourceAlphaSha256": "6e9d5db1c5be26138daed52fa97ea458ec339bd3ca441b0fb3fc3f8c0382425a",
+      "candidateAlphaSha256": "6e9d5db1c5be26138daed52fa97ea458ec339bd3ca441b0fb3fc3f8c0382425a",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/healing--join-body-backfill-template.png",
+      "reviewSha256": "a6eb7269c068986f38ba771f48e77266b91899b611d31cdbc068c48dfd5eec64"
+    },
+    {
+      "family": "healing",
+      "filename": "countertop-join-cap-template.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/countertop-join-cap-template.png",
+      "sourceSha256": "99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/healing--countertop-join-cap-template.png",
+      "candidateSha256": "0e308d155261271e6242468b535d0f3a4bbd2bbfadc6231ce37f449e9ff1ca82",
+      "sourcePixels": [
+        24,
+        12
+      ],
+      "candidatePixels": [
+        24,
+        12
+      ],
+      "sourceAlphaBounds": [
+        0,
+        0,
+        24,
+        12
+      ],
+      "candidateAlphaBounds": [
+        0,
+        0,
+        24,
+        12
+      ],
+      "sourceAlphaSha256": "c49fd3b652e068233b78f7300696e2201ddf3932072b8b303de297e7d0354827",
+      "candidateAlphaSha256": "c49fd3b652e068233b78f7300696e2201ddf3932072b8b303de297e7d0354827",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/healing--countertop-join-cap-template.png",
+      "reviewSha256": "0e308d155261271e6242468b535d0f3a4bbd2bbfadc6231ce37f449e9ff1ca82"
+    },
+    {
+      "family": "healing",
+      "filename": "countertop-triangle-underlay-template.png",
+      "authority": "kitchen-fitted-cabinet-ligne-claire-v3",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/countertop-triangle-underlay-template.png",
+      "sourceSha256": "99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c",
+      "candidateFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/countertop-triangle-underlay-template.png",
+      "candidateSha256": "1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96",
+      "sourcePixels": [
+        24,
+        12
+      ],
+      "candidatePixels": [
+        24,
+        12
+      ],
+      "sourceAlphaBounds": [
+        0,
+        0,
+        24,
+        12
+      ],
+      "candidateAlphaBounds": [
+        0,
+        0,
+        24,
+        12
+      ],
+      "sourceAlphaSha256": "c49fd3b652e068233b78f7300696e2201ddf3932072b8b303de297e7d0354827",
+      "candidateAlphaSha256": "c49fd3b652e068233b78f7300696e2201ddf3932072b8b303de297e7d0354827",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/healing--countertop-triangle-underlay-template.png",
+      "reviewSha256": "1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96"
+    },
+    {
+      "family": "healing",
+      "filename": "neighbour-seam-cleanup-left.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/neighbour-seam-cleanup-left.png",
+      "sourceSha256": "cb8f761a8458ca59b99e5c7ade6c6d9b32de4b5dd796c9d07559783b5a9eaec1",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/healing--neighbour-seam-cleanup-left.png",
+      "candidateSha256": "cb11907141366d9c6d61b904591a7b527e57535acfb943d97ef7bf2d73e6bff8",
+      "sourcePixels": [
+        6,
+        12
+      ],
+      "candidatePixels": [
+        6,
+        12
+      ],
+      "sourceAlphaBounds": [
+        0,
+        0,
+        6,
+        12
+      ],
+      "candidateAlphaBounds": [
+        0,
+        0,
+        6,
+        12
+      ],
+      "sourceAlphaSha256": "ad1457f87be782bd766dbb87ae3dadbb7456b17a96c58e3e7b4a5d0adb33f9bf",
+      "candidateAlphaSha256": "51cfa32fece0135f38198da2529e7c6a0c1f53747984d55705077b7f6920cc76",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/healing--neighbour-seam-cleanup-left.png",
+      "reviewSha256": "cb11907141366d9c6d61b904591a7b527e57535acfb943d97ef7bf2d73e6bff8"
+    },
+    {
+      "family": "healing",
+      "filename": "neighbour-seam-cleanup-right.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/neighbour-seam-cleanup-right.png",
+      "sourceSha256": "f06898c1750bc735db7ce37723d1d2487294d04e9233f812c18c9970e041e267",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/healing--neighbour-seam-cleanup-right.png",
+      "candidateSha256": "cb11907141366d9c6d61b904591a7b527e57535acfb943d97ef7bf2d73e6bff8",
+      "sourcePixels": [
+        6,
+        12
+      ],
+      "candidatePixels": [
+        6,
+        12
+      ],
+      "sourceAlphaBounds": [
+        0,
+        0,
+        6,
+        12
+      ],
+      "candidateAlphaBounds": [
+        0,
+        0,
+        6,
+        12
+      ],
+      "sourceAlphaSha256": "6c4966ef05d4a4555061dcd4152e2211875b0118c0622599fb3a91bb52d624e5",
+      "candidateAlphaSha256": "51cfa32fece0135f38198da2529e7c6a0c1f53747984d55705077b7f6920cc76",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/healing--neighbour-seam-cleanup-right.png",
+      "reviewSha256": "cb11907141366d9c6d61b904591a7b527e57535acfb943d97ef7bf2d73e6bff8"
+    },
+    {
+      "family": "oven",
+      "filename": "oven-on.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": "docs/review/kitchen-oven-ligne-claire-v8-approval-2026-10-21.json",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/oven-on.png",
+      "sourceSha256": "72c05de613f386ed51f9e049a3a986f34279bf04614a05b7b193d0b243be7622",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/oven--oven-on.png",
+      "candidateSha256": "cca57fb73365a5c45c45694873b14226593e02ccec0863f396af70819030ee22",
+      "sourcePixels": [
+        92,
+        85
+      ],
+      "candidatePixels": [
+        92,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        88,
+        81
+      ],
+      "candidateAlphaBounds": [
+        4,
+        4,
+        88,
+        78
+      ],
+      "sourceAlphaSha256": "5d6f172488f64934a1c2039e15c04a3234cd878f5d695f8842566f95a6560f7f",
+      "candidateAlphaSha256": "d0f880643a156f7a4a7ac1ca4308a0de5a0c8949482f650651050a0b3ab96a8a",
+      "canvasExact": false,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/oven--oven-on.png",
+      "reviewSha256": "cca57fb73365a5c45c45694873b14226593e02ccec0863f396af70819030ee22"
+    },
+    {
+      "family": "oven",
+      "filename": "oven-off.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/oven-off.png",
+      "sourceSha256": "c2f5687b598b42f15b42a2323e2d441d1b0b892ea2f75cbea590f4190e6c0b8e",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/oven--oven-off.png",
+      "candidateSha256": "b38a58c4cc72f7c59534d399a902d6fb76220f62b9ede38bfc768f6e302ed826",
+      "sourcePixels": [
+        92,
+        85
+      ],
+      "candidatePixels": [
+        92,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        88,
+        81
+      ],
+      "candidateAlphaBounds": [
+        4,
+        4,
+        88,
+        78
+      ],
+      "sourceAlphaSha256": "5d6f172488f64934a1c2039e15c04a3234cd878f5d695f8842566f95a6560f7f",
+      "candidateAlphaSha256": "d0f880643a156f7a4a7ac1ca4308a0de5a0c8949482f650651050a0b3ab96a8a",
+      "canvasExact": false,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/oven--oven-off.png",
+      "reviewSha256": "b38a58c4cc72f7c59534d399a902d6fb76220f62b9ede38bfc768f6e302ed826"
+    },
+    {
+      "family": "oven",
+      "filename": "oven-broken.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": "docs/review/kitchen-oven-broken-ligne-claire-v12-approval-2026-10-22.json",
+      "sourceFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v12/candidates/oven/oven-broken.png",
+      "sourceSha256": "cd9d2db29f58a000665fbebe79d88157a855271217d3ddbdd1b04481d0ad9988",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/oven--oven-broken.png",
+      "candidateSha256": "860ed2f6cba5941c144127849ceaef2df4544d448adf6c5b9153099133ccd613",
+      "sourcePixels": [
+        92,
+        85
+      ],
+      "candidatePixels": [
+        92,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        88,
+        81
+      ],
+      "candidateAlphaBounds": [
+        4,
+        4,
+        88,
+        78
+      ],
+      "sourceAlphaSha256": "1c85418aff1f1cd096368e83d4515f08c18fd02a392a9eec3149fd55bee275a9",
+      "candidateAlphaSha256": "d0f880643a156f7a4a7ac1ca4308a0de5a0c8949482f650651050a0b3ab96a8a",
+      "canvasExact": false,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/oven--oven-broken.png",
+      "reviewSha256": "860ed2f6cba5941c144127849ceaef2df4544d448adf6c5b9153099133ccd613"
+    },
+    {
+      "family": "oven",
+      "filename": "oven-broken-cavity-lit.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": "docs/review/kitchen-oven-broken-ligne-claire-v12-approval-2026-10-22.json",
+      "sourceFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v12/candidates/oven/oven-broken-cavity-lit.png",
+      "sourceSha256": "71ce12b22ea9c87976e6c0d2440e7e41dc407f1999d90e9417d3786ce6ba2ee5",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/oven--oven-broken-cavity-lit.png",
+      "candidateSha256": "fe7683d71e205c867f13da476309eca8d1c6b98146ff76a41ac6c3062c23745b",
+      "sourcePixels": [
+        92,
+        85
+      ],
+      "candidatePixels": [
+        92,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        88,
+        81
+      ],
+      "candidateAlphaBounds": [
+        4,
+        4,
+        88,
+        78
+      ],
+      "sourceAlphaSha256": "1c85418aff1f1cd096368e83d4515f08c18fd02a392a9eec3149fd55bee275a9",
+      "candidateAlphaSha256": "d0f880643a156f7a4a7ac1ca4308a0de5a0c8949482f650651050a0b3ab96a8a",
+      "canvasExact": false,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/oven--oven-broken-cavity-lit.png",
+      "reviewSha256": "fe7683d71e205c867f13da476309eca8d1c6b98146ff76a41ac6c3062c23745b"
+    },
+    {
+      "family": "oven",
+      "filename": "oven-broken-warning-lit.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": "docs/review/kitchen-oven-broken-ligne-claire-v12-approval-2026-10-22.json",
+      "sourceFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v12/candidates/oven/oven-broken-warning-lit.png",
+      "sourceSha256": "812b66c2a6105ee92146f86f3bd29f4b84a6d38cc9ea7e4726f397929affa27f",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/oven--oven-broken-warning-lit.png",
+      "candidateSha256": "860ed2f6cba5941c144127849ceaef2df4544d448adf6c5b9153099133ccd613",
+      "sourcePixels": [
+        92,
+        85
+      ],
+      "candidatePixels": [
+        92,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        88,
+        81
+      ],
+      "candidateAlphaBounds": [
+        4,
+        4,
+        88,
+        78
+      ],
+      "sourceAlphaSha256": "1c85418aff1f1cd096368e83d4515f08c18fd02a392a9eec3149fd55bee275a9",
+      "candidateAlphaSha256": "d0f880643a156f7a4a7ac1ca4308a0de5a0c8949482f650651050a0b3ab96a8a",
+      "canvasExact": false,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/oven--oven-broken-warning-lit.png",
+      "reviewSha256": "860ed2f6cba5941c144127849ceaef2df4544d448adf6c5b9153099133ccd613"
+    },
+    {
+      "family": "oven",
+      "filename": "oven-broken-both-lit.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": "docs/review/kitchen-oven-broken-ligne-claire-v12-approval-2026-10-22.json",
+      "sourceFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v12/candidates/oven/oven-broken-both-lit.png",
+      "sourceSha256": "3b889d6c0e4c9ba18f124920a37573835a08dd6c7bb83a90badcf51a39b57e2d",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/oven--oven-broken-both-lit.png",
+      "candidateSha256": "5cdb8482ed8b0d36135207cb10cf100a08b874642f24f5de617fffa9cfa0b271",
+      "sourcePixels": [
+        92,
+        85
+      ],
+      "candidatePixels": [
+        92,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        88,
+        81
+      ],
+      "candidateAlphaBounds": [
+        4,
+        4,
+        88,
+        78
+      ],
+      "sourceAlphaSha256": "1c85418aff1f1cd096368e83d4515f08c18fd02a392a9eec3149fd55bee275a9",
+      "candidateAlphaSha256": "d0f880643a156f7a4a7ac1ca4308a0de5a0c8949482f650651050a0b3ab96a8a",
+      "canvasExact": false,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/oven--oven-broken-both-lit.png",
+      "reviewSha256": "5cdb8482ed8b0d36135207cb10cf100a08b874642f24f5de617fffa9cfa0b271"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "dishwasher-off.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off.png",
+      "sourceSha256": "d006ccfa83bf5c754a7f1249d3969ffe464d3853a15131f64cf0c48d8239b31d",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-off.png",
+      "candidateSha256": "5fe8a4be5bc7f3424e9d28ae302b59785d67e76379c109f3a871f442600dc60e",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "07532f7fc7d627930af0b89cdb8e1d99fddc24365487a6c85de3ce36a3add087",
+      "candidateAlphaSha256": "486d2446d9e7ffdaf6c0c648dff88240ae7a9359f84ff0dc820a28007b7954a2",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-off.png",
+      "reviewSha256": "5fe8a4be5bc7f3424e9d28ae302b59785d67e76379c109f3a871f442600dc60e"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "dishwasher-off-le-re.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off-le-re.png",
+      "sourceSha256": "d006ccfa83bf5c754a7f1249d3969ffe464d3853a15131f64cf0c48d8239b31d",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-off-le-re.png",
+      "candidateSha256": "5fe8a4be5bc7f3424e9d28ae302b59785d67e76379c109f3a871f442600dc60e",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "07532f7fc7d627930af0b89cdb8e1d99fddc24365487a6c85de3ce36a3add087",
+      "candidateAlphaSha256": "486d2446d9e7ffdaf6c0c648dff88240ae7a9359f84ff0dc820a28007b7954a2",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-off-le-re.png",
+      "reviewSha256": "5fe8a4be5bc7f3424e9d28ae302b59785d67e76379c109f3a871f442600dc60e"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "dishwasher-off-le-rj.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off-le-rj.png",
+      "sourceSha256": "b26d295f09e74a589feeb548cd3a90906ad832288ed2b68083f7129256664241",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-off-le-rj.png",
+      "candidateSha256": "9c5d9857de8577fe871b4c0b4b882cceb94e07ccf992072a193c6d3447f04c0f",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        95,
+        78
+      ],
+      "sourceAlphaSha256": "17ff412f62bfa1c56519ce6476c689faa480e5ad6fb36c8e2b7037c2185f50b9",
+      "candidateAlphaSha256": "e34037f8c32c863ce86e35e556e3197ba8732da7514116e64a0dca0ea3d3d3ab",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-off-le-rj.png",
+      "reviewSha256": "9c5d9857de8577fe871b4c0b4b882cceb94e07ccf992072a193c6d3447f04c0f"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "dishwasher-off-lj-re.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off-lj-re.png",
+      "sourceSha256": "69fb2c3f0c165a5d5653508a901983126ef05084997d60afc75aabcf53b5da53",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-off-lj-re.png",
+      "candidateSha256": "9c063ebc3b5155720e05d6f387141e5ddba578eb7dd0a322fae7f559c89f7517",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaBounds": [
+        3,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "1660eb7f557c998568f4ccb094f206d26823eec55359ed0530068a029b96d31f",
+      "candidateAlphaSha256": "268631d6f06ad45fa3f71e2d97c621e0a18aec21e985abd0db0532509a24798c",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-off-lj-re.png",
+      "reviewSha256": "9c063ebc3b5155720e05d6f387141e5ddba578eb7dd0a322fae7f559c89f7517"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "dishwasher-off-lj-rj.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off-lj-rj.png",
+      "sourceSha256": "5cc2ecfa87fe1fe54e97ced54ee3bc8a1124d47076da151301b75c3ca5fd1bc3",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-off-lj-rj.png",
+      "candidateSha256": "496442bc8acc5e11b39f6fc0f56fc97f76fc3a15be01d9300af5bf33d7e65725",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaBounds": [
+        3,
+        4,
+        95,
+        78
+      ],
+      "sourceAlphaSha256": "16f4092ffa1b00d48fb8f7795834a417a106e25fb6932576ef499b78ea603f20",
+      "candidateAlphaSha256": "4a5b91976201d1f19ba0f6d23d7f3bc6f00f0c7cfc7c066baadb2965dba88466",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-off-lj-rj.png",
+      "reviewSha256": "496442bc8acc5e11b39f6fc0f56fc97f76fc3a15be01d9300af5bf33d7e65725"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "dishwasher-on.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on.png",
+      "sourceSha256": "f7a8976bc9cfaf83feb443a65c8b20bf075bff821a4053be5ace71fecb124953",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-on.png",
+      "candidateSha256": "7ec840c0ac46ff7761829b66d58148d343c1a122ad6a92e05165ff4b44735709",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "95e3f93d35e9897facda5e822e3b89e998581470e3960af9f56214024492c14c",
+      "candidateAlphaSha256": "2e9b36cc1aa1351815d84c9f8e5deb14ff1bbd896d6bcdffe39bb2906f4bb9e9",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-on.png",
+      "reviewSha256": "7ec840c0ac46ff7761829b66d58148d343c1a122ad6a92e05165ff4b44735709"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "dishwasher-on-le-re.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on-le-re.png",
+      "sourceSha256": "f7a8976bc9cfaf83feb443a65c8b20bf075bff821a4053be5ace71fecb124953",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-on-le-re.png",
+      "candidateSha256": "7ec840c0ac46ff7761829b66d58148d343c1a122ad6a92e05165ff4b44735709",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "95e3f93d35e9897facda5e822e3b89e998581470e3960af9f56214024492c14c",
+      "candidateAlphaSha256": "2e9b36cc1aa1351815d84c9f8e5deb14ff1bbd896d6bcdffe39bb2906f4bb9e9",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-on-le-re.png",
+      "reviewSha256": "7ec840c0ac46ff7761829b66d58148d343c1a122ad6a92e05165ff4b44735709"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "dishwasher-on-le-rj.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on-le-rj.png",
+      "sourceSha256": "256b9c5b960c1edd262f9461bd71e252ed473b4125a082a9ce748a97b9e6beee",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-on-le-rj.png",
+      "candidateSha256": "0ee8aba31bf68daccde9dc8bbfb37e9221dad947e3863a434425d911e2b7b5c0",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        95,
+        78
+      ],
+      "sourceAlphaSha256": "143689f38f07dda1db7b1fb4a0ac36996ff4ebb97b38fbbefc4eaff1187b9c8f",
+      "candidateAlphaSha256": "6f614532fedc0138b50cd7db8ff745851d229366f261f15c79c34c60a2ab6bc9",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-on-le-rj.png",
+      "reviewSha256": "0ee8aba31bf68daccde9dc8bbfb37e9221dad947e3863a434425d911e2b7b5c0"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "dishwasher-on-lj-re.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on-lj-re.png",
+      "sourceSha256": "72861c9f53167c831e72800deefd67e5fe0d1c86fcf9d98e1ea65d1b779334e1",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-on-lj-re.png",
+      "candidateSha256": "81fa998bc01a430f4315bde65b4f1674439f181fe291ea24e998a68a37075ad2",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaBounds": [
+        3,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "409de84f21f6930b2141f145a80ae0cd62401e58f2ec925c1f9c17a8c88e1833",
+      "candidateAlphaSha256": "1c56fe6626bdcd19ebe0ad9952399a812cd8ceef5e2655970e769d65cf18c155",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-on-lj-re.png",
+      "reviewSha256": "81fa998bc01a430f4315bde65b4f1674439f181fe291ea24e998a68a37075ad2"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "dishwasher-on-lj-rj.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on-lj-rj.png",
+      "sourceSha256": "53310feca0aff82aca07d6d6ba401b24fc9912e70b5614e3648401f2dd7e6296",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-on-lj-rj.png",
+      "candidateSha256": "3413ddf3d3793a217fc84a48f5c841adce86bd914883010c8c027c72f797d30f",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "candidateAlphaBounds": [
+        3,
+        4,
+        95,
+        78
+      ],
+      "sourceAlphaSha256": "3a449d14e867350f2f0bdd9e6cb74ac621ceccc1f8140c1274e70fcf5db33822",
+      "candidateAlphaSha256": "b7f268b2d2467cd046cfef195f6af1916eb97108cf6291bf58c3e58de05221c5",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-on-lj-rj.png",
+      "reviewSha256": "3413ddf3d3793a217fc84a48f5c841adce86bd914883010c8c027c72f797d30f"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "dishwasher-broken.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken.png",
+      "sourceSha256": "061aad8aa14ee97a8cf8b239820a3a8cba8ba5766975ac4a1fa1142762511616",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-broken.png",
+      "candidateSha256": "adaec75d7de28a0c75ca1daa366961e83099f5bf2f336ae0c3d5293ef9498e8e",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "86daaeb2d741b0d5eddf5758b5320d7bb526c51c79f933c9fd58def7f03e42d1",
+      "candidateAlphaSha256": "806f46a22d612bf3ab7e8eec95e1ebcbab2381fb1e09875c4879323c37677567",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-broken.png",
+      "reviewSha256": "adaec75d7de28a0c75ca1daa366961e83099f5bf2f336ae0c3d5293ef9498e8e"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "dishwasher-broken-le-re.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken-le-re.png",
+      "sourceSha256": "061aad8aa14ee97a8cf8b239820a3a8cba8ba5766975ac4a1fa1142762511616",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-broken-le-re.png",
+      "candidateSha256": "f73d97d6d339fd4db1710ac6fa88552647803116c570a72fccd58af4ed6b524c",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "86daaeb2d741b0d5eddf5758b5320d7bb526c51c79f933c9fd58def7f03e42d1",
+      "candidateAlphaSha256": "7355f40eede603f8ac8b0f3eb470120bb1da2a489e27517fe66f341733db7aa1",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-broken-le-re.png",
+      "reviewSha256": "f73d97d6d339fd4db1710ac6fa88552647803116c570a72fccd58af4ed6b524c"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "dishwasher-broken-le-rj.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken-le-rj.png",
+      "sourceSha256": "9e0cbf5e8bfb7ddaef0fb9c43c1e73fec6cc2f633ad3232eb44bfe23ddff08c6",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-broken-le-rj.png",
+      "candidateSha256": "601ae12330c0a89af2960c3b1c58a65d81de9466a7af2779d849ae214fa32c4a",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "candidateAlphaBounds": [
+        7,
+        4,
+        95,
+        78
+      ],
+      "sourceAlphaSha256": "1fc259acec15e94e646353ab08dc72a3cbfc6df79af25244cc9d0529a34b7e9e",
+      "candidateAlphaSha256": "1db98dc8d9b458736c42fe93dd88541f4b760f697d5916560b945a445fa6abf1",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-broken-le-rj.png",
+      "reviewSha256": "601ae12330c0a89af2960c3b1c58a65d81de9466a7af2779d849ae214fa32c4a"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "dishwasher-broken-lj-re.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken-lj-re.png",
+      "sourceSha256": "65859526d5ee0c93bb929e0532e3402b922ef8b84347f265cfa273112170a271",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-broken-lj-re.png",
+      "candidateSha256": "736f94041ac7deaaf24f4fc39d30a4c64fc28a1b19bd0b1bf99d1c6113ce6b00",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "candidateAlphaBounds": [
+        3,
+        4,
+        91,
+        78
+      ],
+      "sourceAlphaSha256": "c86ace2c06e9c589ce07425bd6a1eed891c39d04dea65ac89e3fdf087188ac20",
+      "candidateAlphaSha256": "49a25d45dcf8be8ccd7821634e0f5fb8587f32d27d80bae170b0d6cf652c19f8",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-broken-lj-re.png",
+      "reviewSha256": "736f94041ac7deaaf24f4fc39d30a4c64fc28a1b19bd0b1bf99d1c6113ce6b00"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "dishwasher-broken-lj-rj.png",
+      "authority": "kitchen-ligne-claire-complete-review-v59",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken-lj-rj.png",
+      "sourceSha256": "8c3fe277f4d269beee18879104c2a478d6ef1f5c1e9db138bce30ddde4d268e1",
+      "candidateFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-broken-lj-rj.png",
+      "candidateSha256": "d7fdf0a8c8596944faaee0208567fdeab954bde4c60d3895bb948e4e99ae1c59",
+      "sourcePixels": [
+        98,
+        82
+      ],
+      "candidatePixels": [
+        98,
+        82
+      ],
+      "sourceAlphaBounds": [
+        4,
+        4,
+        92,
+        78
+      ],
+      "candidateAlphaBounds": [
+        3,
+        4,
+        95,
+        78
+      ],
+      "sourceAlphaSha256": "80e3db453d488bf4dcb4aba5f51fba6cdb37a2e775591f6c5beaa1e9e6abca59",
+      "candidateAlphaSha256": "fa09843bc1f54c477a378bc8f957f7cfd7d0547921900cc50d0a06c6fd2d625e",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": false,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/dishwasher--dishwasher-broken-lj-rj.png",
+      "reviewSha256": "d7fdf0a8c8596944faaee0208567fdeab954bde4c60d3895bb948e4e99ae1c59"
+    },
+    {
+      "family": "table-chair",
+      "filename": "table-chair.png",
+      "authority": "kitchen-table-chair-ligne-claire-v3",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-rebuild-modular-2026-10-19-v10/table-chair.png",
+      "sourceSha256": "69fda5771770e28653326f995b3354f4a303b982175e7996797e626ae1c5d4a6",
+      "candidateFile": "art/drafts/kitchen-table-chair-ligne-claire-2026-10-22-v3/candidates/table-chair.png",
+      "candidateSha256": "982f540cd31461f4ab46b3af5d2136436e516d37f31e14685f6a9860cebeb89f",
+      "sourcePixels": [
+        84,
+        79
+      ],
+      "candidatePixels": [
+        84,
+        79
+      ],
+      "sourceAlphaBounds": [
+        2,
+        21,
+        82,
+        79
+      ],
+      "candidateAlphaBounds": [
+        2,
+        21,
+        82,
+        79
+      ],
+      "sourceAlphaSha256": "dea522b7bbbb409d3fd8cf72d39b1e85502c50451c5df6669a1f5638f3a661c6",
+      "candidateAlphaSha256": "dea522b7bbbb409d3fd8cf72d39b1e85502c50451c5df6669a1f5638f3a661c6",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/table-chair--table-chair.png",
+      "reviewSha256": "982f540cd31461f4ab46b3af5d2136436e516d37f31e14685f6a9860cebeb89f"
+    },
+    {
+      "family": "bin",
+      "filename": "bin-standard.png",
+      "authority": "kitchen-bin-ligne-claire-v2",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-bin-effects-2026-10-18-v31/bin-standard.png",
+      "sourceSha256": "86b05224a7da5fc5c05918f2875018920ed54cf46fc00cb08952ffd29789f9c0",
+      "candidateFile": "art/drafts/kitchen-bin-ligne-claire-2026-10-22-v2/candidates/bin-standard.png",
+      "candidateSha256": "e23d7da33bc845e6d5923da22a00af72df43cdd950993355489118db306d3172",
+      "sourcePixels": [
+        72,
+        72
+      ],
+      "candidatePixels": [
+        72,
+        72
+      ],
+      "sourceAlphaBounds": [
+        20,
+        15,
+        52,
+        68
+      ],
+      "candidateAlphaBounds": [
+        20,
+        15,
+        52,
+        68
+      ],
+      "sourceAlphaSha256": "9d1c62e9e17e9fce32711a1b3da596c2cb859c229137ccd6815884e7549067f8",
+      "candidateAlphaSha256": "9d1c62e9e17e9fce32711a1b3da596c2cb859c229137ccd6815884e7549067f8",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/bin--bin-standard.png",
+      "reviewSha256": "e23d7da33bc845e6d5923da22a00af72df43cdd950993355489118db306d3172"
+    },
+    {
+      "family": "bin",
+      "filename": "bin-broken-overflowing.png",
+      "authority": "kitchen-bin-ligne-claire-v2",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-bin-effects-2026-10-18-v31/bin-broken-overflowing.png",
+      "sourceSha256": "77ad87fabfd3e5c10a4a14f294af343a5d93a2a2015e6d77f18a4140b1f5fb4f",
+      "candidateFile": "art/drafts/kitchen-bin-ligne-claire-2026-10-22-v2/candidates/bin-broken-overflowing.png",
+      "candidateSha256": "b299782e1f4de791d8738ec0a20a88f66d8f3a3b0a7c285a2c78f42a389280b6",
+      "sourcePixels": [
+        72,
+        72
+      ],
+      "candidatePixels": [
+        72,
+        72
+      ],
+      "sourceAlphaBounds": [
+        8,
+        4,
+        64,
+        68
+      ],
+      "candidateAlphaBounds": [
+        8,
+        4,
+        64,
+        68
+      ],
+      "sourceAlphaSha256": "8409b9f83d8c7d30483e3549d262e974b05c4e44536beab9c19eb3bd34c60bb5",
+      "candidateAlphaSha256": "8409b9f83d8c7d30483e3549d262e974b05c4e44536beab9c19eb3bd34c60bb5",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/bin--bin-broken-overflowing.png",
+      "reviewSha256": "b299782e1f4de791d8738ec0a20a88f66d8f3a3b0a7c285a2c78f42a389280b6"
+    },
+    {
+      "family": "toaster",
+      "filename": "toaster-standard.png",
+      "authority": "kitchen-toaster-ligne-claire-v4",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-toaster-states-2026-10-18-v34/toaster-standard.png",
+      "sourceSha256": "0771bdfd047be4582001ca6181b2ab888b4a248e1609fb06a9f5b81e8dd547fb",
+      "candidateFile": "art/drafts/kitchen-toaster-ligne-claire-2026-10-22-v4/candidates/toaster-standard.png",
+      "candidateSha256": "6c5f6e097be116881568becfef9a67c00b419c1c54e7168b0648665ec1263669",
+      "sourcePixels": [
+        84,
+        68
+      ],
+      "candidatePixels": [
+        84,
+        68
+      ],
+      "sourceAlphaBounds": [
+        20,
+        27,
+        63,
+        65
+      ],
+      "candidateAlphaBounds": [
+        20,
+        27,
+        63,
+        65
+      ],
+      "sourceAlphaSha256": "2b09738c05412acf7c1ee69b471d527b5e99546d47c6ac61b96b5eac0b6ee763",
+      "candidateAlphaSha256": "2b09738c05412acf7c1ee69b471d527b5e99546d47c6ac61b96b5eac0b6ee763",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/toaster--toaster-standard.png",
+      "reviewSha256": "6c5f6e097be116881568becfef9a67c00b419c1c54e7168b0648665ec1263669"
+    },
+    {
+      "family": "toaster",
+      "filename": "toaster-on.png",
+      "authority": "kitchen-toaster-ligne-claire-v4",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-toaster-states-2026-10-18-v34/toaster-on.png",
+      "sourceSha256": "02f2736d6fe6bd883bc73c945d9015140e1873697cc73640aa7a2d2bb64d7c63",
+      "candidateFile": "art/drafts/kitchen-toaster-ligne-claire-2026-10-22-v4/candidates/toaster-on.png",
+      "candidateSha256": "4c7d94928107243c8acfffb60e24af1f81e35439f07c4e72ccff7b6aeeeaa5e0",
+      "sourcePixels": [
+        84,
+        68
+      ],
+      "candidatePixels": [
+        84,
+        68
+      ],
+      "sourceAlphaBounds": [
+        22,
+        27,
+        62,
+        65
+      ],
+      "candidateAlphaBounds": [
+        22,
+        27,
+        62,
+        65
+      ],
+      "sourceAlphaSha256": "875e9f26838fd0d04b45ac26bf8ba61693ee2a17d75b3d9fd73d4b007bc1d428",
+      "candidateAlphaSha256": "875e9f26838fd0d04b45ac26bf8ba61693ee2a17d75b3d9fd73d4b007bc1d428",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/toaster--toaster-on.png",
+      "reviewSha256": "4c7d94928107243c8acfffb60e24af1f81e35439f07c4e72ccff7b6aeeeaa5e0"
+    },
+    {
+      "family": "toaster",
+      "filename": "toaster-broken.png",
+      "authority": "kitchen-toaster-ligne-claire-v4",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-toaster-states-2026-10-18-v34/toaster-broken.png",
+      "sourceSha256": "f61492bbf86904da82e0899ee476bc4b92706885c1b68f4302e36d3b61a7472c",
+      "candidateFile": "art/drafts/kitchen-toaster-ligne-claire-2026-10-22-v4/candidates/toaster-broken.png",
+      "candidateSha256": "bcdd83f40aa10402a1b4a5ca4748f2257a6072b109cf9b4243fd01c718977700",
+      "sourcePixels": [
+        84,
+        68
+      ],
+      "candidatePixels": [
+        84,
+        68
+      ],
+      "sourceAlphaBounds": [
+        23,
+        27,
+        61,
+        65
+      ],
+      "candidateAlphaBounds": [
+        23,
+        27,
+        61,
+        65
+      ],
+      "sourceAlphaSha256": "5ed3b185a611ca3393eb48a98c0a8fb5f111c8cbd9adcad882a177af4330c9ba",
+      "candidateAlphaSha256": "5ed3b185a611ca3393eb48a98c0a8fb5f111c8cbd9adcad882a177af4330c9ba",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/toaster--toaster-broken.png",
+      "reviewSha256": "bcdd83f40aa10402a1b4a5ca4748f2257a6072b109cf9b4243fd01c718977700"
+    },
+    {
+      "family": "mixing-bowl",
+      "filename": "mixing-bowl-standard.png",
+      "authority": "kitchen-mixing-bowl-ligne-claire-v1",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-mixing-bowl-states-2026-10-18-v36/mixing-bowl-standard.png",
+      "sourceSha256": "5897005cd41167d992f892f65f582e686ff9063d1708f1a46bd0eaaa49954b1d",
+      "candidateFile": "art/drafts/kitchen-mixing-bowl-ligne-claire-2026-10-22-v1/candidates/mixing-bowl-standard.png",
+      "candidateSha256": "32e5f7ecc2626d00ce60f70b3b02136d5f0c449acadfa6c418f4c4425df4fa84",
+      "sourcePixels": [
+        84,
+        68
+      ],
+      "candidatePixels": [
+        84,
+        68
+      ],
+      "sourceAlphaBounds": [
+        20,
+        38,
+        64,
+        65
+      ],
+      "candidateAlphaBounds": [
+        20,
+        38,
+        64,
+        65
+      ],
+      "sourceAlphaSha256": "590f7963c9010281d77986a57f762a51e5adb7b02f5590411866a4af597e204e",
+      "candidateAlphaSha256": "590f7963c9010281d77986a57f762a51e5adb7b02f5590411866a4af597e204e",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/mixing-bowl--mixing-bowl-standard.png",
+      "reviewSha256": "32e5f7ecc2626d00ce60f70b3b02136d5f0c449acadfa6c418f4c4425df4fa84"
+    },
+    {
+      "family": "mixing-bowl",
+      "filename": "mixing-bowl-broken.png",
+      "authority": "kitchen-mixing-bowl-ligne-claire-v1",
+      "approval": null,
+      "sourceFile": "art/raw/kitchen-mixing-bowl-states-2026-10-18-v36/mixing-bowl-broken.png",
+      "sourceSha256": "23c0397e3769f22c0aaa5c3b998a83a7c16c482e6e1a1a3ae7b1003525d15dda",
+      "candidateFile": "art/drafts/kitchen-mixing-bowl-ligne-claire-2026-10-22-v1/candidates/mixing-bowl-broken.png",
+      "candidateSha256": "8d8ea9dc0c4f791d102aeafca685d243aa80f93ff9419f40a91ed1b72323235a",
+      "sourcePixels": [
+        84,
+        68
+      ],
+      "candidatePixels": [
+        84,
+        68
+      ],
+      "sourceAlphaBounds": [
+        20,
+        40,
+        64,
+        65
+      ],
+      "candidateAlphaBounds": [
+        20,
+        40,
+        64,
+        65
+      ],
+      "sourceAlphaSha256": "948bb0fadb41392c0cae8a7574dd0534ac02bbc3f7cc557f354be5722a11ed10",
+      "candidateAlphaSha256": "948bb0fadb41392c0cae8a7574dd0534ac02bbc3f7cc557f354be5722a11ed10",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/mixing-bowl--mixing-bowl-broken.png",
+      "reviewSha256": "8d8ea9dc0c4f791d102aeafca685d243aa80f93ff9419f40a91ed1b72323235a"
+    },
+    {
+      "family": "small-objects",
+      "id": "knife-chef",
+      "filename": "knife-chef.png",
+      "sourceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/knife-chef.png",
+      "sourceSha256": "292543ab725d9cadd473539847e25c08ba9c867720af7b71888690293a6ccb20",
+      "candidateFile": "art/drafts/kitchen-small-objects-ligne-claire-2026-10-22-v1/candidates/knife-chef.png",
+      "candidateSha256": "34fe104fecf9c2a3119ce83ef8aadd27cd7d152e84c3ed053633a168d22cd481",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/small-objects--knife-chef.png",
+      "reviewSha256": "34fe104fecf9c2a3119ce83ef8aadd27cd7d152e84c3ed053633a168d22cd481",
+      "sourcePixels": [
+        256,
+        256
+      ],
+      "candidatePixels": [
+        256,
+        256
+      ],
+      "sourceAlphaBounds": [
+        20,
+        69,
+        236,
+        187
+      ],
+      "candidateAlphaBounds": [
+        20,
+        69,
+        236,
+        187
+      ],
+      "sourceAlphaSha256": "9c843873dac5f984d7fd4329d61893db998dfb25f65a7cabcfb96fb2aaf86248",
+      "candidateAlphaSha256": "9c843873dac5f984d7fd4329d61893db998dfb25f65a7cabcfb96fb2aaf86248",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "authority": "kitchen-small-objects-ligne-claire-v1",
+      "approval": null
+    },
+    {
+      "family": "small-objects",
+      "id": "knife-bread",
+      "filename": "knife-bread.png",
+      "sourceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/knife-bread.png",
+      "sourceSha256": "ea7fe35cd1487d4c1ee22539dc1ceb2e7f65143298b89e84eb9c9625228bc4d6",
+      "candidateFile": "art/drafts/kitchen-small-objects-ligne-claire-2026-10-22-v1/candidates/knife-bread.png",
+      "candidateSha256": "420a6020c1729bf349d96d46de0f1dd7221f954d181fb07a60bf2a42871692d5",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/small-objects--knife-bread.png",
+      "reviewSha256": "420a6020c1729bf349d96d46de0f1dd7221f954d181fb07a60bf2a42871692d5",
+      "sourcePixels": [
+        256,
+        256
+      ],
+      "candidatePixels": [
+        256,
+        256
+      ],
+      "sourceAlphaBounds": [
+        20,
+        77,
+        236,
+        179
+      ],
+      "candidateAlphaBounds": [
+        20,
+        77,
+        236,
+        179
+      ],
+      "sourceAlphaSha256": "8ad1e05b46923665654c63905f9dc04e7e58e50ef453b07422b718980f2cc38b",
+      "candidateAlphaSha256": "8ad1e05b46923665654c63905f9dc04e7e58e50ef453b07422b718980f2cc38b",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "authority": "kitchen-small-objects-ligne-claire-v1",
+      "approval": null
+    },
+    {
+      "family": "small-objects",
+      "id": "knife-paring",
+      "filename": "knife-paring.png",
+      "sourceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/knife-paring.png",
+      "sourceSha256": "7d69426fd494b75186b23b33e21b69e89fd83b0747af006af227d241bdb01fb1",
+      "candidateFile": "art/drafts/kitchen-small-objects-ligne-claire-2026-10-22-v1/candidates/knife-paring.png",
+      "candidateSha256": "f11e5344018fb216e81c59ab0bb445effbf10725f781f51ef375f059eaeabe2f",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/small-objects--knife-paring.png",
+      "reviewSha256": "f11e5344018fb216e81c59ab0bb445effbf10725f781f51ef375f059eaeabe2f",
+      "sourcePixels": [
+        256,
+        256
+      ],
+      "candidatePixels": [
+        256,
+        256
+      ],
+      "sourceAlphaBounds": [
+        20,
+        69,
+        236,
+        186
+      ],
+      "candidateAlphaBounds": [
+        20,
+        69,
+        236,
+        186
+      ],
+      "sourceAlphaSha256": "60de492d342b5c35d6e15b092c82ee6328b1f59741f906ae6e82b7e924a48b32",
+      "candidateAlphaSha256": "60de492d342b5c35d6e15b092c82ee6328b1f59741f906ae6e82b7e924a48b32",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "authority": "kitchen-small-objects-ligne-claire-v1",
+      "approval": null
+    },
+    {
+      "family": "small-objects",
+      "id": "condiment-salt-mill",
+      "filename": "condiment-salt-mill.png",
+      "sourceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-salt-mill.png",
+      "sourceSha256": "a0eadd6a9f3b760191d69cafca84e83dca5e6b9e1d76aed6f09886ace93b3259",
+      "candidateFile": "art/drafts/kitchen-small-objects-ligne-claire-2026-10-22-v1/candidates/condiment-salt-mill.png",
+      "candidateSha256": "a6602ad49605e236d2742aee0daf9fa9ec1c7dfe0b8e49edd4a92cb78a3919a2",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/small-objects--condiment-salt-mill.png",
+      "reviewSha256": "a6602ad49605e236d2742aee0daf9fa9ec1c7dfe0b8e49edd4a92cb78a3919a2",
+      "sourcePixels": [
+        256,
+        256
+      ],
+      "candidatePixels": [
+        256,
+        256
+      ],
+      "sourceAlphaBounds": [
+        79,
+        20,
+        177,
+        236
+      ],
+      "candidateAlphaBounds": [
+        79,
+        20,
+        177,
+        236
+      ],
+      "sourceAlphaSha256": "f43e8a13c853a922a98283132bd99fcf614102d051a404d77a16a59995b55264",
+      "candidateAlphaSha256": "f43e8a13c853a922a98283132bd99fcf614102d051a404d77a16a59995b55264",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "authority": "kitchen-small-objects-ligne-claire-v1",
+      "approval": null
+    },
+    {
+      "family": "small-objects",
+      "id": "condiment-pepper-mill",
+      "filename": "condiment-pepper-mill.png",
+      "sourceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-pepper-mill.png",
+      "sourceSha256": "762f50f6954bb69afbbdef0b41d43eef13c7d4dee0dfcb3910acf42fff1fad38",
+      "candidateFile": "art/drafts/kitchen-small-objects-ligne-claire-2026-10-22-v1/candidates/condiment-pepper-mill.png",
+      "candidateSha256": "577c6748251ec234babf9dfdf925c1d8ae9245206d5c23cee98ae5451177e4c8",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/small-objects--condiment-pepper-mill.png",
+      "reviewSha256": "577c6748251ec234babf9dfdf925c1d8ae9245206d5c23cee98ae5451177e4c8",
+      "sourcePixels": [
+        256,
+        256
+      ],
+      "candidatePixels": [
+        256,
+        256
+      ],
+      "sourceAlphaBounds": [
+        80,
+        20,
+        175,
+        236
+      ],
+      "candidateAlphaBounds": [
+        80,
+        20,
+        175,
+        236
+      ],
+      "sourceAlphaSha256": "fa5f7277147ec232aedffaa3dde3683bfe23a2aab295005897d87c43f3b67beb",
+      "candidateAlphaSha256": "fa5f7277147ec232aedffaa3dde3683bfe23a2aab295005897d87c43f3b67beb",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "authority": "kitchen-small-objects-ligne-claire-v1",
+      "approval": null
+    },
+    {
+      "family": "preparation-tea",
+      "id": "tea-kettle",
+      "filename": "tea-kettle.png",
+      "sourceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/tea-kettle.png",
+      "sourceSha256": "7014b90c1465cbf0b1b9559f57be78a4a36c354ba13033c9639aa048253dd7cf",
+      "candidateFile": "art/drafts/kitchen-prep-tea-ligne-claire-2026-10-22-v2/candidates/tea-kettle.png",
+      "candidateSha256": "61e73b8666f7d551d03098ccd74fa382f324e3c1f911a203659ac32c632144f4",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/preparation-tea--tea-kettle.png",
+      "reviewSha256": "61e73b8666f7d551d03098ccd74fa382f324e3c1f911a203659ac32c632144f4",
+      "sourcePixels": [
+        256,
+        256
+      ],
+      "candidatePixels": [
+        256,
+        256
+      ],
+      "sourceAlphaBounds": [
+        20,
+        24,
+        236,
+        232
+      ],
+      "candidateAlphaBounds": [
+        20,
+        24,
+        236,
+        232
+      ],
+      "sourceAlphaSha256": "901045e449027f944668c7c2147f786b548cbcdc497498ddf8967255ff8b898b",
+      "candidateAlphaSha256": "901045e449027f944668c7c2147f786b548cbcdc497498ddf8967255ff8b898b",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "authority": "kitchen-prep-tea-ligne-claire-v2",
+      "approval": null
+    },
+    {
+      "family": "preparation-tea",
+      "id": "tea-milk",
+      "filename": "tea-milk.png",
+      "sourceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/tea-milk.png",
+      "sourceSha256": "01eb45bb370455c770702cc7cb25334fccc3d2a6d3cc0cf376733da2f9dfeadc",
+      "candidateFile": "art/drafts/kitchen-prep-tea-ligne-claire-2026-10-22-v2/candidates/tea-milk.png",
+      "candidateSha256": "38de8f99f9464a9e832e2f90cd85926027927b27fed7a687b04711a1512caef8",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/preparation-tea--tea-milk.png",
+      "reviewSha256": "38de8f99f9464a9e832e2f90cd85926027927b27fed7a687b04711a1512caef8",
+      "sourcePixels": [
+        256,
+        256
+      ],
+      "candidatePixels": [
+        256,
+        256
+      ],
+      "sourceAlphaBounds": [
+        20,
+        25,
+        236,
+        230
+      ],
+      "candidateAlphaBounds": [
+        20,
+        25,
+        236,
+        230
+      ],
+      "sourceAlphaSha256": "1c4679d4eeb08ee0bb21fe905a599b5a5237be412fd4147e015d6dfe9d50b260",
+      "candidateAlphaSha256": "1c4679d4eeb08ee0bb21fe905a599b5a5237be412fd4147e015d6dfe9d50b260",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "authority": "kitchen-prep-tea-ligne-claire-v2",
+      "approval": null
+    },
+    {
+      "family": "preparation-tea",
+      "id": "tea-mug",
+      "filename": "tea-mug.png",
+      "sourceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/tea-mug.png",
+      "sourceSha256": "af8fb40591e8165cfb4ec8f9f30be0df24abd733cc412d086c3920a37242bff3",
+      "candidateFile": "art/drafts/kitchen-prep-tea-ligne-claire-2026-10-22-v2/candidates/tea-mug.png",
+      "candidateSha256": "3fc84999b8c75aaa5cc0b3ccf96310bd2ed498cdc03417e92f8fcb2adb5cf59c",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/preparation-tea--tea-mug.png",
+      "reviewSha256": "3fc84999b8c75aaa5cc0b3ccf96310bd2ed498cdc03417e92f8fcb2adb5cf59c",
+      "sourcePixels": [
+        256,
+        256
+      ],
+      "candidatePixels": [
+        256,
+        256
+      ],
+      "sourceAlphaBounds": [
+        20,
+        38,
+        236,
+        218
+      ],
+      "candidateAlphaBounds": [
+        20,
+        38,
+        236,
+        218
+      ],
+      "sourceAlphaSha256": "2bf5702f711518a5b57c6547f9c2fc922540605d0e287d26a298e6c55786ce55",
+      "candidateAlphaSha256": "2bf5702f711518a5b57c6547f9c2fc922540605d0e287d26a298e6c55786ce55",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "authority": "kitchen-prep-tea-ligne-claire-v2",
+      "approval": null
+    },
+    {
+      "family": "preparation-tea",
+      "id": "toast-slices",
+      "filename": "toast-slices.png",
+      "sourceFile": "art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/toast-slices.png",
+      "sourceSha256": "4a1344273465976f1c69b858e1ada925a69432242450c2838c68d9fe63e25a27",
+      "candidateFile": "art/drafts/kitchen-prep-tea-ligne-claire-2026-10-22-v2/candidates/toast-slices.png",
+      "candidateSha256": "953b3ea16565bd3e9a449947174691a77790cac167ffe3010e037741a7d9b721",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/preparation-tea--toast-slices.png",
+      "reviewSha256": "953b3ea16565bd3e9a449947174691a77790cac167ffe3010e037741a7d9b721",
+      "sourcePixels": [
+        256,
+        256
+      ],
+      "candidatePixels": [
+        256,
+        256
+      ],
+      "sourceAlphaBounds": [
+        25,
+        20,
+        230,
+        236
+      ],
+      "candidateAlphaBounds": [
+        25,
+        20,
+        230,
+        236
+      ],
+      "sourceAlphaSha256": "40fbd3b30ac2537e63a3dc77e48aaeb3ca20523f0703c0cff72c18e6eb7d8740",
+      "candidateAlphaSha256": "40fbd3b30ac2537e63a3dc77e48aaeb3ca20523f0703c0cff72c18e6eb7d8740",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "authority": "kitchen-prep-tea-ligne-claire-v2",
+      "approval": null
+    },
+    {
+      "family": "preparation-tea",
+      "id": "prep-bread-slicing",
+      "filename": "prep-bread-slicing.png",
+      "sourceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/prep-bread-slicing.png",
+      "sourceSha256": "d665a9df3462d9543137b9134610181d84081cff0311d2b17293985a0a5234fb",
+      "candidateFile": "art/drafts/kitchen-prep-tea-ligne-claire-2026-10-22-v2/candidates/prep-bread-slicing.png",
+      "candidateSha256": "9e16cb0c645ec31fc9f18576915c6be287eb9fc9823efa87b26c4907cb88632a",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/preparation-tea--prep-bread-slicing.png",
+      "reviewSha256": "9e16cb0c645ec31fc9f18576915c6be287eb9fc9823efa87b26c4907cb88632a",
+      "sourcePixels": [
+        256,
+        256
+      ],
+      "candidatePixels": [
+        256,
+        256
+      ],
+      "sourceAlphaBounds": [
+        20,
+        65,
+        236,
+        190
+      ],
+      "candidateAlphaBounds": [
+        20,
+        65,
+        236,
+        190
+      ],
+      "sourceAlphaSha256": "e942d697304a32eaf1b7411ce0568262fefe98515c6e2611809c0cb9a4b4e80d",
+      "candidateAlphaSha256": "e942d697304a32eaf1b7411ce0568262fefe98515c6e2611809c0cb9a4b4e80d",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "authority": "kitchen-prep-tea-ligne-claire-v2",
+      "approval": null
+    },
+    {
+      "family": "kettle",
+      "filename": "kettle-off.png",
+      "authority": "kitchen-kettle-bubble-authority-v47",
+      "approval": "docs/review/kitchen-kettle-bubble-authority-v47-approval-2026-10-22.json",
+      "sourceFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/states/kettle-off.png",
+      "sourceSha256": "0d9b8776418bc8d26b76eb55ba82b7731d153f0ea11e730026cb4dc6a4e2abeb",
+      "candidateFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/states/kettle-off.png",
+      "candidateSha256": "0d9b8776418bc8d26b76eb55ba82b7731d153f0ea11e730026cb4dc6a4e2abeb",
+      "sourcePixels": [
+        256,
+        256
+      ],
+      "candidatePixels": [
+        256,
+        256
+      ],
+      "sourceAlphaBounds": [
+        20,
+        53,
+        220,
+        225
+      ],
+      "candidateAlphaBounds": [
+        20,
+        53,
+        220,
+        225
+      ],
+      "sourceAlphaSha256": "fe397e49e0423b0162f0a4da8bf4c013750f6b0f1e459057855d6b5ce95d392d",
+      "candidateAlphaSha256": "fe397e49e0423b0162f0a4da8bf4c013750f6b0f1e459057855d6b5ce95d392d",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "selection": "approved-visual-authority-v47-unpromoted",
+      "approvalSha256": "aa3718a300d77d20f9cd8a37c14dfe3ea5465ed4c71fb6356ee2f113dd73c055",
+      "comparisonMode": "authority-is-candidate; no superseded kettle candidate offered",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/kettle--kettle-off.png",
+      "reviewSha256": "0d9b8776418bc8d26b76eb55ba82b7731d153f0ea11e730026cb4dc6a4e2abeb"
+    },
+    {
+      "family": "kettle",
+      "filename": "kettle-on.png",
+      "authority": "kitchen-kettle-bubble-authority-v47",
+      "approval": "docs/review/kitchen-kettle-bubble-authority-v47-approval-2026-10-22.json",
+      "sourceFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/states/kettle-on.png",
+      "sourceSha256": "0d9b8776418bc8d26b76eb55ba82b7731d153f0ea11e730026cb4dc6a4e2abeb",
+      "candidateFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/states/kettle-on.png",
+      "candidateSha256": "0d9b8776418bc8d26b76eb55ba82b7731d153f0ea11e730026cb4dc6a4e2abeb",
+      "sourcePixels": [
+        256,
+        256
+      ],
+      "candidatePixels": [
+        256,
+        256
+      ],
+      "sourceAlphaBounds": [
+        20,
+        53,
+        220,
+        225
+      ],
+      "candidateAlphaBounds": [
+        20,
+        53,
+        220,
+        225
+      ],
+      "sourceAlphaSha256": "fe397e49e0423b0162f0a4da8bf4c013750f6b0f1e459057855d6b5ce95d392d",
+      "candidateAlphaSha256": "fe397e49e0423b0162f0a4da8bf4c013750f6b0f1e459057855d6b5ce95d392d",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "selection": "approved-visual-authority-v47-unpromoted",
+      "approvalSha256": "aa3718a300d77d20f9cd8a37c14dfe3ea5465ed4c71fb6356ee2f113dd73c055",
+      "comparisonMode": "authority-is-candidate; no superseded kettle candidate offered",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/kettle--kettle-on.png",
+      "reviewSha256": "0d9b8776418bc8d26b76eb55ba82b7731d153f0ea11e730026cb4dc6a4e2abeb"
+    },
+    {
+      "family": "kettle",
+      "filename": "kettle-broken.png",
+      "authority": "kitchen-kettle-bubble-authority-v47",
+      "approval": "docs/review/kitchen-kettle-bubble-authority-v47-approval-2026-10-22.json",
+      "sourceFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/states/kettle-broken.png",
+      "sourceSha256": "231f7eb5f0a9d20077eede2d4264f97d71f5efd47da5303b2a1bfd83c097ef3b",
+      "candidateFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/states/kettle-broken.png",
+      "candidateSha256": "231f7eb5f0a9d20077eede2d4264f97d71f5efd47da5303b2a1bfd83c097ef3b",
+      "sourcePixels": [
+        256,
+        256
+      ],
+      "candidatePixels": [
+        256,
+        256
+      ],
+      "sourceAlphaBounds": [
+        20,
+        30,
+        236,
+        226
+      ],
+      "candidateAlphaBounds": [
+        20,
+        30,
+        236,
+        226
+      ],
+      "sourceAlphaSha256": "9c361e588c0c0d2c876451cc8902ead7a446a5e1e0a638c6133674c18f893564",
+      "candidateAlphaSha256": "9c361e588c0c0d2c876451cc8902ead7a446a5e1e0a638c6133674c18f893564",
+      "canvasExact": true,
+      "alphaBoundsExact": true,
+      "alphaExact": true,
+      "selection": "approved-visual-authority-v47-unpromoted",
+      "approvalSha256": "aa3718a300d77d20f9cd8a37c14dfe3ea5465ed4c71fb6356ee2f113dd73c055",
+      "comparisonMode": "authority-is-candidate; no superseded kettle candidate offered",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/candidates/kettle--kettle-broken.png",
+      "reviewSha256": "231f7eb5f0a9d20077eede2d4264f97d71f5efd47da5303b2a1bfd83c097ef3b"
+    }
+  ],
+  "effects": [
+    {
+      "family": "oven",
+      "filename": "oven-broken-cavity-flicker-f40.png",
+      "sourceFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v12/candidates/oven/oven-broken-cavity-flicker-f40.png",
+      "sourceSha256": "53f2ce1fbf79112a569103aa069ab67eeda02a7699aa18cdf2e9f79106a28c4f",
+      "candidateFile": "art/drafts/kitchen-oven-broken-ajar-ligne-claire-2026-10-22-v15/candidates/oven/oven-broken-cavity-flicker-f40.png",
+      "candidateSha256": "61e9fea7c941790bb422ce290af272799e418aad702f139dfc270cc45e3f2a0b",
+      "pixels": [
+        3680,
+        85
+      ],
+      "cellPixels": [
+        92,
+        85
+      ],
+      "frames": 40,
+      "fps": 4,
+      "byteExact": false,
+      "authority": "kitchen-oven-broken-ajar-ligne-claire-v15",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/oven--oven-broken-cavity-flicker-f40.png",
+      "reviewSha256": "61e9fea7c941790bb422ce290af272799e418aad702f139dfc270cc45e3f2a0b"
+    },
+    {
+      "family": "oven",
+      "filename": "oven-broken-warning-flicker-f40.png",
+      "sourceFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v12/candidates/oven/oven-broken-warning-flicker-f40.png",
+      "sourceSha256": "c98f8c6dfefefb03e7ea2188eebfd3ea1623abe5b4e046f019b4cad0068ee652",
+      "candidateFile": "art/drafts/kitchen-oven-broken-ajar-ligne-claire-2026-10-22-v15/candidates/oven/oven-broken-warning-flicker-f40.png",
+      "candidateSha256": "ae2ca7598372e22aaabea14ed55abbf05db6203c7280102c43464b7e04ca00e5",
+      "pixels": [
+        3680,
+        85
+      ],
+      "cellPixels": [
+        92,
+        85
+      ],
+      "frames": 40,
+      "fps": 4,
+      "byteExact": false,
+      "authority": "kitchen-oven-broken-ajar-ligne-claire-v15",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/oven--oven-broken-warning-flicker-f40.png",
+      "reviewSha256": "ae2ca7598372e22aaabea14ed55abbf05db6203c7280102c43464b7e04ca00e5"
+    },
+    {
+      "family": "oven",
+      "filename": "fx-oven-broken-symbols.png",
+      "sourceFile": "art/drafts/kitchen-oven-broken-ajar-ligne-claire-2026-10-22-v15/candidates/oven/fx-oven-broken-symbols.png",
+      "sourceSha256": "46d867d1b2ca08aca8329adb38a39c65259743a7eccf60b0a557689d00e421e7",
+      "candidateFile": "art/drafts/kitchen-oven-broken-ajar-ligne-claire-2026-10-22-v15/candidates/oven/fx-oven-broken-symbols.png",
+      "candidateSha256": "46d867d1b2ca08aca8329adb38a39c65259743a7eccf60b0a557689d00e421e7",
+      "pixels": [
+        92,
+        40
+      ],
+      "frames": 1,
+      "fps": null,
+      "byteExact": true,
+      "authority": "kitchen-oven-broken-ajar-ligne-claire-v15",
+      "separateRemovableLayer": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/oven--fx-oven-broken-symbols.png",
+      "reviewSha256": "46d867d1b2ca08aca8329adb38a39c65259743a7eccf60b0a557689d00e421e7"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "fx-dishwasher-suds--compact-f40.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/fx-dishwasher-suds--compact-f40.png",
+      "sourceSha256": "14667dd8d8aa608e22f920c50184cd206cebab7cb4403148309cbbb66cefbae3",
+      "candidateFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/fx-dishwasher-suds--compact-f40.png",
+      "candidateSha256": "14667dd8d8aa608e22f920c50184cd206cebab7cb4403148309cbbb66cefbae3",
+      "pixels": [
+        4480,
+        104
+      ],
+      "cellPixels": [
+        112,
+        104
+      ],
+      "frames": 40,
+      "fps": 4,
+      "byteExact": true,
+      "authority": "approved V41 runtime",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/dishwasher--fx-dishwasher-suds--compact-f40.png",
+      "reviewSha256": "14667dd8d8aa608e22f920c50184cd206cebab7cb4403148309cbbb66cefbae3"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "fx-dishwasher-suds--regular-f40.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/fx-dishwasher-suds--regular-f40.png",
+      "sourceSha256": "666b2d08b5534fb599870cefd1accf622d6cfdca685a51d62d78c5d2062a79c2",
+      "candidateFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/fx-dishwasher-suds--regular-f40.png",
+      "candidateSha256": "666b2d08b5534fb599870cefd1accf622d6cfdca685a51d62d78c5d2062a79c2",
+      "pixels": [
+        4480,
+        104
+      ],
+      "cellPixels": [
+        112,
+        104
+      ],
+      "frames": 40,
+      "fps": 4,
+      "byteExact": true,
+      "authority": "approved V41 runtime",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/dishwasher--fx-dishwasher-suds--regular-f40.png",
+      "reviewSha256": "666b2d08b5534fb599870cefd1accf622d6cfdca685a51d62d78c5d2062a79c2"
+    },
+    {
+      "family": "dishwasher",
+      "filename": "fx-dishwasher-suds--emphatic-f40.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/fx-dishwasher-suds--emphatic-f40.png",
+      "sourceSha256": "07fa9627e1b78496678974ca607a0f60a795d6016b47af231a4790fdb987c976",
+      "candidateFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/fx-dishwasher-suds--emphatic-f40.png",
+      "candidateSha256": "07fa9627e1b78496678974ca607a0f60a795d6016b47af231a4790fdb987c976",
+      "pixels": [
+        4480,
+        104
+      ],
+      "cellPixels": [
+        112,
+        104
+      ],
+      "frames": 40,
+      "fps": 4,
+      "byteExact": true,
+      "authority": "approved V41 runtime",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/dishwasher--fx-dishwasher-suds--emphatic-f40.png",
+      "reviewSha256": "07fa9627e1b78496678974ca607a0f60a795d6016b47af231a4790fdb987c976"
+    },
+    {
+      "family": "bin",
+      "filename": "fx-stench-miasma-f40.png",
+      "sourceFile": "art/raw/kitchen-bin-effects-2026-10-18-v31/fx-stench-miasma-f40.png",
+      "sourceSha256": "4b8e257ea91812b21addad303950cef15e253b5aaf3756943dd499ebc38401fc",
+      "preservedFile": "art/drafts/kitchen-bin-ligne-claire-2026-10-22-v2/effects/fx-stench-miasma-f40.png",
+      "preservedSha256": "4b8e257ea91812b21addad303950cef15e253b5aaf3756943dd499ebc38401fc",
+      "frames": 40,
+      "fps": 4,
+      "cellPixels": [
+        80,
+        80
+      ],
+      "byteExact": true,
+      "authority": "kitchen-bin-ligne-claire-v2",
+      "candidateFile": "art/drafts/kitchen-bin-ligne-claire-2026-10-22-v2/effects/fx-stench-miasma-f40.png",
+      "candidateSha256": "4b8e257ea91812b21addad303950cef15e253b5aaf3756943dd499ebc38401fc",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/bin--fx-stench-miasma-f40.png",
+      "reviewSha256": "4b8e257ea91812b21addad303950cef15e253b5aaf3756943dd499ebc38401fc"
+    },
+    {
+      "family": "bin",
+      "filename": "fx-slow-flies-f40.png",
+      "sourceFile": "art/raw/kitchen-bin-effects-2026-10-18-v31/fx-slow-flies-f40.png",
+      "sourceSha256": "ffcddd73880c75b252764b59b4311c556eb49c58949701250e5c422a036cc34c",
+      "preservedFile": "art/drafts/kitchen-bin-ligne-claire-2026-10-22-v2/effects/fx-slow-flies-f40.png",
+      "preservedSha256": "ffcddd73880c75b252764b59b4311c556eb49c58949701250e5c422a036cc34c",
+      "frames": 40,
+      "fps": 4,
+      "cellPixels": [
+        80,
+        80
+      ],
+      "byteExact": true,
+      "authority": "kitchen-bin-ligne-claire-v2",
+      "candidateFile": "art/drafts/kitchen-bin-ligne-claire-2026-10-22-v2/effects/fx-slow-flies-f40.png",
+      "candidateSha256": "ffcddd73880c75b252764b59b4311c556eb49c58949701250e5c422a036cc34c",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/bin--fx-slow-flies-f40.png",
+      "reviewSha256": "ffcddd73880c75b252764b59b4311c556eb49c58949701250e5c422a036cc34c"
+    },
+    {
+      "family": "toaster",
+      "filename": "fx-toaster-restrained_heat-f40.png",
+      "sourceFile": "art/raw/kitchen-toaster-states-2026-10-18-v34/fx-toaster-restrained_heat-f40.png",
+      "sourceSha256": "fc8d959e9a23d41a66739361589b5bae34a2ac8938e7da4cda06b8a81566f5e0",
+      "preservedFile": "art/drafts/kitchen-toaster-ligne-claire-2026-10-22-v4/effects/fx-toaster-restrained_heat-f40.png",
+      "preservedSha256": "fc8d959e9a23d41a66739361589b5bae34a2ac8938e7da4cda06b8a81566f5e0",
+      "frames": 40,
+      "fps": 4,
+      "byteExact": true,
+      "authority": "kitchen-toaster-ligne-claire-v4",
+      "candidateFile": "art/drafts/kitchen-toaster-ligne-claire-2026-10-22-v4/effects/fx-toaster-restrained_heat-f40.png",
+      "candidateSha256": "fc8d959e9a23d41a66739361589b5bae34a2ac8938e7da4cda06b8a81566f5e0",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/toaster--fx-toaster-restrained_heat-f40.png",
+      "reviewSha256": "fc8d959e9a23d41a66739361589b5bae34a2ac8938e7da4cda06b8a81566f5e0"
+    },
+    {
+      "family": "fridge",
+      "filename": "fx-fridge-drip-ripple-f40.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/fx-fridge-drip-ripple-f40.png",
+      "sourceSha256": "86cfaa33eb1e3f3351b481bf3057974af565963e35faca994274d486f60a8b19",
+      "candidateFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/fx-fridge-drip-ripple-f40.png",
+      "candidateSha256": "86cfaa33eb1e3f3351b481bf3057974af565963e35faca994274d486f60a8b19",
+      "pixels": [
+        5760,
+        90
+      ],
+      "cellPixels": [
+        144,
+        90
+      ],
+      "frames": 40,
+      "fps": 4,
+      "byteExact": true,
+      "authority": "approved V41 runtime",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/fridge--fx-fridge-drip-ripple-f40.png",
+      "reviewSha256": "86cfaa33eb1e3f3351b481bf3057974af565963e35faca994274d486f60a8b19"
+    },
+    {
+      "family": "kettle",
+      "filename": "fx-kettle-on-steam--compact-f40.png",
+      "sourceFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/effects/fx-kettle-on-steam--compact-f40.png",
+      "sourceSha256": "a247d8d8dba67cffe2802fee6c75fc47f9bd7e74bee9c4949d564aa979a38c9f",
+      "candidateFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/effects/fx-kettle-on-steam--compact-f40.png",
+      "candidateSha256": "a247d8d8dba67cffe2802fee6c75fc47f9bd7e74bee9c4949d564aa979a38c9f",
+      "pixels": [
+        5120,
+        176
+      ],
+      "cellPixels": [
+        128,
+        176
+      ],
+      "frames": 40,
+      "fps": 4,
+      "byteExact": true,
+      "authority": "kitchen-kettle-bubble-authority-v47",
+      "anchorAssetId": "kettle",
+      "transformSpace": "asset-local",
+      "visualAnchorRemainsStaticDuringBodyMotion": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/kettle--fx-kettle-on-steam--compact-f40.png",
+      "reviewSha256": "a247d8d8dba67cffe2802fee6c75fc47f9bd7e74bee9c4949d564aa979a38c9f"
+    },
+    {
+      "family": "kettle",
+      "filename": "fx-kettle-on-steam--regular-f40.png",
+      "sourceFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/effects/fx-kettle-on-steam--regular-f40.png",
+      "sourceSha256": "826187699a458b953955b8ad989f73337b101a6a9bb59c3aa4331751afd7346c",
+      "candidateFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/effects/fx-kettle-on-steam--regular-f40.png",
+      "candidateSha256": "826187699a458b953955b8ad989f73337b101a6a9bb59c3aa4331751afd7346c",
+      "pixels": [
+        5120,
+        176
+      ],
+      "cellPixels": [
+        128,
+        176
+      ],
+      "frames": 40,
+      "fps": 4,
+      "byteExact": true,
+      "authority": "kitchen-kettle-bubble-authority-v47",
+      "anchorAssetId": "kettle",
+      "transformSpace": "asset-local",
+      "visualAnchorRemainsStaticDuringBodyMotion": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/kettle--fx-kettle-on-steam--regular-f40.png",
+      "reviewSha256": "826187699a458b953955b8ad989f73337b101a6a9bb59c3aa4331751afd7346c"
+    },
+    {
+      "family": "kettle",
+      "filename": "fx-kettle-on-steam--emphatic-f40.png",
+      "sourceFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/effects/fx-kettle-on-steam--emphatic-f40.png",
+      "sourceSha256": "3c27522b47fce3ee86373a45a0fbe35c136168f54f0f36e574cf670c12e2aa85",
+      "candidateFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/effects/fx-kettle-on-steam--emphatic-f40.png",
+      "candidateSha256": "3c27522b47fce3ee86373a45a0fbe35c136168f54f0f36e574cf670c12e2aa85",
+      "pixels": [
+        5120,
+        176
+      ],
+      "cellPixels": [
+        128,
+        176
+      ],
+      "frames": 40,
+      "fps": 4,
+      "byteExact": true,
+      "authority": "kitchen-kettle-bubble-authority-v47",
+      "anchorAssetId": "kettle",
+      "transformSpace": "asset-local",
+      "visualAnchorRemainsStaticDuringBodyMotion": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/kettle--fx-kettle-on-steam--emphatic-f40.png",
+      "reviewSha256": "3c27522b47fce3ee86373a45a0fbe35c136168f54f0f36e574cf670c12e2aa85"
+    },
+    {
+      "family": "kettle",
+      "filename": "fx-kettle-broken-steam--compact-f40.png",
+      "sourceFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/effects/fx-kettle-broken-steam--compact-f40.png",
+      "sourceSha256": "7e89ebc3caa45275941d8c348816b36b33715fbc6a7493099c202a8b52af9422",
+      "candidateFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/effects/fx-kettle-broken-steam--compact-f40.png",
+      "candidateSha256": "7e89ebc3caa45275941d8c348816b36b33715fbc6a7493099c202a8b52af9422",
+      "pixels": [
+        5760,
+        192
+      ],
+      "cellPixels": [
+        144,
+        192
+      ],
+      "frames": 40,
+      "fps": 4,
+      "byteExact": true,
+      "authority": "kitchen-kettle-bubble-authority-v47",
+      "anchorAssetId": "kettle",
+      "transformSpace": "asset-local",
+      "visualAnchorRemainsStaticDuringBodyMotion": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/kettle--fx-kettle-broken-steam--compact-f40.png",
+      "reviewSha256": "7e89ebc3caa45275941d8c348816b36b33715fbc6a7493099c202a8b52af9422"
+    },
+    {
+      "family": "kettle",
+      "filename": "fx-kettle-broken-steam--regular-f40.png",
+      "sourceFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/effects/fx-kettle-broken-steam--regular-f40.png",
+      "sourceSha256": "0c7c1b9c65fadda2379afbf95e0e310942540bea88fb97f44b88c8c0322ba101",
+      "candidateFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/effects/fx-kettle-broken-steam--regular-f40.png",
+      "candidateSha256": "0c7c1b9c65fadda2379afbf95e0e310942540bea88fb97f44b88c8c0322ba101",
+      "pixels": [
+        5760,
+        192
+      ],
+      "cellPixels": [
+        144,
+        192
+      ],
+      "frames": 40,
+      "fps": 4,
+      "byteExact": true,
+      "authority": "kitchen-kettle-bubble-authority-v47",
+      "anchorAssetId": "kettle",
+      "transformSpace": "asset-local",
+      "visualAnchorRemainsStaticDuringBodyMotion": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/kettle--fx-kettle-broken-steam--regular-f40.png",
+      "reviewSha256": "0c7c1b9c65fadda2379afbf95e0e310942540bea88fb97f44b88c8c0322ba101"
+    },
+    {
+      "family": "kettle",
+      "filename": "fx-kettle-broken-steam--emphatic-f40.png",
+      "sourceFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/effects/fx-kettle-broken-steam--emphatic-f40.png",
+      "sourceSha256": "648a575474526183f000d75798604f67a3afa024d599ef5e7b17bd6fa723f31d",
+      "candidateFile": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/effects/fx-kettle-broken-steam--emphatic-f40.png",
+      "candidateSha256": "648a575474526183f000d75798604f67a3afa024d599ef5e7b17bd6fa723f31d",
+      "pixels": [
+        5760,
+        192
+      ],
+      "cellPixels": [
+        144,
+        192
+      ],
+      "frames": 40,
+      "fps": 4,
+      "byteExact": true,
+      "authority": "kitchen-kettle-bubble-authority-v47",
+      "anchorAssetId": "kettle",
+      "transformSpace": "asset-local",
+      "visualAnchorRemainsStaticDuringBodyMotion": true,
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/effects/kettle--fx-kettle-broken-steam--emphatic-f40.png",
+      "reviewSha256": "648a575474526183f000d75798604f67a3afa024d599ef5e7b17bd6fa723f31d"
+    }
+  ],
+  "contactSheets": [
+    {
+      "family": "cabinets",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-cabinets.png",
+      "sha256": "d20d44fa5d27c7b41100e99f399f9ebe0ead9706e2d8c9be648b69d6ae0e67fd",
+      "rows": 8,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v56"
+    },
+    {
+      "family": "fridge",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-fridge.png",
+      "sha256": "9982ed72e0f4a49660ddc6d3a9e818d6503a74bd8b05e0b0d07b13331f7ba751",
+      "rows": 2,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v56"
+    },
+    {
+      "family": "sink",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-sink.png",
+      "sha256": "7045394b28138c9047fbaa8b24763df653d928f119bb04219edb5f9e8b6d46fd",
+      "rows": 3,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v56"
+    },
+    {
+      "family": "healing",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-healing.png",
+      "sha256": "4568c65b3337e838e45ea2846a15f0e5b6dcd42ccec455c3ef8300d636f22a01",
+      "rows": 5,
+      "inheritedByteExactFrom": null
+    },
+    {
+      "family": "oven",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-oven.png",
+      "sha256": "3e1e392ff491aaf0e5b5aba66b5310714ac2845dc4bfcda7eaffbe17b4fd473a",
+      "rows": 6,
+      "inheritedByteExactFrom": null
+    },
+    {
+      "family": "dishwasher",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-dishwasher.png",
+      "sha256": "5a1d5a2d1b011cf6b2cb19e6afb84a18ee67b0c9dc2b9870dceb4a862abab12b",
+      "rows": 15,
+      "inheritedByteExactFrom": null
+    },
+    {
+      "family": "table-chair",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-table-chair.png",
+      "sha256": "9374b04f529430966e47f4f8b0ab4df7cae3d9cd371254d0d2d85543fcdc472c",
+      "rows": 1,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v56"
+    },
+    {
+      "family": "bin",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-bin.png",
+      "sha256": "a3ec0293ed8de23a266eddc323d04638778ed326aaa720bcd4dbffb5167036fd",
+      "rows": 2,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v56"
+    },
+    {
+      "family": "toaster",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-toaster.png",
+      "sha256": "925d7396551a7111caf28df97fd211849f7d2b2a01a3596a3a71e27dbf372c06",
+      "rows": 3,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v56"
+    },
+    {
+      "family": "mixing-bowl",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-mixing-bowl.png",
+      "sha256": "24616beadd52edd134a3c5e8d1b513efb2bf37518154d4689738e6c3b8b0c695",
+      "rows": 2,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v56"
+    },
+    {
+      "family": "small-objects",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-small-objects.png",
+      "sha256": "9bfdb55d5adedebd27d610380c78cfd2b74f7f663469df5f94294f5cd9fb766e",
+      "rows": 5,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v56"
+    },
+    {
+      "family": "preparation-tea",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-preparation-tea.png",
+      "sha256": "9a594e5fec796cf1fd06380c93d13b3e529c06089b64ed54ee97839cdbb7646d",
+      "rows": 5,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v56"
+    },
+    {
+      "family": "condiments-approved-current-v2",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-condiments-approved-current-v2.png",
+      "sha256": "df9819f65fc984ee1c43fb4cd7925892bb203cee8f908b3a73278102a6578878",
+      "rows": 9,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v56"
+    },
+    {
+      "family": "kettle",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-kettle.png",
+      "sha256": "1d85f01c6d5cac43f48266a0403b5823ce37d256fd3a326a984d4d05db162450",
+      "rows": 3,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v56"
+    },
+    {
+      "family": "dishwasher-control-panel-v8",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-dishwasher-control-panel.png",
+      "sha256": "50fa85699310d0f6ea5bf8dda68456cd09e102416241c5cef2883de2909fc399",
+      "rows": 3,
+      "inheritedByteExactFrom": "kitchen-ligne-claire-complete-review-v56"
+    },
+    {
+      "family": "dishwasher-worktop-run-v8",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-dishwasher-worktop-run.png",
+      "sha256": "9cbe02a475efe30dba98062d3365a582f99e332665615b471fe60c3a433dc1a0",
+      "rows": 3,
+      "inheritedByteExactFrom": null
+    },
+    {
+      "family": "fitted-carcass-v59",
+      "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/evidence/contact-fitted-carcass-v59.png",
+      "sha256": "9cbe02a475efe30dba98062d3365a582f99e332665615b471fe60c3a433dc1a0",
+      "rows": 3
+    }
+  ],
+  "workbench": {
+    "sourceSet": "kitchen-ligne-claire-complete-review-v56",
+    "sourceManifestSha256": "d13c22d7708c71b98dbbfa1236a0dc09e8cfda9091ff81baf81bf2d91dfd4c5f",
+    "interactionAuthority": "approved V41",
+    "movementHealingImplementationChanged": false,
+    "rootAbsoluteAssetPrefix": "/keeper-review/kitchen-ligne-claire-complete-review-v59/assets/",
+    "preloadBeforeControls": true,
+    "motionImplementationChanged": true,
+    "approvedStateBehaviourChanged": false,
+    "staticAssetArtChanged": false,
+    "dishwasherCandidate": "kitchen-dishwasher-ligne-claire-v8",
+    "fittedCarcassAuthority": "exact Cabinet V11 pixels",
+    "rearLineJoinRepairChanged": true,
+    "movementStateMotionAndSoundChanged": false,
+    "ovenJoinMethod": "same flat Cabinet V11 join as every fitted module",
+    "cupboardHardwareExcludedFromApplianceShells": true,
+    "translucentCookerSurfacePixelsExcluded": true
+  },
+  "verificationRequired": [
+    "canvas",
+    "alpha",
+    "transparent padding",
+    "alpha bounds",
+    "pivots",
+    "anchors",
+    "collisions",
+    "movement",
+    "animations",
+    "interactions",
+    "repair",
+    "countertop healing",
+    "motion modes",
+    "component transforms",
+    "static effect anchors",
+    "SFX toggle",
+    "synchronous repair stop"
+  ],
+  "registration": {
+    "register": false,
+    "promote": false,
+    "currentSelectorChanges": [],
+    "productionWrites": [],
+    "approvalRequired": true
+  },
+  "rollback": "Discard only this V59 pack, archive set and review shell; V58/V57/V56, Dishwasher V8, approved oven/kettle assets and production remain byte-identical.",
+  "approvedCurrentReferences": [
+    {
+      "family": "condiments-approved-current-v2",
+      "id": "condiment-honey-pot",
+      "previousCurrentFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-honey-pot.png",
+      "previousCurrentSha256": "e8a1d55341f198f0eb7e2018ea4ca8e37d7f9452cc81e6e601c9be3418c4b5b4",
+      "approvedCurrentFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-honey-pot.png",
+      "approvedCurrentSha256": "688209d61cefee04fb9f9cc9331cf75898502563c39cb59536afcd638b86f502",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/approved-current/condiment-honey-pot.png",
+      "reviewSha256": "688209d61cefee04fb9f9cc9331cf75898502563c39cb59536afcd638b86f502",
+      "pixels": [
+        256,
+        256
+      ],
+      "alphaBounds": [
+        20,
+        21,
+        236,
+        234
+      ],
+      "status": "approved-and-registered-existing-authority"
+    },
+    {
+      "family": "condiments-approved-current-v2",
+      "id": "condiment-ketchup-bottle",
+      "previousCurrentFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/condiment-ketchup-bottle.png",
+      "previousCurrentSha256": "153cdd6ac24624c2ffad96e7c990ece2c1a53972adb3f4e67b0f51b340ffcb49",
+      "approvedCurrentFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-ketchup-bottle.png",
+      "approvedCurrentSha256": "35f2c560471c7a18a3c197c772260b9529e6e910145f652eac5a1c75c2fa3ff5",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/approved-current/condiment-ketchup-bottle.png",
+      "reviewSha256": "35f2c560471c7a18a3c197c772260b9529e6e910145f652eac5a1c75c2fa3ff5",
+      "pixels": [
+        256,
+        256
+      ],
+      "alphaBounds": [
+        84,
+        20,
+        171,
+        236
+      ],
+      "status": "approved-and-registered-existing-authority"
+    },
+    {
+      "family": "condiments-approved-current-v2",
+      "id": "condiment-malt-vinegar",
+      "previousCurrentFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-malt-vinegar.png",
+      "previousCurrentSha256": "99e49748fc316803a5b7743a8c4ac063a879498c25258c8a65ca5572397fd672",
+      "approvedCurrentFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-malt-vinegar.png",
+      "approvedCurrentSha256": "c74baa1ec20673556ce9512772ecef0b293a7ca4b5c93e817f37c88f5aa5edc9",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/approved-current/condiment-malt-vinegar.png",
+      "reviewSha256": "c74baa1ec20673556ce9512772ecef0b293a7ca4b5c93e817f37c88f5aa5edc9",
+      "pixels": [
+        256,
+        256
+      ],
+      "alphaBounds": [
+        56,
+        20,
+        199,
+        236
+      ],
+      "status": "approved-and-registered-existing-authority"
+    },
+    {
+      "family": "condiments-approved-current-v2",
+      "id": "condiment-mayonnaise-jar",
+      "previousCurrentFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-mayonnaise-jar.png",
+      "previousCurrentSha256": "7d503285bc4ccf5cb098741c569b01a4887e4806e3c6147f97b480311be95d25",
+      "approvedCurrentFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-mayonnaise-jar.png",
+      "approvedCurrentSha256": "7eaebf0d210c36b315c61a580658783a1b0bb1fed911951c4d806fa1fd2870bf",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/approved-current/condiment-mayonnaise-jar.png",
+      "reviewSha256": "7eaebf0d210c36b315c61a580658783a1b0bb1fed911951c4d806fa1fd2870bf",
+      "pixels": [
+        256,
+        256
+      ],
+      "alphaBounds": [
+        46,
+        20,
+        209,
+        236
+      ],
+      "status": "approved-and-registered-existing-authority"
+    },
+    {
+      "family": "condiments-approved-current-v2",
+      "id": "condiment-mustard-bottle",
+      "previousCurrentFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/condiment-mustard-bottle.png",
+      "previousCurrentSha256": "65c2f38eec206e0f07160f8d8e1ae6dd4ce2b415154a73ca845508f2fdbd44ee",
+      "approvedCurrentFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-mustard-bottle.png",
+      "approvedCurrentSha256": "fa51d479faed9086a97396354b06376dfc0ab8cbd3acd359617ef12bf3bb1d45",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/approved-current/condiment-mustard-bottle.png",
+      "reviewSha256": "fa51d479faed9086a97396354b06376dfc0ab8cbd3acd359617ef12bf3bb1d45",
+      "pixels": [
+        256,
+        256
+      ],
+      "alphaBounds": [
+        83,
+        20,
+        172,
+        236
+      ],
+      "status": "approved-and-registered-existing-authority"
+    },
+    {
+      "family": "condiments-approved-current-v2",
+      "id": "condiment-olive-oil",
+      "previousCurrentFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-olive-oil.png",
+      "previousCurrentSha256": "102d543540a2675c5b82575f5fc332585e6b3749bfdced4c1f162e087c49d124",
+      "approvedCurrentFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-olive-oil.png",
+      "approvedCurrentSha256": "51e7f70ec85185a769fc9437aca826e29e4d8823262c3666545d7189fa55ee81",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/approved-current/condiment-olive-oil.png",
+      "reviewSha256": "51e7f70ec85185a769fc9437aca826e29e4d8823262c3666545d7189fa55ee81",
+      "pixels": [
+        256,
+        256
+      ],
+      "alphaBounds": [
+        69,
+        20,
+        186,
+        236
+      ],
+      "status": "approved-and-registered-existing-authority"
+    },
+    {
+      "family": "condiments-approved-current-v2",
+      "id": "condiment-pickle-jar",
+      "previousCurrentFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-pickle-jar.png",
+      "previousCurrentSha256": "a48fc115e5ef7cc8a8200f3a26d53667e740e97473ee5c5bb9c8c70e9b81d9e4",
+      "approvedCurrentFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-pickle-jar.png",
+      "approvedCurrentSha256": "cf52420fc52be5ced58f7243b99550e88c38081a9d2c11ace006161e2d3a51bf",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/approved-current/condiment-pickle-jar.png",
+      "reviewSha256": "cf52420fc52be5ced58f7243b99550e88c38081a9d2c11ace006161e2d3a51bf",
+      "pixels": [
+        256,
+        256
+      ],
+      "alphaBounds": [
+        51,
+        20,
+        205,
+        236
+      ],
+      "status": "approved-and-registered-existing-authority"
+    },
+    {
+      "family": "condiments-approved-current-v2",
+      "id": "condiment-raspberry-jam",
+      "previousCurrentFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-raspberry-jam.png",
+      "previousCurrentSha256": "dfc5ce3f9d6ccd334bd8e6eed5ba71d203c80b7542b85e64fcf9c6d90ef2b23b",
+      "approvedCurrentFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-raspberry-jam.png",
+      "approvedCurrentSha256": "f4fda18ca569d9505494a0eacb86987919b0d14306d6da0e788d556ff8fc8323",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/approved-current/condiment-raspberry-jam.png",
+      "reviewSha256": "f4fda18ca569d9505494a0eacb86987919b0d14306d6da0e788d556ff8fc8323",
+      "pixels": [
+        256,
+        256
+      ],
+      "alphaBounds": [
+        20,
+        28,
+        236,
+        228
+      ],
+      "status": "approved-and-registered-existing-authority"
+    },
+    {
+      "family": "condiments-approved-current-v2",
+      "id": "condiment-wholegrain-mustard-jar",
+      "previousCurrentFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-wholegrain-mustard-jar.png",
+      "previousCurrentSha256": "5f0739bd891dd0475e5f3827a3392fbfac6df9c584ca73937591db7c9cf4b74c",
+      "approvedCurrentFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-wholegrain-mustard-jar.png",
+      "approvedCurrentSha256": "34e241d5b9557eaaaa775d6d59f425011cd96640bce48efffb0ecaed5551dc51",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v59/approved-current/condiment-wholegrain-mustard-jar.png",
+      "reviewSha256": "34e241d5b9557eaaaa775d6d59f425011cd96640bce48efffb0ecaed5551dc51",
+      "pixels": [
+        256,
+        256
+      ],
+      "alphaBounds": [
+        20,
+        20,
+        236,
+        236
+      ],
+      "status": "approved-and-registered-existing-authority"
+    }
+  ],
+  "candidateSelection": {
+    "kettle": {
+      "active": "kitchen-kettle-bubble-authority-v47",
+      "activeCandidateCount": 1,
+      "supersededCandidatesOffered": [],
+      "visualApproval": {
+        "file": "docs/review/kitchen-kettle-bubble-authority-v47-approval-2026-10-22.json",
+        "sha256": "aa3718a300d77d20f9cd8a37c14dfe3ea5465ed4c71fb6356ee2f113dd73c055"
+      },
+      "promotion": "none",
+      "policy": "V47 replaces all pre-existing kettle candidates in this review; immutable predecessor records remain available only as history"
+    }
+  },
+  "brokenApplianceMotion": {
+    "schema": "lighthouse-keeper/broken-appliance-motion@1",
+    "modes": [
+      "off",
+      "subtle",
+      "emphatic"
+    ],
+    "defaultMode": "subtle",
+    "wholeObject": {
+      "type": "irregular-transform",
+      "channels": [
+        "translateX",
+        "translateY",
+        "rotation"
+      ],
+      "artPixelsChanged": false
+    },
+    "components": {
+      "optional": true,
+      "kettle": {
+        "detachedLid": "hover-vibrate",
+        "layers": {
+          "source": "art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/states/kettle-broken.png",
+          "sourceSha256": "231f7eb5f0a9d20077eede2d4264f97d71f5efd47da5303b2a1bfd83c097ef3b",
+          "body": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v46/components/kettle-broken-body.png",
+          "bodySha256": "e9a3c52c1e82df598ce86d47bf1d6413a778887dc331a32586a843a44af08433",
+          "lid": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v46/components/kettle-broken-lid.png",
+          "lidSha256": "b8ffe1192eaac084cafd78c2037b4563ab6c20ddb665109a60a493bda2aca9a0",
+          "recomposesPixelExactly": true,
+          "sourcePixels": [
+            256,
+            256
+          ],
+          "bodyBounds": [
+            20,
+            30,
+            236,
+            226
+          ],
+          "lidBounds": [
+            51,
+            61,
+            126,
+            109
+          ]
+        }
+      }
+    },
+    "environmentalEffects": {
+      "inheritObjectTransform": false,
+      "kettleBrokenSteam": "anchored over open top"
+    },
+    "sfx": {
+      "independentToggle": true,
+      "defaultEnabled": false,
+      "slot": "broken-rattle",
+      "placeholder": {
+        "file": "art/drafts/kitchen-ligne-claire-complete-review-2026-10-22-v46/audio/broken-appliance-metal-rattle-placeholder.wav",
+        "sha256": "72f9b08156118717f14edcd6b73321cd14e0bd94dc419bb59490e4eb35ea4d47",
+        "label": "replaceable placeholder"
+      },
+      "replacement": {
+        "methods": [
+          "drag-and-drop",
+          "file picker"
+        ],
+        "scope": "browser-local review session",
+        "canonicalAudioOverwritten": false
+      },
+      "playback": "intermittent AudioBufferSourceNode"
+    },
+    "repair": {
+      "transition": "broken to any non-broken state",
+      "synchronous": true,
+      "zeroTransforms": true,
+      "cancelPendingSfx": true,
+      "stopActiveSoundNodes": true,
+      "releaseMovementLock": true
+    },
+    "adopters": {
+      "kettle": "whole object plus detached lid",
+      "dishwasher": "whole object; component layer extension point retained"
+    }
+  }
+}
