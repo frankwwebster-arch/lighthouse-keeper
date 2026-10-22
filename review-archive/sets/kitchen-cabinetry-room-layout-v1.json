@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "set": "kitchen-cabinetry-room-layout-v1",
+  "page": {
+    "path": "public/keeper-review/kitchen-cabinetry-room-layout-v1/index.html",
+    "sha256": "bb18be2e63ff0440c426d5d2b511e783576ca72b50d854397f9f87d33647ae0f",
+    "bytes": 14268
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-cabinetry-room-layout-v1/assets/cupboard-approved-review-crop.png": {
+      "sha256": "345435481769d15ba7b545687fa304adfac595b62bf0955bc645b18023922270",
+      "extension": ".png",
+      "bytes": 140732,
+      "object": "review-archive/objects/34/345435481769d15ba7b545687fa304adfac595b62bf0955bc645b18023922270.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/34/345435481769d15ba7b545687fa304adfac595b62bf0955bc645b18023922270.png"
+    },
+    "/keeper-review/kitchen-cabinetry-room-layout-v1/assets/dishwasher-approved-review-crop.png": {
+      "sha256": "98f70b3193e2c7a51b7d6075c74c3a05e11dcd4b6c09ad7a702441952587b1d2",
+      "extension": ".png",
+      "bytes": 144094,
+      "object": "review-archive/objects/98/98f70b3193e2c7a51b7d6075c74c3a05e11dcd4b6c09ad7a702441952587b1d2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/98f70b3193e2c7a51b7d6075c74c3a05e11dcd4b6c09ad7a702441952587b1d2.png"
+    },
+    "/keeper-review/kitchen-cabinetry-room-layout-v1/assets/dishwasher-broken-approved-review-crop.png": {
+      "sha256": "19a811f21d2dc7f7ffb36fba530d5b4a629a68b9472b5ca41c6437ad15b4637d",
+      "extension": ".png",
+      "bytes": 214169,
+      "object": "review-archive/objects/19/19a811f21d2dc7f7ffb36fba530d5b4a629a68b9472b5ca41c6437ad15b4637d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/19/19a811f21d2dc7f7ffb36fba530d5b4a629a68b9472b5ca41c6437ad15b4637d.png"
+    },
+    "/keeper-review/kitchen-cabinetry-room-layout-v1/assets/dishwasher-on-approved-review-crop.png": {
+      "sha256": "f4c6cf4d6eb7214c2864b634a246996c5e86cbf0c9b4b85da99c597afe2bad24",
+      "extension": ".png",
+      "bytes": 104852,
+      "object": "review-archive/objects/f4/f4c6cf4d6eb7214c2864b634a246996c5e86cbf0c9b4b85da99c597afe2bad24.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f4/f4c6cf4d6eb7214c2864b634a246996c5e86cbf0c9b4b85da99c597afe2bad24.png"
+    },
+    "/keeper-review/kitchen-cabinetry-room-layout-v1/assets/drawers-approved-review-crop.png": {
+      "sha256": "9b1d60926b52562913b3008be71b8f548a5ca1b28f78429adab0c7e57f78d960",
+      "extension": ".png",
+      "bytes": 132574,
+      "object": "review-archive/objects/9b/9b1d60926b52562913b3008be71b8f548a5ca1b28f78429adab0c7e57f78d960.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9b/9b1d60926b52562913b3008be71b8f548a5ca1b28f78429adab0c7e57f78d960.png"
+    },
+    "/keeper-review/kitchen-cabinetry-room-layout-v1/assets/fridge-approved-review-crop.png": {
+      "sha256": "88bdce1214a3fe48ea008b57df764b968f0e66df228718e107f89ba9e79f00bc",
+      "extension": ".png",
+      "bytes": 131179,
+      "object": "review-archive/objects/88/88bdce1214a3fe48ea008b57df764b968f0e66df228718e107f89ba9e79f00bc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/88/88bdce1214a3fe48ea008b57df764b968f0e66df228718e107f89ba9e79f00bc.png"
+    },
+    "/keeper-review/kitchen-cabinetry-room-layout-v1/assets/fridge-broken-approved-review-crop.png": {
+      "sha256": "a91275f407424ad0fddf52e79237749aa0ab0e20ac02bd5440ebc64eabde7f73",
+      "extension": ".png",
+      "bytes": 163392,
+      "object": "review-archive/objects/a9/a91275f407424ad0fddf52e79237749aa0ab0e20ac02bd5440ebc64eabde7f73.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a9/a91275f407424ad0fddf52e79237749aa0ab0e20ac02bd5440ebc64eabde7f73.png"
+    },
+    "/keeper-review/kitchen-cabinetry-room-layout-v1/assets/fridge-standard-approved-review-crop.png": {
+      "sha256": "90c4c2babc15028f96f9f033ec1b5bdfe1ebd337e18e60dea86bf4fd3b7cbacc",
+      "extension": ".png",
+      "bytes": 100099,
+      "object": "review-archive/objects/90/90c4c2babc15028f96f9f033ec1b5bdfe1ebd337e18e60dea86bf4fd3b7cbacc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/90/90c4c2babc15028f96f9f033ec1b5bdfe1ebd337e18e60dea86bf4fd3b7cbacc.png"
+    },
+    "/keeper-review/kitchen-cabinetry-room-layout-v1/assets/oven-approved-review-crop.png": {
+      "sha256": "3b4798115ceb4519e7125e0a4fd72157fea3fa89da91ccbfb616604bc705728a",
+      "extension": ".png",
+      "bytes": 213251,
+      "object": "review-archive/objects/3b/3b4798115ceb4519e7125e0a4fd72157fea3fa89da91ccbfb616604bc705728a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3b/3b4798115ceb4519e7125e0a4fd72157fea3fa89da91ccbfb616604bc705728a.png"
+    },
+    "/keeper-review/kitchen-cabinetry-room-layout-v1/assets/oven-broken-approved-review-crop.png": {
+      "sha256": "9d5f245e44276faca3a74e0b7d0a7e3f6352429d778e298aafa1c4898a1094cc",
+      "extension": ".png",
+      "bytes": 175744,
+      "object": "review-archive/objects/9d/9d5f245e44276faca3a74e0b7d0a7e3f6352429d778e298aafa1c4898a1094cc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9d/9d5f245e44276faca3a74e0b7d0a7e3f6352429d778e298aafa1c4898a1094cc.png"
+    },
+    "/keeper-review/kitchen-cabinetry-room-layout-v1/assets/oven-off-approved-review-crop.png": {
+      "sha256": "0dc83d6ace6c1d192f5f628b93f9e14b162b49ad1ac339ad7a4ca289ec40f5ea",
+      "extension": ".png",
+      "bytes": 146449,
+      "object": "review-archive/objects/0d/0dc83d6ace6c1d192f5f628b93f9e14b162b49ad1ac339ad7a4ca289ec40f5ea.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0d/0dc83d6ace6c1d192f5f628b93f9e14b162b49ad1ac339ad7a4ca289ec40f5ea.png"
+    },
+    "/keeper-review/kitchen-cabinetry-room-layout-v1/assets/sink-approved-review-crop.png": {
+      "sha256": "d374ddd766bef9e3d1d29436c8c64f5e323a1c3272a7e86d9babb3ad7a0a8e6a",
+      "extension": ".png",
+      "bytes": 197514,
+      "object": "review-archive/objects/d3/d374ddd766bef9e3d1d29436c8c64f5e323a1c3272a7e86d9babb3ad7a0a8e6a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d3/d374ddd766bef9e3d1d29436c8c64f5e323a1c3272a7e86d9babb3ad7a0a8e6a.png"
+    },
+    "/keeper-review/kitchen-cabinetry-room-layout-v1/assets/sink-broken-approved-review-crop.png": {
+      "sha256": "c652e6aa6ff02630425bb8f314638563a01ac65763ad23e3efbd16cb1153137b",
+      "extension": ".png",
+      "bytes": 231836,
+      "object": "review-archive/objects/c6/c652e6aa6ff02630425bb8f314638563a01ac65763ad23e3efbd16cb1153137b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c6/c652e6aa6ff02630425bb8f314638563a01ac65763ad23e3efbd16cb1153137b.png"
+    },
+    "/keeper-review/kitchen-cabinetry-room-layout-v1/assets/sink-on-approved-review-crop.png": {
+      "sha256": "91adb674600e7549f6f30c2a37e3cddee68b45b9a4c3496602c9eb7b666c20bc",
+      "extension": ".png",
+      "bytes": 134885,
+      "object": "review-archive/objects/91/91adb674600e7549f6f30c2a37e3cddee68b45b9a4c3496602c9eb7b666c20bc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/91/91adb674600e7549f6f30c2a37e3cddee68b45b9a4c3496602c9eb7b666c20bc.png"
+    }
+  }
+}

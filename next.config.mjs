@@ -409,6 +409,11 @@ export default {
         permanent: false,
       },
       {
+        source: '/keeper-review/kitchen-cabinetry-room-layout-v1',
+        destination: '/keeper-review/kitchen-cabinetry-room-layout-v1/index.html',
+        permanent: false,
+      },
+      {
         source: '/keeper-review/kitchen-high-resolution-foundation-v1',
         destination: '/keeper-review/kitchen-high-resolution-foundation-v1/index.html',
         permanent: false,

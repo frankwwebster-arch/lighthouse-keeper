@@ -822,6 +822,19 @@ native-scale proof and runtime remain closed. Approval record:
 `docs/review/kitchen-cabinetry-state-derivatives-v1-approval-2026-10-22.json`.
 Delivery: `docs/KITCHEN_CABINETRY_STATE_DERIVATIVES_V1_2026-10-22.md`.
 
+Kitchen Cabinetry Room Layout V1 is the active room-fit review at
+`/keeper-review/kitchen-cabinetry-room-layout-v1/index.html`. Fourteen
+transparent review crops come only from the exact approved cabinetry foundation
+and V4 state authority. All six units drag-and-swap between the fixed `84`-pixel
+bays; layout, state and zoom persist; Broken appliances cannot move or be
+displaced until repaired. Raw and narrow join-only canvases remain synchronized
+at `1×`, `2×` and `4×`, rendered from the high-resolution crops without a `1×`
+intermediate. Dishwasher Off is intentionally absent until its approved dark
+lamp semantics are authored as a separable high-resolution layer. The crop
+masks, join diagnostic, production registration and runtime remain unapproved
+and unchanged. Delivery:
+`docs/KITCHEN_CABINETRY_ROOM_LAYOUT_V1_2026-10-22.md`.
+
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
 link with V6. The animation remains the exact V1/V2 six-pose motion inside its
