@@ -168,7 +168,7 @@ objects and six new action marks, all registered as V1 IDs. Claude reviewed
 `evidence/light-dark-64-contact-sheet.png` and wired the relevant pictures into
 stories and action demos on 22 October. At that checkpoint the catalogue was 320 pictures / 405
 versions: 77 Frank-approved conversions, 15 Claude-reviewed commissioned new
-pictures and 228 earlier pictures still to convert.
+pictures and 228 earlier pictures then without a ligne-claire draft.
 The pack includes exact prompts, accepted sources, nine retained rejections,
 flat-palette 256 px components, measured ownership/gutter metadata and its own
 verifier. Do not edit this pack; corrections require a fresh immutable version.
@@ -185,7 +185,13 @@ while filled mug V2 and marked toast V2 remain byte-identical. At that approval
 checkpoint the catalogue was 321 pictures / 413 versions. The later
 Claude-reviewed black-ink/recipe commission brings the current library to 339
 pictures / 452 versions: 83 Frank-approved conversions, 34 separately
-introduced pictures and 222 earlier pictures still to convert.
+introduced pictures and 222 earlier pictures without a ligne-claire draft.
+Frank stopped the conversion programme on 22 October; those 222 are not an
+active queue. Keep the recipe document as durable project memory and resume
+only if Frank explicitly restarts it. Every one of the 339 ids and 452 versions
+is available in the Bubble creation tool and protected as a minimum by
+`data/activity-stories/catalogue-closure-2026-10-22.json` and
+`npm run verify:activity-stories`.
 
 ## Kitchen kettle V47 approval (22 Oct 2026)
 

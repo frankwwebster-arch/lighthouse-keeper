@@ -10,6 +10,7 @@
  * - Activity Cloud Composer V1-V7
  * - Prime rear-work activity callout V2 and V3
  * - every Claude or Codex picture pack with a component asset manifest
+ * - every accepted or commissioned-and-registered Bubble-specific asset pack
  *
  * Safe to rerun: exact id/hash pairs already in the library are skipped.
  */
@@ -93,8 +94,68 @@ export function sourceCatalogue() {
   return [...unique.values()].sort((a, b) => a.id.localeCompare(b.id) || a.sha256.localeCompare(b.sha256))
 }
 
+/**
+ * The activity-story packs are immutable review records rather than generic
+ * source packs, so they are deliberately discovered separately. Only assets
+ * whose pack records say they were registered belong here; rejected review
+ * candidates must never leak into the creation tool.
+ */
+export function registeredActivityStoryAssets() {
+  const records = []
+  const packNames = fs.readdirSync(DRAFTS).filter((name) => name.startsWith('activity-story-')).sort()
+
+  for (const name of packNames) {
+    const register = ['batch-register.json', 'manifest.json']
+      .map((file) => path.join(DRAFTS, name, file))
+      .find(fs.existsSync)
+    if (!register) continue
+    const pack = JSON.parse(fs.readFileSync(register, 'utf8'))
+    const status = String(pack.status ?? '')
+    const partiallyApprovedTools = name === 'activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1'
+    if (!/registered|approved-current-v2/.test(status) && !partiallyApprovedTools) continue
+
+    if (pack.components) {
+      let ids = Array.isArray(pack.approval?.approvedIds)
+        ? pack.approval.approvedIds
+        : Object.keys(pack.components)
+      // The family-pack hen was explicitly rejected; its separately approved
+      // observational correction is discovered from its own registered pack.
+      if (name === 'activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1')
+        ids = ids.filter((id) => id !== 'eggs-hen-coop')
+      for (const id of ids) {
+        const component = pack.components[id]
+        if (!component) throw new Error(`${pack.set}/${id}: approved component is missing from its immutable register`)
+        addRecord(records, id, component, pack.set, component.kind ?? (id.startsWith('symbol-') ? 'mark' : 'object'))
+      }
+    }
+
+    // The empty mug and mark-free toast are focused one-asset manifests.
+    if (pack.id && pack.candidate?.file && pack.candidate?.sha256)
+      addRecord(records, pack.id, pack.candidate, pack.set, pack.kind ?? 'object', pack.family)
+  }
+
+  const unique = new Map()
+  for (const record of records) {
+    const key = `${record.id}@${record.sha256}`
+    if (unique.has(key)) continue
+    unique.set(key, record)
+    const absolute = path.join(ROOT, record.file)
+    if (!fs.existsSync(absolute)) throw new Error(`${record.id}: missing ${record.file}`)
+    const actual = sha256(absolute)
+    if (actual !== record.sha256) throw new Error(`${record.id}: registered source hash changed (${actual})`)
+  }
+  return [...unique.values()].sort((a, b) => a.id.localeCompare(b.id) || a.sha256.localeCompare(b.sha256))
+}
+
+export function completePictureCatalogue() {
+  const unique = new Map()
+  for (const record of [...sourceCatalogue(), ...registeredActivityStoryAssets()])
+    unique.set(`${record.id}@${record.sha256}`, record)
+  return [...unique.values()].sort((a, b) => a.id.localeCompare(b.id) || a.sha256.localeCompare(b.sha256))
+}
+
 if (path.resolve(process.argv[1] ?? '') === fileURLToPath(import.meta.url)) {
-  const records = sourceCatalogue()
+  const records = completePictureCatalogue()
   let added = 0
   let skipped = 0
 

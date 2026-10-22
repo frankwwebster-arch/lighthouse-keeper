@@ -2,8 +2,37 @@
 
 **Decision date:** 21 October 2026
 
-**Status:** active; BBQ, sandwich, washing, General repair, repair hand-tool,
-cooking-core and baking/eggs/mixing packs approved; action-imagery programme only
+**Status:** paused by Frank on 22 October 2026; retain as the final reusable
+recipe, but do not continue the conversion programme without a new explicit
+instruction
+
+## Programme closure (22 October 2026)
+
+Frank stopped the conversion programme after the tea-and-toast family. The
+recipe remains project memory for future additions or an explicit restart.
+The Bubble creation tool currently exposes every accepted and historical
+picture asset: 339 picture ids and 452 immutable versions. The protected
+closure is `data/activity-stories/catalogue-closure-2026-10-22.json`, and
+`npm run verify:activity-stories` reconstructs that complete set from the
+source registers and fails if any closure asset ceases to be available.
+
+The final binding drawing recipe is:
+
+1. Use one even black line weight everywhere.
+2. Draw a line only where there is a real edge; no hatching or texture strokes.
+3. Close and fill every area with one flat colour; use no gradient, shine or
+   glow, and at most one rare flat shadow tone.
+4. Show the object's own colour under even daylight.
+5. Draw objects accurately, with the observational clarity of Hergé's cars and
+   machines; simplify by omitting detail, never by making the object cute.
+6. Require immediate clarity at 64 px.
+7. Use black fill only where the depicted thing is black.
+8. Draw action and notation marks with the same line discipline.
+
+Preserve ids, semantics, object counts, construction, viewpoint, animation and
+story behaviour. Every correction is a new immutable version; no prior asset
+is overwritten or removed. The 222 older pictures without a ligne-claire draft
+are an historical queue, not active work.
 
 Frank approved the six-picture BBQ pilot with “agreed, these are superb”. This
 prompt turns that approval into a controlled conversion programme for Bubble
@@ -164,11 +193,15 @@ retained. His subsequent requested empty `tea-mug-empty` V1 and mark-free
 `toast-slices` V3 are also current from fresh immutable packs; filled mug V2
 and marked toast V2 remain byte-identical.
 
-## Ready-to-paste prompt
+## Dormant restart prompt
+
+Do not run this prompt merely because conversion work remains. It is retained
+only so Frank can explicitly restart the programme later without losing the
+recipe or approval history.
 
 ```text
-Continue Lighthouse Keeper: convert the Bubble stories action imagery to the
-approved ligne-claire language, family by family.
+Frank has explicitly restarted Lighthouse Keeper's paused Bubble-story
+ligne-claire conversion. Continue family by family in the approved language.
 
 Read, in full, on main:
 - docs/CLAUDE_TO_CODEX_BUBBLE_STORIES_2026-10-20.md

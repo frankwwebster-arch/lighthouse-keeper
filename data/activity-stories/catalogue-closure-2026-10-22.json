@@ -1,0 +1,77 @@
+{
+  "schema": "lighthouse-keeper/activity-picture-catalogue-closure@1",
+  "date": "2026-10-22",
+  "status": "complete-and-paused",
+  "decision": "Stop the ligne-claire conversion programme. Preserve the recipe, and keep every asset already in the Bubble creation tool available.",
+  "recipe": "docs/CODEX_PROMPT_BUBBLE_STORIES_LIGNE_CLAIRE_ACTION_IMAGERY_2026-10-21.md",
+  "minimumPictures": 339,
+  "minimumVersions": 452,
+  "unmanifestedLegacyVersions": [
+    {
+      "id": "bbq-grill-unlit",
+      "v": 1,
+      "sha256": "e6c7d5e51308d4fc974d6c3f090548cfba4d725d43564c9f7a6943bb55b407b7",
+      "url": "/activity-stories/repo/art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-grill.png"
+    },
+    {
+      "id": "symbol-clean-glint",
+      "v": 1,
+      "sha256": "66aca08ead270bd15a31b8149f6dfcf691bbaa59e38c3e3448d93476d8b8c86a",
+      "url": "/activity-stories/repo/art/drafts/activity-story-symbol-redraws-2026-10-21-v1/drafts/components/symbol-clean-glint.png"
+    },
+    {
+      "id": "symbol-heat-curls",
+      "v": 1,
+      "sha256": "053ec220575142bbfd5d7d822254bf661c0881c481d33224d2c94f5006611f48",
+      "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-heat-curls-053ec220575142bb.png"
+    },
+    {
+      "id": "symbol-heat-shimmer",
+      "v": 2,
+      "sha256": "2863f480f68dc9c03a912207bc9403d87f3f041c0d2ce3661c644950374fc6db",
+      "url": "/activity-stories/repo/art/drafts/activity-story-symbol-redraws-2026-10-21-v1/drafts/components/symbol-heat-shimmer.png"
+    },
+    {
+      "id": "symbol-impact-star",
+      "v": 1,
+      "sha256": "24bd4e85982758910682eee6e7963a3c197b4de8b20f5e4f07caf2ec1ef3635f",
+      "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-impact-star-24bd4e8598275891.png"
+    },
+    {
+      "id": "symbol-motion-ticks",
+      "v": 1,
+      "sha256": "a91599e13c96e96cff6a247815bb30840d1376493f5c123ab73c3b20a7d4630d",
+      "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-motion-ticks-a91599e13c96e96c.png"
+    },
+    {
+      "id": "symbol-pleasant-aroma",
+      "v": 2,
+      "sha256": "3c240e474823cb0b8489d2bb9702782ecc8396bed45327633613726b63842c61",
+      "url": "/activity-stories/repo/art/drafts/activity-story-symbol-redraws-2026-10-21-v1/drafts/components/symbol-pleasant-aroma.png"
+    },
+    {
+      "id": "symbol-sizzle-spark",
+      "v": 1,
+      "sha256": "7fd4e839c3505e0be040ac56301be8bd7fc1ce99f77e720a1aca581d0dad76db",
+      "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-sizzle-spark-7fd4e839c3505e0b.png"
+    },
+    {
+      "id": "symbol-soap-bubbles",
+      "v": 1,
+      "sha256": "a1946758a07299ee5625b99499c5b4f4ed2bbcb9453737be23f091b42685bef7",
+      "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-soap-bubbles-a1946758a07299ee.png"
+    },
+    {
+      "id": "symbol-water-droplets",
+      "v": 1,
+      "sha256": "2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc",
+      "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-water-droplets-2bff1e869ae70d31.png"
+    },
+    {
+      "id": "symbol-welding-sparks",
+      "v": 2,
+      "sha256": "23b02762b158d3dd7f88ff6ac8de0a9a40d4a2e4451d75e002a99e309b9e3070",
+      "url": "/activity-stories/repo/art/drafts/activity-story-symbol-redraws-2026-10-21-v1/drafts/components/symbol-welding-sparks.png"
+    }
+  ]
+}

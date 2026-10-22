@@ -51,6 +51,16 @@ whole-game restyling. The companion display proposal uses an opaque rounded
 rectangle activity panel, variable emotion balloons and unenclosed reaction
 marks.
 
+Frank stopped the family-by-family ligne-claire conversion on 22 October 2026.
+The 222 earlier pictures without a ligne-claire draft are historical catalogue
+state, not an active queue. The final recipe remains in
+`docs/CODEX_PROMPT_BUBBLE_STORIES_LIGNE_CLAIRE_ACTION_IMAGERY_2026-10-21.md`.
+Every asset present at closure is available in the Bubble creation tool: 339
+picture ids / 452 versions, all in named Studio groups. The minimum complete
+set is recorded in `data/activity-stories/catalogue-closure-2026-10-22.json`;
+the importer now includes registered Bubble-specific packs and
+`npm run verify:activity-stories` fails if any closure version disappears.
+
 Frank approved the first family continuation on 21 October 2026: seven
 remaining BBQ-food candidates and seven remaining BBQ-tool candidates are
 isolated into two immutable V1 packs with fixed-palette 256 × 256 RGBA
@@ -147,10 +157,11 @@ and every V1 remains selectable. His requested `tea-mug-empty` V1 and clean
 `toast-slices` V3 are also current; the latter removes exactly five detached
 action-slash components so the marks can be added separately. At that approval
 checkpoint the catalogue was 321 pictures / 413 versions, with 83 approved
-conversions and 222 earlier pictures still to convert. The later
+conversions and 222 earlier pictures without a ligne-claire draft. The later
 Claude-reviewed black-ink/recipe commission brings the current totals to 339
 pictures / 452 versions without changing the 83 Frank-approved conversion
-count or the 222-picture earlier-art queue.
+count or the 222-picture earlier-art remainder. That remainder is paused, not
+queued for further conversion.
 
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 

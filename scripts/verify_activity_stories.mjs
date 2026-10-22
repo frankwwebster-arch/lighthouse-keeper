@@ -10,8 +10,8 @@
 
 import fs from 'node:fs'
 import path from 'node:path'
-import { CELL, ID, MIN_GUTTER, STORIES_DIR, fileFor, measure, readLibrary, sha256 } from './activity_story_pictures.mjs'
-import { sourceCatalogue } from './import_activity_story_picture_catalogue.mjs'
+import { CELL, ID, MIN_GUTTER, ROOT, STORIES_DIR, fileFor, measure, readLibrary, sha256 } from './activity_story_pictures.mjs'
+import { completePictureCatalogue } from './import_activity_story_picture_catalogue.mjs'
 import { verifyCodexBubbleStoryFamiliesV1 } from './verify_codex_bubble_story_families_v1.mjs'
 import { verifyActivityStoryLigneClaireBbqPilotV1 } from './verify_activity_story_ligne_claire_bbq_pilot_v1.mjs'
 import { verifyActivityStorySymbolColourSemanticsV1 } from './verify_activity_story_symbol_colour_semantics_v1.mjs'
@@ -56,12 +56,29 @@ for (const [id, p] of Object.entries(lib.pictures)) {
 
 // Claude and Frank need the complete review-ready activity vocabulary, not
 // only the small choreography subset that originally seeded this library.
-for (const source of sourceCatalogue()) {
+// The closure record supplies the few historical versions that predate a
+// machine-readable registered pack, so all 452 versions present when Frank
+// paused the programme remain protected as a minimum, while later additions
+// can still extend the catalogue.
+const closure = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/activity-stories/catalogue-closure-2026-10-22.json'), 'utf8'))
+const expected = new Map()
+for (const source of completePictureCatalogue()) expected.set(`${source.id}@${source.sha256}`, source)
+for (const source of closure.unmanifestedLegacyVersions ?? []) expected.set(`${source.id}@${source.sha256}`, source)
+for (const source of expected.values()) {
   const picture = lib.pictures[source.id]
-  if (!picture) problems.push(`${source.id}: missing from the complete activity picture catalogue (${source.set})`)
-  else if (!picture.versions.some((version) => version.sha256 === source.sha256))
-    problems.push(`${source.id}: ${source.set} source version is missing from the library`)
+  const provenance = source.set ?? 'catalogue closure'
+  if (!picture) problems.push(`${source.id}: missing from the complete activity picture catalogue (${provenance})`)
+  else if (!picture.versions.some((version) => version.sha256 === source.sha256 && (source.v === undefined || version.v === source.v) && (source.url === undefined || version.url === source.url)))
+    problems.push(`${source.id}: ${provenance} source version is missing from the library`)
 }
+if (expected.size !== closure.minimumVersions)
+  problems.push(`catalogue closure describes ${expected.size} unique versions, expected ${closure.minimumVersions}`)
+if (new Set([...expected.values()].map((source) => source.id)).size !== closure.minimumPictures)
+  problems.push(`catalogue closure does not cover all ${closure.minimumPictures} picture ids`)
+if (Object.keys(lib.pictures).length < closure.minimumPictures)
+  problems.push(`picture library has fallen below the ${closure.minimumPictures}-picture closure`)
+if (versions < closure.minimumVersions)
+  problems.push(`picture library has fallen below the ${closure.minimumVersions}-version closure`)
 
 const stories = fs.readdirSync(STORIES_DIR).filter((f) => f.endsWith('.json'))
 for (const f of stories) {

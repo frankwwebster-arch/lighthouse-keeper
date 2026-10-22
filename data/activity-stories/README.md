@@ -21,6 +21,18 @@ plus the later requested empty-mug variant. Run
 immutable source packs; `npm run verify:activity-stories` fails if any source
 component is absent or has lost its pinned version.
 
+**Catalogue closure (22 October 2026):** Frank stopped the ligne-claire
+conversion programme and asked that its recipe remain in project memory while
+every asset stays available to the Bubble creation tool. The complete closure
+is 339 picture ids / 452 immutable versions. All are visible in a named Studio
+group, every prior version can be inspected, and older object versions can be
+pinned in a story. The machine-readable minimum is
+`catalogue-closure-2026-10-22.json`; `npm run verify:activity-stories` now
+reconstructs all 452 entries from generic source packs, registered Bubble packs
+and the small legacy bridge list. Later additions may extend this set, but no
+closure asset may disappear. The retained recipe is
+`docs/CODEX_PROMPT_BUBBLE_STORIES_LIGNE_CLAIRE_ACTION_IMAGERY_2026-10-21.md`.
+
 **Ligne-claire pilot (21 October 2026):** Frank selected flat near-black ink,
 opaque spot colour and expressive comic notation as the candidate next visual
 direction. Six BBQ pictures were translated and approved under
@@ -182,7 +194,7 @@ as Frank-approved conversions. Claude subsequently reviewed the sheet and
 wired the relevant objects and marks into the stories and action demos on 22
 October. At that checkpoint the library had 320 pictures / 405 immutable versions: 77
 Frank-approved ligne-claire conversions, 15 Claude-reviewed commissioned new
-pictures and 228 earlier pictures still to convert.
+pictures and 228 earlier pictures then without a ligne-claire draft.
 
 **Claude-commissioned black-ink marks and recipe pictures (22 October 2026;
 awaiting Claude review):** the immutable pack at
@@ -213,7 +225,7 @@ toast without its five detached action slashes at
 `tea-mug-empty` V1 and clean `toast-slices` V3 are current; filled mug V2 and
 marked toast V2 remain byte-identical. At that approval checkpoint the library
 had 321 pictures / 413 versions, 83 approved conversions and 222 earlier
-pictures still to convert. The later black-ink/recipe commission is reflected
+pictures without a ligne-claire draft. The later black-ink/recipe commission is reflected
 in the current totals at the top of this document.
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
