@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
-import { VISITORS, objectById, type FloorId, type ObjectId, type PetKind } from '../game/config'
+import { VISITORS, minutesPerSecond, objectById, type FloorId, type ObjectId, type PetKind } from '../game/config'
 import { insideVisit, moodOf, moodWord, tierOf, waitingVisit, type Happening, type State } from '../game/engine'
 import { FLOOR_ORDER, FLOOR_Y, INTERIOR, LAYOUT, TOWER_X, floorOf, route, worldX, type Point } from '../game/world'
 import { Sprite } from './Sprite'
+import { primeActionClipFor, primeActionPlanFor, primeVerticalClipFor } from './primeChoreography'
 
 const SPEED = 240
 const WALK_START_MS = 500
@@ -18,8 +19,8 @@ export const primeTravelClipFor = (motion: KeeperTravelMotion): string | null =>
   'walk-start': 'keeper_prime_walk_side_start',
   walk: 'keeper_prime_walk_side_cycle',
   'walk-stop': 'keeper_prime_walk_side_stop',
-  'stairs-up': 'keeper_prime_stairs_up',
-  'stairs-down': 'keeper_prime_stairs_down',
+  'stairs-up': primeVerticalClipFor('stairs-up'),
+  'stairs-down': primeVerticalClipFor('stairs-down'),
   lift: null,
 })[motion]
 
@@ -59,12 +60,12 @@ const SKIN = '#f1c9a0'
 /** The bought broom tier controls the complete keeper-plus-tool cleaning strip. */
 export const cleaningClipForTier = (tier: number) => tier >= 3 ? 'hoover_super' : tier === 2 ? 'hoover_basic' : 'sweep_broom'
 
-function Keeper({ anim, mood, motion, face, rear, action, cleaningTier }: { anim: string; mood: ReturnType<typeof moodWord>; motion: KeeperTravelMotion; face: 1 | -1; rear: boolean; action?: string; cleaningTier: number }) {
+function Keeper({ anim, mood, motion, face, rear, action, primeActionClip, cleaningTier }: { anim: string; mood: ReturnType<typeof moodWord>; motion: KeeperTravelMotion; face: 1 | -1; rear: boolean; action?: string; primeActionClip?: string | null; cleaningTier: number }) {
   const moving = motion !== 'idle' && motion !== 'lift'
   const clip = moving ? 'walk' : anim === 'none' ? 'idle' : anim
   const cleaningClip = cleaningClipForTier(cleaningTier)
   const productionClip = action === 'desk_tidy' ? cleaningClip : rear ? action === 'brush_teeth' ? 'brush_teeth_back' : action === 'wash_basin' ? 'wash_back' : 'cook_back' : clip
-  const primeClip = moving ? primeTravelClipFor(motion) : rear ? 'keeper_prime_rear_work' : anim === 'none' ? primeTravelClipFor('idle') : null
+  const primeClip = moving ? primeTravelClipFor(motion) : primeActionClip ?? (rear ? 'keeper_prime_rear_work' : anim === 'none' ? primeTravelClipFor('idle') : null)
   const mouth = mood === 'chipper' ? 'M-6 -76 Q0 -68 6 -76' : mood === 'content' ? 'M-5 -75 Q0 -71 5 -75' : mood === 'soso' ? 'M-5 -74 L5 -74' : 'M-6 -72 Q0 -78 6 -72'
   return (
     <g className={`keeper a-${clip} ${rear ? 'keeper-rear' : ''}`} transform={`scale(${rear ? 1 : face} 1)`}>
@@ -294,7 +295,11 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
   })()
   const hidden = !!(d && d.priv && d.phase === 'doing')
   const asleep = d?.anim === 'sleep' && d.phase === 'doing'
-  const rearWork = !!(d && d.phase === 'doing' && (d.object === 'cooker' || d.object === 'basin'))
+  const primeActionPlan = d?.phase === 'doing' ? primeActionPlanFor(d.id) : null
+  const rearWork = primeActionPlan?.facing === 'back' || !!(d && d.phase === 'doing' && (d.object === 'cooker' || d.object === 'basin'))
+  const actionElapsedSeconds = d?.phase === 'doing' ? Math.max(0, d.total - d.left) / minutesPerSecond() : 0
+  const actionRemainingSeconds = d?.phase === 'doing' ? Math.max(0, d.left) / minutesPerSecond() : Infinity
+  const primeActionClip = d?.phase === 'doing' ? primeActionClipFor(d.id, actionElapsedSeconds, actionRemainingSeconds) : null
   const wv = waitingVisit(s)
   const iv = insideVisit(s)
   const mood = moodWord(moodOf(s))
@@ -321,7 +326,7 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
       {!hidden && (
         <g transform={`translate(${pos.x} ${asleep ? pos.y - 26 : pos.y})`}>
           <g className={asleep ? 'lying' : undefined}>
-            <Keeper anim={anim} mood={mood} motion={pos.motion} face={pos.face} rear={rearWork} action={d?.id} cleaningTier={tierOf(s, 'broom')} />
+            <Keeper anim={anim} mood={mood} motion={pos.motion} face={pos.face} rear={rearWork} action={d?.id} primeActionClip={primeActionClip} cleaningTier={tierOf(s, 'broom')} />
           </g>
         </g>
       )}

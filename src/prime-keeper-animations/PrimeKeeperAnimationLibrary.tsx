@@ -273,7 +273,7 @@ export default function PrimeKeeperAnimationLibrary({ catalogue, gaps }: { catal
 
   return <main className={styles.page}>
     <header className={styles.hero}>
-      <nav><a href="/">Lighthouse Keeper</a><span>/</span><strong>Prime animation library</strong></nav>
+      <nav><a href="/">Lighthouse Keeper</a><span>/</span><strong>Prime animation library</strong><span>·</span><a href="/prime-keeper-animation-drafts">Open current review drafts →</a></nav>
       <div className={styles.heroGrid}>
         <div><p className={styles.eyebrow}>Approved motion · one living index</p><h1>The Prime Keeper<br />in motion.</h1><p className={styles.lede}>Every playable animation with an explicit approval record or approved core-motion authority, gathered in one place. Inspect them together, one frame at a time, then assemble your own sequence below.</p></div>
         <div className={styles.statusCard}><span className={styles.beacon} /><strong>{catalogue.summary.approvedPlayableClips}</strong><p>approved playable clips</p><dl><div><dt>Unique source images</dt><dd>{catalogue.summary.uniqueFrameImages}</dd></div><div><dt>Installed source clips</dt><dd>{catalogue.summary.runtimePromotions}</dd></div><div><dt>Last reconciled</dt><dd>{catalogue.generatedOn}</dd></div></dl></div>
@@ -293,7 +293,7 @@ export default function PrimeKeeperAnimationLibrary({ catalogue, gaps }: { catal
         <article><strong>Four-way seating</strong><p>Side-right, side-left, front and back sit/stand actions are approved with exact standing and seated endpoints.</p></article>
         <article><strong>Contextual proof</strong><p>Darts and rear-work sequences prove approved motion can survive complete room routes and activity choreography.</p></article>
       </div>
-      <p className={styles.boundary}><strong>What “in runtime” means:</strong> 27 reusable sprites from 13 approved source clips are now installed. Idle, walk start/cycle/stop, stairs and generic rear work are active in the game; turns, ladder, sitting and darts are installed but still need their matching gameplay choreography. The held-implement POC remains excluded because its proxy body art is explicitly non-production.</p>
+      <p className={styles.boundary}><strong>What “in runtime” means:</strong> 27 reusable sprites from 13 approved source clips are installed. Idle, walk start/cycle/stop, stairs and generic rear work are active; approved turns now bridge rear work and seating, side-facing leisure uses sit/hold/stand, and the diary uses turn/sit/hold/stand/turn. Ladder, front/left seating and darts remain installed but await matching gameplay consumers. The held-implement POC remains excluded because its proxy body art is explicitly non-production.</p>
     </section>
 
     <section className={styles.gapsSection}>

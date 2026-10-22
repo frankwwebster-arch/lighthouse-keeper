@@ -1,0 +1,794 @@
+{
+  "schema": "lighthouse-keeper/prime-animation-draft-batch@1",
+  "version": 1,
+  "generatedOn": "2026-10-22",
+  "status": "review-only-unapproved",
+  "note": "Canonical Prime and prior approved animation sources are immutable. Rejecting any candidate requires deleting only its named versioned draft directory; every frame can be regenerated independently through its stable redraft slot.",
+  "dimensions": {
+    "logicalCell": [
+      32,
+      40
+    ],
+    "authoringCell": [
+      256,
+      320
+    ],
+    "scale": 8,
+    "anchor": [
+      128,
+      320
+    ],
+    "capTop": 18,
+    "floorOpaqueY": 316
+  },
+  "colourLock": {
+    "jumperBlue": [
+      0,
+      108,
+      230
+    ],
+    "jumperCream": [
+      251,
+      232,
+      206
+    ],
+    "trousers": [
+      63,
+      75,
+      112
+    ],
+    "boots": [
+      63,
+      74,
+      111
+    ]
+  },
+  "canonicalAuthorities": {
+    "front": {
+      "path": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e"
+    },
+    "back": {
+      "path": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+      "sha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86"
+    },
+    "sideRight": {
+      "path": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+    }
+  },
+  "quarantinedSources": [
+    {
+      "id": "fridge-snack-v1",
+      "title": "Take and eat a fridge snack",
+      "path": "art/drafts/keeper-prime-fridge-snack-2026-10-22-v1/source/generated-sheet.png",
+      "sha256": "5eff6cdc6af9db4f61dde41c4a32c1e65c1735632c5bd4b57f0a9e7ad933d304",
+      "reason": "Adjacent source poses share opaque pixels; no frame crop or review export is permitted."
+    },
+    {
+      "id": "bed-day-nap-v1",
+      "title": "Get onto bed for a daytime nap",
+      "path": "art/drafts/keeper-prime-bed-nap-2026-10-22-v1/source/generated-sheet.png",
+      "sha256": "31b4f11616ea493592098098b63c75448c33c0ac1fe305e5054d436a9f77a08a",
+      "reason": "The seated-to-lying source poses overlap; rerender individual poses before review."
+    },
+    {
+      "id": "sweep-broom-v1",
+      "title": "Sweep with broom",
+      "path": "art/drafts/keeper-prime-sweep-2026-10-22-v1/source/generated-sheet.png",
+      "sha256": "6bdbe8ea311f27c48c6d67935f2f5a35db0c7d460101ec49b387ab05027aee1d",
+      "reason": "Broom/body ownership crosses source frame gaps; source is quarantined."
+    },
+    {
+      "id": "wave-front-v0",
+      "title": "Friendly wave first render",
+      "path": "art/drafts/keeper-prime-wave-2026-10-22-v1/source/generated-sheet.png",
+      "sha256": "6fbdc77b40fa395b9dd6d53063631c83cbbdb93f00d9c04f3ce1bf29f4be03c1",
+      "reason": "Two arm poses touched; superseded by isolated six-frame V1 candidate."
+    }
+  ],
+  "sequences": [
+    {
+      "id": "lift-enter-exit-v1",
+      "title": "Lift entry, ride handoff and exit",
+      "status": "unapproved-versioned-draft",
+      "source": {
+        "path": "art/drafts/keeper-prime-lift-enter-2026-10-22-v1/source/generated-sheet.png",
+        "sha256": "6c75c22e94e25a1d58b59cc62c61b0fb57a73e86b494533b09aa54827a336e9a"
+      },
+      "draftStrip": {
+        "path": "art/drafts/keeper-prime-lift-enter-2026-10-22-v1/lift-enter-exit-v1-d8b60b4a43608f71.png",
+        "sha256": "d8b60b4a43608f71efd89ca02c9bec8552905c2836a8c97ef576c73cd109163c"
+      },
+      "fps": 8,
+      "startPose": "walking-back",
+      "endPose": "standing-front",
+      "frames": [
+        {
+          "id": "lift-enter-exit-v1-f01",
+          "label": "rear approach",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/lift-enter-exit-v1-frame-01-93b52ca1f0acdc19.png",
+          "sha256": "93b52ca1f0acdc193f51083defd301b7bb28a01cc27d037f6065b4d7382a0017",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "lift-enter-exit-v1/frame-01",
+          "authorityOverride": null
+        },
+        {
+          "id": "lift-enter-exit-v1-f02",
+          "label": "rear three-quarter step",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/lift-enter-exit-v1-frame-02-5530575061060420.png",
+          "sha256": "55305750610604207ffd8d293d41f3418a7296c61d7a613d3ba9c728f52f8fd7",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "lift-enter-exit-v1/frame-02",
+          "authorityOverride": null
+        },
+        {
+          "id": "lift-enter-exit-v1-f03",
+          "label": "threshold contact",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/lift-enter-exit-v1-frame-03-72735c61a746456d.png",
+          "sha256": "72735c61a746456d96b8c45c15d7279b6401462877fe3e3e3bdaf9501dea5ca0",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "lift-enter-exit-v1/frame-03",
+          "authorityOverride": null
+        },
+        {
+          "id": "lift-enter-exit-v1-f04",
+          "label": "cross threshold",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/lift-enter-exit-v1-frame-04-5096eef239926236.png",
+          "sha256": "5096eef239926236272ba3b1ae521bb83e4375f66dcbcdb84417a9ec1810a77a",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "lift-enter-exit-v1/frame-04",
+          "authorityOverride": null
+        },
+        {
+          "id": "lift-enter-exit-v1-f05",
+          "label": "ride-neutral handoff",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/lift-enter-exit-v1-frame-05-d3e7c44b241030c0.png",
+          "sha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "lift-enter-exit-v1/frame-05",
+          "authorityOverride": "back"
+        },
+        {
+          "id": "lift-enter-exit-v1-f06",
+          "label": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/lift-enter-exit-v1-frame-06-b9928540e08b0f17.png",
+          "sha256": "b9928540e08b0f172a2dd680e15e896190c5fa420f53bfa880c3100aa6189c07",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "lift-enter-exit-v1/frame-06",
+          "authorityOverride": null
+        },
+        {
+          "id": "lift-enter-exit-v1-f07",
+          "label": "side exit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/lift-enter-exit-v1-frame-07-b943a6c6b0077ed4.png",
+          "sha256": "b943a6c6b0077ed4500f0b27db0de3392411230091141e8b6cd3d6dab1d324ca",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "lift-enter-exit-v1/frame-07",
+          "authorityOverride": null
+        },
+        {
+          "id": "lift-enter-exit-v1-f08",
+          "label": "front exit endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/lift-enter-exit-v1-frame-08-a61f822bead5dcab.png",
+          "sha256": "a61f822bead5dcabda07feea87e17754e85bdd85682bb4b479fcfee9ed54766c",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "lift-enter-exit-v1/frame-08",
+          "authorityOverride": "front"
+        }
+      ]
+    },
+    {
+      "id": "front-door-open-v1",
+      "title": "Front-door approach, open and pass through",
+      "status": "unapproved-versioned-draft",
+      "source": {
+        "path": "art/drafts/keeper-prime-front-door-2026-10-22-v1/source/generated-sheet.png",
+        "sha256": "d4447fa80e2cbd55be564e6d91e25c44e6d75741f98ebdf86840bd203e282680"
+      },
+      "draftStrip": {
+        "path": "art/drafts/keeper-prime-front-door-2026-10-22-v1/front-door-open-v1-4ac6a122d73ad3e8.png",
+        "sha256": "4ac6a122d73ad3e842b7384165eedb1d3a34a7d60d6e8a0c44ee3c028ed7af47"
+      },
+      "fps": 8,
+      "startPose": "standing-side-right",
+      "endPose": "walking-side-right",
+      "frames": [
+        {
+          "id": "front-door-open-v1-f01",
+          "label": "standing endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/front-door-open-v1-frame-01-fed54ffc26cb6392.png",
+          "sha256": "fed54ffc26cb63921093ebcaa0e4eb9832352718bbe1110ab9c101872fad5fde",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-door-open-v1/frame-01",
+          "authorityOverride": "sideRight"
+        },
+        {
+          "id": "front-door-open-v1-f02",
+          "label": "reach",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/front-door-open-v1-frame-02-2b61df90e5d790f8.png",
+          "sha256": "2b61df90e5d790f807d41a28545c79bbad703607356659b6daba93fe4cd808e3",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-door-open-v1/frame-02",
+          "authorityOverride": null
+        },
+        {
+          "id": "front-door-open-v1-f03",
+          "label": "handle contact",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/front-door-open-v1-frame-03-bdd99d3ea9fb93f8.png",
+          "sha256": "bdd99d3ea9fb93f8f17ce52f1f0b7bc2c58b41e28da8758c2faa0cd44e317c74",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-door-open-v1/frame-03",
+          "authorityOverride": null
+        },
+        {
+          "id": "front-door-open-v1-f04",
+          "label": "draw door",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/front-door-open-v1-frame-04-7fa8ae953391a50c.png",
+          "sha256": "7fa8ae953391a50c68a24ebe738285116af78bad39e221e18bf65c0c73779ef3",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-door-open-v1/frame-04",
+          "authorityOverride": null
+        },
+        {
+          "id": "front-door-open-v1-f05",
+          "label": "leading step",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/front-door-open-v1-frame-05-335c9f5cb66efe5a.png",
+          "sha256": "335c9f5cb66efe5aaccfe4076d47a95e1bbff4237f936390dbcb67a81ff3da05",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-door-open-v1/frame-05",
+          "authorityOverride": null
+        },
+        {
+          "id": "front-door-open-v1-f06",
+          "label": "walk handoff",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/front-door-open-v1-frame-06-04857d6f91011559.png",
+          "sha256": "04857d6f91011559272d4a0db933f1465a600c221cc307c38899bd491a55c17c",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-door-open-v1/frame-06",
+          "authorityOverride": null
+        }
+      ]
+    },
+    {
+      "id": "cook-counter-v1",
+      "title": "Cook at counter",
+      "status": "unapproved-versioned-draft",
+      "source": {
+        "path": "art/drafts/keeper-prime-cook-2026-10-22-v1/source/generated-sheet.png",
+        "sha256": "442836aca6ce52312ef69ffe86844dfcc60e7b6bb3ac62e6b2a04342f07469fc"
+      },
+      "draftStrip": {
+        "path": "art/drafts/keeper-prime-cook-2026-10-22-v1/cook-counter-v1-b5268cf6f9ffaff7.png",
+        "sha256": "b5268cf6f9ffaff7d160a77ae6bea6727c2f2e1aa2c47d4d75766aad722b358f"
+      },
+      "fps": 8,
+      "startPose": "standing-back",
+      "endPose": "standing-back",
+      "frames": [
+        {
+          "id": "cook-counter-v1-f01",
+          "label": "rear endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/cook-counter-v1-frame-01-d3e7c44b241030c0.png",
+          "sha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/frame-01",
+          "authorityOverride": "back"
+        },
+        {
+          "id": "cook-counter-v1-f02",
+          "label": "lift right hand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/cook-counter-v1-frame-02-61055a4d5458c900.png",
+          "sha256": "61055a4d5458c900d1f3ea2b2178b999d4d620e5ff2a09f054e9bc4948ee0c67",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/frame-02",
+          "authorityOverride": null
+        },
+        {
+          "id": "cook-counter-v1-f03",
+          "label": "two-hand work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/cook-counter-v1-frame-03-ef05e53367d8dde6.png",
+          "sha256": "ef05e53367d8dde66b9a6b5dd7874d5e21b2845516b9db4b168195ab9188e95f",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/frame-03",
+          "authorityOverride": null
+        },
+        {
+          "id": "cook-counter-v1-f04",
+          "label": "stir inward",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/cook-counter-v1-frame-04-8e2ac49592a295f3.png",
+          "sha256": "8e2ac49592a295f37c4a8a166d350e9ea7558d0ed73cc64238ffb9670cb4a29e",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/frame-04",
+          "authorityOverride": null
+        },
+        {
+          "id": "cook-counter-v1-f05",
+          "label": "stir outward",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/cook-counter-v1-frame-05-03d2fe44ecb6c1c7.png",
+          "sha256": "03d2fe44ecb6c1c7da84eb7ad09220310ca32f8821e174fd01c8e5d9e11cf2e0",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/frame-05",
+          "authorityOverride": null
+        },
+        {
+          "id": "cook-counter-v1-f06",
+          "label": "steady pan",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/cook-counter-v1-frame-06-ebbe47a512db9063.png",
+          "sha256": "ebbe47a512db90631fc77244ca6ccc835420ff00379eac66cb7f3655b98dddc5",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/frame-06",
+          "authorityOverride": null
+        },
+        {
+          "id": "cook-counter-v1-f07",
+          "label": "release",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/cook-counter-v1-frame-07-8cb7f70cdc2b164b.png",
+          "sha256": "8cb7f70cdc2b164b35d50e40e210bbf33ebf68507979db9f9416bbc317a9f5bb",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/frame-07",
+          "authorityOverride": null
+        },
+        {
+          "id": "cook-counter-v1-f08",
+          "label": "rear endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/cook-counter-v1-frame-08-d3e7c44b241030c0.png",
+          "sha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/frame-08",
+          "authorityOverride": "back"
+        }
+      ]
+    },
+    {
+      "id": "brush-teeth-v1",
+      "title": "Brush teeth at basin",
+      "status": "unapproved-versioned-draft",
+      "source": {
+        "path": "art/drafts/keeper-prime-brush-teeth-2026-10-22-v1/source/generated-sheet.png",
+        "sha256": "d99c46174d1e1a814b4ebea75de00f8d2215437d61905ab5f064f2d02f4a23d6"
+      },
+      "draftStrip": {
+        "path": "art/drafts/keeper-prime-brush-teeth-2026-10-22-v1/brush-teeth-v1-7311f628c6cd17fa.png",
+        "sha256": "7311f628c6cd17faf26255690fb60ad038c298dd8eaa43a091fc187f40c86fce"
+      },
+      "fps": 8,
+      "startPose": "standing-back",
+      "endPose": "standing-back",
+      "frames": [
+        {
+          "id": "brush-teeth-v1-f01",
+          "label": "rear endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/brush-teeth-v1-frame-01-d3e7c44b241030c0.png",
+          "sha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/frame-01",
+          "authorityOverride": "back"
+        },
+        {
+          "id": "brush-teeth-v1-f02",
+          "label": "raise toothbrush",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/brush-teeth-v1-frame-02-b46d44b661a05048.png",
+          "sha256": "b46d44b661a050489cbe56a1369665e4cd9afea9edfe098f4e380e4c234713e3",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/frame-02",
+          "authorityOverride": null
+        },
+        {
+          "id": "brush-teeth-v1-f03",
+          "label": "mouth contact",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/brush-teeth-v1-frame-03-d7e5a3cf4b4bb6e5.png",
+          "sha256": "d7e5a3cf4b4bb6e56efaa62b5ffc44f3e7cf6a95ca7b43ebbc0caf9a8dc5d837",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/frame-03",
+          "authorityOverride": null
+        },
+        {
+          "id": "brush-teeth-v1-f04",
+          "label": "brush inward",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/brush-teeth-v1-frame-04-6e54735564c51ad4.png",
+          "sha256": "6e54735564c51ad4b7b7b0e7dcaa34059e5300eac6e9931946f5ccf28d721c48",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/frame-04",
+          "authorityOverride": null
+        },
+        {
+          "id": "brush-teeth-v1-f05",
+          "label": "brush outward",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/brush-teeth-v1-frame-05-8ae2a8f98ba88174.png",
+          "sha256": "8ae2a8f98ba881749372c8c077e92c045c8bf2958ec28a7f7801135a6efce63e",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/frame-05",
+          "authorityOverride": null
+        },
+        {
+          "id": "brush-teeth-v1-f06",
+          "label": "repeat stroke",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/brush-teeth-v1-frame-06-2efd21d6ab050e30.png",
+          "sha256": "2efd21d6ab050e303dad0499e9f499a7ee99be6b337619208a5e35d1e98415d1",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/frame-06",
+          "authorityOverride": null
+        },
+        {
+          "id": "brush-teeth-v1-f07",
+          "label": "lower toothbrush",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/brush-teeth-v1-frame-07-bd6ee94860f8d100.png",
+          "sha256": "bd6ee94860f8d100853409b67d63b34a6012d4f7d1f42631d46da2139b8fe033",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/frame-07",
+          "authorityOverride": null
+        },
+        {
+          "id": "brush-teeth-v1-f08",
+          "label": "rear endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/brush-teeth-v1-frame-08-d3e7c44b241030c0.png",
+          "sha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/frame-08",
+          "authorityOverride": "back"
+        }
+      ]
+    },
+    {
+      "id": "wave-front-v1",
+      "title": "Friendly wave to camera",
+      "status": "unapproved-versioned-draft",
+      "source": {
+        "path": "art/drafts/keeper-prime-wave-2026-10-22-v2/source/generated-sheet.png",
+        "sha256": "f467a52896ba1e3b2ff38abaaa445801cbacfb861ad7f8f924d8149dc9e5f69a"
+      },
+      "draftStrip": {
+        "path": "art/drafts/keeper-prime-wave-2026-10-22-v2/wave-front-v1-e1e2d53283ace20f.png",
+        "sha256": "e1e2d53283ace20f6fad5baee25e2306d5741054464d7e0b4ba5a57992345ee2"
+      },
+      "fps": 8,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "frames": [
+        {
+          "id": "wave-front-v1-f01",
+          "label": "front endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/wave-front-v1-frame-01-a61f822bead5dcab.png",
+          "sha256": "a61f822bead5dcabda07feea87e17754e85bdd85682bb4b479fcfee9ed54766c",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "wave-front-v1/frame-01",
+          "authorityOverride": "front"
+        },
+        {
+          "id": "wave-front-v1-f02",
+          "label": "raise arm",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/wave-front-v1-frame-02-4155f30b4c612eab.png",
+          "sha256": "4155f30b4c612eab1b109e730e9496a3c6b984d020c3139a5b0d77ee288fe30f",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "wave-front-v1/frame-02",
+          "authorityOverride": null
+        },
+        {
+          "id": "wave-front-v1-f03",
+          "label": "present palm",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/wave-front-v1-frame-03-79ba6f2c4853ffb7.png",
+          "sha256": "79ba6f2c4853ffb7835cb967f6eafdced6d0e4ce9fcdfd3f47428ee0f5a82ca2",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "wave-front-v1/frame-03",
+          "authorityOverride": null
+        },
+        {
+          "id": "wave-front-v1-f04",
+          "label": "wave inward",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/wave-front-v1-frame-04-650c252696fc6a0b.png",
+          "sha256": "650c252696fc6a0bb9bf9fb299a7ff41e4c6064fce87ce14dd7548851921f668",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "wave-front-v1/frame-04",
+          "authorityOverride": null
+        },
+        {
+          "id": "wave-front-v1-f05",
+          "label": "lower arm",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/wave-front-v1-frame-05-b2be40f3dd06045e.png",
+          "sha256": "b2be40f3dd06045ec04296ce6cb35c5a76bdf2f3beaa23a7e05f4b0497bada0b",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "wave-front-v1/frame-05",
+          "authorityOverride": null
+        },
+        {
+          "id": "wave-front-v1-f06",
+          "label": "front endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v1/assets/wave-front-v1-frame-06-a61f822bead5dcab.png",
+          "sha256": "a61f822bead5dcabda07feea87e17754e85bdd85682bb4b479fcfee9ed54766c",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "wave-front-v1/frame-06",
+          "authorityOverride": "front"
+        }
+      ]
+    }
+  ]
+}

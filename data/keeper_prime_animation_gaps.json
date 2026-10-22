@@ -10,17 +10,36 @@
       "walk start",
       "walk cycle",
       "walk stop",
+      "front ↔ side action turn",
+      "side ↔ back action turn",
       "stair ascent",
       "stair descent",
-      "generic rear work"
+      "generic rear work",
+      "side-facing sit → hold → stand for TV, nature TV, armchair nap, reading and piano",
+      "rear-facing turn → sit → hold → stand → turn for diary"
     ],
     "installedAwaitingGameplayChoreography": [
-      "front ↔ side turn",
-      "side ↔ back turn",
       "ladder climb",
-      "four-direction sit and stand",
-      "four seated neutrals",
+      "front- and left-facing seat routes without current matching interactions",
       "darts throw"
+    ]
+  },
+  "reviewDrafts": {
+    "reviewUrl": "/prime-keeper-animation-drafts",
+    "status": "unapproved-versioned-drafts",
+    "sequences": [
+      "lift entry, ride-neutral handoff and exit",
+      "front-door approach, open and pass-through",
+      "cook at counter",
+      "brush teeth at basin",
+      "friendly front wave"
+    ],
+    "isolatedFrames": 36,
+    "quarantinedForSourceOverlap": [
+      "fridge snack and eat",
+      "bed daytime nap",
+      "sweep with broom",
+      "first wave render (superseded by isolated V1)"
     ]
   },
   "priorities": [
@@ -30,8 +49,9 @@
       "kind": "runtime-choreography",
       "why": "No new drawing is required. These approved sprites need state-machine routes, object anchors and endpoint tests before the game can use them.",
       "required": [
-        "turn controller using the installed front/side/back transitions",
-        "sit → activity → stand controller for all four seat directions",
+        "complete: turn controller now binds installed front/side/back transitions to rear work and seating",
+        "complete: side-facing leisure and back-facing diary now use sit → activity → stand choreography",
+        "remaining: bind front- and left-facing seats when a matching interaction is introduced",
         "ladder routing when a ladder layout is active",
         "darts activity route and board/dart ownership"
       ],
@@ -43,9 +63,10 @@
       "kind": "new-prime-art-and-runtime",
       "why": "These are visible seams in ordinary movement and should be settled before expanding the activity catalogue.",
       "required": [
-        "lift enter, ride-neutral and exit",
-        "front-door approach, open/hidden handoff, enter and leave",
-        "visitor greeting at the door"
+        "review draft ready: lift enter, ride-neutral handoff and exit",
+        "review draft ready: front-door approach, open and pass-through",
+        "remaining after approval: prop registration and runtime wiring",
+        "deferred for this batch: visitor greeting at the door"
       ],
       "interactionIds": ["door_greet"]
     },
@@ -56,7 +77,7 @@
       "why": "Eating is a core need and the generic rear-work loop is only a temporary body fallback, not complete prop choreography.",
       "required": [
         "open fridge, take snack and eat",
-        "cook at cooker with owned utensils/food",
+        "review draft ready: cook at cooker body motion; owned utensils/food remain separate",
         "make toast and collect it",
         "carry/serve/eat endpoints that return to a known standing or seated pose"
       ],
@@ -72,7 +93,7 @@
         "armchair snooze",
         "read a book",
         "play piano",
-        "get into bed, sleep/nap loop and get out"
+        "get into bed, sleep/nap loop and get out (first generated source quarantined for pose overlap)"
       ],
       "interactionIds": ["tv_watch", "tv_nature", "tv_nap", "read_book", "play_piano", "bed_sleep", "bed_nap"]
     },
@@ -83,7 +104,7 @@
       "why": "These are ungated daily needs and need complete, discreet object-specific routes rather than one generic rear-work loop.",
       "required": [
         "wash at basin",
-        "brush teeth",
+        "review draft ready: brush teeth",
         "enter/exit private loo state",
         "loo seated/hidden performance for both current commands"
       ],
@@ -149,7 +170,7 @@
       "kind": "new-prime-reactions",
       "why": "Forty-four typed reactions currently collapse onto eleven generic legacy motion families.",
       "required": [
-        "wave",
+        "review draft ready: wave",
         "bow",
         "dance",
         "sway",

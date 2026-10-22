@@ -1,0 +1,77 @@
+{
+  "schema": "lighthouse-keeper/prime-identity-contract@1",
+  "version": 1,
+  "recordedOn": "2026-10-22",
+  "status": "binding-authoring-gate",
+  "approval": "Frank: Approved. Make sure this is NEVER forgotten.",
+  "coordinateSystem": {
+    "logicalCell": [32, 40],
+    "authoringDensity": 8,
+    "authoringCell": [256, 320],
+    "runtimeDensity": 4,
+    "runtimeCell": [128, 160],
+    "authoringAnchor": [128, 320],
+    "logicalAnchor": [16, 40],
+    "capTopY": 18,
+    "opaqueFloorY": 316,
+    "minimumTransparentSharedEdgeGutterPx": 1
+  },
+  "identity": {
+    "proportions": "Natural adult lighthouse keeper; preserve the approved Prime mass, limb lengths, pivots and stance. Never substitute legacy, chibi or proxy anatomy.",
+    "eyes": "Solid dark rectangular eyes without whites or glints.",
+    "moustache": "Cream moustache visibly separate from the mouth.",
+    "mouth": "Short, straight, closed and readable; no generic grin.",
+    "beard": "Broad cream Prime beard mass with the approved facing-specific silhouette.",
+    "uniform": "Blue cap with navy band and gold badge; blue jumper with one continuous broad cream chest-and-sleeve band; navy trousers; blue-navy boots.",
+    "rendering": "Smooth antialiased Prime master rendering. Geometry and palette checks do not excuse a rough, pixelated or lower-density master."
+  },
+  "authorities": {
+    "front": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "opaqueBoundsExclusive": [52, 18, 204, 316],
+      "role": "Permanent identity, face, proportions, rendering and single-band standard-uniform authority"
+    },
+    "backView": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+      "sha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86",
+      "opaqueBoundsExclusive": [52, 18, 204, 316],
+      "role": "Approved smooth rear view and rear-facing boot design authority"
+    },
+    "backRuntimeEndpoint": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f09.png",
+      "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "role": "Latest approved same-facing standard-uniform rear animation endpoint and colour authority"
+    },
+    "sideRight": {
+      "file": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "opaqueBoundsExclusive": [77, 18, 179, 316],
+      "role": "Approved 15-of-15 registered 90-degree side-right identity authority"
+    }
+  },
+  "standardUniformColourReferences": {
+    "source": "Exact approved same-family turn authority; medians are measurement references, not replacement flat swatches.",
+    "capCrownBlue": [0, 109, 231],
+    "capBandNavy": [59, 67, 99],
+    "jumperBlue": [0, 108, 230],
+    "jumperCream": [251, 232, 206],
+    "trouserNavy": [63, 75, 112],
+    "bootNavy": [63, 74, 111]
+  },
+  "authoringRules": {
+    "standardUniform": "Match the exact approved facing authority and standard-uniform colour family; jumper and boots are hard-gated in every visible frame.",
+    "costumes": "A costume may replace covered garment materials only. Prime anatomy, visible face, beard, hands, proportions, registration and facing identity remain binding.",
+    "ligneClaireCostumes": [
+      "one even line weight",
+      "lines only at real edges; no hatching or texture strokes",
+      "closed areas with one flat colour; no gradients, shine or glow; at most one rare flat shadow tone",
+      "the material's own colour under even daylight",
+      "accurate construction simplified by omission, never cuteness",
+      "clear at 64 px",
+      "black only where the depicted material is black",
+      "all marks use the same line language"
+    ],
+    "reversibility": "Every new animation is a versioned draft. Every frame has a stable id and source hash so one frame can be replaced without rewriting its neighbours or any authority."
+  }
+}

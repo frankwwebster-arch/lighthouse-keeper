@@ -59,10 +59,17 @@ its reusable walk, turn and stair constituents are installed rather than
 duplicating the composite as one oversized runtime strip.
 
 The game actively consumes Prime idle, walk start/cycle/stop, stair
-ascent/descent and generic rear work. Turns, ladder, sit/stand, seated neutrals
-and darts are installed but await their gameplay choreography. The library
+ascent/descent and generic rear work. Approved turns now bridge rear work and
+seating; TV/nature TV/armchair nap/reading/piano use side sit → hold → stand;
+diary uses turn → back sit → hold → stand → turn. Ladder, darts and front/left
+seating remain installed but await matching gameplay consumers. The library
 labels that distinction and renders approved source and installed delivery
 side-by-side. This promotion does not expand any original art approval.
+
+The separate `/prime-keeper-animation-drafts` page contains the next five
+unapproved, versioned review sequences. It is deliberately not part of this
+approved library or runtime bank. See
+`docs/PRIME_KEEPER_MORNING_ANIMATION_DRAFTS_V1_2026-10-22.md`.
 
 The held-implement POC remains excluded. Its motion feasibility and
 `hold_shaft_two_hand` concept are approved, but the proxy body art is not.
@@ -90,7 +97,9 @@ Verify the generated catalogue with:
 
 ```sh
 npm run verify:prime-keeper-animation-library
+npm run verify:keeper-prime-identity
 npm run verify:keeper-prime-runtime
+npm run verify:keeper-prime-drafts
 npm run typecheck
 npm run build
 ```

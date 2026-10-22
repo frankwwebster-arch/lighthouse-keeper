@@ -23,28 +23,34 @@
     "walkStop": "keeper_prime_walk_side_stop",
     "stairsUp": "keeper_prime_stairs_up",
     "stairsDown": "keeper_prime_stairs_down",
-    "rearWork": "keeper_prime_rear_work"
+    "rearWork": "keeper_prime_rear_work",
+    "actionTurns": [
+      "keeper_prime_turn_front_to_side-right",
+      "keeper_prime_turn_side-right_to_front",
+      "keeper_prime_turn_side-right_to_back",
+      "keeper_prime_turn_back_to_side-right"
+    ],
+    "seatedLeisure": [
+      "keeper_prime_sit_side-right",
+      "keeper_prime_neutral_sitting-side-right",
+      "keeper_prime_stand_side-right"
+    ],
+    "diarySeatBack": [
+      "keeper_prime_sit_back",
+      "keeper_prime_neutral_sitting-back",
+      "keeper_prime_stand_back"
+    ]
   },
   "installedButAwaitingAConsumer": [
     "keeper_prime_neutral_standing-front",
     "keeper_prime_neutral_standing-back",
-    "keeper_prime_turn_front_to_side-right",
-    "keeper_prime_turn_side-right_to_front",
-    "keeper_prime_turn_side-right_to_back",
-    "keeper_prime_turn_back_to_side-right",
     "keeper_prime_ladder_climb",
-    "keeper_prime_sit_side-right",
-    "keeper_prime_stand_side-right",
     "keeper_prime_sit_side-left",
     "keeper_prime_stand_side-left",
     "keeper_prime_sit_front",
     "keeper_prime_stand_front",
-    "keeper_prime_sit_back",
-    "keeper_prime_stand_back",
-    "keeper_prime_neutral_sitting-side-right",
     "keeper_prime_neutral_sitting-side-left",
     "keeper_prime_neutral_sitting-front",
-    "keeper_prime_neutral_sitting-back",
     "keeper_prime_darts_throw"
   ],
   "assets": [
