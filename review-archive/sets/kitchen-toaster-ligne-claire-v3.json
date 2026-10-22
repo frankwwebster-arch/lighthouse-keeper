@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "set": "kitchen-toaster-ligne-claire-v3",
+  "page": {
+    "path": "public/keeper-review/kitchen-toaster-ligne-claire-v3/index.html",
+    "sha256": "b11554ab3f512a0c7665727c26e5fe69f7c72b37c956b380a30276f1b0df21bc",
+    "bytes": 981
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-toaster-ligne-claire-v3/assets/candidate--toaster-broken.png": {
+      "sha256": "6fb52faae81208aa5bdbda52c5a5b9c6ad9fc3c11790f60c3c7535b96e92a6bd",
+      "extension": ".png",
+      "bytes": 790,
+      "object": "review-archive/objects/6f/6fb52faae81208aa5bdbda52c5a5b9c6ad9fc3c11790f60c3c7535b96e92a6bd.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6f/6fb52faae81208aa5bdbda52c5a5b9c6ad9fc3c11790f60c3c7535b96e92a6bd.png"
+    },
+    "/keeper-review/kitchen-toaster-ligne-claire-v3/assets/candidate--toaster-on.png": {
+      "sha256": "7cb17d4edeca0b64620484f23790cda3c3d4185f54897d497c38b7428af14d5b",
+      "extension": ".png",
+      "bytes": 738,
+      "object": "review-archive/objects/7c/7cb17d4edeca0b64620484f23790cda3c3d4185f54897d497c38b7428af14d5b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7c/7cb17d4edeca0b64620484f23790cda3c3d4185f54897d497c38b7428af14d5b.png"
+    },
+    "/keeper-review/kitchen-toaster-ligne-claire-v3/assets/candidate--toaster-standard.png": {
+      "sha256": "6c5f6e097be116881568becfef9a67c00b419c1c54e7168b0648665ec1263669",
+      "extension": ".png",
+      "bytes": 730,
+      "object": "review-archive/objects/6c/6c5f6e097be116881568becfef9a67c00b419c1c54e7168b0648665ec1263669.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6c/6c5f6e097be116881568becfef9a67c00b419c1c54e7168b0648665ec1263669.png"
+    },
+    "/keeper-review/kitchen-toaster-ligne-claire-v3/assets/current--toaster-broken.png": {
+      "sha256": "f61492bbf86904da82e0899ee476bc4b92706885c1b68f4302e36d3b61a7472c",
+      "extension": ".png",
+      "bytes": 2343,
+      "object": "review-archive/objects/f6/f61492bbf86904da82e0899ee476bc4b92706885c1b68f4302e36d3b61a7472c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f6/f61492bbf86904da82e0899ee476bc4b92706885c1b68f4302e36d3b61a7472c.png"
+    },
+    "/keeper-review/kitchen-toaster-ligne-claire-v3/assets/current--toaster-on.png": {
+      "sha256": "02f2736d6fe6bd883bc73c945d9015140e1873697cc73640aa7a2d2bb64d7c63",
+      "extension": ".png",
+      "bytes": 2291,
+      "object": "review-archive/objects/02/02f2736d6fe6bd883bc73c945d9015140e1873697cc73640aa7a2d2bb64d7c63.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/02/02f2736d6fe6bd883bc73c945d9015140e1873697cc73640aa7a2d2bb64d7c63.png"
+    },
+    "/keeper-review/kitchen-toaster-ligne-claire-v3/assets/current--toaster-standard.png": {
+      "sha256": "0771bdfd047be4582001ca6181b2ab888b4a248e1609fb06a9f5b81e8dd547fb",
+      "extension": ".png",
+      "bytes": 2302,
+      "object": "review-archive/objects/07/0771bdfd047be4582001ca6181b2ab888b4a248e1609fb06a9f5b81e8dd547fb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/07/0771bdfd047be4582001ca6181b2ab888b4a248e1609fb06a9f5b81e8dd547fb.png"
+    },
+    "/keeper-review/kitchen-toaster-ligne-claire-v3/assets/fx-toaster-restrained_heat-f40.png": {
+      "sha256": "fc8d959e9a23d41a66739361589b5bae34a2ac8938e7da4cda06b8a81566f5e0",
+      "extension": ".png",
+      "bytes": 1369,
+      "object": "review-archive/objects/fc/fc8d959e9a23d41a66739361589b5bae34a2ac8938e7da4cda06b8a81566f5e0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fc/fc8d959e9a23d41a66739361589b5bae34a2ac8938e7da4cda06b8a81566f5e0.png"
+    },
+    "/keeper-review/kitchen-toaster-ligne-claire-v3/assets/toaster-current-candidate-ghost-64px.png": {
+      "sha256": "3d7cd0bd9b290d77012d2eeebe556b602481cf4313c4a38c4ae403882b932b9f",
+      "extension": ".png",
+      "bytes": 46487,
+      "object": "review-archive/objects/3d/3d7cd0bd9b290d77012d2eeebe556b602481cf4313c4a38c4ae403882b932b9f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3d/3d7cd0bd9b290d77012d2eeebe556b602481cf4313c4a38c4ae403882b932b9f.png"
+    }
+  }
+}

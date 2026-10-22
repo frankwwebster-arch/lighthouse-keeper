@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "set": "kitchen-bin-ligne-claire-v2",
+  "page": {
+    "path": "public/keeper-review/kitchen-bin-ligne-claire-v2/index.html",
+    "sha256": "0e1a6aee3391dee8b536e230e8947326ddacc66f7be69235d226a10e047a9cd6",
+    "bytes": 1901
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-bin-ligne-claire-v2/assets/bin-current-candidate-ghost-64px.png": {
+      "sha256": "15715796a9f895cf5f0c9910a3312df667bffdd21be367f2dfe32d7aed417cca",
+      "extension": ".png",
+      "bytes": 254625,
+      "object": "review-archive/objects/15/15715796a9f895cf5f0c9910a3312df667bffdd21be367f2dfe32d7aed417cca.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/15/15715796a9f895cf5f0c9910a3312df667bffdd21be367f2dfe32d7aed417cca.png"
+    },
+    "/keeper-review/kitchen-bin-ligne-claire-v2/assets/candidate--bin-broken-overflowing.png": {
+      "sha256": "b299782e1f4de791d8738ec0a20a88f66d8f3a3b0a7c285a2c78f42a389280b6",
+      "extension": ".png",
+      "bytes": 6309,
+      "object": "review-archive/objects/b2/b299782e1f4de791d8738ec0a20a88f66d8f3a3b0a7c285a2c78f42a389280b6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b2/b299782e1f4de791d8738ec0a20a88f66d8f3a3b0a7c285a2c78f42a389280b6.png"
+    },
+    "/keeper-review/kitchen-bin-ligne-claire-v2/assets/candidate--bin-standard.png": {
+      "sha256": "e23d7da33bc845e6d5923da22a00af72df43cdd950993355489118db306d3172",
+      "extension": ".png",
+      "bytes": 1987,
+      "object": "review-archive/objects/e2/e23d7da33bc845e6d5923da22a00af72df43cdd950993355489118db306d3172.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e2/e23d7da33bc845e6d5923da22a00af72df43cdd950993355489118db306d3172.png"
+    },
+    "/keeper-review/kitchen-bin-ligne-claire-v2/assets/current--bin-broken-overflowing.png": {
+      "sha256": "77ad87fabfd3e5c10a4a14f294af343a5d93a2a2015e6d77f18a4140b1f5fb4f",
+      "extension": ".png",
+      "bytes": 3472,
+      "object": "review-archive/objects/77/77ad87fabfd3e5c10a4a14f294af343a5d93a2a2015e6d77f18a4140b1f5fb4f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/77/77ad87fabfd3e5c10a4a14f294af343a5d93a2a2015e6d77f18a4140b1f5fb4f.png"
+    },
+    "/keeper-review/kitchen-bin-ligne-claire-v2/assets/current--bin-standard.png": {
+      "sha256": "86b05224a7da5fc5c05918f2875018920ed54cf46fc00cb08952ffd29789f9c0",
+      "extension": ".png",
+      "bytes": 1977,
+      "object": "review-archive/objects/86/86b05224a7da5fc5c05918f2875018920ed54cf46fc00cb08952ffd29789f9c0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/86/86b05224a7da5fc5c05918f2875018920ed54cf46fc00cb08952ffd29789f9c0.png"
+    },
+    "/keeper-review/kitchen-bin-ligne-claire-v2/assets/fx-slow-flies-f40.png": {
+      "sha256": "ffcddd73880c75b252764b59b4311c556eb49c58949701250e5c422a036cc34c",
+      "extension": ".png",
+      "bytes": 1827,
+      "object": "review-archive/objects/ff/ffcddd73880c75b252764b59b4311c556eb49c58949701250e5c422a036cc34c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ff/ffcddd73880c75b252764b59b4311c556eb49c58949701250e5c422a036cc34c.png"
+    },
+    "/keeper-review/kitchen-bin-ligne-claire-v2/assets/fx-stench-miasma-f40.png": {
+      "sha256": "4b8e257ea91812b21addad303950cef15e253b5aaf3756943dd499ebc38401fc",
+      "extension": ".png",
+      "bytes": 12497,
+      "object": "review-archive/objects/4b/4b8e257ea91812b21addad303950cef15e253b5aaf3756943dd499ebc38401fc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4b/4b8e257ea91812b21addad303950cef15e253b5aaf3756943dd499ebc38401fc.png"
+    }
+  }
+}

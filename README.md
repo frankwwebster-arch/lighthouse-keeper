@@ -703,8 +703,9 @@ discarded to fit the counter. Off and On are byte-identical; steam, Broken
 sparks and debris remain separate kettle-owned effects. Broken uses a strong
 bottom-contact-pinned rattle and locks itself and its support. Fridge, both
 cabinets and dishwasher remain accepted dynamic surfaces, each deriving the
-Keeper's tea-making stop from its bay midpoint. Toaster and bowl work has not
-begun. See
+Keeper's tea-making stop from its bay midpoint. The later closed V44
+ligne-claire review includes toaster and bowl candidates without changing this
+V45 runtime contract. See
 [`docs/KITCHEN_DISHWASHER_WORKBENCH_V39_2026-10-20.md`](docs/KITCHEN_DISHWASHER_WORKBENCH_V39_2026-10-20.md).
 See also
 [`docs/KITCHEN_DISHWASHER_WORKBENCH_V40_2026-10-20.md`](docs/KITCHEN_DISHWASHER_WORKBENCH_V40_2026-10-20.md).
@@ -852,6 +853,22 @@ repair/healing contract remain fixed. V14 is retained as rejected internal
 proof because its foreshortened glass read as a displaced handle. V15 is
 immutable, reversible, unregistered and blocked on explicit approval. See
 [`docs/KITCHEN_OVEN_BROKEN_AJAR_LIGNE_CLAIRE_V15_2026-10-22.md`](docs/KITCHEN_OVEN_BROKEN_AJAR_LIGNE_CLAIRE_V15_2026-10-22.md).
+Kitchen Ligne-Claire Complete Review V44 is the coordinated closed review at
+`/keeper-review/kitchen-ligne-claire-complete-review-v44/index.html`. It preserves the
+approved V3 fitted family, V8 Oven On and V12 Broken body; includes the
+unapproved V13 Off and V15 ajar-door candidates; and adds exact-size
+Dishwasher V1, table/chair V3, bin V2, kettle V1, toaster V4 and mixing-bowl V1
+candidates. The dishwasher LCD and lamp are attached to the door's top control
+rail rather than floating on its front. Fifty object/state files, sixteen
+effect files and eleven complete current/candidate/alpha-ghost sheets are
+hash-pinned. The live tool carries the approved V41 movement, swap,
+Broken-lock, repair-unlock, effect ownership and countertop-healing JavaScript
+unchanged. All review URLs are root-absolute through the same-origin archive
+route, so Vercel trailing-slash canonicalisation cannot break image loading.
+Nothing is registered, promoted, selected as current or copied to production.
+V43 remains failed predecessor provenance for an effect-manifest field mismatch.
+See
+[`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V44_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V44_2026-10-22.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

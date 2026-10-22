@@ -1,0 +1,323 @@
+{
+  "schema": "lighthouse-keeper/kitchen-ligne-claire-healing-workbench@42",
+  "set": "kitchen-ligne-claire-healing-workbench-v42",
+  "created": "2026-10-22",
+  "status": "immutable-review-candidate-not-approved-not-registered",
+  "v41HtmlAuthority": "public/keeper-review/kitchen-dishwasher-workbench-v41/index.html",
+  "v41HtmlSha256": "828d6c4e669634c60ac40d4401cbb282ba9a8b48e6314ff7a721137a6f18dcea",
+  "changes": [
+    "root-absolute asset delivery",
+    "smooth browser scaling",
+    "approved/candidate Ligne-Claire asset substitution",
+    "visible oven uses approved V8 On"
+  ],
+  "unchanged": [
+    "84 px bay origins",
+    "snap and swap",
+    "broken position lock",
+    "repair unlock",
+    "healing resolver",
+    "draw order",
+    "anchors",
+    "effect ownership",
+    "effect timing",
+    "interaction state transitions"
+  ],
+  "assets": [
+    {
+      "filename": "cabinet-a-le-re.png",
+      "authorityFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-a-le-re.png",
+      "authoritySha256": "ead4922bbec6070afdc7bf2db7ae184d3abe6cd3901d3454ae7876822852608a",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/cabinet-a-le-re.png",
+      "reviewSha256": "ead4922bbec6070afdc7bf2db7ae184d3abe6cd3901d3454ae7876822852608a",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "cabinet-a-le-rj.png",
+      "authorityFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-a-le-rj.png",
+      "authoritySha256": "80cbefc9682886da4e59c4130170260e8f8d6e12999a73deb780a195ed3e62df",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/cabinet-a-le-rj.png",
+      "reviewSha256": "80cbefc9682886da4e59c4130170260e8f8d6e12999a73deb780a195ed3e62df",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "cabinet-a-lj-re.png",
+      "authorityFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-a-lj-re.png",
+      "authoritySha256": "e037cee106efcc38d568e51d0c0665b86c872bff1d30c8bbe9d6a1897cfdb125",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/cabinet-a-lj-re.png",
+      "reviewSha256": "e037cee106efcc38d568e51d0c0665b86c872bff1d30c8bbe9d6a1897cfdb125",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "cabinet-a-lj-rj.png",
+      "authorityFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-a-lj-rj.png",
+      "authoritySha256": "debdba3d49a9a631f788538cff3f5480713ffe27358c3fee6bfbf871c2428417",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/cabinet-a-lj-rj.png",
+      "reviewSha256": "debdba3d49a9a631f788538cff3f5480713ffe27358c3fee6bfbf871c2428417",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "cabinet-b-le-re.png",
+      "authorityFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-b-le-re.png",
+      "authoritySha256": "98f029f6e34385a7f3cadbbe97006a2cdcc231056996c1852e928e0c9169ea18",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/cabinet-b-le-re.png",
+      "reviewSha256": "98f029f6e34385a7f3cadbbe97006a2cdcc231056996c1852e928e0c9169ea18",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "cabinet-b-le-rj.png",
+      "authorityFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-b-le-rj.png",
+      "authoritySha256": "7ee338ce6c54be300d239b4856c0a85eb87d33a2585a50933e4ffaf8af88ac87",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/cabinet-b-le-rj.png",
+      "reviewSha256": "7ee338ce6c54be300d239b4856c0a85eb87d33a2585a50933e4ffaf8af88ac87",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "cabinet-b-lj-re.png",
+      "authorityFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-b-lj-re.png",
+      "authoritySha256": "ee626220ceaf122a4b30773dfaa07e9de3d062d3014820d35b3e82256efd2643",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/cabinet-b-lj-re.png",
+      "reviewSha256": "ee626220ceaf122a4b30773dfaa07e9de3d062d3014820d35b3e82256efd2643",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "cabinet-b-lj-rj.png",
+      "authorityFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-b-lj-rj.png",
+      "authoritySha256": "9d7bc802f1eefab2974aef460afcaf7e3f596d7e4a09f303bd8f1a4d6485d4a2",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/cabinet-b-lj-rj.png",
+      "reviewSha256": "9d7bc802f1eefab2974aef460afcaf7e3f596d7e4a09f303bd8f1a4d6485d4a2",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "cabinet-run-v11-exact.png",
+      "authorityFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/cabinet-run-v11-exact.png",
+      "authoritySha256": "b681d0cdd5691868340a0033fb0dea44b7a3dd57e7c63f7573322d60beaa9d22",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/cabinet-run-v11-exact.png",
+      "reviewSha256": "b681d0cdd5691868340a0033fb0dea44b7a3dd57e7c63f7573322d60beaa9d22",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "countertop-join-cap-template.png",
+      "authorityFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/countertop-join-cap-template.png",
+      "authoritySha256": "1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/countertop-join-cap-template.png",
+      "reviewSha256": "1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "countertop-triangle-underlay-template.png",
+      "authorityFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/countertop-triangle-underlay-template.png",
+      "authoritySha256": "1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/countertop-triangle-underlay-template.png",
+      "reviewSha256": "1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "dishwasher-broken-le-re.png",
+      "authorityFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/candidates/dishwasher-broken-le-re.png",
+      "authoritySha256": "5184a2a87b0463dd2833a1204329928fbc5a7d55ac9fdfa92408dca0f346b407",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/dishwasher-broken-le-re.png",
+      "reviewSha256": "5184a2a87b0463dd2833a1204329928fbc5a7d55ac9fdfa92408dca0f346b407",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "dishwasher-broken-le-rj.png",
+      "authorityFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/candidates/dishwasher-broken-le-rj.png",
+      "authoritySha256": "fdf80cab1efc8d264f504ebb3bf675489abf71bed8a3f4ae06bb1fccec83a794",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/dishwasher-broken-le-rj.png",
+      "reviewSha256": "fdf80cab1efc8d264f504ebb3bf675489abf71bed8a3f4ae06bb1fccec83a794",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "dishwasher-broken-lj-re.png",
+      "authorityFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/candidates/dishwasher-broken-lj-re.png",
+      "authoritySha256": "daf74f4bb640f243911c52d1deb8a62eed4e3f9f9ed25d50b887bd621d5d4616",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/dishwasher-broken-lj-re.png",
+      "reviewSha256": "daf74f4bb640f243911c52d1deb8a62eed4e3f9f9ed25d50b887bd621d5d4616",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "dishwasher-broken-lj-rj.png",
+      "authorityFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/candidates/dishwasher-broken-lj-rj.png",
+      "authoritySha256": "6a0cf8f1b15d9f967a59044d1adabb253ce2ad26105f0feffd20efaf5619285a",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/dishwasher-broken-lj-rj.png",
+      "reviewSha256": "6a0cf8f1b15d9f967a59044d1adabb253ce2ad26105f0feffd20efaf5619285a",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "dishwasher-broken.png",
+      "authorityFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/candidates/dishwasher-broken.png",
+      "authoritySha256": "5184a2a87b0463dd2833a1204329928fbc5a7d55ac9fdfa92408dca0f346b407",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/dishwasher-broken.png",
+      "reviewSha256": "5184a2a87b0463dd2833a1204329928fbc5a7d55ac9fdfa92408dca0f346b407",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "dishwasher-off-le-re.png",
+      "authorityFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/candidates/dishwasher-off-le-re.png",
+      "authoritySha256": "6848c638b6664e258c797be9f53bd27b634eeb62f5178f93e209b37b5f6db0a1",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/dishwasher-off-le-re.png",
+      "reviewSha256": "6848c638b6664e258c797be9f53bd27b634eeb62f5178f93e209b37b5f6db0a1",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "dishwasher-off-le-rj.png",
+      "authorityFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/candidates/dishwasher-off-le-rj.png",
+      "authoritySha256": "528f01eb3bc414a755c53daa79050dafc90886b09e80bc845e45e5a2a677e8ae",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/dishwasher-off-le-rj.png",
+      "reviewSha256": "528f01eb3bc414a755c53daa79050dafc90886b09e80bc845e45e5a2a677e8ae",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "dishwasher-off-lj-re.png",
+      "authorityFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/candidates/dishwasher-off-lj-re.png",
+      "authoritySha256": "b6456c1310ca828f26c6230f6e9e03b25a022117c409c3570624c3380eda65fb",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/dishwasher-off-lj-re.png",
+      "reviewSha256": "b6456c1310ca828f26c6230f6e9e03b25a022117c409c3570624c3380eda65fb",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "dishwasher-off-lj-rj.png",
+      "authorityFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/candidates/dishwasher-off-lj-rj.png",
+      "authoritySha256": "0b099fe809642fb55afc6200a994b1ed33e9f368b27c3412ae813f46da2021ee",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/dishwasher-off-lj-rj.png",
+      "reviewSha256": "0b099fe809642fb55afc6200a994b1ed33e9f368b27c3412ae813f46da2021ee",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "dishwasher-off.png",
+      "authorityFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/candidates/dishwasher-off.png",
+      "authoritySha256": "6848c638b6664e258c797be9f53bd27b634eeb62f5178f93e209b37b5f6db0a1",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/dishwasher-off.png",
+      "reviewSha256": "6848c638b6664e258c797be9f53bd27b634eeb62f5178f93e209b37b5f6db0a1",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "dishwasher-on-le-re.png",
+      "authorityFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/candidates/dishwasher-on-le-re.png",
+      "authoritySha256": "7762f5c762a59b947820903f7a091341a544d6b6349170807c7b41c9400fb496",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/dishwasher-on-le-re.png",
+      "reviewSha256": "7762f5c762a59b947820903f7a091341a544d6b6349170807c7b41c9400fb496",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "dishwasher-on-le-rj.png",
+      "authorityFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/candidates/dishwasher-on-le-rj.png",
+      "authoritySha256": "cc95cdf5ab280573f9eedf151b23e83c51e8830e849e3785bf1e4307056249ef",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/dishwasher-on-le-rj.png",
+      "reviewSha256": "cc95cdf5ab280573f9eedf151b23e83c51e8830e849e3785bf1e4307056249ef",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "dishwasher-on-lj-re.png",
+      "authorityFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/candidates/dishwasher-on-lj-re.png",
+      "authoritySha256": "ab429ebccffc696514b4d42e50b79934eb2fe2fc07eba7b305fb39744a150c84",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/dishwasher-on-lj-re.png",
+      "reviewSha256": "ab429ebccffc696514b4d42e50b79934eb2fe2fc07eba7b305fb39744a150c84",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "dishwasher-on-lj-rj.png",
+      "authorityFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/candidates/dishwasher-on-lj-rj.png",
+      "authoritySha256": "d1ffec075242e81a7a696b5aa7cda0cd5412b8fefef98701aff181e977d36b8a",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/dishwasher-on-lj-rj.png",
+      "reviewSha256": "d1ffec075242e81a7a696b5aa7cda0cd5412b8fefef98701aff181e977d36b8a",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "dishwasher-on.png",
+      "authorityFile": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v1/candidates/dishwasher-on.png",
+      "authoritySha256": "7762f5c762a59b947820903f7a091341a544d6b6349170807c7b41c9400fb496",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/dishwasher-on.png",
+      "reviewSha256": "7762f5c762a59b947820903f7a091341a544d6b6349170807c7b41c9400fb496",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "fridge-standard.png",
+      "authorityFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/fridge/fridge-standard.png",
+      "authoritySha256": "14bd88c1219accf8258958b7a8c70f0e31f84a06401b802e503fa7645377b9b3",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/fridge-standard.png",
+      "reviewSha256": "14bd88c1219accf8258958b7a8c70f0e31f84a06401b802e503fa7645377b9b3",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "fx-dishwasher-suds--compact-f40.png",
+      "authorityFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/fx-dishwasher-suds--compact-f40.png",
+      "authoritySha256": "14667dd8d8aa608e22f920c50184cd206cebab7cb4403148309cbbb66cefbae3",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/fx-dishwasher-suds--compact-f40.png",
+      "reviewSha256": "14667dd8d8aa608e22f920c50184cd206cebab7cb4403148309cbbb66cefbae3",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "fx-dishwasher-suds--emphatic-f40.png",
+      "authorityFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/fx-dishwasher-suds--emphatic-f40.png",
+      "authoritySha256": "07fa9627e1b78496678974ca607a0f60a795d6016b47af231a4790fdb987c976",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/fx-dishwasher-suds--emphatic-f40.png",
+      "reviewSha256": "07fa9627e1b78496678974ca607a0f60a795d6016b47af231a4790fdb987c976",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "fx-dishwasher-suds--regular-f40.png",
+      "authorityFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/fx-dishwasher-suds--regular-f40.png",
+      "authoritySha256": "666b2d08b5534fb599870cefd1accf622d6cfdca685a51d62d78c5d2062a79c2",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/fx-dishwasher-suds--regular-f40.png",
+      "reviewSha256": "666b2d08b5534fb599870cefd1accf622d6cfdca685a51d62d78c5d2062a79c2",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "join-body-backfill-template.png",
+      "authorityFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/join-body-backfill-template.png",
+      "authoritySha256": "a6eb7269c068986f38ba771f48e77266b91899b611d31cdbc068c48dfd5eec64",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/join-body-backfill-template.png",
+      "reviewSha256": "a6eb7269c068986f38ba771f48e77266b91899b611d31cdbc068c48dfd5eec64",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "neighbour-seam-cleanup-left.png",
+      "authorityFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/neighbour-seam-cleanup-left.png",
+      "authoritySha256": "c7fb536832e470a86d3b1e6f6342ba9984d09c30cdd35aca1dfba6a07a3d6430",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/neighbour-seam-cleanup-left.png",
+      "reviewSha256": "c7fb536832e470a86d3b1e6f6342ba9984d09c30cdd35aca1dfba6a07a3d6430",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "neighbour-seam-cleanup-right.png",
+      "authorityFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/neighbour-seam-cleanup-right.png",
+      "authoritySha256": "b07982a45d3e8cca1ccc1f45b681a5ba4a6d35de6d8592adf863a7422da6af1f",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/neighbour-seam-cleanup-right.png",
+      "reviewSha256": "b07982a45d3e8cca1ccc1f45b681a5ba4a6d35de6d8592adf863a7422da6af1f",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "oven-on.png",
+      "authorityFile": "art/drafts/kitchen-oven-ligne-claire-2026-10-21-v8/candidates/oven/oven-on.png",
+      "authoritySha256": "0ee7572ec03021a7efb747254bc97974de380cdee45a49d47e74b7aba9fd3d80",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/oven-on.png",
+      "reviewSha256": "0ee7572ec03021a7efb747254bc97974de380cdee45a49d47e74b7aba9fd3d80",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "room-background-exact.png",
+      "authorityFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/room-background-exact.png",
+      "authoritySha256": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/room-background-exact.png",
+      "reviewSha256": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6",
+      "byteExactToAuthority": true
+    },
+    {
+      "filename": "sink-cabinet-v19-exact.png",
+      "authorityFile": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/sink/sink-cabinet-standard.png",
+      "authoritySha256": "fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2",
+      "reviewFile": "art/drafts/kitchen-ligne-claire-healing-workbench-2026-10-22-v42/assets/sink-cabinet-v19-exact.png",
+      "reviewSha256": "fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2",
+      "byteExactToAuthority": true
+    }
+  ],
+  "registration": {
+    "register": false,
+    "promote": false,
+    "currentSelectorChanges": [],
+    "approvalRequired": true
+  },
+  "rollback": "Discard only this V42 pack and review route."
+}

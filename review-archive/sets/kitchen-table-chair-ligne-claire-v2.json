@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "set": "kitchen-table-chair-ligne-claire-v2",
+  "page": {
+    "path": "public/keeper-review/kitchen-table-chair-ligne-claire-v2/index.html",
+    "sha256": "253dac81a135d1d1417d71ec6718e6a06a0d7a76624faa7de01940efeefd15af",
+    "bytes": 1604
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-table-chair-ligne-claire-v2/assets/candidate--table-chair.png": {
+      "sha256": "ba55d823d29e6918e8fe9abf8394f99e3d19ab002d33943e362b8f221a7e71c0",
+      "extension": ".png",
+      "bytes": 5750,
+      "object": "review-archive/objects/ba/ba55d823d29e6918e8fe9abf8394f99e3d19ab002d33943e362b8f221a7e71c0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ba/ba55d823d29e6918e8fe9abf8394f99e3d19ab002d33943e362b8f221a7e71c0.png"
+    },
+    "/keeper-review/kitchen-table-chair-ligne-claire-v2/assets/current--table-chair.png": {
+      "sha256": "69fda5771770e28653326f995b3354f4a303b982175e7996797e626ae1c5d4a6",
+      "extension": ".png",
+      "bytes": 7010,
+      "object": "review-archive/objects/69/69fda5771770e28653326f995b3354f4a303b982175e7996797e626ae1c5d4a6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/69/69fda5771770e28653326f995b3354f4a303b982175e7996797e626ae1c5d4a6.png"
+    },
+    "/keeper-review/kitchen-table-chair-ligne-claire-v2/assets/table-chair-current-candidate-ghost-64px.png": {
+      "sha256": "73baf75e62d04c61655cec3f4d3429d506e3c9ad37acef330be1a0f11f1c1101",
+      "extension": ".png",
+      "bytes": 264460,
+      "object": "review-archive/objects/73/73baf75e62d04c61655cec3f4d3429d506e3c9ad37acef330be1a0f11f1c1101.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/73/73baf75e62d04c61655cec3f4d3429d506e3c9ad37acef330be1a0f11f1c1101.png"
+    }
+  }
+}

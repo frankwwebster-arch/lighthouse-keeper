@@ -1,0 +1,264 @@
+{
+  "version": 1,
+  "set": "kitchen-ligne-claire-healing-workbench-v42",
+  "page": {
+    "path": "public/keeper-review/kitchen-ligne-claire-healing-workbench-v42/index.html",
+    "sha256": "9d89d50fab6fdce80ac7024f7c86216cb2b397d61611bac10dd8cedc120bcae6",
+    "bytes": 36783
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/cabinet-a-le-re.png": {
+      "sha256": "ead4922bbec6070afdc7bf2db7ae184d3abe6cd3901d3454ae7876822852608a",
+      "extension": ".png",
+      "bytes": 5469,
+      "object": "review-archive/objects/ea/ead4922bbec6070afdc7bf2db7ae184d3abe6cd3901d3454ae7876822852608a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ea/ead4922bbec6070afdc7bf2db7ae184d3abe6cd3901d3454ae7876822852608a.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/cabinet-a-le-rj.png": {
+      "sha256": "80cbefc9682886da4e59c4130170260e8f8d6e12999a73deb780a195ed3e62df",
+      "extension": ".png",
+      "bytes": 5826,
+      "object": "review-archive/objects/80/80cbefc9682886da4e59c4130170260e8f8d6e12999a73deb780a195ed3e62df.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/80/80cbefc9682886da4e59c4130170260e8f8d6e12999a73deb780a195ed3e62df.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/cabinet-a-lj-re.png": {
+      "sha256": "e037cee106efcc38d568e51d0c0665b86c872bff1d30c8bbe9d6a1897cfdb125",
+      "extension": ".png",
+      "bytes": 5871,
+      "object": "review-archive/objects/e0/e037cee106efcc38d568e51d0c0665b86c872bff1d30c8bbe9d6a1897cfdb125.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e0/e037cee106efcc38d568e51d0c0665b86c872bff1d30c8bbe9d6a1897cfdb125.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/cabinet-a-lj-rj.png": {
+      "sha256": "debdba3d49a9a631f788538cff3f5480713ffe27358c3fee6bfbf871c2428417",
+      "extension": ".png",
+      "bytes": 5713,
+      "object": "review-archive/objects/de/debdba3d49a9a631f788538cff3f5480713ffe27358c3fee6bfbf871c2428417.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/de/debdba3d49a9a631f788538cff3f5480713ffe27358c3fee6bfbf871c2428417.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/cabinet-b-le-re.png": {
+      "sha256": "98f029f6e34385a7f3cadbbe97006a2cdcc231056996c1852e928e0c9169ea18",
+      "extension": ".png",
+      "bytes": 5438,
+      "object": "review-archive/objects/98/98f029f6e34385a7f3cadbbe97006a2cdcc231056996c1852e928e0c9169ea18.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/98f029f6e34385a7f3cadbbe97006a2cdcc231056996c1852e928e0c9169ea18.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/cabinet-b-le-rj.png": {
+      "sha256": "7ee338ce6c54be300d239b4856c0a85eb87d33a2585a50933e4ffaf8af88ac87",
+      "extension": ".png",
+      "bytes": 5859,
+      "object": "review-archive/objects/7e/7ee338ce6c54be300d239b4856c0a85eb87d33a2585a50933e4ffaf8af88ac87.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7e/7ee338ce6c54be300d239b4856c0a85eb87d33a2585a50933e4ffaf8af88ac87.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/cabinet-b-lj-re.png": {
+      "sha256": "ee626220ceaf122a4b30773dfaa07e9de3d062d3014820d35b3e82256efd2643",
+      "extension": ".png",
+      "bytes": 5778,
+      "object": "review-archive/objects/ee/ee626220ceaf122a4b30773dfaa07e9de3d062d3014820d35b3e82256efd2643.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ee/ee626220ceaf122a4b30773dfaa07e9de3d062d3014820d35b3e82256efd2643.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/cabinet-b-lj-rj.png": {
+      "sha256": "9d7bc802f1eefab2974aef460afcaf7e3f596d7e4a09f303bd8f1a4d6485d4a2",
+      "extension": ".png",
+      "bytes": 5682,
+      "object": "review-archive/objects/9d/9d7bc802f1eefab2974aef460afcaf7e3f596d7e4a09f303bd8f1a4d6485d4a2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9d/9d7bc802f1eefab2974aef460afcaf7e3f596d7e4a09f303bd8f1a4d6485d4a2.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/cabinet-run-v11-exact.png": {
+      "sha256": "b681d0cdd5691868340a0033fb0dea44b7a3dd57e7c63f7573322d60beaa9d22",
+      "extension": ".png",
+      "bytes": 10322,
+      "object": "review-archive/objects/b6/b681d0cdd5691868340a0033fb0dea44b7a3dd57e7c63f7573322d60beaa9d22.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b6/b681d0cdd5691868340a0033fb0dea44b7a3dd57e7c63f7573322d60beaa9d22.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/countertop-join-cap-template.png": {
+      "sha256": "1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96",
+      "extension": ".png",
+      "bytes": 137,
+      "object": "review-archive/objects/10/1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/10/1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/countertop-triangle-underlay-template.png": {
+      "sha256": "1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96",
+      "extension": ".png",
+      "bytes": 137,
+      "object": "review-archive/objects/10/1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/10/1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/dishwasher-broken-le-re.png": {
+      "sha256": "5184a2a87b0463dd2833a1204329928fbc5a7d55ac9fdfa92408dca0f346b407",
+      "extension": ".png",
+      "bytes": 7824,
+      "object": "review-archive/objects/51/5184a2a87b0463dd2833a1204329928fbc5a7d55ac9fdfa92408dca0f346b407.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/51/5184a2a87b0463dd2833a1204329928fbc5a7d55ac9fdfa92408dca0f346b407.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/dishwasher-broken-le-rj.png": {
+      "sha256": "fdf80cab1efc8d264f504ebb3bf675489abf71bed8a3f4ae06bb1fccec83a794",
+      "extension": ".png",
+      "bytes": 7712,
+      "object": "review-archive/objects/fd/fdf80cab1efc8d264f504ebb3bf675489abf71bed8a3f4ae06bb1fccec83a794.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fd/fdf80cab1efc8d264f504ebb3bf675489abf71bed8a3f4ae06bb1fccec83a794.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/dishwasher-broken-lj-re.png": {
+      "sha256": "daf74f4bb640f243911c52d1deb8a62eed4e3f9f9ed25d50b887bd621d5d4616",
+      "extension": ".png",
+      "bytes": 7752,
+      "object": "review-archive/objects/da/daf74f4bb640f243911c52d1deb8a62eed4e3f9f9ed25d50b887bd621d5d4616.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/da/daf74f4bb640f243911c52d1deb8a62eed4e3f9f9ed25d50b887bd621d5d4616.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/dishwasher-broken-lj-rj.png": {
+      "sha256": "6a0cf8f1b15d9f967a59044d1adabb253ce2ad26105f0feffd20efaf5619285a",
+      "extension": ".png",
+      "bytes": 7641,
+      "object": "review-archive/objects/6a/6a0cf8f1b15d9f967a59044d1adabb253ce2ad26105f0feffd20efaf5619285a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6a/6a0cf8f1b15d9f967a59044d1adabb253ce2ad26105f0feffd20efaf5619285a.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/dishwasher-broken.png": {
+      "sha256": "5184a2a87b0463dd2833a1204329928fbc5a7d55ac9fdfa92408dca0f346b407",
+      "extension": ".png",
+      "bytes": 7824,
+      "object": "review-archive/objects/51/5184a2a87b0463dd2833a1204329928fbc5a7d55ac9fdfa92408dca0f346b407.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/51/5184a2a87b0463dd2833a1204329928fbc5a7d55ac9fdfa92408dca0f346b407.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/dishwasher-off-le-re.png": {
+      "sha256": "6848c638b6664e258c797be9f53bd27b634eeb62f5178f93e209b37b5f6db0a1",
+      "extension": ".png",
+      "bytes": 4324,
+      "object": "review-archive/objects/68/6848c638b6664e258c797be9f53bd27b634eeb62f5178f93e209b37b5f6db0a1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/68/6848c638b6664e258c797be9f53bd27b634eeb62f5178f93e209b37b5f6db0a1.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/dishwasher-off-le-rj.png": {
+      "sha256": "528f01eb3bc414a755c53daa79050dafc90886b09e80bc845e45e5a2a677e8ae",
+      "extension": ".png",
+      "bytes": 4233,
+      "object": "review-archive/objects/52/528f01eb3bc414a755c53daa79050dafc90886b09e80bc845e45e5a2a677e8ae.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/52/528f01eb3bc414a755c53daa79050dafc90886b09e80bc845e45e5a2a677e8ae.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/dishwasher-off-lj-re.png": {
+      "sha256": "b6456c1310ca828f26c6230f6e9e03b25a022117c409c3570624c3380eda65fb",
+      "extension": ".png",
+      "bytes": 4262,
+      "object": "review-archive/objects/b6/b6456c1310ca828f26c6230f6e9e03b25a022117c409c3570624c3380eda65fb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b6/b6456c1310ca828f26c6230f6e9e03b25a022117c409c3570624c3380eda65fb.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/dishwasher-off-lj-rj.png": {
+      "sha256": "0b099fe809642fb55afc6200a994b1ed33e9f368b27c3412ae813f46da2021ee",
+      "extension": ".png",
+      "bytes": 4166,
+      "object": "review-archive/objects/0b/0b099fe809642fb55afc6200a994b1ed33e9f368b27c3412ae813f46da2021ee.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0b/0b099fe809642fb55afc6200a994b1ed33e9f368b27c3412ae813f46da2021ee.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/dishwasher-off.png": {
+      "sha256": "6848c638b6664e258c797be9f53bd27b634eeb62f5178f93e209b37b5f6db0a1",
+      "extension": ".png",
+      "bytes": 4324,
+      "object": "review-archive/objects/68/6848c638b6664e258c797be9f53bd27b634eeb62f5178f93e209b37b5f6db0a1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/68/6848c638b6664e258c797be9f53bd27b634eeb62f5178f93e209b37b5f6db0a1.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/dishwasher-on-le-re.png": {
+      "sha256": "7762f5c762a59b947820903f7a091341a544d6b6349170807c7b41c9400fb496",
+      "extension": ".png",
+      "bytes": 4551,
+      "object": "review-archive/objects/77/7762f5c762a59b947820903f7a091341a544d6b6349170807c7b41c9400fb496.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/77/7762f5c762a59b947820903f7a091341a544d6b6349170807c7b41c9400fb496.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/dishwasher-on-le-rj.png": {
+      "sha256": "cc95cdf5ab280573f9eedf151b23e83c51e8830e849e3785bf1e4307056249ef",
+      "extension": ".png",
+      "bytes": 4466,
+      "object": "review-archive/objects/cc/cc95cdf5ab280573f9eedf151b23e83c51e8830e849e3785bf1e4307056249ef.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cc/cc95cdf5ab280573f9eedf151b23e83c51e8830e849e3785bf1e4307056249ef.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/dishwasher-on-lj-re.png": {
+      "sha256": "ab429ebccffc696514b4d42e50b79934eb2fe2fc07eba7b305fb39744a150c84",
+      "extension": ".png",
+      "bytes": 4491,
+      "object": "review-archive/objects/ab/ab429ebccffc696514b4d42e50b79934eb2fe2fc07eba7b305fb39744a150c84.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ab/ab429ebccffc696514b4d42e50b79934eb2fe2fc07eba7b305fb39744a150c84.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/dishwasher-on-lj-rj.png": {
+      "sha256": "d1ffec075242e81a7a696b5aa7cda0cd5412b8fefef98701aff181e977d36b8a",
+      "extension": ".png",
+      "bytes": 4401,
+      "object": "review-archive/objects/d1/d1ffec075242e81a7a696b5aa7cda0cd5412b8fefef98701aff181e977d36b8a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d1/d1ffec075242e81a7a696b5aa7cda0cd5412b8fefef98701aff181e977d36b8a.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/dishwasher-on.png": {
+      "sha256": "7762f5c762a59b947820903f7a091341a544d6b6349170807c7b41c9400fb496",
+      "extension": ".png",
+      "bytes": 4551,
+      "object": "review-archive/objects/77/7762f5c762a59b947820903f7a091341a544d6b6349170807c7b41c9400fb496.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/77/7762f5c762a59b947820903f7a091341a544d6b6349170807c7b41c9400fb496.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/fridge-standard.png": {
+      "sha256": "14bd88c1219accf8258958b7a8c70f0e31f84a06401b802e503fa7645377b9b3",
+      "extension": ".png",
+      "bytes": 4223,
+      "object": "review-archive/objects/14/14bd88c1219accf8258958b7a8c70f0e31f84a06401b802e503fa7645377b9b3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/14/14bd88c1219accf8258958b7a8c70f0e31f84a06401b802e503fa7645377b9b3.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/fx-dishwasher-suds--compact-f40.png": {
+      "sha256": "14667dd8d8aa608e22f920c50184cd206cebab7cb4403148309cbbb66cefbae3",
+      "extension": ".png",
+      "bytes": 181808,
+      "object": "review-archive/objects/14/14667dd8d8aa608e22f920c50184cd206cebab7cb4403148309cbbb66cefbae3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/14/14667dd8d8aa608e22f920c50184cd206cebab7cb4403148309cbbb66cefbae3.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/fx-dishwasher-suds--emphatic-f40.png": {
+      "sha256": "07fa9627e1b78496678974ca607a0f60a795d6016b47af231a4790fdb987c976",
+      "extension": ".png",
+      "bytes": 369180,
+      "object": "review-archive/objects/07/07fa9627e1b78496678974ca607a0f60a795d6016b47af231a4790fdb987c976.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/07/07fa9627e1b78496678974ca607a0f60a795d6016b47af231a4790fdb987c976.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/fx-dishwasher-suds--regular-f40.png": {
+      "sha256": "666b2d08b5534fb599870cefd1accf622d6cfdca685a51d62d78c5d2062a79c2",
+      "extension": ".png",
+      "bytes": 301809,
+      "object": "review-archive/objects/66/666b2d08b5534fb599870cefd1accf622d6cfdca685a51d62d78c5d2062a79c2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/66/666b2d08b5534fb599870cefd1accf622d6cfdca685a51d62d78c5d2062a79c2.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/join-body-backfill-template.png": {
+      "sha256": "a6eb7269c068986f38ba771f48e77266b91899b611d31cdbc068c48dfd5eec64",
+      "extension": ".png",
+      "bytes": 239,
+      "object": "review-archive/objects/a6/a6eb7269c068986f38ba771f48e77266b91899b611d31cdbc068c48dfd5eec64.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a6/a6eb7269c068986f38ba771f48e77266b91899b611d31cdbc068c48dfd5eec64.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/neighbour-seam-cleanup-left.png": {
+      "sha256": "c7fb536832e470a86d3b1e6f6342ba9984d09c30cdd35aca1dfba6a07a3d6430",
+      "extension": ".png",
+      "bytes": 136,
+      "object": "review-archive/objects/c7/c7fb536832e470a86d3b1e6f6342ba9984d09c30cdd35aca1dfba6a07a3d6430.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c7/c7fb536832e470a86d3b1e6f6342ba9984d09c30cdd35aca1dfba6a07a3d6430.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/neighbour-seam-cleanup-right.png": {
+      "sha256": "b07982a45d3e8cca1ccc1f45b681a5ba4a6d35de6d8592adf863a7422da6af1f",
+      "extension": ".png",
+      "bytes": 140,
+      "object": "review-archive/objects/b0/b07982a45d3e8cca1ccc1f45b681a5ba4a6d35de6d8592adf863a7422da6af1f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b0/b07982a45d3e8cca1ccc1f45b681a5ba4a6d35de6d8592adf863a7422da6af1f.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/oven-on.png": {
+      "sha256": "0ee7572ec03021a7efb747254bc97974de380cdee45a49d47e74b7aba9fd3d80",
+      "extension": ".png",
+      "bytes": 11298,
+      "object": "review-archive/objects/0e/0ee7572ec03021a7efb747254bc97974de380cdee45a49d47e74b7aba9fd3d80.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0ee7572ec03021a7efb747254bc97974de380cdee45a49d47e74b7aba9fd3d80.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/room-background-exact.png": {
+      "sha256": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6",
+      "extension": ".png",
+      "bytes": 4706,
+      "object": "review-archive/objects/cb/cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cb/cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6.png"
+    },
+    "/keeper-review/kitchen-ligne-claire-healing-workbench-v42/assets/sink-cabinet-v19-exact.png": {
+      "sha256": "fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2",
+      "extension": ".png",
+      "bytes": 6896,
+      "object": "review-archive/objects/fe/fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fe/fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2.png"
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "schema": "lighthouse-keeper/kitchen-bin-ligne-claire@2",
+  "set": "kitchen-bin-ligne-claire-v2",
+  "created": "2026-10-22",
+  "status": "immutable-review-candidate-not-approved-not-registered",
+  "sourceApproval": "docs/review/kitchen-bin-effects-v31-approval-2026-10-18.json",
+  "sourceApprovalSha256": "35cf0c0e06bbc0ff8ae6a811455c3ed401438e677d477fdb83a9fce253a1f024",
+  "contractFile": "art/drafts/kitchen-bin-effects-2026-10-18-v31/candidate-catalogue.json",
+  "contractSha256": "ee6b4b7dd1f23ee3805af07e769e0485de2f9762e3a3b887949e020403efc699",
+  "objects": [
+    {
+      "filename": "bin-standard.png",
+      "sourceFile": "art/raw/kitchen-bin-effects-2026-10-18-v31/bin-standard.png",
+      "sourceSha256": "86b05224a7da5fc5c05918f2875018920ed54cf46fc00cb08952ffd29789f9c0",
+      "sourcePixels": [
+        72,
+        72
+      ],
+      "sourceAlphaBounds": [
+        20,
+        15,
+        52,
+        68
+      ],
+      "sourceAlphaSha256": "9d1c62e9e17e9fce32711a1b3da596c2cb859c229137ccd6815884e7549067f8",
+      "masterFile": "art/drafts/kitchen-bin-ligne-claire-2026-10-22-v2/masters/bin-standard-master-8x.png",
+      "masterSha256": "0c7eb155f502e82a289e0498dfb061255040f03455d978a49fbbd179f8341694",
+      "candidateFile": "art/drafts/kitchen-bin-ligne-claire-2026-10-22-v2/candidates/bin-standard.png",
+      "candidateSha256": "e23d7da33bc845e6d5923da22a00af72df43cdd950993355489118db306d3172",
+      "candidatePixels": [
+        72,
+        72
+      ],
+      "candidateAlphaBounds": [
+        20,
+        15,
+        52,
+        68
+      ],
+      "candidateAlphaSha256": "9d1c62e9e17e9fce32711a1b3da596c2cb859c229137ccd6815884e7549067f8"
+    },
+    {
+      "filename": "bin-broken-overflowing.png",
+      "sourceFile": "art/raw/kitchen-bin-effects-2026-10-18-v31/bin-broken-overflowing.png",
+      "sourceSha256": "77ad87fabfd3e5c10a4a14f294af343a5d93a2a2015e6d77f18a4140b1f5fb4f",
+      "sourcePixels": [
+        72,
+        72
+      ],
+      "sourceAlphaBounds": [
+        8,
+        4,
+        64,
+        68
+      ],
+      "sourceAlphaSha256": "8409b9f83d8c7d30483e3549d262e974b05c4e44536beab9c19eb3bd34c60bb5",
+      "masterFile": "art/drafts/kitchen-bin-ligne-claire-2026-10-22-v2/masters/bin-broken-overflowing-master-8x.png",
+      "masterSha256": "03ea7286d9821beac31f34d1952926b28c12d0044846db02b55c902f715eeb94",
+      "candidateFile": "art/drafts/kitchen-bin-ligne-claire-2026-10-22-v2/candidates/bin-broken-overflowing.png",
+      "candidateSha256": "b299782e1f4de791d8738ec0a20a88f66d8f3a3b0a7c285a2c78f42a389280b6",
+      "candidatePixels": [
+        72,
+        72
+      ],
+      "candidateAlphaBounds": [
+        8,
+        4,
+        64,
+        68
+      ],
+      "candidateAlphaSha256": "8409b9f83d8c7d30483e3549d262e974b05c4e44536beab9c19eb3bd34c60bb5"
+    }
+  ],
+  "effects": [
+    {
+      "filename": "fx-stench-miasma-f40.png",
+      "sourceFile": "art/raw/kitchen-bin-effects-2026-10-18-v31/fx-stench-miasma-f40.png",
+      "sourceSha256": "4b8e257ea91812b21addad303950cef15e253b5aaf3756943dd499ebc38401fc",
+      "preservedFile": "art/drafts/kitchen-bin-ligne-claire-2026-10-22-v2/effects/fx-stench-miasma-f40.png",
+      "preservedSha256": "4b8e257ea91812b21addad303950cef15e253b5aaf3756943dd499ebc38401fc",
+      "frames": 40,
+      "fps": 4,
+      "cellPixels": [
+        80,
+        80
+      ],
+      "byteExact": true
+    },
+    {
+      "filename": "fx-slow-flies-f40.png",
+      "sourceFile": "art/raw/kitchen-bin-effects-2026-10-18-v31/fx-slow-flies-f40.png",
+      "sourceSha256": "ffcddd73880c75b252764b59b4311c556eb49c58949701250e5c422a036cc34c",
+      "preservedFile": "art/drafts/kitchen-bin-ligne-claire-2026-10-22-v2/effects/fx-slow-flies-f40.png",
+      "preservedSha256": "ffcddd73880c75b252764b59b4311c556eb49c58949701250e5c422a036cc34c",
+      "frames": 40,
+      "fps": 4,
+      "cellPixels": [
+        80,
+        80
+      ],
+      "byteExact": true
+    }
+  ],
+  "effectContract": {
+    "objectAnimated": false,
+    "environmentalEffectsSeparate": true,
+    "frames": 40,
+    "fps": 4,
+    "durationSeconds": 10,
+    "placement": [
+      4,
+      104
+    ],
+    "changed": false
+  },
+  "unchanged": [
+    "canvas",
+    "alpha",
+    "padding",
+    "standard footprint",
+    "overflow footprint",
+    "lid orientation",
+    "pedal",
+    "room origin",
+    "effect ownership",
+    "effect frames",
+    "effect timing",
+    "interaction behaviour"
+  ],
+  "registration": {
+    "register": false,
+    "promote": false,
+    "currentSelectorChanges": [],
+    "approvalRequired": true
+  },
+  "evidence": {
+    "file": "art/drafts/kitchen-bin-ligne-claire-2026-10-22-v2/evidence/bin-current-candidate-ghost-64px.png",
+    "sha256": "15715796a9f895cf5f0c9910a3312df667bffdd21be367f2dfe32d7aed417cca"
+  },
+  "rollback": "Discard only this V2 pack and review route."
+}

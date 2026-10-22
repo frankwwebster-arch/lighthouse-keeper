@@ -1,0 +1,96 @@
+{
+  "schema": "lighthouse-keeper/kitchen-mixing-bowl-ligne-claire@1",
+  "set": "kitchen-mixing-bowl-ligne-claire-v1",
+  "created": "2026-10-22",
+  "status": "immutable-review-candidate-not-approved-not-registered",
+  "sourceSet": "kitchen-mixing-bowl-states-v36",
+  "contractFile": "art/drafts/kitchen-mixing-bowl-states-2026-10-18-v36/candidate-catalogue.json",
+  "contractSha256": "e5e6011d2ef3e1894720610bf88500ade6485d6bca482d92ab76a54d014f5520",
+  "objects": [
+    {
+      "state": "standard",
+      "filename": "mixing-bowl-standard.png",
+      "sourceFile": "art/raw/kitchen-mixing-bowl-states-2026-10-18-v36/mixing-bowl-standard.png",
+      "sourceSha256": "5897005cd41167d992f892f65f582e686ff9063d1708f1a46bd0eaaa49954b1d",
+      "candidateFile": "art/drafts/kitchen-mixing-bowl-ligne-claire-2026-10-22-v1/candidates/mixing-bowl-standard.png",
+      "candidateSha256": "32e5f7ecc2626d00ce60f70b3b02136d5f0c449acadfa6c418f4c4425df4fa84",
+      "pixels": [
+        84,
+        68
+      ],
+      "alphaBounds": [
+        20,
+        38,
+        64,
+        65
+      ],
+      "sourceAlphaSha256": "590f7963c9010281d77986a57f762a51e5adb7b02f5590411866a4af597e204e",
+      "candidateAlphaSha256": "590f7963c9010281d77986a57f762a51e5adb7b02f5590411866a4af597e204e"
+    },
+    {
+      "state": "broken",
+      "filename": "mixing-bowl-broken.png",
+      "sourceFile": "art/raw/kitchen-mixing-bowl-states-2026-10-18-v36/mixing-bowl-broken.png",
+      "sourceSha256": "23c0397e3769f22c0aaa5c3b998a83a7c16c482e6e1a1a3ae7b1003525d15dda",
+      "candidateFile": "art/drafts/kitchen-mixing-bowl-ligne-claire-2026-10-22-v1/candidates/mixing-bowl-broken.png",
+      "candidateSha256": "8d8ea9dc0c4f791d102aeafca685d243aa80f93ff9419f40a91ed1b72323235a",
+      "pixels": [
+        84,
+        68
+      ],
+      "alphaBounds": [
+        20,
+        40,
+        64,
+        65
+      ],
+      "sourceAlphaSha256": "948bb0fadb41392c0cae8a7574dd0534ac02bbc3f7cc557f354be5722a11ed10",
+      "candidateAlphaSha256": "948bb0fadb41392c0cae8a7574dd0534ac02bbc3f7cc557f354be5722a11ed10"
+    }
+  ],
+  "effects": [],
+  "preservedBehaviour": {
+    "cellPixels": [
+      84,
+      68
+    ],
+    "roomCellTopLeft": [
+      420,
+      76
+    ],
+    "construction": {
+      "coordinatedFamily": true,
+      "sameSourceSheet": true,
+      "objectAnimation": false
+    },
+    "requirements": {
+      "animationRequired": false,
+      "brokenLargeCeramicPieces": true,
+      "intactTableauBeneathBroken": false
+    },
+    "sfxCues": [
+      "kitchen_mixing_bowl_ceramic_break"
+    ]
+  },
+  "unchanged": [
+    "canvas",
+    "alpha",
+    "transparent padding",
+    "state geometry",
+    "room position",
+    "large ceramic pieces",
+    "sound cue",
+    "runtime"
+  ],
+  "registration": {
+    "register": false,
+    "promote": false,
+    "currentSelectorChanges": [],
+    "approvalRequired": true
+  },
+  "evidence": {
+    "file": "art/drafts/kitchen-mixing-bowl-ligne-claire-2026-10-22-v1/evidence/mixing-bowl-current-candidate-ghost-64px.png",
+    "sha256": "6ea401342830622f3101ff006999ab9fadebfaee0ac11d84cf6188d65dd2b25d"
+  },
+  "rollback": "Discard only this V1 pack and review route."
+}
