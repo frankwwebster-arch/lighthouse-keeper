@@ -2,6 +2,10 @@
 
 Date: 22 October 2026
 
+Status: **rejected and preserved**. Frank found that frames 11–31 still contain
+two separately drawn ribbed bands at the bottom of the jumper. V7 supersedes
+this review without overwriting it.
+
 Current route: `/prime-keeper-animation-drafts`
 
 Versioned route: `/prime-keeper-animation-drafts-v6`
@@ -82,6 +86,6 @@ The verifier checks that:
 
 ## Approval boundary
 
-V6 is a review candidate. It does not itself approve the rear-task performance
-or promote it into the runtime bank. All 21 repaired occurrences remain
-independently addressable for further frame-specific feedback.
+V6 is rejected review evidence. It was never approved or promoted into the
+runtime bank. Its 21 amended occurrences remain byte-addressable for comparison
+with V7.

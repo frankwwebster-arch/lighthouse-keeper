@@ -4,24 +4,25 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 
 The current Prime animation review is
 `/prime-keeper-animation-drafts` (versioned permalink
-`/prime-keeper-animation-drafts-v6`): ten reversible sequences with 162
-frame occurrences. V6 retains V3's accepted first-review changes without
-overwriting V1–V5: the redundant second lift frame is omitted, every reused passive
+`/prime-keeper-animation-drafts-v7`): ten reversible sequences with 162
+frame occurrences. V7 retains V3's accepted first-review changes without
+overwriting V1–V6: the redundant second lift frame is omitted, every reused passive
 front/back endpoint has a brighter jumper registered to the approved Prime
 colour family and the non-writing seated route has an accurate title. Frank
 rejected V4's rear-task amendment because detached black fragments returned and
 the moving hem was cut across a fixed hem, then rejected V5 because its hard
-moving-hem/fixed-trouser cut made the waist worse. V6 rebuilds only those 21
-frame occurrences from the hash-pinned V2 action source and exact approved
-rear-body authority: the complete hem tapers back to the fixed root, outboard
-artefact runs are removed, and approved trousers begin below a geometry-matched
-crotch split.
+moving-hem/fixed-trouser cut made the waist worse, then rejected V6 because all
+21 work frames still contained two separately drawn ribbed bands. V7 rebuilds
+only those frames: the upper action remains byte-identical through row 179,
+while the current corrected rear Prime authority owns the lower torso, its one
+jumper hem, trousers and boots. Passive hands and generated side fragments are
+excluded by the recorded centre-body interval.
 Every player has
 pause/stop/frame controls, the page includes a sequence sandbox and
-frame-specific redraft notes; changed V5/V6 frames are also shown side-by-side.
+frame-specific redraft notes; changed V6/V7 frames are also shown side-by-side.
 All corrections remain separate review-only copies. Unsafe snack, bed and original broom source sheets remain visibly
 withheld by the isolation gate. See
-`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V6_2026-10-22.md`.
+`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V7_2026-10-22.md`.
 
 The historical whole-bank gate is the reversible Prime Keeper whole-bank
 normalisation programme. Its new selector is
