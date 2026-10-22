@@ -68,7 +68,11 @@ export function verifyActivityStorySymbolColourSemanticsV1() {
     const registered = library.pictures[id]?.versions.find((version) => version.v === component.libraryVersion)
     if (!registered) problems.push(`${id}: library version ${component.libraryVersion} is missing`)
     else if (registered.sha256 !== component.sha256) problems.push(`${id}: library version ${component.libraryVersion} has the wrong hash`)
-    if (library.pictures[id]?.current !== component.libraryVersion) problems.push(`${id}: library version ${component.libraryVersion} is not current`)
+    // This pack remains immutable provenance after later commissioned versions
+    // supersede its selector. Require the registered bytes to survive, but do
+    // not require an historical version to remain current forever.
+    if ((library.pictures[id]?.current ?? 0) < component.libraryVersion)
+      problems.push(`${id}: current selector predates registered library version ${component.libraryVersion}`)
   }
 
   for (const item of register.rejected ?? []) {
@@ -103,5 +107,5 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     console.error(`✗ symbol colour semantics: ${problems.length} problem(s)\n  ${problems.join('\n  ')}`)
     process.exit(1)
   }
-  console.log('✓ symbol colour semantics: 4 current versions, provenance, geometry and contact sheet check out')
+  console.log('✓ symbol colour semantics: 4 registered versions, provenance, geometry and contact sheet check out')
 }

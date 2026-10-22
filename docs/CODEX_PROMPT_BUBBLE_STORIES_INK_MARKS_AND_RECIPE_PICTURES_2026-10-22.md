@@ -123,3 +123,8 @@ approved authority.
 
 ## Handoff (Codex)
 
+- Added all 29 Hergé black-ink marks (21 new immutable versions and eight new IDs) and all ten new recipe objects; the library is now 338 pictures / 444 versions.
+- Marks review sheet: `art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/evidence/marks-pale-game-size-and-current-contact-sheet.png`.
+- Objects review sheet: `art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/evidence/objects-light-dark-64-contact-sheet.png`.
+- Pack verification, `npm run verify:activity-stories` and `npm test` pass; no file under `data/activity-stories/stories/` or `src/activityStories/` changed.
+- Could not pull, stage or commit because this sandbox cannot write the parent worktree Git metadata (`FETCH_HEAD` / `index.lock`); nothing was pushed or deployed.
