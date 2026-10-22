@@ -2,6 +2,10 @@
 
 Date: 22 October 2026
 
+Status: preserved rejected evidence. Frank rejected V7 because its row-180
+ownership boundary cut into the moving torso, so the upper and lower side
+outlines stepped visibly. V8 replaces only those 21 composites.
+
 Current route: `/prime-keeper-animation-drafts`
 
 Versioned route: `/prime-keeper-animation-drafts-v7`

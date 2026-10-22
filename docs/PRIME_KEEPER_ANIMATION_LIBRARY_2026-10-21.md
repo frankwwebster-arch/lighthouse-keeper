@@ -66,19 +66,18 @@ seating remain installed but await matching gameplay consumers. The library
 labels that distinction and renders approved source and installed delivery
 side-by-side. This promotion does not expand any original art approval.
 
-The separate `/prime-keeper-animation-drafts` page now serves the V7 review:
+The separate `/prime-keeper-animation-drafts` page now serves the V8 review:
 the five preserved V1 drafts, one isolated broom candidate and four
 approved-component choreography previews, plus reversible feedback corrections.
-V7 retains the accepted V3 palette, lift and naming amendments, and replaces
-only rejected V6 rear-task positions 11–31. The upper action remains exact
-through row 179; the current corrected rear authority supplies one lower-jumper
-hem, trousers and boots while passive hands and generated hip fragments are
-excluded. These ten
+V8 retains the accepted V3 palette, lift and naming amendments, and replaces
+only rejected V7 rear-task positions 11–31. The complete moving torso and its
+single hem remain exact through row 213; approved rear-authority trousers are
+registered to the identical per-frame outline, followed by exact authority boots. These ten
 sequences remain outside the approved library and runtime bank until their
-complete choreography is accepted. V1–V6
+complete choreography is accepted. V1–V7
 remain at their versioned routes; the current versioned route is
-`/prime-keeper-animation-drafts-v7`. See
-`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V7_2026-10-22.md`.
+`/prime-keeper-animation-drafts-v8`. See
+`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V8_2026-10-23.md`.
 
 The held-implement POC remains excluded. Its motion feasibility and
 `hold_shaft_two_hand` concept are approved, but the proxy body art is not.
