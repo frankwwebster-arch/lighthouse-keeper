@@ -438,6 +438,7 @@ fails if any picture would land in “Other”.
 | Bathroom and personal care | `bathroom`, `dental`, `hygiene` |
 | Cleaning products | `cleaning-products`, `cleaning-chemical` |
 | Cleaning tools | `cleaning-tools` |
+| Around the house | `household` (floors, furniture to clean) |
 | Sponges, cloths and bags | `cleaning-cloths`, `consumable` |
 | Laundry | `laundry` |
 | Aquarium | `aquarium` |

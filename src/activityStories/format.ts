@@ -224,6 +224,7 @@ export const PICTURE_GROUPS: { label: string; families: string[] }[] = [
   { label: 'Bathroom and personal care', families: ['bathroom', 'dental', 'hygiene'] },
   { label: 'Cleaning products', families: ['cleaning-products', 'cleaning-chemical'] },
   { label: 'Cleaning tools', families: ['cleaning-tools'] },
+  { label: 'Around the house', families: ['household'] },
   { label: 'Sponges, cloths and bags', families: ['cleaning-cloths', 'consumable'] },
   { label: 'Laundry', families: ['laundry'] },
   { label: 'Aquarium', families: ['aquarium'] },
