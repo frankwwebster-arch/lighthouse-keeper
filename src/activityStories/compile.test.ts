@@ -48,7 +48,9 @@ describe('bubble story drafts', () => {
         expect(c.sendOff).toBeGreaterThan(0)
         for (const f of c.full.slice(c.quiet[0], c.quiet[1] + 1)) expect(f.items.some((i) => i.id === last.who), `frame ${c.full.indexOf(f)}`).toBe(true)
         expect(c.full.at(-1)!.items.some((i) => i.id === last.who)).toBe(false)
-        expect(c.reduced[c.quiet[0]].items.some((i) => i.id === last.who)).toBe(true)
+        // Reduced motion shows at most two pictures: the dish, or what is carried on it (the toast on its plate).
+        const carried = new Set([last.who, ...story.steps.filter((s) => (s.do === 'land-on' || s.do === 'flip' || s.do === 'reveal') && s.onto === last.who).map((s) => s.who)])
+        expect(c.reduced[c.quiet[0]].items.some((i) => carried.has(i.id))).toBe(true)
       })
 
       it('draws motion trails beneath every object', () => {
