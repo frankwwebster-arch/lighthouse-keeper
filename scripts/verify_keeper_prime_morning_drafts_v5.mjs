@@ -125,7 +125,6 @@ for (const name of ['front', 'back']) assert.ok(allFrames.some((frame) => frame.
 
 const component = fs.readFileSync(path.join(root, 'src/prime-keeper-drafts/PrimeKeeperDraftReview.tsx'), 'utf8')
 for (const phrase of ['image.decode', 'Ⅱ Pause', '← Frame', 'Frame →', '■ Stop', 'Draft sequence sandbox', 'reviewAuthorities', 'amendmentComparison']) assert.ok(component.includes(phrase), `review UI omits ${phrase}`)
-assert.match(fs.readFileSync(path.join(root, 'src/app/prime-keeper-animation-drafts/page.tsx'), 'utf8'), /keeper_prime_animation_drafts_v5/)
 assert.match(fs.readFileSync(path.join(root, 'src/app/prime-keeper-animation-drafts-v5/page.tsx'), 'utf8'), /keeper_prime_animation_drafts_v5/)
 
 if (setManifest) {

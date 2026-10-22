@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import batch from '../../../data/keeper_prime_animation_drafts_v5.json'
+import batch from '../../../data/keeper_prime_animation_drafts_v6.json'
 import PrimeKeeperDraftReview from '../../prime-keeper-drafts/PrimeKeeperDraftReview'
 
 export const metadata: Metadata = {
-  title: 'Prime Keeper — Feedback-corrected Animation Review V5',
-  description: 'Review ten reversible Prime Keeper animation candidates with the moving rear-task hem and clean authority-trouser correction.',
+  title: 'Prime Keeper — Feedback-corrected Animation Review V6',
+  description: 'Review ten reversible Prime Keeper animation candidates with a tapered rear-task root and clean authority lower body.',
 }
 
 export default function PrimeKeeperAnimationDraftsPage() {

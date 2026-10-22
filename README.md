@@ -4,22 +4,24 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 
 The current Prime animation review is
 `/prime-keeper-animation-drafts` (versioned permalink
-`/prime-keeper-animation-drafts-v5`): ten reversible sequences with 162
-frame occurrences. V5 retains V3's accepted first-review changes without
-overwriting V1–V4: the redundant second lift frame is omitted, every reused passive
+`/prime-keeper-animation-drafts-v6`): ten reversible sequences with 162
+frame occurrences. V6 retains V3's accepted first-review changes without
+overwriting V1–V5: the redundant second lift frame is omitted, every reused passive
 front/back endpoint has a brighter jumper registered to the approved Prime
 colour family and the non-writing seated route has an accurate title. Frank
 rejected V4's rear-task amendment because detached black fragments returned and
-the moving hem was cut across a fixed hem. V5 rebuilds only those 21 frame
-occurrences from the hash-pinned V2 action source and exact approved rear-body
-authority: the complete moving hem now occludes the fixed join, approved
-trousers begin behind it and detached fragments are excluded by ownership.
+the moving hem was cut across a fixed hem, then rejected V5 because its hard
+moving-hem/fixed-trouser cut made the waist worse. V6 rebuilds only those 21
+frame occurrences from the hash-pinned V2 action source and exact approved
+rear-body authority: the complete hem tapers back to the fixed root, outboard
+artefact runs are removed, and approved trousers begin below a geometry-matched
+crotch split.
 Every player has
 pause/stop/frame controls, the page includes a sequence sandbox and
-frame-specific redraft notes; changed V4/V5 frames are also shown side-by-side.
+frame-specific redraft notes; changed V5/V6 frames are also shown side-by-side.
 All corrections remain separate review-only copies. Unsafe snack, bed and original broom source sheets remain visibly
 withheld by the isolation gate. See
-`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V5_2026-10-22.md`.
+`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V6_2026-10-22.md`.
 
 The historical whole-bank gate is the reversible Prime Keeper whole-bank
 normalisation programme. Its new selector is
@@ -1011,6 +1013,13 @@ top and exact 7.75-lp chair-seat datum. Raw and join-diagnostic views remain
 synchronized at direct-source `1×`/`2×`/`4×` zoom. Loose-object art and later
 states remain unapproved, and Kettle V47/runtime behaviour is unchanged. See
 [`docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V2_2026-10-22.md`](docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V2_2026-10-22.md).
+
+Use Kitchen Complete Room Layout V3 at
+`/keeper-review/kitchen-complete-room-layout-v3` for review. It is a
+delivery-only correction: the same nineteen V2 drawings and all geometry are
+packed losslessly into one content-addressed atlas, reducing a cold page load
+from nineteen redirected image requests to one. V2 remains immutable. See
+[`docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V3_2026-10-22.md`](docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V3_2026-10-22.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
@@ -1558,7 +1567,7 @@ must remain paused to avoid duplicate alerts.
 - `data/keeper_pose_registry.json`, `data/keeper_endpoint_audit.json` and `data/keeper_endpoint_exceptions.json` — shared pose vocabulary, current real-pixel endpoint evidence, and the frozen legacy migration boundary.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
 - `public/keeper-review/index.html` — canonical online-only reviewer deployed at `/keeper-review/`; `docs/keeper-scale-audit/review.html` is the generated audit artifact and must be byte-identical, but when opened outside `/keeper-review` it sends the viewer to the live platform instead of presenting a second workspace. Its gallery is a compact visual scan (name, review state, last local save/redraft, playback and frame stepping); `Open close review` opens any chosen card immediately. `Find animation` searches names and overrides all other filters; otherwise independently filter by review state, pose and active/reserve use list. Close review lets Frank override the inferred pose tag, relegate a likely duplicate to the reversible reserve list, expand/compress retained draft comparisons, and select canonical or every exact-name draft as an exportable preferred-promotion candidate—without mutating production. **Hand back to Codex** always asks for confirmation, saves any unsaved cards to that browser if confirmed, then submits the full batch to the durable server-side queue. The server records a semantic exact-name delta (ignoring save timestamps), comparing the first server hand-back to the shipped review baseline and later ones to the prior hand-back; the receipt reports only the changed animation count for later Codex work. When Codex claims a batch, the online reviewer becomes read-only until the delivery is completed, while retaining playback and inspection; JSON backup/import is collapsed as an exceptional browser-recovery option.
-- `review-archive/`, `docs/REVIEW_ARCHIVE.md`, `scripts/archive_keeper_review_media.mjs` and `scripts/replace_keeper_review_set.mjs` — content-addressed storage for review-only images, GIFs and oversized review JSON. The index has 7,742 review references across 253 set manifests resolving to 3,285 committed-tree SHA-256 objects hosted outside Vercel deployments. The global sweep ignores unrelated untracked objects, and the single-set replacement path remains available for an isolated reversible batch. Immutable page bytes and old URLs are preserved through short-lived redirect routes; new animations preload every moving frame before playback. The clean `public/` payload is 49.60 MiB beneath the unchanged 50 MiB guard. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
+- `review-archive/`, `docs/REVIEW_ARCHIVE.md`, `scripts/archive_keeper_review_media.mjs` and `scripts/replace_keeper_review_set.mjs` — content-addressed storage for review-only images, GIFs and oversized review JSON. The index has 7,830 review references across 255 set manifests resolving to 3,307 committed-tree SHA-256 objects hosted outside Vercel deployments. The global sweep ignores unrelated untracked objects, and the single-set replacement path remains available for an isolated reversible batch. Immutable page bytes and old URLs are preserved through short-lived redirect routes; new animations preload every moving frame before playback. The clean `public/` payload is 49.64 MiB beneath the unchanged 50 MiB guard. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
 - `data/keeper_side_on_beard_occlusion_audit.json`, `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/`, and `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` — completed draft-only v2 beard/hand audit and preserved rejected v1 history. The active reviewer shows v2 beside canonical and the separate Frank-selected darts draft; the verifier prevents implicit promotion.
 - `data/keeper_review_drafts.json` and `art/drafts/` — SHA-256-pinned, exact-name review comparisons: the draft-only darts candidate, seven active V11 artist-smock candidates, the accepted complete-route `keeper_snooker` candidate, the 41 exact-name 11 October amendment candidates and the separate party-hat frame-2 v2 variant, plus the ten selected canonical promotions and their reversible previous versions. Hash-addressed reviewer copies prevent same-name historical and current variants from overwriting one another. `scripts/verify_keeper_review_drafts.ts` checks every registered source, canonical/current comparison, sidecar, gutter, publication and reviewer attachment.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.

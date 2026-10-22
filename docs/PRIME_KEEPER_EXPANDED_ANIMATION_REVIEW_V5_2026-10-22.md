@@ -2,6 +2,10 @@
 
 Date: 22 October 2026
 
+Status: rejected by Frank on 22 October 2026 because the hard moving-hem to
+fixed-trouser cut made the complete rear-task motion worse. V5 remains
+immutable provenance; V6 is the corrective successor.
+
 Current route: `/prime-keeper-animation-drafts`
 
 Versioned route: `/prime-keeper-animation-drafts-v5`
@@ -81,6 +85,6 @@ The verifier checks that:
 
 ## Approval boundary
 
-V5 is a review candidate. It does not itself approve the rear-task performance
-or promote it into the runtime bank. All 21 repaired occurrences remain
-independently addressable for further frame-specific feedback.
+V5 was rejected. It does not approve the rear-task performance or promote it
+into the runtime bank. All 21 repaired occurrences remain independently
+addressable as comparison provenance.
