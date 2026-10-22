@@ -404,6 +404,11 @@ export default {
         permanent: false,
       },
       {
+        source: '/keeper-review/kitchen-cabinetry-state-derivatives-v1',
+        destination: '/keeper-review/kitchen-cabinetry-state-derivatives-v1/index.html',
+        permanent: false,
+      },
+      {
         source: '/keeper-review/kitchen-high-resolution-foundation-v1',
         destination: '/keeper-review/kitchen-high-resolution-foundation-v1/index.html',
         permanent: false,

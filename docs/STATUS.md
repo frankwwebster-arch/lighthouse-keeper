@@ -809,6 +809,19 @@ and presents the approved construction sheet and original authority together.
 Contract and delivery:
 `docs/KITCHEN_HIGH_RESOLUTION_FOUNDATION_V1_2026-10-22.md`.
 
+Kitchen Cabinetry State Derivatives V1 is the approved fitted-state visual
+authority at `/keeper-review/kitchen-cabinetry-state-derivatives-v1/index.html`.
+Frank confirmed the exact V4 sheet on 22 October 2026. It pairs Sink On/Broken,
+Dishwasher On/Broken, Oven Off/Broken and Fridge standard/Broken beside the
+approved body authority. Confirmed state closure also defines Dishwasher Off as
+three dark fixed housings, On as three steady green lamps and Broken as three
+independently irregular red blink layers. Broken uses the full lower dishwasher
+hinge, the selected sagging fridge door and a separate small fridge leak. The
+sheet is not a production atlas: transparent extraction, animation,
+native-scale proof and runtime remain closed. Approval record:
+`docs/review/kitchen-cabinetry-state-derivatives-v1-approval-2026-10-22.json`.
+Delivery: `docs/KITCHEN_CABINETRY_STATE_DERIVATIVES_V1_2026-10-22.md`.
+
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
 link with V6. The animation remains the exact V1/V2 six-pose motion inside its

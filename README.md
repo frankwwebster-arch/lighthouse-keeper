@@ -971,6 +971,18 @@ fresh immutable versioned page
 `/keeper-review/kitchen-cabinetry-foundation-v1/index.html`, showing the exact
 approved sheet beside the original authority. Contract and delivery notes:
 [`docs/KITCHEN_HIGH_RESOLUTION_FOUNDATION_V1_2026-10-22.md`](docs/KITCHEN_HIGH_RESOLUTION_FOUNDATION_V1_2026-10-22.md).
+
+The approved fitted-state visual authority is available at
+`/keeper-review/kitchen-cabinetry-state-derivatives-v1/index.html`. Frank
+confirmed the exact V4 sheet on 22 October 2026. It shows the paired visual
+deltas while the approved body sheet remains beside it for drift inspection
+and closes the state semantics—especially Dishwasher Off dark, On three steady
+green lamps and Broken three independently irregular red lamps, plus the
+selected Broken-fridge door and separate leak. This visual approval does not
+yet extract, animate or register production layers. Approval record:
+`docs/review/kitchen-cabinetry-state-derivatives-v1-approval-2026-10-22.json`.
+See
+[`docs/KITCHEN_CABINETRY_STATE_DERIVATIVES_V1_2026-10-22.md`](docs/KITCHEN_CABINETRY_STATE_DERIVATIVES_V1_2026-10-22.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

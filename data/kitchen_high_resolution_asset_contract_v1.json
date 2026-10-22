@@ -20,6 +20,13 @@
       "dimensions": [1536, 1024],
       "scope": "Approved coordinated visual/body foundation for cupboard, drawers, sink, dishwasher, oven and basic undercounter fridge. It is not yet a production crop or state atlas."
     },
+    "approvedCabinetryStateVisualSheet": {
+      "path": "art/drafts/kitchen-cabinetry-state-derivatives-2026-10-22-v1/candidate-v4-red-fault-lights-fridge-leak.png",
+      "sha256": "d53b7565558acf6dc5544dde8b415fe50ac9eec1683eb374d996114ad5a902e8",
+      "sourceGeneration": "exec-f6e9efc2-a481-44a1-9d33-e43a6266938a.png",
+      "dimensions": [1024, 1536],
+      "scope": "Approved fitted-state visual authority and state semantics; not a production atlas, extracted animation layer set or runtime registration."
+    },
     "stateFamilyExploration": "art/source/kitchen-high-resolution-foundation-2026-10-22-v1/kitchen-complete-state-family-atlas-v5-strict-ligne-claire.png",
     "compositionViewExclusions": [
       "the tall fridge; the basic game fridge remains one-bay and undercounter",
@@ -138,7 +145,7 @@
       "components": ["mostly closed door hanging down-left from the surviving lower-right hinge"],
       "contents": "restrained hint only: milk, one container and wilted greens",
       "loops": ["small irregular hinge-supported door tremor"],
-      "postHocEffects": ["water leak", "floor ripple"]
+      "postHocEffects": ["water leak beneath sagging door", "small floor puddle"]
     },
     "sink": {
       "components": ["intact rear-set tap and centred sink body"],
@@ -146,6 +153,9 @@
       "postHocEffects": ["leak stream", "drips", "floor puddle/ripple"]
     },
     "dishwasher": {
+      "offIndicators": "all three fixed lamp housings dark",
+      "onIndicators": "same three fixed lamp housings steadily green",
+      "brokenIndicators": "all three fixed lamp housings red with independent deterministic irregular out-of-phase blink schedules",
       "components": ["door flopped open on its full lower hinge", "handle on the door underside", "error LED"],
       "contents": "restrained hint only: one rack, a few plates and one cup",
       "loops": ["error LED blink", "door tremor"],
@@ -195,6 +205,7 @@
     "approvedCabinetryFoundation": true,
     "productionCropsApproved": false,
     "stateVariantsApproved": false,
+    "stateVisualSheetApproved": true,
     "productionChanged": false,
     "runtimeChanged": false,
     "registrationOpen": false,
