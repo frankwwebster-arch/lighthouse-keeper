@@ -71,6 +71,9 @@ the studio's “Only pictures not yet in ligne claire” filter shows them.
   `symbol-soap-bubbles`, `symbol-sizzle-spark`, `symbol-heat-curls`,
   `symbol-heat-shimmer`, `symbol-pleasant-aroma`, `symbol-foul-odour`,
   `symbol-clean-glint`, `symbol-question-mark`.
+  **Superseded 22 Oct (Frank's m1 answer):** these marks are drawn in Hergé's
+  black ink instead, in `docs/CODEX_PROMPT_BUBBLE_STORIES_INK_MARKS_AND_RECIPE_PICTURES_2026-10-22.md`.
+  Skip them here.
 
 **Batch 2: new pictures the stories are waiting for** (new ids, so the
 stories pick them up once Claude adds them):
