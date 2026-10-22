@@ -1,0 +1,103 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "harvest",
+  "label": "Harvest the garden",
+  "appliesTo": {
+    "assetId": "garden.vegetable-bed",
+    "label": "Vegetable bed"
+  },
+  "cast": {
+    "veg": {
+      "picture": "harvest-vegetables",
+      "role": "hero"
+    },
+    "snips": {
+      "picture": "garden-secateurs",
+      "role": "support"
+    },
+    "barrow": {
+      "picture": "garden-wheelbarrow",
+      "role": "support"
+    },
+    "fruit": {
+      "picture": "harvest-fruit",
+      "role": "support"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "veg"
+    },
+    {
+      "do": "chop",
+      "who": "snips",
+      "onto": "veg",
+      "mark": "symbol-motion-ticks"
+    },
+    {
+      "do": "present",
+      "who": "barrow"
+    },
+    {
+      "do": "land-on",
+      "who": "veg",
+      "onto": "barrow"
+    },
+    {
+      "do": "land-on",
+      "who": "fruit",
+      "onto": "barrow"
+    },
+    {
+      "do": "pause",
+      "speed": "slow"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [
+    {
+      "picture": "symbol-clean-glint",
+      "on": "barrow",
+      "fromStep": 6,
+      "toStep": 6
+    }
+  ],
+  "props": [
+    {
+      "picture": "garden-rake",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 6
+    },
+    {
+      "picture": "garden-gloves",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 6
+    }
+  ],
+  "sfx": [
+    {
+      "step": 2,
+      "at": "contact",
+      "cue": "secateurs-snip",
+      "owner": "harvest",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 4,
+      "at": "contact",
+      "cue": "veg-thud",
+      "owner": "harvest",
+      "kind": "activity-beat"
+    }
+  ],
+  "notes": "Draft by Claude, 22 Oct 2026, from Frank's ticked recipe list. The vegetables are snipped with the secateurs, the wheelbarrow comes, the vegetables and then the fruit pile into it, and it rests full. The rake and gloves circle."
+}

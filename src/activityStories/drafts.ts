@@ -17,6 +17,10 @@ import fryUp from '../../data/activity-stories/stories/fry-up.json'
 import lunch from '../../data/activity-stories/stories/lunch.json'
 import makeTea from '../../data/activity-stories/stories/make-tea.json'
 import woodwork from '../../data/activity-stories/stories/woodwork.json'
+import toast from '../../data/activity-stories/stories/toast.json'
+import sweep from '../../data/activity-stories/stories/sweep.json'
+import cleanLoo from '../../data/activity-stories/stories/clean-loo.json'
+import harvest from '../../data/activity-stories/stories/harvest.json'
 import styleReview from '../../data/activity-stories/style-review.json'
 import { cleanStory, type Library, type Story, type StyleReview } from './format'
 
@@ -32,6 +36,10 @@ export const STORY_FILES = {
   'bake-cake': bakeCake,
   'collect-eggs': collectEggs,
   woodwork,
+  toast,
+  sweep,
+  'clean-loo': cleanLoo,
+  harvest,
 } as const
 
 export const STORY_DRAFTS: Story[] = Object.values(STORY_FILES).map((s) => cleanStory(s)).filter((s): s is Story => !!s)

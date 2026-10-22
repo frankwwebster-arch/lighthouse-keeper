@@ -1,0 +1,110 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "sweep",
+  "label": "Sweep the floor",
+  "appliesTo": {
+    "assetId": "kitchen.cleaning-cupboard",
+    "label": "Cleaning cupboard (broom)"
+  },
+  "cast": {
+    "dust": {
+      "picture": "cleaning-dust-pile",
+      "role": "hero"
+    },
+    "broom": {
+      "picture": "tool-broom",
+      "role": "support"
+    },
+    "pan": {
+      "picture": "tool-dustpan",
+      "role": "support"
+    },
+    "brush": {
+      "picture": "tool-hand-brush",
+      "role": "support"
+    },
+    "bag": {
+      "picture": "consumable-bin-bag-roll",
+      "role": "support"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "dust"
+    },
+    {
+      "do": "sweep",
+      "who": "broom",
+      "onto": "dust"
+    },
+    {
+      "do": "present",
+      "who": "pan"
+    },
+    {
+      "do": "drop-in",
+      "who": "dust",
+      "onto": "pan",
+      "mark": "symbol-dust-puff"
+    },
+    {
+      "do": "sweep",
+      "who": "brush",
+      "onto": "pan",
+      "speed": "quick"
+    },
+    {
+      "do": "present",
+      "who": "bag"
+    },
+    {
+      "do": "pour",
+      "who": "pan",
+      "onto": "bag",
+      "mark": "symbol-dust-puff"
+    },
+    {
+      "do": "p",
+      "who": "a",
+      "onto": "u"
+    },
+    {
+      "do": "serve",
+      "who": "bag"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [
+    {
+      "picture": "symbol-clean-glint",
+      "on": "bag",
+      "fromStep": 8,
+      "toStep": 8
+    }
+  ],
+  "props": [],
+  "sfx": [
+    {
+      "step": 2,
+      "at": "contact",
+      "cue": "broom-swish",
+      "owner": "sweep",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 7,
+      "at": "contact",
+      "cue": "dust-tip",
+      "owner": "sweep",
+      "kind": "activity-beat"
+    }
+  ],
+  "notes": "Draft by Claude, 22 Oct 2026, from Frank's ticked recipe list. A little dust pile, the broom sweeps it together, the dustpan comes, the dust goes in, the hand brush flicks the last of it, the pan tips into the bin bag, which is carried off."
+}

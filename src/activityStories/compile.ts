@@ -259,6 +259,11 @@ export function checkStory(story: Story, lib: Library): Issue[] {
     } else if (s.do === 'serve') {
       status[s.who] = 'gone'
       delete sitsOn[s.who]
+      // What sat on it is served with it.
+      for (let more = true; more; ) {
+        more = false
+        for (const k of Object.keys(sitsOn)) if (status[sitsOn[k]] === 'gone') { status[k] = 'gone'; delete sitsOn[k]; more = true }
+      }
     } else if (s.do === 'drop-in' || TOOLS.has(s.do)) status[s.who] = 'gone'
     else if (s.do === 'reveal') {
       // Whatever sat on the target is used up; with `replace` the result takes the target's own place.
@@ -475,6 +480,8 @@ export function compileStory(input: Story, lib: Library): Compiled {
         }
         status[m] = 'gone'
       }
+      // It leaves any pile it sat on before (the toast moving from the toaster to the plate).
+      for (const m of members) if (m !== onto) stacks[m] = stacks[m].filter((x) => x !== who)
       stacks[onto!].push(who)
       status[who] = 'stacked'
     } else if (step.do === 'drop-in') {
@@ -674,12 +681,22 @@ export function compileStory(input: Story, lib: Library): Compiled {
       const p = last[who]!
       const owner = members.find((m) => m !== who && stacks[m].includes(who))
       if (owner) stacks[owner] = stacks[owner].filter((m) => m !== who)
+      // Whatever sits on it goes with it (the toast on its plate).
+      const riders: string[] = []
+      for (let k = 0; k < riders.length + 1; k++) for (const m of stacks[k === 0 ? who : riders[k - 1]] ?? []) if (last[m] && !riders.includes(m)) riders.push(m)
       for (let i = 0; i < total; i++) {
         const t = ease((i + 1) / total)
         const lift = i === 0 ? -4 : 0
         const to = ltr ? { x: EXIT_X, y: p.y - 18 } : { x: p.x, y: -130 }
-        set(who, f0 + i, { ...p, x: lerp(p.x, to.x, i === 0 ? 0 : t), y: lerp(p.y, to.y, i === 0 ? 0 : t) + lift, r: ltr ? 6 * t : 0, o: i === total - 1 ? 0 : i === total - 2 ? 0.5 : 1, z: 11 })
+        const at = { ...p, x: lerp(p.x, to.x, i === 0 ? 0 : t), y: lerp(p.y, to.y, i === 0 ? 0 : t) + lift, r: ltr ? 6 * t : 0, o: i === total - 1 ? 0 : i === total - 2 ? 0.5 : 1, z: 11 }
+        set(who, f0 + i, at)
+        for (const m of riders) {
+          const q = last[m]!
+          set(m, f0 + i, { ...q, x: q.x + at.x - (poses[who][f0 + i - 1] ?? p).x, y: q.y + at.y - (poses[who][f0 + i - 1] ?? p).y, o: at.o, z: 12 })
+        }
       }
+      for (const m of riders) status[m] = 'gone'
+      stacks[who] = []
       status[who] = 'gone'
     } else if (step.do === 'reveal') {
       const t = last[onto!]!

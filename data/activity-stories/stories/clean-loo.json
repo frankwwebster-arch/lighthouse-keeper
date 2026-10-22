@@ -1,0 +1,109 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "clean-loo",
+  "label": "Clean the loo",
+  "appliesTo": {
+    "assetId": "bathroom.toilet",
+    "label": "Toilet"
+  },
+  "cast": {
+    "loo": {
+      "picture": "bathroom-toilet",
+      "role": "hero"
+    },
+    "cleaner": {
+      "picture": "cleaner-toilet-bottle",
+      "role": "support"
+    },
+    "bleach": {
+      "picture": "cleaner-bleach-bottle",
+      "role": "support"
+    },
+    "brush": {
+      "picture": "bathroom-loo-brush",
+      "role": "support"
+    },
+    "flush": {
+      "picture": "bathroom-flush-handle",
+      "role": "support"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "loo"
+    },
+    {
+      "do": "pour",
+      "who": "cleaner",
+      "onto": "loo"
+    },
+    {
+      "do": "pour",
+      "who": "bleach",
+      "onto": "loo",
+      "speed": "quick"
+    },
+    {
+      "do": "scrub",
+      "who": "brush",
+      "onto": "loo"
+    },
+    {
+      "do": "tighten",
+      "who": "flush",
+      "onto": "loo",
+      "mark": "symbol-water-droplets"
+    },
+    {
+      "do": "pause",
+      "speed": "slow"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [
+    {
+      "picture": "symbol-foul-odour",
+      "on": "loo",
+      "fromStep": 1,
+      "toStep": 3
+    },
+    {
+      "picture": "symbol-clean-glint",
+      "on": "loo",
+      "fromStep": 6,
+      "toStep": 6
+    }
+  ],
+  "props": [
+    {
+      "picture": "wear-rubber-gloves-pair",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 6
+    }
+  ],
+  "sfx": [
+    {
+      "step": 4,
+      "at": "contact",
+      "cue": "brush-scrub",
+      "owner": "clean-loo",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 5,
+      "at": "contact",
+      "cue": "toilet-flush",
+      "owner": "bathroom.toilet",
+      "kind": "asset-state"
+    }
+  ],
+  "notes": "Draft by Claude, 22 Oct 2026, from Frank's ticked recipe list. A smelly loo, toilet cleaner and bleach go in, the loo brush scrubs, the handle flushes, and it gleams. Rubber gloves circle."
+}

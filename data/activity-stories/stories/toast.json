@@ -1,0 +1,144 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "toast",
+  "label": "Make toast",
+  "appliesTo": {
+    "assetId": "kitchen.toaster",
+    "label": "Toaster"
+  },
+  "cast": {
+    "toaster": {
+      "picture": "toast-toaster",
+      "role": "hero"
+    },
+    "bread": {
+      "picture": "toast-slices",
+      "role": "support"
+    },
+    "toast": {
+      "picture": "toast-slices",
+      "role": "support",
+      "appear": "symbol-steam-puff"
+    },
+    "plate": {
+      "picture": "kitchen-plate",
+      "role": "support"
+    },
+    "knife": {
+      "picture": "knife-paring",
+      "role": "support"
+    },
+    "spoon": {
+      "picture": "cooking-spoon",
+      "role": "support"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "toaster"
+    },
+    {
+      "do": "drop-in",
+      "who": "bread",
+      "onto": "toaster"
+    },
+    {
+      "do": "pause",
+      "speed": "slow"
+    },
+    {
+      "do": "reveal",
+      "who": "toast",
+      "onto": "toaster"
+    },
+    {
+      "do": "present",
+      "who": "plate"
+    },
+    {
+      "do": "land-on",
+      "who": "toast",
+      "onto": "plate"
+    },
+    {
+      "do": "brush",
+      "who": "knife",
+      "onto": "toast"
+    },
+    {
+      "do": "brush",
+      "who": "spoon",
+      "onto": "toast",
+      "speed": "quick"
+    },
+    {
+      "do": "p",
+      "who": "a",
+      "onto": "u"
+    },
+    {
+      "do": "serve",
+      "who": "plate"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [
+    {
+      "picture": "symbol-heat-curls",
+      "on": "toaster",
+      "fromStep": 2,
+      "toStep": 3
+    },
+    {
+      "picture": "symbol-clean-glint",
+      "on": "toast",
+      "fromStep": 9,
+      "toStep": 9
+    }
+  ],
+  "props": [
+    {
+      "picture": "toast-butter-jam",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 10
+    },
+    {
+      "picture": "condiment-honey-pot",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 10
+    }
+  ],
+  "sfx": [
+    {
+      "step": 2,
+      "at": "contact",
+      "cue": "toaster-lever",
+      "owner": "kitchen.toaster",
+      "kind": "asset-state"
+    },
+    {
+      "step": 4,
+      "at": "start",
+      "cue": "toast-pop",
+      "owner": "kitchen.toaster",
+      "kind": "asset-state"
+    },
+    {
+      "step": 9,
+      "at": "start",
+      "cue": "food-ready",
+      "owner": "toast",
+      "kind": "completion"
+    }
+  ],
+  "notes": "Draft by Claude, 22 Oct 2026, from Frank's ticked recipe list. Two slices drop into the toaster, it heats, the toast pops up and goes onto a plate, the knife spreads the butter and the spoon the jam, and the plate is served with the toast on it. The butter-and-jam and the honey circle. A picture of buttered toast with jam would make a better ending; until then the toast stays plain."
+}
