@@ -1,0 +1,71 @@
+{
+  "schema": "lighthouse-keeper/reversible-review-batch@1",
+  "set": "kitchen-dishwasher-ligne-claire-v5",
+  "status": "blocked-pending-explicit-frank-approval",
+  "register": false,
+  "promote": false,
+  "currentSelectorChanges": [],
+  "productionWrites": [],
+  "candidate": {
+    "manifest": {
+      "file": "art/drafts/kitchen-dishwasher-ligne-claire-2026-10-22-v5/manifest.json",
+      "sha256": "c33588d5a7f1d76791ab2cde4594280c650b69a402c734e2722d69d9cbf0e363"
+    },
+    "publicShell": {
+      "file": "public/keeper-review/kitchen-dishwasher-ligne-claire-v5/index.html",
+      "sha256": "9fe148747cc65f45702f3a91d63b098ea5867f3919fcecd78d9e4af7d147aec2"
+    }
+  },
+  "publishedAssets": [
+    {
+      "source": "review-archive/objects/d0/d006ccfa83bf5c754a7f1249d3969ffe464d3853a15131f64cf0c48d8239b31d.png",
+      "sourceSha256": "d006ccfa83bf5c754a7f1249d3969ffe464d3853a15131f64cf0c48d8239b31d",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-ligne-claire-v5/assets/current--dishwasher-off.png"
+    },
+    {
+      "source": "review-archive/objects/ce/ce255258ac4b4df534048a3afd6afd2c1977781d184a83a931ee0c492cb3f86e.png",
+      "sourceSha256": "ce255258ac4b4df534048a3afd6afd2c1977781d184a83a931ee0c492cb3f86e",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-ligne-claire-v5/assets/candidate--dishwasher-off.png"
+    },
+    {
+      "source": "review-archive/objects/f7/f7a8976bc9cfaf83feb443a65c8b20bf075bff821a4053be5ace71fecb124953.png",
+      "sourceSha256": "f7a8976bc9cfaf83feb443a65c8b20bf075bff821a4053be5ace71fecb124953",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-ligne-claire-v5/assets/current--dishwasher-on.png"
+    },
+    {
+      "source": "review-archive/objects/94/94752371e0040bc444df683faef8d92528498af35f714e875acfa3e0447ec615.png",
+      "sourceSha256": "94752371e0040bc444df683faef8d92528498af35f714e875acfa3e0447ec615",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-ligne-claire-v5/assets/candidate--dishwasher-on.png"
+    },
+    {
+      "source": "review-archive/objects/06/061aad8aa14ee97a8cf8b239820a3a8cba8ba5766975ac4a1fa1142762511616.png",
+      "sourceSha256": "061aad8aa14ee97a8cf8b239820a3a8cba8ba5766975ac4a1fa1142762511616",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-ligne-claire-v5/assets/current--dishwasher-broken.png"
+    },
+    {
+      "source": "review-archive/objects/a5/a5d4fbf414e87e32f35ae74dc8a4d6ac6dd0fc0737bb4b003664e0898a21cc0b.png",
+      "sourceSha256": "a5d4fbf414e87e32f35ae74dc8a4d6ac6dd0fc0737bb4b003664e0898a21cc0b",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-ligne-claire-v5/assets/candidate--dishwasher-broken.png"
+    },
+    {
+      "source": "review-archive/objects/fe/fe08cc2239778c467e470ff368eaccb35d29553edd97c50b7378d697cf729d18.png",
+      "sourceSha256": "fe08cc2239778c467e470ff368eaccb35d29553edd97c50b7378d697cf729d18",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-ligne-claire-v5/assets/dishwasher-v41-v5-ghost.png"
+    },
+    {
+      "source": "review-archive/objects/ff/ff8aa36ec1a1f1b81046d55218d5a99d277279203c7e82aca74c6fcc5aa55e11.png",
+      "sourceSha256": "ff8aa36ec1a1f1b81046d55218d5a99d277279203c7e82aca74c6fcc5aa55e11",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-ligne-claire-v5/assets/dishwasher-control-panel-invariance.png"
+    },
+    {
+      "source": "review-archive/objects/4f/4f2da293f55043c5612f1c0f09cfd36264b53c1081cddedbdc9d9348d9ae9015.png",
+      "sourceSha256": "4f2da293f55043c5612f1c0f09cfd36264b53c1081cddedbdc9d9348d9ae9015",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-ligne-claire-v5/assets/dishwasher-64px-proof.png"
+    },
+    {
+      "source": "review-archive/objects/b4/b4670aa32270f2f4b02e331b6c22828108f6addbe96c6ea8494107b91a66b900.png",
+      "sourceSha256": "b4670aa32270f2f4b02e331b6c22828108f6addbe96c6ea8494107b91a66b900",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-ligne-claire-v5/assets/dishwasher-worktop-run-ghost.png"
+    }
+  ]
+}

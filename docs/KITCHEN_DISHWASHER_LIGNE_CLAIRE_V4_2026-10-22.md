@@ -1,12 +1,17 @@
 # Kitchen Dishwasher Ligne-Claire V4
 
-Status: immutable review candidate; not approved, registered, promoted or wired.
+Status: immutable rejected review candidate; superseded by V5; never approved,
+registered, promoted or wired.
 
 Review: `/keeper-review/kitchen-dishwasher-ligne-claire-v4/index.html`
 
 V3 is preserved and rejected: its measurements improved, but it still read as
 a separately designed appliance beside the approved oven and cabinets. V4 is
 judged first as a member of the full cabinet–dishwasher–oven run.
+
+Frank subsequently rejected V4 because it remained profoundly different from
+the approved oven stylistically and left turquoise rounded-cap pixels visible
+under the worktop overhang. V5/V52 is the active replacement review.
 
 ## Construction
 

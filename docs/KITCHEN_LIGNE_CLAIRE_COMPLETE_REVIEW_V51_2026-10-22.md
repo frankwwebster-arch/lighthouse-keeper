@@ -1,7 +1,8 @@
 # Kitchen Ligne-Claire Complete Review V51
 
-Status: immutable closed review. Kettle V47 art and its V46 motion/SFX
-presentation are approved; Dishwasher V4 is the sole unapproved candidate.
+Status: immutable rejected/superseded review. Kettle V47 art and its V46
+motion/SFX presentation remain approved; Dishwasher V4 was rejected and V52
+is the active replacement. Nothing in V51 was registered, promoted or wired.
 
 Review: `/keeper-review/kitchen` or
 `/keeper-review/kitchen-ligne-claire-complete-review-v51/index.html`.

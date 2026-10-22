@@ -916,24 +916,26 @@ handoff for Standard/On/Broken and transition SFX slots is at
 [`docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md`](docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md).
 Delivery:
 [`docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md`](docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md).
-Kitchen Ligne-Claire Complete Review V51 is now the active closed review at
+Kitchen Ligne-Claire Complete Review V52 is now the active closed review at
 `/keeper-review/kitchen` (versioned route:
-`/keeper-review/kitchen-ligne-claire-complete-review-v51/index.html`). It keeps
+`/keeper-review/kitchen-ligne-claire-complete-review-v52/index.html`). It keeps
 the complete V46 Kettle V47 motion/SFX workbench and changes only the rejected
-dishwasher family. Dishwasher V3 is rejected because it still read as a
-separately designed appliance. Dishwasher V4 preserves every V41 `98 × 82 px`
-canvas and alpha channel but derives its visible construction from the approved
-set: oven-family warm enamel and long slender copper handle, compact invariant
-controls, cabinet blue stiles/plinth, and the matching Cabinet V3 worktop copied
-through row `16`, including the dark underside/front return that V3 missed. The
-primary evidence shows the cabinet–dishwasher–oven run clean at native origins
-before any diagnostic ghost. V51's normalised JavaScript is
+Dishwasher V4. V4 is rejected because its flat simplified drawing remained
+profoundly different from the approved oven and still exposed turquoise pixels
+in the shoulders beneath the worktop overhang. Dishwasher V5 preserves every
+V41 `98 × 82 px` canvas and alpha channel but is fully redrawn under the
+approved oven's dimensional ligne-claire authority: warm shaded enamel,
+controlled black contours, saturated blue structure and orange/copper hardware.
+The generated face contains no worktop. Exact approved Cabinet V3 pixels supply
+the complete worktop through row `16` and both under-overhang cabinet shoulders
+through row `29`. The primary evidence shows the cabinet–dishwasher–oven run
+clean at native origins before any diagnostic ghost. V52's normalised JavaScript is
 byte-identical to V46, so the approved kettle motion/SFX presentation carries
-forward exactly while Dishwasher V4 remains the sole unapproved visual
+forward exactly while Dishwasher V5 remains the sole unapproved visual
 candidate. The registration/promotion gate remains closed. See
-[`docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V4_2026-10-22.md`](docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V4_2026-10-22.md)
+[`docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V5_2026-10-22.md`](docs/KITCHEN_DISHWASHER_LIGNE_CLAIRE_V5_2026-10-22.md)
 and
-[`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V51_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V51_2026-10-22.md).
+[`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V52_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V52_2026-10-22.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
