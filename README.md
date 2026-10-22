@@ -696,7 +696,7 @@ is pinned without changing its reviewed bytes or promoting runtime/Final art.
 Kettle V42–V44 are preserved but rejected. V42 was pixelated and floated;
 V43 destroyed its polished concept finish in a 44-pixel downsample; V44 seated
 correctly but replaced the preferred concept language with a poor miniature
-redraw. The active correction is Kettle V45 at
+redraw. The historical high-resolution correction is Kettle V45 at
 `/keeper-review/kitchen-kettle-standalone-v45/`. Its actual production masters
 are isolated directly from the preferred high-resolution concepts: 588 × 540
 intact source pixels and a separate 976 × 928 severely Broken source. Runtime
@@ -720,8 +720,8 @@ support, interaction, rattle and Broken-lock contract remain exact; only
 Broken steam is re-anchored over the opening. Frank approved the exact V47
 sheet on 22 October 2026. The external approval record hash-pins the immutable
 review pack and explicitly leaves runtime promotion, lid-layer animation,
-configurable vibration and new SFX to a later kitchen-assets version; nothing
-is promoted or wired. See
+configurable vibration and new SFX outside the V47 approval. V46 now presents
+those motion/SFX choices for review without promotion or runtime wiring. See
 [`docs/review/kitchen-kettle-bubble-authority-v47-approval-2026-10-22.json`](docs/review/kitchen-kettle-bubble-authority-v47-approval-2026-10-22.json).
 See
 [`docs/KITCHEN_DISHWASHER_WORKBENCH_V39_2026-10-20.md`](docs/KITCHEN_DISHWASHER_WORKBENCH_V39_2026-10-20.md).
@@ -871,7 +871,7 @@ repair/healing contract remain fixed. V14 is retained as rejected internal
 proof because its foreshortened glass read as a displaced handle. V15 is
 immutable, reversible, unregistered and blocked on explicit approval. See
 [`docs/KITCHEN_OVEN_BROKEN_AJAR_LIGNE_CLAIRE_V15_2026-10-22.md`](docs/KITCHEN_OVEN_BROKEN_AJAR_LIGNE_CLAIRE_V15_2026-10-22.md).
-Kitchen Ligne-Claire Complete Review V45 is the coordinated closed review at
+Kitchen Ligne-Claire Complete Review V45 is the immutable predecessor at
 `/keeper-review/kitchen-ligne-claire-complete-review-v45/index.html`. It preserves the
 approved V3 fitted family, V8 Oven On and V12 Broken body; includes the
 unapproved V13 Off and V15 ajar-door candidates; and adds exact-size
@@ -895,6 +895,23 @@ tea proof is retained only as failed provenance because its milk vessels and
 bread knife did not separate clearly at 64 px.
 See
 [`docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V45_2026-10-22.md`](docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V45_2026-10-22.md).
+Kitchen Broken-Appliance Motion Workbench V46 is the active closed review at
+`/keeper-review/kitchen` (versioned route:
+`/keeper-review/kitchen-ligne-claire-complete-review-v46/index.html`). It removes
+all superseded kettle choices from the selectable review and presents only the
+three exact, approved V47 states. Its presentation-only contract offers
+Off/Subtle/Emphatic irregular whole-object tremor for V47 and the dishwasher,
+with a separate V47 lid hover/vibration layer while Broken steam stays anchored
+over the open top. SFX has an independent toggle and a short intermittent
+metal-rattle placeholder which can be replaced for the current browser session
+by dropping an audio file onto the slot or using its file picker. Repair zeros
+motion and stops pending/active sound immediately while preserving V41 movement
+locking and healing. V46 is unapproved, unpromoted and unwired; approved/static
+art and production/runtime selectors are unchanged. Claude's game-wide runtime
+handoff for Standard/On/Broken and transition SFX slots is at
+[`docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md`](docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md).
+Delivery:
+[`docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md`](docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

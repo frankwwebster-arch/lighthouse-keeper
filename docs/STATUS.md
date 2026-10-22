@@ -554,9 +554,9 @@ included. Only the Broken steam's asset-local x anchor moves so the unchanged
 animation rises from the open top. Frank approved the exact V47 sheet on 22
 October 2026. The approval is recorded externally and hash-pins every state,
 effect and evidence image without rewriting the immutable pre-approval pack.
-V47 remains unpromoted and unwired; separated-lid animation, configurable
-Broken vibration and new SFX are explicitly deferred to a new kitchen-assets
-version. V45, Bubble V2, runtime and production remain unchanged.
+V47 remains unpromoted and unwired. V46 now supplies the separately reviewable
+lid animation, configurable Broken vibration and replaceable SFX proof while
+leaving V45, Bubble V2, runtime and production unchanged.
 
 Kitchen Ligne-Claire Sweep V1 at
 `/keeper-review/kitchen-ligne-claire-sweep-v1/` is a separate coordinated
@@ -704,8 +704,8 @@ the approval gate closed. Delivery:
 `docs/KITCHEN_OVEN_BROKEN_AJAR_LIGNE_CLAIRE_V15_2026-10-22.md`.
 
 Kitchen Ligne-Claire Complete Review V45 at
-`/keeper-review/kitchen-ligne-claire-complete-review-v45/index.html` is the active closed
-kitchen-wide review. It retains V44 byte-for-byte and contains 60
+`/keeper-review/kitchen-ligne-claire-complete-review-v45/index.html` is the immutable
+closed kitchen-wide predecessor. It retains V44 byte-for-byte and contains 60
 current/candidate object-state records, 16 effect records, 14 family contact
 sheets and nine approved/current condiment V2 calibration references. Approved V3/V8/V12 authorities
 remain preserved; V13 Off, V15 ajar Broken, the corrected-control-rail
@@ -720,6 +720,24 @@ verified. Every route is root-absolute through the same-origin archive proxy.
 No current selector, production asset, runtime, gameplay, collision or room
 layout changed. Delivery:
 `docs/KITCHEN_LIGNE_CLAIRE_COMPLETE_REVIEW_V45_2026-10-22.md`.
+
+Kitchen Broken-Appliance Motion Workbench V46 at `/keeper-review/kitchen` and
+`/keeper-review/kitchen-ligne-claire-complete-review-v46/index.html` is the
+active closed kitchen review. It replaces every selectable historical kettle
+candidate with approved V47 Off/On/Broken art and exposes no alternative kettle.
+Static pixels are unchanged. Presentation uses separate irregular whole-object
+and optional component transform layers: V47's detached lid hovers/vibrates
+independently while Broken steam remains anchored over the open top. The same
+Off/Subtle/Emphatic whole-object contract is demonstrated on the dishwasher.
+An independent, default-off SFX control plays an intermittent metal-rattle
+placeholder; dropping an audio file onto its slot or using the file picker
+replaces it for that browser session without touching canonical audio. Repair
+synchronously zeros transforms, cancels timers, stops active nodes and releases
+the V41 movement lock. V46 motion/SFX remains unapproved, unpromoted and
+unwired. The game-wide asset-state SFX implementation is deliberately handed
+to Claude in
+`docs/prompts/CLAUDE_GAME_WIDE_ASSET_STATE_SFX_SLOTS_2026-10-22.md`. Delivery:
+`docs/KITCHEN_BROKEN_MOTION_WORKBENCH_V46_2026-10-22.md`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

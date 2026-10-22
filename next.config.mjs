@@ -393,6 +393,16 @@ export default {
         destination: '/keeper-review/kitchen-kettle-standalone-v45/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen',
+        destination: '/keeper-review/kitchen-ligne-claire-complete-review-v46/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/kitchen-ligne-claire-complete-review-v46',
+        destination: '/keeper-review/kitchen-ligne-claire-complete-review-v46/index.html',
+        permanent: false,
+      },
     ]
   },
 }
