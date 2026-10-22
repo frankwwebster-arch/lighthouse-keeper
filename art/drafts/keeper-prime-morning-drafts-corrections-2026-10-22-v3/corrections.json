@@ -1,0 +1,280 @@
+{
+  "schema": "lighthouse-keeper/prime-animation-feedback-corrections@1",
+  "version": 3,
+  "generatedOn": "2026-10-22",
+  "sourceBatch": "data/keeper_prime_animation_drafts_v2.json",
+  "sourceBatchSha256": "ebe436366d73ea657d6c580b120e90288d2049de5e883d1273cf06d537713e95",
+  "authority": {
+    "rearColourAndBody": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+  },
+  "excluded": [
+    {
+      "sequence": "lift-enter-exit-v1",
+      "v2Position": 2,
+      "sha256": "55305750610604207ffd8d293d41f3418a7296c61d7a613d3ba9c728f52f8fd7",
+      "reason": "Frank: frame is pointless"
+    }
+  ],
+  "renamed": [
+    {
+      "sequence": "diary-turn-sit-write-return-v1",
+      "from": "Diary: turn, sit, write, stand and return",
+      "to": "Turn, sit, hold, stand and return",
+      "reason": "No writing motion is depicted."
+    }
+  ],
+  "frames": [
+    {
+      "sequence": "lift-enter-exit-v1",
+      "oldPosition": 5,
+      "newPosition": 4,
+      "sourceSha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd",
+      "draftSha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+      "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+    },
+    {
+      "sequence": "lift-enter-exit-v1",
+      "oldPosition": 8,
+      "newPosition": 7,
+      "sourceSha256": "a61f822bead5dcabda07feea87e17754e85bdd85682bb4b479fcfee9ed54766c",
+      "draftSha256": "287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c",
+      "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+    },
+    {
+      "sequence": "cook-counter-v1",
+      "oldPosition": 1,
+      "newPosition": 1,
+      "sourceSha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd",
+      "draftSha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+      "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+    },
+    {
+      "sequence": "cook-counter-v1",
+      "oldPosition": 8,
+      "newPosition": 8,
+      "sourceSha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd",
+      "draftSha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+      "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+    },
+    {
+      "sequence": "brush-teeth-v1",
+      "oldPosition": 1,
+      "newPosition": 1,
+      "sourceSha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd",
+      "draftSha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+      "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+    },
+    {
+      "sequence": "brush-teeth-v1",
+      "oldPosition": 8,
+      "newPosition": 8,
+      "sourceSha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd",
+      "draftSha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+      "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+    },
+    {
+      "sequence": "wave-front-v1",
+      "oldPosition": 1,
+      "newPosition": 1,
+      "sourceSha256": "a61f822bead5dcabda07feea87e17754e85bdd85682bb4b479fcfee9ed54766c",
+      "draftSha256": "287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c",
+      "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+    },
+    {
+      "sequence": "wave-front-v1",
+      "oldPosition": 6,
+      "newPosition": 6,
+      "sourceSha256": "a61f822bead5dcabda07feea87e17754e85bdd85682bb4b479fcfee9ed54766c",
+      "draftSha256": "287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c",
+      "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+    },
+    {
+      "sequence": "front-seat-complete-route-v1",
+      "oldPosition": 8,
+      "newPosition": 8,
+      "sourceSha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "draftSha256": "287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c",
+      "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+    },
+    {
+      "sequence": "front-seat-complete-route-v1",
+      "oldPosition": 22,
+      "newPosition": 22,
+      "sourceSha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "draftSha256": "287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c",
+      "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 11,
+      "newPosition": 11,
+      "sourceSha256": "a829593415b8262502cda85267aea01c2763eb6b36e003039542267a8b12c529",
+      "draftSha256": "cda0bb9aff2214abdf8556bb0723331e34a8e6a41f3d7cedc03147dfb14bc8c6",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 12,
+      "newPosition": 12,
+      "sourceSha256": "278573c9601a1ba3b7f3d90629a551585ac908a44bdd472b375ebe4b0724bcf2",
+      "draftSha256": "80f627fcb8db3fa426da5a09659a8978f5b79168098c64281ec8aedc8d304eb6",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 13,
+      "newPosition": 13,
+      "sourceSha256": "e54f4d6f669d2c9e0fd4e36cc57bb7502f0b25b5ac6cc3edea6b7682d52dd00a",
+      "draftSha256": "bdba7fab114bfa7e3408910eceb6f90f6f0a7f2f6f2b9a2aa2079d5a6486bacb",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 14,
+      "newPosition": 14,
+      "sourceSha256": "b42cb772f708ad857b76253450dbcf72f93af96edbc92b2c5bd272caeef8026b",
+      "draftSha256": "5f8df85a50e6924d81364cf21a0fe25c0e72bdb4c21e482ca27fabe70cf7f040",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 15,
+      "newPosition": 15,
+      "sourceSha256": "acf9f752ad1292937312c4dab5f3abeb82e2b459ed0656ded2cc857165ae6bfc",
+      "draftSha256": "e93c0c8abe3a70d0d80075713cbbea6b1803666330f3a033cd7fe7a8753b546b",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 16,
+      "newPosition": 16,
+      "sourceSha256": "21cc593701ed485ede395ce978478714ef7f9205d4a5b46bec605bd251bc75ac",
+      "draftSha256": "1e023e806b8e17a0cedcc047ef6bd0ee4eb4e1b1b367628ae8fbfc1ac000045d",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 17,
+      "newPosition": 17,
+      "sourceSha256": "4b285d73a4d9a180d2c679aa52007d25f98504fe515528fed35dba3a0bf162d4",
+      "draftSha256": "b99a2bdb432e112e77acb9a2bad5a4ca540660bd9319da489f2411e7d9352596",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 18,
+      "newPosition": 18,
+      "sourceSha256": "8ada2fa0b22eabb1631e04e34e963ffca2a1b67fb5c8aaef1c0aa241f353ab68",
+      "draftSha256": "516aa78bc3323457065bd0940cf939eca601433ff6a072d78cdb347210394a60",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 19,
+      "newPosition": 19,
+      "sourceSha256": "36d72ad8807819354e6a8844c236460b5648c228c9756e74d46ebd0aa9a7df83",
+      "draftSha256": "0dc2b1985e6d5f66c7fd86686e3f1d8ac2feab6dec67cc55819a4a9970d59f3c",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 20,
+      "newPosition": 20,
+      "sourceSha256": "3663dc10ab588428977532bfe86a6d2946eca61def161d500d15a910cfcd5788",
+      "draftSha256": "636fe547de4e0da0a59fb0a8d770f057697d57227bbeafac60d121e801497be2",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 21,
+      "newPosition": 21,
+      "sourceSha256": "01e33037f4564abbbeedaf4bef260503f6ef572bfe1220d3fdb381c963e4a9e5",
+      "draftSha256": "adc6d2fa9935266bc5cac8b3e4229d4b54d6dd49788fbeea45122e958b4a880d",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 22,
+      "newPosition": 22,
+      "sourceSha256": "3a624f695960be2a74f2bc10869a98b7ccc731de1e927dcc4dd258f980499b03",
+      "draftSha256": "9e8ef6fe3647e70badfb7b9b1ae9bc96e2206909c16db930d88dd5e73996e148",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 23,
+      "newPosition": 23,
+      "sourceSha256": "60bf939c0d9a0c8eb5be5680248170136406e62a1cea981427a8ffb03fdda38b",
+      "draftSha256": "02f20f18705528a7640d582655560ae891d7ff205e3d052531d017edc2acd81b",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 24,
+      "newPosition": 24,
+      "sourceSha256": "b1c199001d4eb6c00c104f963cbefdc07b5efc08f0532666e3c36f9327b2f268",
+      "draftSha256": "9337d66d7ee1a3fa4f249bd21f6d9053413df59bad03f84aa57f034348617470",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 25,
+      "newPosition": 25,
+      "sourceSha256": "3b0a4be452b355b6489e4d778945f0d79f315c3aaf3d9dbe96d7b6474c77536d",
+      "draftSha256": "f50bf54b9b81487acd1d8a5fe22a45e6730616d51894ea2fb7da85c66b5fc507",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 26,
+      "newPosition": 26,
+      "sourceSha256": "528da5df6d009fcb76c8a8340ffe0e1152cae9bf615ab43ad1c860b63330d66c",
+      "draftSha256": "2dd137251531a7f9a2fcdad0ffc81d298cb3abab1e67b7ee4fb61b7395a21398",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 27,
+      "newPosition": 27,
+      "sourceSha256": "4d1bbf5f883a74bb9d581f05e71b9cf9e862d510b9d360d9345d031ca7eebefe",
+      "draftSha256": "35ab3065322e9e8102e463f89ec03d41136203fdbb58a88e7a2f3b0ad6e873e6",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 28,
+      "newPosition": 28,
+      "sourceSha256": "3cb8650e3cfdd7fdef4a96ad4a99903a2fb58585cc02feb25bd67014a2eaf946",
+      "draftSha256": "27e2bc9fb9744975fcf700014bf6985b6c4eddb57c9596e05edfe3a07324a2ba",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 29,
+      "newPosition": 29,
+      "sourceSha256": "47665f1a5663e293cfee4c24ef8c6f0d0af22aeb6c9db066c67303c637b14d28",
+      "draftSha256": "48af25ae9b6dafbf5427fc39926bf74377ebe2505ef0fa5061e48f8399dfeaab",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 30,
+      "newPosition": 30,
+      "sourceSha256": "e8a97566e58cd055fbf66da844dc89496c04c84a9f6a1bc4b991f32c22c08760",
+      "draftSha256": "28acff6cbb7b6d60b7f004adf9aab047ecb6dec0e117e5b017883b6188b7b6d2",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "oldPosition": 31,
+      "newPosition": 31,
+      "sourceSha256": "efd7ca6da147fc8613c08443d1adb4d282c322d44f5b2f58a4610cfa447e2e2d",
+      "draftSha256": "d92e0b2e02300fa2dfde982d7926f1e65b90b08e96ce88a05cde8b290915103e",
+      "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+    }
+  ],
+  "imageGenerationStudy": {
+    "usedInDelivery": false,
+    "reason": "Representative edit changed the Prime scale and rendering; deterministic authority-locked repair preserves exact identity."
+  }
+}

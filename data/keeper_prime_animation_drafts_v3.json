@@ -1,0 +1,4114 @@
+{
+  "schema": "lighthouse-keeper/prime-animation-draft-batch@1",
+  "version": 3,
+  "generatedOn": "2026-10-22",
+  "status": "feedback-corrected-review-only",
+  "note": "V3 preserves V2, removes only the redundant lift frame, corrects every reused passive front/back jumper occurrence, renames the non-writing seated route, and repairs the rear-work waist seam in versioned draft copies. No V1/V2, approved authority, runtime or production file is overwritten.",
+  "dimensions": {
+    "logicalCell": [
+      32,
+      40
+    ],
+    "authoringCell": [
+      256,
+      320
+    ],
+    "scale": 8,
+    "anchor": [
+      128,
+      320
+    ],
+    "capTop": 18,
+    "floorOpaqueY": 316
+  },
+  "colourLock": {
+    "jumperBlue": [
+      0,
+      108,
+      230
+    ],
+    "jumperCream": [
+      251,
+      232,
+      206
+    ],
+    "trousers": [
+      63,
+      75,
+      112
+    ],
+    "boots": [
+      63,
+      74,
+      111
+    ]
+  },
+  "canonicalAuthorities": {
+    "front": {
+      "path": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e"
+    },
+    "back": {
+      "path": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+      "sha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86"
+    },
+    "sideRight": {
+      "path": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+    }
+  },
+  "quarantinedSources": [
+    {
+      "id": "fridge-snack-v1",
+      "title": "Take and eat a fridge snack",
+      "path": "art/drafts/keeper-prime-fridge-snack-2026-10-22-v1/source/generated-sheet.png",
+      "sha256": "5eff6cdc6af9db4f61dde41c4a32c1e65c1735632c5bd4b57f0a9e7ad933d304",
+      "reason": "Adjacent source poses share opaque pixels; no frame crop or review export is permitted."
+    },
+    {
+      "id": "bed-day-nap-v1",
+      "title": "Get onto bed for a daytime nap",
+      "path": "art/drafts/keeper-prime-bed-nap-2026-10-22-v1/source/generated-sheet.png",
+      "sha256": "31b4f11616ea493592098098b63c75448c33c0ac1fe305e5054d436a9f77a08a",
+      "reason": "The seated-to-lying source poses overlap; rerender individual poses before review."
+    },
+    {
+      "id": "sweep-broom-v1",
+      "title": "Sweep with broom",
+      "path": "art/drafts/keeper-prime-sweep-2026-10-22-v1/source/generated-sheet.png",
+      "sha256": "6bdbe8ea311f27c48c6d67935f2f5a35db0c7d460101ec49b387ab05027aee1d",
+      "reason": "Broom/body ownership crosses source frame gaps; source is quarantined. It is retained as rejected history; the independently isolated Prime Sweep V2 candidate is now included in this page."
+    },
+    {
+      "id": "wave-front-v0",
+      "title": "Friendly wave first render",
+      "path": "art/drafts/keeper-prime-wave-2026-10-22-v1/source/generated-sheet.png",
+      "sha256": "6fbdc77b40fa395b9dd6d53063631c83cbbdb93f00d9c04f3ce1bf29f4be03c1",
+      "reason": "Two arm poses touched; superseded by isolated six-frame V1 candidate."
+    }
+  ],
+  "sequences": [
+    {
+      "id": "lift-enter-exit-v1",
+      "title": "Lift entry, ride handoff and exit",
+      "status": "feedback-corrected-versioned-draft-v3",
+      "source": {
+        "path": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v3/corrections.json",
+        "sha256": "ae8c541e9e4903b427781819ce3fe7d89cf22181727bac9ecbd3d6a5257ad358"
+      },
+      "draftStrip": {
+        "path": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v3/strips/lift-enter-exit-v1-30472bd2c03162fb.png",
+        "sha256": "30472bd2c03162fbeae631177f98a52c74d8d59db1ed501ae34f7e8e16797541"
+      },
+      "fps": 8,
+      "startPose": "walking-back",
+      "endPose": "standing-front",
+      "frames": [
+        {
+          "id": "lift-enter-exit-v1-v3-f01",
+          "label": "rear approach",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-93b52ca1f0acdc19.png",
+          "sha256": "93b52ca1f0acdc193f51083defd301b7bb28a01cc27d037f6065b4d7382a0017",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "lift-enter-exit-v1/v3-frame-01",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 1,
+            "sha256": "93b52ca1f0acdc193f51083defd301b7bb28a01cc27d037f6065b4d7382a0017"
+          },
+          "correction": null
+        },
+        {
+          "id": "lift-enter-exit-v1-v3-f02",
+          "label": "threshold contact",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-72735c61a746456d.png",
+          "sha256": "72735c61a746456d96b8c45c15d7279b6401462877fe3e3e3bdaf9501dea5ca0",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "lift-enter-exit-v1/v3-frame-02",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 3,
+            "sha256": "72735c61a746456d96b8c45c15d7279b6401462877fe3e3e3bdaf9501dea5ca0"
+          },
+          "correction": null
+        },
+        {
+          "id": "lift-enter-exit-v1-v3-f03",
+          "label": "cross threshold",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-5096eef239926236.png",
+          "sha256": "5096eef239926236272ba3b1ae521bb83e4375f66dcbcdb84417a9ec1810a77a",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "lift-enter-exit-v1/v3-frame-03",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 4,
+            "sha256": "5096eef239926236272ba3b1ae521bb83e4375f66dcbcdb84417a9ec1810a77a"
+          },
+          "correction": null
+        },
+        {
+          "id": "lift-enter-exit-v1-v3-f04",
+          "label": "ride-neutral handoff",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-e6520aab48100c44.png",
+          "sha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "lift-enter-exit-v1/v3-frame-04",
+          "authorityOverride": "back",
+          "priorV2": {
+            "position": 5,
+            "sha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd"
+          },
+          "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+        },
+        {
+          "id": "lift-enter-exit-v1-v3-f05",
+          "label": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-b9928540e08b0f17.png",
+          "sha256": "b9928540e08b0f172a2dd680e15e896190c5fa420f53bfa880c3100aa6189c07",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "lift-enter-exit-v1/v3-frame-05",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 6,
+            "sha256": "b9928540e08b0f172a2dd680e15e896190c5fa420f53bfa880c3100aa6189c07"
+          },
+          "correction": null
+        },
+        {
+          "id": "lift-enter-exit-v1-v3-f06",
+          "label": "side exit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-b943a6c6b0077ed4.png",
+          "sha256": "b943a6c6b0077ed4500f0b27db0de3392411230091141e8b6cd3d6dab1d324ca",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "lift-enter-exit-v1/v3-frame-06",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 7,
+            "sha256": "b943a6c6b0077ed4500f0b27db0de3392411230091141e8b6cd3d6dab1d324ca"
+          },
+          "correction": null
+        },
+        {
+          "id": "lift-enter-exit-v1-v3-f07",
+          "label": "front exit endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-287c42001ae5c757.png",
+          "sha256": "287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "lift-enter-exit-v1/v3-frame-07",
+          "authorityOverride": "front",
+          "priorV2": {
+            "position": 8,
+            "sha256": "a61f822bead5dcabda07feea87e17754e85bdd85682bb4b479fcfee9ed54766c"
+          },
+          "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+        }
+      ]
+    },
+    {
+      "id": "front-door-open-v1",
+      "title": "Front-door approach, open and pass through",
+      "status": "unapproved-versioned-draft-carried-from-v1",
+      "source": {
+        "path": "art/drafts/keeper-prime-front-door-2026-10-22-v1/source/generated-sheet.png",
+        "sha256": "d4447fa80e2cbd55be564e6d91e25c44e6d75741f98ebdf86840bd203e282680"
+      },
+      "draftStrip": {
+        "path": "art/drafts/keeper-prime-front-door-2026-10-22-v1/front-door-open-v1-4ac6a122d73ad3e8.png",
+        "sha256": "4ac6a122d73ad3e842b7384165eedb1d3a34a7d60d6e8a0c44ee3c028ed7af47"
+      },
+      "fps": 8,
+      "startPose": "standing-side-right",
+      "endPose": "walking-side-right",
+      "frames": [
+        {
+          "id": "front-door-open-v1-v3-f01",
+          "label": "standing endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-fed54ffc26cb6392.png",
+          "sha256": "fed54ffc26cb63921093ebcaa0e4eb9832352718bbe1110ab9c101872fad5fde",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-door-open-v1/v3-frame-01",
+          "authorityOverride": "sideRight",
+          "priorV2": {
+            "position": 1,
+            "sha256": "fed54ffc26cb63921093ebcaa0e4eb9832352718bbe1110ab9c101872fad5fde"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-door-open-v1-v3-f02",
+          "label": "reach",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-2b61df90e5d790f8.png",
+          "sha256": "2b61df90e5d790f807d41a28545c79bbad703607356659b6daba93fe4cd808e3",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-door-open-v1/v3-frame-02",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 2,
+            "sha256": "2b61df90e5d790f807d41a28545c79bbad703607356659b6daba93fe4cd808e3"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-door-open-v1-v3-f03",
+          "label": "handle contact",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-bdd99d3ea9fb93f8.png",
+          "sha256": "bdd99d3ea9fb93f8f17ce52f1f0b7bc2c58b41e28da8758c2faa0cd44e317c74",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-door-open-v1/v3-frame-03",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 3,
+            "sha256": "bdd99d3ea9fb93f8f17ce52f1f0b7bc2c58b41e28da8758c2faa0cd44e317c74"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-door-open-v1-v3-f04",
+          "label": "draw door",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-7fa8ae953391a50c.png",
+          "sha256": "7fa8ae953391a50c68a24ebe738285116af78bad39e221e18bf65c0c73779ef3",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-door-open-v1/v3-frame-04",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 4,
+            "sha256": "7fa8ae953391a50c68a24ebe738285116af78bad39e221e18bf65c0c73779ef3"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-door-open-v1-v3-f05",
+          "label": "leading step",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-335c9f5cb66efe5a.png",
+          "sha256": "335c9f5cb66efe5aaccfe4076d47a95e1bbff4237f936390dbcb67a81ff3da05",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-door-open-v1/v3-frame-05",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 5,
+            "sha256": "335c9f5cb66efe5aaccfe4076d47a95e1bbff4237f936390dbcb67a81ff3da05"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-door-open-v1-v3-f06",
+          "label": "walk handoff",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-04857d6f91011559.png",
+          "sha256": "04857d6f91011559272d4a0db933f1465a600c221cc307c38899bd491a55c17c",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-door-open-v1/v3-frame-06",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 6,
+            "sha256": "04857d6f91011559272d4a0db933f1465a600c221cc307c38899bd491a55c17c"
+          },
+          "correction": null
+        }
+      ]
+    },
+    {
+      "id": "cook-counter-v1",
+      "title": "Cook at counter",
+      "status": "feedback-corrected-versioned-draft-v3",
+      "source": {
+        "path": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v3/corrections.json",
+        "sha256": "ae8c541e9e4903b427781819ce3fe7d89cf22181727bac9ecbd3d6a5257ad358"
+      },
+      "draftStrip": {
+        "path": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v3/strips/cook-counter-v1-90c8010971ce5cb9.png",
+        "sha256": "90c8010971ce5cb90c394ace49b835cc52fbafd7cbb1b69fe053c9537254ff18"
+      },
+      "fps": 8,
+      "startPose": "standing-back",
+      "endPose": "standing-back",
+      "frames": [
+        {
+          "id": "cook-counter-v1-v3-f01",
+          "label": "rear endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-e6520aab48100c44.png",
+          "sha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/v3-frame-01",
+          "authorityOverride": "back",
+          "priorV2": {
+            "position": 1,
+            "sha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd"
+          },
+          "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+        },
+        {
+          "id": "cook-counter-v1-v3-f02",
+          "label": "lift right hand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-61055a4d5458c900.png",
+          "sha256": "61055a4d5458c900d1f3ea2b2178b999d4d620e5ff2a09f054e9bc4948ee0c67",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/v3-frame-02",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 2,
+            "sha256": "61055a4d5458c900d1f3ea2b2178b999d4d620e5ff2a09f054e9bc4948ee0c67"
+          },
+          "correction": null
+        },
+        {
+          "id": "cook-counter-v1-v3-f03",
+          "label": "two-hand work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-ef05e53367d8dde6.png",
+          "sha256": "ef05e53367d8dde66b9a6b5dd7874d5e21b2845516b9db4b168195ab9188e95f",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/v3-frame-03",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 3,
+            "sha256": "ef05e53367d8dde66b9a6b5dd7874d5e21b2845516b9db4b168195ab9188e95f"
+          },
+          "correction": null
+        },
+        {
+          "id": "cook-counter-v1-v3-f04",
+          "label": "stir inward",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-8e2ac49592a295f3.png",
+          "sha256": "8e2ac49592a295f37c4a8a166d350e9ea7558d0ed73cc64238ffb9670cb4a29e",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/v3-frame-04",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 4,
+            "sha256": "8e2ac49592a295f37c4a8a166d350e9ea7558d0ed73cc64238ffb9670cb4a29e"
+          },
+          "correction": null
+        },
+        {
+          "id": "cook-counter-v1-v3-f05",
+          "label": "stir outward",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-03d2fe44ecb6c1c7.png",
+          "sha256": "03d2fe44ecb6c1c7da84eb7ad09220310ca32f8821e174fd01c8e5d9e11cf2e0",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/v3-frame-05",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 5,
+            "sha256": "03d2fe44ecb6c1c7da84eb7ad09220310ca32f8821e174fd01c8e5d9e11cf2e0"
+          },
+          "correction": null
+        },
+        {
+          "id": "cook-counter-v1-v3-f06",
+          "label": "steady pan",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-ebbe47a512db9063.png",
+          "sha256": "ebbe47a512db90631fc77244ca6ccc835420ff00379eac66cb7f3655b98dddc5",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/v3-frame-06",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 6,
+            "sha256": "ebbe47a512db90631fc77244ca6ccc835420ff00379eac66cb7f3655b98dddc5"
+          },
+          "correction": null
+        },
+        {
+          "id": "cook-counter-v1-v3-f07",
+          "label": "release",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-8cb7f70cdc2b164b.png",
+          "sha256": "8cb7f70cdc2b164b35d50e40e210bbf33ebf68507979db9f9416bbc317a9f5bb",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/v3-frame-07",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 7,
+            "sha256": "8cb7f70cdc2b164b35d50e40e210bbf33ebf68507979db9f9416bbc317a9f5bb"
+          },
+          "correction": null
+        },
+        {
+          "id": "cook-counter-v1-v3-f08",
+          "label": "rear endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-e6520aab48100c44.png",
+          "sha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "cook-counter-v1/v3-frame-08",
+          "authorityOverride": "back",
+          "priorV2": {
+            "position": 8,
+            "sha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd"
+          },
+          "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+        }
+      ]
+    },
+    {
+      "id": "brush-teeth-v1",
+      "title": "Brush teeth at basin",
+      "status": "feedback-corrected-versioned-draft-v3",
+      "source": {
+        "path": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v3/corrections.json",
+        "sha256": "ae8c541e9e4903b427781819ce3fe7d89cf22181727bac9ecbd3d6a5257ad358"
+      },
+      "draftStrip": {
+        "path": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v3/strips/brush-teeth-v1-e9a43b11cf723a55.png",
+        "sha256": "e9a43b11cf723a5509529516c9e9d54ba3f11abd836a0a820922c2a872fe1246"
+      },
+      "fps": 8,
+      "startPose": "standing-back",
+      "endPose": "standing-back",
+      "frames": [
+        {
+          "id": "brush-teeth-v1-v3-f01",
+          "label": "rear endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-e6520aab48100c44.png",
+          "sha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/v3-frame-01",
+          "authorityOverride": "back",
+          "priorV2": {
+            "position": 1,
+            "sha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd"
+          },
+          "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+        },
+        {
+          "id": "brush-teeth-v1-v3-f02",
+          "label": "raise toothbrush",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-b46d44b661a05048.png",
+          "sha256": "b46d44b661a050489cbe56a1369665e4cd9afea9edfe098f4e380e4c234713e3",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/v3-frame-02",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 2,
+            "sha256": "b46d44b661a050489cbe56a1369665e4cd9afea9edfe098f4e380e4c234713e3"
+          },
+          "correction": null
+        },
+        {
+          "id": "brush-teeth-v1-v3-f03",
+          "label": "mouth contact",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-d7e5a3cf4b4bb6e5.png",
+          "sha256": "d7e5a3cf4b4bb6e56efaa62b5ffc44f3e7cf6a95ca7b43ebbc0caf9a8dc5d837",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/v3-frame-03",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 3,
+            "sha256": "d7e5a3cf4b4bb6e56efaa62b5ffc44f3e7cf6a95ca7b43ebbc0caf9a8dc5d837"
+          },
+          "correction": null
+        },
+        {
+          "id": "brush-teeth-v1-v3-f04",
+          "label": "brush inward",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-6e54735564c51ad4.png",
+          "sha256": "6e54735564c51ad4b7b7b0e7dcaa34059e5300eac6e9931946f5ccf28d721c48",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/v3-frame-04",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 4,
+            "sha256": "6e54735564c51ad4b7b7b0e7dcaa34059e5300eac6e9931946f5ccf28d721c48"
+          },
+          "correction": null
+        },
+        {
+          "id": "brush-teeth-v1-v3-f05",
+          "label": "brush outward",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-8ae2a8f98ba88174.png",
+          "sha256": "8ae2a8f98ba881749372c8c077e92c045c8bf2958ec28a7f7801135a6efce63e",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/v3-frame-05",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 5,
+            "sha256": "8ae2a8f98ba881749372c8c077e92c045c8bf2958ec28a7f7801135a6efce63e"
+          },
+          "correction": null
+        },
+        {
+          "id": "brush-teeth-v1-v3-f06",
+          "label": "repeat stroke",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-2efd21d6ab050e30.png",
+          "sha256": "2efd21d6ab050e303dad0499e9f499a7ee99be6b337619208a5e35d1e98415d1",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/v3-frame-06",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 6,
+            "sha256": "2efd21d6ab050e303dad0499e9f499a7ee99be6b337619208a5e35d1e98415d1"
+          },
+          "correction": null
+        },
+        {
+          "id": "brush-teeth-v1-v3-f07",
+          "label": "lower toothbrush",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-bd6ee94860f8d100.png",
+          "sha256": "bd6ee94860f8d100853409b67d63b34a6012d4f7d1f42631d46da2139b8fe033",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/v3-frame-07",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 7,
+            "sha256": "bd6ee94860f8d100853409b67d63b34a6012d4f7d1f42631d46da2139b8fe033"
+          },
+          "correction": null
+        },
+        {
+          "id": "brush-teeth-v1-v3-f08",
+          "label": "rear endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-e6520aab48100c44.png",
+          "sha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "brush-teeth-v1/v3-frame-08",
+          "authorityOverride": "back",
+          "priorV2": {
+            "position": 8,
+            "sha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd"
+          },
+          "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+        }
+      ]
+    },
+    {
+      "id": "wave-front-v1",
+      "title": "Friendly wave to camera",
+      "status": "feedback-corrected-versioned-draft-v3",
+      "source": {
+        "path": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v3/corrections.json",
+        "sha256": "ae8c541e9e4903b427781819ce3fe7d89cf22181727bac9ecbd3d6a5257ad358"
+      },
+      "draftStrip": {
+        "path": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v3/strips/wave-front-v1-d4a72cb9a121372e.png",
+        "sha256": "d4a72cb9a121372ea7265d7a4fa895f717d18a6e6124010b63eba715e9039e4c"
+      },
+      "fps": 8,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "frames": [
+        {
+          "id": "wave-front-v1-v3-f01",
+          "label": "front endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-287c42001ae5c757.png",
+          "sha256": "287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "wave-front-v1/v3-frame-01",
+          "authorityOverride": "front",
+          "priorV2": {
+            "position": 1,
+            "sha256": "a61f822bead5dcabda07feea87e17754e85bdd85682bb4b479fcfee9ed54766c"
+          },
+          "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+        },
+        {
+          "id": "wave-front-v1-v3-f02",
+          "label": "raise arm",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-4155f30b4c612eab.png",
+          "sha256": "4155f30b4c612eab1b109e730e9496a3c6b984d020c3139a5b0d77ee288fe30f",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "wave-front-v1/v3-frame-02",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 2,
+            "sha256": "4155f30b4c612eab1b109e730e9496a3c6b984d020c3139a5b0d77ee288fe30f"
+          },
+          "correction": null
+        },
+        {
+          "id": "wave-front-v1-v3-f03",
+          "label": "present palm",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-79ba6f2c4853ffb7.png",
+          "sha256": "79ba6f2c4853ffb7835cb967f6eafdced6d0e4ce9fcdfd3f47428ee0f5a82ca2",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "wave-front-v1/v3-frame-03",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 3,
+            "sha256": "79ba6f2c4853ffb7835cb967f6eafdced6d0e4ce9fcdfd3f47428ee0f5a82ca2"
+          },
+          "correction": null
+        },
+        {
+          "id": "wave-front-v1-v3-f04",
+          "label": "wave inward",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-650c252696fc6a0b.png",
+          "sha256": "650c252696fc6a0bb9bf9fb299a7ff41e4c6064fce87ce14dd7548851921f668",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "wave-front-v1/v3-frame-04",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 4,
+            "sha256": "650c252696fc6a0bb9bf9fb299a7ff41e4c6064fce87ce14dd7548851921f668"
+          },
+          "correction": null
+        },
+        {
+          "id": "wave-front-v1-v3-f05",
+          "label": "lower arm",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-b2be40f3dd06045e.png",
+          "sha256": "b2be40f3dd06045ec04296ce6cb35c5a76bdf2f3beaa23a7e05f4b0497bada0b",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "wave-front-v1/v3-frame-05",
+          "authorityOverride": null,
+          "priorV2": {
+            "position": 5,
+            "sha256": "b2be40f3dd06045ec04296ce6cb35c5a76bdf2f3beaa23a7e05f4b0497bada0b"
+          },
+          "correction": null
+        },
+        {
+          "id": "wave-front-v1-v3-f06",
+          "label": "front endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-287c42001ae5c757.png",
+          "sha256": "287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "wave-front-v1/v3-frame-06",
+          "authorityOverride": "front",
+          "priorV2": {
+            "position": 6,
+            "sha256": "a61f822bead5dcabda07feea87e17754e85bdd85682bb4b479fcfee9ed54766c"
+          },
+          "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+        }
+      ]
+    },
+    {
+      "id": "sweep-broom-isolated-v2",
+      "title": "Collect broom, sweep and recover",
+      "status": "unapproved-isolated-action-candidate",
+      "source": {
+        "path": "art/drafts/keeper-prime-sweep-broom-choreography-2026-10-22-v3/composition.json",
+        "sha256": "318c5eab242baba3bfe72f0f15d51a3db6bcf4a72c60c9f08e5a82c2ee24b3cb"
+      },
+      "draftStrip": {
+        "path": "art/drafts/keeper-prime-sweep-broom-choreography-2026-10-22-v3/sweep-broom-isolated-v2-8bdd7a2ee451f225.png",
+        "sha256": "8bdd7a2ee451f225a7a844acd0739cab32585f837bbbc850206b413b5253f698"
+      },
+      "fps": 8,
+      "startPose": "standing-side-right-with-staged-broom",
+      "endPose": "standing-side-right-with-staged-broom",
+      "frames": [
+        {
+          "id": "sweep-broom-isolated-v2-v3-f01",
+          "label": "Prime endpoint; broom staged",
+          "phase": "endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-365949f320390bf2.png",
+          "sha256": "365949f320390bf25a789eca23f2276f4004e26d32a2daec701cfa2978b20694",
+          "durationMs": 125,
+          "cell": [
+            384,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "sweep-broom-isolated-v2/v3-frame-01",
+          "authorityOverride": null,
+          "sourceClip": "keeper-prime-sweep-broom-v2",
+          "priorV2": {
+            "position": 1,
+            "sha256": "365949f320390bf25a789eca23f2276f4004e26d32a2daec701cfa2978b20694"
+          },
+          "correction": null
+        },
+        {
+          "id": "sweep-broom-isolated-v2-v3-f02",
+          "label": "take two-hand grip",
+          "phase": "acquire",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-f0a861592bc6e596.png",
+          "sha256": "f0a861592bc6e596581d3fb4ef0b92e3ef9b8932623ff12511ebd50a61ddd731",
+          "durationMs": 125,
+          "cell": [
+            384,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "sweep-broom-isolated-v2/v3-frame-02",
+          "authorityOverride": null,
+          "sourceClip": "keeper-prime-sweep-broom-v2",
+          "priorV2": {
+            "position": 2,
+            "sha256": "f0a861592bc6e596581d3fb4ef0b92e3ef9b8932623ff12511ebd50a61ddd731"
+          },
+          "correction": null
+        },
+        {
+          "id": "sweep-broom-isolated-v2-v3-f03",
+          "label": "outward sweep 1",
+          "phase": "sweep",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-c96a8ae11d32215c.png",
+          "sha256": "c96a8ae11d32215ccdc6504e3834ea18a1de7148bc9b13f2fd9e38a00addf1dd",
+          "durationMs": 125,
+          "cell": [
+            384,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "sweep-broom-isolated-v2/v3-frame-03",
+          "authorityOverride": null,
+          "sourceClip": "keeper-prime-sweep-broom-v2",
+          "priorV2": {
+            "position": 3,
+            "sha256": "c96a8ae11d32215ccdc6504e3834ea18a1de7148bc9b13f2fd9e38a00addf1dd"
+          },
+          "correction": null
+        },
+        {
+          "id": "sweep-broom-isolated-v2-v3-f04",
+          "label": "outward sweep 2",
+          "phase": "sweep",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-f818e2174fc7c51d.png",
+          "sha256": "f818e2174fc7c51d6922287512ae0610d92f908859d5798b1ae1dc3250c5477b",
+          "durationMs": 125,
+          "cell": [
+            384,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "sweep-broom-isolated-v2/v3-frame-04",
+          "authorityOverride": null,
+          "sourceClip": "keeper-prime-sweep-broom-v2",
+          "priorV2": {
+            "position": 4,
+            "sha256": "f818e2174fc7c51d6922287512ae0610d92f908859d5798b1ae1dc3250c5477b"
+          },
+          "correction": null
+        },
+        {
+          "id": "sweep-broom-isolated-v2-v3-f05",
+          "label": "outward sweep 3",
+          "phase": "sweep",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-3fa9add5b0354a09.png",
+          "sha256": "3fa9add5b0354a0936693d7c7396b9eca2648e435d8d3bfa71714c255bf5dc2a",
+          "durationMs": 125,
+          "cell": [
+            384,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "sweep-broom-isolated-v2/v3-frame-05",
+          "authorityOverride": null,
+          "sourceClip": "keeper-prime-sweep-broom-v2",
+          "priorV2": {
+            "position": 5,
+            "sha256": "3fa9add5b0354a0936693d7c7396b9eca2648e435d8d3bfa71714c255bf5dc2a"
+          },
+          "correction": null
+        },
+        {
+          "id": "sweep-broom-isolated-v2-v3-f06",
+          "label": "furthest planted sweep",
+          "phase": "sweep",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-52697586d00e7ab9.png",
+          "sha256": "52697586d00e7ab99d0b2cb6b5ae301d0c383de352a73aca58d0cb637d9ff16f",
+          "durationMs": 125,
+          "cell": [
+            384,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "sweep-broom-isolated-v2/v3-frame-06",
+          "authorityOverride": null,
+          "sourceClip": "keeper-prime-sweep-broom-v2",
+          "priorV2": {
+            "position": 6,
+            "sha256": "52697586d00e7ab99d0b2cb6b5ae301d0c383de352a73aca58d0cb637d9ff16f"
+          },
+          "correction": null
+        },
+        {
+          "id": "sweep-broom-isolated-v2-v3-f07",
+          "label": "return sweep 1",
+          "phase": "recover",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-3fa9add5b0354a09.png",
+          "sha256": "3fa9add5b0354a0936693d7c7396b9eca2648e435d8d3bfa71714c255bf5dc2a",
+          "durationMs": 125,
+          "cell": [
+            384,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "sweep-broom-isolated-v2/v3-frame-07",
+          "authorityOverride": null,
+          "sourceClip": "keeper-prime-sweep-broom-v2",
+          "priorV2": {
+            "position": 7,
+            "sha256": "3fa9add5b0354a0936693d7c7396b9eca2648e435d8d3bfa71714c255bf5dc2a"
+          },
+          "correction": null
+        },
+        {
+          "id": "sweep-broom-isolated-v2-v3-f08",
+          "label": "return sweep 2",
+          "phase": "recover",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-f818e2174fc7c51d.png",
+          "sha256": "f818e2174fc7c51d6922287512ae0610d92f908859d5798b1ae1dc3250c5477b",
+          "durationMs": 125,
+          "cell": [
+            384,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "sweep-broom-isolated-v2/v3-frame-08",
+          "authorityOverride": null,
+          "sourceClip": "keeper-prime-sweep-broom-v2",
+          "priorV2": {
+            "position": 8,
+            "sha256": "f818e2174fc7c51d6922287512ae0610d92f908859d5798b1ae1dc3250c5477b"
+          },
+          "correction": null
+        },
+        {
+          "id": "sweep-broom-isolated-v2-v3-f09",
+          "label": "return sweep 3",
+          "phase": "recover",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-c96a8ae11d32215c.png",
+          "sha256": "c96a8ae11d32215ccdc6504e3834ea18a1de7148bc9b13f2fd9e38a00addf1dd",
+          "durationMs": 125,
+          "cell": [
+            384,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "sweep-broom-isolated-v2/v3-frame-09",
+          "authorityOverride": null,
+          "sourceClip": "keeper-prime-sweep-broom-v2",
+          "priorV2": {
+            "position": 9,
+            "sha256": "c96a8ae11d32215ccdc6504e3834ea18a1de7148bc9b13f2fd9e38a00addf1dd"
+          },
+          "correction": null
+        },
+        {
+          "id": "sweep-broom-isolated-v2-v3-f10",
+          "label": "release two-hand grip",
+          "phase": "release",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-f0a861592bc6e596.png",
+          "sha256": "f0a861592bc6e596581d3fb4ef0b92e3ef9b8932623ff12511ebd50a61ddd731",
+          "durationMs": 125,
+          "cell": [
+            384,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "sweep-broom-isolated-v2/v3-frame-10",
+          "authorityOverride": null,
+          "sourceClip": "keeper-prime-sweep-broom-v2",
+          "priorV2": {
+            "position": 10,
+            "sha256": "f0a861592bc6e596581d3fb4ef0b92e3ef9b8932623ff12511ebd50a61ddd731"
+          },
+          "correction": null
+        },
+        {
+          "id": "sweep-broom-isolated-v2-v3-f11",
+          "label": "Prime endpoint; broom staged",
+          "phase": "endpoint",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-365949f320390bf2.png",
+          "sha256": "365949f320390bf25a789eca23f2276f4004e26d32a2daec701cfa2978b20694",
+          "durationMs": 125,
+          "cell": [
+            384,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "sweep-broom-isolated-v2/v3-frame-11",
+          "authorityOverride": null,
+          "sourceClip": "keeper-prime-sweep-broom-v2",
+          "priorV2": {
+            "position": 11,
+            "sha256": "365949f320390bf25a789eca23f2276f4004e26d32a2daec701cfa2978b20694"
+          },
+          "correction": null
+        }
+      ]
+    },
+    {
+      "id": "side-leisure-sit-hold-stand-v1",
+      "title": "Side leisure: sit, hold and stand",
+      "status": "approved-components-choreography-review",
+      "source": {
+        "path": "art/drafts/keeper-prime-side-leisure-choreography-2026-10-22-v1/composition.json",
+        "sha256": "cd23587f18647978d6b87e8a8373e1438202478cb6bb66f542192d602a847ace"
+      },
+      "draftStrip": {
+        "path": "art/drafts/keeper-prime-side-leisure-choreography-2026-10-22-v1/side-leisure-sit-hold-stand-v1-934ad368bae70af7.png",
+        "sha256": "934ad368bae70af7f856e6d5f75ab34699414767c6e8138966bd4e1a62ed011e"
+      },
+      "fps": 8,
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "frames": [
+        {
+          "id": "side-leisure-sit-hold-stand-v1-v3-f01",
+          "label": "sit 1",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-a172a8a01a387a21.png",
+          "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "side-leisure-sit-hold-stand-v1/v3-frame-01",
+          "authorityOverride": null,
+          "sourceClip": "sit-side-right-v6",
+          "priorV2": {
+            "position": 1,
+            "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+          },
+          "correction": null
+        },
+        {
+          "id": "side-leisure-sit-hold-stand-v1-v3-f02",
+          "label": "sit 2",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-c0a87d5460ce0af1.png",
+          "sha256": "c0a87d5460ce0af134d6e9dc64dab22625f5a1eda1f631e021052701d91077c1",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "side-leisure-sit-hold-stand-v1/v3-frame-02",
+          "authorityOverride": null,
+          "sourceClip": "sit-side-right-v6",
+          "priorV2": {
+            "position": 2,
+            "sha256": "c0a87d5460ce0af134d6e9dc64dab22625f5a1eda1f631e021052701d91077c1"
+          },
+          "correction": null
+        },
+        {
+          "id": "side-leisure-sit-hold-stand-v1-v3-f03",
+          "label": "sit 3",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-109c211066926cb2.png",
+          "sha256": "109c211066926cb2b3f140755bfe51a4636106c03d75c052e826d6610791d8a1",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "side-leisure-sit-hold-stand-v1/v3-frame-03",
+          "authorityOverride": null,
+          "sourceClip": "sit-side-right-v6",
+          "priorV2": {
+            "position": 3,
+            "sha256": "109c211066926cb2b3f140755bfe51a4636106c03d75c052e826d6610791d8a1"
+          },
+          "correction": null
+        },
+        {
+          "id": "side-leisure-sit-hold-stand-v1-v3-f04",
+          "label": "sit 4",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-7f23f761b211ee53.png",
+          "sha256": "7f23f761b211ee53f80c15bf3a0cccdfd90f9e9ab490c260ede66c46174995f0",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "side-leisure-sit-hold-stand-v1/v3-frame-04",
+          "authorityOverride": null,
+          "sourceClip": "sit-side-right-v6",
+          "priorV2": {
+            "position": 4,
+            "sha256": "7f23f761b211ee53f80c15bf3a0cccdfd90f9e9ab490c260ede66c46174995f0"
+          },
+          "correction": null
+        },
+        {
+          "id": "side-leisure-sit-hold-stand-v1-v3-f05",
+          "label": "sit 5",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-6ffe5f0af90c0aa3.png",
+          "sha256": "6ffe5f0af90c0aa312f4dad276f22642b74360ca396fae743a3c13f640b58c21",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "side-leisure-sit-hold-stand-v1/v3-frame-05",
+          "authorityOverride": null,
+          "sourceClip": "sit-side-right-v6",
+          "priorV2": {
+            "position": 5,
+            "sha256": "6ffe5f0af90c0aa312f4dad276f22642b74360ca396fae743a3c13f640b58c21"
+          },
+          "correction": null
+        },
+        {
+          "id": "side-leisure-sit-hold-stand-v1-v3-f06",
+          "label": "sit 6",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-8226a15137fc6973.png",
+          "sha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "side-leisure-sit-hold-stand-v1/v3-frame-06",
+          "authorityOverride": null,
+          "sourceClip": "sit-side-right-v6",
+          "priorV2": {
+            "position": 6,
+            "sha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b"
+          },
+          "correction": null
+        },
+        {
+          "id": "side-leisure-sit-hold-stand-v1-v3-f07",
+          "label": "seated hold 1",
+          "phase": "hold",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-8226a15137fc6973.png",
+          "sha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "side-leisure-sit-hold-stand-v1/v3-frame-07",
+          "authorityOverride": null,
+          "sourceClip": "sit-side-right-v6",
+          "priorV2": {
+            "position": 7,
+            "sha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b"
+          },
+          "correction": null
+        },
+        {
+          "id": "side-leisure-sit-hold-stand-v1-v3-f08",
+          "label": "seated hold 2",
+          "phase": "hold",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-8226a15137fc6973.png",
+          "sha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "side-leisure-sit-hold-stand-v1/v3-frame-08",
+          "authorityOverride": null,
+          "sourceClip": "sit-side-right-v6",
+          "priorV2": {
+            "position": 8,
+            "sha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b"
+          },
+          "correction": null
+        },
+        {
+          "id": "side-leisure-sit-hold-stand-v1-v3-f09",
+          "label": "seated hold 3",
+          "phase": "hold",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-8226a15137fc6973.png",
+          "sha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "side-leisure-sit-hold-stand-v1/v3-frame-09",
+          "authorityOverride": null,
+          "sourceClip": "sit-side-right-v6",
+          "priorV2": {
+            "position": 9,
+            "sha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b"
+          },
+          "correction": null
+        },
+        {
+          "id": "side-leisure-sit-hold-stand-v1-v3-f10",
+          "label": "seated hold 4",
+          "phase": "hold",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-8226a15137fc6973.png",
+          "sha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "side-leisure-sit-hold-stand-v1/v3-frame-10",
+          "authorityOverride": null,
+          "sourceClip": "sit-side-right-v6",
+          "priorV2": {
+            "position": 10,
+            "sha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b"
+          },
+          "correction": null
+        },
+        {
+          "id": "side-leisure-sit-hold-stand-v1-v3-f11",
+          "label": "stand 1",
+          "phase": "stand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-6ffe5f0af90c0aa3.png",
+          "sha256": "6ffe5f0af90c0aa312f4dad276f22642b74360ca396fae743a3c13f640b58c21",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "side-leisure-sit-hold-stand-v1/v3-frame-11",
+          "authorityOverride": null,
+          "sourceClip": "sit-side-right-v6",
+          "priorV2": {
+            "position": 11,
+            "sha256": "6ffe5f0af90c0aa312f4dad276f22642b74360ca396fae743a3c13f640b58c21"
+          },
+          "correction": null
+        },
+        {
+          "id": "side-leisure-sit-hold-stand-v1-v3-f12",
+          "label": "stand 2",
+          "phase": "stand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-7f23f761b211ee53.png",
+          "sha256": "7f23f761b211ee53f80c15bf3a0cccdfd90f9e9ab490c260ede66c46174995f0",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "side-leisure-sit-hold-stand-v1/v3-frame-12",
+          "authorityOverride": null,
+          "sourceClip": "sit-side-right-v6",
+          "priorV2": {
+            "position": 12,
+            "sha256": "7f23f761b211ee53f80c15bf3a0cccdfd90f9e9ab490c260ede66c46174995f0"
+          },
+          "correction": null
+        },
+        {
+          "id": "side-leisure-sit-hold-stand-v1-v3-f13",
+          "label": "stand 3",
+          "phase": "stand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-109c211066926cb2.png",
+          "sha256": "109c211066926cb2b3f140755bfe51a4636106c03d75c052e826d6610791d8a1",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "side-leisure-sit-hold-stand-v1/v3-frame-13",
+          "authorityOverride": null,
+          "sourceClip": "sit-side-right-v6",
+          "priorV2": {
+            "position": 13,
+            "sha256": "109c211066926cb2b3f140755bfe51a4636106c03d75c052e826d6610791d8a1"
+          },
+          "correction": null
+        },
+        {
+          "id": "side-leisure-sit-hold-stand-v1-v3-f14",
+          "label": "stand 4",
+          "phase": "stand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-c0a87d5460ce0af1.png",
+          "sha256": "c0a87d5460ce0af134d6e9dc64dab22625f5a1eda1f631e021052701d91077c1",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "side-leisure-sit-hold-stand-v1/v3-frame-14",
+          "authorityOverride": null,
+          "sourceClip": "sit-side-right-v6",
+          "priorV2": {
+            "position": 14,
+            "sha256": "c0a87d5460ce0af134d6e9dc64dab22625f5a1eda1f631e021052701d91077c1"
+          },
+          "correction": null
+        },
+        {
+          "id": "side-leisure-sit-hold-stand-v1-v3-f15",
+          "label": "stand 5",
+          "phase": "stand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-a172a8a01a387a21.png",
+          "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "side-leisure-sit-hold-stand-v1/v3-frame-15",
+          "authorityOverride": null,
+          "sourceClip": "sit-side-right-v6",
+          "priorV2": {
+            "position": 15,
+            "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+          },
+          "correction": null
+        }
+      ]
+    },
+    {
+      "id": "diary-turn-sit-write-return-v1",
+      "title": "Turn, sit, hold, stand and return",
+      "status": "approved-components-choreography-review",
+      "source": {
+        "path": "art/drafts/keeper-prime-diary-choreography-2026-10-22-v1/composition.json",
+        "sha256": "6df9eafd0d6875ef7a83a58ea171baef02f12bcaef78a6231be1d52c341a0066"
+      },
+      "draftStrip": {
+        "path": "art/drafts/keeper-prime-diary-choreography-2026-10-22-v1/diary-turn-sit-write-return-v1-73ece39e82e66731.png",
+        "sha256": "73ece39e82e6673165b4c5c8c199f8f3f13ef7a851102920f0c07c4fc7378523"
+      },
+      "fps": 8,
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "frames": [
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f01",
+          "label": "turn to desk 1",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-c097d78aac2d2c52.png",
+          "sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-01",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 1,
+            "sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f02",
+          "label": "turn to desk 2",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-e1dc020aabfe8f3b.png",
+          "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-02",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 2,
+            "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f03",
+          "label": "turn to desk 3",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-34028d8821a7272a.png",
+          "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-03",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 3,
+            "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f04",
+          "label": "turn to desk 4",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-0d278363a0e7e4f1.png",
+          "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-04",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 4,
+            "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f05",
+          "label": "turn to desk 5",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-f827ac61f45aaaa4.png",
+          "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-05",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 5,
+            "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f06",
+          "label": "turn to desk 6",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-fe06522abd0cd55c.png",
+          "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-06",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 6,
+            "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f07",
+          "label": "turn to desk 7",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-d55afae023051e29.png",
+          "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-07",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 7,
+            "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f08",
+          "label": "turn to desk 8",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-bb530610cf0e17bf.png",
+          "sha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-08",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 8,
+            "sha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f09",
+          "label": "turn to desk 9",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-31dbac4efc00089f.png",
+          "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-09",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 9,
+            "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f10",
+          "label": "sit back 1",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-6e2556684150ce43.png",
+          "sha256": "6e2556684150ce43a26a5c5d084afeba0fc722a87be3878587a2ae3385ccce47",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-10",
+          "authorityOverride": null,
+          "sourceClip": "sit-back-v2",
+          "priorV2": {
+            "position": 10,
+            "sha256": "6e2556684150ce43a26a5c5d084afeba0fc722a87be3878587a2ae3385ccce47"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f11",
+          "label": "sit back 2",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-c2acf591a17577fd.png",
+          "sha256": "c2acf591a17577fdfdf3eba958b47ddfd4c8044dce8abe2fcf85d25d0ffab767",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-11",
+          "authorityOverride": null,
+          "sourceClip": "sit-back-v2",
+          "priorV2": {
+            "position": 11,
+            "sha256": "c2acf591a17577fdfdf3eba958b47ddfd4c8044dce8abe2fcf85d25d0ffab767"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f12",
+          "label": "sit back 3",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-922deb4bf0d9d0b7.png",
+          "sha256": "922deb4bf0d9d0b74d1950e2157709bae82e1823913bb332754ad7733b165264",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-12",
+          "authorityOverride": null,
+          "sourceClip": "sit-back-v2",
+          "priorV2": {
+            "position": 12,
+            "sha256": "922deb4bf0d9d0b74d1950e2157709bae82e1823913bb332754ad7733b165264"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f13",
+          "label": "sit back 4",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-7c8075cfb3c3237d.png",
+          "sha256": "7c8075cfb3c3237d852e7dc4ed5e646f1f397cdb7ddc678ba0535aa27e8f7e5a",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-13",
+          "authorityOverride": null,
+          "sourceClip": "sit-back-v2",
+          "priorV2": {
+            "position": 13,
+            "sha256": "7c8075cfb3c3237d852e7dc4ed5e646f1f397cdb7ddc678ba0535aa27e8f7e5a"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f14",
+          "label": "sit back 5",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-6fdfe3359ed63445.png",
+          "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-14",
+          "authorityOverride": null,
+          "sourceClip": "sit-back-v2",
+          "priorV2": {
+            "position": 14,
+            "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f15",
+          "label": "seated diary hold 1",
+          "phase": "hold",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-6fdfe3359ed63445.png",
+          "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-15",
+          "authorityOverride": null,
+          "sourceClip": "sit-back-v2",
+          "priorV2": {
+            "position": 15,
+            "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f16",
+          "label": "seated diary hold 2",
+          "phase": "hold",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-6fdfe3359ed63445.png",
+          "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-16",
+          "authorityOverride": null,
+          "sourceClip": "sit-back-v2",
+          "priorV2": {
+            "position": 16,
+            "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f17",
+          "label": "seated diary hold 3",
+          "phase": "hold",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-6fdfe3359ed63445.png",
+          "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-17",
+          "authorityOverride": null,
+          "sourceClip": "sit-back-v2",
+          "priorV2": {
+            "position": 17,
+            "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f18",
+          "label": "seated diary hold 4",
+          "phase": "hold",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-6fdfe3359ed63445.png",
+          "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-18",
+          "authorityOverride": null,
+          "sourceClip": "sit-back-v2",
+          "priorV2": {
+            "position": 18,
+            "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f19",
+          "label": "stand back 1",
+          "phase": "stand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-7c8075cfb3c3237d.png",
+          "sha256": "7c8075cfb3c3237d852e7dc4ed5e646f1f397cdb7ddc678ba0535aa27e8f7e5a",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-19",
+          "authorityOverride": null,
+          "sourceClip": "sit-back-v2",
+          "priorV2": {
+            "position": 19,
+            "sha256": "7c8075cfb3c3237d852e7dc4ed5e646f1f397cdb7ddc678ba0535aa27e8f7e5a"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f20",
+          "label": "stand back 2",
+          "phase": "stand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-922deb4bf0d9d0b7.png",
+          "sha256": "922deb4bf0d9d0b74d1950e2157709bae82e1823913bb332754ad7733b165264",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-20",
+          "authorityOverride": null,
+          "sourceClip": "sit-back-v2",
+          "priorV2": {
+            "position": 20,
+            "sha256": "922deb4bf0d9d0b74d1950e2157709bae82e1823913bb332754ad7733b165264"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f21",
+          "label": "stand back 3",
+          "phase": "stand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-c2acf591a17577fd.png",
+          "sha256": "c2acf591a17577fdfdf3eba958b47ddfd4c8044dce8abe2fcf85d25d0ffab767",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-21",
+          "authorityOverride": null,
+          "sourceClip": "sit-back-v2",
+          "priorV2": {
+            "position": 21,
+            "sha256": "c2acf591a17577fdfdf3eba958b47ddfd4c8044dce8abe2fcf85d25d0ffab767"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f22",
+          "label": "stand back 4",
+          "phase": "stand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-6e2556684150ce43.png",
+          "sha256": "6e2556684150ce43a26a5c5d084afeba0fc722a87be3878587a2ae3385ccce47",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-22",
+          "authorityOverride": null,
+          "sourceClip": "sit-back-v2",
+          "priorV2": {
+            "position": 22,
+            "sha256": "6e2556684150ce43a26a5c5d084afeba0fc722a87be3878587a2ae3385ccce47"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f23",
+          "label": "stand back 5",
+          "phase": "stand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-31dbac4efc00089f.png",
+          "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-23",
+          "authorityOverride": null,
+          "sourceClip": "sit-back-v2",
+          "priorV2": {
+            "position": 23,
+            "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f24",
+          "label": "return to room 1",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-bb530610cf0e17bf.png",
+          "sha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-24",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 24,
+            "sha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f25",
+          "label": "return to room 2",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-d55afae023051e29.png",
+          "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-25",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 25,
+            "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f26",
+          "label": "return to room 3",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-fe06522abd0cd55c.png",
+          "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-26",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 26,
+            "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f27",
+          "label": "return to room 4",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-f827ac61f45aaaa4.png",
+          "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-27",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 27,
+            "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f28",
+          "label": "return to room 5",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-0d278363a0e7e4f1.png",
+          "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-28",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 28,
+            "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f29",
+          "label": "return to room 6",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-34028d8821a7272a.png",
+          "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-29",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 29,
+            "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f30",
+          "label": "return to room 7",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-e1dc020aabfe8f3b.png",
+          "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-30",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 30,
+            "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5"
+          },
+          "correction": null
+        },
+        {
+          "id": "diary-turn-sit-write-return-v1-v3-f31",
+          "label": "return to room 8",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-c097d78aac2d2c52.png",
+          "sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "diary-turn-sit-write-return-v1/v3-frame-31",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 31,
+            "sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8"
+          },
+          "correction": null
+        }
+      ]
+    },
+    {
+      "id": "front-seat-complete-route-v1",
+      "title": "Front seat consumer route",
+      "status": "feedback-corrected-versioned-draft-v3",
+      "source": {
+        "path": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v3/corrections.json",
+        "sha256": "ae8c541e9e4903b427781819ce3fe7d89cf22181727bac9ecbd3d6a5257ad358"
+      },
+      "draftStrip": {
+        "path": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v3/strips/front-seat-complete-route-v1-4f621a6b328a367b.png",
+        "sha256": "4f621a6b328a367bdc888975595b6e14d8e45e65b80eb11df9951b464884e934"
+      },
+      "fps": 8,
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "frames": [
+        {
+          "id": "front-seat-complete-route-v1-v3-f01",
+          "label": "turn to front 1",
+          "phase": "turn to front",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-a172a8a01a387a21.png",
+          "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-01",
+          "authorityOverride": null,
+          "sourceClip": "turn-front-side-v1",
+          "priorV2": {
+            "position": 1,
+            "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f02",
+          "label": "turn to front 2",
+          "phase": "turn to front",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-85f897ef55e76813.png",
+          "sha256": "85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-02",
+          "authorityOverride": null,
+          "sourceClip": "turn-front-side-v1",
+          "priorV2": {
+            "position": 2,
+            "sha256": "85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f03",
+          "label": "turn to front 3",
+          "phase": "turn to front",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-8c20fc0436d4982d.png",
+          "sha256": "8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-03",
+          "authorityOverride": null,
+          "sourceClip": "turn-front-side-v1",
+          "priorV2": {
+            "position": 3,
+            "sha256": "8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f04",
+          "label": "turn to front 4",
+          "phase": "turn to front",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-2e118ca8d10d126f.png",
+          "sha256": "2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-04",
+          "authorityOverride": null,
+          "sourceClip": "turn-front-side-v1",
+          "priorV2": {
+            "position": 4,
+            "sha256": "2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f05",
+          "label": "turn to front 5",
+          "phase": "turn to front",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-081272e51f799f6d.png",
+          "sha256": "081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-05",
+          "authorityOverride": null,
+          "sourceClip": "turn-front-side-v1",
+          "priorV2": {
+            "position": 5,
+            "sha256": "081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f06",
+          "label": "turn to front 6",
+          "phase": "turn to front",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-5b4f9406f68e15d2.png",
+          "sha256": "5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-06",
+          "authorityOverride": null,
+          "sourceClip": "turn-front-side-v1",
+          "priorV2": {
+            "position": 6,
+            "sha256": "5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f07",
+          "label": "turn to front 7",
+          "phase": "turn to front",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-af20e9290fb79d16.png",
+          "sha256": "af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-07",
+          "authorityOverride": null,
+          "sourceClip": "turn-front-side-v1",
+          "priorV2": {
+            "position": 7,
+            "sha256": "af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f08",
+          "label": "turn to front 8",
+          "phase": "turn to front",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-287c42001ae5c757.png",
+          "sha256": "287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-08",
+          "authorityOverride": null,
+          "sourceClip": "turn-front-side-v1",
+          "priorV2": {
+            "position": 8,
+            "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e"
+          },
+          "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f09",
+          "label": "sit front 1",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-4efd077ac6046b67.png",
+          "sha256": "4efd077ac6046b67e286f22b8b38546492042d0ed8e0f43da0e34840a32d23ab",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-09",
+          "authorityOverride": null,
+          "sourceClip": "sit-front-v4",
+          "priorV2": {
+            "position": 9,
+            "sha256": "4efd077ac6046b67e286f22b8b38546492042d0ed8e0f43da0e34840a32d23ab"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f10",
+          "label": "sit front 2",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-36482028337fe7b0.png",
+          "sha256": "36482028337fe7b00b09eaab1d11a5ed275fe7edf36acacf08e7341f4f5e54d5",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-10",
+          "authorityOverride": null,
+          "sourceClip": "sit-front-v4",
+          "priorV2": {
+            "position": 10,
+            "sha256": "36482028337fe7b00b09eaab1d11a5ed275fe7edf36acacf08e7341f4f5e54d5"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f11",
+          "label": "sit front 3",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-80e4eaa09c8adaad.png",
+          "sha256": "80e4eaa09c8adaad583242e585f883e5fca244ed465b76d9e2ab0e25c0b1b89f",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-11",
+          "authorityOverride": null,
+          "sourceClip": "sit-front-v4",
+          "priorV2": {
+            "position": 11,
+            "sha256": "80e4eaa09c8adaad583242e585f883e5fca244ed465b76d9e2ab0e25c0b1b89f"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f12",
+          "label": "sit front 4",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-f60db0bc99420b34.png",
+          "sha256": "f60db0bc99420b3412efa4cb7623f8b264718606b3af69e079f9f2962e695f4c",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-12",
+          "authorityOverride": null,
+          "sourceClip": "sit-front-v4",
+          "priorV2": {
+            "position": 12,
+            "sha256": "f60db0bc99420b3412efa4cb7623f8b264718606b3af69e079f9f2962e695f4c"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f13",
+          "label": "sit front 5",
+          "phase": "sit",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-501151a426f81251.png",
+          "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-13",
+          "authorityOverride": null,
+          "sourceClip": "sit-front-v4",
+          "priorV2": {
+            "position": 13,
+            "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f14",
+          "label": "front seated hold 1",
+          "phase": "hold",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-501151a426f81251.png",
+          "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-14",
+          "authorityOverride": null,
+          "sourceClip": "sit-front-v4",
+          "priorV2": {
+            "position": 14,
+            "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f15",
+          "label": "front seated hold 2",
+          "phase": "hold",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-501151a426f81251.png",
+          "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-15",
+          "authorityOverride": null,
+          "sourceClip": "sit-front-v4",
+          "priorV2": {
+            "position": 15,
+            "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f16",
+          "label": "front seated hold 3",
+          "phase": "hold",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-501151a426f81251.png",
+          "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-16",
+          "authorityOverride": null,
+          "sourceClip": "sit-front-v4",
+          "priorV2": {
+            "position": 16,
+            "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f17",
+          "label": "front seated hold 4",
+          "phase": "hold",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-501151a426f81251.png",
+          "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-17",
+          "authorityOverride": null,
+          "sourceClip": "sit-front-v4",
+          "priorV2": {
+            "position": 17,
+            "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f18",
+          "label": "stand front 1",
+          "phase": "stand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-f60db0bc99420b34.png",
+          "sha256": "f60db0bc99420b3412efa4cb7623f8b264718606b3af69e079f9f2962e695f4c",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-18",
+          "authorityOverride": null,
+          "sourceClip": "sit-front-v4",
+          "priorV2": {
+            "position": 18,
+            "sha256": "f60db0bc99420b3412efa4cb7623f8b264718606b3af69e079f9f2962e695f4c"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f19",
+          "label": "stand front 2",
+          "phase": "stand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-80e4eaa09c8adaad.png",
+          "sha256": "80e4eaa09c8adaad583242e585f883e5fca244ed465b76d9e2ab0e25c0b1b89f",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-19",
+          "authorityOverride": null,
+          "sourceClip": "sit-front-v4",
+          "priorV2": {
+            "position": 19,
+            "sha256": "80e4eaa09c8adaad583242e585f883e5fca244ed465b76d9e2ab0e25c0b1b89f"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f20",
+          "label": "stand front 3",
+          "phase": "stand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-36482028337fe7b0.png",
+          "sha256": "36482028337fe7b00b09eaab1d11a5ed275fe7edf36acacf08e7341f4f5e54d5",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-20",
+          "authorityOverride": null,
+          "sourceClip": "sit-front-v4",
+          "priorV2": {
+            "position": 20,
+            "sha256": "36482028337fe7b00b09eaab1d11a5ed275fe7edf36acacf08e7341f4f5e54d5"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f21",
+          "label": "stand front 4",
+          "phase": "stand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-4efd077ac6046b67.png",
+          "sha256": "4efd077ac6046b67e286f22b8b38546492042d0ed8e0f43da0e34840a32d23ab",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-21",
+          "authorityOverride": null,
+          "sourceClip": "sit-front-v4",
+          "priorV2": {
+            "position": 21,
+            "sha256": "4efd077ac6046b67e286f22b8b38546492042d0ed8e0f43da0e34840a32d23ab"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f22",
+          "label": "stand front 5",
+          "phase": "stand",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-287c42001ae5c757.png",
+          "sha256": "287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c",
+          "durationMs": 125,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-22",
+          "authorityOverride": null,
+          "sourceClip": "sit-front-v4",
+          "priorV2": {
+            "position": 22,
+            "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e"
+          },
+          "correction": "jumper palette registered to exact bright rear turn colour authority; geometry and alpha preserved"
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f23",
+          "label": "turn to side 1",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-af20e9290fb79d16.png",
+          "sha256": "af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-23",
+          "authorityOverride": null,
+          "sourceClip": "turn-front-side-v1",
+          "priorV2": {
+            "position": 23,
+            "sha256": "af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f24",
+          "label": "turn to side 2",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-5b4f9406f68e15d2.png",
+          "sha256": "5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-24",
+          "authorityOverride": null,
+          "sourceClip": "turn-front-side-v1",
+          "priorV2": {
+            "position": 24,
+            "sha256": "5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f25",
+          "label": "turn to side 3",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-081272e51f799f6d.png",
+          "sha256": "081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-25",
+          "authorityOverride": null,
+          "sourceClip": "turn-front-side-v1",
+          "priorV2": {
+            "position": 25,
+            "sha256": "081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f26",
+          "label": "turn to side 4",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-2e118ca8d10d126f.png",
+          "sha256": "2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-26",
+          "authorityOverride": null,
+          "sourceClip": "turn-front-side-v1",
+          "priorV2": {
+            "position": 26,
+            "sha256": "2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f27",
+          "label": "turn to side 5",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-8c20fc0436d4982d.png",
+          "sha256": "8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-27",
+          "authorityOverride": null,
+          "sourceClip": "turn-front-side-v1",
+          "priorV2": {
+            "position": 27,
+            "sha256": "8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f28",
+          "label": "turn to side 6",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-85f897ef55e76813.png",
+          "sha256": "85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-28",
+          "authorityOverride": null,
+          "sourceClip": "turn-front-side-v1",
+          "priorV2": {
+            "position": 28,
+            "sha256": "85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9"
+          },
+          "correction": null
+        },
+        {
+          "id": "front-seat-complete-route-v1-v3-f29",
+          "label": "turn to side 7",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-a172a8a01a387a21.png",
+          "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "front-seat-complete-route-v1/v3-frame-29",
+          "authorityOverride": null,
+          "sourceClip": "turn-front-side-v1",
+          "priorV2": {
+            "position": 29,
+            "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+          },
+          "correction": null
+        }
+      ]
+    },
+    {
+      "id": "rear-work-turn-return-v1",
+      "title": "Rear task: turn, work and return",
+      "status": "feedback-corrected-versioned-draft-v3",
+      "source": {
+        "path": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v3/corrections.json",
+        "sha256": "ae8c541e9e4903b427781819ce3fe7d89cf22181727bac9ecbd3d6a5257ad358"
+      },
+      "draftStrip": {
+        "path": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v3/strips/rear-work-turn-return-v1-2c0af8455bf5cf45.png",
+        "sha256": "2c0af8455bf5cf45bec3a00f55d045af8ba4c24a9963bfc596d82c314ac0b723"
+      },
+      "fps": 8,
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "frames": [
+        {
+          "id": "rear-work-turn-return-v1-v3-f01",
+          "label": "turn to task 1",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-c097d78aac2d2c52.png",
+          "sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-01",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 1,
+            "sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f02",
+          "label": "turn to task 2",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-e1dc020aabfe8f3b.png",
+          "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-02",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 2,
+            "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f03",
+          "label": "turn to task 3",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-34028d8821a7272a.png",
+          "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-03",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 3,
+            "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f04",
+          "label": "turn to task 4",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-0d278363a0e7e4f1.png",
+          "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-04",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 4,
+            "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f05",
+          "label": "turn to task 5",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-f827ac61f45aaaa4.png",
+          "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-05",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 5,
+            "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f06",
+          "label": "turn to task 6",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-fe06522abd0cd55c.png",
+          "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-06",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 6,
+            "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f07",
+          "label": "turn to task 7",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-d55afae023051e29.png",
+          "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-07",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 7,
+            "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f08",
+          "label": "turn to task 8",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-bb530610cf0e17bf.png",
+          "sha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-08",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 8,
+            "sha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f09",
+          "label": "turn to task 9",
+          "phase": "turn to back",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-31dbac4efc00089f.png",
+          "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-09",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 9,
+            "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f10",
+          "label": "rear work 1",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-31dbac4efc00089f.png",
+          "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-10",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 10,
+            "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f11",
+          "label": "rear work 2",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-cda0bb9aff2214ab.png",
+          "sha256": "cda0bb9aff2214abdf8556bb0723331e34a8e6a41f3d7cedc03147dfb14bc8c6",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-11",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 11,
+            "sha256": "a829593415b8262502cda85267aea01c2763eb6b36e003039542267a8b12c529"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f12",
+          "label": "rear work 3",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-80f627fcb8db3fa4.png",
+          "sha256": "80f627fcb8db3fa426da5a09659a8978f5b79168098c64281ec8aedc8d304eb6",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-12",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 12,
+            "sha256": "278573c9601a1ba3b7f3d90629a551585ac908a44bdd472b375ebe4b0724bcf2"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f13",
+          "label": "rear work 4",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-bdba7fab114bfa7e.png",
+          "sha256": "bdba7fab114bfa7e3408910eceb6f90f6f0a7f2f6f2b9a2aa2079d5a6486bacb",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-13",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 13,
+            "sha256": "e54f4d6f669d2c9e0fd4e36cc57bb7502f0b25b5ac6cc3edea6b7682d52dd00a"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f14",
+          "label": "rear work 5",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-5f8df85a50e6924d.png",
+          "sha256": "5f8df85a50e6924d81364cf21a0fe25c0e72bdb4c21e482ca27fabe70cf7f040",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-14",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 14,
+            "sha256": "b42cb772f708ad857b76253450dbcf72f93af96edbc92b2c5bd272caeef8026b"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f15",
+          "label": "rear work 6",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-e93c0c8abe3a70d0.png",
+          "sha256": "e93c0c8abe3a70d0d80075713cbbea6b1803666330f3a033cd7fe7a8753b546b",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-15",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 15,
+            "sha256": "acf9f752ad1292937312c4dab5f3abeb82e2b459ed0656ded2cc857165ae6bfc"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f16",
+          "label": "rear work 7",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-1e023e806b8e17a0.png",
+          "sha256": "1e023e806b8e17a0cedcc047ef6bd0ee4eb4e1b1b367628ae8fbfc1ac000045d",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-16",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 16,
+            "sha256": "21cc593701ed485ede395ce978478714ef7f9205d4a5b46bec605bd251bc75ac"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f17",
+          "label": "rear work 8",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-b99a2bdb432e112e.png",
+          "sha256": "b99a2bdb432e112e77acb9a2bad5a4ca540660bd9319da489f2411e7d9352596",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-17",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 17,
+            "sha256": "4b285d73a4d9a180d2c679aa52007d25f98504fe515528fed35dba3a0bf162d4"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f18",
+          "label": "rear work 9",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-516aa78bc3323457.png",
+          "sha256": "516aa78bc3323457065bd0940cf939eca601433ff6a072d78cdb347210394a60",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-18",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 18,
+            "sha256": "8ada2fa0b22eabb1631e04e34e963ffca2a1b67fb5c8aaef1c0aa241f353ab68"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f19",
+          "label": "rear work 10",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-0dc2b1985e6d5f66.png",
+          "sha256": "0dc2b1985e6d5f66c7fd86686e3f1d8ac2feab6dec67cc55819a4a9970d59f3c",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-19",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 19,
+            "sha256": "36d72ad8807819354e6a8844c236460b5648c228c9756e74d46ebd0aa9a7df83"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f20",
+          "label": "rear work 11",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-636fe547de4e0da0.png",
+          "sha256": "636fe547de4e0da0a59fb0a8d770f057697d57227bbeafac60d121e801497be2",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-20",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 20,
+            "sha256": "3663dc10ab588428977532bfe86a6d2946eca61def161d500d15a910cfcd5788"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f21",
+          "label": "rear work 12",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-adc6d2fa9935266b.png",
+          "sha256": "adc6d2fa9935266bc5cac8b3e4229d4b54d6dd49788fbeea45122e958b4a880d",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-21",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 21,
+            "sha256": "01e33037f4564abbbeedaf4bef260503f6ef572bfe1220d3fdb381c963e4a9e5"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f22",
+          "label": "rear work 13",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-9e8ef6fe3647e70b.png",
+          "sha256": "9e8ef6fe3647e70badfb7b9b1ae9bc96e2206909c16db930d88dd5e73996e148",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-22",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 22,
+            "sha256": "3a624f695960be2a74f2bc10869a98b7ccc731de1e927dcc4dd258f980499b03"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f23",
+          "label": "rear work 14",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-02f20f18705528a7.png",
+          "sha256": "02f20f18705528a7640d582655560ae891d7ff205e3d052531d017edc2acd81b",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-23",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 23,
+            "sha256": "60bf939c0d9a0c8eb5be5680248170136406e62a1cea981427a8ffb03fdda38b"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f24",
+          "label": "rear work 15",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-9337d66d7ee1a3fa.png",
+          "sha256": "9337d66d7ee1a3fa4f249bd21f6d9053413df59bad03f84aa57f034348617470",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-24",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 24,
+            "sha256": "b1c199001d4eb6c00c104f963cbefdc07b5efc08f0532666e3c36f9327b2f268"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f25",
+          "label": "rear work 16",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-f50bf54b9b81487a.png",
+          "sha256": "f50bf54b9b81487acd1d8a5fe22a45e6730616d51894ea2fb7da85c66b5fc507",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-25",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 25,
+            "sha256": "3b0a4be452b355b6489e4d778945f0d79f315c3aaf3d9dbe96d7b6474c77536d"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f26",
+          "label": "rear work 17",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-2dd137251531a7f9.png",
+          "sha256": "2dd137251531a7f9a2fcdad0ffc81d298cb3abab1e67b7ee4fb61b7395a21398",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-26",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 26,
+            "sha256": "528da5df6d009fcb76c8a8340ffe0e1152cae9bf615ab43ad1c860b63330d66c"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f27",
+          "label": "rear work 18",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-35ab3065322e9e81.png",
+          "sha256": "35ab3065322e9e8102e463f89ec03d41136203fdbb58a88e7a2f3b0ad6e873e6",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-27",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 27,
+            "sha256": "4d1bbf5f883a74bb9d581f05e71b9cf9e862d510b9d360d9345d031ca7eebefe"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f28",
+          "label": "rear work 19",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-27e2bc9fb9744975.png",
+          "sha256": "27e2bc9fb9744975fcf700014bf6985b6c4eddb57c9596e05edfe3a07324a2ba",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-28",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 28,
+            "sha256": "3cb8650e3cfdd7fdef4a96ad4a99903a2fb58585cc02feb25bd67014a2eaf946"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f29",
+          "label": "rear work 20",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-48af25ae9b6dafbf.png",
+          "sha256": "48af25ae9b6dafbf5427fc39926bf74377ebe2505ef0fa5061e48f8399dfeaab",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-29",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 29,
+            "sha256": "47665f1a5663e293cfee4c24ef8c6f0d0af22aeb6c9db066c67303c637b14d28"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f30",
+          "label": "rear work 21",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-28acff6cbb7b6d60.png",
+          "sha256": "28acff6cbb7b6d60b7f004adf9aab047ecb6dec0e117e5b017883b6188b7b6d2",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-30",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 30,
+            "sha256": "e8a97566e58cd055fbf66da844dc89496c04c84a9f6a1bc4b991f32c22c08760"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f31",
+          "label": "rear work 22",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-d92e0b2e02300fa2.png",
+          "sha256": "d92e0b2e02300fa2dfde982d7926f1e65b90b08e96ce88a05cde8b290915103e",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-31",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 31,
+            "sha256": "efd7ca6da147fc8613c08443d1adb4d282c322d44f5b2f58a4610cfa447e2e2d"
+          },
+          "correction": "complete upper body recentered over the fixed root; exact-authority waist and legs replace the generated seam"
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f32",
+          "label": "rear work 23",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-31dbac4efc00089f.png",
+          "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-32",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 32,
+            "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f33",
+          "label": "rear work 24",
+          "phase": "work",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-31dbac4efc00089f.png",
+          "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+          "durationMs": 250,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-33",
+          "authorityOverride": null,
+          "sourceClip": "rear-action-v1",
+          "priorV2": {
+            "position": 33,
+            "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f34",
+          "label": "return to side 1",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-bb530610cf0e17bf.png",
+          "sha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-34",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 34,
+            "sha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f35",
+          "label": "return to side 2",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-d55afae023051e29.png",
+          "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-35",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 35,
+            "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f36",
+          "label": "return to side 3",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-fe06522abd0cd55c.png",
+          "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-36",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 36,
+            "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f37",
+          "label": "return to side 4",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-f827ac61f45aaaa4.png",
+          "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-37",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 37,
+            "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f38",
+          "label": "return to side 5",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-0d278363a0e7e4f1.png",
+          "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-38",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 38,
+            "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f39",
+          "label": "return to side 6",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-34028d8821a7272a.png",
+          "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-39",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 39,
+            "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f40",
+          "label": "return to side 7",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-e1dc020aabfe8f3b.png",
+          "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-40",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 40,
+            "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5"
+          },
+          "correction": null
+        },
+        {
+          "id": "rear-work-turn-return-v1-v3-f41",
+          "label": "return to side 8",
+          "phase": "turn to side",
+          "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-c097d78aac2d2c52.png",
+          "sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+          "durationMs": 62.5,
+          "cell": [
+            256,
+            320
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "redraftSlot": "rear-work-turn-return-v1/v3-frame-41",
+          "authorityOverride": null,
+          "sourceClip": "turn-side-back-v10",
+          "priorV2": {
+            "position": 41,
+            "sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8"
+          },
+          "correction": null
+        }
+      ]
+    }
+  ],
+  "expandedCells": {
+    "sweepBroom": [
+      384,
+      320
+    ],
+    "reason": "The separately owned broom requires a prop-safe horizontal gutter outside the 256×320 Prime body cell."
+  },
+  "reviewAuthorities": {
+    "front": {
+      "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-287c42001ae5c757.png",
+      "sha256": "287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c",
+      "status": "feedback-corrected-review-reference"
+    },
+    "back": {
+      "src": "/keeper-review/keeper-prime-morning-drafts-v3/assets/frame-e6520aab48100c44.png",
+      "sha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+      "status": "feedback-corrected-review-reference"
+    },
+    "sideRight": {
+      "src": "/sprites/keeper_prime_neutral_standing-side-right.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "status": "approved-authority-unchanged"
+    }
+  }
+}

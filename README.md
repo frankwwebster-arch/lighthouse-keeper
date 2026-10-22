@@ -4,15 +4,17 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 
 The current Prime animation review is
 `/prime-keeper-animation-drafts` (versioned permalink
-`/prime-keeper-animation-drafts-v2`): ten reversible sequences with 163
-frame occurrences. It preserves the five V1 action drafts and adds an isolated
-broom-sweep candidate plus four choreography previews assembled only from
-byte-exact approved front, side and rear component frames. Every player has
+`/prime-keeper-animation-drafts-v3`): ten reversible sequences with 162
+frame occurrences. V3 implements the first review notes without overwriting
+V1/V2: the redundant second lift frame is omitted, every reused passive
+front/back endpoint has a brighter jumper registered to the approved Prime
+colour family, the non-writing seated route has an accurate title, and the 21
+faulty rear-work frames have a clean, fixed waist/leg join. Every player has
 pause/stop/frame controls, the page includes a sequence sandbox and
-frame-specific redraft notes, and exact approved Prime endpoints are never
-redrawn. Unsafe snack, bed and original broom source sheets remain visibly
+frame-specific redraft notes, and all corrections remain separate review-only
+copies. Unsafe snack, bed and original broom source sheets remain visibly
 withheld by the isolation gate. See
-`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V2_2026-10-22.md`.
+`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V3_2026-10-22.md`.
 
 The historical whole-bank gate is the reversible Prime Keeper whole-bank
 normalisation programme. Its new selector is

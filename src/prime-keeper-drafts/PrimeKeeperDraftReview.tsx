@@ -13,6 +13,7 @@ type Batch = {
   dimensions: { logicalCell: number[]; authoringCell: number[]; scale: number; anchor: number[]; capTop: number; floorOpaqueY: number }
   colourLock: Record<string, number[]>
   canonicalAuthorities: Record<string, { path: string; sha256: string }>
+  reviewAuthorities?: Record<string, { src: string; sha256: string; status: string }>
   quarantinedSources: Array<{ id: string; title: string; path: string; sha256: string; reason: string }>
   sequences: Sequence[]
 }
@@ -93,7 +94,8 @@ export default function PrimeKeeperDraftReview({ batch }: { batch: Batch }) {
   const [notes, setNotes] = useState<Record<string, string>>({})
   const [activeFrame, setActiveFrame] = useState<Frame | null>(batch.sequences[0]?.frames[0] ?? null)
   const sequenceMap = useMemo(() => new Map(batch.sequences.map((sequence) => [sequence.id, sequence])), [batch.sequences])
-  const sources = useMemo(() => [...new Set([...Object.values(AUTHORITY_SPRITES), ...batch.sequences.flatMap((sequence) => sequence.frames.map((frame) => frame.src))])], [batch.sequences])
+  const authoritySprites = useMemo(() => Object.fromEntries(Object.keys(batch.canonicalAuthorities).map((name) => [name, batch.reviewAuthorities?.[name]?.src ?? AUTHORITY_SPRITES[name]])), [batch.canonicalAuthorities, batch.reviewAuthorities])
+  const sources = useMemo(() => [...new Set([...Object.values(authoritySprites), ...batch.sequences.flatMap((sequence) => sequence.frames.map((frame) => frame.src))])], [authoritySprites, batch.sequences])
 
   useEffect(() => {
     let cancelled = false
@@ -144,7 +146,7 @@ export default function PrimeKeeperDraftReview({ batch }: { batch: Batch }) {
       <nav><a href="/prime-keeper-animations">Approved library</a><span>/</span><strong>{batch.version < 2 ? 'Morning draft batch V1' : `Expanded review batch V${batch.version}`}</strong>{batch.version < 2 && <><span>/</span><a href="/prime-keeper-animation-drafts-v2">Open expanded V2 →</a></>}</nav>
       <p className={styles.eyebrow}>Versioned · reversible · frame-addressable</p>
       <h1>Prime Keeper<br />next motions.</h1>
-      <p className={styles.lede}>{batch.version < 2 ? 'P0 circulation plus the first food, hygiene and reaction motions, held outside the production bank until you approve or request individual frame changes.' : 'P0 circulation and daily-life drafts, plus exact approved-component choreography for seating, diary and rear tasks. Candidate sequences remain outside the production bank until their complete motion is accepted.'}</p>
+      <p className={styles.lede}>{batch.version < 2 ? 'P0 circulation plus the first food, hygiene and reaction motions, held outside the production bank until you approve or request individual frame changes.' : batch.version >= 3 ? 'Feedback-corrected circulation and daily-life drafts. Passive front/back colour, lift timing, route naming and the rear-work waist seam are revised in reversible V3 copies; nothing here is promoted until accepted.' : 'P0 circulation and daily-life drafts, plus exact approved-component choreography for seating, diary and rear tasks. Candidate sequences remain outside the production bank until their complete motion is accepted.'}</p>
     </header>
 
     <section className={styles.readiness}><strong>{loadError ? 'Playback locked' : ready ? `All ${sources.length} images decoded` : `Preparing ${sources.length} images…`}</strong><span>{loadError || 'No player starts until every frame is available.'}</span></section>
@@ -152,9 +154,9 @@ export default function PrimeKeeperDraftReview({ batch }: { batch: Batch }) {
     <section className={styles.contract}>
       <div><span>01</span><h2>Prime identity gate</h2></div>
       <p><strong>32×40 logical pixels · 256×320 authoring · 8 px/lp · anchor 128,320.</strong> Cap top y18; opaque floor y316. Jumper, cream band, trousers and boots are colour-locked to the measured Prime palette below.</p>
-      <div className={styles.authorities}>{Object.entries(batch.canonicalAuthorities).map(([name, authority]) => <article key={name}><div className={styles.authorityStage}><img src={AUTHORITY_SPRITES[name]} alt={`Canonical ${name} Prime Keeper`} /></div><strong>{name.replace(/([A-Z])/g, ' $1')}</strong><code>{authority.sha256.slice(0, 16)}…</code></article>)}</div>
+      <div className={styles.authorities}>{Object.entries(batch.canonicalAuthorities).map(([name, authority]) => { const review = batch.reviewAuthorities?.[name]; return <article key={name}><div className={styles.authorityStage}><img src={authoritySprites[name]} alt={`${review ? 'V3 review' : 'Canonical'} ${name} Prime Keeper`} /></div><strong>{name.replace(/([A-Z])/g, ' $1')}</strong><code>{(review?.sha256 ?? authority.sha256).slice(0, 16)}…</code></article> })}</div>
       <dl className={styles.palette}>{Object.entries(batch.colourLock).map(([name, rgb]) => <div key={name}><i style={{ background: `rgb(${rgb.join(',')})` }} /><dt>{name}</dt><dd>{rgb.join(', ')}</dd></div>)}</dl>
-      <p className={styles.boundary}><strong>Review boundary:</strong> this page contains {frameCount} frame occurrences. {approvedCompositionCount ? `${approvedCompositionCount} sequences reuse byte-exact approved component art; their order, holds and joins are still presented for choreography review. ` : ''}Generated action drafts and the isolated broom candidate remain unapproved. Canonical Prime art and approved sources are unchanged. Every occurrence has a stable feedback slot.</p>
+      <p className={styles.boundary}><strong>Review boundary:</strong> this page contains {frameCount} frame occurrences. {approvedCompositionCount ? `${approvedCompositionCount} sequences reuse byte-exact approved component art; their order, holds and joins are still presented for choreography review. ` : ''}Generated action drafts and the isolated broom candidate remain unapproved. Canonical Prime art and approved sources are unchanged; V3 corrections are separate review copies. Every occurrence has a stable feedback slot.</p>
       <div className={styles.quarantine}><strong>{batch.quarantinedSources.length} generated sources withheld by the isolation gate</strong><ul>{batch.quarantinedSources.map((item) => <li key={item.id}><span>{item.title}</span> — {item.reason}</li>)}</ul></div>
     </section>
 
