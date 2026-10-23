@@ -57,5 +57,7 @@ The active fallback is `/prime-keeper-rear-task-alignment`, where the exact
 torso is shown alone first for an explicit jumper-bottom crop in all 21 affected
 frames. The approved legs and alignment controls appear only after that crop is
 confirmed, preventing the existing second seam from being mistaken for an
-alignment problem. See
+alignment problem. The clean approved trousers remain behind the jumper with a
+four-pixel hidden safety underlap, so later lateral torso movement cannot expose
+transparency at hip height. See
 `docs/PRIME_KEEPER_REAR_TASK_ALIGNMENT_WORKBENCH_V1_2026-10-23.md`.

@@ -33,7 +33,10 @@ Frank first removes the unwanted lower jumper seam, confirms that crop, and
 only then sees and aligns the approved legs. It supports one-pixel crop and
 alignment nudging, two crop boundaries, 4× waist inspection, frame
 stepping/playback, separate crop-confirmed and aligned states, PNG download and
-hash-addressed JSON handback without changing any source or runtime art. See
+hash-addressed JSON handback without changing any source or runtime art. The
+approved trousers remain the behind layer with a four-pixel hidden underlap;
+their unwanted top-seam rows are excluded, so lateral torso movement cannot
+open a transparent hip tear. See
 `docs/PRIME_KEEPER_REAR_TASK_ALIGNMENT_WORKBENCH_V1_2026-10-23.md`.
 
 The historical whole-bank gate is the reversible Prime Keeper whole-bank
@@ -1063,8 +1066,8 @@ No approved source, runtime behavior or production asset changed. See
 [`docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V5_2026-10-23.md`](docs/KITCHEN_COMPLETE_ROOM_LAYOUT_V5_2026-10-23.md).
 
 Kitchen Fixed Shell Layout V6 at
-`/keeper-review/kitchen-fixed-shell-layout-v6` is the current unapproved room
-gate. It is a deterministic decomposition of the approved cabinetry and state
+`/keeper-review/kitchen-fixed-shell-layout-v6` is immutable superseded review
+provenance. It established the deterministic decomposition of the approved cabinetry and state
 sheets, not another model redraw. A single fixed `504 px` worktop, single
 continuous plinth and fixed six-aperture carcass own all fitted geometry. Only
 fronts, doors, contents, indicators, water, the registered sink insert and the
@@ -1072,6 +1075,17 @@ oven's separate hob overlay move. The six exact `84 × 74` bodies and their
 centres are unchanged; kettle and toaster remain centred on and owned by
 distinct cupboard/drawers identities. No healing layer is used. See
 [`docs/KITCHEN_FIXED_SHELL_LAYOUT_V6_2026-10-23.md`](docs/KITCHEN_FIXED_SHELL_LAYOUT_V6_2026-10-23.md).
+
+Kitchen Fixed Shell Layout V7 at
+`/keeper-review/kitchen-fixed-shell-layout-v7` is the current unapproved room
+gate. It keeps V6's approved insert pixels, appliance states, exact grid and
+movement behaviour, but corrects the shared fitted shell: the shallower
+worktop has no blue underside masking the fascia tops; the Belfast sink is an
+opaque cut-in above it; and the carcass, dividers, plinth and two run ends use
+a declared flat blue/ink palette rather than sampled cabinet-edge pixels. This
+removes the pale inter-cabinet seams, curved drawer shadow and end artefacts
+without a healing layer or model redraw. See
+[`docs/KITCHEN_FIXED_SHELL_LAYOUT_V7_2026-10-23.md`](docs/KITCHEN_FIXED_SHELL_LAYOUT_V7_2026-10-23.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

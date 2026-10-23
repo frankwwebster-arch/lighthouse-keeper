@@ -32,6 +32,12 @@ type Adjustment = {
 
 const WIDTH = 256
 const HEIGHT = 320
+const CLEAN_TROUSER_START = 219
+const TROUSER_UNDERLAP = 4
+const WAIST_X = 82
+const WAIST_WIDTH = 91
+const UNDERLAP_SAMPLE_X = 100
+const UNDERLAP_SAMPLE_ROW = 220
 const STORAGE_KEY = 'prime-keeper-rear-task-alignment:v1'
 
 function defaultAdjustment(frame: RearTaskAlignmentFrame): Adjustment {
@@ -41,7 +47,7 @@ function defaultAdjustment(frame: RearTaskAlignmentFrame): Adjustment {
     torsoCutY: 214,
     legsX: frame.defaultLegsX,
     legsY: 0,
-    legsCropY: 214,
+    legsCropY: CLEAN_TROUSER_START,
     cropConfirmed: false,
     aligned: false,
   }
@@ -87,7 +93,10 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
   useEffect(() => {
     try {
       const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? '{}') as Record<number, Partial<Adjustment>>
-      setAdjustments(Object.fromEntries(frames.map((item) => [item.position, { ...defaultAdjustment(item), ...(stored[item.position] ?? {}) }])))
+      setAdjustments(Object.fromEntries(frames.map((item) => {
+        const restored = { ...defaultAdjustment(item), ...(stored[item.position] ?? {}) }
+        return [item.position, { ...restored, legsCropY: clamp(restored.legsCropY, CLEAN_TROUSER_START, 230) }]
+      })))
     } catch {
       setAdjustments(defaults)
     }
@@ -127,23 +136,37 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
     context.clearRect(0, 0, WIDTH, HEIGHT)
     context.imageSmoothingEnabled = false
 
-    const legsCropY = clamp(adjustment.legsCropY, 0, HEIGHT - 1)
+    const legsCropY = clamp(adjustment.legsCropY, CLEAN_TROUSER_START, HEIGHT - 1)
+    const torsoCutY = clamp(adjustment.torsoCutY, 1, HEIGHT)
     // The approved rear authority is a full standing figure. Its hands sit at
     // waist height, outside the verified lower-body ownership bounds. Keep the
     // exact trouser/boot pixels only: the narrow waist through row 230, then
-    // the wider legs below. Nothing is repainted or inferred.
-    const waistStart = Math.max(legsCropY, 214)
-    if (editorMode === 'align' && waistStart < 231) context.drawImage(legs, 82, waistStart, 91, 231 - waistStart, 82 + adjustment.legsX, waistStart + adjustment.legsY, 91, 231 - waistStart)
+    // the wider legs below. Rows 214–218 contain the authority's visible top
+    // seam, so the clean trousers begin at row 219. One exact flat-colour pixel
+    // from the clean trouser interior is repeated above that boundary as a
+    // seam-free safety underlap. It remains behind the torso and prevents a
+    // transparent tear when the torso moves laterally.
+    const waistStart = Math.max(legsCropY, CLEAN_TROUSER_START)
+    const waistDestination = waistStart + adjustment.legsY
+    const underlapTop = Math.min(waistDestination, torsoCutY + adjustment.torsoY - TROUSER_UNDERLAP)
+    if (editorMode === 'align') {
+      for (let y = underlapTop; y < waistDestination; y += 1) {
+        context.drawImage(legs, UNDERLAP_SAMPLE_X, UNDERLAP_SAMPLE_ROW, 1, 1, WAIST_X + adjustment.legsX, y, WAIST_WIDTH, 1)
+      }
+    }
+    if (editorMode === 'align' && waistStart < 231) context.drawImage(legs, WAIST_X, waistStart, WAIST_WIDTH, 231 - waistStart, WAIST_X + adjustment.legsX, waistDestination, WAIST_WIDTH, 231 - waistStart)
     const lowerStart = Math.max(legsCropY, 231)
     if (editorMode === 'align' && lowerStart < HEIGHT) context.drawImage(legs, 70, lowerStart, 117, HEIGHT - lowerStart, 70 + adjustment.legsX, lowerStart + adjustment.legsY, 117, HEIGHT - lowerStart)
 
-    const torsoCutY = clamp(adjustment.torsoCutY, 1, HEIGHT)
     context.drawImage(torso, 0, 0, WIDTH, torsoCutY, adjustment.torsoX, adjustment.torsoY, WIDTH, torsoCutY)
 
     torsoSourceContext.clearRect(0, 0, WIDTH, HEIGHT)
     torsoSourceContext.drawImage(torso, 0, 0, WIDTH, torsoCutY, 0, 0, WIDTH, torsoCutY)
     legsSourceContext.clearRect(0, 0, WIDTH, HEIGHT)
-    if (waistStart < 231) legsSourceContext.drawImage(legs, 82, waistStart, 91, 231 - waistStart, 82, waistStart, 91, 231 - waistStart)
+    for (let y = Math.min(waistStart, torsoCutY - TROUSER_UNDERLAP); y < waistStart; y += 1) {
+      legsSourceContext.drawImage(legs, UNDERLAP_SAMPLE_X, UNDERLAP_SAMPLE_ROW, 1, 1, WAIST_X, y, WAIST_WIDTH, 1)
+    }
+    if (waistStart < 231) legsSourceContext.drawImage(legs, WAIST_X, waistStart, WAIST_WIDTH, 231 - waistStart, WAIST_X, waistStart, WAIST_WIDTH, 231 - waistStart)
     if (lowerStart < HEIGHT) legsSourceContext.drawImage(legs, 70, lowerStart, 117, HEIGHT - lowerStart, 70, lowerStart, 117, HEIGHT - lowerStart)
 
     seamContext.clearRect(0, 0, seam.width, seam.height)
@@ -178,12 +201,14 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
   }, [editorMode, selectedLayer, updateCurrent])
 
   const exportPayload = useCallback(() => ({
-    schema: 'lighthouse-keeper/prime-rear-task-manual-alignment@2',
+    schema: 'lighthouse-keeper/prime-rear-task-manual-alignment@3',
     savedAt: new Date().toISOString(),
     source: {
       torsoBatch: 'keeper-prime-morning-drafts-v6',
       legsSha256,
       layerOrder: ['approved rear legs', 'moving action torso'],
+      trouserCleanStartRow: CLEAN_TROUSER_START,
+      minimumTrouserUnderlap: TROUSER_UNDERLAP,
     },
     dimensions: { width: WIDTH, height: HEIGHT, floorY: 316 },
     frames: frames.map((item) => ({
@@ -357,8 +382,8 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
 
         <section>
           <h3>4. Refine the legs boundary</h3>
-          <label>Legs begin from source row <output>{adjustment.legsCropY}</output><input type="range" min={204} max={230} value={adjustment.legsCropY} onChange={(event) => updateCurrent({ legsCropY: Number(event.target.value), aligned: false })} /></label>
-          <p>The approved legs are drawn first; only your already-cropped jumper is drawn over them. Cropping does not repaint, stretch or generate a pixel.</p>
+          <label>Clean trousers begin from source row <output>{adjustment.legsCropY}</output><input aria-label="Clean trousers source row" type="range" min={CLEAN_TROUSER_START} max={230} value={adjustment.legsCropY} onChange={(event) => updateCurrent({ legsCropY: Number(event.target.value), aligned: false })} /></label>
+          <p>The approved trousers are the lower, behind layer. They keep at least {TROUSER_UNDERLAP} hidden pixels beneath the cropped jumper, so lateral torso movement cannot open a transparent tear. The authority's rows 214–218, which contain its top seam, remain excluded.</p>
         </section>
 
         <section className={styles.frameActions}>

@@ -24,7 +24,13 @@ crop-first workflow:
 The authority's waist-level hands are outside the verified lower-body ownership
 bounds and are deliberately excluded. Rows 214–230 use x82–172; rows 231–319
 use x70–186, matching the deterministic compositor's authority ownership.
-No layer is stretched, repainted, generated or written back to source art.
+Authority rows 214–218 contain the unwanted top trouser seam and are excluded
+from the visible lower layer. The compositor repeats one exact clean interior
+trouser-colour pixel from the same approved authority across the narrow waist
+bridge, retaining a hidden four-pixel safety underlap before resuming the
+unscaled approved pixels from row 219. This prevents a transparent hip tear if
+the torso moves laterally without restoring the rejected top waistband seam.
+Nothing is written back to source art.
 
 ## Controls and persistence
 
@@ -53,8 +59,9 @@ Frank can:
 Settings remain local to the browser under
 `prime-keeper-rear-task-alignment:v1`. The exported JSON is the handback
 authority for a later deterministic V10 build and uses schema
-`lighthouse-keeper/prime-rear-task-manual-alignment@2`, including independent
-`cropConfirmed` and `aligned` states. The storage key intentionally remains V1
+`lighthouse-keeper/prime-rear-task-manual-alignment@3`, including independent
+`cropConfirmed` and `aligned` states plus the clean-trouser and minimum-underlap
+contract. The storage key intentionally remains V1
 so earlier unsaved placement work remains recoverable. The workbench itself
 promotes nothing to the animation bank.
 
@@ -70,5 +77,5 @@ The verifier pins the 21 source frames, lower-body authority hash, ownership
 bounds, V9 horizontal starting registrations, crop-first gating, editing
 controls, local-only persistence and export path. The page was also
 browser-tested for source-image decoding, crop-only display, one-pixel crop
-adjustment, explicit crop confirmation, leg reveal and state invalidation after
-a later crop change.
+adjustment, explicit crop confirmation, seam-free trouser underlap, leg reveal
+and state invalidation after a later crop change.
