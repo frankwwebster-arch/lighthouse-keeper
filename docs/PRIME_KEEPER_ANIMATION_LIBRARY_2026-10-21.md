@@ -79,21 +79,19 @@ remain at their versioned routes; the current versioned route is
 `/prime-keeper-animation-drafts-v9`. See
 `docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V9_2026-10-23.md`.
 
-The active correction surface is `/prime-keeper-rear-task-alignment`. It keeps
-the immutable V6 torso and approved rear legs separate across frames 11–31.
-Each frame opens with the legs hidden so the unwanted lower jumper seam can be
-cropped first; only an explicitly confirmed crop reveals the legs for manual
-drag and pixel alignment. The crop is now a five-point editable shallow-U hem
-with a true-black outline and direct editing in the 4× waist view. The trousers
-retain a four-pixel hidden underlap
-beneath the jumper while their visible top-seam rows stay excluded, preventing
-a lateral hip tear. Clean approved trouser shading and black side outlines are
-continued upward through any vertical extension. A live alpha-bounds check
-reports height, width, floor and centre against the approved Prime rear
-authority, which can also be shown as a 10–80% translucent canonical ghost.
-The ghost remains outside the composite and exports. The workbench then exports
-hash-addressed JSON and does not alter or promote source art. See
-`docs/PRIME_KEEPER_REAR_TASK_ALIGNMENT_WORKBENCH_V1_2026-10-23.md`.
+The active correction surface is `/prime-keeper-rear-task-alignment-v2`. Source
+inspection established that the moving upper seam of the ribbed jumper band is
+faulty; the lower seam is not. V2 therefore crops immediately above that moving
+upper seam without drawing a replacement outline, then retains the approved
+Prime's complete ribbed band, correct lower seam, trousers and boots together
+as one exact layer. A column-wise extension of clean moving-jumper pixels closes
+any small join gap without flattening its colour variation. The five-point
+curve, direct 4× editing, drag/pixel alignment, live alpha-bounds audit and
+10–80% canonical ghost remain available across frames 11–31. The ghost remains
+outside the composite and exports. V1 remains at
+`/prime-keeper-rear-task-alignment` with separate saved settings as reversible
+lower-seam comparison evidence. See
+`docs/PRIME_KEEPER_REAR_TASK_UPPER_SEAM_WORKBENCH_V2_2026-10-23.md`.
 
 The held-implement POC remains excluded. Its motion feasibility and
 `hold_shaft_two_hand` concept are approved, but the proxy body art is not.

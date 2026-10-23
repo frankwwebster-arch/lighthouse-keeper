@@ -2,9 +2,13 @@
 
 Date: 23 October 2026
 
-Status: active manual fallback. V9 is rejected review evidence.
+Status: superseded lower-seam experiment, retained as reversible comparison
+evidence. The active correction is V2, which targets the upper jumper-band seam.
 
 Route: `/prime-keeper-rear-task-alignment`
+
+Active successor: `/prime-keeper-rear-task-alignment-v2`; see
+`PRIME_KEEPER_REAR_TASK_UPPER_SEAM_WORKBENCH_V2_2026-10-23.md`.
 
 ## Why this exists
 

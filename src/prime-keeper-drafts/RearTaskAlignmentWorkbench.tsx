@@ -15,6 +15,7 @@ type Props = {
   frames: RearTaskAlignmentFrame[]
   legsSrc: string
   legsSha256: string
+  joinStrategy?: 'lower-trouser' | 'upper-jumper-seam'
 }
 
 type Layer = 'torso' | 'legs'
@@ -37,6 +38,9 @@ type DimensionAudit = { composite: OpaqueBounds; authority: OpaqueBounds }
 
 const WIDTH = 256
 const HEIGHT = 320
+const AUTHORITY_WAISTBAND_START = 201
+const AUTHORITY_WAISTBAND_X = 78
+const AUTHORITY_WAISTBAND_WIDTH = 99
 const CLEAN_TROUSER_START = 219
 const TROUSER_UNDERLAP = 4
 const WAIST_X = 82
@@ -48,16 +52,18 @@ const HEM_CONTROL_X = [82, 105, 128, 151, 174] as const
 const DEFAULT_HEM_OFFSETS: HemCurve = [-4, -1, 0, -1, -4]
 const HEM_POINT_NAMES = ['left edge', 'left middle', 'centre', 'right middle', 'right edge'] as const
 const STORAGE_KEY = 'prime-keeper-rear-task-alignment:v1'
+const UPPER_SEAM_STORAGE_KEY = 'prime-keeper-rear-task-alignment:v2:upper-seam'
 
-function defaultAdjustment(frame: RearTaskAlignmentFrame): Adjustment {
+function defaultAdjustment(frame: RearTaskAlignmentFrame, joinStrategy: Props['joinStrategy'] = 'lower-trouser'): Adjustment {
+  const upperSeam = joinStrategy === 'upper-jumper-seam'
   return {
     torsoX: 0,
     torsoY: 0,
-    torsoCutY: 214,
+    torsoCutY: upperSeam ? 194 : 214,
     hemOffsets: [...DEFAULT_HEM_OFFSETS],
     legsX: frame.defaultLegsX,
     legsY: 0,
-    legsCropY: CLEAN_TROUSER_START,
+    legsCropY: upperSeam ? AUTHORITY_WAISTBAND_START : CLEAN_TROUSER_START,
     cropConfirmed: false,
     aligned: false,
   }
@@ -117,6 +123,26 @@ function curveYAt(points: ReturnType<typeof hemPoints>, x: number) {
   return points[points.length - 1].y
 }
 
+function drawJumperBodyExtension(
+  context: CanvasRenderingContext2D,
+  torso: HTMLImageElement,
+  points: ReturnType<typeof hemPoints>,
+  adjustment: Adjustment,
+  authorityTop: number,
+) {
+  const lastSourceX = AUTHORITY_WAISTBAND_X + AUTHORITY_WAISTBAND_WIDTH - 1
+  for (let sourceX = AUTHORITY_WAISTBAND_X; sourceX <= lastSourceX; sourceX += 1) {
+    const destinationX = sourceX + adjustment.torsoX
+    const extensionTop = curveYAt(points, destinationX)
+    const sourceCutY = extensionTop - adjustment.torsoY
+    for (let destinationY = extensionTop; destinationY < authorityTop + 2; destinationY += 1) {
+      const distance = Math.max(0, destinationY - extensionTop)
+      const sourceY = clamp(sourceCutY - 1 - distance, 176, sourceCutY - 1)
+      context.drawImage(torso, sourceX, sourceY, 1, 1, destinationX, destinationY, 1, 1)
+    }
+  }
+}
+
 function drawTrouserExtension(
   context: CanvasRenderingContext2D,
   legs: HTMLImageElement,
@@ -169,8 +195,11 @@ function opaqueBounds(context: CanvasRenderingContext2D): OpaqueBounds | null {
   return x1 < 0 ? null : { x0, y0, x1, y1, width: x1 - x0 + 1, height: y1 - y0 + 1, centreX: (x0 + x1) / 2 }
 }
 
-export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256 }: Props) {
-  const defaults = useMemo(() => Object.fromEntries(frames.map((frame) => [frame.position, defaultAdjustment(frame)])) as Record<number, Adjustment>, [frames])
+export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256, joinStrategy = 'lower-trouser' }: Props) {
+  const upperSeamJoin = joinStrategy === 'upper-jumper-seam'
+  const storageKey = upperSeamJoin ? UPPER_SEAM_STORAGE_KEY : STORAGE_KEY
+  const lowerSourceStart = upperSeamJoin ? AUTHORITY_WAISTBAND_START : CLEAN_TROUSER_START
+  const defaults = useMemo(() => Object.fromEntries(frames.map((frame) => [frame.position, defaultAdjustment(frame, joinStrategy)])) as Record<number, Adjustment>, [frames, joinStrategy])
   const [adjustments, setAdjustments] = useState<Record<number, Adjustment>>(defaults)
   const [frameIndex, setFrameIndex] = useState(0)
   const [selectedLayer, setSelectedLayer] = useState<Layer>('legs')
@@ -195,18 +224,18 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
   const dragRef = useRef<{ kind: EditorMode; pointerId: number; startX: number; startY: number; initialX: number; initialY: number; hemIndex?: number } | null>(null)
 
   const frame = frames[frameIndex]
-  const adjustment = adjustments[frame.position] ?? defaultAdjustment(frame)
+  const adjustment = adjustments[frame.position] ?? defaultAdjustment(frame, joinStrategy)
   const cropped = Object.values(adjustments).filter((item) => item.cropConfirmed).length
   const completed = Object.values(adjustments).filter((item) => item.aligned).length
 
   useEffect(() => {
     try {
-      const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? '{}') as Record<number, Partial<Adjustment>>
+      const stored = JSON.parse(localStorage.getItem(storageKey) ?? '{}') as Record<number, Partial<Adjustment>>
       setAdjustments(Object.fromEntries(frames.map((item) => {
-        const restored = { ...defaultAdjustment(item), ...(stored[item.position] ?? {}) }
+        const restored = { ...defaultAdjustment(item, joinStrategy), ...(stored[item.position] ?? {}) }
         return [item.position, {
           ...restored,
-          legsCropY: clamp(restored.legsCropY, CLEAN_TROUSER_START, 230),
+          legsCropY: clamp(restored.legsCropY, lowerSourceStart, 230),
           hemOffsets: normaliseHemOffsets(restored.hemOffsets),
         }]
       })))
@@ -214,11 +243,11 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
       setAdjustments(defaults)
     }
     setHydrated(true)
-  }, [defaults, frames])
+  }, [defaults, frames, joinStrategy, lowerSourceStart, storageKey])
 
   useEffect(() => {
-    if (hydrated) localStorage.setItem(STORAGE_KEY, JSON.stringify(adjustments))
-  }, [adjustments, hydrated])
+    if (hydrated) localStorage.setItem(storageKey, JSON.stringify(adjustments))
+  }, [adjustments, hydrated, storageKey])
 
   useEffect(() => {
     let cancelled = false
@@ -253,7 +282,7 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
     context.clearRect(0, 0, WIDTH, HEIGHT)
     context.imageSmoothingEnabled = false
 
-    const legsCropY = clamp(adjustment.legsCropY, CLEAN_TROUSER_START, HEIGHT - 1)
+    const legsCropY = clamp(adjustment.legsCropY, lowerSourceStart, HEIGHT - 1)
     const points = hemPoints(adjustment)
     const sourcePoints = hemPoints(adjustment, false)
     // The approved rear authority is a full standing figure. Its hands sit at
@@ -264,10 +293,15 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
     // rows are continued upward column-by-column, preserving their shading and
     // black side outlines. This remains behind the torso and prevents a
     // transparent tear when the torso moves laterally or vertically.
-    const waistStart = Math.max(legsCropY, CLEAN_TROUSER_START)
+    const waistStart = Math.max(legsCropY, lowerSourceStart)
     const waistDestination = waistStart + adjustment.legsY
-    if (editorMode === 'align') drawTrouserExtension(context, legs, points, adjustment.legsX, waistStart, waistDestination)
-    if (editorMode === 'align' && waistStart < 231) context.drawImage(legs, WAIST_X, waistStart, WAIST_WIDTH, 231 - waistStart, WAIST_X + adjustment.legsX, waistDestination, WAIST_WIDTH, 231 - waistStart)
+    if (editorMode === 'align' && upperSeamJoin) {
+      drawJumperBodyExtension(context, torso, points, adjustment, waistDestination)
+      if (waistStart < 231) context.drawImage(legs, AUTHORITY_WAISTBAND_X, waistStart, AUTHORITY_WAISTBAND_WIDTH, 231 - waistStart, AUTHORITY_WAISTBAND_X + adjustment.legsX, waistDestination, AUTHORITY_WAISTBAND_WIDTH, 231 - waistStart)
+    } else if (editorMode === 'align') {
+      drawTrouserExtension(context, legs, points, adjustment.legsX, waistStart, waistDestination)
+      if (waistStart < 231) context.drawImage(legs, WAIST_X, waistStart, WAIST_WIDTH, 231 - waistStart, WAIST_X + adjustment.legsX, waistDestination, WAIST_WIDTH, 231 - waistStart)
+    }
     const lowerStart = Math.max(legsCropY, 231)
     if (editorMode === 'align' && lowerStart < HEIGHT) context.drawImage(legs, 70, lowerStart, 117, HEIGHT - lowerStart, 70 + adjustment.legsX, lowerStart + adjustment.legsY, 117, HEIGHT - lowerStart)
 
@@ -276,12 +310,14 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
     context.clip()
     context.drawImage(torso, adjustment.torsoX, adjustment.torsoY)
     context.restore()
-    traceHem(context, points)
-    context.strokeStyle = '#000000'
-    context.lineWidth = 2
-    context.lineCap = 'round'
-    context.lineJoin = 'round'
-    context.stroke()
+    if (!upperSeamJoin) {
+      traceHem(context, points)
+      context.strokeStyle = '#000000'
+      context.lineWidth = 2
+      context.lineCap = 'round'
+      context.lineJoin = 'round'
+      context.stroke()
+    }
 
     torsoSourceContext.clearRect(0, 0, WIDTH, HEIGHT)
     torsoSourceContext.save()
@@ -289,15 +325,21 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
     torsoSourceContext.clip()
     torsoSourceContext.drawImage(torso, 0, 0)
     torsoSourceContext.restore()
-    traceHem(torsoSourceContext, sourcePoints)
-    torsoSourceContext.strokeStyle = '#000000'
-    torsoSourceContext.lineWidth = 2
-    torsoSourceContext.lineCap = 'round'
-    torsoSourceContext.lineJoin = 'round'
-    torsoSourceContext.stroke()
+    if (!upperSeamJoin) {
+      traceHem(torsoSourceContext, sourcePoints)
+      torsoSourceContext.strokeStyle = '#000000'
+      torsoSourceContext.lineWidth = 2
+      torsoSourceContext.lineCap = 'round'
+      torsoSourceContext.lineJoin = 'round'
+      torsoSourceContext.stroke()
+    }
     legsSourceContext.clearRect(0, 0, WIDTH, HEIGHT)
-    drawTrouserExtension(legsSourceContext, legs, sourcePoints, 0, waistStart, waistStart)
-    if (waistStart < 231) legsSourceContext.drawImage(legs, WAIST_X, waistStart, WAIST_WIDTH, 231 - waistStart, WAIST_X, waistStart, WAIST_WIDTH, 231 - waistStart)
+    if (upperSeamJoin) {
+      if (waistStart < 231) legsSourceContext.drawImage(legs, AUTHORITY_WAISTBAND_X, waistStart, AUTHORITY_WAISTBAND_WIDTH, 231 - waistStart, AUTHORITY_WAISTBAND_X, waistStart, AUTHORITY_WAISTBAND_WIDTH, 231 - waistStart)
+    } else {
+      drawTrouserExtension(legsSourceContext, legs, sourcePoints, 0, waistStart, waistStart)
+      if (waistStart < 231) legsSourceContext.drawImage(legs, WAIST_X, waistStart, WAIST_WIDTH, 231 - waistStart, WAIST_X, waistStart, WAIST_WIDTH, 231 - waistStart)
+    }
     if (lowerStart < HEIGHT) legsSourceContext.drawImage(legs, 70, lowerStart, 117, HEIGHT - lowerStart, 70, lowerStart, 117, HEIGHT - lowerStart)
 
     if (editorMode === 'align') {
@@ -313,6 +355,14 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
       }
     } else {
       setDimensionAudit(null)
+      if (upperSeamJoin) {
+        traceHem(context, points)
+        context.strokeStyle = '#e0ad43'
+        context.lineWidth = 1
+        context.lineCap = 'round'
+        context.lineJoin = 'round'
+        context.stroke()
+      }
       context.fillStyle = '#e0ad43'
       points.forEach((point, index) => {
         context.beginPath()
@@ -338,7 +388,7 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
       ghostContext.globalAlpha = 1
       seamGhostContext.drawImage(ghostCanvas, 48, 184, 160, 72, 0, 0, 160, 72)
     }
-  }, [adjustment, editorMode, frame.torsoSrc, legsSrc, primeGhostOpacity, selectedHemPoint, showPrimeGhost])
+  }, [adjustment, editorMode, frame.torsoSrc, legsSrc, lowerSourceStart, primeGhostOpacity, selectedHemPoint, showPrimeGhost, upperSeamJoin])
 
   useEffect(() => { renderComposite() }, [renderComposite, ready])
 
@@ -350,11 +400,11 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
 
   const updateCurrent = useCallback((change: Partial<Adjustment> | ((current: Adjustment) => Adjustment)) => {
     setAdjustments((current) => {
-      const existing = current[frame.position] ?? defaultAdjustment(frame)
+      const existing = current[frame.position] ?? defaultAdjustment(frame, joinStrategy)
       const next = typeof change === 'function' ? change(existing) : { ...existing, ...change }
       return { ...current, [frame.position]: next }
     })
-  }, [frame])
+  }, [frame, joinStrategy])
 
   const setHemPointRow = useCallback((index: number, row: number) => {
     setSelectedHemPoint(index)
@@ -381,16 +431,17 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
   }, [editorMode, selectedHemPoint, selectedLayer, updateCurrent])
 
   const exportPayload = useCallback(() => ({
-    schema: 'lighthouse-keeper/prime-rear-task-manual-alignment@4',
+    schema: upperSeamJoin ? 'lighthouse-keeper/prime-rear-task-upper-seam-alignment@1' : 'lighthouse-keeper/prime-rear-task-manual-alignment@4',
     savedAt: new Date().toISOString(),
     source: {
       torsoBatch: 'keeper-prime-morning-drafts-v6',
       legsSha256,
-      layerOrder: ['approved rear legs', 'moving action torso'],
-      trouserCleanStartRow: CLEAN_TROUSER_START,
-      minimumTrouserUnderlap: TROUSER_UNDERLAP,
+      layerOrder: upperSeamJoin ? ['moving jumper-body extension', 'approved rear waistband, trousers and boots', 'moving action torso'] : ['approved rear legs', 'moving action torso'],
+      joinStrategy,
+      lowerAuthorityStartRow: lowerSourceStart,
+      ...(upperSeamJoin ? { preservedAuthoritySeams: ['upper jumper-band seam', 'lower jumper-band seam'] } : { trouserCleanStartRow: CLEAN_TROUSER_START, minimumTrouserUnderlap: TROUSER_UNDERLAP }),
       hemControlX: HEM_CONTROL_X,
-      hemOutline: { colour: '#000000', width: 2 },
+      ...(upperSeamJoin ? { cropBoundaryOutline: null } : { hemOutline: { colour: '#000000', width: 2 } }),
     },
     dimensions: { width: WIDTH, height: HEIGHT, floorY: 316 },
     frames: frames.map((item) => ({
@@ -400,7 +451,7 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
       torsoSha256: item.torsoSha256,
       ...adjustments[item.position],
     })),
-  }), [adjustments, frames, legsSha256])
+  }), [adjustments, frames, joinStrategy, legsSha256, lowerSourceStart, upperSeamJoin])
 
   const copySettings = async () => {
     await navigator.clipboard.writeText(JSON.stringify(exportPayload(), null, 2))
@@ -412,7 +463,7 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
     const blob = new Blob([`${JSON.stringify(exportPayload(), null, 2)}\n`], { type: 'application/json' })
     const link = document.createElement('a')
     link.href = URL.createObjectURL(blob)
-    link.download = 'prime-keeper-rear-task-manual-alignment.json'
+    link.download = upperSeamJoin ? 'prime-keeper-rear-task-upper-seam-alignment-v2.json' : 'prime-keeper-rear-task-manual-alignment.json'
     link.click()
     URL.revokeObjectURL(link.href)
   }
@@ -420,7 +471,7 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
   const downloadFrame = () => {
     const link = document.createElement('a')
     link.href = canvasRef.current?.toDataURL('image/png') ?? ''
-    link.download = `prime-keeper-rear-task-frame-${String(frame.position).padStart(2, '0')}.png`
+    link.download = `prime-keeper-rear-task-${upperSeamJoin ? 'upper-seam-v2-' : ''}frame-${String(frame.position).padStart(2, '0')}.png`
     link.click()
   }
 
@@ -519,12 +570,12 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
       <nav><a href="/prime-keeper-animation-drafts">Animation review</a><span>/</span><strong>Manual rear-task alignment</strong></nav>
       <p className={styles.eyebrow}>Exact source layers · no artwork overwritten</p>
       <h1>You place<br />the join.</h1>
-      <p>This is the fallback you requested. First trace the jumper’s shallow U-shaped hem with five independently editable points. Only after you confirm the curve does the tool introduce the exact approved rear legs for alignment. Every frame saves independently in this browser.</p>
+      <p>{upperSeamJoin ? 'This corrected version works at the upper seam of the ribbed jumper band. Trace that unwanted moving seam with five points; after confirmation, the approved Prime supplies the complete band, its correct lower seam, trousers and boots. Every frame saves independently in this browser.' : 'This is the original lower-seam fallback. First trace the jumper’s shallow U-shaped hem with five independently editable points. Only after you confirm the curve does the tool introduce the exact approved rear legs for alignment. Every frame saves independently in this browser.'}</p>
     </header>
 
     <section className={styles.status} aria-live="polite">
       <strong>{loadError || (ready ? 'All 22 exact source images decoded' : 'Decoding exact source images…')}</strong>
-      <span>{cropped} / {frames.length} jumper crops confirmed · {completed} / {frames.length} fully aligned</span>
+      <span>{cropped} / {frames.length} {upperSeamJoin ? 'upper-seam crops' : 'jumper crops'} confirmed · {completed} / {frames.length} fully aligned</span>
     </section>
 
     <section className={styles.workbench}>
@@ -567,25 +618,25 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
 
       <aside className={styles.controls}>
         <section>
-          <h3>1. Crop the jumper first</h3>
+          <h3>1. {upperSeamJoin ? 'Remove the moving top seam' : 'Crop the jumper first'}</h3>
           <div className={styles.layerButtons}>
-            <button className={editorMode === 'crop' ? styles.active : ''} onClick={() => setEditorMode('crop')}><span>Crop-only view</span><code>legs hidden</code></button>
-            <button className={adjustment.cropConfirmed ? styles.active : ''} onClick={() => { updateCurrent({ cropConfirmed: true, aligned: false }); setEditorMode('align') }}><span>{adjustment.cropConfirmed ? '✓ Crop confirmed' : 'Confirm jumper crop'}</span><code>then show legs</code></button>
+            <button className={editorMode === 'crop' ? styles.active : ''} onClick={() => setEditorMode('crop')}><span>Crop-only view</span><code>{upperSeamJoin ? 'approved lower body hidden' : 'legs hidden'}</code></button>
+            <button className={adjustment.cropConfirmed ? styles.active : ''} onClick={() => { updateCurrent({ cropConfirmed: true, aligned: false }); setEditorMode('align') }}><span>{adjustment.cropConfirmed ? '✓ Crop confirmed' : upperSeamJoin ? 'Confirm top-seam crop' : 'Confirm jumper crop'}</span><code>{upperSeamJoin ? 'then show approved band' : 'then show legs'}</code></button>
           </div>
-          <label>Move the whole curve around row <output>{adjustment.torsoCutY}</output><input aria-label="Whole jumper hem row" type="range" min={190} max={226} value={adjustment.torsoCutY} onChange={(event) => { setEditorMode('crop'); updateCurrent({ torsoCutY: Number(event.target.value), cropConfirmed: false, aligned: false }) }} /></label>
+          <label>Move the whole curve around row <output>{adjustment.torsoCutY}</output><input aria-label={upperSeamJoin ? 'Moving upper jumper seam row' : 'Whole jumper hem row'} type="range" min={upperSeamJoin ? 178 : 190} max={upperSeamJoin ? 210 : 226} value={adjustment.torsoCutY} onChange={(event) => { setEditorMode('crop'); updateCurrent({ torsoCutY: Number(event.target.value), cropConfirmed: false, aligned: false }) }} /></label>
           <div className={styles.hemPoints}>{HEM_POINT_NAMES.map((name, index) => <button key={name} className={selectedHemPoint === index ? styles.activeHemPoint : ''} onClick={() => { setEditorMode('crop'); setSelectedHemPoint(index) }}><span>{name}</span><code>row {adjustment.torsoCutY + adjustment.hemOffsets[index] + adjustment.torsoY}</code></button>)}</div>
           <div className={styles.nudge}><button aria-label="Move selected hem point up one pixel" onClick={() => nudge(0, -1)}>↑</button><button disabled>←</button><button aria-label="Move selected hem point down one pixel" onClick={() => nudge(0, 1)}>↓</button><button disabled>→</button></div>
           <div className={styles.curveActions}><button onClick={() => updateCurrent((current) => ({ ...current, hemOffsets: [current.hemOffsets[0], current.hemOffsets[1], current.hemOffsets[2], current.hemOffsets[1], current.hemOffsets[0]], cropConfirmed: false, aligned: false }))}>Mirror left → right</button><button onClick={() => updateCurrent((current) => ({ ...current, hemOffsets: [current.hemOffsets[4], current.hemOffsets[3], current.hemOffsets[2], current.hemOffsets[3], current.hemOffsets[4]], cropConfirmed: false, aligned: false }))}>Mirror right → left</button><button onClick={() => updateCurrent((current) => ({ ...current, hemOffsets: [...DEFAULT_HEM_OFFSETS], cropConfirmed: false, aligned: false }))}>Reset shallow U</button></div>
-          <p>Only the torso belongs to the crop composite; the optional translucent Prime ghost is a non-exporting reference. Drag any gold point directly on the large view or the 4× waist inspection, then nudge the selected point by one pixel. The final black outline follows the five-point curve.</p>
+          <p>{upperSeamJoin ? 'Place the gold curve immediately above the faulty moving top seam. That seam is removed rather than outlined; the one visible top seam comes from the exact approved Prime band below. The ghost is only a reference and is never exported.' : 'Only the torso belongs to the crop composite; the optional translucent Prime ghost is a non-exporting reference. Drag any gold point directly on the large view or the 4× waist inspection, then nudge the selected point by one pixel. The final black outline follows the five-point curve.'}</p>
         </section>
 
         <section>
-          <h3>2. Align the retained torso and legs</h3>
+          <h3>2. Align the retained torso and {upperSeamJoin ? 'lower body' : 'legs'}</h3>
           <div className={styles.layerButtons}>
             <button disabled={!adjustment.cropConfirmed} className={editorMode === 'align' && selectedLayer === 'torso' ? styles.active : ''} onClick={() => { setEditorMode('align'); setSelectedLayer('torso') }}><span>Retained torso</span><code>x {adjustment.torsoX} · y {adjustment.torsoY}</code></button>
-            <button disabled={!adjustment.cropConfirmed} className={editorMode === 'align' && selectedLayer === 'legs' ? styles.active : ''} onClick={() => { setEditorMode('align'); setSelectedLayer('legs') }}><span>Approved legs</span><code>x {adjustment.legsX} · y {adjustment.legsY}</code></button>
+            <button disabled={!adjustment.cropConfirmed} className={editorMode === 'align' && selectedLayer === 'legs' ? styles.active : ''} onClick={() => { setEditorMode('align'); setSelectedLayer('legs') }}><span>{upperSeamJoin ? 'Approved band + legs' : 'Approved legs'}</span><code>x {adjustment.legsX} · y {adjustment.legsY}</code></button>
           </div>
-          <p>{adjustment.cropConfirmed ? 'The cropped jumper is now composited over the legs. Drag the selected layer or use arrow keys; Shift + arrow moves eight pixels.' : 'Confirm the jumper crop above to reveal and align the legs.'}</p>
+          <p>{adjustment.cropConfirmed ? upperSeamJoin ? 'The cropped torso now meets the exact approved ribbed band. Its lower seam and all trouser shading stay untouched. Drag the selected layer or use arrow keys; Shift + arrow moves eight pixels.' : 'The cropped jumper is now composited over the legs. Drag the selected layer or use arrow keys; Shift + arrow moves eight pixels.' : upperSeamJoin ? 'Confirm the upper-seam crop to reveal and align the approved band and legs.' : 'Confirm the jumper crop above to reveal and align the legs.'}</p>
         </section>
 
         <section>
@@ -599,9 +650,8 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
         </section>
 
         <section>
-          <h3>4. Refine the legs boundary</h3>
-          <label>Clean trousers begin from source row <output>{adjustment.legsCropY}</output><input aria-label="Clean trousers source row" type="range" min={CLEAN_TROUSER_START} max={230} value={adjustment.legsCropY} onChange={(event) => updateCurrent({ legsCropY: Number(event.target.value), aligned: false })} /></label>
-          <p>The approved trousers are the lower, behind layer. They keep at least {TROUSER_UNDERLAP} hidden pixels beneath the cropped jumper, so lateral torso movement cannot open a transparent tear. The authority's rows 214–218, which contain its top seam, remain excluded.</p>
+          <h3>4. {upperSeamJoin ? 'Protect the approved lower seam' : 'Refine the legs boundary'}</h3>
+          {upperSeamJoin ? <p>The lower authority begins at source row {AUTHORITY_WAISTBAND_START}, above the approved ribbed band. The band’s top seam, complete ribbing, lower seam, trouser shading and boots move together as one exact layer; none is repainted or independently stretched.</p> : <><label>Clean trousers begin from source row <output>{adjustment.legsCropY}</output><input aria-label="Clean trousers source row" type="range" min={CLEAN_TROUSER_START} max={230} value={adjustment.legsCropY} onChange={(event) => updateCurrent({ legsCropY: Number(event.target.value), aligned: false })} /></label><p>The approved trousers are the lower, behind layer. They keep at least {TROUSER_UNDERLAP} hidden pixels beneath the cropped jumper, so lateral torso movement cannot open a transparent tear. The authority's rows 214–218, which contain its top seam, remain excluded.</p></>}
         </section>
 
         <section>
@@ -616,15 +666,15 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
             <span>Overall width<strong className={dimensionAudit.composite.width === dimensionAudit.authority.width ? styles.match : styles.mismatch}>{dimensionAudit.composite.width} / {dimensionAudit.authority.width} px</strong></span>
             <span>Floor row<strong className={dimensionAudit.composite.y1 === dimensionAudit.authority.y1 ? styles.match : styles.mismatch}>{dimensionAudit.composite.y1} / {dimensionAudit.authority.y1}</strong></span>
             <span>Centre x<strong className={dimensionAudit.composite.centreX === dimensionAudit.authority.centreX ? styles.match : styles.mismatch}>{dimensionAudit.composite.centreX} / {dimensionAudit.authority.centreX}</strong></span>
-          </div> : <p>Confirm the curved jumper crop to reveal the trousers and measure this composite against the approved Prime back authority.</p>}
+          </div> : <p>{upperSeamJoin ? 'Confirm the upper-seam crop to reveal the intact approved band and lower body, then measure the result against the Prime back authority.' : 'Confirm the curved jumper crop to reveal the trousers and measure this composite against the approved Prime back authority.'}</p>}
           {dimensionAudit && (dimensionAudit.composite.height !== dimensionAudit.authority.height || dimensionAudit.composite.width !== dimensionAudit.authority.width || dimensionAudit.composite.y1 !== dimensionAudit.authority.y1) ? <p className={styles.auditWarning}>Dimension mismatch: do not mark this frame aligned until the discrepancy is deliberate and approved.</p> : null}
         </section>
 
         <section className={styles.frameActions}>
           <h3>6. Save this frame</h3>
-          <button disabled={!adjustment.cropConfirmed} className={adjustment.aligned ? styles.approved : ''} onClick={() => updateCurrent({ aligned: !adjustment.aligned })}>{adjustment.aligned ? '✓ Marked aligned' : adjustment.cropConfirmed ? 'Mark frame aligned' : 'Confirm jumper crop first'}</button>
-          <button onClick={() => { updateCurrent(defaultAdjustment(frame)); setEditorMode('crop') }}>Reset this frame</button>
-          <button onClick={() => setAdjustments((current) => Object.fromEntries(frames.map((item) => [item.position, { ...(current[item.position] ?? defaultAdjustment(item)), torsoY: adjustment.torsoY, torsoCutY: adjustment.torsoCutY, hemOffsets: [...adjustment.hemOffsets] as HemCurve, legsY: adjustment.legsY, legsCropY: adjustment.legsCropY, cropConfirmed: false, aligned: false }]))) }>Copy curve and vertical setup to all</button>
+          <button disabled={!adjustment.cropConfirmed} className={adjustment.aligned ? styles.approved : ''} onClick={() => updateCurrent({ aligned: !adjustment.aligned })}>{adjustment.aligned ? '✓ Marked aligned' : adjustment.cropConfirmed ? 'Mark frame aligned' : upperSeamJoin ? 'Confirm top-seam crop first' : 'Confirm jumper crop first'}</button>
+          <button onClick={() => { updateCurrent(defaultAdjustment(frame, joinStrategy)); setEditorMode('crop') }}>Reset this frame</button>
+          <button onClick={() => setAdjustments((current) => Object.fromEntries(frames.map((item) => [item.position, { ...(current[item.position] ?? defaultAdjustment(item, joinStrategy)), torsoY: adjustment.torsoY, torsoCutY: adjustment.torsoCutY, hemOffsets: [...adjustment.hemOffsets] as HemCurve, legsY: adjustment.legsY, legsCropY: adjustment.legsCropY, cropConfirmed: false, aligned: false }]))) }>Copy curve and vertical setup to all</button>
           <button disabled={editorMode !== 'align'} onClick={downloadFrame}>Download current 256×320 PNG</button>
         </section>
       </aside>
@@ -642,7 +692,7 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
 
     <section className={styles.sources}>
       <div><span>Exact moving torso layer for frame {frame.position}</span><canvas style={{ gridRow: '1 / 3', width: '15rem', height: '18.75rem', maxWidth: '100%', backgroundColor: '#e2e7e2' }} ref={torsoSourceRef} width={WIDTH} height={HEIGHT} aria-label={`Isolated moving torso layer for frame ${frame.position}`} /><code>{frame.torsoSha256}</code></div>
-      <div><span>Exact approved legs layer</span><canvas style={{ gridRow: '1 / 3', width: '15rem', height: '18.75rem', maxWidth: '100%', backgroundColor: '#e2e7e2' }} ref={legsSourceRef} width={WIDTH} height={HEIGHT} aria-label="Isolated approved rear trousers and boots layer" /><code>{legsSha256}</code></div>
+      <div><span>{upperSeamJoin ? 'Exact approved band, trousers and boots layer' : 'Exact approved legs layer'}</span><canvas style={{ gridRow: '1 / 3', width: '15rem', height: '18.75rem', maxWidth: '100%', backgroundColor: '#e2e7e2' }} ref={legsSourceRef} width={WIDTH} height={HEIGHT} aria-label={upperSeamJoin ? 'Isolated approved rear jumper band, trousers and boots layer' : 'Isolated approved rear trousers and boots layer'} /><code>{legsSha256}</code></div>
     </section>
 
     <section className={styles.export}>

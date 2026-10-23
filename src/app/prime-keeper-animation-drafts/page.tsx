@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 }
 
 export default function PrimeKeeperAnimationDraftsPage() {
-  return <PrimeKeeperDraftReview batch={batch} manualAlignmentHref="/prime-keeper-rear-task-alignment" />
+  return <PrimeKeeperDraftReview batch={batch} manualAlignmentHref="/prime-keeper-rear-task-alignment-v2" />
 }

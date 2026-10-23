@@ -26,25 +26,23 @@ All corrections remain separate review-only copies. Unsafe snack, bed and origin
 withheld by the isolation gate. See
 `docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V9_2026-10-23.md`.
 
-The active fallback is `/prime-keeper-rear-task-alignment`: a local-only,
+The active fallback is `/prime-keeper-rear-task-alignment-v2`: a local-only,
 per-frame workbench exposing the exact V6 moving torso and hash-pinned approved
-rear legs as separate layers. Each frame now starts in a torso-only crop view:
-Frank first removes the unwanted lower jumper seam, confirms that crop, and
-only then sees and aligns the approved legs. The jumper bottom is a five-point
-editable shallow U with a true-black two-pixel outline; every point can be
-dragged directly in the 4× waist view or nudged by one pixel. It supports
-one-pixel alignment nudging, two crop boundaries, frame
-stepping/playback, separate crop-confirmed and aligned states, PNG download and
-hash-addressed JSON handback without changing any source or runtime art. The
-approved trousers remain the behind layer with a four-pixel hidden underlap;
-their unwanted top-seam rows are excluded, so lateral torso movement cannot
-open a transparent hip tear. A live alpha-bounds audit compares the composite's
-height, width, floor and centre with the approved Prime rear authority before
-alignment is accepted. An optional 10–80% translucent overlay places that exact
-authority over the editable figure and 4× waist view without entering exports
-or measurements. The clean approved trouser shading and black side outlines now
-continue upward under the hem instead of using a flat-colour extension. See
-`docs/PRIME_KEEPER_REAR_TASK_ALIGNMENT_WORKBENCH_V1_2026-10-23.md`.
+rear authority as separate layers. Source inspection established that the
+faulty join is the moving **upper seam of the ribbed jumper band**, not its
+lower seam. Frank traces immediately above that upper seam with five editable
+points; after confirmation, the approved authority supplies the complete
+ribbed band, its correct lower seam, trousers and boots as one exact layer.
+The crop does not draw a replacement black line. Any small join gap is filled
+column-by-column from clean moving-jumper pixels so their colour variation is
+retained. The workbench supports one-pixel alignment nudging, 4× editing,
+stepping/playback, independent crop/aligned states, PNG download and
+hash-addressed JSON handback without changing source or runtime art. A live
+alpha-bounds audit and optional 10–80% exact-Prime ghost support pixel matching;
+the ghost never enters exports or measurements. V1 remains at
+`/prime-keeper-rear-task-alignment` as reversible lower-seam comparison
+evidence with separate saved settings. See
+`docs/PRIME_KEEPER_REAR_TASK_UPPER_SEAM_WORKBENCH_V2_2026-10-23.md`.
 
 The historical whole-bank gate is the reversible Prime Keeper whole-bank
 normalisation programme. Its new selector is
