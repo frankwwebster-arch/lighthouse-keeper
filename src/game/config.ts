@@ -10,6 +10,7 @@
  */
 
 import { UPGRADE_ROWS } from './upgrades.data'
+import { KITCHEN_OBJECT_X } from './kitchenLayout'
 
 const H = 60
 
@@ -210,11 +211,11 @@ export const VISITOR_ONLY = ['with_chat', 'with_cards', 'with_tv']
 
 export const OBJECTS: readonly ObjectDef[] = [
   // Inside the tower: x is measured from the tower's left edge (see `world.ts`). Outside: x is the picture's own.
-  { id: 'door', label: 'Front door', floor: 'ground', x: 92, zoom: 1.7 },
-  { id: 'fridge', label: 'Fridge', floor: 'ground', x: 176, zoom: 2.0 },
-  { id: 'cooker', label: 'Cooker', floor: 'ground', x: 256, zoom: 2.0 },
-  { id: 'broom', label: 'Broom', floor: 'ground', x: 324, zoom: 1.8 },
-  { id: 'petbowl', label: 'Pet bowl', floor: 'ground', x: 400, zoom: 2.0 },
+  { id: 'door', label: 'Front door', floor: 'ground', x: KITCHEN_OBJECT_X.door, zoom: 1.7 },
+  { id: 'fridge', label: 'Fridge', floor: 'ground', x: KITCHEN_OBJECT_X.fridge, zoom: 2.0 },
+  { id: 'cooker', label: 'Cooker', floor: 'ground', x: KITCHEN_OBJECT_X.cooker, zoom: 2.0 },
+  { id: 'broom', label: 'Broom', floor: 'ground', x: KITCHEN_OBJECT_X.broom, zoom: 1.8 },
+  { id: 'petbowl', label: 'Pet bowl', floor: 'ground', x: KITCHEN_OBJECT_X.petbowl, zoom: 2.0 },
   { id: 'tv', label: 'TV', floor: 'living', x: 140, zoom: 2.0 },
   { id: 'bookshelf', label: 'Bookshelf', floor: 'living', x: 256, zoom: 2.0 },
   { id: 'piano', label: 'Piano', floor: 'living', x: 376, zoom: 2.0 },

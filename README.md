@@ -261,11 +261,22 @@ in [`docs/KITCHEN_ASSET_AUTHORITY.md`](docs/KITCHEN_ASSET_AUTHORITY.md).
 This approval supersedes every earlier kitchen art and review candidate. The
 158 earlier formal room/furniture draft packages and their duplicate source, raw, review and
 delivery material were removed after their binding requirements were folded
-into the consolidated contract. The currently loaded runtime sprite remains
-unchanged until the approved package is deliberately wired and verified.
+into the consolidated contract. Runtime Promotion V1 now renders the approved
+six-module family in the live kitchen. Cooker drives the approved Oven states,
+Fridge drives the approved Fridge states, and Broken Oven uses its exact
+40-frame cavity-light-only loop. The approved Dishwasher loop is installed but
+has no gameplay consumer yet. Existing activity rules, saves, upgrades, faults
+and repair behaviour are unchanged.
+
+The promotion is reversible: approved bytes, the versioned draft copy,
+production source, public delivery and the retained legacy-room hash are pinned
+in `data/kitchen_runtime_promotion_v1.json`. The complete approved 772 × 224
+coordinate system is uniformly fitted into the current floor viewport; the six
+body cells themselves remain exact 84 × 74 assets at their declared origins.
 
 ```sh
 npm run verify:kitchen-approved-family
+npm run verify:kitchen-runtime
 ```
 
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page

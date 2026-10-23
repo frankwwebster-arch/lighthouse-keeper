@@ -16,6 +16,9 @@ Warm Ligne-Claire Family package dated 24 October 2026.
 - Rebuilder and verifier:
   `scripts/build_kitchen_warm_family_v4.py` and
   `scripts/verify_kitchen_warm_family_v4.mjs`
+- Reversible runtime promotion:
+  `data/kitchen_runtime_promotion_v1.json` and
+  `scripts/build_kitchen_runtime_v1.mjs`
 
 The master SHA-256 is
 `a8a6972dd8398ec3cd52f42825a5a5f056a1e289d10b77796f3294b3ac85ab98`.
@@ -88,8 +91,25 @@ placeholder. No final audio is baked into art or animation.
 
 Frank approved this visual family, its perspective and the exact equal-bay
 normalization on 24 October 2026. It is the only continuing kitchen art
-authority. Runtime promotion remains a separate implementation step; current
-runtime files remain in place until this package is wired and verified.
+authority. Runtime Promotion V1 is now wired and verified. The live room maps
+the existing `cooker` gameplay object to V4 Oven and `fridge` to V4 Fridge;
+the other four fitted modules remain Off until they gain gameplay consumers.
+Broken Oven uses only the approved cavity-light strip. The Dishwasher strip is
+installed and hash-pinned, but the live Dishwasher remains Off because no
+Dishwasher gameplay object exists yet.
+
+The full approved 772 × 224 room coordinate system receives one uniform outer
+presentation transform into the existing 420-unit floor viewport. Every body
+retains its exact 84 × 74 source cell, declared origin, order and relative
+registration. Cooker/Fridge interaction points derive from the approved bay
+centres; commands, need changes, activity timing, upgrades, saves, breakdown
+state and repair behaviour are unchanged.
+
+Promotion is reversible. Exact approved bytes are copied through the versioned
+draft, production-source and public-delivery locations recorded in
+`data/kitchen_runtime_promotion_v1.json`. The prior
+`public/sprites/room_kitchen.png` is neither overwritten nor removed and its
+hash is pinned in the promotion record.
 
 ## Consolidation record
 
@@ -110,5 +130,6 @@ Those prior versions were removed on 24 October 2026 at Frank's instruction.
 Their binding requirements were reconciled into this document,
 `data/kitchen_asset_contract_v1.json` and
 `data/kitchen_room_grid_contract_v2.json` first. The deletion deliberately did
-not touch the currently loaded runtime kitchen sprite: the approved package is
-an art and geometry authority, not yet a runtime promotion.
+not touch the then-loaded runtime kitchen sprite. Runtime Promotion V1 later
+retained that same sprite as the backdrop and rollback target while installing
+the approved fitted family as a separate versioned layer.

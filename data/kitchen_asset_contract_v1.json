@@ -1,6 +1,6 @@
 {
   "schema": "lighthouse-keeper/kitchen-assets@1",
-  "status": "approved-authority",
+  "status": "approved-authority-runtime-wired",
   "approvedOn": "2026-10-24",
   "visualAuthority": {
     "master": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
@@ -97,6 +97,8 @@
     "bodyCandidates": "84x74 RGBA PNG",
     "animationCell": [92, 82],
     "transparentSafetyGutter": 4,
-    "runtimePromoted": false
+    "runtimePromoted": true,
+    "runtimePromotion": "data/kitchen_runtime_promotion_v1.json",
+    "retainedLegacyRoom": "public/sprites/room_kitchen.png"
   }
 }

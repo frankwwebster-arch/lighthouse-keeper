@@ -11,12 +11,17 @@ A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthou
 - Database: Neon Postgres via `DATABASE_URL` (verified: `/api/players` answers `db:true`). Tables are created on first use: players, saves, player_rules, settings (PIN hash).
 
 ## Built
-The approved kitchen art/geometry authority is Warm Ligne-Claire Family V4.
-All six fitted bodies are exactly 84 × 74 logical pixels; its complete contract,
-source identity, state semantics and pending-runtime boundary are in
-`docs/KITCHEN_ASSET_AUTHORITY.md`. The 158 earlier formal room/furniture drafts were
-retired after consolidation. The existing runtime kitchen remains loaded until
-the approved family is wired and verified.
+The approved kitchen art/geometry authority is Warm Ligne-Claire Family V4,
+and Runtime Promotion V1 is now wired into the room code. All six fitted bodies
+remain exact 84 × 74 assets in the approved 772 × 224 coordinate system. The
+current fixed-width floor applies one uniform outer transform. Cooker drives
+the Oven Off/On/Broken art and its cavity-light-only Broken loop; Fridge drives
+the matching V4 states. The Dishwasher light loop is installed but remains
+inactive until a gameplay Dishwasher exists. The prior room plate is retained
+and hash-pinned for rollback. Full source, state and reversible-promotion
+contracts are in `docs/KITCHEN_ASSET_AUTHORITY.md` and
+`data/kitchen_runtime_promotion_v1.json`. The 158 earlier formal room/furniture
+drafts remain retired.
 Engine (seeded, deterministic, 122 tests), SVG cutaway scene with zoom camera, typo matcher, quizzes levels 1-3, credit economy with admin dials (allowance from per-need green bars, prices, gifting, quiz level and breakdown pressure per player), who-is-playing screen, per-player saves (DB or localStorage), grown-ups PIN (starts 1234; change it).
 
 The first three playable floors are now modular fixed-width components: kitchen, living room, and bedroom with en suite. Objects have a runtime `standard` / `on` / `broken` contract, state-specific strip support, shared broken effects, keyboard/touch hit areas, and rear-facing cooker/basin keeper fallbacks. Random keeper-owned breakdowns are off by default and controlled by grown-ups' frequency and maximum-concurrent dials; broken assets block normal use until repaired. Floor 3 reserves an invisible two-door changing zone for the later diving-board extension.

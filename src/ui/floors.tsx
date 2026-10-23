@@ -1,6 +1,7 @@
 import type { ObjectId, RoomFloor } from '../game/config'
 import { FLOOR_Y, LAYOUT, TOWER_X } from '../game/world'
 import { Sprite } from './Sprite'
+import { KitchenRoom, type KitchenRuntimeState } from './KitchenRoom'
 
 export const CORE = {
   x: TOWER_X + 40,
@@ -117,7 +118,7 @@ function LivingFurniture() {
   )
 }
 
-export function FloorModule({ floor }: { floor: FloorModuleSpec }) {
+export function FloorModule({ floor, kitchenState }: { floor: FloorModuleSpec; kitchenState?: KitchenRuntimeState }) {
   const y = FLOOR_Y[floor.id] - CORE.bandHeight
   return (
     <g className={`floor-module floor-${floor.id}`} data-floor={floor.number}>
@@ -128,6 +129,7 @@ export function FloorModule({ floor }: { floor: FloorModuleSpec }) {
           <rect x={CORE.x} y={FLOOR_Y[floor.id] - 8} width={CORE.width} height={12} fill="#725336" stroke="#14243a" strokeWidth={4} />
         </>
       </Sprite>
+      {floor.id === 'ground' && kitchenState && <KitchenRoom floorY={FLOOR_Y.ground} state={kitchenState} />}
       {floor.id === 'living' && <LivingFurniture />}
     </g>
   )

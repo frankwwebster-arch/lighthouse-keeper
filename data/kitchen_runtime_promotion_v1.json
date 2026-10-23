@@ -1,0 +1,428 @@
+{
+  "schema": "lighthouse-keeper/kitchen-runtime-promotion@1",
+  "version": 1,
+  "promotedOn": "2026-10-24",
+  "status": "production",
+  "authority": "kitchen-warm-ligne-claire-family-2026-10-24-v4",
+  "approval": "Frank approved Warm Ligne-Claire Family V4 and explicitly requested runtime wiring.",
+  "roomRegistration": {
+    "approvedCoordinateSystem": [
+      772,
+      224
+    ],
+    "fittedBodySize": [
+      84,
+      74
+    ],
+    "fittedBayOriginsX": [
+      84,
+      168,
+      252,
+      336,
+      420,
+      504
+    ],
+    "fittedBayCentresX": [
+      126,
+      210,
+      294,
+      378,
+      462,
+      546
+    ],
+    "bodyY": 134,
+    "floorSupportY": 208,
+    "keeperStopTurnY": 218,
+    "runtimeViewport": {
+      "towerLocalX": 48,
+      "width": 420,
+      "uniformScale": 0.5440414507772021
+    },
+    "policy": "The complete approved coordinate system receives one uniform outer presentation transform; individual 84 x 74 bodies are never resized, cropped, reordered or independently transformed."
+  },
+  "liveBindings": {
+    "component": "src/ui/KitchenRoom.tsx",
+    "cooker": {
+      "module": "oven",
+      "standard": "off",
+      "active": "on",
+      "broken": "broken"
+    },
+    "fridge": {
+      "module": "fridge",
+      "standard": "off",
+      "active": "on",
+      "broken": "broken"
+    },
+    "staticModules": {
+      "cupboard": "off",
+      "drawers": "off",
+      "sink": "off",
+      "dishwasher": "off"
+    },
+    "brokenAnimations": {
+      "dishwasher": "three independent red lenses only",
+      "oven": "internal cavity light only"
+    },
+    "gameplayPolicy": "Existing object IDs, commands, need effects, timings, fault/repair state, saves, tiers and hit-area behavior are unchanged."
+  },
+  "rollback": {
+    "retainedLegacyRoom": "public/sprites/room_kitchen.png",
+    "retainedLegacyRoomSha256": "c1cb3c90b911ea09ae13d8fd09297787b990b0997dc589fb9e6a62c658099eff",
+    "boundary": "Remove the KitchenRoom binding and this named V1 draft/raw/public family to return to the retained room_kitchen plate; the approved V4 authority and every unrelated sprite remain untouched."
+  },
+  "assets": [
+    {
+      "id": "cupboard-off",
+      "role": "fitted-body",
+      "state": "off",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/off/cupboard-off-84x74.png",
+      "authoritySha256": "25237ca160ee0efe071e9e6d6d19536d2affdb8fc85c585e58c4ff396568835c",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/off/cupboard-off-84x74.png",
+      "draftSha256": "25237ca160ee0efe071e9e6d6d19536d2affdb8fc85c585e58c4ff396568835c",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/off/cupboard-off-84x74.png",
+      "productionSourceSha256": "25237ca160ee0efe071e9e6d6d19536d2affdb8fc85c585e58c4ff396568835c",
+      "publicSprite": "public/sprites/kitchen-v4/off/cupboard-off-84x74.png",
+      "publicSpriteSha256": "25237ca160ee0efe071e9e6d6d19536d2affdb8fc85c585e58c4ff396568835c"
+    },
+    {
+      "id": "drawers-off",
+      "role": "fitted-body",
+      "state": "off",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/off/drawers-off-84x74.png",
+      "authoritySha256": "bd858055c112be2e84fc3bc2813b5251d141607a653aa845aadfb8c187585a57",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/off/drawers-off-84x74.png",
+      "draftSha256": "bd858055c112be2e84fc3bc2813b5251d141607a653aa845aadfb8c187585a57",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/off/drawers-off-84x74.png",
+      "productionSourceSha256": "bd858055c112be2e84fc3bc2813b5251d141607a653aa845aadfb8c187585a57",
+      "publicSprite": "public/sprites/kitchen-v4/off/drawers-off-84x74.png",
+      "publicSpriteSha256": "bd858055c112be2e84fc3bc2813b5251d141607a653aa845aadfb8c187585a57"
+    },
+    {
+      "id": "sink-off",
+      "role": "fitted-body",
+      "state": "off",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/off/sink-off-84x74.png",
+      "authoritySha256": "663533e0fc3fdb7aca3640006cbd44a6b1b02c4712daff3ad2bdc0027b0e8a8d",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/off/sink-off-84x74.png",
+      "draftSha256": "663533e0fc3fdb7aca3640006cbd44a6b1b02c4712daff3ad2bdc0027b0e8a8d",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/off/sink-off-84x74.png",
+      "productionSourceSha256": "663533e0fc3fdb7aca3640006cbd44a6b1b02c4712daff3ad2bdc0027b0e8a8d",
+      "publicSprite": "public/sprites/kitchen-v4/off/sink-off-84x74.png",
+      "publicSpriteSha256": "663533e0fc3fdb7aca3640006cbd44a6b1b02c4712daff3ad2bdc0027b0e8a8d"
+    },
+    {
+      "id": "dishwasher-off",
+      "role": "fitted-body",
+      "state": "off",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/off/dishwasher-off-84x74.png",
+      "authoritySha256": "d0378d593b4a3b679505227b5353b67929a66e0aaea44443c2da95f063dfc08c",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/off/dishwasher-off-84x74.png",
+      "draftSha256": "d0378d593b4a3b679505227b5353b67929a66e0aaea44443c2da95f063dfc08c",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/off/dishwasher-off-84x74.png",
+      "productionSourceSha256": "d0378d593b4a3b679505227b5353b67929a66e0aaea44443c2da95f063dfc08c",
+      "publicSprite": "public/sprites/kitchen-v4/off/dishwasher-off-84x74.png",
+      "publicSpriteSha256": "d0378d593b4a3b679505227b5353b67929a66e0aaea44443c2da95f063dfc08c"
+    },
+    {
+      "id": "oven-off",
+      "role": "fitted-body",
+      "state": "off",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/off/oven-off-84x74.png",
+      "authoritySha256": "7319aaf7d838d3b419c4f0bc8f21aef77d51b51a410b59256613c8f4d6125589",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/off/oven-off-84x74.png",
+      "draftSha256": "7319aaf7d838d3b419c4f0bc8f21aef77d51b51a410b59256613c8f4d6125589",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/off/oven-off-84x74.png",
+      "productionSourceSha256": "7319aaf7d838d3b419c4f0bc8f21aef77d51b51a410b59256613c8f4d6125589",
+      "publicSprite": "public/sprites/kitchen-v4/off/oven-off-84x74.png",
+      "publicSpriteSha256": "7319aaf7d838d3b419c4f0bc8f21aef77d51b51a410b59256613c8f4d6125589"
+    },
+    {
+      "id": "fridge-off",
+      "role": "fitted-body",
+      "state": "off",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/off/fridge-off-84x74.png",
+      "authoritySha256": "a0b673796bd3451370239353632a69b1bc43773fb9ad4dc344eb164dae9d6020",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/off/fridge-off-84x74.png",
+      "draftSha256": "a0b673796bd3451370239353632a69b1bc43773fb9ad4dc344eb164dae9d6020",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/off/fridge-off-84x74.png",
+      "productionSourceSha256": "a0b673796bd3451370239353632a69b1bc43773fb9ad4dc344eb164dae9d6020",
+      "publicSprite": "public/sprites/kitchen-v4/off/fridge-off-84x74.png",
+      "publicSpriteSha256": "a0b673796bd3451370239353632a69b1bc43773fb9ad4dc344eb164dae9d6020"
+    },
+    {
+      "id": "cupboard-on",
+      "role": "fitted-body",
+      "state": "on",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/on/cupboard-on-84x74.png",
+      "authoritySha256": "71b897c6a75af368e9166822999e5e29bbe2937414215567c51e6cca7e89cbc7",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/on/cupboard-on-84x74.png",
+      "draftSha256": "71b897c6a75af368e9166822999e5e29bbe2937414215567c51e6cca7e89cbc7",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/on/cupboard-on-84x74.png",
+      "productionSourceSha256": "71b897c6a75af368e9166822999e5e29bbe2937414215567c51e6cca7e89cbc7",
+      "publicSprite": "public/sprites/kitchen-v4/on/cupboard-on-84x74.png",
+      "publicSpriteSha256": "71b897c6a75af368e9166822999e5e29bbe2937414215567c51e6cca7e89cbc7"
+    },
+    {
+      "id": "drawers-on",
+      "role": "fitted-body",
+      "state": "on",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/on/drawers-on-84x74.png",
+      "authoritySha256": "9bdeb32442a71e0e2ef6ae785621b453f4ac079265007b2fb94a2d7894f2cfa0",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/on/drawers-on-84x74.png",
+      "draftSha256": "9bdeb32442a71e0e2ef6ae785621b453f4ac079265007b2fb94a2d7894f2cfa0",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/on/drawers-on-84x74.png",
+      "productionSourceSha256": "9bdeb32442a71e0e2ef6ae785621b453f4ac079265007b2fb94a2d7894f2cfa0",
+      "publicSprite": "public/sprites/kitchen-v4/on/drawers-on-84x74.png",
+      "publicSpriteSha256": "9bdeb32442a71e0e2ef6ae785621b453f4ac079265007b2fb94a2d7894f2cfa0"
+    },
+    {
+      "id": "sink-on",
+      "role": "fitted-body",
+      "state": "on",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/on/sink-on-84x74.png",
+      "authoritySha256": "3052a417ab4603c59c6404a421f6245a5507c89e059199ad67ba9f2765388eea",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/on/sink-on-84x74.png",
+      "draftSha256": "3052a417ab4603c59c6404a421f6245a5507c89e059199ad67ba9f2765388eea",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/on/sink-on-84x74.png",
+      "productionSourceSha256": "3052a417ab4603c59c6404a421f6245a5507c89e059199ad67ba9f2765388eea",
+      "publicSprite": "public/sprites/kitchen-v4/on/sink-on-84x74.png",
+      "publicSpriteSha256": "3052a417ab4603c59c6404a421f6245a5507c89e059199ad67ba9f2765388eea"
+    },
+    {
+      "id": "dishwasher-on",
+      "role": "fitted-body",
+      "state": "on",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/on/dishwasher-on-84x74.png",
+      "authoritySha256": "9efb6f153da797a19d1e513b752e909d825e82931bedb778dec13ea81bd4beae",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/on/dishwasher-on-84x74.png",
+      "draftSha256": "9efb6f153da797a19d1e513b752e909d825e82931bedb778dec13ea81bd4beae",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/on/dishwasher-on-84x74.png",
+      "productionSourceSha256": "9efb6f153da797a19d1e513b752e909d825e82931bedb778dec13ea81bd4beae",
+      "publicSprite": "public/sprites/kitchen-v4/on/dishwasher-on-84x74.png",
+      "publicSpriteSha256": "9efb6f153da797a19d1e513b752e909d825e82931bedb778dec13ea81bd4beae"
+    },
+    {
+      "id": "oven-on",
+      "role": "fitted-body",
+      "state": "on",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/on/oven-on-84x74.png",
+      "authoritySha256": "da2637281a1cf812cb1cd7b2181e0462f55df76f9f22c4436d26b40de1063c21",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/on/oven-on-84x74.png",
+      "draftSha256": "da2637281a1cf812cb1cd7b2181e0462f55df76f9f22c4436d26b40de1063c21",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/on/oven-on-84x74.png",
+      "productionSourceSha256": "da2637281a1cf812cb1cd7b2181e0462f55df76f9f22c4436d26b40de1063c21",
+      "publicSprite": "public/sprites/kitchen-v4/on/oven-on-84x74.png",
+      "publicSpriteSha256": "da2637281a1cf812cb1cd7b2181e0462f55df76f9f22c4436d26b40de1063c21"
+    },
+    {
+      "id": "fridge-on",
+      "role": "fitted-body",
+      "state": "on",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/on/fridge-on-84x74.png",
+      "authoritySha256": "d3340d572f15e1b36d29245f42a520a46d0d148076a0ab37f7d2dde3ce838987",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/on/fridge-on-84x74.png",
+      "draftSha256": "d3340d572f15e1b36d29245f42a520a46d0d148076a0ab37f7d2dde3ce838987",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/on/fridge-on-84x74.png",
+      "productionSourceSha256": "d3340d572f15e1b36d29245f42a520a46d0d148076a0ab37f7d2dde3ce838987",
+      "publicSprite": "public/sprites/kitchen-v4/on/fridge-on-84x74.png",
+      "publicSpriteSha256": "d3340d572f15e1b36d29245f42a520a46d0d148076a0ab37f7d2dde3ce838987"
+    },
+    {
+      "id": "cupboard-broken",
+      "role": "fitted-body",
+      "state": "broken",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/broken/cupboard-broken-84x74.png",
+      "authoritySha256": "2d28c2f62d4fe47e2f58d6619d15b85e2be0227b5b997d03a3b0ece75e71c616",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/broken/cupboard-broken-84x74.png",
+      "draftSha256": "2d28c2f62d4fe47e2f58d6619d15b85e2be0227b5b997d03a3b0ece75e71c616",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/broken/cupboard-broken-84x74.png",
+      "productionSourceSha256": "2d28c2f62d4fe47e2f58d6619d15b85e2be0227b5b997d03a3b0ece75e71c616",
+      "publicSprite": "public/sprites/kitchen-v4/broken/cupboard-broken-84x74.png",
+      "publicSpriteSha256": "2d28c2f62d4fe47e2f58d6619d15b85e2be0227b5b997d03a3b0ece75e71c616"
+    },
+    {
+      "id": "drawers-broken",
+      "role": "fitted-body",
+      "state": "broken",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/broken/drawers-broken-84x74.png",
+      "authoritySha256": "1799c8366e5a9703b5a5871154f1103d3f2693c19c3bc2b5b5f3d75ca38d7e9c",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/broken/drawers-broken-84x74.png",
+      "draftSha256": "1799c8366e5a9703b5a5871154f1103d3f2693c19c3bc2b5b5f3d75ca38d7e9c",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/broken/drawers-broken-84x74.png",
+      "productionSourceSha256": "1799c8366e5a9703b5a5871154f1103d3f2693c19c3bc2b5b5f3d75ca38d7e9c",
+      "publicSprite": "public/sprites/kitchen-v4/broken/drawers-broken-84x74.png",
+      "publicSpriteSha256": "1799c8366e5a9703b5a5871154f1103d3f2693c19c3bc2b5b5f3d75ca38d7e9c"
+    },
+    {
+      "id": "sink-broken",
+      "role": "fitted-body",
+      "state": "broken",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/broken/sink-broken-84x74.png",
+      "authoritySha256": "e1a1afd04e118ef2f601e7ee3936a525ccad0d5e4dd3cc1f8675511fc03eea7b",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/broken/sink-broken-84x74.png",
+      "draftSha256": "e1a1afd04e118ef2f601e7ee3936a525ccad0d5e4dd3cc1f8675511fc03eea7b",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/broken/sink-broken-84x74.png",
+      "productionSourceSha256": "e1a1afd04e118ef2f601e7ee3936a525ccad0d5e4dd3cc1f8675511fc03eea7b",
+      "publicSprite": "public/sprites/kitchen-v4/broken/sink-broken-84x74.png",
+      "publicSpriteSha256": "e1a1afd04e118ef2f601e7ee3936a525ccad0d5e4dd3cc1f8675511fc03eea7b"
+    },
+    {
+      "id": "dishwasher-broken",
+      "role": "fitted-body",
+      "state": "broken",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/broken/dishwasher-broken-84x74.png",
+      "authoritySha256": "1719f7fd129f84506c8cfa57ca9686fe0b0c05832f3172cae034e1328ebbb655",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/broken/dishwasher-broken-84x74.png",
+      "draftSha256": "1719f7fd129f84506c8cfa57ca9686fe0b0c05832f3172cae034e1328ebbb655",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/broken/dishwasher-broken-84x74.png",
+      "productionSourceSha256": "1719f7fd129f84506c8cfa57ca9686fe0b0c05832f3172cae034e1328ebbb655",
+      "publicSprite": "public/sprites/kitchen-v4/broken/dishwasher-broken-84x74.png",
+      "publicSpriteSha256": "1719f7fd129f84506c8cfa57ca9686fe0b0c05832f3172cae034e1328ebbb655"
+    },
+    {
+      "id": "oven-broken",
+      "role": "fitted-body",
+      "state": "broken",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/broken/oven-broken-84x74.png",
+      "authoritySha256": "90ab6e79b80641873eb0646a4ca785f53c4fa69883ee4e8f093b9c1ffc99fd58",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/broken/oven-broken-84x74.png",
+      "draftSha256": "90ab6e79b80641873eb0646a4ca785f53c4fa69883ee4e8f093b9c1ffc99fd58",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/broken/oven-broken-84x74.png",
+      "productionSourceSha256": "90ab6e79b80641873eb0646a4ca785f53c4fa69883ee4e8f093b9c1ffc99fd58",
+      "publicSprite": "public/sprites/kitchen-v4/broken/oven-broken-84x74.png",
+      "publicSpriteSha256": "90ab6e79b80641873eb0646a4ca785f53c4fa69883ee4e8f093b9c1ffc99fd58"
+    },
+    {
+      "id": "fridge-broken",
+      "role": "fitted-body",
+      "state": "broken",
+      "dimensions": [
+        84,
+        74
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/broken/fridge-broken-84x74.png",
+      "authoritySha256": "779dd0e639be4e65f5ded69caa96c8be0b2e7c501a0c17d7807df843732e744d",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/broken/fridge-broken-84x74.png",
+      "draftSha256": "779dd0e639be4e65f5ded69caa96c8be0b2e7c501a0c17d7807df843732e744d",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/broken/fridge-broken-84x74.png",
+      "productionSourceSha256": "779dd0e639be4e65f5ded69caa96c8be0b2e7c501a0c17d7807df843732e744d",
+      "publicSprite": "public/sprites/kitchen-v4/broken/fridge-broken-84x74.png",
+      "publicSpriteSha256": "779dd0e639be4e65f5ded69caa96c8be0b2e7c501a0c17d7807df843732e744d"
+    },
+    {
+      "id": "dishwasher-broken-red-lights",
+      "role": "light-only-animation",
+      "state": "broken",
+      "dimensions": [
+        3680,
+        82
+      ],
+      "frames": 40,
+      "fps": 4,
+      "cell": [
+        92,
+        82
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/dishwasher-broken-red-lights-f40.png",
+      "authoritySha256": "3a9b8d747aadc0589b35d7a454a7c7de38a1b34a06ba579222b3cbd4aa3655d4",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/dishwasher-broken-red-lights-f40.png",
+      "draftSha256": "3a9b8d747aadc0589b35d7a454a7c7de38a1b34a06ba579222b3cbd4aa3655d4",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/dishwasher-broken-red-lights-f40.png",
+      "productionSourceSha256": "3a9b8d747aadc0589b35d7a454a7c7de38a1b34a06ba579222b3cbd4aa3655d4",
+      "publicSprite": "public/sprites/kitchen-v4/dishwasher-broken-red-lights-f40.png",
+      "publicSpriteSha256": "3a9b8d747aadc0589b35d7a454a7c7de38a1b34a06ba579222b3cbd4aa3655d4"
+    },
+    {
+      "id": "oven-broken-cavity-light",
+      "role": "light-only-animation",
+      "state": "broken",
+      "dimensions": [
+        3680,
+        82
+      ],
+      "frames": 40,
+      "fps": 4,
+      "cell": [
+        92,
+        82
+      ],
+      "authority": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/candidates/oven-broken-cavity-light-f40.png",
+      "authoritySha256": "43202846064d1736e0948ac29f7e31bf06a0d0f59859a98ddcdf3d326696ab35",
+      "draft": "art/drafts/kitchen-runtime-promotion-2026-10-24-v1/assets/oven-broken-cavity-light-f40.png",
+      "draftSha256": "43202846064d1736e0948ac29f7e31bf06a0d0f59859a98ddcdf3d326696ab35",
+      "productionSource": "art/raw/kitchen-warm-ligne-claire-runtime-v1/oven-broken-cavity-light-f40.png",
+      "productionSourceSha256": "43202846064d1736e0948ac29f7e31bf06a0d0f59859a98ddcdf3d326696ab35",
+      "publicSprite": "public/sprites/kitchen-v4/oven-broken-cavity-light-f40.png",
+      "publicSpriteSha256": "43202846064d1736e0948ac29f7e31bf06a0d0f59859a98ddcdf3d326696ab35"
+    }
+  ]
+}

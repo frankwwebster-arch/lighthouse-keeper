@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { BREAKABLE_OBJECTS, OBJECTS } from '../game/config'
 import { CORE, DIVING_EXTENSION, PLAYABLE_FLOORS, stripeSpriteAt } from './floors'
 import { parseBrokenPreview, visualStateFor } from './objectState'
+import { KITCHEN_OBJECT_X, KITCHEN_ROOM, kitchenTowerX } from '../game/kitchenLayout'
 
 describe('playable floor modules', () => {
   it('defines the first three floors in their agreed order on one fixed-width core', () => {
@@ -20,11 +21,20 @@ describe('playable floor modules', () => {
       for (const id of floor.objects) {
         const object = OBJECTS.find((candidate) => candidate.id === id)
         expect(object?.floor).toBe(floor.id)
-        expect(object!.x % 4).toBe(0)
+        if (floor.id !== 'ground') expect(object!.x % 4).toBe(0)
       }
     }
     expect(PLAYABLE_FLOORS[2].objects).toContain('toilet')
     expect(PLAYABLE_FLOORS[0].objects).not.toContain('toilet')
+  })
+
+  it('maps live kitchen interactions onto the approved room coordinate system', () => {
+    expect(KITCHEN_ROOM.bodySize).toEqual([84, 74])
+    expect(KITCHEN_ROOM.fittedBayOriginsX).toEqual([84, 168, 252, 336, 420, 504])
+    expect(KITCHEN_OBJECT_X.cooker).toBe(kitchenTowerX(462))
+    expect(KITCHEN_OBJECT_X.fridge).toBe(kitchenTowerX(546))
+    expect(KITCHEN_OBJECT_X.broom).toBe(kitchenTowerX(646))
+    expect(KITCHEN_OBJECT_X.petbowl).toBe(kitchenTowerX(730))
   })
 
   it('reserves a completely hidden changing zone between the two diving-room doors', () => {

@@ -145,7 +145,18 @@ export function Scene({ s, tvChannel = 'news', selected, flash, shrugAt, petJump
         )}
         {/* fixed-width modular lighthouse core */}
         <g>
-          {floorsOnShow().map((floor) => <FloorModule key={floor.id} floor={floor} />)}
+          {floorsOnShow().map((floor) => (
+            <FloorModule
+              key={floor.id}
+              floor={floor}
+              kitchenState={floor.id === 'ground' ? {
+                cooker: visualStateFor('cooker', activeObject, broken),
+                fridge: visualStateFor('fridge', activeObject, broken),
+                cookerTier: previewTiers.cooker ?? tierOf(s, 'cooker'),
+                fridgeTier: previewTiers.fridge ?? tierOf(s, 'fridge'),
+              } : undefined}
+            />
+          ))}
           {/* the lift: a stand-in shaft behind the stairs until it has art */}
           {LAYOUT.lift && (
             <g className="lift" pointerEvents="none">
@@ -171,7 +182,7 @@ export function Scene({ s, tvChannel = 'news', selected, flash, shrugAt, petJump
         )}
 
         {/* objects */}
-        {OBJECTS.map((o) => (o.id === 'toilet' || !has(o.id) ? null : obj(o.id)))}
+        {OBJECTS.map((o) => (o.id === 'toilet' || o.id === 'fridge' || o.id === 'cooker' || !has(o.id) ? null : obj(o.id)))}
         {obj('toilet')}
         {/* the shut loo door */}
         {cabin && (
