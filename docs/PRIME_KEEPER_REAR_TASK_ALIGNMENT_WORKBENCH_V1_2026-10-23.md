@@ -3,13 +3,13 @@
 Date: 23 October 2026
 
 Status: superseded lower-seam experiment, retained as reversible comparison
-evidence. V2 was the subsequent upper-seam diagnostic; V10 is the active
+evidence. V2 was the subsequent upper-seam diagnostic; V11 is the active
 correction.
 
 Route: `/prime-keeper-rear-task-alignment`
 
-Active successor: `/prime-keeper-animation-drafts-v10`; see
-`PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V10_2026-10-23.md`.
+Active successor: `/prime-keeper-animation-drafts-v11`; see
+`PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V11_2026-10-23.md`.
 
 ## Why this exists
 

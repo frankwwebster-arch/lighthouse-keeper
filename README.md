@@ -3,20 +3,21 @@
 A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by typing or tapping objects, then keep him happy through the day. The playable cutaway currently has a kitchen, living room, bedroom with en suite, and lamp room.
 
 The current Prime animation review is `/prime-keeper-animation-drafts`
-(versioned permalink `/prime-keeper-animation-drafts-v10`): ten reversible
-sequences with 162 frame occurrences. V10 retains V3's accepted palette, lift
-and naming changes and preserves V1–V9 unchanged. It replaces only rear-task
+(versioned permalink `/prime-keeper-animation-drafts-v11`): ten reversible
+sequences with 162 frame occurrences. V11 retains V3's accepted palette, lift
+and naming changes and preserves V1–V10 unchanged. It replaces only rear-task
 positions 11–31. Every corrected frame starts with the complete approved rear
 Prime—cap, head, beard, torso, cream stripe, jumper band, trousers, boots,
-height and floor registration—and substitutes only the corresponding V6 action
-arm pixels. There is no torso/lower-body join, generated delivery art, scaling
-or repainting. The rejected V9 frame and V10 result remain side-by-side, every
-frame has an independent redraft slot, and the rear-task player has an
-adjustable exact-Prime ghost enabled by default. All players retain
-pause/stop/frame controls and the page retains its sequence sandbox. Unsafe
+height and floor registration—and restores the complete corresponding V6 arm
+silhouette. Above the shoulder, arm pixels enter only where the approved body
+is transparent and outside a dilated neutral-body mask. This removes V10's
+visible row-125 sleeve/hand crop without introducing a torso join. The optional
+exact-Prime alignment ghost is now off by default. Every frame retains an
+independent redraft slot; all players retain pause/stop/frame controls and the
+page retains its sequence sandbox. Unsafe
 snack, bed and original broom source sheets remain visibly withheld by the
 isolation gate. See
-`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V10_2026-10-23.md`.
+`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V11_2026-10-23.md`.
 
 The V1 and V2 rear-task manual alignment tools remain available as reversible
 diagnostic evidence, but they are no longer the active correction route: exact

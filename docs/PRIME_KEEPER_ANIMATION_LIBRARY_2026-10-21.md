@@ -66,19 +66,20 @@ seating remain installed but await matching gameplay consumers. The library
 labels that distinction and renders approved source and installed delivery
 side-by-side. This promotion does not expand any original art approval.
 
-The separate `/prime-keeper-animation-drafts` page now serves V10: the five
+The separate `/prime-keeper-animation-drafts` page now serves V11: the five
 preserved V1 drafts, one isolated broom candidate, four approved-component
-choreography previews and the reversible rear-task correction. V10 retains all
-accepted V3 palette, lift and naming amendments and replaces only rejected V9
+choreography previews and the reversible rear-task correction. V11 retains all
+accepted V3 palette, lift and naming amendments and replaces only rejected V10
 rear-task positions 11–31. Each corrected frame uses the complete approved rear
-Prime as its fixed body authority and substitutes only exact V6 action-arm
-pixels. This removes the incompatible torso/lower-body join entirely while
-retaining standing height and floor registration. An adjustable exact-Prime
-ghost is available directly in the rear-task player. These ten sequences remain
+Prime as its fixed body authority and restores the full V6 action-arm silhouette
+without V10's row-125 crop. Pixels above the shoulder are admitted only outside
+the approved body and a dilated neutral-body mask. Standing height and floor
+registration remain exact. The adjustable exact-Prime ghost remains available
+but is off by default. These ten sequences remain
 outside the approved library and runtime bank until their complete choreography
-is accepted. V1–V9 remain at their versioned routes; the current versioned route
-is `/prime-keeper-animation-drafts-v10`. See
-`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V10_2026-10-23.md`.
+is accepted. V1–V10 remain at their versioned routes; the current versioned route
+is `/prime-keeper-animation-drafts-v11`. See
+`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V11_2026-10-23.md`.
 
 The two rear-task manual alignment routes remain available only as reversible
 diagnostic evidence. Exact ghost registration established that their V6 torso

@@ -134,7 +134,7 @@ assert.equal(register.publishedAssets.length, new Set(allFrames.map((frame) => f
 const component = fs.readFileSync(path.join(root, 'src/prime-keeper-drafts/PrimeKeeperDraftReview.tsx'), 'utf8')
 for (const phrase of ['image.decode', 'Ⅱ Pause', '← Frame', 'Frame →', '■ Stop', 'Draft sequence sandbox', 'reviewAuthorities', 'amendmentComparison', 'Show Prime ghost', 'Hide Prime ghost', 'Prime ghost opacity']) assert.ok(component.includes(phrase), `V10 review UI omits ${phrase}`)
 assert.match(component, /batch\.version >= 10[^\n]+complete approved rear Prime/, 'V10 review header omits the approved-body arm-only contract')
-assert.match(fs.readFileSync(path.join(root, 'src/app/prime-keeper-animation-drafts/page.tsx'), 'utf8'), /keeper_prime_animation_drafts_v10/)
+assert.match(fs.readFileSync(path.join(root, 'src/app/prime-keeper-animation-drafts/page.tsx'), 'utf8'), /keeper_prime_animation_drafts_v11/)
 assert.match(fs.readFileSync(path.join(root, 'src/app/prime-keeper-animation-drafts-v10/page.tsx'), 'utf8'), /keeper_prime_animation_drafts_v10/)
 assert.match(fs.readFileSync(path.join(root, 'src/app/prime-keeper-animation-drafts-v9/page.tsx'), 'utf8'), /keeper_prime_animation_drafts_v9/)
 

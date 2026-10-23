@@ -1,0 +1,673 @@
+{
+  "schema": "lighthouse-keeper/prime-animation-feedback-corrections@1",
+  "version": 11,
+  "generatedOn": "2026-10-23",
+  "sourceBatch": "data/keeper_prime_animation_drafts_v10.json",
+  "sourceBatchSha256": "66492aaf8191831ac9951ff5123456bd4e99e8776889b4907fefbff734c68bb3",
+  "authority": {
+    "completeRearBody": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+    "neutralRear": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+  },
+  "rejectedAmendment": {
+    "version": 10,
+    "scope": "rear-work-turn-return-v1 positions 11–31 only",
+    "reason": "The fixed row-125 transfer boundary visibly cropped the tops of sleeves and raised hands. The exact-Prime alignment overlay was also mistakenly enabled by default."
+  },
+  "frames": [
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 11,
+      "sourceV6Sha256": "7e1f02e4b8873d96a86013007eded1adc9e5c58364603fe904fb9236e41837ab",
+      "rejectedV10Sha256": "20c08ec542607f61cb8f92b0e46cf90f0b411df00245ad7a5a8914042a8f02dd",
+      "draftV11Sha256": "660485ebd219ec3801c05e37ed63a34a5ee9d41331da69c7053fe79d14696ad1",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6512,
+      "copiedPixelsAboveV10Cutoff": 373,
+      "raisedExtensionPixels": 9,
+      "changedPixels": 8656,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 12,
+      "sourceV6Sha256": "8c85960d624f6efb52b13831f9c43017f7dbea0f57184f687625d0611474432f",
+      "rejectedV10Sha256": "eeaaa8ab969b9207bc73c9d58aa613425ccb12003948e3b78dc633413a6b9193",
+      "draftV11Sha256": "d4fda7db6e7cd709bee933281ee37bbfeb9324a71cfa4d327b1d2da259349a0f",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6612,
+      "copiedPixelsAboveV10Cutoff": 466,
+      "raisedExtensionPixels": 1,
+      "changedPixels": 9127,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 13,
+      "sourceV6Sha256": "cfa3881a9616a6f9272bbac9e2c2dc50e3a64a7f32e1a2ace359182c60f8c9ba",
+      "rejectedV10Sha256": "b1e42009bf78fa77d84b123e33cf9d2487a38ce43f412be1c0ff85b53fac2336",
+      "draftV11Sha256": "9481715a38dc70441f15c7882142c5f5c12d98f65ce1c4d5a8a90e98fd68665c",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6728,
+      "copiedPixelsAboveV10Cutoff": 686,
+      "raisedExtensionPixels": 94,
+      "changedPixels": 9402,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 14,
+      "sourceV6Sha256": "9efda550c33e583683cff54a8aa717e44d44e1924e2ad76c136441ed4a567f9e",
+      "rejectedV10Sha256": "b279f6f795fcec8448bc03d2511cc4ca2f8d37d62bce68ff5d038278a69cc60e",
+      "draftV11Sha256": "fc892f23bc9c2199d961aa85abe568e4e3f77eafc92f117b8c365658d16b1f21",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6840,
+      "copiedPixelsAboveV10Cutoff": 830,
+      "raisedExtensionPixels": 142,
+      "changedPixels": 9669,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 15,
+      "sourceV6Sha256": "a855aacd0fe8445b8da493f780e34baabe8ae1cc1d54b4e4258583b0bd542d36",
+      "rejectedV10Sha256": "2d680e7d11ac0a4a043ea5b0d502f041b416d694daa1d5d3e4d1b27a47cbe562",
+      "draftV11Sha256": "1914eb9913b6a68065e5aba267475f349961e43bc3b2ccccc734cbc579862729",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6973,
+      "copiedPixelsAboveV10Cutoff": 552,
+      "raisedExtensionPixels": 9,
+      "changedPixels": 9591,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 16,
+      "sourceV6Sha256": "9af7e7e0ec88203b516f0d9bbfb1387680f8f2ffc93caa617eb367438e6f52bc",
+      "rejectedV10Sha256": "4d488edc7d8f83ee8eb158ea2afd0e4069277ff60ef70242b78b1ac5acddf178",
+      "draftV11Sha256": "04c83ae7b5537d4484b34f25549e35590f7b00717ba592887ebc733bb5fe2435",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6872,
+      "copiedPixelsAboveV10Cutoff": 775,
+      "raisedExtensionPixels": 150,
+      "changedPixels": 9559,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 17,
+      "sourceV6Sha256": "e14970db4e9d49023ec3e26bd497f4a4f7c34870ab50c23c5dfa340c75b63187",
+      "rejectedV10Sha256": "2dd02ae89a4abbfca9e1788013593cfa5ea0e30f5ec6c9899d098fad8a012028",
+      "draftV11Sha256": "b58f74b5edcac3ec8e551ea71ff880c87133a11a1e00b9d0c9609fca763d9c70",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6736,
+      "copiedPixelsAboveV10Cutoff": 508,
+      "raisedExtensionPixels": 31,
+      "changedPixels": 9160,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 18,
+      "sourceV6Sha256": "c419b7783948ca32ab51231b431f518b3a8ba8e25fd69040b7815e4da6f72d95",
+      "rejectedV10Sha256": "b010af4b486af1e364c747679b65b29bcc15e6daeadd084c57c71857053eebde",
+      "draftV11Sha256": "8ea4005505d51f5dd5cd6eddace189644566e0a93e1cc386afb9262a300c4c70",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6974,
+      "copiedPixelsAboveV10Cutoff": 844,
+      "raisedExtensionPixels": 261,
+      "changedPixels": 9521,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 19,
+      "sourceV6Sha256": "d5523c19792645108929d9cb246fc4606d64dcb66b7590a51b129decf61d7322",
+      "rejectedV10Sha256": "cfb6e0bb50beea8574baa953cb872f233e79dddc0c9b1576c2107d1e3fa7fc1e",
+      "draftV11Sha256": "6eeb2e26036558f6ed005bdacc52a08f94a7f15b0ceede5fe8407520c4ed0c9d",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6549,
+      "copiedPixelsAboveV10Cutoff": 682,
+      "raisedExtensionPixels": 61,
+      "changedPixels": 9441,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 20,
+      "sourceV6Sha256": "88939e41b9646defe6a36225e64c15ebc7f342eb89d38c1df404af3dd284ff35",
+      "rejectedV10Sha256": "3310a7edf8a85a17ed236a67bcec76e38f5767de30f7069ad81afffe256a1bbc",
+      "draftV11Sha256": "a8dafffdab4575d0d962f7cebc8e2f05fcce433386759e59754b686ad94b0f6a",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6624,
+      "copiedPixelsAboveV10Cutoff": 605,
+      "raisedExtensionPixels": 57,
+      "changedPixels": 9078,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 21,
+      "sourceV6Sha256": "10008e4578d8d9ea47d90c2625e891f58a570b631630d526ddb9631e09ecf419",
+      "rejectedV10Sha256": "134e95172b0a3e9061f3ea3630e69f03de90052f68e6acf863b0c462fc574ec0",
+      "draftV11Sha256": "6d6b2cdd5b59ab9fa813d40825a22aa838aae1d9fe23214a7af32a089d01fc43",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6521,
+      "copiedPixelsAboveV10Cutoff": 563,
+      "raisedExtensionPixels": 38,
+      "changedPixels": 8992,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 22,
+      "sourceV6Sha256": "e66064876dc7f19ac698dde93720c05edbf827d83fc0e74e7a60d11d619aa576",
+      "rejectedV10Sha256": "cf9f0b816a60e94bd1c81b5cfd67977c6d32f3fb48954b3ae4afa24781b2077a",
+      "draftV11Sha256": "949ce14b7d582bec8867a369c7fbf1aaeb851dec53360e8839393e09d1efe998",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6500,
+      "copiedPixelsAboveV10Cutoff": 924,
+      "raisedExtensionPixels": 292,
+      "changedPixels": 9438,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 23,
+      "sourceV6Sha256": "6c12c69e2ef5a78ea1ae0a2b5c8be50debcba2697df24c7580cd94c12f1d4a82",
+      "rejectedV10Sha256": "2adb07c6e323c19881fb54085d3e4c8333cf4604507224b8d7cb8024cb9b37cc",
+      "draftV11Sha256": "46883d4de52eb40cad564934b894b787e1a856d4004485a032e139558db37389",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 7227,
+      "copiedPixelsAboveV10Cutoff": 926,
+      "raisedExtensionPixels": 346,
+      "changedPixels": 9702,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 24,
+      "sourceV6Sha256": "bd9f34b623d20b11fbb949af749f22a9dca30d06708d7c8decbc3ae85670f0a7",
+      "rejectedV10Sha256": "9302d743ce0ef422bdf5ab9374a97ba17a8e2457106a4c7fca1c245ad967bf38",
+      "draftV11Sha256": "fba40b6b08c4ff4cc4761aff60ef15d1e489aa38008a9ec034af01085103c0f1",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6462,
+      "copiedPixelsAboveV10Cutoff": 530,
+      "raisedExtensionPixels": 24,
+      "changedPixels": 8985,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 25,
+      "sourceV6Sha256": "1209a9482149502c454e1c9dee10e9def36358c01801b58c2131b1da69134a3a",
+      "rejectedV10Sha256": "f2ef8d20c117f2011225aba253b6b32201a42a078bd615e7e70d729989316b62",
+      "draftV11Sha256": "5abf555c581ca03fb54e383bc59ec2d3ff585cf45129591bee679987beea1ca5",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6833,
+      "copiedPixelsAboveV10Cutoff": 756,
+      "raisedExtensionPixels": 137,
+      "changedPixels": 9440,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 26,
+      "sourceV6Sha256": "b4296d3550f8bee09e62e4816bc297dc01a69e17f01913fe4faaf30dc617157f",
+      "rejectedV10Sha256": "907ab5b20a4d3ba8051bcb368cc010d3fc5a94aa182f93136da7c1d8eed09365",
+      "draftV11Sha256": "46b1889e2fde36057feb6fc90b1d0b08ef7e58a3ef990286e0f6cb6a36ddfd36",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6530,
+      "copiedPixelsAboveV10Cutoff": 857,
+      "raisedExtensionPixels": 233,
+      "changedPixels": 9480,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 27,
+      "sourceV6Sha256": "22b30e2aacfcdd8f58ba29dca228260193de03e44acd6c5f5e7848dc61b63e90",
+      "rejectedV10Sha256": "dc2dd02672fc5624f58faf5ec2fb149633abd0c6a84913fb73524990be7ed36c",
+      "draftV11Sha256": "45830918b93f4e8c2fdb737acece56e63a4354492afbe6eafcf88f06c9c62a6d",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6896,
+      "copiedPixelsAboveV10Cutoff": 767,
+      "raisedExtensionPixels": 150,
+      "changedPixels": 9687,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 28,
+      "sourceV6Sha256": "94bf6f5026e175a798113579b4f072139a3793eeebdc013f94b1065954d51cb0",
+      "rejectedV10Sha256": "ea4f36808b6f1ccd816a5b8b9cd329c2cb694da9c1d2a15bea78f62aea479f16",
+      "draftV11Sha256": "490df36ceed929921fd6bbd962047e52056c8812c4a2cc8cb8993fad31ef94ca",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6754,
+      "copiedPixelsAboveV10Cutoff": 585,
+      "raisedExtensionPixels": 56,
+      "changedPixels": 9347,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 29,
+      "sourceV6Sha256": "9ec961294cecf25cc990ce5c553855434f6278e4414b6c111629ec92e36991a7",
+      "rejectedV10Sha256": "121401997c670fa505c6a2924ca875c8b5757adcd83e1875aef3fb5e2cc51aea",
+      "draftV11Sha256": "8c94cc7caea6dae8e3822b0d64a8e6a5efff9685c01a2924ff1bea3a851ea57c",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6216,
+      "copiedPixelsAboveV10Cutoff": 369,
+      "raisedExtensionPixels": 0,
+      "changedPixels": 8667,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 30,
+      "sourceV6Sha256": "1d1fd8d55d175e31d6550a6f9abc242117d10a0c6c1e5a60155aa7840f9d10c1",
+      "rejectedV10Sha256": "3ccc191175eaa8bed75212eb081dabed4634fea48180349bbfeb74c42d3e6f53",
+      "draftV11Sha256": "eae4a026bc4a86c460afe84ba76a8411a5c4015fc88b14ac5e6a26dc6568f023",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 5928,
+      "copiedPixelsAboveV10Cutoff": 354,
+      "raisedExtensionPixels": 0,
+      "changedPixels": 8408,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 31,
+      "sourceV6Sha256": "41863350f3c15c2d9ed6a867ec9f6dd23dea566d9ce1f8eb18a5bef8ebb73fee",
+      "rejectedV10Sha256": "cd49f90e40fc210c30bfa4eb03e6b1cd0d21ba5582e59e085af29bd534c72139",
+      "draftV11Sha256": "2a55c36f97edf14a01f8ab0a3f5af2e24f5797a58dc66d2ed90ad3f81df8d49e",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "neutralRearSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 115,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 70,
+        "y1": 242,
+        "shoulderY": 115,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16,
+        "neutralExclusionRadius": 2,
+        "neutralFramePosition": 10
+      },
+      "clearedPixels": 4851,
+      "copiedActionPixels": 6244,
+      "copiedPixelsAboveV10Cutoff": 376,
+      "raisedExtensionPixels": 0,
+      "changedPixels": 8601,
+      "correction": "V10 rejected: its row-125 arm-transfer boundary visibly cropped sleeve and raised-hand silhouettes; V11 retains the approved body while extending the arm mask above the shoulder only through transparent authority pixels outside the neutral rear-body envelope"
+    }
+  ],
+  "imageGeneration": {
+    "usedInDelivery": false,
+    "reason": "V11 is deterministic exact-pixel compositing from the hash-pinned approved rear body and V6 arm choreography."
+  }
+}

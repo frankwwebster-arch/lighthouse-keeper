@@ -2,13 +2,14 @@
 
 Date: 23 October 2026
 
-Status: reversible review-only draft. No V10 frame is installed in the runtime
-animation bank.
+Status: rejected reversible evidence. Frank found that the row-125 transfer
+boundary cropped the tops of sleeves and raised hands, and that the alignment
+ghost was enabled by default. No V10 frame is installed in the runtime bank.
 
 Routes:
 
-- current review: `/prime-keeper-animation-drafts`
 - immutable V10 permalink: `/prime-keeper-animation-drafts-v10`
+- active successor: `/prime-keeper-animation-drafts-v11`
 
 ## Corrected construction
 

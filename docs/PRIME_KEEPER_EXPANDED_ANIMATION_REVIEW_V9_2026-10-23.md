@@ -3,7 +3,7 @@
 Date: 23 October 2026
 
 Status: rejected review evidence. V8 is also preserved as rejected evidence.
-V10 is the active successor.
+V10 was the immediate successor; V11 is the active review.
 
 Active review: `/prime-keeper-animation-drafts-v10`
 
@@ -65,7 +65,8 @@ an adjustable, non-exporting ghost for pixel-level alignment. V1 remains
 available at its original route as reversible comparison evidence. See
 `docs/PRIME_KEEPER_REAR_TASK_UPPER_SEAM_WORKBENCH_V2_2026-10-23.md`.
 
-The active correction is V10 at `/prime-keeper-animation-drafts-v10`. It
+V10 at `/prime-keeper-animation-drafts-v10` then
 abandons the incompatible moving-torso/lower-body join completely: every work
 pose begins with the complete approved rear Prime and replaces only the action
-arms.
+arms. V11 is the active correction because it removes V10's fixed upper arm
+crop and turns its optional alignment ghost off by default.
