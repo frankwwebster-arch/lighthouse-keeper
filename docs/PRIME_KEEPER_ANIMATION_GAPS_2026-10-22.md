@@ -19,9 +19,9 @@ recorded contact-beard masks. V16 and the current runtime remain immutable
 until this correction is explicitly approved.
 
 The current versioned review batch is
-`/prime-keeper-animation-drafts-v9` (also served at
+`/prime-keeper-animation-drafts-v10` (also served at
 `/prime-keeper-animation-drafts`). It contains ten independently redraftable
-sequences and 162 frame occurrences. V9 preserves V3's lift omission, brighter
+sequences and 162 frame occurrences. V10 preserves V3's lift omission, brighter
 passive front/back jumpers and accurate seated-route title. Frank rejected the
 V4 rear-task amendment because detached black fragments returned and its
 moving hem was cut across a second fixed hem, then rejected V5 because its hard
@@ -29,12 +29,14 @@ waist cut made the result worse, then rejected V6 because the generated lower
 jumper still contained two ribbed bands in every affected frame. V7 removed
 the duplicate but was rejected because its row-180 join made both side outlines
 step inward. V8 corrected the outline but exposed a fixed dark trouser edge
-directly beneath the moving hem, recreating a second seam. V9 changes only
-rear-task positions 11–31: the complete moving torso and hem stay exact through
-row 213, the fixed waistband edge is occluded, and approved rear-authority
-trousers retain the same per-frame outline. These V9
+directly beneath the moving hem, recreating a second seam. V9's occlusion was
+also rejected because a separate dark waistband line remained visible. V10
+removes that incompatible torso/lower-body join: rear-task positions 11–31
+begin with the complete approved rear Prime and replace only the V6 action-arm
+pixels. The cap, head, beard, torso, stripe, jumper band, trousers, boots,
+height and floor registration remain exact authority pixels. These V10
 corrections remain review-only and have not replaced the installed runtime
-sprites. V1–V8 remain
+sprites. V1–V9 remain
 immutable.
 
 The next work is not one undifferentiated art list:

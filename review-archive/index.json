@@ -15,12 +15,12 @@
   ],
   "largeDataThresholdBytes": 24576,
   "stats": {
-    "setCount": 263,
-    "referenceCount": 8182,
-    "uniqueObjectCount": 3395,
-    "logicalBytes": 659052361,
-    "uniqueBytes": 274229201,
-    "deduplicatedBytes": 384823160
+    "setCount": 264,
+    "referenceCount": 8269,
+    "uniqueObjectCount": 3416,
+    "logicalBytes": 664277692,
+    "uniqueBytes": 275447251,
+    "deduplicatedBytes": 388830441
   },
   "legacyPaths": {
     "/keeper-review/activity-cloud-composer-v1/assets/bbq-burgers-5244d4289bbaf95f.png": {
@@ -9451,6 +9451,615 @@
       "bytes": 26509,
       "object": "review-archive/objects/85/8596363d77ce32557d5cd0aa46895c94bcc93ac0b94b260343a084bfd3784a8a.json",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/85/8596363d77ce32557d5cd0aa46895c94bcc93ac0b94b260343a084bfd3784a8a.json"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-03d2fe44ecb6c1c7.png": {
+      "sha256": "03d2fe44ecb6c1c7da84eb7ad09220310ca32f8821e174fd01c8e5d9e11cf2e0",
+      "extension": ".png",
+      "bytes": 60524,
+      "object": "review-archive/objects/03/03d2fe44ecb6c1c7da84eb7ad09220310ca32f8821e174fd01c8e5d9e11cf2e0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/03/03d2fe44ecb6c1c7da84eb7ad09220310ca32f8821e174fd01c8e5d9e11cf2e0.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-04857d6f91011559.png": {
+      "sha256": "04857d6f91011559272d4a0db933f1465a600c221cc307c38899bd491a55c17c",
+      "extension": ".png",
+      "bytes": 66755,
+      "object": "review-archive/objects/04/04857d6f91011559272d4a0db933f1465a600c221cc307c38899bd491a55c17c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/04/04857d6f91011559272d4a0db933f1465a600c221cc307c38899bd491a55c17c.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-081272e51f799f6d.png": {
+      "sha256": "081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a",
+      "extension": ".png",
+      "bytes": 57870,
+      "object": "review-archive/objects/08/081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/08/081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-0d278363a0e7e4f1.png": {
+      "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "extension": ".png",
+      "bytes": 51552,
+      "object": "review-archive/objects/0d/0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0d/0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-109c211066926cb2.png": {
+      "sha256": "109c211066926cb2b3f140755bfe51a4636106c03d75c052e826d6610791d8a1",
+      "extension": ".png",
+      "bytes": 53011,
+      "object": "review-archive/objects/10/109c211066926cb2b3f140755bfe51a4636106c03d75c052e826d6610791d8a1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/10/109c211066926cb2b3f140755bfe51a4636106c03d75c052e826d6610791d8a1.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-121401997c670fa5.png": {
+      "sha256": "121401997c670fa505c6a2924ca875c8b5757adcd83e1875aef3fb5e2cc51aea",
+      "extension": ".png",
+      "bytes": 57722,
+      "object": "review-archive/objects/12/121401997c670fa505c6a2924ca875c8b5757adcd83e1875aef3fb5e2cc51aea.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/12/121401997c670fa505c6a2924ca875c8b5757adcd83e1875aef3fb5e2cc51aea.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-134e95172b0a3e90.png": {
+      "sha256": "134e95172b0a3e9061f3ea3630e69f03de90052f68e6acf863b0c462fc574ec0",
+      "extension": ".png",
+      "bytes": 57748,
+      "object": "review-archive/objects/13/134e95172b0a3e9061f3ea3630e69f03de90052f68e6acf863b0c462fc574ec0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/13/134e95172b0a3e9061f3ea3630e69f03de90052f68e6acf863b0c462fc574ec0.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-20c08ec542607f61.png": {
+      "sha256": "20c08ec542607f61cb8f92b0e46cf90f0b411df00245ad7a5a8914042a8f02dd",
+      "extension": ".png",
+      "bytes": 58175,
+      "object": "review-archive/objects/20/20c08ec542607f61cb8f92b0e46cf90f0b411df00245ad7a5a8914042a8f02dd.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/20/20c08ec542607f61cb8f92b0e46cf90f0b411df00245ad7a5a8914042a8f02dd.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-287c42001ae5c757.png": {
+      "sha256": "287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c",
+      "extension": ".png",
+      "bytes": 62554,
+      "object": "review-archive/objects/28/287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/28/287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-2adb07c6e323c198.png": {
+      "sha256": "2adb07c6e323c19881fb54085d3e4c8333cf4604507224b8d7cb8024cb9b37cc",
+      "extension": ".png",
+      "bytes": 58569,
+      "object": "review-archive/objects/2a/2adb07c6e323c19881fb54085d3e4c8333cf4604507224b8d7cb8024cb9b37cc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2a/2adb07c6e323c19881fb54085d3e4c8333cf4604507224b8d7cb8024cb9b37cc.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-2b61df90e5d790f8.png": {
+      "sha256": "2b61df90e5d790f807d41a28545c79bbad703607356659b6daba93fe4cd808e3",
+      "extension": ".png",
+      "bytes": 63986,
+      "object": "review-archive/objects/2b/2b61df90e5d790f807d41a28545c79bbad703607356659b6daba93fe4cd808e3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2b61df90e5d790f807d41a28545c79bbad703607356659b6daba93fe4cd808e3.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-2d680e7d11ac0a4a.png": {
+      "sha256": "2d680e7d11ac0a4a043ea5b0d502f041b416d694daa1d5d3e4d1b27a47cbe562",
+      "extension": ".png",
+      "bytes": 58554,
+      "object": "review-archive/objects/2d/2d680e7d11ac0a4a043ea5b0d502f041b416d694daa1d5d3e4d1b27a47cbe562.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2d/2d680e7d11ac0a4a043ea5b0d502f041b416d694daa1d5d3e4d1b27a47cbe562.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-2dd02ae89a4abbfc.png": {
+      "sha256": "2dd02ae89a4abbfca9e1788013593cfa5ea0e30f5ec6c9899d098fad8a012028",
+      "extension": ".png",
+      "bytes": 58373,
+      "object": "review-archive/objects/2d/2dd02ae89a4abbfca9e1788013593cfa5ea0e30f5ec6c9899d098fad8a012028.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2d/2dd02ae89a4abbfca9e1788013593cfa5ea0e30f5ec6c9899d098fad8a012028.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-2e118ca8d10d126f.png": {
+      "sha256": "2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5",
+      "extension": ".png",
+      "bytes": 55992,
+      "object": "review-archive/objects/2e/2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2e/2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-2efd21d6ab050e30.png": {
+      "sha256": "2efd21d6ab050e303dad0499e9f499a7ee99be6b337619208a5e35d1e98415d1",
+      "extension": ".png",
+      "bytes": 67683,
+      "object": "review-archive/objects/2e/2efd21d6ab050e303dad0499e9f499a7ee99be6b337619208a5e35d1e98415d1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2e/2efd21d6ab050e303dad0499e9f499a7ee99be6b337619208a5e35d1e98415d1.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-31dbac4efc00089f.png": {
+      "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "extension": ".png",
+      "bytes": 60289,
+      "object": "review-archive/objects/31/31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/31/31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-3310a7edf8a85a17.png": {
+      "sha256": "3310a7edf8a85a17ed236a67bcec76e38f5767de30f7069ad81afffe256a1bbc",
+      "extension": ".png",
+      "bytes": 58297,
+      "object": "review-archive/objects/33/3310a7edf8a85a17ed236a67bcec76e38f5767de30f7069ad81afffe256a1bbc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/33/3310a7edf8a85a17ed236a67bcec76e38f5767de30f7069ad81afffe256a1bbc.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-335c9f5cb66efe5a.png": {
+      "sha256": "335c9f5cb66efe5aaccfe4076d47a95e1bbff4237f936390dbcb67a81ff3da05",
+      "extension": ".png",
+      "bytes": 69420,
+      "object": "review-archive/objects/33/335c9f5cb66efe5aaccfe4076d47a95e1bbff4237f936390dbcb67a81ff3da05.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/33/335c9f5cb66efe5aaccfe4076d47a95e1bbff4237f936390dbcb67a81ff3da05.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-34028d8821a7272a.png": {
+      "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "extension": ".png",
+      "bytes": 51798,
+      "object": "review-archive/objects/34/34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/34/34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-36482028337fe7b0.png": {
+      "sha256": "36482028337fe7b00b09eaab1d11a5ed275fe7edf36acacf08e7341f4f5e54d5",
+      "extension": ".png",
+      "bytes": 67457,
+      "object": "review-archive/objects/36/36482028337fe7b00b09eaab1d11a5ed275fe7edf36acacf08e7341f4f5e54d5.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/36/36482028337fe7b00b09eaab1d11a5ed275fe7edf36acacf08e7341f4f5e54d5.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-365949f320390bf2.png": {
+      "sha256": "365949f320390bf25a789eca23f2276f4004e26d32a2daec701cfa2978b20694",
+      "extension": ".png",
+      "bytes": 61306,
+      "object": "review-archive/objects/36/365949f320390bf25a789eca23f2276f4004e26d32a2daec701cfa2978b20694.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/36/365949f320390bf25a789eca23f2276f4004e26d32a2daec701cfa2978b20694.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-3ccc191175eaa8be.png": {
+      "sha256": "3ccc191175eaa8bed75212eb081dabed4634fea48180349bbfeb74c42d3e6f53",
+      "extension": ".png",
+      "bytes": 57000,
+      "object": "review-archive/objects/3c/3ccc191175eaa8bed75212eb081dabed4634fea48180349bbfeb74c42d3e6f53.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3c/3ccc191175eaa8bed75212eb081dabed4634fea48180349bbfeb74c42d3e6f53.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-3fa9add5b0354a09.png": {
+      "sha256": "3fa9add5b0354a0936693d7c7396b9eca2648e435d8d3bfa71714c255bf5dc2a",
+      "extension": ".png",
+      "bytes": 64242,
+      "object": "review-archive/objects/3f/3fa9add5b0354a0936693d7c7396b9eca2648e435d8d3bfa71714c255bf5dc2a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3f/3fa9add5b0354a0936693d7c7396b9eca2648e435d8d3bfa71714c255bf5dc2a.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-4155f30b4c612eab.png": {
+      "sha256": "4155f30b4c612eab1b109e730e9496a3c6b984d020c3139a5b0d77ee288fe30f",
+      "extension": ".png",
+      "bytes": 70067,
+      "object": "review-archive/objects/41/4155f30b4c612eab1b109e730e9496a3c6b984d020c3139a5b0d77ee288fe30f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/41/4155f30b4c612eab1b109e730e9496a3c6b984d020c3139a5b0d77ee288fe30f.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-4d488edc7d8f83ee.png": {
+      "sha256": "4d488edc7d8f83ee8eb158ea2afd0e4069277ff60ef70242b78b1ac5acddf178",
+      "extension": ".png",
+      "bytes": 58378,
+      "object": "review-archive/objects/4d/4d488edc7d8f83ee8eb158ea2afd0e4069277ff60ef70242b78b1ac5acddf178.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4d/4d488edc7d8f83ee8eb158ea2afd0e4069277ff60ef70242b78b1ac5acddf178.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-4efd077ac6046b67.png": {
+      "sha256": "4efd077ac6046b67e286f22b8b38546492042d0ed8e0f43da0e34840a32d23ab",
+      "extension": ".png",
+      "bytes": 69046,
+      "object": "review-archive/objects/4e/4efd077ac6046b67e286f22b8b38546492042d0ed8e0f43da0e34840a32d23ab.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4e/4efd077ac6046b67e286f22b8b38546492042d0ed8e0f43da0e34840a32d23ab.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-501151a426f81251.png": {
+      "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+      "extension": ".png",
+      "bytes": 58526,
+      "object": "review-archive/objects/50/501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/50/501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-5096eef239926236.png": {
+      "sha256": "5096eef239926236272ba3b1ae521bb83e4375f66dcbcdb84417a9ec1810a77a",
+      "extension": ".png",
+      "bytes": 61678,
+      "object": "review-archive/objects/50/5096eef239926236272ba3b1ae521bb83e4375f66dcbcdb84417a9ec1810a77a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/50/5096eef239926236272ba3b1ae521bb83e4375f66dcbcdb84417a9ec1810a77a.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-52697586d00e7ab9.png": {
+      "sha256": "52697586d00e7ab99d0b2cb6b5ae301d0c383de352a73aca58d0cb637d9ff16f",
+      "extension": ".png",
+      "bytes": 62505,
+      "object": "review-archive/objects/52/52697586d00e7ab99d0b2cb6b5ae301d0c383de352a73aca58d0cb637d9ff16f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/52/52697586d00e7ab99d0b2cb6b5ae301d0c383de352a73aca58d0cb637d9ff16f.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-5b4f9406f68e15d2.png": {
+      "sha256": "5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41",
+      "extension": ".png",
+      "bytes": 59529,
+      "object": "review-archive/objects/5b/5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5b/5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-61055a4d5458c900.png": {
+      "sha256": "61055a4d5458c900d1f3ea2b2178b999d4d620e5ff2a09f054e9bc4948ee0c67",
+      "extension": ".png",
+      "bytes": 60563,
+      "object": "review-archive/objects/61/61055a4d5458c900d1f3ea2b2178b999d4d620e5ff2a09f054e9bc4948ee0c67.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/61/61055a4d5458c900d1f3ea2b2178b999d4d620e5ff2a09f054e9bc4948ee0c67.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-650c252696fc6a0b.png": {
+      "sha256": "650c252696fc6a0bb9bf9fb299a7ff41e4c6064fce87ce14dd7548851921f668",
+      "extension": ".png",
+      "bytes": 71090,
+      "object": "review-archive/objects/65/650c252696fc6a0bb9bf9fb299a7ff41e4c6064fce87ce14dd7548851921f668.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/65/650c252696fc6a0bb9bf9fb299a7ff41e4c6064fce87ce14dd7548851921f668.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-6e2556684150ce43.png": {
+      "sha256": "6e2556684150ce43a26a5c5d084afeba0fc722a87be3878587a2ae3385ccce47",
+      "extension": ".png",
+      "bytes": 67580,
+      "object": "review-archive/objects/6e/6e2556684150ce43a26a5c5d084afeba0fc722a87be3878587a2ae3385ccce47.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6e/6e2556684150ce43a26a5c5d084afeba0fc722a87be3878587a2ae3385ccce47.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-6e54735564c51ad4.png": {
+      "sha256": "6e54735564c51ad4b7b7b0e7dcaa34059e5300eac6e9931946f5ccf28d721c48",
+      "extension": ".png",
+      "bytes": 68030,
+      "object": "review-archive/objects/6e/6e54735564c51ad4b7b7b0e7dcaa34059e5300eac6e9931946f5ccf28d721c48.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6e/6e54735564c51ad4b7b7b0e7dcaa34059e5300eac6e9931946f5ccf28d721c48.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-6fdfe3359ed63445.png": {
+      "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa",
+      "extension": ".png",
+      "bytes": 60617,
+      "object": "review-archive/objects/6f/6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6f/6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-6ffe5f0af90c0aa3.png": {
+      "sha256": "6ffe5f0af90c0aa312f4dad276f22642b74360ca396fae743a3c13f640b58c21",
+      "extension": ".png",
+      "bytes": 51763,
+      "object": "review-archive/objects/6f/6ffe5f0af90c0aa312f4dad276f22642b74360ca396fae743a3c13f640b58c21.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6f/6ffe5f0af90c0aa312f4dad276f22642b74360ca396fae743a3c13f640b58c21.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-72735c61a746456d.png": {
+      "sha256": "72735c61a746456d96b8c45c15d7279b6401462877fe3e3e3bdaf9501dea5ca0",
+      "extension": ".png",
+      "bytes": 59214,
+      "object": "review-archive/objects/72/72735c61a746456d96b8c45c15d7279b6401462877fe3e3e3bdaf9501dea5ca0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/72/72735c61a746456d96b8c45c15d7279b6401462877fe3e3e3bdaf9501dea5ca0.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-79ba6f2c4853ffb7.png": {
+      "sha256": "79ba6f2c4853ffb7835cb967f6eafdced6d0e4ce9fcdfd3f47428ee0f5a82ca2",
+      "extension": ".png",
+      "bytes": 71876,
+      "object": "review-archive/objects/79/79ba6f2c4853ffb7835cb967f6eafdced6d0e4ce9fcdfd3f47428ee0f5a82ca2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/79/79ba6f2c4853ffb7835cb967f6eafdced6d0e4ce9fcdfd3f47428ee0f5a82ca2.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-7c8075cfb3c3237d.png": {
+      "sha256": "7c8075cfb3c3237d852e7dc4ed5e646f1f397cdb7ddc678ba0535aa27e8f7e5a",
+      "extension": ".png",
+      "bytes": 64226,
+      "object": "review-archive/objects/7c/7c8075cfb3c3237d852e7dc4ed5e646f1f397cdb7ddc678ba0535aa27e8f7e5a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7c/7c8075cfb3c3237d852e7dc4ed5e646f1f397cdb7ddc678ba0535aa27e8f7e5a.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-7f23f761b211ee53.png": {
+      "sha256": "7f23f761b211ee53f80c15bf3a0cccdfd90f9e9ab490c260ede66c46174995f0",
+      "extension": ".png",
+      "bytes": 49912,
+      "object": "review-archive/objects/7f/7f23f761b211ee53f80c15bf3a0cccdfd90f9e9ab490c260ede66c46174995f0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7f/7f23f761b211ee53f80c15bf3a0cccdfd90f9e9ab490c260ede66c46174995f0.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-7fa8ae953391a50c.png": {
+      "sha256": "7fa8ae953391a50c68a24ebe738285116af78bad39e221e18bf65c0c73779ef3",
+      "extension": ".png",
+      "bytes": 61245,
+      "object": "review-archive/objects/7f/7fa8ae953391a50c68a24ebe738285116af78bad39e221e18bf65c0c73779ef3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7f/7fa8ae953391a50c68a24ebe738285116af78bad39e221e18bf65c0c73779ef3.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-80e4eaa09c8adaad.png": {
+      "sha256": "80e4eaa09c8adaad583242e585f883e5fca244ed465b76d9e2ab0e25c0b1b89f",
+      "extension": ".png",
+      "bytes": 66498,
+      "object": "review-archive/objects/80/80e4eaa09c8adaad583242e585f883e5fca244ed465b76d9e2ab0e25c0b1b89f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/80/80e4eaa09c8adaad583242e585f883e5fca244ed465b76d9e2ab0e25c0b1b89f.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-8226a15137fc6973.png": {
+      "sha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b",
+      "extension": ".png",
+      "bytes": 52548,
+      "object": "review-archive/objects/82/8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/82/8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-85f897ef55e76813.png": {
+      "sha256": "85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9",
+      "extension": ".png",
+      "bytes": 48975,
+      "object": "review-archive/objects/85/85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/85/85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-8ae2a8f98ba88174.png": {
+      "sha256": "8ae2a8f98ba881749372c8c077e92c045c8bf2958ec28a7f7801135a6efce63e",
+      "extension": ".png",
+      "bytes": 68153,
+      "object": "review-archive/objects/8a/8ae2a8f98ba881749372c8c077e92c045c8bf2958ec28a7f7801135a6efce63e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8a/8ae2a8f98ba881749372c8c077e92c045c8bf2958ec28a7f7801135a6efce63e.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-8c20fc0436d4982d.png": {
+      "sha256": "8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb",
+      "extension": ".png",
+      "bytes": 51954,
+      "object": "review-archive/objects/8c/8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8c/8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-8cb7f70cdc2b164b.png": {
+      "sha256": "8cb7f70cdc2b164b35d50e40e210bbf33ebf68507979db9f9416bbc317a9f5bb",
+      "extension": ".png",
+      "bytes": 65507,
+      "object": "review-archive/objects/8c/8cb7f70cdc2b164b35d50e40e210bbf33ebf68507979db9f9416bbc317a9f5bb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8c/8cb7f70cdc2b164b35d50e40e210bbf33ebf68507979db9f9416bbc317a9f5bb.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-8e2ac49592a295f3.png": {
+      "sha256": "8e2ac49592a295f37c4a8a166d350e9ea7558d0ed73cc64238ffb9670cb4a29e",
+      "extension": ".png",
+      "bytes": 59750,
+      "object": "review-archive/objects/8e/8e2ac49592a295f37c4a8a166d350e9ea7558d0ed73cc64238ffb9670cb4a29e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8e/8e2ac49592a295f37c4a8a166d350e9ea7558d0ed73cc64238ffb9670cb4a29e.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-907ab5b20a4d3ba8.png": {
+      "sha256": "907ab5b20a4d3ba8051bcb368cc010d3fc5a94aa182f93136da7c1d8eed09365",
+      "extension": ".png",
+      "bytes": 57438,
+      "object": "review-archive/objects/90/907ab5b20a4d3ba8051bcb368cc010d3fc5a94aa182f93136da7c1d8eed09365.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/90/907ab5b20a4d3ba8051bcb368cc010d3fc5a94aa182f93136da7c1d8eed09365.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-922deb4bf0d9d0b7.png": {
+      "sha256": "922deb4bf0d9d0b74d1950e2157709bae82e1823913bb332754ad7733b165264",
+      "extension": ".png",
+      "bytes": 65247,
+      "object": "review-archive/objects/92/922deb4bf0d9d0b74d1950e2157709bae82e1823913bb332754ad7733b165264.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/92/922deb4bf0d9d0b74d1950e2157709bae82e1823913bb332754ad7733b165264.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-9302d743ce0ef422.png": {
+      "sha256": "9302d743ce0ef422bdf5ab9374a97ba17a8e2457106a4c7fca1c245ad967bf38",
+      "extension": ".png",
+      "bytes": 57930,
+      "object": "review-archive/objects/93/9302d743ce0ef422bdf5ab9374a97ba17a8e2457106a4c7fca1c245ad967bf38.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/93/9302d743ce0ef422bdf5ab9374a97ba17a8e2457106a4c7fca1c245ad967bf38.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-93b52ca1f0acdc19.png": {
+      "sha256": "93b52ca1f0acdc193f51083defd301b7bb28a01cc27d037f6065b4d7382a0017",
+      "extension": ".png",
+      "bytes": 64128,
+      "object": "review-archive/objects/93/93b52ca1f0acdc193f51083defd301b7bb28a01cc27d037f6065b4d7382a0017.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/93/93b52ca1f0acdc193f51083defd301b7bb28a01cc27d037f6065b4d7382a0017.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-a172a8a01a387a21.png": {
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "extension": ".png",
+      "bytes": 47873,
+      "object": "review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-af20e9290fb79d16.png": {
+      "sha256": "af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e",
+      "extension": ".png",
+      "bytes": 61429,
+      "object": "review-archive/objects/af/af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/af/af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-b010af4b486af1e3.png": {
+      "sha256": "b010af4b486af1e364c747679b65b29bcc15e6daeadd084c57c71857053eebde",
+      "extension": ".png",
+      "bytes": 58043,
+      "object": "review-archive/objects/b0/b010af4b486af1e364c747679b65b29bcc15e6daeadd084c57c71857053eebde.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b0/b010af4b486af1e364c747679b65b29bcc15e6daeadd084c57c71857053eebde.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-b1e42009bf78fa77.png": {
+      "sha256": "b1e42009bf78fa77d84b123e33cf9d2487a38ce43f412be1c0ff85b53fac2336",
+      "extension": ".png",
+      "bytes": 58118,
+      "object": "review-archive/objects/b1/b1e42009bf78fa77d84b123e33cf9d2487a38ce43f412be1c0ff85b53fac2336.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b1/b1e42009bf78fa77d84b123e33cf9d2487a38ce43f412be1c0ff85b53fac2336.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-b279f6f795fcec84.png": {
+      "sha256": "b279f6f795fcec8448bc03d2511cc4ca2f8d37d62bce68ff5d038278a69cc60e",
+      "extension": ".png",
+      "bytes": 58035,
+      "object": "review-archive/objects/b2/b279f6f795fcec8448bc03d2511cc4ca2f8d37d62bce68ff5d038278a69cc60e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b2/b279f6f795fcec8448bc03d2511cc4ca2f8d37d62bce68ff5d038278a69cc60e.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-b2be40f3dd06045e.png": {
+      "sha256": "b2be40f3dd06045ec04296ce6cb35c5a76bdf2f3beaa23a7e05f4b0497bada0b",
+      "extension": ".png",
+      "bytes": 68761,
+      "object": "review-archive/objects/b2/b2be40f3dd06045ec04296ce6cb35c5a76bdf2f3beaa23a7e05f4b0497bada0b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b2/b2be40f3dd06045ec04296ce6cb35c5a76bdf2f3beaa23a7e05f4b0497bada0b.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-b46d44b661a05048.png": {
+      "sha256": "b46d44b661a050489cbe56a1369665e4cd9afea9edfe098f4e380e4c234713e3",
+      "extension": ".png",
+      "bytes": 69104,
+      "object": "review-archive/objects/b4/b46d44b661a050489cbe56a1369665e4cd9afea9edfe098f4e380e4c234713e3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b4/b46d44b661a050489cbe56a1369665e4cd9afea9edfe098f4e380e4c234713e3.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-b943a6c6b0077ed4.png": {
+      "sha256": "b943a6c6b0077ed4500f0b27db0de3392411230091141e8b6cd3d6dab1d324ca",
+      "extension": ".png",
+      "bytes": 56205,
+      "object": "review-archive/objects/b9/b943a6c6b0077ed4500f0b27db0de3392411230091141e8b6cd3d6dab1d324ca.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b9/b943a6c6b0077ed4500f0b27db0de3392411230091141e8b6cd3d6dab1d324ca.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-b9928540e08b0f17.png": {
+      "sha256": "b9928540e08b0f172a2dd680e15e896190c5fa420f53bfa880c3100aa6189c07",
+      "extension": ".png",
+      "bytes": 62929,
+      "object": "review-archive/objects/b9/b9928540e08b0f172a2dd680e15e896190c5fa420f53bfa880c3100aa6189c07.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b9/b9928540e08b0f172a2dd680e15e896190c5fa420f53bfa880c3100aa6189c07.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-bb530610cf0e17bf.png": {
+      "sha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+      "extension": ".png",
+      "bytes": 55252,
+      "object": "review-archive/objects/bb/bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bb/bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-bd6ee94860f8d100.png": {
+      "sha256": "bd6ee94860f8d100853409b67d63b34a6012d4f7d1f42631d46da2139b8fe033",
+      "extension": ".png",
+      "bytes": 67946,
+      "object": "review-archive/objects/bd/bd6ee94860f8d100853409b67d63b34a6012d4f7d1f42631d46da2139b8fe033.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bd/bd6ee94860f8d100853409b67d63b34a6012d4f7d1f42631d46da2139b8fe033.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-bdd99d3ea9fb93f8.png": {
+      "sha256": "bdd99d3ea9fb93f8f17ce52f1f0b7bc2c58b41e28da8758c2faa0cd44e317c74",
+      "extension": ".png",
+      "bytes": 61285,
+      "object": "review-archive/objects/bd/bdd99d3ea9fb93f8f17ce52f1f0b7bc2c58b41e28da8758c2faa0cd44e317c74.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bd/bdd99d3ea9fb93f8f17ce52f1f0b7bc2c58b41e28da8758c2faa0cd44e317c74.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-c097d78aac2d2c52.png": {
+      "sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+      "extension": ".png",
+      "bytes": 48224,
+      "object": "review-archive/objects/c0/c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c0/c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-c0a87d5460ce0af1.png": {
+      "sha256": "c0a87d5460ce0af134d6e9dc64dab22625f5a1eda1f631e021052701d91077c1",
+      "extension": ".png",
+      "bytes": 49216,
+      "object": "review-archive/objects/c0/c0a87d5460ce0af134d6e9dc64dab22625f5a1eda1f631e021052701d91077c1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c0/c0a87d5460ce0af134d6e9dc64dab22625f5a1eda1f631e021052701d91077c1.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-c2acf591a17577fd.png": {
+      "sha256": "c2acf591a17577fdfdf3eba958b47ddfd4c8044dce8abe2fcf85d25d0ffab767",
+      "extension": ".png",
+      "bytes": 66652,
+      "object": "review-archive/objects/c2/c2acf591a17577fdfdf3eba958b47ddfd4c8044dce8abe2fcf85d25d0ffab767.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c2/c2acf591a17577fdfdf3eba958b47ddfd4c8044dce8abe2fcf85d25d0ffab767.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-c96a8ae11d32215c.png": {
+      "sha256": "c96a8ae11d32215ccdc6504e3834ea18a1de7148bc9b13f2fd9e38a00addf1dd",
+      "extension": ".png",
+      "bytes": 67979,
+      "object": "review-archive/objects/c9/c96a8ae11d32215ccdc6504e3834ea18a1de7148bc9b13f2fd9e38a00addf1dd.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c9/c96a8ae11d32215ccdc6504e3834ea18a1de7148bc9b13f2fd9e38a00addf1dd.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-cd49f90e40fc210c.png": {
+      "sha256": "cd49f90e40fc210c30bfa4eb03e6b1cd0d21ba5582e59e085af29bd534c72139",
+      "extension": ".png",
+      "bytes": 57666,
+      "object": "review-archive/objects/cd/cd49f90e40fc210c30bfa4eb03e6b1cd0d21ba5582e59e085af29bd534c72139.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cd/cd49f90e40fc210c30bfa4eb03e6b1cd0d21ba5582e59e085af29bd534c72139.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-cf9f0b816a60e94b.png": {
+      "sha256": "cf9f0b816a60e94bd1c81b5cfd67977c6d32f3fb48954b3ae4afa24781b2077a",
+      "extension": ".png",
+      "bytes": 57212,
+      "object": "review-archive/objects/cf/cf9f0b816a60e94bd1c81b5cfd67977c6d32f3fb48954b3ae4afa24781b2077a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cf9f0b816a60e94bd1c81b5cfd67977c6d32f3fb48954b3ae4afa24781b2077a.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-cfb6e0bb50beea85.png": {
+      "sha256": "cfb6e0bb50beea8574baa953cb872f233e79dddc0c9b1576c2107d1e3fa7fc1e",
+      "extension": ".png",
+      "bytes": 57573,
+      "object": "review-archive/objects/cf/cfb6e0bb50beea8574baa953cb872f233e79dddc0c9b1576c2107d1e3fa7fc1e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cfb6e0bb50beea8574baa953cb872f233e79dddc0c9b1576c2107d1e3fa7fc1e.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-d55afae023051e29.png": {
+      "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+      "extension": ".png",
+      "bytes": 58256,
+      "object": "review-archive/objects/d5/d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d5/d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-d7e5a3cf4b4bb6e5.png": {
+      "sha256": "d7e5a3cf4b4bb6e56efaa62b5ffc44f3e7cf6a95ca7b43ebbc0caf9a8dc5d837",
+      "extension": ".png",
+      "bytes": 67920,
+      "object": "review-archive/objects/d7/d7e5a3cf4b4bb6e56efaa62b5ffc44f3e7cf6a95ca7b43ebbc0caf9a8dc5d837.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d7/d7e5a3cf4b4bb6e56efaa62b5ffc44f3e7cf6a95ca7b43ebbc0caf9a8dc5d837.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-dc2dd02672fc5624.png": {
+      "sha256": "dc2dd02672fc5624f58faf5ec2fb149633abd0c6a84913fb73524990be7ed36c",
+      "extension": ".png",
+      "bytes": 58498,
+      "object": "review-archive/objects/dc/dc2dd02672fc5624f58faf5ec2fb149633abd0c6a84913fb73524990be7ed36c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/dc/dc2dd02672fc5624f58faf5ec2fb149633abd0c6a84913fb73524990be7ed36c.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-e1dc020aabfe8f3b.png": {
+      "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "extension": ".png",
+      "bytes": 49734,
+      "object": "review-archive/objects/e1/e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e1/e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-e6520aab48100c44.png": {
+      "sha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+      "extension": ".png",
+      "bytes": 62010,
+      "object": "review-archive/objects/e6/e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e6/e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-ea4f36808b6f1ccd.png": {
+      "sha256": "ea4f36808b6f1ccd816a5b8b9cd329c2cb694da9c1d2a15bea78f62aea479f16",
+      "extension": ".png",
+      "bytes": 58689,
+      "object": "review-archive/objects/ea/ea4f36808b6f1ccd816a5b8b9cd329c2cb694da9c1d2a15bea78f62aea479f16.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ea/ea4f36808b6f1ccd816a5b8b9cd329c2cb694da9c1d2a15bea78f62aea479f16.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-ebbe47a512db9063.png": {
+      "sha256": "ebbe47a512db90631fc77244ca6ccc835420ff00379eac66cb7f3655b98dddc5",
+      "extension": ".png",
+      "bytes": 60426,
+      "object": "review-archive/objects/eb/ebbe47a512db90631fc77244ca6ccc835420ff00379eac66cb7f3655b98dddc5.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/eb/ebbe47a512db90631fc77244ca6ccc835420ff00379eac66cb7f3655b98dddc5.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-eeaaa8ab969b9207.png": {
+      "sha256": "eeaaa8ab969b9207bc73c9d58aa613425ccb12003948e3b78dc633413a6b9193",
+      "extension": ".png",
+      "bytes": 58164,
+      "object": "review-archive/objects/ee/eeaaa8ab969b9207bc73c9d58aa613425ccb12003948e3b78dc633413a6b9193.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ee/eeaaa8ab969b9207bc73c9d58aa613425ccb12003948e3b78dc633413a6b9193.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-ef05e53367d8dde6.png": {
+      "sha256": "ef05e53367d8dde66b9a6b5dd7874d5e21b2845516b9db4b168195ab9188e95f",
+      "extension": ".png",
+      "bytes": 60591,
+      "object": "review-archive/objects/ef/ef05e53367d8dde66b9a6b5dd7874d5e21b2845516b9db4b168195ab9188e95f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ef/ef05e53367d8dde66b9a6b5dd7874d5e21b2845516b9db4b168195ab9188e95f.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-f0a861592bc6e596.png": {
+      "sha256": "f0a861592bc6e596581d3fb4ef0b92e3ef9b8932623ff12511ebd50a61ddd731",
+      "extension": ".png",
+      "bytes": 58351,
+      "object": "review-archive/objects/f0/f0a861592bc6e596581d3fb4ef0b92e3ef9b8932623ff12511ebd50a61ddd731.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f0/f0a861592bc6e596581d3fb4ef0b92e3ef9b8932623ff12511ebd50a61ddd731.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-f2ef8d20c117f201.png": {
+      "sha256": "f2ef8d20c117f2011225aba253b6b32201a42a078bd615e7e70d729989316b62",
+      "extension": ".png",
+      "bytes": 57868,
+      "object": "review-archive/objects/f2/f2ef8d20c117f2011225aba253b6b32201a42a078bd615e7e70d729989316b62.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f2/f2ef8d20c117f2011225aba253b6b32201a42a078bd615e7e70d729989316b62.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-f60db0bc99420b34.png": {
+      "sha256": "f60db0bc99420b3412efa4cb7623f8b264718606b3af69e079f9f2962e695f4c",
+      "extension": ".png",
+      "bytes": 65439,
+      "object": "review-archive/objects/f6/f60db0bc99420b3412efa4cb7623f8b264718606b3af69e079f9f2962e695f4c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f6/f60db0bc99420b3412efa4cb7623f8b264718606b3af69e079f9f2962e695f4c.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-f818e2174fc7c51d.png": {
+      "sha256": "f818e2174fc7c51d6922287512ae0610d92f908859d5798b1ae1dc3250c5477b",
+      "extension": ".png",
+      "bytes": 63479,
+      "object": "review-archive/objects/f8/f818e2174fc7c51d6922287512ae0610d92f908859d5798b1ae1dc3250c5477b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f8/f818e2174fc7c51d6922287512ae0610d92f908859d5798b1ae1dc3250c5477b.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-f827ac61f45aaaa4.png": {
+      "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "extension": ".png",
+      "bytes": 51282,
+      "object": "review-archive/objects/f8/f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f8/f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-fe06522abd0cd55c.png": {
+      "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "extension": ".png",
+      "bytes": 53724,
+      "object": "review-archive/objects/fe/fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fe/fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c.png"
+    },
+    "/keeper-review/keeper-prime-morning-drafts-v10/assets/frame-fed54ffc26cb6392.png": {
+      "sha256": "fed54ffc26cb63921093ebcaa0e4eb9832352718bbe1110ab9c101872fad5fde",
+      "extension": ".png",
+      "bytes": 48548,
+      "object": "review-archive/objects/fe/fed54ffc26cb63921093ebcaa0e4eb9832352718bbe1110ab9c101872fad5fde.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fe/fed54ffc26cb63921093ebcaa0e4eb9832352718bbe1110ab9c101872fad5fde.png"
     },
     "/keeper-review/keeper-prime-morning-drafts-v2/assets/brush-teeth-v1-frame-01-d3e7c44b241030c0.png": {
       "sha256": "d3e7c44b241030c02023f5f5aa8dbf7953162489f7c8b6c1f0b5ad72b321e1bd",

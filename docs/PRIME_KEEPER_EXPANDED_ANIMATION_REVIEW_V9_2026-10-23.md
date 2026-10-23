@@ -3,8 +3,9 @@
 Date: 23 October 2026
 
 Status: rejected review evidence. V8 is also preserved as rejected evidence.
+V10 is the active successor.
 
-Current route: `/prime-keeper-animation-drafts`
+Active review: `/prime-keeper-animation-drafts-v10`
 
 Versioned route: `/prime-keeper-animation-drafts-v9`
 
@@ -53,7 +54,7 @@ waistband still reads as a second line beneath the moving jumper hem. V9 is not
 an approval candidate and is not promoted into the runtime bank. V1–V8,
 canonical art and runtime sprites remain unchanged.
 
-The active fallback is `/prime-keeper-rear-task-alignment-v2`. Inspection of
+The historical diagnostic successor is `/prime-keeper-rear-task-alignment-v2`. Inspection of
 the exact sources showed that the moving upper seam of the ribbed jumper band,
 not the lower seam, is the faulty join. V2 uses the five-point 4× editor to crop
 immediately above that upper seam and deliberately draws no replacement black
@@ -63,3 +64,8 @@ any small gap column-by-column. The exact Prime authority remains available as
 an adjustable, non-exporting ghost for pixel-level alignment. V1 remains
 available at its original route as reversible comparison evidence. See
 `docs/PRIME_KEEPER_REAR_TASK_UPPER_SEAM_WORKBENCH_V2_2026-10-23.md`.
+
+The active correction is V10 at `/prime-keeper-animation-drafts-v10`. It
+abandons the incompatible moving-torso/lower-body join completely: every work
+pose begins with the complete approved rear Prime and replaces only the action
+arms.

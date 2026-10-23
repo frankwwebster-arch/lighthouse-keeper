@@ -1,0 +1,546 @@
+{
+  "schema": "lighthouse-keeper/prime-animation-feedback-corrections@1",
+  "version": 10,
+  "generatedOn": "2026-10-23",
+  "sourceBatch": "data/keeper_prime_animation_drafts_v9.json",
+  "sourceBatchSha256": "c1a280a148edfe6229f6cc041d5b680ca5ee0c455b47d02052dbcf25573471b4",
+  "authority": {
+    "completeRearBody": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+  },
+  "rejectedAmendment": {
+    "version": 9,
+    "scope": "rear-work-turn-return-v1 positions 11–31 only",
+    "reason": "The whole-torso/lower-body splice remained visibly assembled even when registered exactly against the approved Prime ghost."
+  },
+  "frames": [
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 11,
+      "sourceV6Sha256": "7e1f02e4b8873d96a86013007eded1adc9e5c58364603fe904fb9236e41837ab",
+      "rejectedV9Sha256": "24c8e69f0e800c31198ec6973caa603fd4765c2c46370f67a3ee38d0eed56a5e",
+      "draftV10Sha256": "20c08ec542607f61cb8f92b0e46cf90f0b411df00245ad7a5a8914042a8f02dd",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5722,
+      "changedPixels": 8183,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 12,
+      "sourceV6Sha256": "8c85960d624f6efb52b13831f9c43017f7dbea0f57184f687625d0611474432f",
+      "rejectedV9Sha256": "134d5e502c55b3ccb4c0651a2b75c5182870cd8b915547d6456add67f03dd064",
+      "draftV10Sha256": "eeaaa8ab969b9207bc73c9d58aa613425ccb12003948e3b78dc633413a6b9193",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5729,
+      "changedPixels": 8560,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 13,
+      "sourceV6Sha256": "cfa3881a9616a6f9272bbac9e2c2dc50e3a64a7f32e1a2ace359182c60f8c9ba",
+      "rejectedV9Sha256": "d4d0b124bff046a912f6694464ddaedf744cb930b053702a80c3cbe32c0e5eb1",
+      "draftV10Sha256": "b1e42009bf78fa77d84b123e33cf9d2487a38ce43f412be1c0ff85b53fac2336",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5625,
+      "changedPixels": 8614,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 14,
+      "sourceV6Sha256": "9efda550c33e583683cff54a8aa717e44d44e1924e2ad76c136441ed4a567f9e",
+      "rejectedV9Sha256": "c72ddda24d882b08c58af01ea839d8c3a516ace00e5cce2e4435901683afbfb5",
+      "draftV10Sha256": "b279f6f795fcec8448bc03d2511cc4ca2f8d37d62bce68ff5d038278a69cc60e",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5593,
+      "changedPixels": 8738,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 15,
+      "sourceV6Sha256": "a855aacd0fe8445b8da493f780e34baabe8ae1cc1d54b4e4258583b0bd542d36",
+      "rejectedV9Sha256": "18857aa988ccdd83ec9da60b77538bf3da3006645a822f5296a998f82909ee61",
+      "draftV10Sha256": "2d680e7d11ac0a4a043ea5b0d502f041b416d694daa1d5d3e4d1b27a47cbe562",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 6004,
+      "changedPixels": 8938,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 16,
+      "sourceV6Sha256": "9af7e7e0ec88203b516f0d9bbfb1387680f8f2ffc93caa617eb367438e6f52bc",
+      "rejectedV9Sha256": "77a895600ce725c3c847ee0430d35a98866960508ad9ea149e66b33c6fbba512",
+      "draftV10Sha256": "4d488edc7d8f83ee8eb158ea2afd0e4069277ff60ef70242b78b1ac5acddf178",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5680,
+      "changedPixels": 8682,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 17,
+      "sourceV6Sha256": "e14970db4e9d49023ec3e26bd497f4a4f7c34870ab50c23c5dfa340c75b63187",
+      "rejectedV9Sha256": "ae198322bb327143264337b6043cb69b80a721efa5db30c498ad339146dfad00",
+      "draftV10Sha256": "2dd02ae89a4abbfca9e1788013593cfa5ea0e30f5ec6c9899d098fad8a012028",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5811,
+      "changedPixels": 8550,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 18,
+      "sourceV6Sha256": "c419b7783948ca32ab51231b431f518b3a8ba8e25fd69040b7815e4da6f72d95",
+      "rejectedV9Sha256": "1511f6f92bd1c262270574f5c1cb68cb2e8bf992b073d8012d4c7a1e5d7438e5",
+      "draftV10Sha256": "b010af4b486af1e364c747679b65b29bcc15e6daeadd084c57c71857053eebde",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5713,
+      "changedPixels": 8576,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 19,
+      "sourceV6Sha256": "d5523c19792645108929d9cb246fc4606d64dcb66b7590a51b129decf61d7322",
+      "rejectedV9Sha256": "c19140f3bb05fff72dc73711c55027bc914f52daf167f9b4fe407729e35d1b65",
+      "draftV10Sha256": "cfb6e0bb50beea8574baa953cb872f233e79dddc0c9b1576c2107d1e3fa7fc1e",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5450,
+      "changedPixels": 8658,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 20,
+      "sourceV6Sha256": "88939e41b9646defe6a36225e64c15ebc7f342eb89d38c1df404af3dd284ff35",
+      "rejectedV9Sha256": "fb7725e25eea4bfcfcb9ae9aa301bf08ef0fefbaa5eba763f44c864d01354c95",
+      "draftV10Sha256": "3310a7edf8a85a17ed236a67bcec76e38f5767de30f7069ad81afffe256a1bbc",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5602,
+      "changedPixels": 8371,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 21,
+      "sourceV6Sha256": "10008e4578d8d9ea47d90c2625e891f58a570b631630d526ddb9631e09ecf419",
+      "rejectedV9Sha256": "49487490e9dbfd192d72b07b1a6fa07c9c3bbeae37ac658f617333c0c8c98a2e",
+      "draftV10Sha256": "134e95172b0a3e9061f3ea3630e69f03de90052f68e6acf863b0c462fc574ec0",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5541,
+      "changedPixels": 8327,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 22,
+      "sourceV6Sha256": "e66064876dc7f19ac698dde93720c05edbf827d83fc0e74e7a60d11d619aa576",
+      "rejectedV9Sha256": "58299480461404fc1aa03f704bc7c3ac125af9ea1c1ca6d77c305e1e1d4299ed",
+      "draftV10Sha256": "cf9f0b816a60e94bd1c81b5cfd67977c6d32f3fb48954b3ae4afa24781b2077a",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5159,
+      "changedPixels": 8412,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 23,
+      "sourceV6Sha256": "6c12c69e2ef5a78ea1ae0a2b5c8be50debcba2697df24c7580cd94c12f1d4a82",
+      "rejectedV9Sha256": "a4fbe19beb4f3eaca36b77f25ffc418933d864e8723770054f3f2b2cefdca5b3",
+      "draftV10Sha256": "2adb07c6e323c19881fb54085d3e4c8333cf4604507224b8d7cb8024cb9b37cc",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5884,
+      "changedPixels": 8675,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 24,
+      "sourceV6Sha256": "bd9f34b623d20b11fbb949af749f22a9dca30d06708d7c8decbc3ae85670f0a7",
+      "rejectedV9Sha256": "082976d6c8900bc2a0e397630d2e6b3052f3aeff9baeb5cb9311668cac3f321f",
+      "draftV10Sha256": "9302d743ce0ef422bdf5ab9374a97ba17a8e2457106a4c7fca1c245ad967bf38",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5515,
+      "changedPixels": 8354,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 25,
+      "sourceV6Sha256": "1209a9482149502c454e1c9dee10e9def36358c01801b58c2131b1da69134a3a",
+      "rejectedV9Sha256": "9e7b8c41cc9b598d93f132263a9935305d6389d73a6aeb68d5df05252140b349",
+      "draftV10Sha256": "f2ef8d20c117f2011225aba253b6b32201a42a078bd615e7e70d729989316b62",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5660,
+      "changedPixels": 8582,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 26,
+      "sourceV6Sha256": "b4296d3550f8bee09e62e4816bc297dc01a69e17f01913fe4faaf30dc617157f",
+      "rejectedV9Sha256": "9c87f54149dc8361a368c936bf439a9d12e3e5b23a22bb2fa01aa761b55e88d1",
+      "draftV10Sha256": "907ab5b20a4d3ba8051bcb368cc010d3fc5a94aa182f93136da7c1d8eed09365",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5256,
+      "changedPixels": 8522,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 27,
+      "sourceV6Sha256": "22b30e2aacfcdd8f58ba29dca228260193de03e44acd6c5f5e7848dc61b63e90",
+      "rejectedV9Sha256": "8ce1a7abc40917761d222720cfe70b3609b7d819142ad5b5b23c9f12d95b0301",
+      "draftV10Sha256": "dc2dd02672fc5624f58faf5ec2fb149633abd0c6a84913fb73524990be7ed36c",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5712,
+      "changedPixels": 8819,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 28,
+      "sourceV6Sha256": "94bf6f5026e175a798113579b4f072139a3793eeebdc013f94b1065954d51cb0",
+      "rejectedV9Sha256": "e123df14719a469be2f85b9858d816ea45f0b5f41d523da496d856a6827578d5",
+      "draftV10Sha256": "ea4f36808b6f1ccd816a5b8b9cd329c2cb694da9c1d2a15bea78f62aea479f16",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5752,
+      "changedPixels": 8661,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 29,
+      "sourceV6Sha256": "9ec961294cecf25cc990ce5c553855434f6278e4414b6c111629ec92e36991a7",
+      "rejectedV9Sha256": "e4590cdf8c37bf698647f843c98b3f941606f45537dec91eab7c05feca296d95",
+      "draftV10Sha256": "121401997c670fa505c6a2924ca875c8b5757adcd83e1875aef3fb5e2cc51aea",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5430,
+      "changedPixels": 8196,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 30,
+      "sourceV6Sha256": "1d1fd8d55d175e31d6550a6f9abc242117d10a0c6c1e5a60155aa7840f9d10c1",
+      "rejectedV9Sha256": "c293e7033cffab6276f86a448cd964560026b863d434eaa02b65f81d61861c94",
+      "draftV10Sha256": "3ccc191175eaa8bed75212eb081dabed4634fea48180349bbfeb74c42d3e6f53",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5157,
+      "changedPixels": 7952,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 31,
+      "sourceV6Sha256": "41863350f3c15c2d9ed6a867ec9f6dd23dea566d9ce1f8eb18a5bef8ebb73fee",
+      "rejectedV9Sha256": "e56636b39dea7ecffd3f8e9ae59b88fa493c8ea75382b3a93d4cc58071254ec2",
+      "draftV10Sha256": "cd49f90e40fc210c30bfa4eb03e6b1cd0d21ba5582e59e085af29bd534c72139",
+      "bodyAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "restingArmClear": {
+        "y0": 132,
+        "y1": 242,
+        "leftMaxX": 81,
+        "rightMinX": 174
+      },
+      "actionArmCopy": {
+        "y0": 125,
+        "y1": 226,
+        "leftMaxX": 95,
+        "rightMinX": 160,
+        "alphaThreshold": 16
+      },
+      "clearedPixels": 4753,
+      "copiedActionPixels": 5451,
+      "changedPixels": 8125,
+      "correction": "V9 rejected: whole-torso and lower-body seam compositing remained visibly assembled even at exact registration; V10 retains the complete approved rear Prime body and substitutes only the choreographed V6 arm pixels"
+    }
+  ],
+  "imageGeneration": {
+    "usedInDelivery": false,
+    "reason": "A generated redraw was inspected and rejected before delivery because it changed Prime identity. V10 is deterministic exact-pixel compositing from the hash-pinned approved rear body and V6 arm choreography."
+  }
+}

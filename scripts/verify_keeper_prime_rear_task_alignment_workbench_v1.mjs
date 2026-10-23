@@ -85,7 +85,8 @@ assert(workbench.includes("'lighthouse-keeper/prime-rear-task-manual-alignment@4
 assert(workbench.includes("'lighthouse-keeper/prime-rear-task-upper-seam-alignment@1'"), 'V2 export must identify the corrected upper-seam contract')
 assert(archiveRoute.includes("'keeper-prime-morning-drafts-v6'"), 'V6 review images must be served same-origin so the dimensional audit can read alpha pixels')
 assert(!workbench.includes('/api/'), 'manual workbench must not overwrite server or source state')
-assert(defaultReview.includes('manualAlignmentHref="/prime-keeper-rear-task-alignment-v2"'), 'current review must link the corrected upper-seam workbench')
+assert(defaultReview.includes('keeper_prime_animation_drafts_v10'), 'current review must advance to the approved-body arm-only V10 correction')
+assert(!defaultReview.includes('manualAlignmentHref='), 'superseded seam-alignment workbench must not remain the primary review action')
 assert(!versionedReview.includes('manualAlignmentHref'), 'immutable V9 permalink must retain its original presentation')
 
 console.log('Verified Prime rear-task manual alignment workbenches: immutable V1 lower-seam fallback plus V2 upper-seam removal with exact approved band/lower seam, separate settings, exact-Prime ghost and reversible exports.')

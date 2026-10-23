@@ -2,47 +2,26 @@
 
 A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by typing or tapping objects, then keep him happy through the day. The playable cutaway currently has a kitchen, living room, bedroom with en suite, and lamp room.
 
-The current Prime animation review evidence is
-`/prime-keeper-animation-drafts` (versioned permalink
-`/prime-keeper-animation-drafts-v9`): ten reversible sequences with 162
-frame occurrences. V9 retains V3's accepted first-review changes without
-overwriting V1–V8: the redundant second lift frame is omitted, every reused passive
-front/back endpoint has a brighter jumper registered to the approved Prime
-colour family and the non-writing seated route has an accurate title. Frank
-rejected V4's rear-task amendment because detached black fragments returned and
-the moving hem was cut across a fixed hem, then rejected V5 because its hard
-moving-hem/fixed-trouser cut made the waist worse, then rejected V6 because all
-21 work frames still contained two separately drawn ribbed bands. V7 removed
-the duplicate but was rejected because its lower-body ownership began too high
-and produced a visible side-outline step. V8 corrected that alignment but
-exposed the approved trousers' dark top edge directly below the moving hem,
-recreating a doubled seam. V9 attempted to occlude that edge but Frank rejected
-it on 23 October because a separate dark waistband line remains visible.
-No generated, rescaled or repainted pixels enter V9.
-Every player has
-pause/stop/frame controls, the page includes a sequence sandbox and
-frame-specific redraft notes; changed V8/V9 frames are also shown side-by-side.
-All corrections remain separate review-only copies. Unsafe snack, bed and original broom source sheets remain visibly
-withheld by the isolation gate. See
-`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V9_2026-10-23.md`.
+The current Prime animation review is `/prime-keeper-animation-drafts`
+(versioned permalink `/prime-keeper-animation-drafts-v10`): ten reversible
+sequences with 162 frame occurrences. V10 retains V3's accepted palette, lift
+and naming changes and preserves V1–V9 unchanged. It replaces only rear-task
+positions 11–31. Every corrected frame starts with the complete approved rear
+Prime—cap, head, beard, torso, cream stripe, jumper band, trousers, boots,
+height and floor registration—and substitutes only the corresponding V6 action
+arm pixels. There is no torso/lower-body join, generated delivery art, scaling
+or repainting. The rejected V9 frame and V10 result remain side-by-side, every
+frame has an independent redraft slot, and the rear-task player has an
+adjustable exact-Prime ghost enabled by default. All players retain
+pause/stop/frame controls and the page retains its sequence sandbox. Unsafe
+snack, bed and original broom source sheets remain visibly withheld by the
+isolation gate. See
+`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V10_2026-10-23.md`.
 
-The active fallback is `/prime-keeper-rear-task-alignment-v2`: a local-only,
-per-frame workbench exposing the exact V6 moving torso and hash-pinned approved
-rear authority as separate layers. Source inspection established that the
-faulty join is the moving **upper seam of the ribbed jumper band**, not its
-lower seam. Frank traces immediately above that upper seam with five editable
-points; after confirmation, the approved authority supplies the complete
-ribbed band, its correct lower seam, trousers and boots as one exact layer.
-The crop does not draw a replacement black line. Any small join gap is filled
-column-by-column from clean moving-jumper pixels so their colour variation is
-retained. The workbench supports one-pixel alignment nudging, 4× editing,
-stepping/playback, independent crop/aligned states, PNG download and
-hash-addressed JSON handback without changing source or runtime art. A live
-alpha-bounds audit and optional 10–80% exact-Prime ghost support pixel matching;
-the ghost never enters exports or measurements. V1 remains at
-`/prime-keeper-rear-task-alignment` as reversible lower-seam comparison
-evidence with separate saved settings. See
-`docs/PRIME_KEEPER_REAR_TASK_UPPER_SEAM_WORKBENCH_V2_2026-10-23.md`.
+The V1 and V2 rear-task manual alignment tools remain available as reversible
+diagnostic evidence, but they are no longer the active correction route: exact
+registration proved that their source torsos and lower bodies were structurally
+incompatible.
 
 The historical whole-bank gate is the reversible Prime Keeper whole-bank
 normalisation programme. Its new selector is

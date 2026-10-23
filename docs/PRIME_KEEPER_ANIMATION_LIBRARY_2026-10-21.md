@@ -66,32 +66,24 @@ seating remain installed but await matching gameplay consumers. The library
 labels that distinction and renders approved source and installed delivery
 side-by-side. This promotion does not expand any original art approval.
 
-The separate `/prime-keeper-animation-drafts` page now preserves the rejected V9 review:
-the five preserved V1 drafts, one isolated broom candidate and four
-approved-component choreography previews, plus reversible feedback corrections.
-V9 retains the accepted V3 palette, lift and naming amendments, and replaces
-only rejected V8 rear-task positions 11–31. Frank rejected V9 on 23 October
-because a separate dark waistband line remains visible beneath the moving hem.
-These ten
-sequences remain outside the approved library and runtime bank until their
-complete choreography is accepted. V1–V8
-remain at their versioned routes; the current versioned route is
-`/prime-keeper-animation-drafts-v9`. See
-`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V9_2026-10-23.md`.
+The separate `/prime-keeper-animation-drafts` page now serves V10: the five
+preserved V1 drafts, one isolated broom candidate, four approved-component
+choreography previews and the reversible rear-task correction. V10 retains all
+accepted V3 palette, lift and naming amendments and replaces only rejected V9
+rear-task positions 11–31. Each corrected frame uses the complete approved rear
+Prime as its fixed body authority and substitutes only exact V6 action-arm
+pixels. This removes the incompatible torso/lower-body join entirely while
+retaining standing height and floor registration. An adjustable exact-Prime
+ghost is available directly in the rear-task player. These ten sequences remain
+outside the approved library and runtime bank until their complete choreography
+is accepted. V1–V9 remain at their versioned routes; the current versioned route
+is `/prime-keeper-animation-drafts-v10`. See
+`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V10_2026-10-23.md`.
 
-The active correction surface is `/prime-keeper-rear-task-alignment-v2`. Source
-inspection established that the moving upper seam of the ribbed jumper band is
-faulty; the lower seam is not. V2 therefore crops immediately above that moving
-upper seam without drawing a replacement outline, then retains the approved
-Prime's complete ribbed band, correct lower seam, trousers and boots together
-as one exact layer. A column-wise extension of clean moving-jumper pixels closes
-any small join gap without flattening its colour variation. The five-point
-curve, direct 4× editing, drag/pixel alignment, live alpha-bounds audit and
-10–80% canonical ghost remain available across frames 11–31. The ghost remains
-outside the composite and exports. V1 remains at
-`/prime-keeper-rear-task-alignment` with separate saved settings as reversible
-lower-seam comparison evidence. See
-`docs/PRIME_KEEPER_REAR_TASK_UPPER_SEAM_WORKBENCH_V2_2026-10-23.md`.
+The two rear-task manual alignment routes remain available only as reversible
+diagnostic evidence. Exact ghost registration established that their V6 torso
+and approved lower-body drawings were structurally incompatible, so neither is
+the active correction route.
 
 The held-implement POC remains excluded. Its motion feasibility and
 `hold_shaft_two_hand` concept are approved, but the proxy body art is not.
