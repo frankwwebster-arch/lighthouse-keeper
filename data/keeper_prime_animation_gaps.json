@@ -1,6 +1,6 @@
 {
   "schema": "lighthouse-keeper/prime-animation-gaps@1",
-  "generatedOn": "2026-10-22",
+  "generatedOn": "2026-10-23",
   "scope": "Prime Keeper coverage for the current playable game. Historical variants, costumes and speculative activities are listed separately from the launch-facing interaction set.",
   "installedNow": {
     "runtimeSprites": 27,
@@ -26,9 +26,10 @@
   },
   "reviewDrafts": {
     "reviewUrl": "/prime-keeper-animation-drafts",
-    "versionedReviewUrl": "/prime-keeper-animation-drafts-v2",
+    "versionedReviewUrl": "/prime-keeper-animation-drafts-v12",
     "preservedV1Url": "/prime-keeper-animation-drafts-v1",
-    "status": "mixed-review-unapproved-sequences-and-approved-source-compositions",
+    "status": "approved-review-authorities-awaiting-runtime-integration",
+    "approvalRecord": "docs/review/keeper-prime-morning-drafts-v12-approval-2026-10-23.json",
     "sequences": [
       "lift entry, ride-neutral handoff and exit",
       "front-door approach, open and pass-through",
@@ -41,14 +42,26 @@
       "front seat consumer route",
       "rear task: turn, work and return"
     ],
-    "frameOccurrences": 163,
+    "frameOccurrences": 162,
+    "approvedSequences": 10,
     "approvedComponentChoreographySequences": 4,
-    "unapprovedActionCandidateSequences": 6,
+    "unapprovedActionCandidateSequences": 0,
     "quarantinedForSourceOverlap": [
       "fridge snack and eat",
       "bed daytime nap",
       "original sweep-with-broom sheet (superseded for review by independently isolated Prime Sweep V2 candidate)",
       "first wave render (superseded by isolated V1)"
+    ]
+  },
+  "nextRunDeferrals": {
+    "instruction": "Skip pets and visitors in the next animation run.",
+    "interactionIds": [
+      "door_greet",
+      "with_chat",
+      "with_cards",
+      "with_tv",
+      "pet_feed",
+      "pet_play"
     ]
   },
   "priorities": [
@@ -60,8 +73,8 @@
       "required": [
         "complete: turn controller now binds installed front/side/back transitions to rear work and seating",
         "complete: side-facing leisure and back-facing diary now use sit → activity → stand choreography",
-        "review choreography ready: complete side-right → front seat → side-right route",
-        "remaining: bind left-facing seating when a matching interaction is introduced; approve and bind the front route",
+        "approved V12: complete side-right → front seat → side-right route",
+        "remaining: bind the approved front route; bind left-facing seating when a matching interaction is introduced",
         "ladder routing when a ladder layout is active",
         "darts activity route and board/dart ownership"
       ],
@@ -73,9 +86,9 @@
       "kind": "new-prime-art-and-runtime",
       "why": "These are visible seams in ordinary movement and should be settled before expanding the activity catalogue.",
       "required": [
-        "review draft ready: lift enter, ride-neutral handoff and exit",
-        "review draft ready: front-door approach, open and pass-through",
-        "remaining after approval: prop registration and runtime wiring",
+        "approved V12: lift enter, ride-neutral handoff and exit",
+        "approved V12: front-door approach, open and pass-through",
+        "remaining: prop registration and runtime wiring",
         "deferred for this batch: visitor greeting at the door"
       ],
       "interactionIds": ["door_greet"]
@@ -87,7 +100,7 @@
       "why": "Eating is a core need and the generic rear-work loop is only a temporary body fallback, not complete prop choreography.",
       "required": [
         "open fridge, take snack and eat",
-        "review draft ready: cook at cooker body motion; owned utensils/food remain separate",
+        "approved V12: cook at cooker body motion; owned utensils/food remain separate and runtime binding is still required",
         "make toast and collect it",
         "carry/serve/eat endpoints that return to a known standing or seated pose"
       ],
@@ -99,7 +112,7 @@
       "kind": "new-prime-actions-plus-installed-seating",
       "why": "The sit/stand foundation is installed, but each activity still needs its own approved performance and furniture registration.",
       "required": [
-        "review choreography ready from exact approved art: side leisure sit → hold → stand and front seat route",
+        "approved V12: side leisure sit → hold → stand and front seat route",
         "activity-specific performance and prop continuity for TV, armchair snooze, reading and piano",
         "get into bed, sleep/nap loop and get out (first generated source quarantined for pose overlap)"
       ],
@@ -112,7 +125,7 @@
       "why": "These are ungated daily needs and need complete, discreet object-specific routes rather than one generic rear-work loop.",
       "required": [
         "wash at basin",
-        "review draft ready: brush teeth",
+        "approved V12: brush teeth; runtime binding remains",
         "enter/exit private loo state",
         "loo seated/hidden performance for both current commands"
       ],
@@ -124,8 +137,8 @@
       "kind": "new-prime-actions",
       "why": "These actions use different hand positions, tools and viewpoints; the held-implement proxy cannot be reused as approved body art.",
       "required": [
-        "review choreography ready from exact approved art: turn → rear sit → diary hold → stand → return",
-        "isolated sweep candidate ready for review; approval and runtime wiring still required",
+        "approved V12: turn → rear sit → diary hold → stand → return",
+        "approved V12: isolated sweep sequence; runtime wiring still required",
         "diary writing performance and prop; basic and upgraded hoover with production-approved held-tool bodies",
         "light the lamp",
         "polish the lamp",
@@ -179,7 +192,7 @@
       "kind": "new-prime-reactions",
       "why": "Forty-four typed reactions currently collapse onto eleven generic legacy motion families.",
       "required": [
-        "review draft ready: wave",
+        "approved V12: wave; runtime binding remains",
         "bow",
         "dance",
         "sway",

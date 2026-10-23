@@ -74,9 +74,11 @@ rear-task positions 11–31. V11's arm layers retained inner sleeve and jumper
 edges that visibly broke the torso. V12 instead reuses complete `Cook at
 counter` frames 2–8 byte-for-byte as three work cycles, so every action pose is
 one coherent cap-to-boots drawing with no torso/arm splice. The adjustable
-exact-Prime ghost remains available but is off by default. These ten sequences remain
-outside the approved library and runtime bank until their complete choreography
-is accepted. V1–V11 remain at their versioned routes; the current versioned route
+exact-Prime ghost remains available but is off by default. These ten sequences
+remain outside the runtime bank, but Frank approved their complete V12 art and
+choreography on 23 October 2026. The immutable decision is
+`docs/review/keeper-prime-morning-drafts-v12-approval-2026-10-23.json`.
+Approval does not itself perform runtime integration. V1–V11 remain at their versioned routes; the current versioned route
 is `/prime-keeper-animation-drafts-v12`. See
 `docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V12_2026-10-23.md`.
 

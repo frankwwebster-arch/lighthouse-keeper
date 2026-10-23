@@ -2,8 +2,11 @@
 
 Date: 23 October 2026
 
-Status: reversible review-only draft. No V12 frame is installed in the runtime
-animation bank.
+Status: all ten animations approved by Frank on 23 October 2026 as exact,
+hash-pinned review authorities. Approval is recorded externally at
+`docs/review/keeper-prime-morning-drafts-v12-approval-2026-10-23.json` so this
+immutable V12 review pack remains unchanged. No V12 frame was installed in the
+runtime animation bank by the approval-recording change.
 
 Routes:
 
@@ -29,6 +32,18 @@ complete frames 2–8 from the existing `Cook at counter` sequence byte-for-byte
 
 This is a choreography reuse, not a repaint. It introduces no generated,
 scaled or colour-adjusted art.
+
+## Approval result
+
+Frank's verdict was: “excellent. All animations approved.” The decision covers
+all ten complete sequences and 162 frame occurrences on the V12 page, including
+their exact visible art, ordering, timing, holds, transitions and route
+choreography. It does not approve unrelated candidates on other review pages.
+
+The pre-approval status strings inside the immutable V12 manifest describe how
+each sequence entered review; the external approval record is the current
+decision authority. Individual frame redraft slots remain valid for any future
+V13 amendment.
 
 ## Reversibility and verification
 

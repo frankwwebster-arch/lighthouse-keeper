@@ -4,6 +4,11 @@
 **Purpose:** the shortest safe entry point for a fresh Codex task. The task must
 be able to continue without this chat.
 
+**Newer checkpoint:** for work after the ten-animation V12 approval on
+23 October 2026, begin with
+`docs/PRIME_KEEPER_NEXT_ANIMATION_RUN_HANDOFF_2026-10-23.md`. This older file
+remains the deeper history for established Prime movement authorities.
+
 ## Read these first
 
 1. `AGENTS.md` and `docs/DEPLOYMENT.md` for repository and release rules.

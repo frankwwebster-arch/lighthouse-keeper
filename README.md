@@ -18,6 +18,14 @@ snack, bed and original broom source sheets remain visibly withheld by the
 isolation gate. See
 `docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V12_2026-10-23.md`.
 
+Frank approved all ten V12 animations on 23 October 2026. The immutable,
+hash-pinned decision is
+`docs/review/keeper-prime-morning-drafts-v12-approval-2026-10-23.json`; the
+complete next-run identity, lessons and ordered backlog are in
+`docs/PRIME_KEEPER_NEXT_ANIMATION_RUN_HANDOFF_2026-10-23.md`. Approval makes
+V12 the review authority but does not itself install new runtime sprites or
+gameplay bindings.
+
 The V1 and V2 rear-task manual alignment tools remain available as reversible
 diagnostic evidence, but they are no longer the active correction route: exact
 registration proved that their source torsos and lower bodies were structurally

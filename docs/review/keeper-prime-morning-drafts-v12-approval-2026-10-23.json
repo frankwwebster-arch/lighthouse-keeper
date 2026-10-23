@@ -1,0 +1,174 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-23",
+  "reviewedBy": "Frank",
+  "candidate": "keeper-prime-morning-drafts-v12",
+  "decision": "approved-all-ten-sequences-as-prime-animation-review-authorities",
+  "approvalWords": "excellent. All animations approved.",
+  "scope": {
+    "reviewPath": "/prime-keeper-animation-drafts",
+    "immutableReviewPath": "/prime-keeper-animation-drafts-v12",
+    "sequenceCount": 10,
+    "frameOccurrences": 162,
+    "meaning": "Every complete animation shown on the V12 page is approved exactly as reviewed, including its visible art, frame order, holds, transitions and loop or route choreography.",
+    "exclusions": [
+      "This decision does not approve any unrelated animation or corrective candidate on another review page, including the separate stair-ascent V18 review.",
+      "The diary route approves the shown turn, sit, hold, stand and return sequence; it does not claim that a writing performance or diary prop exists inside those frames.",
+      "The approval does not expand the approved artwork beyond the exact hash-pinned V12 frame set.",
+      "Runtime promotion and gameplay binding are separate integration work and were not performed by this approval-recording change."
+    ]
+  },
+  "approvedBatch": {
+    "manifest": {
+      "path": "data/keeper_prime_animation_drafts_v12.json",
+      "sha256": "eda495e45b19c4f671bacd7c77d93dc4eb78171036de8eb38c011b2683a3c4c6"
+    },
+    "batchRegister": {
+      "path": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-23-v12/batch-register.json",
+      "sha256": "33aed947ae6a049c21012d7b7c3abd5585dbe0f29b17168c2e530b222c001770"
+    },
+    "correctionLedger": {
+      "path": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-23-v12/corrections.json",
+      "sha256": "0c58530071368c5451a31247815e8b350748f6d44f4fcd4bf13300a3c9f00980"
+    },
+    "archiveManifest": {
+      "path": "review-archive/sets/keeper-prime-morning-drafts-v12.json",
+      "sha256": "1f15cdfba0d2053261a7da62d5d3bb35797050e76cda3c427fadef36fd588481"
+    },
+    "builder": {
+      "path": "scripts/build_keeper_prime_morning_drafts_v12.mjs",
+      "sha256": "7ad64b41a20e81e5eecf6b735906a685b73c9fedfa503ccf35777eb4b89c2381"
+    },
+    "verifier": {
+      "path": "scripts/verify_keeper_prime_morning_drafts_v12.mjs",
+      "sha256": "5c26d4c033ba68b6e3ac6af312f56fc7c9bc8c4c5d7bca2871f4bc862c371ea6"
+    }
+  },
+  "approvedSequences": [
+    {
+      "id": "lift-enter-exit-v1",
+      "title": "Lift entry, ride handoff and exit",
+      "frames": 7,
+      "fps": 8,
+      "startPose": "walking-back",
+      "endPose": "standing-front",
+      "stripSha256": "30472bd2c03162fbeae631177f98a52c74d8d59db1ed501ae34f7e8e16797541"
+    },
+    {
+      "id": "front-door-open-v1",
+      "title": "Front-door approach, open and pass through",
+      "frames": 6,
+      "fps": 8,
+      "startPose": "standing-side-right",
+      "endPose": "walking-side-right",
+      "stripSha256": "4ac6a122d73ad3e842b7384165eedb1d3a34a7d60d6e8a0c44ee3c028ed7af47"
+    },
+    {
+      "id": "cook-counter-v1",
+      "title": "Cook at counter",
+      "frames": 8,
+      "fps": 8,
+      "startPose": "standing-back",
+      "endPose": "standing-back",
+      "stripSha256": "90c8010971ce5cb90c394ace49b835cc52fbafd7cbb1b69fe053c9537254ff18"
+    },
+    {
+      "id": "brush-teeth-v1",
+      "title": "Brush teeth at basin",
+      "frames": 8,
+      "fps": 8,
+      "startPose": "standing-back",
+      "endPose": "standing-back",
+      "stripSha256": "e9a43b11cf723a5509529516c9e9d54ba3f11abd836a0a820922c2a872fe1246"
+    },
+    {
+      "id": "wave-front-v1",
+      "title": "Friendly wave to camera",
+      "frames": 6,
+      "fps": 8,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "stripSha256": "d4a72cb9a121372ea7265d7a4fa895f717d18a6e6124010b63eba715e9039e4c"
+    },
+    {
+      "id": "sweep-broom-isolated-v2",
+      "title": "Collect broom, sweep and recover",
+      "frames": 11,
+      "fps": 8,
+      "startPose": "standing-side-right-with-staged-broom",
+      "endPose": "standing-side-right-with-staged-broom",
+      "stripSha256": "8bdd7a2ee451f225a7a844acd0739cab32585f837bbbc850206b413b5253f698"
+    },
+    {
+      "id": "side-leisure-sit-hold-stand-v1",
+      "title": "Side leisure: sit, hold and stand",
+      "frames": 15,
+      "fps": 8,
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "stripSha256": "934ad368bae70af7f856e6d5f75ab34699414767c6e8138966bd4e1a62ed011e"
+    },
+    {
+      "id": "diary-turn-sit-write-return-v1",
+      "title": "Turn, sit, hold, stand and return",
+      "frames": 31,
+      "fps": 8,
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "stripSha256": "73ece39e82e6673165b4c5c8c199f8f3f13ef7a851102920f0c07c4fc7378523"
+    },
+    {
+      "id": "front-seat-complete-route-v1",
+      "title": "Front seat consumer route",
+      "frames": 29,
+      "fps": 8,
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "stripSha256": "4f621a6b328a367bdc888975595b6e14d8e45e65b80eb11df9951b464884e934"
+    },
+    {
+      "id": "rear-work-turn-return-v1",
+      "title": "Rear task: turn, work and return",
+      "frames": 41,
+      "fps": 8,
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "stripSha256": "581fea6e9a95d9f743a0644e00093d68da86bd992d641a56f508b4ad9fc5c764"
+    }
+  ],
+  "approvedIdentityContract": {
+    "logicalCell": [32, 40],
+    "authoringCell": [256, 320],
+    "authoringScale": 8,
+    "anchor": [128, 320],
+    "capTopY": 18,
+    "floorOpaqueY": 316,
+    "jumperBlueRgb": [0, 108, 230],
+    "jumperCreamRgb": [251, 232, 206],
+    "trousersRgb": [63, 75, 112],
+    "bootsRgb": [63, 74, 111],
+    "frontReviewAuthoritySha256": "287c42001ae5c757ee93f46ae0d627e8e1511dbdabae6d11739348ea411e809c",
+    "backReviewAuthoritySha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+    "sideRightAuthoritySha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+  },
+  "delivery": {
+    "candidateCommit": "ac84f2ad",
+    "deploymentMarkerCommit": "ad84c0bd",
+    "productionUrl": "https://lighthouse-keeper-mu.vercel.app/prime-keeper-animation-drafts",
+    "immutableUrl": "https://lighthouse-keeper-mu.vercel.app/prime-keeper-animation-drafts-v12",
+    "deployed": true
+  },
+  "approvalBoundary": {
+    "reviewAuthorityApproved": true,
+    "allTenSequencesApproved": true,
+    "all162FrameOccurrencesApproved": true,
+    "individualFrameRedraftabilityRetained": true,
+    "immutableV12ReviewChanged": false,
+    "runtimeChanged": false,
+    "productionSpriteBankChanged": false,
+    "promotionPerformed": false,
+    "promotionAllowedWithoutSeparateInstruction": false
+  },
+  "registration": "Approval is registered externally so the immutable pre-approval V12 manifest, frames, strips and page remain closed.",
+  "rollback": "Remove only this approval record to revoke the decision; V1–V12 review media, canonical art, runtime sprites and production sprites remain untouched."
+}
