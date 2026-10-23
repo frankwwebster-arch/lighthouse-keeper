@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "set": "kitchen-fixed-shell-layout-v9",
+  "page": {
+    "path": "public/keeper-review/kitchen-fixed-shell-layout-v9/index.html",
+    "sha256": "eff017718e9acdc304f6fd307a212a5d23eed47f6a9f9e738faefae44653f46b",
+    "bytes": 16473
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-fixed-shell-layout-v9/assets/kitchen-fixed-shell-atlas-v9.png": {
+      "sha256": "2eeaef85609eed228a0ecfa7eed30ef722d2ed070957969d3b86792c517b480f",
+      "extension": ".png",
+      "bytes": 2735532,
+      "object": "review-archive/objects/2e/2eeaef85609eed228a0ecfa7eed30ef722d2ed070957969d3b86792c517b480f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2e/2eeaef85609eed228a0ecfa7eed30ef722d2ed070957969d3b86792c517b480f.png"
+    }
+  }
+}

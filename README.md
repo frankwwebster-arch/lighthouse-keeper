@@ -1073,8 +1073,8 @@ without a healing layer or model redraw. See
 [`docs/KITCHEN_FIXED_SHELL_LAYOUT_V7_2026-10-23.md`](docs/KITCHEN_FIXED_SHELL_LAYOUT_V7_2026-10-23.md).
 
 Kitchen Fixed Shell Layout V8 at
-`/keeper-review/kitchen-fixed-shell-layout-v8` is the current unapproved room
-gate. Approved cabinet-side shading now reaches to within one source pixel of
+`/keeper-review/kitchen-fixed-shell-layout-v8` is immutable superseded review
+provenance. Approved cabinet-side shading now reaches to within one source pixel of
 each bay boundary; the only synthetic internal structure is a narrow shared
 ink seam, with no blue divider surface. The sink overlay is geometry-masked to
 porcelain, hardware and central water, so it contributes no countertop or rear
@@ -1082,6 +1082,15 @@ boundary pixels: one shared worktop supplies the exact colour, height and
 alignment. Only the two exposed run ends receive shallow perspective planes.
 The vertical grid, support lines and state behaviour remain unchanged. See
 [`docs/KITCHEN_FIXED_SHELL_LAYOUT_V8_2026-10-23.md`](docs/KITCHEN_FIXED_SHELL_LAYOUT_V8_2026-10-23.md).
+
+Kitchen Fixed Shell Layout V9 at
+`/keeper-review/kitchen-fixed-shell-layout-v9` is the current unapproved room
+gate. It removes—not recolours or replaces—the blue band that cropped the top
+of cupboard/drawer fronts. Their complete approved upper outlines begin on the
+first row beneath the shared worktop. Internal joins remain narrow ink seams,
+and substantially wider tapered side planes make the two exposed ends readable
+at 1× without changing any bay, support or Keeper-interaction coordinate. See
+[`docs/KITCHEN_FIXED_SHELL_LAYOUT_V9_2026-10-23.md`](docs/KITCHEN_FIXED_SHELL_LAYOUT_V9_2026-10-23.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
