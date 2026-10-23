@@ -25,12 +25,14 @@ The authority's waist-level hands are outside the verified lower-body ownership
 bounds and are deliberately excluded. Rows 214–230 use x82–172; rows 231–319
 use x70–186, matching the deterministic compositor's authority ownership.
 Authority rows 214–218 contain the unwanted top trouser seam and are excluded
-from the visible lower layer. The compositor repeats one exact clean interior
-trouser-colour pixel from the same approved authority across the narrow waist
-bridge, retaining a hidden four-pixel safety underlap before resuming the
-unscaled approved pixels from row 219. This prevents a transparent hip tear if
-the torso moves laterally without restoring the rejected top waistband seam.
-Nothing is written back to source art.
+from the visible lower layer. The compositor continues clean approved rows
+219–230 upward column-by-column across the narrow waist bridge, retaining their
+real colour variation and shading instead of using a flat fill. The authority's
+black outline columns x83 and x171 extend upward until they meet the moving
+curved jumper hem. A hidden four-pixel safety underlap then prevents a
+transparent hip tear if the torso moves laterally or vertically without
+restoring the rejected top waistband seam. Nothing is written back to source
+art.
 
 ## Controls and persistence
 
@@ -54,6 +56,9 @@ Frank can:
 - choose the torso bottom and legs top crop rows;
 - compare opaque height, overall width, floor row and centre against the exact
   approved Prime rear authority at alpha threshold 128;
+- show or hide that exact approved rear Prime as a canonical-position,
+  canonical-scale translucent ghost over both the whole figure and 4× waist
+  inspection, with opacity adjustable from 10% to 80%;
 - play or step across all 21 composites;
 - mark frames aligned independently;
 - copy a vertical join across the sequence without overwriting the verified
@@ -75,6 +80,11 @@ The V6 archive set is delivered through the existing hash-verifying same-origin
 proxy on this route. A versioned query suffix avoids any previously cached
 off-origin redirect. This lets the browser read alpha bounds for the live
 dimensional audit without altering, rescaling or repainting the images.
+
+The Prime ghost is a separate pointer-transparent canvas layer. It is never
+painted into the working composite, alpha-bounds audit, downloaded PNG or JSON
+handback, so comparison remains reversible and cannot contaminate production
+art.
 
 ## Imported frame 11 dimensional audit
 
@@ -102,8 +112,9 @@ npm run build
 
 The verifier pins the 21 source frames, lower-body authority hash, ownership
 bounds, V9 horizontal starting registrations, five-point curve geometry,
-true-black outline, alpha-bounds audit, crop-first gating, editing controls,
-local-only persistence and export path. The page is also browser-tested for
+shaded trouser extension, upward black side outlines, separate exact-authority
+ghost layer, alpha-bounds audit, crop-first gating, editing controls, local-only
+persistence and export path. The page is also browser-tested for
 source-image decoding, crop-only display, one-pixel point adjustment, explicit
 crop confirmation, seam-free trouser underlap, dimensional comparison, leg
 reveal and state invalidation after a later crop change.

@@ -41,8 +41,9 @@ const CLEAN_TROUSER_START = 219
 const TROUSER_UNDERLAP = 4
 const WAIST_X = 82
 const WAIST_WIDTH = 91
-const UNDERLAP_SAMPLE_X = 100
-const UNDERLAP_SAMPLE_ROW = 220
+const TROUSER_EXTENSION_LAST_ROW = 230
+const TROUSER_OUTLINE_LEFT_X = 83
+const TROUSER_OUTLINE_RIGHT_X = 171
 const HEM_CONTROL_X = [82, 105, 128, 151, 174] as const
 const DEFAULT_HEM_OFFSETS: HemCurve = [-4, -1, 0, -1, -4]
 const HEM_POINT_NAMES = ['left edge', 'left middle', 'centre', 'right middle', 'right edge'] as const
@@ -116,6 +117,40 @@ function curveYAt(points: ReturnType<typeof hemPoints>, x: number) {
   return points[points.length - 1].y
 }
 
+function drawTrouserExtension(
+  context: CanvasRenderingContext2D,
+  legs: HTMLImageElement,
+  points: ReturnType<typeof hemPoints>,
+  legsX: number,
+  waistStart: number,
+  waistDestination: number,
+) {
+  for (let column = 0; column < WAIST_WIDTH; column += 1) {
+    const destinationX = WAIST_X + legsX + column
+    const underlapTop = Math.min(waistDestination, curveYAt(points, destinationX) - TROUSER_UNDERLAP)
+    for (let destinationY = underlapTop; destinationY < waistDestination; destinationY += 1) {
+      const distanceFromJoin = waistDestination - destinationY - 1
+      const sourceY = clamp(waistStart + distanceFromJoin, waistStart, TROUSER_EXTENSION_LAST_ROW)
+      context.drawImage(legs, WAIST_X + column, sourceY, 1, 1, destinationX, destinationY, 1, 1)
+    }
+  }
+
+  context.save()
+  context.strokeStyle = '#000000'
+  context.lineWidth = 2
+  context.lineCap = 'round'
+  for (const sourceX of [TROUSER_OUTLINE_LEFT_X, TROUSER_OUTLINE_RIGHT_X]) {
+    const destinationX = sourceX + legsX
+    const outlineTop = curveYAt(points, destinationX)
+    if (waistDestination <= outlineTop) continue
+    context.beginPath()
+    context.moveTo(destinationX, outlineTop)
+    context.lineTo(destinationX, waistDestination + 1)
+    context.stroke()
+  }
+  context.restore()
+}
+
 function opaqueBounds(context: CanvasRenderingContext2D): OpaqueBounds | null {
   const pixels = context.getImageData(0, 0, WIDTH, HEIGHT).data
   let x0 = WIDTH
@@ -142,6 +177,8 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
   const [editorMode, setEditorMode] = useState<EditorMode>('crop')
   const [selectedHemPoint, setSelectedHemPoint] = useState(2)
   const [dimensionAudit, setDimensionAudit] = useState<DimensionAudit | null>(null)
+  const [showPrimeGhost, setShowPrimeGhost] = useState(true)
+  const [primeGhostOpacity, setPrimeGhostOpacity] = useState(35)
   const [zoom, setZoom] = useState(2)
   const [ready, setReady] = useState(false)
   const [loadError, setLoadError] = useState('')
@@ -150,7 +187,9 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
   const [copyMessage, setCopyMessage] = useState('')
   const images = useRef<Map<string, HTMLImageElement>>(new Map())
   const canvasRef = useRef<HTMLCanvasElement>(null)
+  const ghostRef = useRef<HTMLCanvasElement>(null)
   const seamRef = useRef<HTMLCanvasElement>(null)
+  const seamGhostRef = useRef<HTMLCanvasElement>(null)
   const torsoSourceRef = useRef<HTMLCanvasElement>(null)
   const legsSourceRef = useRef<HTMLCanvasElement>(null)
   const dragRef = useRef<{ kind: EditorMode; pointerId: number; startX: number; startY: number; initialX: number; initialY: number; hemIndex?: number } | null>(null)
@@ -196,17 +235,21 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
 
   const renderComposite = useCallback(() => {
     const canvas = canvasRef.current
+    const ghostCanvas = ghostRef.current
     const seam = seamRef.current
+    const seamGhost = seamGhostRef.current
     const torsoSourceCanvas = torsoSourceRef.current
     const legsSourceCanvas = legsSourceRef.current
     const torso = images.current.get(frame.torsoSrc)
     const legs = images.current.get(legsSrc)
-    if (!canvas || !seam || !torsoSourceCanvas || !legsSourceCanvas || !torso || !legs) return
+    if (!canvas || !ghostCanvas || !seam || !seamGhost || !torsoSourceCanvas || !legsSourceCanvas || !torso || !legs) return
     const context = canvas.getContext('2d')
+    const ghostContext = ghostCanvas.getContext('2d')
     const seamContext = seam.getContext('2d')
+    const seamGhostContext = seamGhost.getContext('2d')
     const torsoSourceContext = torsoSourceCanvas.getContext('2d')
     const legsSourceContext = legsSourceCanvas.getContext('2d')
-    if (!context || !seamContext || !torsoSourceContext || !legsSourceContext) return
+    if (!context || !ghostContext || !seamContext || !seamGhostContext || !torsoSourceContext || !legsSourceContext) return
     context.clearRect(0, 0, WIDTH, HEIGHT)
     context.imageSmoothingEnabled = false
 
@@ -217,21 +260,13 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
     // waist height, outside the verified lower-body ownership bounds. Keep the
     // exact trouser/boot pixels only: the narrow waist through row 230, then
     // the wider legs below. Rows 214–218 contain the authority's visible top
-    // seam, so the clean trousers begin at row 219. One exact flat-colour pixel
-    // from the clean trouser interior is repeated above that boundary as a
-    // seam-free safety underlap. It remains behind the torso and prevents a
-    // transparent tear when the torso moves laterally.
+    // seam, so the clean trousers begin at row 219. The clean approved trouser
+    // rows are continued upward column-by-column, preserving their shading and
+    // black side outlines. This remains behind the torso and prevents a
+    // transparent tear when the torso moves laterally or vertically.
     const waistStart = Math.max(legsCropY, CLEAN_TROUSER_START)
     const waistDestination = waistStart + adjustment.legsY
-    if (editorMode === 'align') {
-      for (let column = 0; column < WAIST_WIDTH; column += 1) {
-        const x = WAIST_X + adjustment.legsX + column
-        const underlapTop = Math.min(waistDestination, curveYAt(points, x) - TROUSER_UNDERLAP)
-        for (let y = underlapTop; y < waistDestination; y += 1) {
-          context.drawImage(legs, UNDERLAP_SAMPLE_X, UNDERLAP_SAMPLE_ROW, 1, 1, x, y, 1, 1)
-        }
-      }
-    }
+    if (editorMode === 'align') drawTrouserExtension(context, legs, points, adjustment.legsX, waistStart, waistDestination)
     if (editorMode === 'align' && waistStart < 231) context.drawImage(legs, WAIST_X, waistStart, WAIST_WIDTH, 231 - waistStart, WAIST_X + adjustment.legsX, waistDestination, WAIST_WIDTH, 231 - waistStart)
     const lowerStart = Math.max(legsCropY, 231)
     if (editorMode === 'align' && lowerStart < HEIGHT) context.drawImage(legs, 70, lowerStart, 117, HEIGHT - lowerStart, 70 + adjustment.legsX, lowerStart + adjustment.legsY, 117, HEIGHT - lowerStart)
@@ -261,13 +296,7 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
     torsoSourceContext.lineJoin = 'round'
     torsoSourceContext.stroke()
     legsSourceContext.clearRect(0, 0, WIDTH, HEIGHT)
-    for (let column = 0; column < WAIST_WIDTH; column += 1) {
-      const x = WAIST_X + column
-      const underlapTop = Math.min(waistStart, curveYAt(sourcePoints, x) - TROUSER_UNDERLAP)
-      for (let y = underlapTop; y < waistStart; y += 1) {
-        legsSourceContext.drawImage(legs, UNDERLAP_SAMPLE_X, UNDERLAP_SAMPLE_ROW, 1, 1, x, y, 1, 1)
-      }
-    }
+    drawTrouserExtension(legsSourceContext, legs, sourcePoints, 0, waistStart, waistStart)
     if (waistStart < 231) legsSourceContext.drawImage(legs, WAIST_X, waistStart, WAIST_WIDTH, 231 - waistStart, WAIST_X, waistStart, WAIST_WIDTH, 231 - waistStart)
     if (lowerStart < HEIGHT) legsSourceContext.drawImage(legs, 70, lowerStart, 117, HEIGHT - lowerStart, 70, lowerStart, 117, HEIGHT - lowerStart)
 
@@ -298,7 +327,18 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
     seamContext.clearRect(0, 0, seam.width, seam.height)
     seamContext.imageSmoothingEnabled = false
     seamContext.drawImage(canvas, 48, 184, 160, 72, 0, 0, 160, 72)
-  }, [adjustment, editorMode, frame.torsoSrc, legsSrc, selectedHemPoint])
+
+    ghostContext.clearRect(0, 0, WIDTH, HEIGHT)
+    ghostContext.imageSmoothingEnabled = false
+    seamGhostContext.clearRect(0, 0, seamGhost.width, seamGhost.height)
+    seamGhostContext.imageSmoothingEnabled = false
+    if (showPrimeGhost) {
+      ghostContext.globalAlpha = primeGhostOpacity / 100
+      ghostContext.drawImage(legs, 0, 0)
+      ghostContext.globalAlpha = 1
+      seamGhostContext.drawImage(ghostCanvas, 48, 184, 160, 72, 0, 0, 160, 72)
+    }
+  }, [adjustment, editorMode, frame.torsoSrc, legsSrc, primeGhostOpacity, selectedHemPoint, showPrimeGhost])
 
   useEffect(() => { renderComposite() }, [renderComposite, ready])
 
@@ -508,12 +548,20 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
               onPointerCancel={stopDragging}
               onKeyDown={onKeyDown}
             />
+            <canvas
+              ref={ghostRef}
+              className={styles.primeGhost}
+              width={WIDTH}
+              height={HEIGHT}
+              style={{ width: WIDTH * zoom, height: HEIGHT * zoom }}
+              aria-hidden="true"
+            />
             <i className={styles.floorGuide} style={{ top: 316 * zoom }}><span>floor 316</span></i>
           </div>
         </div>
         <div className={styles.seamBlock}>
           <span>4× editable waist inspection</span>
-          <div><canvas ref={seamRef} width={160} height={72} tabIndex={0} aria-label="Editable four-times waist inspection. Drag the nearest gold hem point." onPointerDown={onSeamPointerDown} onPointerMove={onSeamPointerMove} onPointerUp={stopDragging} onPointerCancel={stopDragging} onKeyDown={onKeyDown} /></div>
+          <div><canvas ref={seamRef} width={160} height={72} tabIndex={0} aria-label="Editable four-times waist inspection. Drag the nearest gold hem point." onPointerDown={onSeamPointerDown} onPointerMove={onSeamPointerMove} onPointerUp={stopDragging} onPointerCancel={stopDragging} onKeyDown={onKeyDown} /><canvas ref={seamGhostRef} className={styles.seamGhost} width={160} height={72} aria-hidden="true" /></div>
         </div>
       </div>
 
@@ -528,7 +576,7 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
           <div className={styles.hemPoints}>{HEM_POINT_NAMES.map((name, index) => <button key={name} className={selectedHemPoint === index ? styles.activeHemPoint : ''} onClick={() => { setEditorMode('crop'); setSelectedHemPoint(index) }}><span>{name}</span><code>row {adjustment.torsoCutY + adjustment.hemOffsets[index] + adjustment.torsoY}</code></button>)}</div>
           <div className={styles.nudge}><button aria-label="Move selected hem point up one pixel" onClick={() => nudge(0, -1)}>↑</button><button disabled>←</button><button aria-label="Move selected hem point down one pixel" onClick={() => nudge(0, 1)}>↓</button><button disabled>→</button></div>
           <div className={styles.curveActions}><button onClick={() => updateCurrent((current) => ({ ...current, hemOffsets: [current.hemOffsets[0], current.hemOffsets[1], current.hemOffsets[2], current.hemOffsets[1], current.hemOffsets[0]], cropConfirmed: false, aligned: false }))}>Mirror left → right</button><button onClick={() => updateCurrent((current) => ({ ...current, hemOffsets: [current.hemOffsets[4], current.hemOffsets[3], current.hemOffsets[2], current.hemOffsets[3], current.hemOffsets[4]], cropConfirmed: false, aligned: false }))}>Mirror right → left</button><button onClick={() => updateCurrent((current) => ({ ...current, hemOffsets: [...DEFAULT_HEM_OFFSETS], cropConfirmed: false, aligned: false }))}>Reset shallow U</button></div>
-          <p>Only the torso is shown. Drag any gold point directly on the large view or the 4× waist inspection, then nudge the selected point by one pixel. The final black outline follows the five-point curve.</p>
+          <p>Only the torso belongs to the crop composite; the optional translucent Prime ghost is a non-exporting reference. Drag any gold point directly on the large view or the 4× waist inspection, then nudge the selected point by one pixel. The final black outline follows the five-point curve.</p>
         </section>
 
         <section>
@@ -558,6 +606,11 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
 
         <section>
           <h3>5. Check against the Prime Keeper</h3>
+          <div className={styles.ghostControls}>
+            <button className={showPrimeGhost ? styles.ghostActive : ''} aria-pressed={showPrimeGhost} onClick={() => setShowPrimeGhost((current) => !current)}>{showPrimeGhost ? 'Hide exact Prime ghost' : 'Show exact Prime ghost'}</button>
+            <label>Ghost opacity <output>{primeGhostOpacity}%</output><input aria-label="Prime Keeper ghost opacity" type="range" min={10} max={80} step={5} value={primeGhostOpacity} disabled={!showPrimeGhost} onChange={(event) => setPrimeGhostOpacity(Number(event.target.value))} /></label>
+          </div>
+          <p>The translucent overlay is the exact approved rear Prime Keeper at canonical position and scale. It never enters the composite, downloaded PNG or dimensional measurement.</p>
           {dimensionAudit ? <div className={styles.dimensionAudit}>
             <span>Opaque height<strong className={dimensionAudit.composite.height === dimensionAudit.authority.height ? styles.match : styles.mismatch}>{dimensionAudit.composite.height} / {dimensionAudit.authority.height} px</strong></span>
             <span>Overall width<strong className={dimensionAudit.composite.width === dimensionAudit.authority.width ? styles.match : styles.mismatch}>{dimensionAudit.composite.width} / {dimensionAudit.authority.width} px</strong></span>

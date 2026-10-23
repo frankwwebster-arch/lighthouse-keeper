@@ -59,6 +59,9 @@ crop in all 21 affected frames. Its full extended edge receives a true-black
 outline and can be edited directly at 4×. The approved legs and alignment
 controls appear only after that crop is confirmed, preventing the existing second seam from being mistaken for an
 alignment problem. The clean approved trousers remain behind the jumper with a
-four-pixel hidden safety underlap, so later lateral torso movement cannot expose
-transparency at hip height. See
+four-pixel hidden safety underlap. Approved shading and both black side outlines
+continue upward through any vertical extension, so later torso movement cannot
+expose transparency or a flat unmodelled waist at hip height. The exact Prime
+rear authority is also available as an adjustable, non-exporting translucent
+ghost for pixel-level alignment. See
 `docs/PRIME_KEEPER_REAR_TASK_ALIGNMENT_WORKBENCH_V1_2026-10-23.md`.

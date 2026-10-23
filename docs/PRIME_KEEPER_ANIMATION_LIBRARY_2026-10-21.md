@@ -87,9 +87,12 @@ drag and pixel alignment. The crop is now a five-point editable shallow-U hem
 with a true-black outline and direct editing in the 4× waist view. The trousers
 retain a four-pixel hidden underlap
 beneath the jumper while their visible top-seam rows stay excluded, preventing
-a lateral hip tear. A live alpha-bounds check reports height, width, floor and
-centre against the approved Prime rear authority. It then exports hash-addressed JSON and does not alter or
-promote source art. See
+a lateral hip tear. Clean approved trouser shading and black side outlines are
+continued upward through any vertical extension. A live alpha-bounds check
+reports height, width, floor and centre against the approved Prime rear
+authority, which can also be shown as a 10–80% translucent canonical ghost.
+The ghost remains outside the composite and exports. The workbench then exports
+hash-addressed JSON and does not alter or promote source art. See
 `docs/PRIME_KEEPER_REAR_TASK_ALIGNMENT_WORKBENCH_V1_2026-10-23.md`.
 
 The held-implement POC remains excluded. Its motion feasibility and

@@ -40,7 +40,10 @@ approved trousers remain the behind layer with a four-pixel hidden underlap;
 their unwanted top-seam rows are excluded, so lateral torso movement cannot
 open a transparent hip tear. A live alpha-bounds audit compares the composite's
 height, width, floor and centre with the approved Prime rear authority before
-alignment is accepted. See
+alignment is accepted. An optional 10–80% translucent overlay places that exact
+authority over the editable figure and 4× waist view without entering exports
+or measurements. The clean approved trouser shading and black side outlines now
+continue upward under the hem instead of using a flat-colour extension. See
 `docs/PRIME_KEEPER_REAR_TASK_ALIGNMENT_WORKBENCH_V1_2026-10-23.md`.
 
 The historical whole-bank gate is the reversible Prime Keeper whole-bank

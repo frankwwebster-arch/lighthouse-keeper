@@ -42,6 +42,9 @@ for (const marker of [
   'Nudge the selected layer',
   'Clean trousers begin from source row',
   'Check against the Prime Keeper',
+  'Show exact Prime ghost',
+  'Hide exact Prime ghost',
+  'Prime Keeper ghost opacity',
   'minimumTrouserUnderlap',
   'Copy curve and vertical setup to all',
   'Download current 256×320 PNG',
@@ -53,7 +56,9 @@ for (const marker of [
 
 assert(workbench.includes('const CLEAN_TROUSER_START = 219'), 'visible authority waistband seam rows must be excluded')
 assert(workbench.includes('const TROUSER_UNDERLAP = 4'), 'trousers must retain a hidden safety overlap beneath the jumper')
-assert(workbench.includes('UNDERLAP_SAMPLE_X, UNDERLAP_SAMPLE_ROW, 1, 1'), 'underlap must reuse an exact clean authority trouser colour pixel')
+assert(workbench.includes('context.drawImage(legs, WAIST_X + column, sourceY, 1, 1'), 'underlap must extend exact approved trouser pixels column-by-column')
+assert(workbench.includes('const TROUSER_OUTLINE_LEFT_X = 83'), 'left trouser outline extension changed')
+assert(workbench.includes('const TROUSER_OUTLINE_RIGHT_X = 171'), 'right trouser outline extension changed')
 assert(workbench.includes('context.drawImage(legs, WAIST_X, waistStart, WAIST_WIDTH'), 'waist must remain inside verified lower-body ownership bounds')
 assert(workbench.includes('context.drawImage(legs, 70, lowerStart, 117'), 'legs must remain inside verified lower-body ownership bounds')
 assert(workbench.includes("editorMode === 'align' && waistStart < 231"), 'legs must stay hidden during the jumper-first crop stage')
@@ -62,10 +67,13 @@ assert(workbench.includes('traceTorsoMask(context, points)'), 'moving torso must
 assert(workbench.includes('context.drawImage(torso, adjustment.torsoX, adjustment.torsoY)'), 'moving torso must retain the exact source pixels')
 assert(workbench.includes("context.strokeStyle = '#000000'"), 'extended jumper hem must carry a true-black outline')
 assert(workbench.includes("pixels[(y * WIDTH + x) * 4 + 3] < 128"), 'Prime Keeper size audit must use the pinned alpha threshold')
+assert(workbench.includes('ghostContext.drawImage(legs, 0, 0)'), 'Prime ghost must use the exact approved rear authority at canonical position and scale')
+assert(workbench.includes('className={styles.primeGhost}'), 'Prime ghost must remain a separate non-destructive canvas layer')
+assert(workbench.includes("link.href = canvasRef.current?.toDataURL('image/png')"), 'download must exclude the separate Prime ghost overlay')
 assert(workbench.includes("schema: 'lighthouse-keeper/prime-rear-task-manual-alignment@4'"), 'export must retain the curved hem, crop confirmation and underlap contract')
 assert(archiveRoute.includes("'keeper-prime-morning-drafts-v6'"), 'V6 review images must be served same-origin so the dimensional audit can read alpha pixels')
 assert(!workbench.includes('/api/'), 'manual workbench must not overwrite server or source state')
 assert(defaultReview.includes('manualAlignmentHref="/prime-keeper-rear-task-alignment"'), 'current review must link the fallback workbench')
 assert(!versionedReview.includes('manualAlignmentHref'), 'immutable V9 permalink must retain its original presentation')
 
-console.log('Verified Prime rear-task manual alignment workbench V1: 21 reversible frame settings, exact torso/legs sources, five-point outlined hem, dimensional audit, drag, pixel nudge, playback and export controls.')
+console.log('Verified Prime rear-task manual alignment workbench V1: 21 reversible frame settings, exact torso/legs sources, shaded outlined trouser extension, five-point hem, exact-Prime ghost, dimensional audit, drag, pixel nudge, playback and export controls.')
