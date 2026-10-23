@@ -83,9 +83,12 @@ The active correction surface is `/prime-keeper-rear-task-alignment`. It keeps
 the immutable V6 torso and approved rear legs separate across frames 11–31.
 Each frame opens with the legs hidden so the unwanted lower jumper seam can be
 cropped first; only an explicitly confirmed crop reveals the legs for manual
-drag and pixel alignment. The trousers retain a four-pixel hidden underlap
+drag and pixel alignment. The crop is now a five-point editable shallow-U hem
+with a true-black outline and direct editing in the 4× waist view. The trousers
+retain a four-pixel hidden underlap
 beneath the jumper while their visible top-seam rows stay excluded, preventing
-a lateral hip tear. It then exports hash-addressed JSON and does not alter or
+a lateral hip tear. A live alpha-bounds check reports height, width, floor and
+centre against the approved Prime rear authority. It then exports hash-addressed JSON and does not alter or
 promote source art. See
 `docs/PRIME_KEEPER_REAR_TASK_ALIGNMENT_WORKBENCH_V1_2026-10-23.md`.
 

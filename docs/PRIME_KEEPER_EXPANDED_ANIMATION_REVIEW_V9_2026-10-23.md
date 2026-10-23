@@ -54,9 +54,10 @@ an approval candidate and is not promoted into the runtime bank. V1–V8,
 canonical art and runtime sprites remain unchanged.
 
 The active fallback is `/prime-keeper-rear-task-alignment`, where the exact
-torso is shown alone first for an explicit jumper-bottom crop in all 21 affected
-frames. The approved legs and alignment controls appear only after that crop is
-confirmed, preventing the existing second seam from being mistaken for an
+torso is shown alone first for an explicit five-point shallow-U jumper-bottom
+crop in all 21 affected frames. Its full extended edge receives a true-black
+outline and can be edited directly at 4×. The approved legs and alignment
+controls appear only after that crop is confirmed, preventing the existing second seam from being mistaken for an
 alignment problem. The clean approved trousers remain behind the jumper with a
 four-pixel hidden safety underlap, so later lateral torso movement cannot expose
 transparency at hip height. See

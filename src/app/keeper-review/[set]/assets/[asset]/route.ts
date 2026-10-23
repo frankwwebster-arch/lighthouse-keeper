@@ -9,6 +9,7 @@ const SAME_ORIGIN_ARCHIVE_SETS = new Set([
   'kitchen-built-in-state-ligne-claire-v4-delivery-v2',
   'kitchen-built-in-state-ligne-claire-v4-delivery-v3',
   'keeper-prime-morning-drafts-v1',
+  'keeper-prime-morning-drafts-v6',
   'kitchen-ligne-claire-healing-workbench-v42',
   'kitchen-ligne-claire-complete-review-v43',
   'kitchen-ligne-claire-complete-review-v44',

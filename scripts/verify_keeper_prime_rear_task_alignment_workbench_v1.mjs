@@ -9,6 +9,7 @@ const json = (file) => JSON.parse(read(file))
 
 const route = read('src/app/prime-keeper-rear-task-alignment/page.tsx')
 const workbench = read('src/prime-keeper-drafts/RearTaskAlignmentWorkbench.tsx')
+const archiveRoute = read('src/app/keeper-review/[set]/assets/[asset]/route.ts')
 const defaultReview = read('src/app/prime-keeper-animation-drafts/page.tsx')
 const versionedReview = read('src/app/prime-keeper-animation-drafts-v9/page.tsx')
 const v6 = json('data/keeper_prime_animation_drafts_v6.json')
@@ -34,12 +35,15 @@ for (const marker of [
   'onKeyDown={onKeyDown}',
   'Crop the jumper first',
   'Crop-only view',
-  'Jumper bottom crop row',
+  'Whole jumper hem row',
+  'five-point',
+  'Editable four-times waist inspection',
   'Confirm jumper crop',
   'Nudge the selected layer',
   'Clean trousers begin from source row',
+  'Check against the Prime Keeper',
   'minimumTrouserUnderlap',
-  'Copy crop and vertical setup to all',
+  'Copy curve and vertical setup to all',
   'Download current 256×320 PNG',
   'Copy all settings',
   'Download settings JSON',
@@ -53,10 +57,15 @@ assert(workbench.includes('UNDERLAP_SAMPLE_X, UNDERLAP_SAMPLE_ROW, 1, 1'), 'unde
 assert(workbench.includes('context.drawImage(legs, WAIST_X, waistStart, WAIST_WIDTH'), 'waist must remain inside verified lower-body ownership bounds')
 assert(workbench.includes('context.drawImage(legs, 70, lowerStart, 117'), 'legs must remain inside verified lower-body ownership bounds')
 assert(workbench.includes("editorMode === 'align' && waistStart < 231"), 'legs must stay hidden during the jumper-first crop stage')
-assert(workbench.includes('context.drawImage(torso, 0, 0, WIDTH, torsoCutY'), 'moving torso must be a crop of the exact source')
-assert(workbench.includes("schema: 'lighthouse-keeper/prime-rear-task-manual-alignment@3'"), 'export must retain the jumper crop confirmation and underlap contract')
+assert(workbench.includes('const HEM_CONTROL_X = [82, 105, 128, 151, 174]'), 'five-point hem geometry changed')
+assert(workbench.includes('traceTorsoMask(context, points)'), 'moving torso must be clipped to the editable hem')
+assert(workbench.includes('context.drawImage(torso, adjustment.torsoX, adjustment.torsoY)'), 'moving torso must retain the exact source pixels')
+assert(workbench.includes("context.strokeStyle = '#000000'"), 'extended jumper hem must carry a true-black outline')
+assert(workbench.includes("pixels[(y * WIDTH + x) * 4 + 3] < 128"), 'Prime Keeper size audit must use the pinned alpha threshold')
+assert(workbench.includes("schema: 'lighthouse-keeper/prime-rear-task-manual-alignment@4'"), 'export must retain the curved hem, crop confirmation and underlap contract')
+assert(archiveRoute.includes("'keeper-prime-morning-drafts-v6'"), 'V6 review images must be served same-origin so the dimensional audit can read alpha pixels')
 assert(!workbench.includes('/api/'), 'manual workbench must not overwrite server or source state')
 assert(defaultReview.includes('manualAlignmentHref="/prime-keeper-rear-task-alignment"'), 'current review must link the fallback workbench')
 assert(!versionedReview.includes('manualAlignmentHref'), 'immutable V9 permalink must retain its original presentation')
 
-console.log('Verified Prime rear-task manual alignment workbench V1: 21 reversible frame settings, exact torso/legs sources, drag, pixel nudge, crop, playback and export controls.')
+console.log('Verified Prime rear-task manual alignment workbench V1: 21 reversible frame settings, exact torso/legs sources, five-point outlined hem, dimensional audit, drag, pixel nudge, playback and export controls.')
