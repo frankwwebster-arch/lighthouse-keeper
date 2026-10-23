@@ -1091,13 +1091,23 @@ The vertical grid, support lines and state behaviour remain unchanged. See
 [`docs/KITCHEN_FIXED_SHELL_LAYOUT_V8_2026-10-23.md`](docs/KITCHEN_FIXED_SHELL_LAYOUT_V8_2026-10-23.md).
 
 Kitchen Fixed Shell Layout V9 at
-`/keeper-review/kitchen-fixed-shell-layout-v9` is the current unapproved room
-gate. It removes—not recolours or replaces—the blue band that cropped the top
+`/keeper-review/kitchen-fixed-shell-layout-v9` is immutable superseded review
+provenance. It removes—not recolours or replaces—the blue band that cropped the top
 of cupboard/drawer fronts. Their complete approved upper outlines begin on the
 first row beneath the shared worktop. Internal joins remain narrow ink seams,
 and substantially wider tapered side planes make the two exposed ends readable
 at 1× without changing any bay, support or Keeper-interaction coordinate. See
 [`docs/KITCHEN_FIXED_SHELL_LAYOUT_V9_2026-10-23.md`](docs/KITCHEN_FIXED_SHELL_LAYOUT_V9_2026-10-23.md).
+
+Kitchen Fixed Shell Layout V10 at
+`/keeper-review/kitchen-fixed-shell-layout-v10` is the current unapproved room
+gate. It keeps V9's complete fronts and exact six-bay grid, but moves the end
+perspective into genuine `16 px` external worktop, carcass and recessed-plinth
+returns. Broken adds a foreshortened, part-open dishwasher door attached across
+its bottom hinge, the accepted broken kettle without baked steam, burnt toast
+behind the unchanged toaster casing, and a cracked/spilled bowl with its whisk
+beside it. The bowl remains centred on and moves with the table. See
+[`docs/KITCHEN_FIXED_SHELL_LAYOUT_V10_2026-10-23.md`](docs/KITCHEN_FIXED_SHELL_LAYOUT_V10_2026-10-23.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

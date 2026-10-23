@@ -1,0 +1,1082 @@
+{
+  "schema": "lighthouse-keeper/kitchen-fixed-shell-layout@10",
+  "set": "kitchen-fixed-shell-2026-10-23-v10",
+  "status": "unapproved-full-end-perspective-and-broken-loose-states-review",
+  "visualAuthorities": {
+    "foundation": {
+      "path": "art/drafts/kitchen-cabinetry-foundation-2026-10-22-v1/cabinetry-module-construction-sheet-approved.png",
+      "sha256": "898c212690c2db8a52a6c8ea7bd962afcf12c1df8e577dcc98c4508359cccee3",
+      "changed": false
+    },
+    "states": {
+      "path": "art/drafts/kitchen-cabinetry-state-derivatives-2026-10-22-v1/candidate-v4-red-fault-lights-fridge-leak.png",
+      "sha256": "d53b7565558acf6dc5544dde8b415fe50ac9eec1683eb374d996114ad5a902e8",
+      "changed": false
+    },
+    "firstRenderExemplar": {
+      "path": "art/source/kitchen-high-resolution-foundation-2026-10-22-v1/kitchen-fitted-run-first-render-authority.png",
+      "sha256": "bb37dc2e3e47c7c26649e627bae32eed04801c2e20571cbee7996d13e6e06bf2",
+      "changed": false
+    }
+  },
+  "architecture": {
+    "fixed": [
+      "one continuous worktop",
+      "one six-bay carcass run",
+      "one continuous plinth",
+      "six exact grid apertures"
+    ],
+    "movable": [
+      "fronts",
+      "doors",
+      "contents",
+      "indicator states",
+      "water effects",
+      "sink insert",
+      "hob overlay"
+    ],
+    "internalEndBevels": false,
+    "healingOverlay": false,
+    "sourceUnitShellPixelsExcluded": true,
+    "standardCabinetTopFasciaUsed": false,
+    "fullOuterEndPerspectiveReturns": true,
+    "outerReturnsOutsideFrontGrid": true
+  },
+  "room": {
+    "logicalPixels": [
+      772,
+      224
+    ],
+    "bayWidth": 84,
+    "bodySize": [
+      84,
+      74
+    ],
+    "bodyTopY": 134,
+    "bodyBaselineY": 208,
+    "originsX": [
+      84,
+      168,
+      252,
+      336,
+      420,
+      504
+    ],
+    "defaultOrder": [
+      "cupboard",
+      "drawers",
+      "sink",
+      "dishwasher",
+      "oven",
+      "fridge"
+    ]
+  },
+  "roomGrid": {
+    "schema": "lighthouse-keeper/kitchen-room-grid@2",
+    "room": "kitchen",
+    "logicalSize": [
+      772,
+      224
+    ],
+    "fittedGrid": {
+      "slotOriginsX": [
+        84,
+        168,
+        252,
+        336,
+        420,
+        504
+      ],
+      "slotCentresX": [
+        126,
+        210,
+        294,
+        378,
+        462,
+        546
+      ],
+      "bayWidthPixels": 84,
+      "bayWidthLogicalPixels": 21,
+      "bodySizePixels": [
+        84,
+        74
+      ],
+      "worktopSupportY": 141,
+      "floorSupportY": 208,
+      "keeperStopTurnY": 218
+    },
+    "countertopObjectOwnership": {
+      "placementModel": "supporting-unit-identity",
+      "eligibleOwnerTypes": [
+        "cupboard",
+        "drawers"
+      ],
+      "objects": [
+        "kettle",
+        "toaster"
+      ],
+      "oneObjectPerOwner": true,
+      "ownerMovesObject": true,
+      "rawCoordinatesPersisted": false,
+      "defaultOwners": {
+        "kettle": "cupboard",
+        "toaster": "drawers"
+      },
+      "dropOnOccupiedOwner": "swap-object-owners"
+    },
+    "floorSlots": {
+      "supportY": 208,
+      "oneObjectPerSlot": true,
+      "sections": [
+        {
+          "id": "floor-west",
+          "boundsX": [
+            0,
+            84
+          ],
+          "centreX": 42
+        },
+        {
+          "id": "floor-dining-left",
+          "boundsX": [
+            604,
+            688
+          ],
+          "centreX": 646
+        },
+        {
+          "id": "floor-dining-right",
+          "boundsX": [
+            688,
+            772
+          ],
+          "centreX": 730
+        }
+      ],
+      "defaultAssignments": {
+        "bin": "floor-west",
+        "chair": "floor-dining-left",
+        "table": "floor-dining-right"
+      }
+    },
+    "invariants": {
+      "cabinetOrderPersistsByUnitIdentity": true,
+      "counterObjectsTravelWithOwner": true,
+      "counterObjectsNeverOccupySinkDishwasherOvenOrFridge": true,
+      "maximumCentreErrorPixels": 0.5,
+      "roomSpecific": true
+    }
+  },
+  "countertopOwnership": {
+    "placementModel": "supporting-unit-identity",
+    "eligibleOwnerTypes": [
+      "cupboard",
+      "drawers"
+    ],
+    "objects": [
+      "kettle",
+      "toaster"
+    ],
+    "oneObjectPerOwner": true,
+    "ownerMovesObject": true,
+    "rawCoordinatesPersisted": false,
+    "defaultOwners": {
+      "kettle": "cupboard",
+      "toaster": "drawers"
+    },
+    "dropOnOccupiedOwner": "swap-object-owners"
+  },
+  "states": {
+    "sink": {
+      "off": "sink",
+      "on": "sink-on",
+      "broken": "sink-broken"
+    },
+    "dishwasher": {
+      "off": "dishwasher-off",
+      "on": "dishwasher-on",
+      "broken": "dishwasher-broken"
+    },
+    "oven": {
+      "off": "oven-off",
+      "on": "oven",
+      "broken": "oven-broken"
+    },
+    "fridge": {
+      "standard": "fridge-standard",
+      "broken": "fridge-broken"
+    },
+    "kettle": {
+      "off": "kettle",
+      "on": "kettle",
+      "broken": "kettle-broken"
+    },
+    "toaster": {
+      "standard": "toaster",
+      "on": "toaster",
+      "broken": "toaster-broken"
+    },
+    "bowl": {
+      "standard": "bowl",
+      "broken": "bowl-broken"
+    }
+  },
+  "fixedLayers": {
+    "carcass-backing": {
+      "logicalSize": [
+        504,
+        74
+      ],
+      "bodyOrigin": [
+        84,
+        134
+      ],
+      "drawOrder": "before inserts",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        8,
+        2520,
+        370
+      ]
+    },
+    "carcass-run": {
+      "logicalSize": [
+        504,
+        74
+      ],
+      "bodyOrigin": [
+        84,
+        134
+      ],
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        386,
+        2520,
+        370
+      ]
+    },
+    "worktop-run": {
+      "logicalSize": [
+        504,
+        10
+      ],
+      "bodyOrigin": [
+        84,
+        134
+      ],
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        764,
+        2520,
+        50
+      ]
+    },
+    "end-perspective-returns": {
+      "logicalSize": [
+        536,
+        74
+      ],
+      "bodyOrigin": [
+        68,
+        134
+      ],
+      "drawOrder": "before carcass backing and inserts",
+      "outsideFrontGrid": true,
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        822,
+        2680,
+        370
+      ]
+    }
+  },
+  "overlays": {
+    "hob": {
+      "logicalSize": [
+        84,
+        14
+      ],
+      "bodyOffset": [
+        0,
+        0
+      ],
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        1200,
+        420,
+        72
+      ]
+    },
+    "sink": {
+      "bodyRect": [
+        10,
+        136,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "role": "sink cut-in above fixed worktop",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        1280,
+        441,
+        514
+      ]
+    },
+    "sink-on": {
+      "bodyRect": [
+        13,
+        140,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "role": "sink cut-in above fixed worktop",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        1802,
+        449,
+        525
+      ]
+    },
+    "sink-broken": {
+      "bodyRect": [
+        57,
+        140,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "role": "sink cut-in above fixed worktop",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        2335,
+        601,
+        565
+      ]
+    },
+    "dishwasher-broken-door": {
+      "bodyRect": [
+        67,
+        13,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "role": "partly-open bottom-hinged foreground door; drawn after fixed shell",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        2908,
+        601,
+        432
+      ]
+    }
+  },
+  "assets": {
+    "cupboard": {
+      "bodyRect": [
+        11,
+        16,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-foundation",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        3348,
+        443,
+        394
+      ]
+    },
+    "drawers": {
+      "bodyRect": [
+        12,
+        16,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-foundation",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        3750,
+        445,
+        394
+      ]
+    },
+    "sink": {
+      "bodyRect": [
+        10,
+        136,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-foundation",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        4152,
+        441,
+        514
+      ]
+    },
+    "dishwasher": {
+      "bodyRect": [
+        11,
+        21,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-foundation",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        4674,
+        441,
+        399
+      ]
+    },
+    "oven": {
+      "bodyRect": [
+        13,
+        21,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-foundation",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        5081,
+        444,
+        400
+      ]
+    },
+    "fridge": {
+      "bodyRect": [
+        10,
+        21,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-foundation",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        5489,
+        441,
+        399
+      ]
+    },
+    "sink-on": {
+      "bodyRect": [
+        13,
+        140,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        5896,
+        449,
+        525
+      ]
+    },
+    "sink-broken": {
+      "bodyRect": [
+        57,
+        140,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        6429,
+        601,
+        565
+      ]
+    },
+    "dishwasher-on": {
+      "bodyRect": [
+        13,
+        13,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        7002,
+        449,
+        395
+      ]
+    },
+    "dishwasher-broken": {
+      "bodyRect": [
+        67,
+        13,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        7405,
+        601,
+        432
+      ]
+    },
+    "oven-off": {
+      "bodyRect": [
+        11,
+        9,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        7845,
+        442,
+        389
+      ]
+    },
+    "oven-broken": {
+      "bodyRect": [
+        11,
+        9,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        8242,
+        507,
+        389
+      ]
+    },
+    "fridge-standard": {
+      "bodyRect": [
+        11,
+        10,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        8639,
+        445,
+        390
+      ]
+    },
+    "fridge-broken": {
+      "bodyRect": [
+        11,
+        10,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "approved-cabinetry-state-visual-sheet",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        9037,
+        507,
+        443
+      ]
+    },
+    "dishwasher-off": {
+      "bodyRect": [
+        13,
+        13,
+        420,
+        370
+      ],
+      "logicalBody": [
+        84,
+        74
+      ],
+      "authority": "deterministic dark-lamp derivative of approved dishwasher On",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        9488,
+        449,
+        395
+      ]
+    }
+  },
+  "looseAssets": {
+    "toaster": {
+      "pixels": [
+        200,
+        144
+      ],
+      "sourceRect": [
+        100,
+        80,
+        560,
+        430
+      ],
+      "support": "worktop",
+      "label": "Toaster",
+      "masterScale": 4,
+      "logicalSize": [
+        42,
+        28
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        42,
+        28
+      ],
+      "logicalCanvas": [
+        50,
+        36
+      ],
+      "sourceFile": "toaster-loose-object-foundation-v1.png",
+      "sourceSha256": "75de96915b5038ea1c756f62cd0d7814412a2a517e1ef5e6eac94e6b755c287b",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        9891,
+        200,
+        144
+      ]
+    },
+    "kettle": {
+      "pixels": [
+        184,
+        168
+      ],
+      "sourceRect": [
+        600,
+        55,
+        1000,
+        430
+      ],
+      "support": "worktop",
+      "label": "Kettle",
+      "masterScale": 4,
+      "logicalSize": [
+        38,
+        34
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        38,
+        34
+      ],
+      "logicalCanvas": [
+        46,
+        42
+      ],
+      "sourceFile": "kettle-loose-object-foundation-v1.png",
+      "sourceSha256": "73e881f6eeb34df257b55e324daf02b40f6c99f00f613a1fbb2fdbe995fad00a",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        10043,
+        184,
+        168
+      ]
+    },
+    "bin": {
+      "pixels": [
+        160,
+        240
+      ],
+      "sourceRect": [
+        1040,
+        15,
+        1400,
+        430
+      ],
+      "support": "floor",
+      "label": "Bin",
+      "masterScale": 4,
+      "logicalSize": [
+        32,
+        52
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        32,
+        52
+      ],
+      "logicalCanvas": [
+        40,
+        60
+      ],
+      "sourceFile": "bin-loose-object-foundation-v1.png",
+      "sourceSha256": "0246dd50519cd897a034705cd758f23b60d9db61840107a75b8353ac95508aa6",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        10219,
+        160,
+        240
+      ]
+    },
+    "table": {
+      "pixels": [
+        352,
+        264
+      ],
+      "sourceRect": [
+        100,
+        430,
+        930,
+        1000
+      ],
+      "support": "floor",
+      "label": "Table",
+      "masterScale": 4,
+      "logicalSize": [
+        80,
+        58
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        80,
+        58
+      ],
+      "logicalCanvas": [
+        88,
+        66
+      ],
+      "sourceFile": "table-loose-object-foundation-v1.png",
+      "sourceSha256": "1e5410475c6117b89650b34d84eb6781a46aaaf9ffc0fcbec5c5e4763d926da4",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        10467,
+        352,
+        264
+      ]
+    },
+    "chair": {
+      "pixels": [
+        172,
+        348
+      ],
+      "sourceRect": [
+        950,
+        430,
+        1400,
+        1000
+      ],
+      "support": "floor",
+      "label": "Chair",
+      "masterScale": 4,
+      "logicalSize": [
+        35,
+        79
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        35,
+        79
+      ],
+      "logicalCanvas": [
+        43,
+        87
+      ],
+      "sourceFile": "chair-loose-object-foundation-v1.png",
+      "sourceSha256": "395aaf0ec88674444afbc757cd184f8e11470e35a0b085ad1b540937ad037d56",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        10739,
+        172,
+        348
+      ]
+    },
+    "toaster-broken": {
+      "pixels": [
+        200,
+        144
+      ],
+      "sourceRect": [
+        100,
+        80,
+        560,
+        430
+      ],
+      "support": "worktop",
+      "label": "Toaster \u00b7 Broken",
+      "masterScale": 4,
+      "logicalSize": [
+        42,
+        28
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        42,
+        28
+      ],
+      "logicalCanvas": [
+        50,
+        36
+      ],
+      "sourceFile": "toaster-loose-object-foundation-v1.png",
+      "sourceSha256": "75de96915b5038ea1c756f62cd0d7814412a2a517e1ef5e6eac94e6b755c287b",
+      "authority": "exact accepted V9 toaster casing plus deterministic burnt-toast insert",
+      "casingChanged": false,
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        11095,
+        200,
+        144
+      ]
+    },
+    "kettle-broken": {
+      "pixels": [
+        200,
+        184
+      ],
+      "support": "worktop",
+      "label": "Kettle \u00b7 Broken",
+      "masterScale": 4,
+      "logicalSize": [
+        42,
+        38
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        42,
+        38
+      ],
+      "logicalCanvas": [
+        50,
+        46
+      ],
+      "sourceFile": "art/source/kitchen-high-resolution-foundation-2026-10-22-v1/kitchen-fitted-run-first-render-authority.png",
+      "sourceSha256": "bb37dc2e3e47c7c26649e627bae32eed04801c2e20571cbee7996d13e6e06bf2",
+      "authority": "accepted first-render broken kettle; no steam baked in",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        11247,
+        200,
+        184
+      ]
+    },
+    "bowl": {
+      "pixels": [
+        232,
+        152
+      ],
+      "support": "table-child",
+      "masterScale": 4,
+      "logicalSize": [
+        50,
+        30
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        50,
+        30
+      ],
+      "logicalCanvas": [
+        58,
+        38
+      ],
+      "sourceFile": "art/source/kitchen-fixed-shell-2026-10-23-v10/warm-bowl-state-reference.png",
+      "sourceSha256": "9e124727bd4e9225b80d715798324a5d2407146d87b837f92b46cce8750f6b8e",
+      "authority": "warm dimensional state-sheet reference",
+      "label": "Mixing bowl + whisk",
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        11439,
+        232,
+        152
+      ]
+    },
+    "bowl-broken": {
+      "pixels": [
+        232,
+        152
+      ],
+      "support": "table-child",
+      "masterScale": 4,
+      "logicalSize": [
+        50,
+        30
+      ],
+      "opaqueDrawRect": [
+        4,
+        4,
+        50,
+        30
+      ],
+      "logicalCanvas": [
+        58,
+        38
+      ],
+      "sourceFile": "art/source/kitchen-fixed-shell-2026-10-23-v10/warm-bowl-state-reference.png",
+      "sourceSha256": "9e124727bd4e9225b80d715798324a5d2407146d87b837f92b46cce8750f6b8e",
+      "authority": "warm dimensional state-sheet reference",
+      "label": "Mixing bowl \u00b7 Broken",
+      "whiskBesideBowl": true,
+      "spillRetained": true,
+      "file": "kitchen-fixed-shell-atlas-v10.png",
+      "atlasRect": [
+        8,
+        11599,
+        232,
+        152
+      ]
+    }
+  },
+  "looseGeometry": {
+    "worktopSupportY": 141,
+    "floorSupportY": 208,
+    "chairSeatTopHeightLp": 7.75,
+    "chairSeatTopHeightRoomPixels": 31,
+    "tableTopHeightLp": 14.5,
+    "defaultPositions": null,
+    "positionStorage": "slot identifiers only; pointer coordinates are never persisted",
+    "defaultSlotAssignments": {
+      "kettle": "counter-4",
+      "toaster": "counter-6",
+      "bin": "floor-west",
+      "chair": "floor-dining-left",
+      "table": "floor-dining-right"
+    },
+    "countertopPositionStorage": "supporting cabinet identity only",
+    "bowlOwnership": "table-child",
+    "bowlMovesWithTable": true,
+    "tableChildSupportY": 155
+  },
+  "atlas": {
+    "file": "kitchen-fixed-shell-atlas-v10.png",
+    "sha256": "1b2caa941f06c094369106441524e010ae982780d779e646ec729b3b1a2db6af",
+    "pixels": [
+      2696,
+      11759
+    ],
+    "drawingCount": 33,
+    "uniqueImageRequests": 1,
+    "lossless": true
+  },
+  "boundaries": {
+    "productionChanged": false,
+    "runtimeChanged": false,
+    "approvedSourceOverwritten": false,
+    "candidateReviewOnly": true
+  },
+  "corrections": {
+    "v9FrontsAndGridRetained": true,
+    "outerEndReturnLogicalDepth": 16,
+    "outerEndReturnsOutsideFrontGrid": true,
+    "worktopCarcassAndPlinthPerspectiveContinuous": true,
+    "dishwasherBrokenDoor": "partly open, foreshortened and attached across bottom hinge",
+    "dishwasherControlsChanged": false,
+    "dishwasherBrokenLights": "three fixed red lamps retained",
+    "brokenKettleAuthority": "accepted first-render broken kettle; no baked steam",
+    "brokenToaster": "accepted V9 casing unchanged; burnt toast added behind slot",
+    "brokenBowl": "warm cracked bowl, retained spill, whisk beside bowl",
+    "verticalGridChanged": false,
+    "interactionCoordinatesChanged": false
+  }
+}
