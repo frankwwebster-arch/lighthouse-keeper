@@ -1061,8 +1061,8 @@ distinct cupboard/drawers identities. No healing layer is used. See
 [`docs/KITCHEN_FIXED_SHELL_LAYOUT_V6_2026-10-23.md`](docs/KITCHEN_FIXED_SHELL_LAYOUT_V6_2026-10-23.md).
 
 Kitchen Fixed Shell Layout V7 at
-`/keeper-review/kitchen-fixed-shell-layout-v7` is the current unapproved room
-gate. It keeps V6's approved insert pixels, appliance states, exact grid and
+`/keeper-review/kitchen-fixed-shell-layout-v7` is immutable superseded review
+provenance. It keeps V6's approved insert pixels, appliance states, exact grid and
 movement behaviour, but corrects the shared fitted shell: the shallower
 worktop has no blue underside masking the fascia tops; the Belfast sink is an
 opaque cut-in above it; and the carcass, dividers, plinth and two run ends use
@@ -1070,6 +1070,17 @@ a declared flat blue/ink palette rather than sampled cabinet-edge pixels. This
 removes the pale inter-cabinet seams, curved drawer shadow and end artefacts
 without a healing layer or model redraw. See
 [`docs/KITCHEN_FIXED_SHELL_LAYOUT_V7_2026-10-23.md`](docs/KITCHEN_FIXED_SHELL_LAYOUT_V7_2026-10-23.md).
+
+Kitchen Fixed Shell Layout V8 at
+`/keeper-review/kitchen-fixed-shell-layout-v8` is the current unapproved room
+gate. Approved cabinet-side shading now reaches to within one source pixel of
+each bay boundary; the only synthetic internal structure is a narrow shared
+ink seam, with no blue divider surface. The sink overlay is geometry-masked to
+porcelain, hardware and central water, so it contributes no countertop or rear
+boundary pixels: one shared worktop supplies the exact colour, height and
+alignment. Only the two exposed run ends receive shallow perspective planes.
+The vertical grid, support lines and state behaviour remain unchanged. See
+[`docs/KITCHEN_FIXED_SHELL_LAYOUT_V8_2026-10-23.md`](docs/KITCHEN_FIXED_SHELL_LAYOUT_V8_2026-10-23.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

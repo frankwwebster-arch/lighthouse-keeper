@@ -205,18 +205,21 @@ Nothing is promoted or wired yet. A future kitchen-assets version may split
 the airborne lid into its own animation layer and add user-controlled Broken
 vibration/SFX; do not mutate V47 to do so.
 
-## Kitchen fixed-shell integration V7 (23 Oct 2026)
+## Kitchen fixed-shell integration V8 (23 Oct 2026)
 
 The current unapproved complete-room integration gate is
-`/keeper-review/kitchen-fixed-shell-layout-v7`. V5 is rejected because its
+`/keeper-review/kitchen-fixed-shell-layout-v8`. V5 is rejected because its
 movable model-rendered shells still carried incompatible tops and side edges.
 V6 first separated the approved render pixels into a fixed shell and movable
-functional inserts, but its sampled rail/worktop pixels caused fascia crops,
-pale seams, curved shadows and end artefacts. V7 keeps the approved inserts
-and replaces only those shared layers: one shallow worktop, an opaque Belfast
-sink cut-in and a deterministic flat-palette carcass/plinth. No healing artwork
-is used. Read `data/kitchen_room_grid_contract_v2.json` and
-`docs/KITCHEN_FIXED_SHELL_LAYOUT_V7_2026-10-23.md` before changing kitchen
+functional inserts. V7 removed sampled rail/worktop defects, but its flat
+monotone divider surfaces still contrasted with the approved cabinet shading,
+and its colour-derived sink overlay retained countertop/rear-edge pixels. V8
+extends approved face shading to each narrow shared ink seam, contains no blue
+divider fill, and geometry-masks the sink to porcelain, hardware and central
+water only. The single fixed worktop therefore supplies the sink area's exact
+colour, height and alignment. Only exposed run ends receive shallow perspective
+planes. No healing artwork is used. Read `data/kitchen_room_grid_contract_v2.json` and
+`docs/KITCHEN_FIXED_SHELL_LAYOUT_V8_2026-10-23.md` before changing kitchen
 placement. The visual support lines (`y=141` counter, `y=208` floor) are not
 the Keeper walking/interaction plane (`y=218`). Kettle/toaster belong to
 distinct cupboard or drawers identities and travel with those cabinets;
@@ -226,8 +229,8 @@ and the hob is a separate overlay that moves with the oven while the fixed top
 does not. This
 contract is kitchen-specific: every other room must declare and verify its own
 grid rather than inheriting these coordinates implicitly. V5's single archived
-atlas remains immutable; V6 and V7's single archived atlases must remain in the
-same-origin proxy allowlist. V6 is immutable superseded provenance.
+atlas remains immutable; V6–V8's single archived atlases must remain in the
+same-origin proxy allowlist. V6 and V7 are immutable superseded provenance.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 

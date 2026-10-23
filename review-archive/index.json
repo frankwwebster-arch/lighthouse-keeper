@@ -15,11 +15,11 @@
   ],
   "largeDataThresholdBytes": 24576,
   "stats": {
-    "setCount": 264,
-    "referenceCount": 8269,
-    "uniqueObjectCount": 3416,
-    "logicalBytes": 664277692,
-    "uniqueBytes": 275447251,
+    "setCount": 265,
+    "referenceCount": 8270,
+    "uniqueObjectCount": 3417,
+    "logicalBytes": 666999225,
+    "uniqueBytes": 278168784,
     "deduplicatedBytes": 388830441
   },
   "legacyPaths": {
@@ -32747,6 +32747,13 @@
       "bytes": 2617677,
       "object": "review-archive/objects/67/67acccda56989e0edcef0936d1d2cd1eab41761e6345f91063dc2c31b9a5b34d.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/67/67acccda56989e0edcef0936d1d2cd1eab41761e6345f91063dc2c31b9a5b34d.png"
+    },
+    "/keeper-review/kitchen-fixed-shell-layout-v8/assets/kitchen-fixed-shell-atlas-v8.png": {
+      "sha256": "0f58f34ad2f789b5d6d7d5cb4b818633af9ef51b05985d7c27fad20c67d60cf1",
+      "extension": ".png",
+      "bytes": 2721533,
+      "object": "review-archive/objects/0f/0f58f34ad2f789b5d6d7d5cb4b818633af9ef51b05985d7c27fad20c67d60cf1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0f/0f58f34ad2f789b5d6d7d5cb4b818633af9ef51b05985d7c27fad20c67d60cf1.png"
     },
     "/keeper-review/kitchen-fridge-states-v32/assets/fridge-broken-hinge-failed.png": {
       "sha256": "819a5649b0c79ff0d62c3e4b1ad66cdab9d940f31be545b6a30a1427f6093cf1",
