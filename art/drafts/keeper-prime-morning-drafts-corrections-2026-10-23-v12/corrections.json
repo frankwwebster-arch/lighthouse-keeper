@@ -1,0 +1,223 @@
+{
+  "schema": "lighthouse-keeper/prime-animation-feedback-corrections@1",
+  "version": 12,
+  "generatedOn": "2026-10-23",
+  "sourceBatch": "data/keeper_prime_animation_drafts_v11.json",
+  "sourceBatchSha256": "bf04d70aa89b253e978d986694f7246536032782d521426c3d4d152393b10816",
+  "wholeFrameAuthority": {
+    "sequence": "cook-counter-v1",
+    "positions": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "source": {
+      "path": "art/drafts/keeper-prime-morning-drafts-corrections-2026-10-22-v3/corrections.json",
+      "sha256": "ae8c541e9e4903b427781819ce3fe7d89cf22181727bac9ecbd3d6a5257ad358"
+    }
+  },
+  "rejectedAmendment": {
+    "version": 11,
+    "scope": "rear-work-turn-return-v1 positions 11–31 only",
+    "reason": "The transferred arm layers retained inner sleeve and jumper boundaries that visibly broke the torso and cream stripe at both sides."
+  },
+  "frames": [
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 11,
+      "rejectedV11Sha256": "660485ebd219ec3801c05e37ed63a34a5ee9d41331da69c7053fe79d14696ad1",
+      "cookingDonorPosition": 2,
+      "cookingDonorSha256": "61055a4d5458c900d1f3ea2b2178b999d4d620e5ff2a09f054e9bc4948ee0c67",
+      "draftV12Sha256": "61055a4d5458c900d1f3ea2b2178b999d4d620e5ff2a09f054e9bc4948ee0c67",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 12,
+      "rejectedV11Sha256": "d4fda7db6e7cd709bee933281ee37bbfeb9324a71cfa4d327b1d2da259349a0f",
+      "cookingDonorPosition": 3,
+      "cookingDonorSha256": "ef05e53367d8dde66b9a6b5dd7874d5e21b2845516b9db4b168195ab9188e95f",
+      "draftV12Sha256": "ef05e53367d8dde66b9a6b5dd7874d5e21b2845516b9db4b168195ab9188e95f",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 13,
+      "rejectedV11Sha256": "9481715a38dc70441f15c7882142c5f5c12d98f65ce1c4d5a8a90e98fd68665c",
+      "cookingDonorPosition": 4,
+      "cookingDonorSha256": "8e2ac49592a295f37c4a8a166d350e9ea7558d0ed73cc64238ffb9670cb4a29e",
+      "draftV12Sha256": "8e2ac49592a295f37c4a8a166d350e9ea7558d0ed73cc64238ffb9670cb4a29e",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 14,
+      "rejectedV11Sha256": "fc892f23bc9c2199d961aa85abe568e4e3f77eafc92f117b8c365658d16b1f21",
+      "cookingDonorPosition": 5,
+      "cookingDonorSha256": "03d2fe44ecb6c1c7da84eb7ad09220310ca32f8821e174fd01c8e5d9e11cf2e0",
+      "draftV12Sha256": "03d2fe44ecb6c1c7da84eb7ad09220310ca32f8821e174fd01c8e5d9e11cf2e0",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 15,
+      "rejectedV11Sha256": "1914eb9913b6a68065e5aba267475f349961e43bc3b2ccccc734cbc579862729",
+      "cookingDonorPosition": 6,
+      "cookingDonorSha256": "ebbe47a512db90631fc77244ca6ccc835420ff00379eac66cb7f3655b98dddc5",
+      "draftV12Sha256": "ebbe47a512db90631fc77244ca6ccc835420ff00379eac66cb7f3655b98dddc5",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 16,
+      "rejectedV11Sha256": "04c83ae7b5537d4484b34f25549e35590f7b00717ba592887ebc733bb5fe2435",
+      "cookingDonorPosition": 7,
+      "cookingDonorSha256": "8cb7f70cdc2b164b35d50e40e210bbf33ebf68507979db9f9416bbc317a9f5bb",
+      "draftV12Sha256": "8cb7f70cdc2b164b35d50e40e210bbf33ebf68507979db9f9416bbc317a9f5bb",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 17,
+      "rejectedV11Sha256": "b58f74b5edcac3ec8e551ea71ff880c87133a11a1e00b9d0c9609fca763d9c70",
+      "cookingDonorPosition": 8,
+      "cookingDonorSha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+      "draftV12Sha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 18,
+      "rejectedV11Sha256": "8ea4005505d51f5dd5cd6eddace189644566e0a93e1cc386afb9262a300c4c70",
+      "cookingDonorPosition": 2,
+      "cookingDonorSha256": "61055a4d5458c900d1f3ea2b2178b999d4d620e5ff2a09f054e9bc4948ee0c67",
+      "draftV12Sha256": "61055a4d5458c900d1f3ea2b2178b999d4d620e5ff2a09f054e9bc4948ee0c67",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 19,
+      "rejectedV11Sha256": "6eeb2e26036558f6ed005bdacc52a08f94a7f15b0ceede5fe8407520c4ed0c9d",
+      "cookingDonorPosition": 3,
+      "cookingDonorSha256": "ef05e53367d8dde66b9a6b5dd7874d5e21b2845516b9db4b168195ab9188e95f",
+      "draftV12Sha256": "ef05e53367d8dde66b9a6b5dd7874d5e21b2845516b9db4b168195ab9188e95f",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 20,
+      "rejectedV11Sha256": "a8dafffdab4575d0d962f7cebc8e2f05fcce433386759e59754b686ad94b0f6a",
+      "cookingDonorPosition": 4,
+      "cookingDonorSha256": "8e2ac49592a295f37c4a8a166d350e9ea7558d0ed73cc64238ffb9670cb4a29e",
+      "draftV12Sha256": "8e2ac49592a295f37c4a8a166d350e9ea7558d0ed73cc64238ffb9670cb4a29e",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 21,
+      "rejectedV11Sha256": "6d6b2cdd5b59ab9fa813d40825a22aa838aae1d9fe23214a7af32a089d01fc43",
+      "cookingDonorPosition": 5,
+      "cookingDonorSha256": "03d2fe44ecb6c1c7da84eb7ad09220310ca32f8821e174fd01c8e5d9e11cf2e0",
+      "draftV12Sha256": "03d2fe44ecb6c1c7da84eb7ad09220310ca32f8821e174fd01c8e5d9e11cf2e0",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 22,
+      "rejectedV11Sha256": "949ce14b7d582bec8867a369c7fbf1aaeb851dec53360e8839393e09d1efe998",
+      "cookingDonorPosition": 6,
+      "cookingDonorSha256": "ebbe47a512db90631fc77244ca6ccc835420ff00379eac66cb7f3655b98dddc5",
+      "draftV12Sha256": "ebbe47a512db90631fc77244ca6ccc835420ff00379eac66cb7f3655b98dddc5",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 23,
+      "rejectedV11Sha256": "46883d4de52eb40cad564934b894b787e1a856d4004485a032e139558db37389",
+      "cookingDonorPosition": 7,
+      "cookingDonorSha256": "8cb7f70cdc2b164b35d50e40e210bbf33ebf68507979db9f9416bbc317a9f5bb",
+      "draftV12Sha256": "8cb7f70cdc2b164b35d50e40e210bbf33ebf68507979db9f9416bbc317a9f5bb",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 24,
+      "rejectedV11Sha256": "fba40b6b08c4ff4cc4761aff60ef15d1e489aa38008a9ec034af01085103c0f1",
+      "cookingDonorPosition": 8,
+      "cookingDonorSha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+      "draftV12Sha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 25,
+      "rejectedV11Sha256": "5abf555c581ca03fb54e383bc59ec2d3ff585cf45129591bee679987beea1ca5",
+      "cookingDonorPosition": 2,
+      "cookingDonorSha256": "61055a4d5458c900d1f3ea2b2178b999d4d620e5ff2a09f054e9bc4948ee0c67",
+      "draftV12Sha256": "61055a4d5458c900d1f3ea2b2178b999d4d620e5ff2a09f054e9bc4948ee0c67",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 26,
+      "rejectedV11Sha256": "46b1889e2fde36057feb6fc90b1d0b08ef7e58a3ef990286e0f6cb6a36ddfd36",
+      "cookingDonorPosition": 3,
+      "cookingDonorSha256": "ef05e53367d8dde66b9a6b5dd7874d5e21b2845516b9db4b168195ab9188e95f",
+      "draftV12Sha256": "ef05e53367d8dde66b9a6b5dd7874d5e21b2845516b9db4b168195ab9188e95f",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 27,
+      "rejectedV11Sha256": "45830918b93f4e8c2fdb737acece56e63a4354492afbe6eafcf88f06c9c62a6d",
+      "cookingDonorPosition": 4,
+      "cookingDonorSha256": "8e2ac49592a295f37c4a8a166d350e9ea7558d0ed73cc64238ffb9670cb4a29e",
+      "draftV12Sha256": "8e2ac49592a295f37c4a8a166d350e9ea7558d0ed73cc64238ffb9670cb4a29e",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 28,
+      "rejectedV11Sha256": "490df36ceed929921fd6bbd962047e52056c8812c4a2cc8cb8993fad31ef94ca",
+      "cookingDonorPosition": 5,
+      "cookingDonorSha256": "03d2fe44ecb6c1c7da84eb7ad09220310ca32f8821e174fd01c8e5d9e11cf2e0",
+      "draftV12Sha256": "03d2fe44ecb6c1c7da84eb7ad09220310ca32f8821e174fd01c8e5d9e11cf2e0",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 29,
+      "rejectedV11Sha256": "8c94cc7caea6dae8e3822b0d64a8e6a5efff9685c01a2924ff1bea3a851ea57c",
+      "cookingDonorPosition": 6,
+      "cookingDonorSha256": "ebbe47a512db90631fc77244ca6ccc835420ff00379eac66cb7f3655b98dddc5",
+      "draftV12Sha256": "ebbe47a512db90631fc77244ca6ccc835420ff00379eac66cb7f3655b98dddc5",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 30,
+      "rejectedV11Sha256": "eae4a026bc4a86c460afe84ba76a8411a5c4015fc88b14ac5e6a26dc6568f023",
+      "cookingDonorPosition": 7,
+      "cookingDonorSha256": "8cb7f70cdc2b164b35d50e40e210bbf33ebf68507979db9f9416bbc317a9f5bb",
+      "draftV12Sha256": "8cb7f70cdc2b164b35d50e40e210bbf33ebf68507979db9f9416bbc317a9f5bb",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    },
+    {
+      "sequence": "rear-work-turn-return-v1",
+      "position": 31,
+      "rejectedV11Sha256": "2a55c36f97edf14a01f8ab0a3f5af2e24f5797a58dc66d2ed90ad3f81df8d49e",
+      "cookingDonorPosition": 8,
+      "cookingDonorSha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+      "draftV12Sha256": "e6520aab48100c44aabdb0825c9424dbe35bffb2587b5270898e5214db2038df",
+      "correction": "V11 rejected: layered action arms carried their old inner sleeve and jumper edges into the approved torso. V12 borrows the complete, intact rear cooking pose byte-for-byte, so torso, stripe, sleeves, ribbed hem, trousers and boots remain one coherent drawing."
+    }
+  ],
+  "imageGeneration": {
+    "usedInDelivery": false,
+    "reason": "V12 reuses the seven complete, intact cooking frames byte-for-byte and changes only their order inside the rear-task work section."
+  }
+}

@@ -3,9 +3,9 @@
 Date: 23 October 2026
 
 Status: rejected review evidence. V8 is also preserved as rejected evidence.
-V10 was the immediate successor; V11 is the active review.
+V10 was the immediate successor; V12 is the active review.
 
-Active review: `/prime-keeper-animation-drafts-v10`
+Active review: `/prime-keeper-animation-drafts-v12`
 
 Versioned route: `/prime-keeper-animation-drafts-v9`
 
@@ -68,5 +68,6 @@ available at its original route as reversible comparison evidence. See
 V10 at `/prime-keeper-animation-drafts-v10` then
 abandons the incompatible moving-torso/lower-body join completely: every work
 pose begins with the complete approved rear Prime and replaces only the action
-arms. V11 is the active correction because it removes V10's fixed upper arm
-crop and turns its optional alignment ghost off by default.
+arms. V11 removed V10's fixed upper arm crop but retained visible inner arm
+edges. V12 is the active correction and reuses complete cooking frames instead
+of compositing separate arm and torso layers.

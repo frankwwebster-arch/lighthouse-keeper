@@ -19,7 +19,7 @@ recorded contact-beard masks. V16 and the current runtime remain immutable
 until this correction is explicitly approved.
 
 The current versioned review batch is
-`/prime-keeper-animation-drafts-v11` (also served at
+`/prime-keeper-animation-drafts-v12` (also served at
 `/prime-keeper-animation-drafts`). It contains ten independently redraftable
 sequences and 162 frame occurrences. V11 preserves V3's lift omission, brighter
 passive front/back jumpers and accurate seated-route title. Frank rejected the
@@ -39,10 +39,13 @@ rejected because its fixed row-125 arm-transfer boundary visibly cropped the
 tops of sleeves and raised hands, while its alignment ghost was mistakenly on
 by default. V11 restores complete arm silhouettes using the neutral rear pose
 as an exclusion mask, protects every approved head pixel and turns the optional
-ghost off by default. These V11
-corrections remain review-only and have not replaced the installed runtime
-sprites. V1–V10 remain
-immutable.
+ghost off by default. V11 was then rejected because the transferred arm layers
+retained inner sleeve and jumper edges that broke the torso and cream stripe.
+V12 replaces only rear-task positions 11–31 with complete `Cook at counter`
+frames 2–8, byte-for-byte, repeated as three work cycles. Because every work
+pose is now one intact drawing, there is no arm/torso layer join to break the
+jumper. These V12 corrections remain review-only and have not replaced the
+installed runtime sprites. V1–V11 remain immutable.
 
 The next work is not one undifferentiated art list:
 

@@ -3,21 +3,20 @@
 A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by typing or tapping objects, then keep him happy through the day. The playable cutaway currently has a kitchen, living room, bedroom with en suite, and lamp room.
 
 The current Prime animation review is `/prime-keeper-animation-drafts`
-(versioned permalink `/prime-keeper-animation-drafts-v11`): ten reversible
-sequences with 162 frame occurrences. V11 retains V3's accepted palette, lift
-and naming changes and preserves V1–V10 unchanged. It replaces only rear-task
-positions 11–31. Every corrected frame starts with the complete approved rear
-Prime—cap, head, beard, torso, cream stripe, jumper band, trousers, boots,
-height and floor registration—and restores the complete corresponding V6 arm
-silhouette. Above the shoulder, arm pixels enter only where the approved body
-is transparent and outside a dilated neutral-body mask. This removes V10's
-visible row-125 sleeve/hand crop without introducing a torso join. The optional
-exact-Prime alignment ghost is now off by default. Every frame retains an
-independent redraft slot; all players retain pause/stop/frame controls and the
-page retains its sequence sandbox. Unsafe
+(versioned permalink `/prime-keeper-animation-drafts-v12`): ten reversible
+sequences with 162 frame occurrences. V12 retains V3's accepted palette, lift
+and naming changes and preserves V1–V11 unchanged. It replaces only rear-task
+positions 11–31. V11's layered action arms retained inner sleeve and jumper
+edges that broke the torso and cream stripe. V12 removes that incompatible join
+by reusing complete `Cook at counter` frames 2–8 byte-for-byte as three work
+cycles. Each action pose is therefore one coherent drawing from cap to boots;
+no arm, torso, stripe or hem is composited separately. The optional exact-Prime
+alignment ghost remains off by default. Every frame retains an independent
+redraft slot; all players retain pause/stop/frame controls and the page retains
+its sequence sandbox. Unsafe
 snack, bed and original broom source sheets remain visibly withheld by the
 isolation gate. See
-`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V11_2026-10-23.md`.
+`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V12_2026-10-23.md`.
 
 The V1 and V2 rear-task manual alignment tools remain available as reversible
 diagnostic evidence, but they are no longer the active correction route: exact
@@ -1638,7 +1637,7 @@ must remain paused to avoid duplicate alerts.
 - `data/keeper_pose_registry.json`, `data/keeper_endpoint_audit.json` and `data/keeper_endpoint_exceptions.json` — shared pose vocabulary, current real-pixel endpoint evidence, and the frozen legacy migration boundary.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
 - `public/keeper-review/index.html` — canonical online-only reviewer deployed at `/keeper-review/`; `docs/keeper-scale-audit/review.html` is the generated audit artifact and must be byte-identical, but when opened outside `/keeper-review` it sends the viewer to the live platform instead of presenting a second workspace. Its gallery is a compact visual scan (name, review state, last local save/redraft, playback and frame stepping); `Open close review` opens any chosen card immediately. `Find animation` searches names and overrides all other filters; otherwise independently filter by review state, pose and active/reserve use list. Close review lets Frank override the inferred pose tag, relegate a likely duplicate to the reversible reserve list, expand/compress retained draft comparisons, and select canonical or every exact-name draft as an exportable preferred-promotion candidate—without mutating production. **Hand back to Codex** always asks for confirmation, saves any unsaved cards to that browser if confirmed, then submits the full batch to the durable server-side queue. The server records a semantic exact-name delta (ignoring save timestamps), comparing the first server hand-back to the shipped review baseline and later ones to the prior hand-back; the receipt reports only the changed animation count for later Codex work. When Codex claims a batch, the online reviewer becomes read-only until the delivery is completed, while retaining playback and inspection; JSON backup/import is collapsed as an exceptional browser-recovery option.
-- `review-archive/`, `docs/REVIEW_ARCHIVE.md`, `scripts/archive_keeper_review_media.mjs` and `scripts/replace_keeper_review_set.mjs` — content-addressed storage for review-only images, GIFs and oversized review JSON. The index has 7,917 review references across 256 set manifests resolving to 3,328 committed-tree SHA-256 objects hosted outside Vercel deployments. The global sweep ignores unrelated untracked objects, and the single-set replacement path remains available for an isolated reversible batch. Immutable page bytes and old URLs are preserved through short-lived redirect routes; new animations preload every moving frame before playback. The clean `public/` payload is 49.64 MiB beneath the unchanged 50 MiB guard. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
+- `review-archive/`, `docs/REVIEW_ARCHIVE.md`, `scripts/archive_keeper_review_media.mjs` and `scripts/replace_keeper_review_set.mjs` — content-addressed storage for review-only images, GIFs and oversized review JSON. The index has 8,424 review references across 268 set manifests resolving to 3,439 committed-tree SHA-256 objects hosted outside Vercel deployments. The global sweep ignores unrelated untracked objects, and the single-set replacement path remains available for an isolated reversible batch. Immutable page bytes and old URLs are preserved through short-lived redirect routes; new animations preload every moving frame before playback. The clean `public/` payload is 49.85 MiB beneath the unchanged 50 MiB guard. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
 - `data/keeper_side_on_beard_occlusion_audit.json`, `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/`, and `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` — completed draft-only v2 beard/hand audit and preserved rejected v1 history. The active reviewer shows v2 beside canonical and the separate Frank-selected darts draft; the verifier prevents implicit promotion.
 - `data/keeper_review_drafts.json` and `art/drafts/` — SHA-256-pinned, exact-name review comparisons: the draft-only darts candidate, seven active V11 artist-smock candidates, the accepted complete-route `keeper_snooker` candidate, the 41 exact-name 11 October amendment candidates and the separate party-hat frame-2 v2 variant, plus the ten selected canonical promotions and their reversible previous versions. Hash-addressed reviewer copies prevent same-name historical and current variants from overwriting one another. `scripts/verify_keeper_review_drafts.ts` checks every registered source, canonical/current comparison, sidecar, gutter, publication and reviewer attachment.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.

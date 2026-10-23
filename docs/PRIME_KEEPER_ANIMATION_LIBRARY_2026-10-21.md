@@ -66,20 +66,19 @@ seating remain installed but await matching gameplay consumers. The library
 labels that distinction and renders approved source and installed delivery
 side-by-side. This promotion does not expand any original art approval.
 
-The separate `/prime-keeper-animation-drafts` page now serves V11: the five
+The separate `/prime-keeper-animation-drafts` page now serves V12: the five
 preserved V1 drafts, one isolated broom candidate, four approved-component
-choreography previews and the reversible rear-task correction. V11 retains all
-accepted V3 palette, lift and naming amendments and replaces only rejected V10
-rear-task positions 11–31. Each corrected frame uses the complete approved rear
-Prime as its fixed body authority and restores the full V6 action-arm silhouette
-without V10's row-125 crop. Pixels above the shoulder are admitted only outside
-the approved body and a dilated neutral-body mask. Standing height and floor
-registration remain exact. The adjustable exact-Prime ghost remains available
-but is off by default. These ten sequences remain
+choreography previews and the reversible rear-task correction. V12 retains all
+accepted V3 palette, lift and naming amendments and replaces only rejected V11
+rear-task positions 11–31. V11's arm layers retained inner sleeve and jumper
+edges that visibly broke the torso. V12 instead reuses complete `Cook at
+counter` frames 2–8 byte-for-byte as three work cycles, so every action pose is
+one coherent cap-to-boots drawing with no torso/arm splice. The adjustable
+exact-Prime ghost remains available but is off by default. These ten sequences remain
 outside the approved library and runtime bank until their complete choreography
-is accepted. V1–V10 remain at their versioned routes; the current versioned route
-is `/prime-keeper-animation-drafts-v11`. See
-`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V11_2026-10-23.md`.
+is accepted. V1–V11 remain at their versioned routes; the current versioned route
+is `/prime-keeper-animation-drafts-v12`. See
+`docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V12_2026-10-23.md`.
 
 The two rear-task manual alignment routes remain available only as reversible
 diagnostic evidence. Exact ghost registration established that their V6 torso

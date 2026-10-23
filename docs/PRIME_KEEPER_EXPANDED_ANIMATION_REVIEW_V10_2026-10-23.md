@@ -9,7 +9,7 @@ ghost was enabled by default. No V10 frame is installed in the runtime bank.
 Routes:
 
 - immutable V10 permalink: `/prime-keeper-animation-drafts-v10`
-- active successor: `/prime-keeper-animation-drafts-v11`
+- active successor: `/prime-keeper-animation-drafts-v12`
 
 ## Corrected construction
 

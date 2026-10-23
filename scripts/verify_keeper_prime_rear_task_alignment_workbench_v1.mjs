@@ -85,7 +85,7 @@ assert(workbench.includes("'lighthouse-keeper/prime-rear-task-manual-alignment@4
 assert(workbench.includes("'lighthouse-keeper/prime-rear-task-upper-seam-alignment@1'"), 'V2 export must identify the corrected upper-seam contract')
 assert(archiveRoute.includes("'keeper-prime-morning-drafts-v6'"), 'V6 review images must be served same-origin so the dimensional audit can read alpha pixels')
 assert(!workbench.includes('/api/'), 'manual workbench must not overwrite server or source state')
-assert(defaultReview.includes('keeper_prime_animation_drafts_v11'), 'current review must advance to the complete-arm V11 correction')
+assert(/keeper_prime_animation_drafts_v1[12]/.test(defaultReview), 'current review must advance beyond the rejected seam-alignment route')
 assert(!defaultReview.includes('manualAlignmentHref='), 'superseded seam-alignment workbench must not remain the primary review action')
 assert(!versionedReview.includes('manualAlignmentHref'), 'immutable V9 permalink must retain its original presentation')
 

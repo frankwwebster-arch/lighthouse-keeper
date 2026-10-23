@@ -1,12 +1,12 @@
 # Prime Keeper rear-task upper-seam workbench V2
 
 Status: superseded diagnostic workbench, retained as reversible evidence.
-V11 replaces seam-splicing with the exact approved body plus complete action arms.
+V12 replaces all seam-splicing with complete cooking frames.
 
 Review route: `/prime-keeper-rear-task-alignment-v2`
 
-Active successor: `/prime-keeper-animation-drafts-v11`; see
-`PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V11_2026-10-23.md`.
+Active successor: `/prime-keeper-animation-drafts-v12`; see
+`PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V12_2026-10-23.md`.
 
 ## Corrected diagnosis
 

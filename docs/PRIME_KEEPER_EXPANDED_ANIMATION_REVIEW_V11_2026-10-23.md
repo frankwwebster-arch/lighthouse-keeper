@@ -2,12 +2,14 @@
 
 Date: 23 October 2026
 
-Status: reversible review-only draft. No V11 frame is installed in the runtime
-animation bank.
+Status: rejected reversible evidence. No V11 frame is installed in the runtime
+animation bank. Frank rejected V11 because the transferred arm layers retained
+inner sleeve and jumper edges that visibly broke the torso and cream stripe.
+V12 supersedes it with complete cooking frames rather than layered composites.
 
 Routes:
 
-- current review: `/prime-keeper-animation-drafts`
+- active successor: `/prime-keeper-animation-drafts-v12`
 - immutable V11 permalink: `/prime-keeper-animation-drafts-v11`
 
 ## Correction

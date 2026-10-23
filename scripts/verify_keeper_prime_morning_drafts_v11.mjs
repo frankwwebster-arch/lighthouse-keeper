@@ -133,7 +133,7 @@ assert.equal(register.publishedAssets.length, new Set(allFrames.map(frame => fra
 const component = fs.readFileSync(path.join(root, 'src/prime-keeper-drafts/PrimeKeeperDraftReview.tsx'), 'utf8')
 assert.match(component, /useState\(batch\.version === 10\)/, 'V11 alignment ghost is not off by default')
 for (const phrase of ['Show Prime ghost', 'Hide Prime ghost', 'Prime ghost opacity']) assert.ok(component.includes(phrase))
-assert.match(fs.readFileSync(path.join(root, 'src/app/prime-keeper-animation-drafts/page.tsx'), 'utf8'), /keeper_prime_animation_drafts_v11/)
+assert.match(fs.readFileSync(path.join(root, 'src/app/prime-keeper-animation-drafts/page.tsx'), 'utf8'), /keeper_prime_animation_drafts_v1[12]/)
 assert.match(fs.readFileSync(path.join(root, 'src/app/prime-keeper-animation-drafts-v11/page.tsx'), 'utf8'), /keeper_prime_animation_drafts_v11/)
 assert.match(fs.readFileSync(path.join(root, 'src/app/prime-keeper-animation-drafts-v10/page.tsx'), 'utf8'), /keeper_prime_animation_drafts_v10/)
 if (setManifest) for (const asset of register.publishedAssets) {
