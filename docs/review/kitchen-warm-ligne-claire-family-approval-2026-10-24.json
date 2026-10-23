@@ -1,0 +1,34 @@
+{
+  "schema": "lighthouse-keeper/art-approval@1",
+  "approvedOn": "2026-10-24",
+  "authority": "kitchen-warm-ligne-claire-family-2026-10-24-v4",
+  "master": {
+    "path": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+    "sha256": "a8a6972dd8398ec3cd52f42825a5a5f056a1e289d10b77796f3294b3ac85ab98"
+  },
+  "approved": [
+    "warm softly dimensional adult ligne-claire visual family",
+    "perspective",
+    "six equal fitted bay source widths",
+    "exact 84 x 74 logical-pixel fitted bodies",
+    "properly cooked golden food in Oven On",
+    "burnt food retained only in Oven Broken",
+    "Dishwasher Broken independent red-lens flashing",
+    "Oven Broken intermittent internal-cavity flashing"
+  ],
+  "runtimePromoted": false,
+  "supersedes": "all earlier kitchen art and review candidates",
+  "consolidation": {
+    "supersededDraftDirectoriesRemoved": 158,
+    "supersededDraftFilesRemoved": 3402,
+    "supersededDraftBytes": 336928332,
+    "bubbleStoriesCondimentPackRetained": true,
+    "supersededRawDerivativeDirectoriesRemoved": 85,
+    "supersededSourceDirectoriesRemoved": 79,
+    "supersededReviewRoutesRemoved": 134,
+    "retiredArchiveReferencesRemoved": 4218,
+    "exclusiveArchiveObjectsRemoved": 1105,
+    "countExcludesApprovedV4": true,
+    "liveRuntimeSpriteRetainedUntilPromotion": true
+  }
+}

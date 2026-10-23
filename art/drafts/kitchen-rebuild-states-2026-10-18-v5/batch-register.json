@@ -1,8 +1,0 @@
-{
-  "set": "kitchen-rebuild-states-2026-10-18-v5",
-  "status": "awaiting-variable-speed-visual-review",
-  "parent": "kitchen-rebuild-states-2026-10-18-v4",
-  "promotion": "none",
-  "runtimeWiring": "unchanged",
-  "rollback": "Delete V5 only; V4 remains immutable."
-}

@@ -1,8 +1,0 @@
-{
-  "set": "kitchen-rebuild-states-2026-10-19-v9",
-  "status": "awaiting-irregular-failing-bulb-review",
-  "parent": "kitchen-rebuild-states-2026-10-18-v8",
-  "promotion": "none",
-  "runtimeWiring": "unchanged",
-  "rollback": "Delete V9 only; approved V8 geometry and all earlier evidence remain unchanged."
-}

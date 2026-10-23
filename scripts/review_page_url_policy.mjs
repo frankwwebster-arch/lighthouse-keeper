@@ -6,8 +6,10 @@ import { fileURLToPath } from 'node:url'
 // These pages predate the root-absolute URL rule and are immutable. The tree
 // digest lets them remain available without allowing any new relative asset
 // URL—or any mutation of a grandfathered page—to pass publication checks.
-const LEGACY_RELATIVE_PAGE_COUNT = 75
-const LEGACY_RELATIVE_PAGE_TREE_SHA256 = '5c25827dc3c01720646809547956910e8bed51f270544ac14925c426fdd40f98'
+// Kitchen review history was deliberately consolidated on 24 October 2026;
+// its relative-URL pages were deleted rather than grandfathered forever.
+const LEGACY_RELATIVE_PAGE_COUNT = 15
+const LEGACY_RELATIVE_PAGE_TREE_SHA256 = '7f062cb0ac45f9d6e02b57f1cb6309aba5df32c913e61cc4aca9cd9f74fe7485'
 const RELATIVE_ASSET_URL = /["'](?:\.\/)?assets\//
 
 const posix = value => value.split(path.sep).join('/')

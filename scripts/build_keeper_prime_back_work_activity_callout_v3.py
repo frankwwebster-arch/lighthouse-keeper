@@ -33,7 +33,7 @@ V2_REGISTER = V2_PACK / "batch-register.json"
 PAGE = PUBLIC / "index.html"
 RUNTIME_MANIFEST = ROOT / "public/sprites/manifest.json"
 WORKBENCH = ROOT / "data/keeper_animation_workbench.json"
-KITCHEN_REFERENCE = ROOT / "art/raw/kitchen-rebuild-modular-2026-10-19-v10/kitchen-mixed-static.png"
+KITCHEN_REFERENCE = ROOT / "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png"
 
 PHRASE_FRAMES = 42
 PHRASE_FPS = 8

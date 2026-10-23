@@ -1,0 +1,102 @@
+{
+  "schema": "lighthouse-keeper/kitchen-assets@1",
+  "status": "approved-authority",
+  "approvedOn": "2026-10-24",
+  "visualAuthority": {
+    "master": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+    "sha256": "a8a6972dd8398ec3cd52f42825a5a5f056a1e289d10b77796f3294b3ac85ab98",
+    "style": "warm, softly dimensional adult ligne claire",
+    "zoom": [1, 2, 4]
+  },
+  "room": {
+    "logicalSize": [772, 224],
+    "fittedBayCount": 6,
+    "fittedBayOriginsX": [84, 168, 252, 336, 420, 504],
+    "fittedBayCentresX": [126, 210, 294, 378, 462, 546],
+    "fittedBodySize": [84, 74],
+    "fittedRunWidth": 504,
+    "worktopSupportY": 141,
+    "floorSupportY": 208,
+    "keeperStopTurnY": 218,
+    "maximumCentreErrorPixels": 0.5
+  },
+  "masterRegistration": {
+    "bayWidth": 228,
+    "bayBoundariesX": [65, 293, 521, 749, 977, 1205, 1433],
+    "stateBodyRowsY": {
+      "off": [71, 283],
+      "on": [352, 566],
+      "broken": [631, 842]
+    },
+    "moduleOrder": ["cupboard", "drawers", "sink", "dishwasher", "oven", "fridge"]
+  },
+  "stateSemantics": {
+    "sink": {
+      "off": "dry",
+      "on": "narrow water stream from intact tap",
+      "broken": "intact tap and basin with separate flooding layer"
+    },
+    "dishwasher": {
+      "off": "three dark lenses at fixed coordinates",
+      "on": "same three lenses all green",
+      "broken": "same three lenses red; door only ajar; crockery hinted; separate leak"
+    },
+    "oven": {
+      "off": "dark cavity and unlit indicator",
+      "on": "warm cavity with properly cooked golden food and lit red indicator",
+      "broken": "burnt version of the same food; failed dial on two wires; moderately ajar attached door; static red indicator"
+    },
+    "fridge": {
+      "off": "closed undercounter fridge with no lamp",
+      "on": "visually identical to Off",
+      "broken": "mostly closed door sagging down-left from surviving lower hinge; subtle contents; separate leak"
+    },
+    "cupboard": "static in all states",
+    "drawers": "static in all states"
+  },
+  "brokenAnimation": {
+    "frameCount": 40,
+    "fps": 4,
+    "dishwasher": "three red lenses flash intermittently and independently; no body or door movement",
+    "oven": "internal cavity light flashes intermittently; red indicator, body and door remain static",
+    "otherFittedAssets": "no baked animation",
+    "repair": "stops every motion and sound immediately"
+  },
+  "looseObjects": {
+    "kettle": "Off/On lid seated; Broken lid is a separate hovering component; no baked steam",
+    "toaster": "On contains toast; Broken contains burnt toast and a restrained mechanical fault",
+    "bin": "Broken is overfull with grounded refuse; no flies or smell marks",
+    "bowl": "standard contains whisk; Broken has readable crack and spill with whisk beside it; worktop only",
+    "table": "floor-grid object",
+    "chair": "floor-grid object; seat support exactly 7.75 logical pixels above floor"
+  },
+  "ownership": {
+    "counterObjects": ["kettle", "toaster"],
+    "eligibleOwners": ["cupboard", "drawers"],
+    "oneObjectPerOwner": true,
+    "ownerMovesObject": true,
+    "rawCoordinatesPersisted": false,
+    "bowlPlacement": "worktop only",
+    "brokenApplianceMovement": "locked until repaired"
+  },
+  "effects": {
+    "separateLayers": ["water", "steam", "smoke", "suds", "smell", "comic symbols"],
+    "bakedIntoBody": false,
+    "removeOnRepair": true
+  },
+  "motionAndAudio": {
+    "brokenMotionLevels": ["off", "subtle", "emphatic"],
+    "layers": ["whole-object tremor", "component-specific motion"],
+    "sfxToggleIndependent": true,
+    "replaceableSfxSlotPerAssetState": true,
+    "defaultPlaceholder": "intermittent metal rattle for broken appliances",
+    "repairStopsSoundImmediately": true
+  },
+  "packaging": {
+    "approvedDraft": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4",
+    "bodyCandidates": "84x74 RGBA PNG",
+    "animationCell": [92, 82],
+    "transparentSafetyGutter": 4,
+    "runtimePromoted": false
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "set": "kitchen-rebuild-states-2026-10-18-v7",
-  "status": "awaiting-asset-first-workbench-review",
-  "parent": "kitchen-rebuild-states-2026-10-18-v6",
-  "promotion": "none",
-  "runtimeWiring": "unchanged",
-  "rollback": "Delete V7 only; V6 and all prior immutable evidence remain unchanged."
-}

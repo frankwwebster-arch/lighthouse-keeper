@@ -193,50 +193,16 @@ is available in the Bubble creation tool and protected as a minimum by
 `data/activity-stories/catalogue-closure-2026-10-22.json` and
 `npm run verify:activity-stories`.
 
-## Kitchen kettle V47 approval (22 Oct 2026)
+## Kitchen art authority (24 Oct 2026)
 
-Frank approved the exact state-family sheet in
-`art/drafts/kitchen-kettle-bubble-authority-2026-10-22-v47/` with “Approve
-Kettle V47.” Treat its Off, On and Broken art as the current approved kitchen
-kettle visual authority. The immutable review manifest remains closed and its
-external approval record is
-`docs/review/kitchen-kettle-bubble-authority-v47-approval-2026-10-22.json`.
-Nothing is promoted or wired yet. A future kitchen-assets version may split
-the airborne lid into its own animation layer and add user-controlled Broken
-vibration/SFX; do not mutate V47 to do so.
-
-## Kitchen fixed-shell integration V10 (23 Oct 2026)
-
-The current unapproved complete-room integration gate is
-`/keeper-review/kitchen-fixed-shell-layout-v10`. V5 is rejected because its
-movable model-rendered shells still carried incompatible tops and side edges.
-V6 first separated the approved render pixels into a fixed shell and movable
-functional inserts. V7 removed sampled rail/worktop defects, but its flat
-monotone divider surfaces still contrasted with the approved cabinet shading,
-and its colour-derived sink overlay retained countertop/rear-edge pixels. V8
-extended approved face shading to each narrow shared ink seam and corrected the
-sink mask, but the exposed backing above cupboard/drawer fronts still read as a
-blue fascia cropping their upper outlines; its end planes were also too subtle.
-V9 deletes that fascia entirely: the complete approved standard-cabinet front
-starts on the first row beneath the fixed worktop. Wider tapered end planes make
-the exposed left/right depth readable at 1×. V10 preserves that front authority
-and places genuine `16 px` worktop/carcass/plinth returns outside the exact
-`504 px` six-bay front grid. It also supplies the requested Broken loose states
-and a foreground, part-open dishwasher door while keeping the dishwasher's
-controls, three red lamps, interior and water exact. No healing artwork is used. Read
-`data/kitchen_room_grid_contract_v2.json` and
-`docs/KITCHEN_FIXED_SHELL_LAYOUT_V10_2026-10-23.md` before changing kitchen
-placement. The visual support lines (`y=141` counter, `y=208` floor) are not
-the Keeper walking/interaction plane (`y=218`). Kettle/toaster belong to
-distinct cupboard or drawers identities and travel with those cabinets;
-bin/chair/table occupy distinct floor sections. No raw pointer coordinate is
-persisted. All bodies map exactly to `84 × 74`; the sink is a registered cut-in
-and the hob is a separate overlay that moves with the oven while the fixed top
-does not. This
-contract is kitchen-specific: every other room must declare and verify its own
-grid rather than inheriting these coordinates implicitly. V5's single archived
-atlas remains immutable; V6–V10's single archived atlases must remain in the
-same-origin proxy allowlist. V6–V9 are immutable superseded provenance.
+The only continuing kitchen art authority is Warm Ligne-Claire Family V4.
+Read `docs/KITCHEN_ASSET_AUTHORITY.md`,
+`data/kitchen_asset_contract_v1.json` and
+`data/kitchen_room_grid_contract_v2.json` before kitchen work. The exact
+84 × 74 bodies and light-only animation layers live in
+`art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/`. The visual
+master hash is pinned in the approval record. Runtime promotion is still
+pending; do not infer it from visual approval or replace the live sprite early.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 
@@ -425,67 +391,6 @@ future stair scenery and collision/layout work. The grey profile is evidence,
 not final art; the future two-newel, balustrade and handrail treatment may add
 foreground occlusion but may not change any locked measurement or contact.
 
-## Historical Kitchen V6 replacement brief (superseded 17 Oct 2026)
-
-The first `flat-elevation-v2` Kitchen V6 was rejected and removed in full. It
-flattened away too much of the countertop volume, lowered the illustration and
-animation quality, and made the counter treatments inconsistent. Do not
-recover or reuse it. Kitchen V5 is again the sole visual/geometric baseline and
-remains an unapproved draft. This instruction produced the later rejected
-V6–V16 studies and is retained only as provenance; it is superseded by the V17
-exact-V5 rollback below. The historical calibration instructions are in
-`docs/PROMPT_KITCHEN_V5_TO_NEW_V6_2026-10-16.md`: preserve V5's readable
-countertops and polish, correct vertical side geometry, select one common
-shallow countertop construction, and keep base-unit pixels unchanged beneath
-animation effects.
-
-## Frank: flat-cutaway projection authority (16 Oct 2026)
-
-For the current kitchen-basic-assets review and every later version, read
-`docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md`. It supersedes the
-earlier calculated 4% room / 1% furnishing convergence proposal for kitchen
-and standard-room asset authoring. Keep the camera straight on, asset and
-Keeper scale constant, geometry parallel, the visible floor cue at 5 lp, and
-top surfaces shallow. Kitchen V1–V4 and Oven Approach V7 remain historical
-review evidence. V17 is the current unapproved review draft and is exactly V5
-art; the projection specification does not authorise altering those bytes.
-Promote nothing without Frank's explicit approval.
-
-## Kitchen basic assets V5 review (16 Oct 2026)
-
-Frank asked Codex to draft the tier-1 kitchen furniture as the test case for
-snapping, moving and growing furniture. Exact scope, sizes and states are in
-`docs/CLAUDE_TO_CODEX_KITCHEN_BASIC_ASSETS_2026-10-15.md`; the authoritative
-projection/layering contract is now
-`docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md`.
-In short: every floor item fills whole 21-lp bays (two steps). The room
-starts with a 9-bay kitchen and each stretch adds one bay, up to 12. Nothing
-overlaps: the bin has its own bay, left of the fridge.
-The kettle, toaster and mixer each sit on their own one-bay counter unit.
-The cleaning cupboard is always last, takes no bay and is reached through the
-right side wall. Its closed leaf is edge-on; its right-hinged open leaf extends
-left as a rectangular foreground occluder. The table must not block the walk
-to it. V5 remains immutable at `/keeper-review/kitchen-basic-assets-v5/`; its
-exact V17 restoration is the current review authority at
-`/keeper-review/kitchen-v5-exact-rollback-v17/`. Its measured hand-back is
-`docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V5_2026-10-16.md`. It confirms that
-the existing oven clips read with the 19-lp body/door and that the 34×52-lp
-open cupboard leaf hides the Keeper and tool swaps. Nothing is approved,
-promoted or wired.
-
-## Kitchen V17 exact V5 rollback (17 Oct 2026)
-
-Frank rejected V16 because its worktop read as double-layered. The active
-review authority is now `/keeper-review/kitchen-v5-exact-rollback-v17/`, a
-complete byte-for-byte copy of V5 with only a new immutable review URL prefix.
-Treat all Kitchen V6–V16 revisions, including Option B, as rejected historical
-evidence. Do not blend their perspective, furniture, shelf, porthole or
-countertop changes into V17. The binding contract and measured hand-back are
-`docs/KITCHEN_V5_EXACT_ROLLBACK_V17_2026-10-17.md` and
-`docs/CODEX_TO_CLAUDE_KITCHEN_V5_EXACT_ROLLBACK_V17_2026-10-17.md`. Nothing is
-approved, promoted or wired. Any later perspective proposal must be a separate
-review gate.
-
 ## Codex movement-foundation response (14 Oct 2026)
 
 Codex has built the requested root-motion Gate 1 plus a separate measured
@@ -524,13 +429,9 @@ has been approved or changed.
 
 Oven Approach V7 remains historical placement/perspective evidence at
 `/keeper-review/keeper-object-approach-oven-v7/`. Its 96% rear-wall and 99%
-rear-face scaling proposal is explicitly superseded for kitchen and standard
-room authoring by `flat-cutaway-v1`. The current contract keeps the camera
-straight-on, all functional fronts rectangular, rear edges at 100%, the
-Keeper and every asset at constant scale, and uses a 5-lp horizontal floor
-band with no raised front lip. It uses the real 19-lp cooker/hob datum rather
-than lifting or scaling the historical 30-lp proxy. See
-`docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md`.
+rear-face scaling proposal is explicitly superseded. Current kitchen geometry
+is defined only by `docs/KITCHEN_ASSET_AUTHORITY.md` and the two machine-readable
+kitchen contracts named there.
 
 Everything remains a reversible draft awaiting Frank's review. Do not change
 Claude's route tables, runtime geometry, Keeper art or approval records yet.

@@ -1,8 +1,0 @@
-{
-  "set": "kitchen-rebuild-states-2026-10-18-v8",
-  "status": "awaiting-coherent-broken-oven-review",
-  "parent": "kitchen-rebuild-states-2026-10-18-v7",
-  "promotion": "none",
-  "runtimeWiring": "unchanged",
-  "rollback": "Delete V8 only; V7 and all prior immutable evidence remain unchanged."
-}
