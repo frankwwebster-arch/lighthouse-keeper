@@ -54,6 +54,8 @@ an approval candidate and is not promoted into the runtime bank. V1–V8,
 canonical art and runtime sprites remain unchanged.
 
 The active fallback is `/prime-keeper-rear-task-alignment`, where the exact
-torso and approved legs are independently draggable and crop-adjustable for all
-21 affected frames. See
+torso is shown alone first for an explicit jumper-bottom crop in all 21 affected
+frames. The approved legs and alignment controls appear only after that crop is
+confirmed, preventing the existing second seam from being mistaken for an
+alignment problem. See
 `docs/PRIME_KEEPER_REAR_TASK_ALIGNMENT_WORKBENCH_V1_2026-10-23.md`.

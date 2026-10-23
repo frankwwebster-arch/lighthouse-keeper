@@ -28,10 +28,12 @@ withheld by the isolation gate. See
 
 The active fallback is `/prime-keeper-rear-task-alignment`: a local-only,
 per-frame workbench exposing the exact V6 moving torso and hash-pinned approved
-rear legs as separate draggable layers. It supports one-pixel nudging, two crop
-boundaries, 4× waist inspection, frame stepping/playback, per-frame completion,
-PNG download and hash-addressed JSON handback without changing any source or
-runtime art. See
+rear legs as separate layers. Each frame now starts in a torso-only crop view:
+Frank first removes the unwanted lower jumper seam, confirms that crop, and
+only then sees and aligns the approved legs. It supports one-pixel crop and
+alignment nudging, two crop boundaries, 4× waist inspection, frame
+stepping/playback, separate crop-confirmed and aligned states, PNG download and
+hash-addressed JSON handback without changing any source or runtime art. See
 `docs/PRIME_KEEPER_REAR_TASK_ALIGNMENT_WORKBENCH_V1_2026-10-23.md`.
 
 The historical whole-bank gate is the reversible Prime Keeper whole-bank

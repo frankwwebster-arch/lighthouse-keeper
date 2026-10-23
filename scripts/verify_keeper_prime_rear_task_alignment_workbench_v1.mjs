@@ -28,13 +28,17 @@ assert(route.includes('defaultLegsX: correctionByPosition.get(position)?.rootDx'
 
 for (const marker of [
   "const STORAGE_KEY = 'prime-keeper-rear-task-alignment:v1'",
+  "type EditorMode = 'crop' | 'align'",
   'onPointerDown={onPointerDown}',
   'onPointerMove={onPointerMove}',
   'onKeyDown={onKeyDown}',
-  'Nudge by one pixel',
-  'Torso visible through row',
+  'Crop the jumper first',
+  'Crop-only view',
+  'Jumper bottom crop row',
+  'Confirm jumper crop',
+  'Nudge the selected layer',
   'Legs begin from source row',
-  'Copy vertical join to all frames',
+  'Copy crop and vertical setup to all',
   'Download current 256×320 PNG',
   'Copy all settings',
   'Download settings JSON',
@@ -44,7 +48,9 @@ for (const marker of [
 
 assert(workbench.includes('context.drawImage(legs, 82, waistStart, 91'), 'waist must remain inside verified lower-body ownership bounds')
 assert(workbench.includes('context.drawImage(legs, 70, lowerStart, 117'), 'legs must remain inside verified lower-body ownership bounds')
+assert(workbench.includes("editorMode === 'align' && waistStart < 231"), 'legs must stay hidden during the jumper-first crop stage')
 assert(workbench.includes('context.drawImage(torso, 0, 0, WIDTH, torsoCutY'), 'moving torso must be a crop of the exact source')
+assert(workbench.includes("schema: 'lighthouse-keeper/prime-rear-task-manual-alignment@2'"), 'export must retain the jumper crop confirmation state')
 assert(!workbench.includes('/api/'), 'manual workbench must not overwrite server or source state')
 assert(defaultReview.includes('manualAlignmentHref="/prime-keeper-rear-task-alignment"'), 'current review must link the fallback workbench')
 assert(!versionedReview.includes('manualAlignmentHref'), 'immutable V9 permalink must retain its original presentation')

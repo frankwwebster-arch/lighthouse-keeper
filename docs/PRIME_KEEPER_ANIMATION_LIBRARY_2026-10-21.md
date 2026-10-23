@@ -80,9 +80,11 @@ remain at their versioned routes; the current versioned route is
 `docs/PRIME_KEEPER_EXPANDED_ANIMATION_REVIEW_V9_2026-10-23.md`.
 
 The active correction surface is `/prime-keeper-rear-task-alignment`. It keeps
-the immutable V6 torso and approved rear legs separate for manual drag, pixel
-nudge and crop alignment across frames 11–31, then exports hash-addressed JSON.
-It does not alter or promote source art. See
+the immutable V6 torso and approved rear legs separate across frames 11–31.
+Each frame opens with the legs hidden so the unwanted lower jumper seam can be
+cropped first; only an explicitly confirmed crop reveals the legs for manual
+drag and pixel alignment. It then exports hash-addressed JSON and does not alter
+or promote source art. See
 `docs/PRIME_KEEPER_REAR_TASK_ALIGNMENT_WORKBENCH_V1_2026-10-23.md`.
 
 The held-implement POC remains excluded. Its motion feasibility and

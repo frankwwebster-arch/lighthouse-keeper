@@ -13,7 +13,8 @@ jumper hem in rear-task frames 11–31. Frank rejected it on 23 October 2026.
 No further automatic waist composite should be presented for approval without
 first reproducing his chosen join from this workbench.
 
-The workbench exposes two exact, independently movable layers:
+The workbench exposes two exact source layers in a deliberately ordered
+crop-first workflow:
 
 - the immutable V6 moving action torso for the selected frame, cropped only at
   a user-controlled bottom row; and
@@ -27,9 +28,17 @@ No layer is stretched, repainted, generated or written back to source art.
 
 ## Controls and persistence
 
-For every frame from 11 through 31 Frank can:
+For every frame from 11 through 31 Frank first sees the moving torso alone.
+The approved legs remain hidden and all alignment controls remain disabled
+until he has cropped away the unwanted lower seam and explicitly confirmed the
+jumper crop. Only then does the workbench reveal the legs for alignment.
 
-- drag either torso or legs directly;
+Frank can:
+
+- drag the yellow jumper-bottom crop line or change it one source pixel at a
+  time before any leg pixels are visible;
+- confirm each jumper crop independently, with a `C` marker in the frame rail;
+- after confirmation, drag either retained torso or approved legs directly;
 - nudge the selected layer by one authoring pixel with buttons or arrow keys;
 - use Shift + arrow for an eight-pixel move;
 - choose the torso bottom and legs top crop rows;
@@ -43,8 +52,11 @@ For every frame from 11 through 31 Frank can:
 
 Settings remain local to the browser under
 `prime-keeper-rear-task-alignment:v1`. The exported JSON is the handback
-authority for a later deterministic V10 build; the workbench itself promotes
-nothing to the animation bank.
+authority for a later deterministic V10 build and uses schema
+`lighthouse-keeper/prime-rear-task-manual-alignment@2`, including independent
+`cropConfirmed` and `aligned` states. The storage key intentionally remains V1
+so earlier unsaved placement work remains recoverable. The workbench itself
+promotes nothing to the animation bank.
 
 ## Verification
 
@@ -55,6 +67,8 @@ npm run build
 ```
 
 The verifier pins the 21 source frames, lower-body authority hash, ownership
-bounds, V9 horizontal starting registrations, editing controls, local-only
-persistence and export path. The page was also browser-tested for source-image
-decoding, direct dragging, keyboard nudging and independent frame persistence.
+bounds, V9 horizontal starting registrations, crop-first gating, editing
+controls, local-only persistence and export path. The page was also
+browser-tested for source-image decoding, crop-only display, one-pixel crop
+adjustment, explicit crop confirmation, leg reveal and state invalidation after
+a later crop change.

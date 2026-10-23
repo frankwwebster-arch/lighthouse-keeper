@@ -18,6 +18,7 @@ type Props = {
 }
 
 type Layer = 'torso' | 'legs'
+type EditorMode = 'crop' | 'align'
 type Adjustment = {
   torsoX: number
   torsoY: number
@@ -25,6 +26,7 @@ type Adjustment = {
   legsX: number
   legsY: number
   legsCropY: number
+  cropConfirmed: boolean
   aligned: boolean
 }
 
@@ -40,6 +42,7 @@ function defaultAdjustment(frame: RearTaskAlignmentFrame): Adjustment {
     legsX: frame.defaultLegsX,
     legsY: 0,
     legsCropY: 214,
+    cropConfirmed: false,
     aligned: false,
   }
 }
@@ -62,6 +65,7 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
   const [adjustments, setAdjustments] = useState<Record<number, Adjustment>>(defaults)
   const [frameIndex, setFrameIndex] = useState(0)
   const [selectedLayer, setSelectedLayer] = useState<Layer>('legs')
+  const [editorMode, setEditorMode] = useState<EditorMode>('crop')
   const [zoom, setZoom] = useState(2)
   const [ready, setReady] = useState(false)
   const [loadError, setLoadError] = useState('')
@@ -73,10 +77,11 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
   const seamRef = useRef<HTMLCanvasElement>(null)
   const torsoSourceRef = useRef<HTMLCanvasElement>(null)
   const legsSourceRef = useRef<HTMLCanvasElement>(null)
-  const dragRef = useRef<{ pointerId: number; startX: number; startY: number; initialX: number; initialY: number } | null>(null)
+  const dragRef = useRef<{ kind: EditorMode; pointerId: number; startX: number; startY: number; initialX: number; initialY: number } | null>(null)
 
   const frame = frames[frameIndex]
   const adjustment = adjustments[frame.position] ?? defaultAdjustment(frame)
+  const cropped = Object.values(adjustments).filter((item) => item.cropConfirmed).length
   const completed = Object.values(adjustments).filter((item) => item.aligned).length
 
   useEffect(() => {
@@ -128,9 +133,9 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
     // exact trouser/boot pixels only: the narrow waist through row 230, then
     // the wider legs below. Nothing is repainted or inferred.
     const waistStart = Math.max(legsCropY, 214)
-    if (waistStart < 231) context.drawImage(legs, 82, waistStart, 91, 231 - waistStart, 82 + adjustment.legsX, waistStart + adjustment.legsY, 91, 231 - waistStart)
+    if (editorMode === 'align' && waistStart < 231) context.drawImage(legs, 82, waistStart, 91, 231 - waistStart, 82 + adjustment.legsX, waistStart + adjustment.legsY, 91, 231 - waistStart)
     const lowerStart = Math.max(legsCropY, 231)
-    if (lowerStart < HEIGHT) context.drawImage(legs, 70, lowerStart, 117, HEIGHT - lowerStart, 70 + adjustment.legsX, lowerStart + adjustment.legsY, 117, HEIGHT - lowerStart)
+    if (editorMode === 'align' && lowerStart < HEIGHT) context.drawImage(legs, 70, lowerStart, 117, HEIGHT - lowerStart, 70 + adjustment.legsX, lowerStart + adjustment.legsY, 117, HEIGHT - lowerStart)
 
     const torsoCutY = clamp(adjustment.torsoCutY, 1, HEIGHT)
     context.drawImage(torso, 0, 0, WIDTH, torsoCutY, adjustment.torsoX, adjustment.torsoY, WIDTH, torsoCutY)
@@ -144,7 +149,7 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
     seamContext.clearRect(0, 0, seam.width, seam.height)
     seamContext.imageSmoothingEnabled = false
     seamContext.drawImage(canvas, 48, 184, 160, 72, 0, 0, 160, 72)
-  }, [adjustment, frame.torsoSrc, legsSrc])
+  }, [adjustment, editorMode, frame.torsoSrc, legsSrc])
 
   useEffect(() => { renderComposite() }, [renderComposite, ready])
 
@@ -163,13 +168,17 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
   }, [frame])
 
   const nudge = useCallback((dx: number, dy: number) => {
+    if (editorMode === 'crop') {
+      if (dy) updateCurrent((current) => ({ ...current, torsoCutY: clamp(current.torsoCutY + dy, 190, 226), cropConfirmed: false, aligned: false }))
+      return
+    }
     updateCurrent((current) => selectedLayer === 'torso'
       ? { ...current, torsoX: current.torsoX + dx, torsoY: current.torsoY + dy, aligned: false }
       : { ...current, legsX: current.legsX + dx, legsY: current.legsY + dy, aligned: false })
-  }, [selectedLayer, updateCurrent])
+  }, [editorMode, selectedLayer, updateCurrent])
 
   const exportPayload = useCallback(() => ({
-    schema: 'lighthouse-keeper/prime-rear-task-manual-alignment@1',
+    schema: 'lighthouse-keeper/prime-rear-task-manual-alignment@2',
     savedAt: new Date().toISOString(),
     source: {
       torsoBatch: 'keeper-prime-morning-drafts-v6',
@@ -220,7 +229,9 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
     if (!ready) return
     setPlaying(false)
     const point = pointerPosition(event)
+    if (editorMode === 'crop') updateCurrent({ torsoCutY: clamp(point.y - adjustment.torsoY, 190, 226), cropConfirmed: false, aligned: false })
     dragRef.current = {
+      kind: editorMode,
       pointerId: event.pointerId,
       startX: point.x,
       startY: point.y,
@@ -234,6 +245,10 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
     const drag = dragRef.current
     if (!drag || drag.pointerId !== event.pointerId) return
     const point = pointerPosition(event)
+    if (drag.kind === 'crop') {
+      updateCurrent({ torsoCutY: clamp(point.y - adjustment.torsoY, 190, 226), cropConfirmed: false, aligned: false })
+      return
+    }
     const x = drag.initialX + Math.round(point.x - drag.startX)
     const y = drag.initialY + Math.round(point.y - drag.startY)
     updateCurrent((current) => selectedLayer === 'torso'
@@ -247,6 +262,12 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
 
   const onKeyDown = (event: React.KeyboardEvent<HTMLCanvasElement>) => {
     const step = event.shiftKey ? 8 : 1
+    if (editorMode === 'crop') {
+      if (event.key !== 'ArrowUp' && event.key !== 'ArrowDown') return
+      event.preventDefault()
+      nudge(0, event.key === 'ArrowUp' ? -step : step)
+      return
+    }
     const direction = event.key === 'ArrowLeft' ? [-step, 0] : event.key === 'ArrowRight' ? [step, 0] : event.key === 'ArrowUp' ? [0, -step] : event.key === 'ArrowDown' ? [0, step] : null
     if (!direction) return
     event.preventDefault()
@@ -256,6 +277,7 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
   const changeFrame = (next: number) => {
     setPlaying(false)
     setFrameIndex(clamp(next, 0, frames.length - 1))
+    setEditorMode('crop')
   }
 
   return <main className={styles.page}>
@@ -263,12 +285,12 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
       <nav><a href="/prime-keeper-animation-drafts">Animation review</a><span>/</span><strong>Manual rear-task alignment</strong></nav>
       <p className={styles.eyebrow}>Exact source layers · no artwork overwritten</p>
       <h1>You place<br />the join.</h1>
-      <p>This is the fallback you requested. Each of frames 11–31 has the exact moving action torso above the exact approved rear legs. Drag either layer, nudge it one authoring pixel at a time, and move both crop boundaries. Every frame saves independently in this browser.</p>
+      <p>This is the fallback you requested. First crop the unwanted lower seam from the moving jumper by itself. Only after confirming that crop are the exact approved rear legs introduced for alignment. Every frame saves independently in this browser.</p>
     </header>
 
     <section className={styles.status} aria-live="polite">
       <strong>{loadError || (ready ? 'All 22 exact source images decoded' : 'Decoding exact source images…')}</strong>
-      <span>{completed} / {frames.length} marked aligned</span>
+      <span>{cropped} / {frames.length} jumper crops confirmed · {completed} / {frames.length} fully aligned</span>
     </section>
 
     <section className={styles.workbench}>
@@ -283,9 +305,9 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
               ref={canvasRef}
               width={WIDTH}
               height={HEIGHT}
-              style={{ width: WIDTH * zoom, height: HEIGHT * zoom }}
+              style={{ width: WIDTH * zoom, height: HEIGHT * zoom, cursor: editorMode === 'crop' ? 'row-resize' : 'move' }}
               tabIndex={0}
-              aria-label={`Frame ${frame.position} composite. Drag selected ${selectedLayer} layer or use arrow keys.`}
+              aria-label={editorMode === 'crop' ? `Frame ${frame.position} jumper crop. Drag vertically or use up and down arrow keys.` : `Frame ${frame.position} composite. Drag selected ${selectedLayer} layer or use arrow keys.`}
               onPointerDown={onPointerDown}
               onPointerMove={onPointerMove}
               onPointerUp={stopDragging}
@@ -293,7 +315,7 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
               onKeyDown={onKeyDown}
             />
             <i className={styles.floorGuide} style={{ top: 316 * zoom }}><span>floor 316</span></i>
-            <i className={styles.cropGuide} style={{ top: (selectedLayer === 'torso' ? adjustment.torsoCutY + adjustment.torsoY : adjustment.legsCropY + adjustment.legsY) * zoom }}><span>{selectedLayer} boundary</span></i>
+            <i className={styles.cropGuide} style={{ top: (adjustment.torsoCutY + adjustment.torsoY) * zoom }}><span>jumper crop · row {adjustment.torsoCutY}</span></i>
           </div>
         </div>
         <div className={styles.seamBlock}>
@@ -304,37 +326,47 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
 
       <aside className={styles.controls}>
         <section>
-          <h3>1. Select the layer</h3>
+          <h3>1. Crop the jumper first</h3>
           <div className={styles.layerButtons}>
-            <button className={selectedLayer === 'torso' ? styles.active : ''} onClick={() => setSelectedLayer('torso')}><span>Moving torso</span><code>x {adjustment.torsoX} · y {adjustment.torsoY}</code></button>
-            <button className={selectedLayer === 'legs' ? styles.active : ''} onClick={() => setSelectedLayer('legs')}><span>Approved legs</span><code>x {adjustment.legsX} · y {adjustment.legsY}</code></button>
+            <button className={editorMode === 'crop' ? styles.active : ''} onClick={() => setEditorMode('crop')}><span>Crop-only view</span><code>legs hidden</code></button>
+            <button className={adjustment.cropConfirmed ? styles.active : ''} onClick={() => { updateCurrent({ cropConfirmed: true, aligned: false }); setEditorMode('align') }}><span>{adjustment.cropConfirmed ? '✓ Crop confirmed' : 'Confirm jumper crop'}</span><code>then show legs</code></button>
           </div>
-          <p>Drag directly on the large character, or focus it and use the arrow keys. Shift + arrow moves eight pixels.</p>
+          <label>Keep jumper through row <output>{adjustment.torsoCutY - 1}</output><input aria-label="Jumper bottom crop row" type="range" min={190} max={226} value={adjustment.torsoCutY} onChange={(event) => { setEditorMode('crop'); updateCurrent({ torsoCutY: Number(event.target.value), cropConfirmed: false, aligned: false }) }} /></label>
+          <div className={styles.nudge}><button onClick={() => { setEditorMode('crop'); updateCurrent((current) => ({ ...current, torsoCutY: clamp(current.torsoCutY - 1, 190, 226), cropConfirmed: false, aligned: false })) }}>↑</button><button disabled>←</button><button onClick={() => { setEditorMode('crop'); updateCurrent((current) => ({ ...current, torsoCutY: clamp(current.torsoCutY + 1, 190, 226), cropConfirmed: false, aligned: false })) }}>↓</button><button disabled>→</button></div>
+          <p>Only the torso is shown in this mode. Drag the yellow crop line or use ↑/↓ until the unwanted lower seam disappears. Confirm the crop before aligning anything else.</p>
         </section>
 
         <section>
-          <h3>2. Nudge by one pixel</h3>
+          <h3>2. Align the retained torso and legs</h3>
+          <div className={styles.layerButtons}>
+            <button disabled={!adjustment.cropConfirmed} className={editorMode === 'align' && selectedLayer === 'torso' ? styles.active : ''} onClick={() => { setEditorMode('align'); setSelectedLayer('torso') }}><span>Retained torso</span><code>x {adjustment.torsoX} · y {adjustment.torsoY}</code></button>
+            <button disabled={!adjustment.cropConfirmed} className={editorMode === 'align' && selectedLayer === 'legs' ? styles.active : ''} onClick={() => { setEditorMode('align'); setSelectedLayer('legs') }}><span>Approved legs</span><code>x {adjustment.legsX} · y {adjustment.legsY}</code></button>
+          </div>
+          <p>{adjustment.cropConfirmed ? 'The cropped jumper is now composited over the legs. Drag the selected layer or use arrow keys; Shift + arrow moves eight pixels.' : 'Confirm the jumper crop above to reveal and align the legs.'}</p>
+        </section>
+
+        <section>
+          <h3>3. Nudge the selected layer</h3>
           <div className={styles.nudge}>
-            <button onClick={() => nudge(0, -1)}>↑</button>
-            <button onClick={() => nudge(-1, 0)}>←</button>
-            <button onClick={() => nudge(0, 1)}>↓</button>
-            <button onClick={() => nudge(1, 0)}>→</button>
+            <button disabled={!adjustment.cropConfirmed || editorMode !== 'align'} onClick={() => nudge(0, -1)}>↑</button>
+            <button disabled={!adjustment.cropConfirmed || editorMode !== 'align'} onClick={() => nudge(-1, 0)}>←</button>
+            <button disabled={!adjustment.cropConfirmed || editorMode !== 'align'} onClick={() => nudge(0, 1)}>↓</button>
+            <button disabled={!adjustment.cropConfirmed || editorMode !== 'align'} onClick={() => nudge(1, 0)}>→</button>
           </div>
         </section>
 
         <section>
-          <h3>3. Set the join</h3>
-          <label>Torso visible through row <output>{adjustment.torsoCutY - 1}</output><input type="range" min={204} max={226} value={adjustment.torsoCutY} onChange={(event) => updateCurrent({ torsoCutY: Number(event.target.value), aligned: false })} /></label>
+          <h3>4. Refine the legs boundary</h3>
           <label>Legs begin from source row <output>{adjustment.legsCropY}</output><input type="range" min={204} max={230} value={adjustment.legsCropY} onChange={(event) => updateCurrent({ legsCropY: Number(event.target.value), aligned: false })} /></label>
-          <p>The legs are drawn first; the moving torso is drawn over them. Cropping does not repaint, stretch or generate a pixel.</p>
+          <p>The approved legs are drawn first; only your already-cropped jumper is drawn over them. Cropping does not repaint, stretch or generate a pixel.</p>
         </section>
 
         <section className={styles.frameActions}>
-          <h3>4. Save this frame</h3>
-          <button className={adjustment.aligned ? styles.approved : ''} onClick={() => updateCurrent({ aligned: !adjustment.aligned })}>{adjustment.aligned ? '✓ Marked aligned' : 'Mark frame aligned'}</button>
-          <button onClick={() => updateCurrent(defaultAdjustment(frame))}>Reset this frame</button>
-          <button onClick={() => setAdjustments((current) => Object.fromEntries(frames.map((item) => [item.position, { ...(current[item.position] ?? defaultAdjustment(item)), torsoY: adjustment.torsoY, torsoCutY: adjustment.torsoCutY, legsY: adjustment.legsY, legsCropY: adjustment.legsCropY, aligned: false }]))) }>Copy vertical join to all frames</button>
-          <button onClick={downloadFrame}>Download current 256×320 PNG</button>
+          <h3>5. Save this frame</h3>
+          <button disabled={!adjustment.cropConfirmed} className={adjustment.aligned ? styles.approved : ''} onClick={() => updateCurrent({ aligned: !adjustment.aligned })}>{adjustment.aligned ? '✓ Marked aligned' : adjustment.cropConfirmed ? 'Mark frame aligned' : 'Confirm jumper crop first'}</button>
+          <button onClick={() => { updateCurrent(defaultAdjustment(frame)); setEditorMode('crop') }}>Reset this frame</button>
+          <button onClick={() => setAdjustments((current) => Object.fromEntries(frames.map((item) => [item.position, { ...(current[item.position] ?? defaultAdjustment(item)), torsoY: adjustment.torsoY, torsoCutY: adjustment.torsoCutY, legsY: adjustment.legsY, legsCropY: adjustment.legsCropY, cropConfirmed: false, aligned: false }]))) }>Copy crop and vertical setup to all</button>
+          <button disabled={editorMode !== 'align'} onClick={downloadFrame}>Download current 256×320 PNG</button>
         </section>
       </aside>
     </section>
@@ -346,7 +378,7 @@ export default function RearTaskAlignmentWorkbench({ frames, legsSrc, legsSha256
         <button disabled={!ready} onClick={() => changeFrame(frameIndex + 1)}>Frame →</button>
         <output>{frameIndex + 1} / {frames.length}</output>
       </div>
-      <div className={styles.frameRail}>{frames.map((item, index) => <button key={item.position} className={`${index === frameIndex ? styles.current : ''} ${adjustments[item.position]?.aligned ? styles.done : ''}`} onClick={() => changeFrame(index)}><span>{item.position}</span><small>{adjustments[item.position]?.aligned ? '✓' : ''}</small></button>)}</div>
+      <div className={styles.frameRail}>{frames.map((item, index) => <button key={item.position} className={`${index === frameIndex ? styles.current : ''} ${adjustments[item.position]?.aligned ? styles.done : ''}`} onClick={() => changeFrame(index)}><span>{item.position}</span><small>{adjustments[item.position]?.aligned ? '✓' : adjustments[item.position]?.cropConfirmed ? 'C' : ''}</small></button>)}</div>
     </section>
 
     <section className={styles.sources}>
