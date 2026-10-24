@@ -132,30 +132,38 @@ hash is pinned in the promotion record.
 
 ## Current loose-asset review
 
-The active correction review is published at
-`/keeper-review/kitchen-room-layout-v4/`. It uses the locked fitted base in all
+The active redraft review is published at
+`/keeper-review/kitchen-room-layout-v5/`. It uses the locked fitted base in all
 three global states, so the full cabinet run cannot move and no source-sheet row
 boundary can appear. Sink flow, fitted damage, three independent dishwasher
 warning lights, the oven cavity light and floor water are registered transparent
 overlays. Floor water sits on the walking plane and never participates in the
 fitted-run box.
 
-The toaster, kettle, bin, bowl, table and rear-facing chair are displayed at
-native source resolution with explicit physical contact rows. Exterior sheet
-shadows and neighbouring-state components are excluded. Toaster On is the exact
-Off body with toast seated in its slots. Kettle On is byte-identical to Off and
-has no drawn steam. The broken bowl has a clear missing section and safe top-left
-gutter. Both bin states have a 1.5-times-larger body/core made by duplicating
-native straight runs, without scaling or resampling. The chair retains its
-source width, and chair/table heights are checked against the native 256 x 320
-standing and seated Keeper instead of an enlarged foreground proxy.
+The toaster, kettle, bin, bowl, table and rear-facing chair are new target-sized
+source drawings extracted 1:1, with no downscaling, resampling or colour
+transform. Each retains its authored curved contact shadow and an eight-pixel
+transparent safety gutter. Countertop support is local y=84, thirteen native
+pixels forward from V4, so the objects occupy the visible worktop plane rather
+than its rear edge. Toaster On is one connected silhouette with toast seated in
+its slots. Kettle On is byte-identical to Off and has no drawn steam. The broken
+bowl physically loses its front-left wall and includes detached pieces.
+
+Prime and the kitchen are registered into one world density before camera zoom.
+The existing 256 x 320 Prime source cell uses 8 pixels per logical pixel while
+the kitchen uses 228/21, so Prime displays at 228/168 = 1.357142857 times its
+source cell: 347.43 x 434.29 kitchen-world pixels. This makes the approved
+213-pixel worktop read as about 850 mm against a 1,750 mm Keeper, around waist
+height. The table is modelled at 750 mm and the rear-facing chair at a 460 mm
+seat height. This display registration does not rewrite or downscale either
+source; camera zoom applies uniformly to the composed world.
 
 This page is review-only: no approved source or runtime pixel is overwritten or
-promoted, and no superseded kitchen draft is restored. Its exact outputs,
-source hashes, support rows, global-state map, Keeper reference, pace mapping
-and discard boundary are recorded in `data/kitchen_room_layout_review_v4.json`
-and its extraction register. V3 is frozen as superseded evidence of the crop,
-state-registration and scale faults.
+promoted. Its exact outputs, source hashes, support rows, global-state map,
+world-scale equation, pace mapping and discard boundary are recorded in
+`data/kitchen_room_layout_review_v5.json` and its extraction register. V4's
+loose family is rejected and frozen as evidence; its fitted-unit approval
+remains binding.
 
 V1 is rejected and frozen only as historical evidence. It incorrectly used the
 reduced 84 × 74 compatibility bodies as review artwork, resized loose crops,

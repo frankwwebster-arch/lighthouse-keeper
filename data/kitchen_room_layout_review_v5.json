@@ -1,0 +1,59 @@
+{
+  "schema": "lighthouse-keeper/kitchen-room-layout-review@5",
+  "version": 5,
+  "createdOn": "2026-10-24",
+  "status": "review-only-awaiting-loose-asset-review",
+  "reviewRoute": "/keeper-review/kitchen-room-layout-v5/",
+  "supersedesReview": "/keeper-review/kitchen-room-layout-v4/",
+  "authority": {
+    "document": "docs/KITCHEN_ASSET_AUTHORITY.md",
+    "contract": "data/kitchen_asset_contract_v1.json",
+    "roomGrid": "data/kitchen_room_grid_contract_v2.json",
+    "lockedFittedBaseSha256": "ba84022371aea330e2fe50e5ad8fb37bf9d210aa1e09649d7f2fc69f460f49b1"
+  },
+  "nativeAssets": {
+    "register": "art/drafts/kitchen-room-layout-review-2026-10-24-v5/native-assets/extraction-register.json",
+    "registerSha256": "c4f04cf3b19ddd593ee7a1d22b283700cd25a3ae4e21044502d66b90e4a31970",
+    "looseSource": "art/drafts/kitchen-room-layout-review-2026-10-24-v5/sources/generated-loose-family-source-plate.png",
+    "looseSourceSha256": "2bb031ee62f70cc4231f8ad6efe3d3b4e351ccc98a0cbcb1be99b428744cdd5f",
+    "furnitureSource": "art/drafts/kitchen-room-layout-review-2026-10-24-v5/sources/generated-furniture-source-plate.png",
+    "furnitureSourceSha256": "acaee761d88d1ff0832cd8ad8c9c767e579749ddeadb144a73ec84301ccfb24d",
+    "scaleAppliedToKitchenArt": false,
+    "downscalingApplied": false,
+    "resamplingApplied": false,
+    "colourTransformApplied": false
+  },
+  "redraft": {
+    "shadows": "authored curved contact shadows retained with every loose silhouette; no clipped horizontal substitute",
+    "support": "counter and worktop assets move 13 native pixels forward from V4 onto the visible worktop plane",
+    "toasterOn": "single connected silhouette with toast seated in the slots",
+    "kettleOn": "byte-identical to OFF; steam remains an external effect",
+    "brokenBowl": "front-left wall is physically absent, with detached pieces and spill",
+    "furniture": "table and rear-facing chair use physical millimetre targets against the shared kitchen/Prime world density"
+  },
+  "worldScale": {
+    "kitchenPixelsPerLogicalPixel": 10.857142857142858,
+    "keeperSourcePixelsPerLogicalPixel": 8,
+    "keeperDisplayScale": 1.3571428571428572,
+    "keeperSourceCell": [256, 320],
+    "keeperDisplayCellInKitchenPixels": [347.428571, 434.285714],
+    "cabinetWorktopModelMm": 850,
+    "primeKeeperModelMm": 1750,
+    "tableModelHeightMm": 750,
+    "chairSeatModelHeightMm": 460,
+    "cameraRule": "Zoom the composed world uniformly; never use camera zoom to rewrite source assets."
+  },
+  "locomotion": {
+    "primeKeeperPaceLogicalPixels": 10.5,
+    "primeKeeperPaceKeeperUnits": 84,
+    "sourcePixelsPerPace": 114,
+    "assetResolutionIndependentOfPaceGrid": true
+  },
+  "boundary": {
+    "runtimeChanged": false,
+    "gameplayChanged": false,
+    "approvedFittedUnitsChanged": false,
+    "legacyRuntime84x74UsedByReview": false,
+    "rollback": "Rejecting V5 discards only its route, shell, generated V5 source plates, native loose outputs and V5 references. The approved fitted base and overlays, V1-V4 review evidence, Runtime Promotion V1 and the retained 84 x 74 room remain byte-identical."
+  }
+}

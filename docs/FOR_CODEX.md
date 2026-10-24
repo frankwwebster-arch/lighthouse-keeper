@@ -207,10 +207,13 @@ compatibility boundary; its 84 × 74 derivatives are not visual authority and
 must not be used for art review. The fitted units are approved and locked to the
 hash in `docs/review/kitchen-fitted-units-lock-approval-2026-10-24.json`; never
 change their bodies. The active loose-asset reviewer is
-`/keeper-review/kitchen-room-layout-v4/`. V4 keeps one fixed native fitted base,
-uses separate state/effect layers, corrects loose crop/support/state faults and
-checks furniture against the native 256 × 320 Keeper. It changes no gameplay or
-runtime art; V1-V3 are frozen evidence.
+`/keeper-review/kitchen-room-layout-v5/`. V5 keeps one fixed native fitted base,
+uses separate state/effect layers, redraws every loose object at target source
+size with curved contact shadows, moves worktop placement forward and registers
+the approved 256 × 320 Prime at 228/168 display scale into the kitchen's world
+density before uniform camera zoom. Kitchen art is never downscaled or
+resampled. It changes no gameplay or runtime art. V4's loose family is rejected
+evidence, while the fitted-unit subset approved there remains locked.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 
