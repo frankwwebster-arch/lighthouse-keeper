@@ -111,6 +111,21 @@ draft, production-source and public-delivery locations recorded in
 `public/sprites/room_kitchen.png` is neither overwritten nor removed and its
 hash is pinned in the promotion record.
 
+## Current loose-asset review
+
+The complete movable room is published at
+`/keeper-review/kitchen-room-layout-v1/`. It composes the exact promoted fitted
+bodies in the full 772 × 224 coordinate system and clips the toaster, kettle,
+bin, bowl, table and chair directly from the approved high-resolution master.
+Fitted units, counter ownership and floor-slot swapping follow the room-grid
+contract; Broken appliances stay movement-locked until repaired.
+
+This page exists so Frank can specify amendments to the loose assets shown on
+the source sheet. It is review-only: no master pixel is extracted, overwritten
+or promoted, and no superseded kitchen draft is restored. Its exact crop and
+layout declarations, immutable master hash and discard boundary are recorded
+in `data/kitchen_room_layout_review_v1.json`.
+
 ## Consolidation record
 
 The approval ended an unusually large exploratory run. Immediately before

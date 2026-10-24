@@ -1,0 +1,67 @@
+{
+  "schema": "lighthouse-keeper/kitchen-room-layout-review@1",
+  "version": 1,
+  "createdOn": "2026-10-24",
+  "status": "review-only-awaiting-loose-asset-amendments",
+  "reviewRoute": "/keeper-review/kitchen-room-layout-v1/",
+  "authority": {
+    "document": "docs/KITCHEN_ASSET_AUTHORITY.md",
+    "contract": "data/kitchen_asset_contract_v1.json",
+    "roomGrid": "data/kitchen_room_grid_contract_v2.json",
+    "master": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+    "masterSha256": "a8a6972dd8398ec3cd52f42825a5a5f056a1e289d10b77796f3294b3ac85ab98"
+  },
+  "room": {
+    "logicalSize": [772, 224],
+    "fittedBodySize": [84, 74],
+    "fittedBodyY": 134,
+    "fittedBayOriginsX": [84, 168, 252, 336, 420, 504],
+    "fittedBayCentresX": [126, 210, 294, 378, 462, 546],
+    "worktopSupportY": 141,
+    "floorSupportY": 208,
+    "keeperStopTurnY": 218
+  },
+  "defaultLayout": {
+    "fittedOrder": ["cupboard", "drawers", "sink", "dishwasher", "oven", "fridge"],
+    "counterOwners": {"kettle": "cupboard", "toaster": "drawers"},
+    "bowlCentreX": 378,
+    "floorAssignments": {"bin": "floor-west", "chair": "floor-dining-left", "table": "floor-dining-right"}
+  },
+  "sourceSheetCrops": {
+    "toaster": {
+      "off": [40, 879, 118, 130],
+      "on": [146, 873, 120, 136],
+      "broken": [258, 874, 124, 136]
+    },
+    "kettle": {
+      "off": [392, 886, 116, 120],
+      "on": [498, 886, 122, 120],
+      "broken": [620, 872, 120, 137]
+    },
+    "bin": {
+      "off": [764, 876, 91, 133],
+      "on": [764, 876, 91, 133],
+      "broken": [843, 866, 135, 145]
+    },
+    "bowl": {
+      "off": [985, 880, 115, 130],
+      "on": [985, 880, 115, 130],
+      "broken": [1085, 879, 145, 134]
+    },
+    "table": {"off": [1230, 887, 194, 118]},
+    "chair": {"off": [1428, 841, 108, 169]}
+  },
+  "movementPolicy": {
+    "fitted": "swap by unit identity among the six exact 84-pixel bays",
+    "counter": "kettle and toaster snap only to cupboard/drawers and swap owners when occupied",
+    "bowl": "snaps to the nearest worktop bay centre",
+    "floor": "bin, chair and table snap to the three declared floor sections and swap when occupied",
+    "brokenAppliances": "movement locked until state is changed to Off or On"
+  },
+  "boundary": {
+    "runtimeChanged": false,
+    "approvedArtChanged": false,
+    "sourceSheetTreatment": "CSS clipping only; source pixels are neither rewritten nor promoted",
+    "rollback": "Remove public/keeper-review/kitchen-room-layout-v1, its archive set/object reference, this record and its draft handoff. Runtime Promotion V1 and every approved source remain unchanged."
+  }
+}

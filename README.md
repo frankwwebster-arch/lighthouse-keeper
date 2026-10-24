@@ -274,9 +274,17 @@ in `data/kitchen_runtime_promotion_v1.json`. The complete approved 772 × 224
 coordinate system is uniformly fitted into the current floor viewport; the six
 body cells themselves remain exact 84 × 74 assets at their declared origins.
 
+The full movable composition reviewer is
+`/keeper-review/kitchen-room-layout-v1/`. It shows the exact 772 × 224 room,
+supports contract-valid fitted/counter/worktop/floor dragging, and exposes the
+loose toaster, kettle, bin, bowl, table and chair states clipped directly from
+the approved source sheet for the current amendment round. It changes no
+approved art or runtime asset.
+
 ```sh
 npm run verify:kitchen-approved-family
 npm run verify:kitchen-runtime
+npm run verify:kitchen-room-layout-review-v1
 ```
 
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page

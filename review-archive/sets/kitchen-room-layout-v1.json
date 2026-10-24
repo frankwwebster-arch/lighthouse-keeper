@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "set": "kitchen-room-layout-v1",
+  "page": {
+    "path": "public/keeper-review/kitchen-room-layout-v1/index.html",
+    "sha256": "3638a275b375ce8731aa4b924522f8f37f44f453044ab9a7c4ca68644d3c25b6",
+    "bytes": 17948
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-room-layout-v1/assets/kitchen-v4-master.png": {
+      "sha256": "a8a6972dd8398ec3cd52f42825a5a5f056a1e289d10b77796f3294b3ac85ab98",
+      "extension": ".png",
+      "bytes": 1654608,
+      "object": "review-archive/objects/a8/a8a6972dd8398ec3cd52f42825a5a5f056a1e289d10b77796f3294b3ac85ab98.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a8/a8a6972dd8398ec3cd52f42825a5a5f056a1e289d10b77796f3294b3ac85ab98.png"
+    }
+  }
+}
