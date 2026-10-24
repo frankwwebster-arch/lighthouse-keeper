@@ -1,0 +1,39 @@
+{
+  "schema": "lighthouse-keeper/kitchen-room-layout-review@8",
+  "version": 8,
+  "createdOn": "2026-10-25",
+  "status": "review-only-awaiting-broken-state-review",
+  "reviewRoute": "/keeper-review/kitchen-room-layout-v8/",
+  "supersedesReview": "/keeper-review/kitchen-room-layout-v7/",
+  "authority": {
+    "document": "docs/KITCHEN_ASSET_AUTHORITY.md",
+    "contract": "data/kitchen_asset_contract_v1.json",
+    "roomGrid": "data/kitchen_room_grid_contract_v2.json",
+    "lockedFittedBaseSha256": "ba84022371aea330e2fe50e5ad8fb37bf9d210aa1e09649d7f2fc69f460f49b1"
+  },
+  "nativeAssets": {
+    "register": "art/drafts/kitchen-room-layout-review-2026-10-25-v8/native-assets/extraction-register.json",
+    "registerSha256": "3178c24438ab520ba10142196aef85149602e26764e00daff51b0a147d664ce2",
+    "predecessorRegister": "art/drafts/kitchen-room-layout-review-2026-10-25-v7/native-assets/extraction-register.json",
+    "predecessorRegisterSha256": "eef929ce4e6f7f1d7f8fafc406de6d90605af6a74b37a35eeb5f855af0379a8a",
+    "scaleAppliedToKitchenArt": false,
+    "downscalingApplied": false,
+    "resamplingApplied": false,
+    "colourTransformApplied": false
+  },
+  "corrections": {
+    "toaster": "detached countertop splodges removed; own feet establish support",
+    "bowl": "debris and hanging unstriped panel removed; transparent front-wall break",
+    "sink": "three-frame tap-outlet gush plus sink-centred walking-plane puddle",
+    "dishwasher": "fixed lens-only overlays pulse without cream rectangles or translation",
+    "oven": "cavity-only translucent glow flickers; prior food/door overlay removed",
+    "waterOwnership": "no broken-overlay leak below dishwasher/fridge and no puddle below oven/fridge"
+  },
+  "boundary": {
+    "runtimeChanged": false,
+    "gameplayChanged": false,
+    "approvedFittedUnitsChanged": false,
+    "roomGridChanged": false,
+    "rollback": "Rejecting V8 discards only its route, page and V8 native correction directory. V1-V7, the V4 fitted-unit lock, Runtime Promotion V1 and retained 84 x 74 runtime room remain byte-identical."
+  }
+}

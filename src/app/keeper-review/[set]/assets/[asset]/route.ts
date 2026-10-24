@@ -15,6 +15,7 @@ const SAME_ORIGIN_ARCHIVE_SETS = new Set([
   'kitchen-room-layout-v5',
   'kitchen-room-layout-v6',
   'kitchen-room-layout-v7',
+  'kitchen-room-layout-v8',
 ])
 
 export async function GET(_request: Request, context: { params: { set: string; asset: string } }) {

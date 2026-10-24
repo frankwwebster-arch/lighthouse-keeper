@@ -207,16 +207,17 @@ compatibility boundary; its 84 × 74 derivatives are not visual authority and
 must not be used for art review. The fitted units are approved and locked to the
 hash in `docs/review/kitchen-fitted-units-lock-approval-2026-10-24.json`; never
 change their bodies. The active loose-asset reviewer is
-`/keeper-review/kitchen-room-layout-v7/`. V7 preserves V6's fixed native fitted
-base, separate state/effect layers, target-sized shadowless loose objects,
-forward worktop placement, 228/168 Prime registration, exact pace-16 furniture
-anchor and table → seated Keeper → chair depth order. It changes only the ON
-sink effect and chair alpha: water begins at the curved tap outlet and ends
-inside the basin, while five trapped source-paper islands are removed between
-the chair slats and below its seat. V6 and V7 are shown side-by-side. Kitchen
-art is never downscaled or resampled, and gameplay/runtime art is unchanged.
-V6 remains immutable predecessor evidence, V5 remains rejected shadowed
-evidence, and the fitted-unit subset approved in V4 remains locked.
+`/keeper-review/kitchen-room-layout-v8/`. V8 preserves V7's fixed native fitted
+base, corrected ON sink, transparent rear-chair gaps, separate state/effect
+layers, target-sized shadowless loose objects, forward worktop placement,
+228/168 Prime registration, exact pace-16 furniture anchor and table → seated
+Keeper → chair depth order. It repairs only Broken: toaster and bowl debris are
+removed; the bowl has a genuine transparent wall break; animated gush and
+floor water are sink-owned; dishwasher lenses pulse without translating; and
+only an amber oven-cavity glow flickers. V7 and V8 are shown side-by-side.
+Kitchen art is never downscaled or resampled, and gameplay/runtime art is
+unchanged. V7 remains immutable predecessor evidence, V5 remains rejected
+shadowed evidence, and the fitted-unit subset approved in V4 remains locked.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 
