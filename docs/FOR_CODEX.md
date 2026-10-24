@@ -204,8 +204,10 @@ downscale or resample that art: camera zoom handles presentation, while every
 distance the Prime Keeper walks must be an exact whole number of his 10.5-lp
 / 84-ku paces. Runtime Promotion V1 remains live only as a reversible
 compatibility boundary; its 84 × 74 derivatives are not visual authority and
-must not be used for art review. The active movable room reviewer is
-`/keeper-review/kitchen-room-layout-v2/`.
+must not be used for art review. The active movable room correction reviewer is
+`/keeper-review/kitchen-room-layout-v3/`. V3 fixes the fitted tap crop, state
+ownership, physical support rows and measured rear-seat furniture fit without
+changing approved or runtime art; V2 is frozen superseded evidence.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 

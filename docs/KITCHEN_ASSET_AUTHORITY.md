@@ -122,20 +122,23 @@ hash is pinned in the promotion record.
 
 ## Current loose-asset review
 
-The complete movable room is published at
-`/keeper-review/kitchen-room-layout-v2/`. It displays the approved fitted run
-and the toaster, kettle, bin, bowl, table and chair at native source resolution.
-The fitted run is an unscaled master crop. Loose objects are deterministic 1:1
-cutouts whose retained RGB bytes match the master exactly; only the connected
-sheet background becomes transparent and a four-pixel safety gutter is added.
-All destinations sit on the Prime Keeper pace lattice and Broken appliances
-stay movement-locked until repaired.
+The active correction review is published at
+`/keeper-review/kitchen-room-layout-v3/`. It displays the full fitted run with
+the faucet crown included and the toaster, kettle, bin, bowl, table and chair
+at native source resolution. V3 replaces PNG-box-bottom placement with explicit
+physical contact rows, so counter assets rest on the worktop. Toaster ON is the
+byte-identical OFF body plus toast. Kettle ON is the byte-identical OFF body plus
+a native steam wisp; the former cracked ON drawing is now BROKEN and the former
+loose-lid BROKEN drawing is excluded. The broken bowl has a deeper break and no
+right-hand whisk artefact. The table and rear-facing chair use the approved
+20 × 14.5 lp and 24 × 21 lp sit geometry, including the 7.75 lp seat datum.
 
-This page exists so Frank can specify amendments to the loose assets shown on
-the source sheet. It is review-only: no approved source or runtime pixel is
-overwritten or promoted, and no superseded kitchen draft is restored. Its exact
-native crops, output hashes, pace mapping and discard boundary are recorded in
-`data/kitchen_room_layout_review_v2.json` and its extraction register.
+This page is review-only: no approved source or runtime pixel is overwritten or
+promoted, and no superseded kitchen draft is restored. Its exact native crops,
+additive state construction, correction-source hashes, support rows, measured
+furniture geometry, pace mapping and discard boundary are recorded in
+`data/kitchen_room_layout_review_v3.json` and its extraction register. V2 is
+frozen as superseded evidence of the reported crop and scale errors.
 
 V1 is rejected and frozen only as historical evidence. It incorrectly used the
 reduced 84 × 74 compatibility bodies as review artwork, resized loose crops,

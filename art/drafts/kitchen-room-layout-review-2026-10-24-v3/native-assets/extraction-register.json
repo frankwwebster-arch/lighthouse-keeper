@@ -1,0 +1,315 @@
+{
+  "schema": "lighthouse-keeper/kitchen-native-assets@2",
+  "status": "review-only-unapproved-v3-correction",
+  "createdOn": "2026-10-24",
+  "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+  "sourceSha256": "a8a6972dd8398ec3cd52f42825a5a5f056a1e289d10b77796f3294b3ac85ab98",
+  "sourceDimensions": [
+    1536,
+    1024
+  ],
+  "scaleApplied": false,
+  "resamplingApplied": false,
+  "colourTransformApplied": false,
+  "correctionSources": {
+    "brokenBowl": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/sources/generated-broken-bowl-source-plate.png",
+      "sha256": "799837c86163cbbdeed3a377dfd52ecff28838f50c24980527b168abd356effe",
+      "use": "only the broken-bowl crop"
+    },
+    "rearChair": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/sources/generated-rear-chair-source-plate.png",
+      "sha256": "c91b6197f016fff31bb1a884812e0dd236c0b7e1e921061aebef858fa8f605a3",
+      "use": "only the rear-chair crop before native-pixel straight-run extension"
+    },
+    "steam": {
+      "file": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-steam-puff.png",
+      "sha256": "0c821f9198385ce6a3ee6dbcbcb21e424cf757a153f482081755fb6bfd176da3",
+      "use": "native 1:1 steam wisp only"
+    }
+  },
+  "keeperScaleReference": {
+    "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f1.png",
+    "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+    "dimensions": [
+      256,
+      320
+    ]
+  },
+  "seatedFitReference": {
+    "source": "art/drafts/keeper-prime-sit-stand-back-2026-10-18-v2/drafts/frames/keeper_prime_stand-to-sit-back_f06.png",
+    "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa",
+    "dimensions": [
+      256,
+      320
+    ],
+    "role": "approved rear-sitting frame used only for furniture fit proof"
+  },
+  "fittedRunCrop": {
+    "width": 1368,
+    "height": 284,
+    "sourceX": 65,
+    "sourceYByState": {
+      "off": 0,
+      "on": 282,
+      "broken": 570
+    },
+    "includesTapCrown": true
+  },
+  "outputs": {
+    "toaster-off": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/toaster-off-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v3/assets/toaster-off-native.png",
+      "dimensions": [
+        119,
+        98
+      ],
+      "sha256": "e1740ba046aef7af8a5425bfade23faa3358454d567ef91592ab93fb8db95b9c",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "crop": [
+        38,
+        915,
+        111,
+        90
+      ],
+      "contactRow": 80,
+      "method": "native 1:1 crop; only border-connected paper cleared; four-pixel transparent gutter"
+    },
+    "toaster-broken": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/toaster-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v3/assets/toaster-broken-native.png",
+      "dimensions": [
+        132,
+        144
+      ],
+      "sha256": "84294ea6eb39dbe805234d0ac4c047bc787afd8164ee7f09cdf962eccfffe54b",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "crop": [
+        258,
+        874,
+        124,
+        136
+      ],
+      "contactRow": 123,
+      "method": "native 1:1 crop; only border-connected paper cleared; four-pixel transparent gutter"
+    },
+    "kettle-off": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/kettle-off-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v3/assets/kettle-off-native.png",
+      "dimensions": [
+        124,
+        128
+      ],
+      "sha256": "a21f0d557c7fe9e2bdcbc71e893acae71acfab902d79d835fd52ab2e35f5247e",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "crop": [
+        392,
+        886,
+        116,
+        120
+      ],
+      "contactRow": 111,
+      "method": "native 1:1 crop; only border-connected paper cleared; four-pixel transparent gutter"
+    },
+    "bin-standard": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/bin-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v3/assets/bin-standard-native.png",
+      "dimensions": [
+        99,
+        141
+      ],
+      "sha256": "7c585318528c5d8986601639b86c7ec1650b438e6749c60e5e8b94eda3d9817a",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "crop": [
+        764,
+        876,
+        91,
+        133
+      ],
+      "contactRow": 128,
+      "method": "native 1:1 crop; only border-connected paper cleared; four-pixel transparent gutter"
+    },
+    "bin-broken": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/bin-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v3/assets/bin-broken-native.png",
+      "dimensions": [
+        143,
+        153
+      ],
+      "sha256": "be24763f74d7dd4ca0c1556a4403d7fd4f02e28b5ef9f5ac77d59a36e14f66de",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "crop": [
+        843,
+        866,
+        135,
+        145
+      ],
+      "contactRow": 140,
+      "method": "native 1:1 crop; only border-connected paper cleared; four-pixel transparent gutter"
+    },
+    "bowl-standard": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/bowl-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v3/assets/bowl-standard-native.png",
+      "dimensions": [
+        123,
+        138
+      ],
+      "sha256": "ed5e175f482cd11c6a2a5c609c6938867bf19c5e46931db664a641cf2c18f1fd",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "crop": [
+        985,
+        880,
+        115,
+        130
+      ],
+      "contactRow": 121,
+      "method": "native 1:1 crop; only border-connected paper cleared; four-pixel transparent gutter"
+    },
+    "toaster-on": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/toaster-on-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v3/assets/toaster-on-native.png",
+      "dimensions": [
+        119,
+        146
+      ],
+      "sha256": "56bc2a8aa9a136d104d876349375fabc079a361fa1a13d9b3bbccff535939030",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceAdditiveCrop": [
+        164,
+        888,
+        82,
+        48
+      ],
+      "base": "toaster-off",
+      "baseOffset": [
+        0,
+        48
+      ],
+      "contactRow": 128,
+      "method": "byte-identical OFF body plus native 1:1 toast-only layer; no neighbouring broken sprite pixels"
+    },
+    "kettle-on": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/kettle-on-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v3/assets/kettle-on-native.png",
+      "dimensions": [
+        155,
+        308
+      ],
+      "sha256": "5df0b5e72e8ebdc01d09b340054f141650f3824b9b8e4efe5ae0c33ad14bdb42",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "additiveSource": "art/drafts/activity-story-ink-marks-and-recipe-pictures-2026-10-22-v1/drafts/components/symbol-steam-puff.png",
+      "additiveCrop": [
+        100,
+        20,
+        55,
+        216
+      ],
+      "base": "kettle-off",
+      "baseOffset": [
+        0,
+        180
+      ],
+      "contactRow": 291,
+      "method": "byte-identical OFF body plus native 1:1 steam-only layer at spout"
+    },
+    "kettle-broken": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/kettle-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v3/assets/kettle-broken-native.png",
+      "dimensions": [
+        130,
+        128
+      ],
+      "sha256": "1dc9ebe510dcf8f7aae4b3788511c1c7fe9bbc1293c907258ee9f92f20326950",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "crop": [
+        498,
+        886,
+        122,
+        120
+      ],
+      "contactRow": 111,
+      "replacesV2State": "on",
+      "excludedV2Crop": [
+        620,
+        872,
+        120,
+        137
+      ],
+      "method": "native 1:1 crop; reclassified from ON to BROKEN exactly as requested"
+    },
+    "bowl-broken": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/bowl-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v3/assets/bowl-broken-native.png",
+      "dimensions": [
+        153,
+        142
+      ],
+      "sha256": "98c15168a1ed5878df7b07022d7f6c911079abb2e07c9cb953609e24b854663d",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/sources/generated-broken-bowl-source-plate.png",
+      "crop": [
+        1085,
+        879,
+        145,
+        134
+      ],
+      "contactRow": 135,
+      "method": "native 1:1 crop from versioned generated correction plate; generated paper cleared; deeper break and left/below shards; no right-hand whisk artefact"
+    },
+    "table-standard": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/table-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v3/assets/table-standard-native.png",
+      "dimensions": [
+        225,
+        165
+      ],
+      "sha256": "0fadf1adf13b6a2ffae584a20a89e2bf0b7dbe707bc7a5ca351c57dfbefc64b9",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceCrop": [
+        1230,
+        887,
+        194,
+        118
+      ],
+      "logicalDimensions": [
+        20,
+        14.5
+      ],
+      "physicalDimensions": [
+        217,
+        157
+      ],
+      "contactRow": 160,
+      "method": "native-pixel seam extension of straight central wood runs; no scaling, resampling or colour transform"
+    },
+    "chair-standard": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/chair-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v3/assets/chair-standard-native.png",
+      "dimensions": [
+        269,
+        236
+      ],
+      "sha256": "63407aed48d145165ed3f67e1ffecd23da804ae1b81ddf54e3c8f2a694692c0d",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/sources/generated-rear-chair-source-plate.png",
+      "sourceCrop": [
+        1422,
+        872,
+        96,
+        136
+      ],
+      "facing": "rear",
+      "visibleSurface": "rear of chair",
+      "logicalDimensions": [
+        24,
+        21
+      ],
+      "backrestWidthLogicalPixels": 19,
+      "seatTopLogicalPixels": 7.75,
+      "physicalDimensions": [
+        261,
+        228
+      ],
+      "contactRow": 231,
+      "method": "rear-facing generated source; native-pixel straight-run extension to approved sit geometry; no scaling, resampling or colour transform"
+    }
+  }
+}

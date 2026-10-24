@@ -277,19 +277,20 @@ viewport presentation. Spatial placement is constrained by Prime Keeper paces,
 not asset resolution: one 10.5-lp pace is 114 kitchen-source pixels and every
 228-pixel fitted bay is exactly two paces wide.
 
-The full movable composition reviewer is
-`/keeper-review/kitchen-room-layout-v2/`. It displays the approved fitted run
-and movable loose toaster, kettle, bin, bowl, table and chair at native source
-resolution. Its counter, worktop and floor destinations are exact Prime Keeper
-pace anchors. V1 is frozen as rejected evidence because it used reduced runtime
-art, resized crops, a colour-changing blend mode and a schematic canvas. V2
-changes no approved art or runtime asset.
+The active movable composition correction is
+`/keeper-review/kitchen-room-layout-v3/`. It preserves native pixels while
+fixing the cropped faucet, cross-sprite toaster artefact, kettle state semantics,
+broken-bowl artefact, physical support rows and measured rear-seat furniture
+fit. Its counter, worktop and floor destinations remain exact Prime Keeper pace
+anchors. V1 is rejected and V2 is frozen as superseded evidence. V3 changes no
+approved art or runtime asset.
 
 ```sh
 npm run verify:kitchen-approved-family
 npm run verify:kitchen-runtime
 npm run verify:kitchen-room-layout-review-v1
 npm run verify:kitchen-room-layout-review-v2
+npm run verify:kitchen-room-layout-review-v3
 ```
 
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page

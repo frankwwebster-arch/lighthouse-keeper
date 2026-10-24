@@ -10,6 +10,7 @@ const SAME_ORIGIN_ARCHIVE_SETS = new Set([
   'keeper-prime-morning-drafts-v6',
   'kitchen-room-layout-v1',
   'kitchen-room-layout-v2',
+  'kitchen-room-layout-v3',
 ])
 
 export async function GET(_request: Request, context: { params: { set: string; asset: string } }) {

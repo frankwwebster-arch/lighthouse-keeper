@@ -1,0 +1,66 @@
+{
+  "schema": "lighthouse-keeper/kitchen-room-layout-review@3",
+  "version": 3,
+  "createdOn": "2026-10-24",
+  "status": "review-only-awaiting-v3-correction-review",
+  "reviewRoute": "/keeper-review/kitchen-room-layout-v3/",
+  "supersedesReview": "/keeper-review/kitchen-room-layout-v2/",
+  "authority": {
+    "document": "docs/KITCHEN_ASSET_AUTHORITY.md",
+    "contract": "data/kitchen_asset_contract_v1.json",
+    "roomGrid": "data/kitchen_room_grid_contract_v2.json",
+    "master": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+    "masterSha256": "a8a6972dd8398ec3cd52f42825a5a5f056a1e289d10b77796f3294b3ac85ab98",
+    "masterDimensions": [1536, 1024]
+  },
+  "nativePresentation": {
+    "downscalingPermitted": false,
+    "resamplingPermitted": false,
+    "colourTransformPermitted": false,
+    "defaultCameraZoom": 0.5,
+    "cameraZoomChangesSourceAssets": false,
+    "sourceBayWidthPixels": 228,
+    "sourceRunWidthPixels": 1368,
+    "fittedRunViewportHeightPixels": 284,
+    "tapCrownIncluded": true
+  },
+  "locomotion": {
+    "primeKeeperPaceLogicalPixels": 10.5,
+    "primeKeeperPaceKeeperUnits": 84,
+    "sourcePixelsPerPace": 114,
+    "reviewStageLogicalSize": [193, 56],
+    "reviewCameraPixelsPerLogicalPixel": 10.857142857142858,
+    "counterInteractionCentresSourceX": [342, 570, 798, 1026, 1254, 1482],
+    "floorInteractionCentresSourceX": [114, 1710, 1938],
+    "allInteractionCentresOnPaceLattice": true
+  },
+  "corrections": {
+    "toasterOn": "byte-identical OFF body plus toast-only native layer; neighbouring broken pixels excluded",
+    "kettleOn": "byte-identical OFF body plus steam-only native layer at the spout",
+    "kettleBroken": "former ON drawing reclassified as BROKEN; former loose-lid BROKEN drawing excluded",
+    "brokenBowl": "larger structural break with left/below shards; right-hand whisk artefact excluded",
+    "supportPlacement": "declared physical contact rows align objects to counters and floor instead of PNG-box bottoms",
+    "furniture": {
+      "chairFacing": "rear",
+      "chairLogicalDimensions": [24, 21],
+      "chairSeatTopLogicalPixels": 7.75,
+      "chairBackrestWidthLogicalPixels": 19,
+      "tableLogicalDimensions": [20, 14.5],
+      "tableTopThicknessLogicalPixels": 1.5,
+      "fitAuthority": "data/keeper_prime_seat_geometry_v3.json"
+    }
+  },
+  "nativeAssets": {
+    "register": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/extraction-register.json",
+    "scaleApplied": false,
+    "resamplingApplied": false,
+    "colourTransformApplied": false,
+    "promotionStatus": "unapproved-review-only"
+  },
+  "boundary": {
+    "runtimeChanged": false,
+    "approvedArtChanged": false,
+    "legacyRuntime84x74UsedByReview": false,
+    "rollback": "Discard only the V3 draft, data record, public shell, route and content-addressed review set. V1, V2, the approved master, Runtime Promotion V1 and retained legacy room remain byte-identical."
+  }
+}
