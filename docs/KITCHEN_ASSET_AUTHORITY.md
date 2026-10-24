@@ -133,11 +133,12 @@ hash is pinned in the promotion record.
 ## Current loose-asset review
 
 The active redraft review is published at
-`/keeper-review/kitchen-room-layout-v9/`. It uses the locked fitted base in all
+`/keeper-review/kitchen-room-layout-v10/`. It uses the locked fitted base in all
 three global states, so the full cabinet run cannot move and no source-sheet row
-boundary can appear. V9 retains V8's water-only ON sink effect, which begins at
-the curved tap outlet and is clipped before the unchanged opaque basin front.
-In Broken, three native tap-gush frames animate independently, the puddle is
+boundary can appear. V10 changes only V9's ON sink effect: the visible water is
+a straight native-pixel stream directly beneath the spout, with no splash or
+pooling at the stream's foot, and is clipped before the unchanged opaque basin
+front. In Broken, three native tap-gush frames animate independently, the puddle is
 limited to the sink footprint on the walking plane, the three dishwasher warning
 lenses remain in fixed locations while pulsing, and a cavity-only translucent
 amber layer supplies the oven flicker. Water is absent below the dishwasher,
@@ -169,9 +170,9 @@ source; camera zoom applies uniformly to the composed world.
 This page is review-only: no approved source or runtime pixel is overwritten or
 promoted. Its exact outputs, source hashes, support rows, global-state map,
 world-scale equation, pace mapping and discard boundary are recorded in
-`data/kitchen_room_layout_review_v9.json` and its extraction register. The
+`data/kitchen_room_layout_review_v10.json` and its extraction register. The
 table and rear-facing chair share exact pace 16 beyond the fridge; depth order
-is table, rear-seated Keeper, chair. V9 exposes the immutable V8 predecessor and
+is table, rear-seated Keeper, chair. V10 exposes the immutable V9 predecessor and
 the corrected draft side-by-side. V5 is rejected shadowed evidence; V4's
 fitted-unit approval remains binding.
 

@@ -278,18 +278,18 @@ not asset resolution: one 10.5-lp pace is 114 kitchen-source pixels and every
 228-pixel fitted bay is exactly two paces wide.
 
 The active movable composition redraft is
-`/keeper-review/kitchen-room-layout-v9/`. The fitted units are approved and
+`/keeper-review/kitchen-room-layout-v10/`. The fitted units are approved and
 hash-locked as one fixed native base; only their separate warning, light and
-effect layers may change. V9 preserves V8's target-sized shadowless loose
-family, corrected ON sink, transparent chair gaps, forward worktop placement,
-shared Prime scale, exact pace anchors and table → seated Keeper → chair depth
-order. Its broken state removes the detached toaster and bowl debris plus the
-last striped front-left bowl panel, assigns animated water solely to the tap and
-sink-footprint walking-plane puddle, keeps dishwasher warning lenses fixed
-while they pulse, and flickers only a translucent oven-cavity glow. The review exposes V8 and V9
+effect layers may change. V10 preserves V9's target-sized shadowless loose
+family, transparent chair gaps, forward worktop placement, shared Prime scale,
+exact pace anchors and table → seated Keeper → chair depth order. It changes
+only the ON sink effect: water is a straight native-pixel stream beneath the
+spout, with no splash or pooling at its foot. The broken state remains V9's
+sink-owned animated gush and walking-plane puddle, fixed dishwasher warning
+lenses, and translucent oven-cavity flicker. The review exposes V9 and V10
 side-by-side and applies no scaling, resampling or colour transform. Camera
-zoom still applies only to the complete composed world. V9 changes no gameplay
-or live runtime asset; V8 remains immutable predecessor evidence and V4's
+zoom still applies only to the complete composed world. V10 changes no gameplay
+or live runtime asset; V9 remains immutable predecessor evidence and V4's
 fitted-unit approval remains binding.
 
 ```sh
@@ -304,6 +304,7 @@ npm run verify:kitchen-room-layout-review-v6
 npm run verify:kitchen-room-layout-review-v7
 npm run verify:kitchen-room-layout-review-v8
 npm run verify:kitchen-room-layout-review-v9
+npm run verify:kitchen-room-layout-review-v10
 ```
 
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page

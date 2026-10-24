@@ -207,16 +207,18 @@ compatibility boundary; its 84 × 74 derivatives are not visual authority and
 must not be used for art review. The fitted units are approved and locked to the
 hash in `docs/review/kitchen-fitted-units-lock-approval-2026-10-24.json`; never
 change their bodies. The active loose-asset reviewer is
-`/keeper-review/kitchen-room-layout-v9/`. V9 preserves V8's fixed native fitted
-base, corrected ON sink, transparent rear-chair gaps, separate state/effect
-layers, target-sized shadowless loose objects, forward worktop placement,
-228/168 Prime registration, exact pace-16 furniture anchor and table → seated
-Keeper → chair depth order. In Broken, toaster and bowl debris are removed; the
-bowl loses both hanging/front-left panels; animated gush and floor water are
-strictly sink-owned; dishwasher lenses pulse without translating; and only an
-amber oven-cavity glow flickers. V8 and V9 are shown side-by-side.
-Kitchen art is never downscaled or resampled, and gameplay/runtime art is
-unchanged. V8 remains immutable predecessor evidence, V5 remains rejected
+`/keeper-review/kitchen-room-layout-v10/`. V10 preserves V9's fixed native fitted
+base, transparent rear-chair gaps, separate state/effect layers, target-sized
+shadowless loose objects, forward worktop placement, 228/168 Prime registration,
+exact pace-16 furniture anchor and table → seated Keeper → chair depth order.
+Its only pixel change is the ON sink effect: a straight native stream descends
+from the spout with no splash or pooling at its foot. In Broken, toaster and
+bowl debris remain removed; the bowl loses both hanging/front-left panels;
+animated gush and floor water are strictly sink-owned; dishwasher lenses pulse
+without translating; and only an amber oven-cavity glow flickers. V9 and V10
+are shown side-by-side. Kitchen art is never downscaled or resampled, and
+gameplay/runtime art is unchanged. V9 remains immutable predecessor evidence,
+V5 remains rejected
 shadowed evidence, and the fitted-unit subset approved in V4 remains locked.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
