@@ -1,0 +1,41 @@
+{
+  "schema": "lighthouse-keeper/kitchen-room-layout-review@9",
+  "version": 9,
+  "createdOn": "2026-10-25",
+  "status": "review-only-awaiting-final-broken-state-review",
+  "reviewRoute": "/keeper-review/kitchen-room-layout-v9/",
+  "supersedesReview": "/keeper-review/kitchen-room-layout-v8/",
+  "authority": {
+    "document": "docs/KITCHEN_ASSET_AUTHORITY.md",
+    "contract": "data/kitchen_asset_contract_v1.json",
+    "roomGrid": "data/kitchen_room_grid_contract_v2.json",
+    "lockedFittedBaseSha256": "ba84022371aea330e2fe50e5ad8fb37bf9d210aa1e09649d7f2fc69f460f49b1"
+  },
+  "nativeAssets": {
+    "register": "art/drafts/kitchen-room-layout-review-2026-10-25-v9/native-assets/extraction-register.json",
+    "registerSha256": "f456edd956703501d1f5607a058f1cd25768ff3f637b7556b803df137b2f90b7",
+    "predecessorRegister": "art/drafts/kitchen-room-layout-review-2026-10-25-v8/native-assets/extraction-register.json",
+    "predecessorRegisterSha256": "3178c24438ab520ba10142196aef85149602e26764e00daff51b0a147d664ce2",
+    "scaleAppliedToKitchenArt": false,
+    "downscalingApplied": false,
+    "resamplingApplied": false,
+    "colourTransformApplied": false
+  },
+  "corrections": {
+    "toaster": "detached countertop splodges removed; own feet establish support",
+    "bowl": "remaining striped front-left shell panel removed; transparent material loss with no detached debris",
+    "sink": "three-frame tap-outlet gush plus sink-centred walking-plane puddle",
+    "dishwasher": "fixed lens-only overlays pulse without cream rectangles or translation",
+    "oven": "cavity-only translucent glow flickers; prior food/door overlay removed",
+    "waterOwnership": "no broken-overlay leak below dishwasher/fridge and no puddle below oven/fridge",
+    "floorWater": "puddle clipped to the sink footprint and excluded from dishwasher, oven and fridge footprints",
+    "reviewShell": "version label and reversible-boundary copy corrected"
+  },
+  "boundary": {
+    "runtimeChanged": false,
+    "gameplayChanged": false,
+    "approvedFittedUnitsChanged": false,
+    "roomGridChanged": false,
+    "rollback": "Rejecting V9 discards only its route, page and V9 native correction directory. V1-V8, the V4 fitted-unit lock, Runtime Promotion V1 and retained 84 x 74 runtime room remain byte-identical."
+  }
+}

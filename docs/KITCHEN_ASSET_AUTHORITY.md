@@ -133,12 +133,12 @@ hash is pinned in the promotion record.
 ## Current loose-asset review
 
 The active redraft review is published at
-`/keeper-review/kitchen-room-layout-v8/`. It uses the locked fitted base in all
+`/keeper-review/kitchen-room-layout-v9/`. It uses the locked fitted base in all
 three global states, so the full cabinet run cannot move and no source-sheet row
-boundary can appear. V8 retains V7's water-only ON sink effect, which begins at
+boundary can appear. V9 retains V8's water-only ON sink effect, which begins at
 the curved tap outlet and is clipped before the unchanged opaque basin front.
 In Broken, three native tap-gush frames animate independently, the puddle is
-limited to the walking plane beneath the sink, the three dishwasher warning
+limited to the sink footprint on the walking plane, the three dishwasher warning
 lenses remain in fixed locations while pulsing, and a cavity-only translucent
 amber layer supplies the oven flicker. Water is absent below the dishwasher,
 oven and fridge. None of these effects participates in the fitted-run box.
@@ -151,8 +151,8 @@ gutter. Countertop support is local y=84, thirteen native
 pixels forward from V4, so the objects occupy the visible worktop plane rather
 than its rear edge. Toaster On is one connected silhouette with toast seated in
 its slots. Kettle On is byte-identical to Off and has no drawn steam. The broken
-bowl physically loses its front-left wall; its former hanging unstriped panel
-and detached debris are absent. The broken toaster likewise rests on its own
+bowl physically loses its front-left wall; its former hanging unstriped panel,
+remaining striped front-left panel and detached debris are absent. The broken toaster likewise rests on its own
 feet, with no detached black/brown support artefacts. The rear chair retains
 every V6 wood pixel but removes five enclosed white source-paper islands, so
 the seated Keeper is visible between its slats.
@@ -169,9 +169,9 @@ source; camera zoom applies uniformly to the composed world.
 This page is review-only: no approved source or runtime pixel is overwritten or
 promoted. Its exact outputs, source hashes, support rows, global-state map,
 world-scale equation, pace mapping and discard boundary are recorded in
-`data/kitchen_room_layout_review_v8.json` and its extraction register. The
+`data/kitchen_room_layout_review_v9.json` and its extraction register. The
 table and rear-facing chair share exact pace 16 beyond the fridge; depth order
-is table, rear-seated Keeper, chair. V8 exposes the immutable V7 predecessor and
+is table, rear-seated Keeper, chair. V9 exposes the immutable V8 predecessor and
 the corrected draft side-by-side. V5 is rejected shadowed evidence; V4's
 fitted-unit approval remains binding.
 
