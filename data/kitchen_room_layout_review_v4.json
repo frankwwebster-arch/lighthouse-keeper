@@ -1,0 +1,60 @@
+{
+  "schema": "lighthouse-keeper/kitchen-room-layout-review@4",
+  "version": 4,
+  "createdOn": "2026-10-24",
+  "status": "review-only-awaiting-loose-asset-review",
+  "reviewRoute": "/keeper-review/kitchen-room-layout-v4/",
+  "supersedesReview": "/keeper-review/kitchen-room-layout-v3/",
+  "authority": {
+    "document": "docs/KITCHEN_ASSET_AUTHORITY.md",
+    "contract": "data/kitchen_asset_contract_v1.json",
+    "roomGrid": "data/kitchen_room_grid_contract_v2.json",
+    "master": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+    "masterSha256": "a8a6972dd8398ec3cd52f42825a5a5f056a1e289d10b77796f3294b3ac85ab98",
+    "masterDimensions": [1536, 1024]
+  },
+  "nativeAssets": {
+    "register": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/extraction-register.json",
+    "registerSha256": "5d38f77151ccc00d834759f0d72a71b1152cb9c3ea09f2b80f3853d03a5c63a7",
+    "fittedBaseSha256": "ba84022371aea330e2fe50e5ad8fb37bf9d210aa1e09649d7f2fc69f460f49b1",
+    "scaleApplied": false,
+    "downscalingApplied": false,
+    "resamplingApplied": false,
+    "colourTransformApplied": false,
+    "promotionStatus": "loose-assets-review-only-fitted-base-approved"
+  },
+  "fittedUnits": {
+    "status": "approved-and-locked-after-directed-tap-repair",
+    "singleStaticBaseInEveryState": true,
+    "bodyMovementBetweenStates": false,
+    "allowedFutureChanges": [
+      "warning-light overlays",
+      "oven-interior-light overlay",
+      "replaceable broken-SFX declarations"
+    ]
+  },
+  "corrections": {
+    "tapOff": "misregistered joint replaced at native resolution from the aligned approved state row",
+    "cropping": "kettle, bowl and broken-bowl neighbour components removed with four-pixel transparent gutters",
+    "support": "exterior presentation shadows removed and explicit contact rows placed on worktop/floor supports",
+    "toasterOn": "byte-identical OFF body with toast seated into its slots",
+    "kettleOn": "byte-identical to OFF; steam remains an external effect and is not drawn here",
+    "globalOn": "kettle resolves to ON/OFF-identical body and bin resolves to standard, never broken",
+    "bin": "standard body and broken core enlarged 1.5 times by native-pixel straight-run extension without resampling",
+    "furniture": "rear-facing chair width retained and table height adjusted against the native 256 x 320 seated Keeper reference",
+    "floorWater": "separate transparent floor-plane layer; fitted run remains fixed"
+  },
+  "locomotion": {
+    "primeKeeperPaceLogicalPixels": 10.5,
+    "primeKeeperPaceKeeperUnits": 84,
+    "sourcePixelsPerPace": 114,
+    "assetResolutionIndependentOfPaceGrid": true
+  },
+  "boundary": {
+    "runtimeChanged": false,
+    "gameplayChanged": false,
+    "approvedMasterChanged": false,
+    "legacyRuntime84x74UsedByReview": false,
+    "rollback": "Rejecting the loose proposal discards the V4 shell/route, loose-object outputs and V4 review-set references only. Preserve the approved fitted base and its warning/oven overlay files under their hash-pinned approval. V1-V3, the approved master, Runtime Promotion V1 and retained legacy room remain byte-identical."
+  }
+}

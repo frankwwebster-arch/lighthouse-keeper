@@ -278,12 +278,16 @@ not asset resolution: one 10.5-lp pace is 114 kitchen-source pixels and every
 228-pixel fitted bay is exactly two paces wide.
 
 The active movable composition correction is
-`/keeper-review/kitchen-room-layout-v3/`. It preserves native pixels while
-fixing the cropped faucet, cross-sprite toaster artefact, kettle state semantics,
-broken-bowl artefact, physical support rows and measured rear-seat furniture
-fit. Its counter, worktop and floor destinations remain exact Prime Keeper pace
-anchors. V1 is rejected and V2 is frozen as superseded evidence. V3 changes no
-approved art or runtime asset.
+`/keeper-review/kitchen-room-layout-v4/`. The fitted units are approved and
+hash-locked as one fixed native base; only their warning lights, oven interior
+light and replaceable broken-SFX declarations may change. V4 corrects the OFF
+tap registration, isolates all state/effect layers, removes neighbouring loose
+sprite pixels and sheet shadows, fixes global-state mappings, enlarges the bin
+body by native-pixel straight-run extension, and fits rear-facing furniture to
+the native 256 × 320 Keeper. Its counter, worktop and floor destinations remain
+exact pace anchors. Floor water is a transparent walking-plane layer and cannot
+move the kitchen run. V1 is rejected and V2-V3 are frozen superseded evidence.
+V4 changes no gameplay or live runtime asset.
 
 ```sh
 npm run verify:kitchen-approved-family
@@ -291,6 +295,7 @@ npm run verify:kitchen-runtime
 npm run verify:kitchen-room-layout-review-v1
 npm run verify:kitchen-room-layout-review-v2
 npm run verify:kitchen-room-layout-review-v3
+npm run verify:kitchen-room-layout-review-v4
 ```
 
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page

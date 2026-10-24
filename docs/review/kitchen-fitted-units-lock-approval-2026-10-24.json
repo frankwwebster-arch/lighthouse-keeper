@@ -1,0 +1,26 @@
+{
+  "schema": "lighthouse-keeper/art-approval-supplement@1",
+  "approvedOn": "2026-10-24",
+  "authority": "kitchen-warm-ligne-claire-family-2026-10-24-v4",
+  "decision": "approved-and-locked-with-directed-off-tap-registration-repair",
+  "userDecision": "very happy with the kitchen units, those are now approved and hereafter should not be touched",
+  "lockedOutput": {
+    "path": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/fitted-units-static-native.png",
+    "sha256": "ba84022371aea330e2fe50e5ad8fb37bf9d210aa1e09649d7f2fc69f460f49b1",
+    "dimensions": [1368, 284]
+  },
+  "directedCorrectionIncludedBeforeLock": "OFF tap joint registration repaired from aligned approved native pixels",
+  "permittedFutureLayersOnly": [
+    "dishwasher warning-light overlays",
+    "oven interior-light overlay",
+    "replaceable broken-SFX declarations"
+  ],
+  "forbidden": [
+    "fitted body redraw",
+    "fitted body scaling or resampling",
+    "fitted body colour transform",
+    "state-dependent fitted-run registration",
+    "baked environmental effects"
+  ],
+  "runtimePromoted": false
+}

@@ -1,6 +1,6 @@
 {
   "schema": "lighthouse-keeper/kitchen-assets@1",
-  "status": "approved-visual-authority-runtime-v1-rework-required",
+  "status": "approved-fitted-units-locked-loose-assets-v4-review-runtime-v1-rework-required",
   "approvedOn": "2026-10-24",
   "visualAuthority": {
     "master": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
@@ -11,6 +11,18 @@
     "downscalingPermitted": false,
     "resamplingPermitted": false,
     "cameraZoomPermitted": true
+  },
+  "lockedFittedUnits": {
+    "approval": "docs/review/kitchen-fitted-units-lock-approval-2026-10-24.json",
+    "base": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/fitted-units-static-native.png",
+    "sha256": "ba84022371aea330e2fe50e5ad8fb37bf9d210aa1e09649d7f2fc69f460f49b1",
+    "dimensions": [1368, 284],
+    "sameBaseInEveryState": true,
+    "permittedFutureLayersOnly": [
+      "dishwasher warning lights",
+      "oven interior light",
+      "replaceable broken SFX declarations"
+    ]
   },
   "locomotionPresentation": {
     "bindingSpatialConstraint": "every distance the Prime Keeper walks is an exact whole number of paces",
@@ -45,7 +57,7 @@
   },
   "stateSemantics": {
     "sink": {
-      "off": "dry",
+      "off": "dry; tap uses the locked V4 alignment repair",
       "on": "narrow water stream from intact tap",
       "broken": "intact tap and basin with separate flooding layer"
     },
@@ -76,12 +88,12 @@
     "repair": "stops every motion and sound immediately"
   },
   "looseObjects": {
-    "kettle": "Off/On lid seated; Broken lid is a separate hovering component; no baked steam",
-    "toaster": "On contains toast; Broken contains burnt toast and a restrained mechanical fault",
-    "bin": "Broken is overfull with grounded refuse; no flies or smell marks",
-    "bowl": "standard contains whisk; Broken has readable crack and spill with whisk beside it; worktop only",
-    "table": "floor-grid object",
-    "chair": "floor-grid object; seat support exactly 7.75 logical pixels above floor"
+    "kettle": "On is byte-identical to Off with no drawn steam; Broken is the cracked former-On body; the old loose-lid drawing is excluded",
+    "toaster": "On is the exact Off body with toast seated into its slots; Broken contains burnt toast and a restrained mechanical fault",
+    "bin": "standard body and Broken core are 1.5 times larger by native-pixel straight-run extension; Broken is overfull with grounded refuse; no flies or smell marks",
+    "bowl": "standard contains whisk; Broken has a clearly missing section and spill; neighbouring-state pixels are excluded; worktop only",
+    "table": "floor-grid object; surface height checked against the native seated Keeper",
+    "chair": "rear-facing floor-grid object; native width retained; seat support exactly 7.75 logical pixels above floor"
   },
   "ownership": {
     "counterObjects": ["kettle", "toaster"],
@@ -114,6 +126,7 @@
     "runtimePresentationAccepted": false,
     "runtimeReworkReason": "Promotion V1 downscales the approved master; future promotion must retain native source pixels and use camera zoom",
     "runtimePromotion": "data/kitchen_runtime_promotion_v1.json",
-    "retainedLegacyRoom": "public/sprites/room_kitchen.png"
+    "retainedLegacyRoom": "public/sprites/room_kitchen.png",
+    "activeReview": "data/kitchen_room_layout_review_v4.json"
   }
 }

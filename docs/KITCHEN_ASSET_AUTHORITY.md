@@ -87,8 +87,10 @@ The bin, table and chair snap to declared floor sections; the chair seat is
 7.75 logical pixels above the floor.
 
 Broken appliance motion uses independent whole-object and component layers
-with Off, Subtle and Emphatic levels. The kettle's detached Broken lid remains
-a component layer and steam is separately anchored above the opening. Repair
+with Off, Subtle and Emphatic levels. The kettle's detached Broken lid is now
+historical rejected evidence: V4 excludes that drawing. Kettle On is
+byte-identical to Off, while Broken uses the cracked former-On body. Steam is
+separately anchored above the spout and is not drawn in the V4 review. Repair
 stops every animation and sound immediately and unlocks movement.
 
 Every asset/state exposes an independently toggleable, drag-and-drop replaceable
@@ -108,6 +110,14 @@ gameplay consumers. Broken Oven uses only the approved cavity-light strip. The
 Dishwasher strip is installed and hash-pinned, but the live Dishwasher remains
 Off because no Dishwasher gameplay object exists yet.
 
+Frank subsequently approved and locked the six fitted units after directing the
+OFF tap-registration repair. Their one immutable 1368 x 284 native base is
+hash-pinned in
+`docs/review/kitchen-fitted-units-lock-approval-2026-10-24.json`. OFF, ON and
+BROKEN all retain that exact base at one registration; only declared state,
+warning-light, oven-light and environmental overlays may be composited above
+it. The unit bodies must not be redrawn, moved, scaled, resampled or recoloured.
+
 Runtime Promotion V1's compatibility coordinate system is 772 × 224 with six
 84 × 74 reduced bodies. Those dimensions are preserved only so rollback and
 current gameplay behaviour remain deterministic; they are not approved art
@@ -123,22 +133,29 @@ hash is pinned in the promotion record.
 ## Current loose-asset review
 
 The active correction review is published at
-`/keeper-review/kitchen-room-layout-v3/`. It displays the full fitted run with
-the faucet crown included and the toaster, kettle, bin, bowl, table and chair
-at native source resolution. V3 replaces PNG-box-bottom placement with explicit
-physical contact rows, so counter assets rest on the worktop. Toaster ON is the
-byte-identical OFF body plus toast. Kettle ON is the byte-identical OFF body plus
-a native steam wisp; the former cracked ON drawing is now BROKEN and the former
-loose-lid BROKEN drawing is excluded. The broken bowl has a deeper break and no
-right-hand whisk artefact. The table and rear-facing chair use the approved
-20 × 14.5 lp and 24 × 21 lp sit geometry, including the 7.75 lp seat datum.
+`/keeper-review/kitchen-room-layout-v4/`. It uses the locked fitted base in all
+three global states, so the full cabinet run cannot move and no source-sheet row
+boundary can appear. Sink flow, fitted damage, three independent dishwasher
+warning lights, the oven cavity light and floor water are registered transparent
+overlays. Floor water sits on the walking plane and never participates in the
+fitted-run box.
+
+The toaster, kettle, bin, bowl, table and rear-facing chair are displayed at
+native source resolution with explicit physical contact rows. Exterior sheet
+shadows and neighbouring-state components are excluded. Toaster On is the exact
+Off body with toast seated in its slots. Kettle On is byte-identical to Off and
+has no drawn steam. The broken bowl has a clear missing section and safe top-left
+gutter. Both bin states have a 1.5-times-larger body/core made by duplicating
+native straight runs, without scaling or resampling. The chair retains its
+source width, and chair/table heights are checked against the native 256 x 320
+standing and seated Keeper instead of an enlarged foreground proxy.
 
 This page is review-only: no approved source or runtime pixel is overwritten or
-promoted, and no superseded kitchen draft is restored. Its exact native crops,
-additive state construction, correction-source hashes, support rows, measured
-furniture geometry, pace mapping and discard boundary are recorded in
-`data/kitchen_room_layout_review_v3.json` and its extraction register. V2 is
-frozen as superseded evidence of the reported crop and scale errors.
+promoted, and no superseded kitchen draft is restored. Its exact outputs,
+source hashes, support rows, global-state map, Keeper reference, pace mapping
+and discard boundary are recorded in `data/kitchen_room_layout_review_v4.json`
+and its extraction register. V3 is frozen as superseded evidence of the crop,
+state-registration and scale faults.
 
 V1 is rejected and frozen only as historical evidence. It incorrectly used the
 reduced 84 × 74 compatibility bodies as review artwork, resized loose crops,

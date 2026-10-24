@@ -1,0 +1,442 @@
+{
+  "schema": "lighthouse-keeper/kitchen-native-assets@3",
+  "status": "review-only-unapproved-v4-loose-correction",
+  "createdOn": "2026-10-24",
+  "authority": {
+    "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+    "sha256": "a8a6972dd8398ec3cd52f42825a5a5f056a1e289d10b77796f3294b3ac85ab98",
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  "fittedUnits": {
+    "approvedByUser": true,
+    "immutableOutput": "fitted-units-static",
+    "permittedFutureChanges": [
+      "warning-light overlays",
+      "oven-interior-light overlay",
+      "replaceable broken-SFX declarations"
+    ],
+    "bodyMovementBetweenStates": false
+  },
+  "scaleApplied": false,
+  "downscalingApplied": false,
+  "resamplingApplied": false,
+  "colourTransformApplied": false,
+  "keeperPresentation": {
+    "neutral": {
+      "file": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f1.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+    },
+    "seated": {
+      "file": "art/drafts/keeper-prime-sit-stand-back-2026-10-18-v2/drafts/frames/keeper_prime_stand-to-sit-back_f06.png",
+      "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa"
+    },
+    "dimensions": [
+      256,
+      320
+    ],
+    "cssResize": false,
+    "sourcePixelsPerPace": 114
+  },
+  "globalStateMap": {
+    "off": {
+      "toaster": "off",
+      "kettle": "off",
+      "bin": "standard",
+      "bowl": "standard"
+    },
+    "on": {
+      "toaster": "on",
+      "kettle": "on",
+      "bin": "standard",
+      "bowl": "standard"
+    },
+    "broken": {
+      "toaster": "broken",
+      "kettle": "broken",
+      "bin": "broken",
+      "bowl": "broken"
+    }
+  },
+  "sfxPlaceholders": {
+    "dishwasher": "intermittent-metal-rattle",
+    "oven": "intermittent-metal-rattle",
+    "fridge": "intermittent-metal-rattle",
+    "toaster": "intermittent-metal-rattle",
+    "kettle": "intermittent-metal-rattle",
+    "bin": "intermittent-metal-rattle"
+  },
+  "inheritedSources": {
+    "v3Register": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/extraction-register.json",
+      "sha256": "5d22d5db0a8906e09dfd821489e53ad3e8ad27f6dd58950e9411323cd63ac5f7"
+    },
+    "brokenBowl": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/sources/generated-broken-bowl-source-plate.png",
+      "sha256": "799837c86163cbbdeed3a377dfd52ecff28838f50c24980527b168abd356effe"
+    },
+    "rearChair": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/sources/generated-rear-chair-source-plate.png",
+      "sha256": "c91b6197f016fff31bb1a884812e0dd236c0b7e1e921061aebef858fa8f605a3"
+    }
+  },
+  "outputs": {
+    "fitted-units-static": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/fitted-units-static-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/fitted-units-static-native.png",
+      "dimensions": [
+        1368,
+        284
+      ],
+      "sha256": "ba84022371aea330e2fe50e5ad8fb37bf9d210aa1e09649d7f2fc69f460f49b1",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceCrop": [
+        65,
+        0,
+        1368,
+        284
+      ],
+      "tapRepairSourceCrop": [
+        590,
+        288,
+        80,
+        62
+      ],
+      "tapRepairOffset": [
+        525,
+        6
+      ],
+      "immutableAfterV4": true,
+      "method": "native 1:1 approved OFF run; only the reported tap joint replaced with aligned approved ON-row body pixels"
+    },
+    "fitted-overlay-on": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/fitted-overlay-on-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/fitted-overlay-on-native.png",
+      "dimensions": [
+        1368,
+        284
+      ],
+      "sha256": "01d78a027aeda0126e7539536f179faa9dd8f1b94368037a0924af11a22d4642",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceRowOffset": 281,
+      "regions": [
+        [
+          590,
+          350,
+          100,
+          60
+        ],
+        [
+          765,
+          390,
+          210,
+          145
+        ],
+        [
+          980,
+          390,
+          220,
+          160
+        ]
+      ],
+      "role": "declared sink flow, dishwasher green lenses and oven On aperture/indicator only"
+    },
+    "fitted-overlay-broken": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/fitted-overlay-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/fitted-overlay-broken-native.png",
+      "dimensions": [
+        1368,
+        284
+      ],
+      "sha256": "3ef0ef7380a92fa52998ee5b8e3a2f7b57778ace3541acf03622fba682f7a9f1",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceRowOffset": 560,
+      "role": "declared dishwasher door, oven controls/door and fridge damage; animated lamps/cavity and water excluded"
+    },
+    "dishwasher-warning-1": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/dishwasher-warning-1-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/dishwasher-warning-1-native.png",
+      "dimensions": [
+        1368,
+        284
+      ],
+      "sha256": "b8439bfc4a0438294ba34a1fe094ffb9badefc2d8f5e3c8133e6701d87787a3b",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceCrop": [
+        784,
+        677,
+        19,
+        21
+      ],
+      "animation": "independent intermittent opacity at 4 fps"
+    },
+    "dishwasher-warning-2": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/dishwasher-warning-2-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/dishwasher-warning-2-native.png",
+      "dimensions": [
+        1368,
+        284
+      ],
+      "sha256": "0126211b259d380ef6cf3d18bf59941eafe730e29f6b1d2a92d15e76abe6b056",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceCrop": [
+        806,
+        677,
+        19,
+        21
+      ],
+      "animation": "independent intermittent opacity at 4 fps"
+    },
+    "dishwasher-warning-3": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/dishwasher-warning-3-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/dishwasher-warning-3-native.png",
+      "dimensions": [
+        1368,
+        284
+      ],
+      "sha256": "3f94dc86208b707ce93abff1dfacb9194311f96d8ff016d73374e47250ea462d",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceCrop": [
+        828,
+        677,
+        19,
+        21
+      ],
+      "animation": "independent intermittent opacity at 4 fps"
+    },
+    "oven-broken-cavity-light": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/oven-broken-cavity-light-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/oven-broken-cavity-light-native.png",
+      "dimensions": [
+        1368,
+        284
+      ],
+      "sha256": "0823aef7a0c834618e164f9c32bf7d5a11c5695f873f555f5759bfd521db4e8d",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceCrop": [
+        1007,
+        731,
+        171,
+        81
+      ],
+      "animation": "intermittent opacity at 4 fps; body and door remain fixed"
+    },
+    "broken-floor-water": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/broken-floor-water-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/broken-floor-water-native.png",
+      "dimensions": [
+        1376,
+        43
+      ],
+      "sha256": "64c0a95c793a321fae60f54f9553f6470805ec93e68f86b676004554fbbb61f6",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceCrop": [
+        65,
+        835,
+        1368,
+        35
+      ],
+      "anchor": {
+        "x": -4,
+        "yFromFloor": -12
+      },
+      "role": "separate transparent floor-plane effect; never participates in fitted-run registration"
+    },
+    "toaster-off": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/toaster-off-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/toaster-off-native.png",
+      "dimensions": [
+        106,
+        84
+      ],
+      "sha256": "a3e379d88978e8dac93a80055fa9e166ac4db74b1d2da8291d8aefd68663fd33",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/toaster-off-native.png",
+      "contactRow": 79,
+      "anchorX": 53,
+      "shadowsRemoved": true
+    },
+    "toaster-on": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/toaster-on-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/toaster-on-native.png",
+      "dimensions": [
+        106,
+        122
+      ],
+      "sha256": "2c40e2ebe714e213098164af749678e9fa3f1f7e54e18026da689cd1b8d5eac9",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "base": "toaster-off",
+      "baseOffset": [
+        0,
+        38
+      ],
+      "toastOffsetY": 10,
+      "contactRow": 117,
+      "anchorX": 53,
+      "shadowsRemoved": true,
+      "method": "byte-identical OFF body with toast seated into its slots"
+    },
+    "toaster-broken": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/toaster-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/toaster-broken-native.png",
+      "dimensions": [
+        120,
+        107
+      ],
+      "sha256": "0c5b8b060e75e95bfe7d57c21fa3d90453607192562f60e250bdcece6a7925fe",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/toaster-broken-native.png",
+      "contactRow": 102,
+      "anchorX": 60,
+      "shadowsRemoved": true
+    },
+    "kettle-off": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/kettle-off-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/kettle-off-native.png",
+      "dimensions": [
+        102,
+        109
+      ],
+      "sha256": "65ed2b29d4a88348119dc182d456331f3f356cc292d6d3d0c88bd549bacc6afe",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/kettle-off-native.png",
+      "contactRow": 104,
+      "anchorX": 51,
+      "shadowsRemoved": true,
+      "onAlias": true
+    },
+    "kettle-on": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/kettle-on-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/kettle-on-native.png",
+      "dimensions": [
+        102,
+        109
+      ],
+      "sha256": "65ed2b29d4a88348119dc182d456331f3f356cc292d6d3d0c88bd549bacc6afe",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/kettle-off-native.png",
+      "contactRow": 104,
+      "anchorX": 51,
+      "shadowsRemoved": true,
+      "byteIdenticalTo": "kettle-off",
+      "steamLayer": "separate-not-drawn-in-this-review"
+    },
+    "kettle-broken": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/kettle-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/kettle-broken-native.png",
+      "dimensions": [
+        114,
+        109
+      ],
+      "sha256": "e6420bd5e3259485f699d5f7862e723584331653daf4d096e30a97a8f0bb6947",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/kettle-broken-native.png",
+      "contactRow": 104,
+      "anchorX": 57,
+      "shadowsRemoved": true,
+      "state": "broken-only"
+    },
+    "bowl-standard": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/bowl-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/bowl-standard-native.png",
+      "dimensions": [
+        101,
+        99
+      ],
+      "sha256": "ce3133123506f4566976759c5ffa6637a041496992d9570b3e52dd726275707a",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/bowl-standard-native.png",
+      "contactRow": 94,
+      "anchorX": 51,
+      "shadowsRemoved": true,
+      "neighbourComponentsRemoved": true
+    },
+    "bowl-broken": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/bowl-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/bowl-broken-native.png",
+      "dimensions": [
+        134,
+        78
+      ],
+      "sha256": "fceee480b3f0523f04902f1f1bac95464ef2f57301ba5ff8b5f98b3a4d27bcbf",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/sources/generated-broken-bowl-source-plate.png",
+      "sourceCrop": [
+        1075,
+        870,
+        175,
+        150
+      ],
+      "contactRow": 73,
+      "anchorX": 74,
+      "shadowsRemoved": true,
+      "expandedTopLeftSafety": true,
+      "neighbourComponentsRemoved": true
+    },
+    "bin-standard": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/bin-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/bin-standard-native.png",
+      "dimensions": [
+        115,
+        146
+      ],
+      "sha256": "fa8fd9648a5e2e4af9e4516d4c56898606b3b7cc6e6bcacb944af489530135c4",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/bin-standard-native.png",
+      "sizeFactor": 1.5,
+      "nativePixelStraightRunExtension": true,
+      "contactRow": 141,
+      "anchorX": 58,
+      "shadowsRemoved": true
+    },
+    "bin-broken": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/bin-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/bin-broken-native.png",
+      "dimensions": [
+        179,
+        183
+      ],
+      "sha256": "05f9be93fb3d6712e24400f74680d3629356b6566b68ac1d617208d730385129",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/native-assets/bin-broken-native.png",
+      "coreSizeFactor": 1.5,
+      "nativePixelStraightRunExtension": true,
+      "contactRow": 178,
+      "anchorX": 102,
+      "shadowsRemoved": true,
+      "topRefuseUnscaled": true
+    },
+    "table-standard": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/table-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/table-standard-native.png",
+      "dimensions": [
+        196,
+        120
+      ],
+      "sha256": "807a4d357b2aeb03cfbab9be9bfb31021fd9e733125938a79ed482a2019304ff",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v2/native-cutouts/table-standard-native.png",
+      "keeperDensity": 8,
+      "surfaceHeightLogicalPixels": 14.5,
+      "targetSurfaceHeightPixels": 116,
+      "contactRow": 115,
+      "anchorX": 98,
+      "method": "native-pixel leg extension only; no horizontal scaling"
+    },
+    "chair-standard": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/chair-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v4/assets/chair-standard-native.png",
+      "dimensions": [
+        84,
+        164
+      ],
+      "sha256": "8891ffcbe4120e7fb08f9add067bfd0c4093f6ba44bdcbb96c494a10f13a64ea",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v3/sources/generated-rear-chair-source-plate.png",
+      "sourceCrop": [
+        1429,
+        881,
+        76,
+        121
+      ],
+      "facing": "rear",
+      "keeperDensity": 8,
+      "seatTopLogicalPixels": 7.75,
+      "targetSeatHeightPixels": 62,
+      "contactRow": 159,
+      "anchorX": 42,
+      "method": "native-pixel vertical post/leg extension only; original width retained; no scaling or resampling"
+    }
+  }
+}
