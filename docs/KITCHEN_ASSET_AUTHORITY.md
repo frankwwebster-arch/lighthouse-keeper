@@ -133,17 +133,18 @@ hash is pinned in the promotion record.
 ## Current loose-asset review
 
 The active redraft review is published at
-`/keeper-review/kitchen-room-layout-v5/`. It uses the locked fitted base in all
+`/keeper-review/kitchen-room-layout-v6/`. It uses the locked fitted base in all
 three global states, so the full cabinet run cannot move and no source-sheet row
 boundary can appear. Sink flow, fitted damage, three independent dishwasher
 warning lights, the oven cavity light and floor water are registered transparent
 overlays. Floor water sits on the walking plane and never participates in the
 fitted-run box.
 
-The toaster, kettle, bin, bowl, table and rear-facing chair are new target-sized
+The toaster, kettle, bin, bowl, table and rear-facing chair are target-sized
 source drawings extracted 1:1, with no downscaling, resampling or colour
-transform. Each retains its authored curved contact shadow and an eight-pixel
-transparent safety gutter. Countertop support is local y=84, thirteen native
+transform. No movable output contains a baked contact shadow; room surfaces
+remain owned by the room. Each output has an eight-pixel transparent safety
+gutter. Countertop support is local y=84, thirteen native
 pixels forward from V4, so the objects occupy the visible worktop plane rather
 than its rear edge. Toaster On is one connected silhouette with toast seated in
 its slots. Kettle On is byte-identical to Off and has no drawn steam. The broken
@@ -161,9 +162,10 @@ source; camera zoom applies uniformly to the composed world.
 This page is review-only: no approved source or runtime pixel is overwritten or
 promoted. Its exact outputs, source hashes, support rows, global-state map,
 world-scale equation, pace mapping and discard boundary are recorded in
-`data/kitchen_room_layout_review_v5.json` and its extraction register. V4's
-loose family is rejected and frozen as evidence; its fitted-unit approval
-remains binding.
+`data/kitchen_room_layout_review_v6.json` and its extraction register. The
+table and rear-facing chair share exact pace 16 beyond the fridge; depth order
+is table, rear-seated Keeper, chair. V5 is rejected shadowed evidence; V4's
+fitted-unit approval remains binding.
 
 V1 is rejected and frozen only as historical evidence. It incorrectly used the
 reduced 84 × 74 compatibility bodies as review artwork, resized loose crops,

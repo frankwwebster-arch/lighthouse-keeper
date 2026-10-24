@@ -5,16 +5,17 @@ import path from 'node:path'
 import { PNG } from 'pngjs'
 
 const ROOT = process.cwd()
+const VERSION = process.env.KITCHEN_REVIEW_VERSION ?? 'v5'
 const V4_REGISTER_FILE = 'art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/extraction-register.json'
 const V4_REGISTER_HASH = '5d38f77151ccc00d834759f0d72a71b1152cb9c3ea09f2b80f3853d03a5c63a7'
-const LOOSE_SOURCE = 'art/drafts/kitchen-room-layout-review-2026-10-24-v5/sources/generated-loose-family-source-plate.png'
-const LOOSE_HASH = '2bb031ee62f70cc4231f8ad6efe3d3b4e351ccc98a0cbcb1be99b428744cdd5f'
-const FURNITURE_SOURCE = 'art/drafts/kitchen-room-layout-review-2026-10-24-v5/sources/generated-furniture-source-plate.png'
-const FURNITURE_HASH = 'acaee761d88d1ff0832cd8ad8c9c767e579749ddeadb144a73ec84301ccfb24d'
+const LOOSE_SOURCE = process.env.KITCHEN_LOOSE_SOURCE ?? 'art/drafts/kitchen-room-layout-review-2026-10-24-v5/sources/generated-loose-family-source-plate.png'
+const LOOSE_HASH = process.env.KITCHEN_LOOSE_HASH ?? '2bb031ee62f70cc4231f8ad6efe3d3b4e351ccc98a0cbcb1be99b428744cdd5f'
+const FURNITURE_SOURCE = process.env.KITCHEN_FURNITURE_SOURCE ?? 'art/drafts/kitchen-room-layout-review-2026-10-24-v5/sources/generated-furniture-source-plate.png'
+const FURNITURE_HASH = process.env.KITCHEN_FURNITURE_HASH ?? 'acaee761d88d1ff0832cd8ad8c9c767e579749ddeadb144a73ec84301ccfb24d'
 const KEEPER_FILE = 'art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f1.png'
 const SEATED_KEEPER_FILE = 'art/drafts/keeper-prime-sit-stand-back-2026-10-18-v2/drafts/frames/keeper_prime_stand-to-sit-back_f06.png'
-const OUT = 'art/drafts/kitchen-room-layout-review-2026-10-24-v5/native-assets'
-const PUBLIC = 'public/keeper-review/kitchen-room-layout-v5/assets'
+const OUT = `art/drafts/kitchen-room-layout-review-2026-10-24-${VERSION}/native-assets`
+const PUBLIC = `public/keeper-review/kitchen-room-layout-${VERSION}/assets`
 const PAD = 8
 
 const sha256 = bytes => crypto.createHash('sha256').update(bytes).digest('hex')
@@ -30,7 +31,7 @@ const loose = read(LOOSE_SOURCE, LOOSE_HASH)
 const furniture = read(FURNITURE_SOURCE, FURNITURE_HASH)
 const keeper = read(KEEPER_FILE)
 const seatedKeeper = read(SEATED_KEEPER_FILE)
-if (loose.png.width !== 1536 || loose.png.height !== 1024) throw new Error('V5 loose source geometry changed')
+if (loose.png.width !== 1536 || loose.png.height !== 1024) throw new Error(`${VERSION.toUpperCase()} loose source geometry changed`)
 
 function blank(width, height) { return new PNG({ width, height }) }
 function crop(source, [x, y, width, height]) {
@@ -118,7 +119,7 @@ const crops = {
 }
 for (const [id, box] of Object.entries(crops)) {
   const image = cleanGeneratedCrop(box)
-  writePng(id, image, { source: LOOSE_SOURCE, sourceCrop: box, contactRow: contactRow(image), anchorX: Math.round(image.width / 2), generatedRedraw: true, downscalingApplied: false, shadowAuthoredWithObject: true })
+  writePng(id, image, { source: LOOSE_SOURCE, sourceCrop: box, contactRow: contactRow(image), anchorX: Math.round(image.width / 2), generatedRedraw: true, downscalingApplied: false, ...(VERSION === 'v6' ? { contactShadowIncluded: false } : { shadowAuthoredWithObject: true }) })
 }
 // ON is deliberately the exact OFF kettle body. Steam remains a separate future effect.
 const kettleOn = fs.readFileSync(outputs['kettle-off'].file)
@@ -127,21 +128,21 @@ outputs['kettle-on'] = { ...outputs['kettle-off'], file: `${OUT}/kettle-on-nativ
 
 const table = cleanFurnitureCrop([45, 920, 380, 300])
 const chair = cleanFurnitureCrop([430, 910, 190, 310])
-writePng('table-standard', table, { source: FURNITURE_SOURCE, sourceCrop: [45, 920, 380, 300], contactRow: contactRow(table), anchorX: Math.round(table.width / 2), physicalModelMm: { height: 750, width: 1050 }, generatedRedraw: true, downscalingApplied: false })
-writePng('chair-standard', chair, { source: FURNITURE_SOURCE, sourceCrop: [430, 910, 190, 310], contactRow: contactRow(chair), anchorX: Math.round(chair.width / 2), facing: 'rear', physicalModelMm: { overallHeight: 900, seatHeight: 460 }, generatedRedraw: true, downscalingApplied: false })
+writePng('table-standard', table, { source: FURNITURE_SOURCE, sourceCrop: [45, 920, 380, 300], contactRow: contactRow(table), anchorX: Math.round(table.width / 2), physicalModelMm: { height: 750, width: 1050 }, generatedRedraw: true, downscalingApplied: false, ...(VERSION === 'v6' ? { contactShadowIncluded: false } : {}) })
+writePng('chair-standard', chair, { source: FURNITURE_SOURCE, sourceCrop: [430, 910, 190, 310], contactRow: contactRow(chair), anchorX: Math.round(chair.width / 2), facing: 'rear', physicalModelMm: { overallHeight: 900, seatHeight: 460 }, generatedRedraw: true, downscalingApplied: false, ...(VERSION === 'v6' ? { contactShadowIncluded: false } : {}) })
 
 fs.writeFileSync(path.join(PUBLIC, 'prime-keeper-neutral-native-256x320.png'), keeper.bytes)
 fs.writeFileSync(path.join(PUBLIC, 'prime-keeper-seated-back-native-256x320.png'), seatedKeeper.bytes)
 const register = {
-  schema: 'lighthouse-keeper/kitchen-native-assets@5', status: 'review-only-unapproved-v5-redraft', createdOn: '2026-10-24',
+  schema: VERSION === 'v6' ? 'lighthouse-keeper/kitchen-native-assets@6' : 'lighthouse-keeper/kitchen-native-assets@5', status: `review-only-unapproved-${VERSION}-redraft`, createdOn: '2026-10-24',
   fittedUnits: { register: V4_REGISTER_FILE, registerSha256: V4_REGISTER_HASH, lockedBaseSha256: outputs['fitted-units-static'].sha256, changed: false },
   sources: { loose: { file: LOOSE_SOURCE, sha256: LOOSE_HASH, dimensions: [loose.png.width, loose.png.height] }, furniture: { file: FURNITURE_SOURCE, sha256: FURNITURE_HASH, dimensions: [furniture.png.width, furniture.png.height] } },
   scaleApplied: false, downscalingApplied: false, resamplingApplied: false, colourTransformApplied: false,
   worldDensity: { kitchenPixelsPerLogicalPixel: 228 / 21, keeperSourcePixelsPerLogicalPixel: 8, keeperDisplayScale: 228 / 168, keeperDisplayCell: [347.428571, 434.285714], cabinetWorktopHeightPixels: 213, cabinetWorktopModelMm: 850, primeKeeperModelMm: 1750 },
-  placement: { counterSupportLocalY: 84, previousCounterSupportLocalY: 71, movement: '13 native pixels forward onto visible worktop plane', sourcePixelsPerPace: 114 },
+  placement: { counterSupportLocalY: 84, previousCounterSupportLocalY: 71, movement: '13 native pixels forward onto visible worktop plane', sourcePixelsPerPace: 114, ...(VERSION === 'v6' ? { furnitureAnchorPaces: 16, chairDepthOffsetPixels: 24, furnitureLayerOrder: ['table', 'rear-seated-keeper', 'chair'] } : {}) },
   globalStateMap: { off: { toaster: 'off', kettle: 'off', bin: 'standard', bowl: 'standard' }, on: { toaster: 'on', kettle: 'on', bin: 'standard', bowl: 'standard' }, broken: { toaster: 'broken', kettle: 'broken', bin: 'broken', bowl: 'broken' } },
   keeperPresentation: { neutral: { file: KEEPER_FILE, sha256: sha256(keeper.bytes) }, seated: { file: SEATED_KEEPER_FILE, sha256: sha256(seatedKeeper.bytes) }, sourceDimensions: [256, 320], displayDimensions: [347.428571, 434.285714], rationale: 'Prime and kitchen share one world density; camera zoom then scales the composed world uniformly' },
   outputs,
 }
 fs.writeFileSync(path.join(OUT, 'extraction-register.json'), `${JSON.stringify(register, null, 2)}\n`)
-console.log(`Built ${Object.keys(outputs).length} Kitchen V5 native assets; fitted units remained byte-identical.`)
+console.log(`Built ${Object.keys(outputs).length} Kitchen ${VERSION.toUpperCase()} native assets; fitted units remained byte-identical.`)

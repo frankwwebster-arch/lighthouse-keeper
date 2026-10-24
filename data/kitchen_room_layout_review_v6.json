@@ -1,0 +1,45 @@
+{
+  "schema": "lighthouse-keeper/kitchen-room-layout-review@6",
+  "version": 6,
+  "createdOn": "2026-10-24",
+  "status": "review-only-awaiting-loose-asset-review",
+  "reviewRoute": "/keeper-review/kitchen-room-layout-v6/",
+  "supersedesReview": "/keeper-review/kitchen-room-layout-v5/",
+  "authority": {
+    "document": "docs/KITCHEN_ASSET_AUTHORITY.md",
+    "contract": "data/kitchen_asset_contract_v1.json",
+    "roomGrid": "data/kitchen_room_grid_contract_v2.json",
+    "lockedFittedBaseSha256": "ba84022371aea330e2fe50e5ad8fb37bf9d210aa1e09649d7f2fc69f460f49b1"
+  },
+  "nativeAssets": {
+    "register": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/native-assets/extraction-register.json",
+    "registerSha256": "ef5dec7a8e622fc1939c6fcff38bbae3ef926db0c25720182d01f5f7fcf5d37f",
+    "looseSource": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-loose-family-shadowless-source-plate.png",
+    "looseSourceSha256": "d3c7f612a0e63e160b7973dfec7dc3d57ff6f6f7e7257fa86a0e67ccd1f8ef0e",
+    "furnitureSource": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-furniture-shadowless-source-plate.png",
+    "furnitureSourceSha256": "39746a721da1021f620352f96d0ac1de640d48176db45cff1867e62e9db473fd",
+    "scaleAppliedToKitchenArt": false,
+    "downscalingApplied": false,
+    "resamplingApplied": false,
+    "colourTransformApplied": false
+  },
+  "corrections": {
+    "contactShadows": "removed from every loose output; room surfaces remain owned by the room",
+    "tablePosition": "x=1824 kitchen-source pixels, exactly pace 16 and 228 pixels beyond the fridge edge",
+    "chairPosition": "same exact 16-pace x-anchor as table, 24 pixels farther into the foreground",
+    "depthOrder": ["table", "rear-seated Prime Keeper", "rear-facing chair"],
+    "seatedPresentation": "enabled by default; standing scale reference remains optional"
+  },
+  "locomotion": {
+    "sourcePixelsPerPace": 114,
+    "tableAndChairAnchorPaces": 16,
+    "assetResolutionIndependentOfPaceGrid": true
+  },
+  "boundary": {
+    "runtimeChanged": false,
+    "gameplayChanged": false,
+    "approvedFittedUnitsChanged": false,
+    "legacyRuntime84x74UsedByReview": false,
+    "rollback": "Rejecting V6 discards only its route, shell, generated shadowless source plates, native loose outputs and V6 references. The approved fitted base and overlays, V1-V5 evidence, Runtime Promotion V1 and retained 84 x 74 room remain byte-identical."
+  }
+}
