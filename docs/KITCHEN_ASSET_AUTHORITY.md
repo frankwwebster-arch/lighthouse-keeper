@@ -133,9 +133,11 @@ hash is pinned in the promotion record.
 ## Current loose-asset review
 
 The active redraft review is published at
-`/keeper-review/kitchen-room-layout-v6/`. It uses the locked fitted base in all
+`/keeper-review/kitchen-room-layout-v7/`. It uses the locked fitted base in all
 three global states, so the full cabinet run cannot move and no source-sheet row
-boundary can appear. Sink flow, fitted damage, three independent dishwasher
+boundary can appear. V7 replaces V6's opaque 100 × 60 ON sink row crop with a
+water-only transparent effect: its fall begins at the curved tap outlet and its
+splash is clipped before the unchanged opaque basin front. Sink flow, fitted damage, three independent dishwasher
 warning lights, the oven cavity light and floor water are registered transparent
 overlays. Floor water sits on the walking plane and never participates in the
 fitted-run box.
@@ -148,7 +150,9 @@ gutter. Countertop support is local y=84, thirteen native
 pixels forward from V4, so the objects occupy the visible worktop plane rather
 than its rear edge. Toaster On is one connected silhouette with toast seated in
 its slots. Kettle On is byte-identical to Off and has no drawn steam. The broken
-bowl physically loses its front-left wall and includes detached pieces.
+bowl physically loses its front-left wall and includes detached pieces. The
+rear chair retains every V6 wood pixel but removes five enclosed white
+source-paper islands, so the seated Keeper is visible between its slats.
 
 Prime and the kitchen are registered into one world density before camera zoom.
 The existing 256 x 320 Prime source cell uses 8 pixels per logical pixel while
@@ -162,9 +166,10 @@ source; camera zoom applies uniformly to the composed world.
 This page is review-only: no approved source or runtime pixel is overwritten or
 promoted. Its exact outputs, source hashes, support rows, global-state map,
 world-scale equation, pace mapping and discard boundary are recorded in
-`data/kitchen_room_layout_review_v6.json` and its extraction register. The
+`data/kitchen_room_layout_review_v7.json` and its extraction register. The
 table and rear-facing chair share exact pace 16 beyond the fridge; depth order
-is table, rear-seated Keeper, chair. V5 is rejected shadowed evidence; V4's
+is table, rear-seated Keeper, chair. V7 exposes the immutable V6 predecessor and
+the corrected draft side-by-side. V5 is rejected shadowed evidence; V4's
 fitted-unit approval remains binding.
 
 V1 is rejected and frozen only as historical evidence. It incorrectly used the

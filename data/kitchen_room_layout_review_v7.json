@@ -1,0 +1,35 @@
+{
+  "schema": "lighthouse-keeper/kitchen-room-layout-review@7",
+  "version": 7,
+  "createdOn": "2026-10-25",
+  "status": "review-only-awaiting-sink-and-chair-review",
+  "reviewRoute": "/keeper-review/kitchen-room-layout-v7/",
+  "supersedesReview": "/keeper-review/kitchen-room-layout-v6/",
+  "authority": {
+    "document": "docs/KITCHEN_ASSET_AUTHORITY.md",
+    "contract": "data/kitchen_asset_contract_v1.json",
+    "roomGrid": "data/kitchen_room_grid_contract_v2.json",
+    "lockedFittedBaseSha256": "ba84022371aea330e2fe50e5ad8fb37bf9d210aa1e09649d7f2fc69f460f49b1"
+  },
+  "nativeAssets": {
+    "register": "art/drafts/kitchen-room-layout-review-2026-10-25-v7/native-assets/extraction-register.json",
+    "registerSha256": "eef929ce4e6f7f1d7f8fafc406de6d90605af6a74b37a35eeb5f855af0379a8a",
+    "predecessorRegister": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/native-assets/extraction-register.json",
+    "predecessorRegisterSha256": "ef5dec7a8e622fc1939c6fcff38bbae3ef926db0c25720182d01f5f7fcf5d37f",
+    "scaleAppliedToKitchenArt": false,
+    "downscalingApplied": false,
+    "resamplingApplied": false,
+    "colourTransformApplied": false
+  },
+  "corrections": {
+    "sinkOn": "removed opaque rectangular source-row replacement; stream touches the curved tap outlet and water is clipped above the unchanged opaque basin front",
+    "chair": "removed five enclosed source-paper alpha islands so the seated Keeper remains visible through the rear-chair slats"
+  },
+  "boundary": {
+    "runtimeChanged": false,
+    "gameplayChanged": false,
+    "approvedFittedUnitsChanged": false,
+    "roomGridChanged": false,
+    "rollback": "Rejecting V7 discards only its route, page and V7 native correction directory. V1-V6, the V4 fitted-unit lock, Runtime Promotion V1 and retained 84 x 74 runtime room remain byte-identical."
+  }
+}

@@ -278,19 +278,18 @@ not asset resolution: one 10.5-lp pace is 114 kitchen-source pixels and every
 228-pixel fitted bay is exactly two paces wide.
 
 The active movable composition redraft is
-`/keeper-review/kitchen-room-layout-v6/`. The fitted units are approved and
-hash-locked as one fixed native base; only their warning lights, oven interior
-light and replaceable broken-SFX declarations may change. V6 redraws the loose
-family at target source size without baked contact shadows, keeps worktop
-objects 13 native pixels forward, supplies a connected ON toaster and a broken
-bowl with its front-left wall physically missing. Prime is registered into the
-kitchen world at 228/168 display scale so the 850 mm cabinet top reads around
-waist height; the composed room is then camera-zoomed uniformly. No kitchen art
-is downscaled or resampled. Counter, worktop and floor destinations remain exact
-pace anchors, floor water remains an independent walking-plane layer, and V6
-changes no gameplay or live runtime asset. The table and rear chair share exact
-pace 16 beyond the fridge, layered table → seated Keeper → chair. V5 is frozen
-as rejected shadowed evidence; V4's fitted-unit approval remains binding.
+`/keeper-review/kitchen-room-layout-v7/`. The fitted units are approved and
+hash-locked as one fixed native base; only their separate warning, light and
+effect layers may change. V7 preserves V6's target-sized shadowless loose
+family, forward worktop placement, shared Prime scale, exact pace anchors and
+table → seated Keeper → chair depth order. It corrects only two review defects:
+the ON water now starts at the curved tap outlet and is clipped above the
+unchanged opaque basin front, while five trapped source-paper regions between
+the rear-chair slats and below its seat are transparent. The review exposes V6
+and V7 side-by-side and applies no scaling, resampling or colour transform.
+Camera zoom still applies only to the complete composed world. V7 changes no
+gameplay or live runtime asset; V6 remains immutable predecessor evidence and
+V4's fitted-unit approval remains binding.
 
 ```sh
 npm run verify:kitchen-approved-family
@@ -301,6 +300,7 @@ npm run verify:kitchen-room-layout-review-v3
 npm run verify:kitchen-room-layout-review-v4
 npm run verify:kitchen-room-layout-review-v5
 npm run verify:kitchen-room-layout-review-v6
+npm run verify:kitchen-room-layout-review-v7
 ```
 
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
