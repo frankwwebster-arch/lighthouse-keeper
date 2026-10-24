@@ -7,7 +7,7 @@ Warm Ligne-Claire Family package dated 24 October 2026.
 
 - High-resolution visual master:
   `art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png`
-- Exact fitted bodies and light-only animation layers:
+- Legacy 84 × 74 compatibility bodies and light-only animation layers:
   `art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/`
 - Machine-readable requirements:
   `data/kitchen_asset_contract_v1.json`
@@ -32,18 +32,26 @@ orange hardware. It must remain crisp at native size and at 2x/4x zoom. Do not
 revert to flat schematic art, childish proportions, candy gloss, cute smoke,
 flies or arbitrary cartoon damage.
 
-## Binding geometry
+## Binding native presentation and locomotion geometry
 
-The room is 772 x 224 logical pixels. There are six adjacent fitted bays at x
-origins 84, 168, 252, 336, 420 and 504. Every fitted cabinet or appliance body
-is exactly 84 x 74 pixels; the run is exactly 504 pixels wide. Interaction
-centres are x 126, 210, 294, 378, 462 and 546 on y 218. Worktop support is y
-141 and cabinet floor support is y 208.
+Kitchen art must be retained and reviewed at the approved master's native
+resolution. It must not be reduced to 84 × 74 bodies for visual approval or
+future final presentation. Camera zoom may scale the composed world for the
+viewport, but there is no reduced intermediate artwork and 100% review zoom
+maps one source pixel to one CSS pixel.
 
 The high-resolution master uses six equal 228-pixel source bays at x boundaries
 65, 293, 521, 749, 977, 1205 and 1433. Each source bay maps independently to
-one 84-pixel game bay. Taps, the hob, broken doors and environmental effects use
-registered overflow layers; they never change the 84 x 74 body footprint.
+two exact Prime Keeper paces: one pace is 10.5 logical pixels, or 84 integer
+Keeper units, and is represented by 114 source pixels in the native kitchen
+review. Every point the Keeper walks between must sit on this pace lattice.
+That exact walk distance is the binding spatial restraint; asset resolution is
+not constrained by the locomotion grid.
+
+The 772 × 224 coordinate system, six x origins 84…504 and 84 × 74 bodies are
+retained as the reversible Runtime Promotion V1 compatibility boundary only.
+They are not the continuing visual authority. Taps, the hob, broken doors and
+environmental effects continue to use registered overflow layers.
 
 The Belfast sink is centred and rear-set. The basic fridge is a one-bay
 undercounter model. The cabinetry forms one fitted family, with a continuous
@@ -89,21 +97,22 @@ placeholder. No final audio is baked into art or animation.
 
 ## Status
 
-Frank approved this visual family, its perspective and the exact equal-bay
-normalization on 24 October 2026. It is the only continuing kitchen art
-authority. Runtime Promotion V1 is now wired and verified. The live room maps
-the existing `cooker` gameplay object to V4 Oven and `fridge` to V4 Fridge;
-the other four fitted modules remain Off until they gain gameplay consumers.
-Broken Oven uses only the approved cavity-light strip. The Dishwasher strip is
-installed and hash-pinned, but the live Dishwasher remains Off because no
-Dishwasher gameplay object exists yet.
+Frank approved this visual family and its perspective on 24 October 2026. It is
+the only continuing kitchen art authority. Runtime Promotion V1 is wired and
+technically verified, but its reduced 84 × 74 visual presentation is rejected
+and must be replaced by a native-resolution promotion after the loose assets
+complete review. Until then it remains the reversible live compatibility
+implementation. It maps the existing `cooker` gameplay object to V4 Oven and
+`fridge` to V4 Fridge; the other four fitted modules remain Off until they gain
+gameplay consumers. Broken Oven uses only the approved cavity-light strip. The
+Dishwasher strip is installed and hash-pinned, but the live Dishwasher remains
+Off because no Dishwasher gameplay object exists yet.
 
-The full approved 772 × 224 room coordinate system receives one uniform outer
-presentation transform into the existing 420-unit floor viewport. Every body
-retains its exact 84 × 74 source cell, declared origin, order and relative
-registration. Cooker/Fridge interaction points derive from the approved bay
-centres; commands, need changes, activity timing, upgrades, saves, breakdown
-state and repair behaviour are unchanged.
+Runtime Promotion V1's compatibility coordinate system is 772 × 224 with six
+84 × 74 reduced bodies. Those dimensions are preserved only so rollback and
+current gameplay behaviour remain deterministic; they are not approved art
+dimensions. Cooker/Fridge interaction points, commands, need changes, activity
+timing, upgrades, saves, breakdown state and repair behaviour are unchanged.
 
 Promotion is reversible. Exact approved bytes are copied through the versioned
 draft, production-source and public-delivery locations recorded in
@@ -114,17 +123,24 @@ hash is pinned in the promotion record.
 ## Current loose-asset review
 
 The complete movable room is published at
-`/keeper-review/kitchen-room-layout-v1/`. It composes the exact promoted fitted
-bodies in the full 772 × 224 coordinate system and clips the toaster, kettle,
-bin, bowl, table and chair directly from the approved high-resolution master.
-Fitted units, counter ownership and floor-slot swapping follow the room-grid
-contract; Broken appliances stay movement-locked until repaired.
+`/keeper-review/kitchen-room-layout-v2/`. It displays the approved fitted run
+and the toaster, kettle, bin, bowl, table and chair at native source resolution.
+The fitted run is an unscaled master crop. Loose objects are deterministic 1:1
+cutouts whose retained RGB bytes match the master exactly; only the connected
+sheet background becomes transparent and a four-pixel safety gutter is added.
+All destinations sit on the Prime Keeper pace lattice and Broken appliances
+stay movement-locked until repaired.
 
 This page exists so Frank can specify amendments to the loose assets shown on
-the source sheet. It is review-only: no master pixel is extracted, overwritten
-or promoted, and no superseded kitchen draft is restored. Its exact crop and
-layout declarations, immutable master hash and discard boundary are recorded
-in `data/kitchen_room_layout_review_v1.json`.
+the source sheet. It is review-only: no approved source or runtime pixel is
+overwritten or promoted, and no superseded kitchen draft is restored. Its exact
+native crops, output hashes, pace mapping and discard boundary are recorded in
+`data/kitchen_room_layout_review_v2.json` and its extraction register.
+
+V1 is rejected and frozen only as historical evidence. It incorrectly used the
+reduced 84 × 74 compatibility bodies as review artwork, resized loose crops,
+changed their colour with a blend mode and presented them on a schematic
+canvas. It must never be used as an art reference.
 
 ## Consolidation record
 

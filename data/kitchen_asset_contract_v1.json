@@ -1,12 +1,25 @@
 {
   "schema": "lighthouse-keeper/kitchen-assets@1",
-  "status": "approved-authority-runtime-wired",
+  "status": "approved-visual-authority-runtime-v1-rework-required",
   "approvedOn": "2026-10-24",
   "visualAuthority": {
     "master": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
     "sha256": "a8a6972dd8398ec3cd52f42825a5a5f056a1e289d10b77796f3294b3ac85ab98",
     "style": "warm, softly dimensional adult ligne claire",
-    "zoom": [1, 2, 4]
+    "zoom": [1, 2, 4],
+    "nativeDimensions": [1536, 1024],
+    "downscalingPermitted": false,
+    "resamplingPermitted": false,
+    "cameraZoomPermitted": true
+  },
+  "locomotionPresentation": {
+    "bindingSpatialConstraint": "every distance the Prime Keeper walks is an exact whole number of paces",
+    "paceLogicalPixels": 10.5,
+    "paceKeeperUnits": 84,
+    "nativeKitchenSourcePixelsPerPace": 114,
+    "nativeSourceBayWidthPixels": 228,
+    "nativeSourceBayWidthPaces": 2,
+    "assetResolutionIndependentOfPaceGrid": true
   },
   "room": {
     "logicalSize": [772, 224],
@@ -94,10 +107,12 @@
   },
   "packaging": {
     "approvedDraft": "art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4",
-    "bodyCandidates": "84x74 RGBA PNG",
+    "bodyCandidates": "84x74 RGBA PNG retained only as Runtime Promotion V1 compatibility outputs; not visual-review or future final-rendering authority",
     "animationCell": [92, 82],
     "transparentSafetyGutter": 4,
     "runtimePromoted": true,
+    "runtimePresentationAccepted": false,
+    "runtimeReworkReason": "Promotion V1 downscales the approved master; future promotion must retain native source pixels and use camera zoom",
     "runtimePromotion": "data/kitchen_runtime_promotion_v1.json",
     "retainedLegacyRoom": "public/sprites/room_kitchen.png"
   }

@@ -199,10 +199,13 @@ The only continuing kitchen art authority is Warm Ligne-Claire Family V4.
 Read `docs/KITCHEN_ASSET_AUTHORITY.md`,
 `data/kitchen_asset_contract_v1.json` and
 `data/kitchen_room_grid_contract_v2.json` before kitchen work. The exact
-84 × 74 bodies and light-only animation layers live in
-`art/drafts/kitchen-warm-ligne-claire-family-2026-10-24-v4/`. The visual
-master hash is pinned in the approval record. Runtime promotion is still
-pending; do not infer it from visual approval or replace the live sprite early.
+native 1536 × 1024 visual master is pinned in the approval record. Never
+downscale or resample that art: camera zoom handles presentation, while every
+distance the Prime Keeper walks must be an exact whole number of his 10.5-lp
+/ 84-ku paces. Runtime Promotion V1 remains live only as a reversible
+compatibility boundary; its 84 × 74 derivatives are not visual authority and
+must not be used for art review. The active movable room reviewer is
+`/keeper-review/kitchen-room-layout-v2/`.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 

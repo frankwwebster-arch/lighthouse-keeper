@@ -24,6 +24,8 @@ assert.deepEqual(Object.keys(record.sourceSheetCrops).sort(), Object.keys(author
 assert.equal(hash(record.authority.master), record.authority.masterSha256)
 assert.equal(record.boundary.runtimeChanged, false)
 assert.equal(record.boundary.approvedArtChanged, false)
+assert.match(record.status, /^rejected-/)
+assert.equal(record.rejection.replacement, '/keeper-review/kitchen-room-layout-v2/')
 assert.ok(archiveRoute.includes("'kitchen-room-layout-v1'"), 'review master must use the integrity-checking same-origin archive proxy')
 assert.ok(reviewRoute.includes("/keeper-review/kitchen-room-layout-v1/index.html"), 'stable review route must resolve the immutable public shell')
 
@@ -49,4 +51,4 @@ assert.equal(fs.existsSync(`public${legacyPath}`), false)
 
 const legacy = 'public/sprites/room_kitchen.png'
 assert.equal(hash(legacy), 'c1cb3c90b911ea09ae13d8fd09297787b990b0997dc589fb9e6a62c658099eff')
-console.log('Kitchen room layout review V1 verified: exact grid, movable ownership rules, preloaded master, reversible review-only boundary.')
+console.log('Kitchen room layout review V1 historical mechanics verified; rejection status and V2 replacement are pinned.')

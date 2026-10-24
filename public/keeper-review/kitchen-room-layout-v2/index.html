@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kitchen V4 · native-pixel movable room review</title>
+<style>
+:root{color-scheme:light;--paper:#fdfaea;--ink:#13262d;--muted:#5d6b70;--blue:#006493;--cyan:#08a9c8;--orange:#d46a16;--line:#b9ad92;--panel:#fffdf5;--bad:#8c2d20;--good:#17633d}*{box-sizing:border-box}body{margin:0;background:#e9dfca;color:var(--ink);font:15px/1.45 system-ui,-apple-system,sans-serif}header,main{max-width:1320px;margin:auto;padding:20px}header{padding-top:28px;border-bottom:1px solid var(--line)}h1,h2,h3,p{margin-top:0}h1{font:700 clamp(29px,4vw,46px)/1.03 Georgia,serif;margin-bottom:10px}.lede{max-width:960px;font-size:17px}.tags,.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.tag{padding:4px 10px;border:1px solid var(--line);border-radius:999px;background:var(--panel);font-size:13px}.tag.review{border-color:var(--orange);color:#703408}.tag.native{border-color:var(--good);color:var(--good)}.notice{padding:11px 13px;border-left:4px solid var(--orange);background:var(--panel)}.notice.good{border-color:var(--good);color:var(--good)}.rejected{border-left-color:var(--bad);color:var(--bad)}.panel{margin:16px 0;padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}button,select{font:inherit;padding:8px 11px;border:1px solid #857961;border-radius:7px;background:#fff;color:var(--ink)}button.primary{border-color:var(--blue);background:var(--blue);color:#fff}button:disabled,select:disabled,input:disabled{opacity:.45}.controls label{display:flex;gap:6px;align-items:center}.key{color:var(--muted);font-size:13px}.cameraScroll,.masterScroll{overflow:auto;padding:12px;border:1px solid var(--line);border-radius:9px;background:#d8cfbd}.cameraShell{position:relative}.camera{position:absolute;left:0;top:0;width:2095.428571px;height:608px;overflow:hidden;transform-origin:top left;background:#fdfaea;touch-action:none;user-select:none}.camera.guides{background-color:#fdfaea;background-image:repeating-linear-gradient(90deg,transparent 0,transparent 113px,rgba(0,100,147,.18) 113px,rgba(0,100,147,.18) 114px)}.run{position:absolute;left:228px;top:324.571429px;width:1368px;height:250px;overflow:hidden;z-index:2}.run img{position:absolute;left:-65px;top:-40px;max-width:none}.floor{position:absolute;left:0;right:0;top:564.571429px;border-top:2px solid rgba(77,62,39,.28)}.paceRail{position:absolute;left:0;right:0;top:8px;height:28px;color:#23697f;font:12px ui-monospace,monospace}.paceRail span{position:absolute;top:0;height:26px;padding-left:4px;border-left:1px solid rgba(0,100,147,.45)}.asset{position:absolute;z-index:4;max-width:none;cursor:grab;filter:none}.asset:active{cursor:grabbing}.asset.locked{cursor:not-allowed}.primeScale{position:absolute;z-index:3;max-width:none;pointer-events:none;filter:drop-shadow(0 5px 4px rgba(34,33,26,.2))}.readout{display:grid;grid-template-columns:1fr auto;gap:12px;margin-top:11px;color:var(--muted)}.readout code{color:var(--blue);white-space:normal}.families{display:grid;grid-template-columns:repeat(3,minmax(260px,1fr));gap:12px}.family{min-height:250px;padding:12px;border-top:4px solid var(--line);background:#f4ecda}.family header{display:flex;align-items:start;justify-content:space-between;gap:10px;padding:0;border:0}.family h3{margin-bottom:3px}.preview{height:175px;display:grid;place-items:center;overflow:auto;background:#fdfaea;border:1px solid #d1c5ab}.preview img{max-width:none}.masterScroll img{display:block;max-width:none}.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.rules article{padding:12px;border-top:3px solid var(--line);background:#f4ecda}.rules strong{display:block;margin-bottom:5px;color:var(--blue)}details summary{cursor:pointer;font-weight:700}@media(max-width:900px){.families,.rules{grid-template-columns:1fr}.readout{grid-template-columns:1fr}}@media(max-width:560px){header,main{padding:14px}}
+</style>
+</head>
+<body>
+<header>
+<h1>The approved kitchen, at its real resolution</h1>
+<p class="lede">This is the native 1536 × 1024 Kitchen V4 artwork laid out from the Prime Keeper’s approved room and gait measurements. Every fitted and loose asset keeps its authored source pixels. The initial camera fits the whole room; 100% camera provides exact 1:1 inspection.</p>
+<div class="tags"><span class="tag review">Review-only V2</span><span class="tag native">No downscaling or resampling</span><span class="tag">114 source px = one Prime Keeper pace</span><span class="tag">Nothing promoted</span></div>
+</header>
+<main>
+<p id="loading" class="notice">Loading and decoding every native asset before movement is enabled…</p>
+<section class="panel">
+<div class="controls">
+<button id="reset" class="primary" disabled>Reset layout</button>
+<label>Fitted state <select id="runState" disabled><option value="off">Off</option><option value="on">On</option><option value="broken">Broken</option></select></label>
+<label>Camera <select id="zoom" disabled><option value="0.5" selected>50% · whole room</option><option value="0.75">75%</option><option value="1">100% · 1:1 inspect</option><option value="1.25">125%</option><option value="1.5">150%</option><option value="2">200%</option></select></label>
+<label><input id="guides" type="checkbox" disabled> Pace guides</label>
+<label><input id="showPrime" type="checkbox" disabled> Prime Keeper scale</label>
+</div>
+<p class="key"><strong>Movement:</strong> drag the loose assets. Every destination is on the 114-source-pixel Prime Keeper pace lattice. Kettle and toaster snap to their eligible counters; the bowl snaps to a worktop centre; bin, table and chair swap floor stations. Broken appliances remain locked.</p>
+<div class="cameraScroll"><div id="cameraShell" class="cameraShell"><div id="camera" class="camera"><div id="paceRail" class="paceRail"></div><div id="run" class="run"><img id="runImage" width="1536" height="1024" alt="Approved Kitchen V4 fitted run at native source resolution"></div><div id="floor" class="floor"></div><img id="primeScale" class="primeScale" hidden alt="Approved Prime Keeper standing frame at the same world-camera scale"><div id="assetLayer"></div></div></div></div>
+<div class="readout"><span id="status">Waiting for native assets.</span><code id="layout"></code></div>
+</section>
+<section class="panel">
+<h2>Loose / ephemeral assets · original size</h2>
+<p>These movable cutouts retain the master’s original RGB pixels. Only the connected cream sheet background was made transparent, with a four-pixel safety gutter added outside the crop. Nothing was redrawn, recoloured, resized or resampled.</p>
+<div id="families" class="families"></div>
+</section>
+<details class="panel"><summary>Open the complete approved master at 1536 × 1024</summary><p class="key">This is displayed at intrinsic size inside a scroll pane. It is the visual authority against which the room above must match.</p><div class="masterScroll"><img id="masterSheet" width="1536" height="1024" alt="Complete approved Kitchen V4 source master at native size"></div></details>
+<section class="rules">
+<article><strong>Pixels are authoritative</strong><span>Review art comes only from the approved 1536 × 1024 master. The 84 × 74 runtime family is not used here.</span></article>
+<article><strong>Keeper geometry is authoritative</strong><span>The room is the 193 × 56 logical-pixel width tier. One approved 10.5-lp / 84-ku Keeper pace projects to 114 kitchen-source pixels; all interaction anchors lie on that lattice.</span></article>
+<article><strong>Promotion stays reversible</strong><span>V2 is a new review-only draft. The approved master, current runtime and rollback sprite remain byte-identical.</span></article>
+</section>
+</main>
+<script>window.addEventListener('error',event=>{const loading=document.getElementById('loading');if(loading)loading.textContent=`Review locked: ${event.message} · line ${event.lineno}`})</script>
+<script>
+const ROOT='/keeper-review/kitchen-room-layout-v2/assets/';
+const MASTER=`${ROOT}kitchen-v4-master.png?v=2`,PRIME=`${ROOT}prime-keeper-neutral-native-256x320.png?v=2`;
+const WORLD_SCALE=228/21,ROOM_LOGICAL_W=193,ROOM_LOGICAL_H=56,PACE_LOGICAL=10.5;
+const PACE=PACE_LOGICAL*WORLD_SCALE,RUN_LEFT=21*WORLD_SCALE,FLOOR_Y=52*WORLD_SCALE,KEEPER_FLOOR_Y=54.5*WORLD_SCALE,RUN_TOP=FLOOR_Y-240,WORKTOP_Y=RUN_TOP+31,STAGE_W=ROOM_LOGICAL_W*WORLD_SCALE,STAGE_H=ROOM_LOGICAL_H*WORLD_SCALE;
+const RUN_TOPS={off:-40,on:-322,broken:-602};
+const COUNTER_CENTRES=[342,570,798,1026,1254,1482];
+const FLOOR_CENTRES=[114,1710,1938];
+const ASSETS={
+ toaster:{label:'Toaster',kind:'counter',states:['off','on','broken'],files:{off:'toaster-off-native.png',on:'toaster-on-native.png',broken:'toaster-broken-native.png'}},
+ kettle:{label:'Kettle',kind:'counter',states:['off','on','broken'],files:{off:'kettle-off-native.png',on:'kettle-on-native.png',broken:'kettle-broken-native.png'}},
+ bin:{label:'Bin',kind:'floor',states:['standard','broken'],files:{standard:'bin-standard-native.png',broken:'bin-broken-native.png'}},
+ bowl:{label:'Mixing bowl',kind:'worktop',states:['standard','broken'],files:{standard:'bowl-standard-native.png',broken:'bowl-broken-native.png'}},
+ table:{label:'Table',kind:'floor',states:['standard'],files:{standard:'table-standard-native.png'}},
+ chair:{label:'Chair',kind:'floor',states:['standard'],files:{standard:'chair-standard-native.png'}}
+};
+const defaults=()=>({state:{toaster:'off',kettle:'off',bin:'standard',bowl:'standard',table:'standard',chair:'standard'},counter:{kettle:0,toaster:1},worktop:{bowl:3},floor:{bin:0,table:1,chair:2}});
+let model=defaults(),ready=false,zoom=.5,drag=null;
+const $=id=>document.getElementById(id);
+const url=name=>`${ROOT}${ASSETS[name].files[model.state[name]]}?v=2`;
+function decodeImage(src){return new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>{const decoded=image.decode?.();decoded?decoded.then(()=>resolve(image),reject):resolve(image)};image.onerror=()=>reject(new Error(`Could not load ${src}`));image.src=src})}
+function centreFor(name){const kind=ASSETS[name].kind;if(kind==='counter')return COUNTER_CENTRES[model.counter[name]];if(kind==='worktop')return COUNTER_CENTRES[model.worktop[name]];return FLOOR_CENTRES[model.floor[name]]}
+function supportFor(name){return ASSETS[name].kind==='floor'?FLOOR_Y:WORKTOP_Y}
+function place(node,name){node.style.left=`${centreFor(name)-node.naturalWidth/2}px`;node.style.top=`${supportFor(name)-node.naturalHeight}px`}
+function renderRoom(){const layer=$('assetLayer');layer.innerHTML='';for(const name of ['kettle','toaster','bowl','bin','table','chair']){const image=document.createElement('img');image.className='asset';image.src=url(name);image.alt=`${ASSETS[name].label} · ${model.state[name]} · native pixels`;image.draggable=false;image.dataset.name=name;image.dataset.kind=ASSETS[name].kind;if((name==='kettle'||name==='toaster')&&model.state[name]==='broken')image.classList.add('locked');image.onload=()=>place(image,name);image.onpointerdown=startDrag;layer.append(image)}renderLayout()}
+function renderLayout(){const anchors=Object.keys(ASSETS).map(name=>`${name}:${centreFor(name)/PACE}p`).join(' · ');$('layout').textContent=`anchors · ${anchors}`}
+function renderFamilies(){const host=$('families');host.innerHTML='';for(const [name,data] of Object.entries(ASSETS)){const article=document.createElement('article'),head=document.createElement('header'),preview=document.createElement('div'),select=document.createElement('select'),image=document.createElement('img');article.className='family';head.innerHTML=`<div><h3>${data.label}</h3><span class="key">${data.kind} · native pixels</span></div>`;for(const state of data.states){const option=document.createElement('option');option.value=state;option.textContent=state[0].toUpperCase()+state.slice(1);select.append(option)}select.value=model.state[name];select.disabled=!ready;select.onchange=()=>{model.state[name]=select.value;renderRoom();renderFamilies();$('status').textContent=`${data.label} set to ${select.value}; source dimensions unchanged.`};head.append(select);preview.className='preview';image.src=url(name);image.alt=`${data.label} ${model.state[name]} at native size`;image.draggable=false;preview.append(image);article.append(head,preview);host.append(article)}}
+function nearest(value,values){return values.reduce((best,x,i)=>Math.abs(x-value)<Math.abs(values[best]-value)?i:best,0)}
+function point(event){const rect=$('camera').getBoundingClientRect(),scale=rect.width/STAGE_W;return{x:(event.clientX-rect.left)/scale,y:(event.clientY-rect.top)/scale}}
+function startDrag(event){if(!ready)return;const node=event.currentTarget,name=node.dataset.name;if((name==='kettle'||name==='toaster')&&model.state[name]==='broken'){$('status').textContent=`${ASSETS[name].label} is Broken and movement-locked.`;return}const p=point(event);drag={node,name,dx:p.x-parseFloat(node.style.left),dy:p.y-parseFloat(node.style.top)};node.setPointerCapture(event.pointerId);node.style.zIndex=20;node.onpointermove=moveDrag;node.onpointerup=endDrag;node.onpointercancel=endDrag;$('status').textContent=`Moving ${ASSETS[name].label}…`}
+function moveDrag(event){if(!drag)return;const p=point(event),w=drag.node.naturalWidth,h=drag.node.naturalHeight;drag.node.style.left=`${Math.max(0,Math.min(STAGE_W-w,p.x-drag.dx))}px`;drag.node.style.top=`${Math.max(0,Math.min(STAGE_H-h,p.y-drag.dy))}px`}
+function swap(object,name,target){const other=Object.keys(object).find(key=>key!==name&&object[key]===target),old=object[name];object[name]=target;if(other)object[other]=old}
+function endDrag(event){if(!drag)return;const {node,name}=drag,p=point(event),kind=ASSETS[name].kind;node.onpointermove=null;node.onpointerup=null;node.onpointercancel=null;if(kind==='counter'){const target=nearest(p.x,COUNTER_CENTRES.slice(0,2));swap(model.counter,name,target)}else if(kind==='worktop'){model.worktop[name]=nearest(p.x,COUNTER_CENTRES)}else{const target=nearest(p.x,FLOOR_CENTRES);swap(model.floor,name,target)}$('status').textContent=`${ASSETS[name].label} snapped to pace ${centreFor(name)/PACE}; every walk distance remains an exact pace count.`;drag=null;renderRoom()}
+function setCameraZoom(){zoom=Number($('zoom').value);$('camera').style.transform=`scale(${zoom})`;$('cameraShell').style.width=`${STAGE_W*zoom}px`;$('cameraShell').style.height=`${STAGE_H*zoom}px`;$('status').textContent=zoom===1?'Camera at 100%: every kitchen-source pixel maps to one screen CSS pixel.':`Camera at ${Math.round(zoom*100)}%; source assets remain native and are not regenerated.`}
+function reset(){model=defaults();$('runState').value='off';$('runImage').style.top=`${RUN_TOPS.off}px`;renderRoom();renderFamilies();$('status').textContent='Native approved layout restored.'}
+for(let p=0;p<=18;p+=1){const mark=document.createElement('span');mark.style.left=`${p*PACE}px`;mark.textContent=`${p}p`;$('paceRail').append(mark)}
+$('camera').style.width=`${STAGE_W}px`;$('camera').style.height=`${STAGE_H}px`;$('run').style.left=`${RUN_LEFT}px`;$('run').style.top=`${RUN_TOP}px`;$('floor').style.top=`${FLOOR_Y}px`;
+$('runImage').src=MASTER;$('masterSheet').src=MASTER;$('primeScale').src=PRIME;$('primeScale').style.width=`${32*WORLD_SCALE}px`;$('primeScale').style.height=`${40*WORLD_SCALE}px`;$('primeScale').style.left=`${COUNTER_CENTRES[0]-16*WORLD_SCALE}px`;$('primeScale').style.top=`${KEEPER_FLOOR_Y-40*WORLD_SCALE}px`;$('runImage').style.top=`${RUN_TOPS.off}px`;setCameraZoom();renderRoom();renderFamilies();
+const assetUrls=[MASTER,PRIME,...new Set(Object.values(ASSETS).flatMap(asset=>Object.values(asset.files).map(file=>`${ROOT}${file}?v=2`)))];
+Promise.all(assetUrls.map(decodeImage)).then(images=>{if(images[0].naturalWidth!==1536||images[0].naturalHeight!==1024)throw new Error('approved master dimensions changed');ready=true;document.querySelectorAll('button,select,input').forEach(control=>control.disabled=false);$('loading').textContent=`Ready · ${assetUrls.length} native images decoded · no reduced runtime art loaded`;$('loading').classList.add('good');$('status').textContent='Ready: whole-room camera at 50%. Select 100% for 1:1 source-pixel inspection.';renderRoom();renderFamilies()}).catch(error=>{$('loading').textContent=`Review locked: ${error.message}`});
+$('reset').onclick=reset;$('runState').onchange=()=>{$('runImage').style.top=`${RUN_TOPS[$('runState').value]}px`;$('status').textContent=`Fitted run set to ${$('runState').value}; displaying a 1:1 crop of the approved master.`};$('zoom').onchange=setCameraZoom;$('guides').onchange=()=>$('camera').classList.toggle('guides',$('guides').checked);$('showPrime').onchange=()=>{$('primeScale').hidden=!$('showPrime').checked;$('status').textContent=$('showPrime').checked?'Approved density-8 Prime Keeper projected at the same world-camera scale; source frame unchanged.':'Prime Keeper scale reference hidden.'};
+</script>
+</body>
+</html>

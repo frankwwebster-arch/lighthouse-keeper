@@ -1,7 +1,7 @@
 # Kitchen room layout review V1
 
-Status: interactive review surface awaiting Frank's requested amendments to the
-loose assets shown along the bottom of the approved V4 source sheet.
+Status: rejected on 24 October 2026. Retained only as immutable rejection
+evidence; never use this page as a kitchen art reference.
 
 Review route: `/keeper-review/kitchen-room-layout-v1/`.
 
@@ -16,7 +16,8 @@ swap exact bays, kettle/toaster follow cupboard/drawer identity, the bowl stays
 on the worktop, and bin/table/chair snap to declared floor sections. Broken
 appliances remain locked until repaired.
 
-This is not an artwork approval or runtime promotion. Remove only this draft,
-`data/kitchen_room_layout_review_v1.json`, the versioned public review shell and
-its content-addressed archive entry to reject it. Runtime Promotion V1, the
-approved V4 package and the legacy rollback sprite remain byte-identical.
+The page was rejected because it used reduced 84 × 74 runtime bodies for visual
+review, resized source crops, applied a colour-changing multiply blend and
+placed the result on an invented schematic canvas. V2 replaces it at native
+source resolution. Runtime Promotion V1, the approved V4 package and the legacy
+rollback sprite remain byte-identical.

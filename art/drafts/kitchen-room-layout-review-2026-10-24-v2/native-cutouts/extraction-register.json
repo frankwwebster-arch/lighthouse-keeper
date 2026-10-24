@@ -1,0 +1,270 @@
+{
+  "schema": "lighthouse-keeper/kitchen-native-cutouts@1",
+  "status": "review-only-unapproved-derived-assets",
+  "createdOn": "2026-10-24",
+  "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+  "sourceSha256": "a8a6972dd8398ec3cd52f42825a5a5f056a1e289d10b77796f3294b3ac85ab98",
+  "sourceDimensions": [
+    1536,
+    1024
+  ],
+  "keeperScaleReference": {
+    "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f1.png",
+    "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+    "sourceDimensions": [
+      256,
+      320
+    ],
+    "logicalCell": [
+      32,
+      40
+    ],
+    "density": 8,
+    "role": "unchanged approved standing frame used only to prove room scale and clearances"
+  },
+  "scaleApplied": false,
+  "resamplingApplied": false,
+  "colourTransformApplied": false,
+  "outputs": {
+    "toaster-off": {
+      "crop": [
+        38,
+        915,
+        111,
+        90
+      ],
+      "sourceCropDimensions": [
+        111,
+        90
+      ],
+      "dimensions": [
+        119,
+        98
+      ],
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v2/native-cutouts/toaster-off-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v2/assets/toaster-off-native.png",
+      "sha256": "e1740ba046aef7af8a5425bfade23faa3358454d567ef91592ab93fb8db95b9c",
+      "method": "native 1:1 crop; only border-connected warm-paper pixels made transparent; four transparent safety pixels added outside each crop; opaque RGB bytes unchanged"
+    },
+    "toaster-on": {
+      "crop": [
+        146,
+        873,
+        120,
+        136
+      ],
+      "sourceCropDimensions": [
+        120,
+        136
+      ],
+      "dimensions": [
+        128,
+        144
+      ],
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v2/native-cutouts/toaster-on-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v2/assets/toaster-on-native.png",
+      "sha256": "ce26ef901e9d0d3794eae028b032058b04f78dd94d161a4bfba18bd71e2beca2",
+      "method": "native 1:1 crop; only border-connected warm-paper pixels made transparent; four transparent safety pixels added outside each crop; opaque RGB bytes unchanged"
+    },
+    "toaster-broken": {
+      "crop": [
+        258,
+        874,
+        124,
+        136
+      ],
+      "sourceCropDimensions": [
+        124,
+        136
+      ],
+      "dimensions": [
+        132,
+        144
+      ],
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v2/native-cutouts/toaster-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v2/assets/toaster-broken-native.png",
+      "sha256": "84294ea6eb39dbe805234d0ac4c047bc787afd8164ee7f09cdf962eccfffe54b",
+      "method": "native 1:1 crop; only border-connected warm-paper pixels made transparent; four transparent safety pixels added outside each crop; opaque RGB bytes unchanged"
+    },
+    "kettle-off": {
+      "crop": [
+        392,
+        886,
+        116,
+        120
+      ],
+      "sourceCropDimensions": [
+        116,
+        120
+      ],
+      "dimensions": [
+        124,
+        128
+      ],
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v2/native-cutouts/kettle-off-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v2/assets/kettle-off-native.png",
+      "sha256": "a21f0d557c7fe9e2bdcbc71e893acae71acfab902d79d835fd52ab2e35f5247e",
+      "method": "native 1:1 crop; only border-connected warm-paper pixels made transparent; four transparent safety pixels added outside each crop; opaque RGB bytes unchanged"
+    },
+    "kettle-on": {
+      "crop": [
+        498,
+        886,
+        122,
+        120
+      ],
+      "sourceCropDimensions": [
+        122,
+        120
+      ],
+      "dimensions": [
+        130,
+        128
+      ],
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v2/native-cutouts/kettle-on-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v2/assets/kettle-on-native.png",
+      "sha256": "1dc9ebe510dcf8f7aae4b3788511c1c7fe9bbc1293c907258ee9f92f20326950",
+      "method": "native 1:1 crop; only border-connected warm-paper pixels made transparent; four transparent safety pixels added outside each crop; opaque RGB bytes unchanged"
+    },
+    "kettle-broken": {
+      "crop": [
+        620,
+        872,
+        120,
+        137
+      ],
+      "sourceCropDimensions": [
+        120,
+        137
+      ],
+      "dimensions": [
+        128,
+        145
+      ],
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v2/native-cutouts/kettle-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v2/assets/kettle-broken-native.png",
+      "sha256": "b3354d52f2c1837a202bfc43e99b035e32c6b5eb98896ff1f516c580fc325885",
+      "method": "native 1:1 crop; only border-connected warm-paper pixels made transparent; four transparent safety pixels added outside each crop; opaque RGB bytes unchanged"
+    },
+    "bin-standard": {
+      "crop": [
+        764,
+        876,
+        91,
+        133
+      ],
+      "sourceCropDimensions": [
+        91,
+        133
+      ],
+      "dimensions": [
+        99,
+        141
+      ],
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v2/native-cutouts/bin-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v2/assets/bin-standard-native.png",
+      "sha256": "7c585318528c5d8986601639b86c7ec1650b438e6749c60e5e8b94eda3d9817a",
+      "method": "native 1:1 crop; only border-connected warm-paper pixels made transparent; four transparent safety pixels added outside each crop; opaque RGB bytes unchanged"
+    },
+    "bin-broken": {
+      "crop": [
+        843,
+        866,
+        135,
+        145
+      ],
+      "sourceCropDimensions": [
+        135,
+        145
+      ],
+      "dimensions": [
+        143,
+        153
+      ],
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v2/native-cutouts/bin-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v2/assets/bin-broken-native.png",
+      "sha256": "be24763f74d7dd4ca0c1556a4403d7fd4f02e28b5ef9f5ac77d59a36e14f66de",
+      "method": "native 1:1 crop; only border-connected warm-paper pixels made transparent; four transparent safety pixels added outside each crop; opaque RGB bytes unchanged"
+    },
+    "bowl-standard": {
+      "crop": [
+        985,
+        880,
+        115,
+        130
+      ],
+      "sourceCropDimensions": [
+        115,
+        130
+      ],
+      "dimensions": [
+        123,
+        138
+      ],
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v2/native-cutouts/bowl-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v2/assets/bowl-standard-native.png",
+      "sha256": "ed5e175f482cd11c6a2a5c609c6938867bf19c5e46931db664a641cf2c18f1fd",
+      "method": "native 1:1 crop; only border-connected warm-paper pixels made transparent; four transparent safety pixels added outside each crop; opaque RGB bytes unchanged"
+    },
+    "bowl-broken": {
+      "crop": [
+        1085,
+        879,
+        145,
+        134
+      ],
+      "sourceCropDimensions": [
+        145,
+        134
+      ],
+      "dimensions": [
+        153,
+        142
+      ],
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v2/native-cutouts/bowl-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v2/assets/bowl-broken-native.png",
+      "sha256": "4f12e85ca13971317c46fc6b3beeb818910d7961e6fb879cc3751f81b353d96b",
+      "method": "native 1:1 crop; only border-connected warm-paper pixels made transparent; four transparent safety pixels added outside each crop; opaque RGB bytes unchanged"
+    },
+    "table-standard": {
+      "crop": [
+        1230,
+        887,
+        194,
+        118
+      ],
+      "sourceCropDimensions": [
+        194,
+        118
+      ],
+      "dimensions": [
+        202,
+        126
+      ],
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v2/native-cutouts/table-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v2/assets/table-standard-native.png",
+      "sha256": "aa1bce0c6e5be49cf55e383082b917674da6f35b54f65a28738db46bd0240658",
+      "method": "native 1:1 crop; only border-connected warm-paper pixels made transparent; four transparent safety pixels added outside each crop; opaque RGB bytes unchanged"
+    },
+    "chair-standard": {
+      "crop": [
+        1431,
+        850,
+        100,
+        157
+      ],
+      "sourceCropDimensions": [
+        100,
+        157
+      ],
+      "dimensions": [
+        108,
+        165
+      ],
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v2/native-cutouts/chair-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v2/assets/chair-standard-native.png",
+      "sha256": "4d838a758f8328f5c74f137c2e8d8f8ff88449d2c4acb432112c8edbb41e400c",
+      "method": "native 1:1 crop; only border-connected warm-paper pixels made transparent; four transparent safety pixels added outside each crop; opaque RGB bytes unchanged"
+    }
+  }
+}

@@ -2,7 +2,7 @@
   "schema": "lighthouse-keeper/kitchen-room-layout-review@1",
   "version": 1,
   "createdOn": "2026-10-24",
-  "status": "review-only-awaiting-loose-asset-amendments",
+  "status": "rejected-2026-10-24-downscaled-and-visually-unfaithful",
   "reviewRoute": "/keeper-review/kitchen-room-layout-v1/",
   "authority": {
     "document": "docs/KITCHEN_ASSET_AUTHORITY.md",
@@ -62,6 +62,16 @@
     "runtimeChanged": false,
     "approvedArtChanged": false,
     "sourceSheetTreatment": "CSS clipping only; source pixels are neither rewritten nor promoted",
-    "rollback": "Remove public/keeper-review/kitchen-room-layout-v1, its archive set/object reference, this record and its draft handoff. Runtime Promotion V1 and every approved source remain unchanged."
+    "rollback": "V1 is frozen as rejected evidence. Remove its public shell, route, archive-set reference, record and draft handoff together if historical evidence is intentionally pruned. Runtime Promotion V1 and every approved source remain unchanged."
+  },
+  "rejection": {
+    "rejectedOn": "2026-10-24",
+    "reasons": [
+      "Used reduced 84 x 74 runtime bodies as visual-review artwork",
+      "Rescaled high-resolution source-sheet crops into invented display dimensions",
+      "Applied a multiply blend mode that changed approved colours",
+      "Presented an invented schematic canvas instead of the approved native artwork"
+    ],
+    "replacement": "/keeper-review/kitchen-room-layout-v2/"
   }
 }

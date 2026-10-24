@@ -1,0 +1,65 @@
+{
+  "schema": "lighthouse-keeper/kitchen-room-layout-review@2",
+  "version": 2,
+  "createdOn": "2026-10-24",
+  "status": "review-only-awaiting-loose-asset-amendments",
+  "reviewRoute": "/keeper-review/kitchen-room-layout-v2/",
+  "supersedesRejectedReview": "/keeper-review/kitchen-room-layout-v1/",
+  "authority": {
+    "document": "docs/KITCHEN_ASSET_AUTHORITY.md",
+    "contract": "data/kitchen_asset_contract_v1.json",
+    "roomGrid": "data/kitchen_room_grid_contract_v2.json",
+    "master": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+    "masterSha256": "a8a6972dd8398ec3cd52f42825a5a5f056a1e289d10b77796f3294b3ac85ab98",
+    "masterDimensions": [1536, 1024]
+  },
+  "nativePresentation": {
+    "downscalingPermitted": false,
+    "resamplingPermitted": false,
+    "colourTransformPermitted": false,
+    "defaultCameraZoom": 0.5,
+    "cameraZoomChangesSourceAssets": false,
+    "sourceBayWidthPixels": 228,
+    "sourceBayCount": 6,
+    "sourceRunWidthPixels": 1368
+  },
+  "locomotion": {
+    "primeKeeperPaceLogicalPixels": 10.5,
+    "primeKeeperPaceKeeperUnits": 84,
+    "sourcePixelsPerPace": 114,
+    "sourceBayWidthInPaces": 2,
+    "reviewStageLogicalSize": [193, 56],
+    "reviewCameraPixelsPerLogicalPixel": 10.857142857142858,
+    "reviewStageSizeCameraPixels": [2095.4285714285716, 608],
+    "counterInteractionCentresSourceX": [342, 570, 798, 1026, 1254, 1482],
+    "floorInteractionCentresSourceX": [114, 1710, 1938],
+    "allInteractionCentresOnPaceLattice": true,
+    "primeKeeperScaleReference": {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f1.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "sourceCell": [256, 320],
+      "logicalCell": [32, 40],
+      "density": 8,
+      "use": "unchanged optional scale overlay; projected through the same world camera"
+    }
+  },
+  "nativeCutouts": {
+    "register": "art/drafts/kitchen-room-layout-review-2026-10-24-v2/native-cutouts/extraction-register.json",
+    "method": "1:1 source crops; connected warm-paper background made transparent; four transparent pixels added outside the crop",
+    "opaqueSourceRgbPreserved": true,
+    "approvedArtworkChanged": false,
+    "promotionStatus": "unapproved-review-only"
+  },
+  "movementPolicy": {
+    "counter": "kettle and toaster snap to eligible native fitted-bay centres and swap owners when occupied",
+    "bowl": "snaps to native fitted-bay centres",
+    "floor": "bin, chair and table snap to pace-lattice floor stations and swap when occupied",
+    "brokenAppliances": "movement locked until state is changed to Off or On"
+  },
+  "boundary": {
+    "runtimeChanged": false,
+    "approvedArtChanged": false,
+    "legacyRuntime84x74UsedByReview": false,
+    "rollback": "Discard only the V2 draft, data record, public shell, route and content-addressed review set. The approved master, Runtime Promotion V1 and retained legacy room remain byte-identical."
+  }
+}
