@@ -336,6 +336,59 @@ function exportApprovedV12Sequences() {
   }
 }
 
+function exportLegacyApprovedAnimations() {
+  const reviewDrafts = JSON.parse(readFileSync(repoPath("data/keeper_review_drafts.json"), "utf8"));
+  const promoted = reviewDrafts.drafts.filter((entry) => entry.status === "promoted-review-draft");
+  if (promoted.length !== 10) {
+    throw new Error(`Expected 10 legacy canonical promotions, found ${promoted.length}`);
+  }
+  const catalogue = [];
+  for (const entry of promoted) {
+    const register = JSON.parse(readFileSync(repoPath(entry.register), "utf8"));
+    if (register.status !== "promoted-review-draft" || register.animation !== entry.name) {
+      throw new Error(`Legacy promotion register mismatch: ${entry.name}`);
+    }
+    if (sha256(repoPath(register.promotion.strip)) !== register.promotion.stripSha256) {
+      throw new Error(`Legacy promoted strip hash mismatch: ${entry.name}`);
+    }
+    if (sha256(repoPath(register.promotion.sidecar)) !== register.promotion.sidecarSha256) {
+      throw new Error(`Legacy promoted sidecar hash mismatch: ${entry.name}`);
+    }
+    const folder = `02_prime_keeper/05_approved_legacy_canonical_sheets/${entry.name}`;
+    const stripName = register.promotion.strip.split("/").at(-1);
+    const sidecarName = register.promotion.sidecar.split("/").at(-1);
+    copyOne(register.promotion.strip, `${folder}/${stripName}`, {
+      category: "legacy-approved-keeper-sheets",
+      status: "frank-selected-canonical-legacy",
+      note: register.selection,
+    });
+    copyOne(register.promotion.sidecar, `${folder}/${sidecarName}`, {
+      category: "legacy-approved-keeper-sheets",
+      status: "frank-selected-canonical-legacy",
+    });
+    catalogue.push({
+      id: entry.name,
+      status: "Frank-selected canonical legacy animation",
+      strip: `${entry.name}/${stripName}`,
+      stripSha256: register.promotion.stripSha256,
+      sidecar: `${entry.name}/${sidecarName}`,
+      sidecarSha256: register.promotion.sidecarSha256,
+      selection: register.selection,
+      register: entry.register,
+    });
+  }
+  writeGenerated(
+    "02_prime_keeper/05_approved_legacy_canonical_sheets/catalogue.json",
+    {
+      schema: "lighthouse-keeper/makko-approved-legacy-keeper-sheets@1",
+      count: catalogue.length,
+      note: "These exact-name selections were approved and canonical before Prime Keeper superseded the legacy character direction. Keep them separate from the Prime bank.",
+      animations: catalogue,
+    },
+    { category: "legacy-approved-keeper-sheets", status: "frank-selected-canonical-legacy" },
+  );
+}
+
 function exportKitchen() {
   const approved = { category: "approved-kitchen", status: "approved-authority" };
   copyOne(
@@ -491,6 +544,10 @@ self-contained handoff: deleting it will not alter the Lighthouse Keeper project
 - \`02_prime_keeper/04_approved_v12_sequences\` contains the ten complete
   sequences Frank approved on 23 October as horizontal strips plus compact
   import metadata.
+- \`02_prime_keeper/05_approved_legacy_canonical_sheets\` contains the ten
+  exact-name legacy animations Frank selected and made canonical before Prime
+  Keeper superseded that character direction. They are isolated from Prime to
+  prevent accidental visual mixing.
 - \`03_approved_kitchen/01_native_visual_master\` is the kitchen Frank loved and
   approved. The 1536 × 1024 V4 master is the visual authority.
 - \`03_approved_kitchen/02_locked_fitted_units\` is the exact immutable 1368 × 284
@@ -549,6 +606,7 @@ function finalise() {
       primeRuntimeSheets: 27,
       approvedPrimeRoutes: 14,
       approvedV12Sequences: 10,
+      legacyApprovedAnimations: 10,
       approvedActivityPictures: 84,
     },
     files: manifestRecords,
@@ -587,6 +645,7 @@ function build() {
   exportPrimeRuntimeSheets();
   exportApprovedPrimeRoutes();
   exportApprovedV12Sequences();
+  exportLegacyApprovedAnimations();
   exportKitchen();
   exportApprovedActivityPictures();
   exportEarlyProductionEnvironment();

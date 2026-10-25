@@ -600,7 +600,8 @@ binary delivery files; the exporter and selection policy are versioned.
 The handoff contains the original concept references, approved Prime Keeper
 identity art, 27 promoted runtime sprite sheets, all 14 approved playable
 review routes as numbered frames, all ten approved V12 sequence strips, the
-approved kitchen V4 master and locked fitted-unit base, the compatibility
+ten Frank-selected legacy canonical animation sheets (kept separate from the
+Prime bank), the approved kitchen V4 master and locked fitted-unit base, the compatibility
 kitchen state/animation sprites, 84 explicitly approved/current activity-story
 pictures and the first production environment batch. Every animation has JSON
 timing/geometry metadata. `MANIFEST.json` records every source path and SHA-256,
