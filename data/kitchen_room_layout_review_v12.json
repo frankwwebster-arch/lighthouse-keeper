@@ -1,0 +1,76 @@
+{
+  "schema": "lighthouse-keeper/kitchen-room-layout-review@12",
+  "version": 12,
+  "createdOn": "2026-10-25",
+  "status": "review-only-awaiting-position-calibration-and-bowl-redraft-direction",
+  "reviewRoute": "/keeper-review/kitchen-room-layout-v12/",
+  "supersedesReview": "/keeper-review/kitchen-room-layout-v11/",
+  "authority": {
+    "document": "docs/KITCHEN_ASSET_AUTHORITY.md",
+    "contract": "data/kitchen_asset_contract_v1.json",
+    "roomGrid": "data/kitchen_room_grid_contract_v2.json",
+    "lockedFittedBaseSha256": "ba84022371aea330e2fe50e5ad8fb37bf9d210aa1e09649d7f2fc69f460f49b1"
+  },
+  "nativeAssets": {
+    "register": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/extraction-register.json",
+    "registerSha256": "fa7eb77f5d9b68db2e104e369401bc1e8e410d15ef78ad9a4ab8c9d7fcbdacfd",
+    "predecessorRegister": "art/drafts/kitchen-room-layout-review-2026-10-25-v11/native-assets/extraction-register.json",
+    "predecessorRegisterSha256": "ff79b7db93ae3ddceaaadc35b2a731656b2cb7f78f5bd8b2ccdca6550a93b26c",
+    "scaleAppliedToKitchenArt": false,
+    "downscalingApplied": false,
+    "resamplingApplied": false,
+    "approvedBaseColourTransformApplied": false,
+    "separateLightEffectToneMapApplied": true
+  },
+  "corrections": {
+    "toaster": "detached countertop splodges removed; own feet establish support",
+    "bowl": "V11 broken-bowl pixels remain unapproved and byte-identical; review exposes an exact native-pixel contact-depth control",
+    "sink": "three-frame tap-outlet gush plus sink-centred walking-plane puddle",
+    "dishwasher": "three isolated warning lenses can be dragged independently and report exact native-pixel offsets",
+    "oven": "Broken retains the approved closed oven; only the exact cavity behind its glass flickers, with no fascia or open-door overlay",
+    "waterOwnership": "no broken-overlay leak below dishwasher/fridge and no puddle below oven/fridge",
+    "floorWater": "separate spills beneath sink, dishwasher and fridge; no oven spill and no fitted-run registration",
+    "reviewShell": "version label and reversible-boundary copy corrected",
+    "onSink": "straight vertical native stream from tap outlet; no basin splash or pooling",
+    "sinkGush": "unchanged native V11 geyser pixels translated eight native pixels rearward in the review composition"
+  },
+  "reviewCalibration": {
+    "sinkEffectOffsetY": -8,
+    "dishwasherWarningBasePositions": [
+      [
+        720,
+        116
+      ],
+      [
+        742,
+        116
+      ],
+      [
+        764,
+        116
+      ]
+    ],
+    "dishwasherWarningInitialOffsets": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "brokenBowlInitialContactOffsetY": 0
+  },
+  "boundary": {
+    "runtimeChanged": false,
+    "gameplayChanged": false,
+    "approvedFittedUnitsChanged": false,
+    "roomGridChanged": false,
+    "rollback": "Rejecting V12 discards only its route, page and V12 native correction directory. V1-V11, the V4 fitted-unit lock, Runtime Promotion V1 and retained 84 x 74 runtime room remain byte-identical."
+  }
+}

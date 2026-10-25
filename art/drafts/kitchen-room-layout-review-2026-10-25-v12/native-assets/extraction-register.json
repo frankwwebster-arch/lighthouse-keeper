@@ -1,0 +1,904 @@
+{
+  "schema": "lighthouse-keeper/kitchen-native-assets@12",
+  "status": "review-only-unapproved-v12-closed-oven-and-position-calibration",
+  "createdOn": "2026-10-25",
+  "fittedUnits": {
+    "register": "art/drafts/kitchen-room-layout-review-2026-10-24-v4/native-assets/extraction-register.json",
+    "registerSha256": "5d38f77151ccc00d834759f0d72a71b1152cb9c3ea09f2b80f3853d03a5c63a7",
+    "lockedBaseSha256": "ba84022371aea330e2fe50e5ad8fb37bf9d210aa1e09649d7f2fc69f460f49b1",
+    "changed": false
+  },
+  "sources": {
+    "loose": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-loose-family-shadowless-source-plate.png",
+      "sha256": "d3c7f612a0e63e160b7973dfec7dc3d57ff6f6f7e7257fa86a0e67ccd1f8ef0e",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    "furniture": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-furniture-shadowless-source-plate.png",
+      "sha256": "39746a721da1021f620352f96d0ac1de640d48176db45cff1867e62e9db473fd",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    }
+  },
+  "scaleApplied": false,
+  "downscalingApplied": false,
+  "resamplingApplied": false,
+  "colourTransformApplied": false,
+  "worldDensity": {
+    "kitchenPixelsPerLogicalPixel": 10.857142857142858,
+    "keeperSourcePixelsPerLogicalPixel": 8,
+    "keeperDisplayScale": 1.3571428571428572,
+    "keeperDisplayCell": [
+      347.428571,
+      434.285714
+    ],
+    "cabinetWorktopHeightPixels": 213,
+    "cabinetWorktopModelMm": 850,
+    "primeKeeperModelMm": 1750
+  },
+  "placement": {
+    "counterSupportLocalY": 84,
+    "previousCounterSupportLocalY": 71,
+    "movement": "13 native pixels forward onto visible worktop plane",
+    "sourcePixelsPerPace": 114,
+    "furnitureAnchorPaces": 16,
+    "chairDepthOffsetPixels": 24,
+    "furnitureLayerOrder": [
+      "table",
+      "rear-seated-keeper",
+      "chair"
+    ]
+  },
+  "globalStateMap": {
+    "off": {
+      "toaster": "off",
+      "kettle": "off",
+      "bin": "standard",
+      "bowl": "standard"
+    },
+    "on": {
+      "toaster": "on",
+      "kettle": "on",
+      "bin": "standard",
+      "bowl": "standard"
+    },
+    "broken": {
+      "toaster": "broken",
+      "kettle": "broken",
+      "bin": "broken",
+      "bowl": "broken"
+    }
+  },
+  "keeperPresentation": {
+    "neutral": {
+      "file": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f1.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+    },
+    "seated": {
+      "file": "art/drafts/keeper-prime-sit-stand-back-2026-10-18-v2/drafts/frames/keeper_prime_stand-to-sit-back_f06.png",
+      "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa"
+    },
+    "sourceDimensions": [
+      256,
+      320
+    ],
+    "displayDimensions": [
+      347.428571,
+      434.285714
+    ],
+    "rationale": "Prime and kitchen share one world density; camera zoom then scales the composed world uniformly"
+  },
+  "outputs": {
+    "fitted-units-static": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/fitted-units-static-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/fitted-units-static-native.png",
+      "dimensions": [
+        1368,
+        284
+      ],
+      "sha256": "ba84022371aea330e2fe50e5ad8fb37bf9d210aa1e09649d7f2fc69f460f49b1",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceCrop": [
+        65,
+        0,
+        1368,
+        284
+      ],
+      "tapRepairSourceCrop": [
+        590,
+        288,
+        80,
+        62
+      ],
+      "tapRepairOffset": [
+        525,
+        6
+      ],
+      "immutableAfterV4": true,
+      "method": "native 1:1 approved OFF run; only the reported tap joint replaced with aligned approved ON-row body pixels",
+      "inheritedByteIdenticalFromV4": true,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": true,
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": true
+    },
+    "fitted-overlay-on": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/fitted-overlay-on-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/fitted-overlay-on-native.png",
+      "dimensions": [
+        1368,
+        284
+      ],
+      "sha256": "be95f49c90577d91c2b04143cc6fad9a566379776f5791f169a3c88bc794ef62",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceRowOffset": 281,
+      "regions": [
+        [
+          590,
+          350,
+          100,
+          60
+        ],
+        [
+          765,
+          390,
+          210,
+          145
+        ],
+        [
+          980,
+          390,
+          220,
+          160
+        ]
+      ],
+      "role": "declared sink flow, dishwasher green lenses and oven On aperture/indicator only",
+      "inheritedByteIdenticalFromV4": true,
+      "inheritedByteIdenticalFromV6": false,
+      "predecessorSha256": "4897b8a73735e7e5200bc1efeb59527fd57864a8dfd74de049337bb045b97eee",
+      "correction": "ON water retains only the native vertical tap stream; every basin splash and pooling pixel is transparent",
+      "scaleApplied": false,
+      "resamplingApplied": false,
+      "inheritedByteIdenticalFromV7": true,
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": false,
+      "straightStreamBounds": [
+        552,
+        42,
+        561,
+        98
+      ],
+      "splashPixelsRemoved": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": true
+    },
+    "fitted-overlay-broken": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/fitted-overlay-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/fitted-overlay-broken-native.png",
+      "dimensions": [
+        1368,
+        284
+      ],
+      "sha256": "58a7c9967fb8c8cec0d23509ffcc5c6036a3f562626ad22c925263ab241ca377",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceRowOffset": 560,
+      "role": "declared dishwasher door, oven controls/door and fridge damage; animated lamps/cavity and water excluded",
+      "inheritedByteIdenticalFromV4": true,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": false,
+      "predecessorSha256": "7ebb28f8c30e68a0c5a7427dd9b0f396244534797acc9423b8dd1486d5080548",
+      "correction": "rejected open-oven fault pixels removed; approved closed oven remains visible from the locked fitted base",
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": false,
+      "ovenModuleBounds": [
+        915,
+        110,
+        220,
+        160
+      ]
+    },
+    "dishwasher-warning-1": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/dishwasher-warning-1-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/dishwasher-warning-1-native.png",
+      "dimensions": [
+        22,
+        24
+      ],
+      "sha256": "f4bc0c5552508aa62c2a4f7f5f27fc41880470a5757fa894f2b01ccff4ead3d9",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceCrop": [
+        784,
+        677,
+        19,
+        21
+      ],
+      "animation": "independent intermittent opacity at 4 fps",
+      "inheritedByteIdenticalFromV4": true,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": false,
+      "predecessorSha256": "e52ac7770e9a527e7fcacd43b4921e7c35973ecde485a054927578c15ca36714",
+      "correction": "isolated tight warning-lens layer for exact native-pixel review positioning",
+      "fixedLensCentre": [
+        731.26,
+        127.3
+      ],
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": false,
+      "sourceOpaqueBounds": [
+        724,
+        120,
+        14,
+        16
+      ],
+      "basePosition": [
+        720,
+        116
+      ],
+      "transparentSafetyGutter": 4
+    },
+    "dishwasher-warning-2": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/dishwasher-warning-2-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/dishwasher-warning-2-native.png",
+      "dimensions": [
+        22,
+        24
+      ],
+      "sha256": "5fb5d74592a334fa1cfad7bf1334013e28d601c5b1c6021616617794e2fffa61",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceCrop": [
+        806,
+        677,
+        19,
+        21
+      ],
+      "animation": "independent intermittent opacity at 4 fps",
+      "inheritedByteIdenticalFromV4": true,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": false,
+      "predecessorSha256": "a7ca4e86f9b52c882021f3a63e18f64da8564ed9ab74dff987eb9fa1ea649930",
+      "correction": "isolated tight warning-lens layer for exact native-pixel review positioning",
+      "fixedLensCentre": [
+        753.1,
+        127.27
+      ],
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": false,
+      "sourceOpaqueBounds": [
+        746,
+        120,
+        14,
+        16
+      ],
+      "basePosition": [
+        742,
+        116
+      ],
+      "transparentSafetyGutter": 4
+    },
+    "dishwasher-warning-3": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/dishwasher-warning-3-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/dishwasher-warning-3-native.png",
+      "dimensions": [
+        22,
+        24
+      ],
+      "sha256": "af07a2397154d356f0790a5bc5fc1a7e63e7c738b9b3ef010ba53fdfa33eedea",
+      "source": "art/source/kitchen-warm-ligne-claire-family-2026-10-24-v4-on-food-corrected.png",
+      "sourceCrop": [
+        828,
+        677,
+        19,
+        21
+      ],
+      "animation": "independent intermittent opacity at 4 fps",
+      "inheritedByteIdenticalFromV4": true,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": false,
+      "predecessorSha256": "cd1c93f2829abe61eba38c7be1ee1f674b4b2d1b3ac30cd8b793f32a13853c93",
+      "correction": "isolated tight warning-lens layer for exact native-pixel review positioning",
+      "fixedLensCentre": [
+        775.33,
+        127.39
+      ],
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": false,
+      "sourceOpaqueBounds": [
+        768,
+        120,
+        14,
+        16
+      ],
+      "basePosition": [
+        764,
+        116
+      ],
+      "transparentSafetyGutter": 4
+    },
+    "oven-broken-cavity-light": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/oven-broken-cavity-light-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/oven-broken-cavity-light-native.png",
+      "dimensions": [
+        1368,
+        284
+      ],
+      "sha256": "83231f1cf4663fd05ae30127aad8a9720caad746db4fd378771af9ec8ccc1d5f",
+      "source": "approved closed fitted-unit base",
+      "sourceCrop": [
+        1007,
+        731,
+        171,
+        81
+      ],
+      "animation": "irregular complete closed-cavity lit/dark replacement in review shell",
+      "inheritedByteIdenticalFromV4": true,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": false,
+      "predecessorSha256": "83231f1cf4663fd05ae30127aad8a9720caad746db4fd378771af9ec8ccc1d5f",
+      "correction": "closed oven flicker is confined behind the existing door glass; no open-door or fascia overlay remains",
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": false,
+      "cavityBounds": [
+        942,
+        171,
+        171,
+        81
+      ],
+      "inheritedByteIdenticalFromV11": true,
+      "recomposedFromApprovedClosedBase": true
+    },
+    "broken-floor-water": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/broken-floor-water-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/broken-floor-water-native.png",
+      "dimensions": [
+        1376,
+        43
+      ],
+      "sha256": "24b391b2ea1572c98e04c5f7ccc998a1b59d01cbfedafe18902f82d40e126d1e",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-25-v7/native-assets/broken-floor-water-native.png",
+      "sourceCrop": [
+        65,
+        835,
+        1368,
+        35
+      ],
+      "anchor": {
+        "x": -4,
+        "yFromFloor": -12
+      },
+      "role": "separate transparent floor-plane effect; never participates in fitted-run registration",
+      "inheritedByteIdenticalFromV4": true,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": false,
+      "predecessorSha256": "38008a49b51b25127429d9fff90bf44ddcd8426447d79673c5ed83329145e037",
+      "correction": "separate floor-plane spills restored beneath sink, dishwasher and fridge; oven interval remains transparent",
+      "sinkOwned": true,
+      "inheritedByteIdenticalFromV8": false,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": false,
+      "sourceSha256": "64c0a95c793a321fae60f54f9553f6470805ec93e68f86b676004554fbbb61f6",
+      "supportPlane": "walking-floor",
+      "spillIntervals": {
+        "sink": [
+          360,
+          640
+        ],
+        "dishwasher": [
+          700,
+          910
+        ],
+        "oven": null,
+        "fridge": [
+          1145,
+          1375
+        ]
+      },
+      "inheritedByteIdenticalFromV11": true
+    },
+    "toaster-off": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/toaster-off-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/toaster-off-native.png",
+      "dimensions": [
+        131,
+        105
+      ],
+      "sha256": "5428f6470f70757301ae4c505db72de4b61b105e9e3fdde3532f9a6353e9acba",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-loose-family-shadowless-source-plate.png",
+      "sourceCrop": [
+        30,
+        875,
+        145,
+        140
+      ],
+      "contactRow": 96,
+      "anchorX": 66,
+      "generatedRedraw": true,
+      "downscalingApplied": false,
+      "contactShadowIncluded": false,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": true,
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": true
+    },
+    "toaster-on": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/toaster-on-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/toaster-on-native.png",
+      "dimensions": [
+        136,
+        126
+      ],
+      "sha256": "03cfb3014f614325a61c31229ba4b7569e3f7373fd58e91a176fb4d1cc4ae8e9",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-loose-family-shadowless-source-plate.png",
+      "sourceCrop": [
+        176,
+        875,
+        148,
+        140
+      ],
+      "contactRow": 117,
+      "anchorX": 68,
+      "generatedRedraw": true,
+      "downscalingApplied": false,
+      "contactShadowIncluded": false,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": true,
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": true
+    },
+    "toaster-broken": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/toaster-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/toaster-broken-native.png",
+      "dimensions": [
+        160,
+        124
+      ],
+      "sha256": "adfe71e2ce6b2aecddce5e24c9ebc62989f7d8849bd0cfe0909f7e3860952a26",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-loose-family-shadowless-source-plate.png",
+      "sourceCrop": [
+        330,
+        875,
+        178,
+        145
+      ],
+      "contactRow": 115,
+      "anchorX": 80,
+      "generatedRedraw": true,
+      "downscalingApplied": false,
+      "contactShadowIncluded": false,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": false,
+      "predecessorSha256": "88affbf3315867b9adccf63b4b12571054d29ca66ab30355bfe4a0039ca0e2e5",
+      "detachedDebrisRemoved": 2,
+      "correction": "two detached black/brown countertop splodges removed; main broken toaster pixels unchanged and re-registered to its own feet",
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": true
+    },
+    "kettle-off": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/kettle-off-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/kettle-off-native.png",
+      "dimensions": [
+        132,
+        129
+      ],
+      "sha256": "ed7a1e82c7cb26bc0bac85d0ef5821494cc1b6ae6d38e9ac2b15adacb85849f0",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-loose-family-shadowless-source-plate.png",
+      "sourceCrop": [
+        515,
+        875,
+        148,
+        145
+      ],
+      "contactRow": 120,
+      "anchorX": 66,
+      "generatedRedraw": true,
+      "downscalingApplied": false,
+      "contactShadowIncluded": false,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": true,
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": true
+    },
+    "kettle-broken": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/kettle-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/kettle-broken-native.png",
+      "dimensions": [
+        138,
+        129
+      ],
+      "sha256": "77de3f24559ce7332e8133fb27d2ba2830bdcb38f42ba35d7f6d51f047c8fbb7",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-loose-family-shadowless-source-plate.png",
+      "sourceCrop": [
+        674,
+        875,
+        152,
+        145
+      ],
+      "contactRow": 120,
+      "anchorX": 69,
+      "generatedRedraw": true,
+      "downscalingApplied": false,
+      "contactShadowIncluded": false,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": true,
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": true
+    },
+    "bin-standard": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/bin-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/bin-standard-native.png",
+      "dimensions": [
+        98,
+        137
+      ],
+      "sha256": "fa3fe4cca1b47b52b221bce5e671aff60ea23f2f9faa72bd2ba0f43ad4fb2486",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-loose-family-shadowless-source-plate.png",
+      "sourceCrop": [
+        846,
+        865,
+        126,
+        150
+      ],
+      "contactRow": 128,
+      "anchorX": 49,
+      "generatedRedraw": true,
+      "downscalingApplied": false,
+      "contactShadowIncluded": false,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": true,
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": true
+    },
+    "bin-broken": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/bin-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/bin-broken-native.png",
+      "dimensions": [
+        163,
+        157
+      ],
+      "sha256": "47f4ef00d502a1d144077793614beeb97b1250ac61f1c85d7440f3a2e72c15ea",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-loose-family-shadowless-source-plate.png",
+      "sourceCrop": [
+        969,
+        862,
+        183,
+        155
+      ],
+      "contactRow": 148,
+      "anchorX": 82,
+      "generatedRedraw": true,
+      "downscalingApplied": false,
+      "contactShadowIncluded": false,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": true,
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": true
+    },
+    "bowl-standard": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/bowl-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/bowl-standard-native.png",
+      "dimensions": [
+        137,
+        125
+      ],
+      "sha256": "756006e9511efdb793145c55558ef0a7d4e05574f844e2136ecac9fddd8601cc",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-loose-family-shadowless-source-plate.png",
+      "sourceCrop": [
+        1165,
+        875,
+        145,
+        140
+      ],
+      "contactRow": 116,
+      "anchorX": 69,
+      "generatedRedraw": true,
+      "downscalingApplied": false,
+      "contactShadowIncluded": false,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": true,
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": true
+    },
+    "bowl-broken": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/bowl-broken-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/bowl-broken-native.png",
+      "dimensions": [
+        130,
+        73
+      ],
+      "sha256": "99637df4b6f5f1e54d0e67fae2528f8c94213fe3698ead5698bc52f03254c7ae",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-loose-family-shadowless-source-plate.png",
+      "sourceCrop": [
+        1308,
+        900,
+        198,
+        115
+      ],
+      "contactRow": 54,
+      "anchorX": 65,
+      "generatedRedraw": true,
+      "downscalingApplied": false,
+      "contactShadowIncluded": false,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": false,
+      "predecessorSha256": "ccca9afdd7657893674b1a0ce469b4eaafe739d86a1cb86f01f5222b89d02deb",
+      "detachedDebrisRemoved": 2,
+      "hangingFrontPanelRemoved": true,
+      "correction": "intact shell row 54 is the declared worktop contact; the connected shard hangs ten pixels in front of the fascia",
+      "inheritedByteIdenticalFromV8": false,
+      "frontLeftPanelRemoved": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "contactSurfaceRow": 54,
+      "deepestAlphaRow": 64,
+      "hangingShardRows": [
+        55,
+        64
+      ],
+      "inheritedByteIdenticalFromV11": true
+    },
+    "kettle-on": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/kettle-on-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/kettle-on-native.png",
+      "dimensions": [
+        132,
+        129
+      ],
+      "sha256": "ed7a1e82c7cb26bc0bac85d0ef5821494cc1b6ae6d38e9ac2b15adacb85849f0",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-loose-family-shadowless-source-plate.png",
+      "sourceCrop": [
+        515,
+        875,
+        148,
+        145
+      ],
+      "contactRow": 120,
+      "anchorX": 66,
+      "generatedRedraw": true,
+      "downscalingApplied": false,
+      "contactShadowIncluded": false,
+      "byteIdenticalTo": "kettle-off",
+      "steamLayer": "separate-not-drawn",
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": true,
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": true
+    },
+    "table-standard": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/table-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/table-standard-native.png",
+      "dimensions": [
+        354,
+        189
+      ],
+      "sha256": "df7d6f67017db4e3b69433498e44adc639d5bc51d91e3eb1afbe7767667d2427",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-furniture-shadowless-source-plate.png",
+      "sourceCrop": [
+        45,
+        920,
+        380,
+        300
+      ],
+      "contactRow": 180,
+      "anchorX": 177,
+      "physicalModelMm": {
+        "height": 750,
+        "width": 1050
+      },
+      "generatedRedraw": true,
+      "downscalingApplied": false,
+      "contactShadowIncluded": false,
+      "inheritedByteIdenticalFromV6": true,
+      "inheritedByteIdenticalFromV7": true,
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": true
+    },
+    "chair-standard": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/chair-standard-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/chair-standard-native.png",
+      "dimensions": [
+        145,
+        224
+      ],
+      "sha256": "6b57979ca879cb83377dbe6f3972ca9f3e9e8450c22fc304d6a694009290958f",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-24-v6/sources/generated-furniture-shadowless-source-plate.png",
+      "sourceCrop": [
+        430,
+        910,
+        190,
+        310
+      ],
+      "contactRow": 215,
+      "anchorX": 73,
+      "facing": "rear",
+      "physicalModelMm": {
+        "overallHeight": 900,
+        "seatHeight": 460
+      },
+      "generatedRedraw": true,
+      "downscalingApplied": false,
+      "contactShadowIncluded": false,
+      "inheritedByteIdenticalFromV6": false,
+      "predecessorSha256": "c3da6715aafadc5edf95e07bbf0d8a41846d4395971cf84264f11883b554a3cb",
+      "transparentPaperComponentsRemoved": 5,
+      "correction": "source-paper islands between rear-chair slats and below seat made transparent; wood pixels unchanged",
+      "scaleApplied": false,
+      "resamplingApplied": false,
+      "inheritedByteIdenticalFromV7": true,
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": true,
+      "inheritedByteIdenticalFromV11": true
+    },
+    "sink-broken-gush-1": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/sink-broken-gush-1-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/sink-broken-gush-1-native.png",
+      "dimensions": [
+        1368,
+        444
+      ],
+      "sha256": "b9f036b45b97d025e662cd84e0bf58afb7080ea241c50ccd45c076e608173a75",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-25-v7/native-assets/fitted-overlay-on-native.png",
+      "sourceSha256": "4897b8a73735e7e5200bc1efeb59527fd57864a8dfd74de049337bb045b97eee",
+      "role": "sink-owned animated broken-state gush",
+      "frame": 1,
+      "scaleApplied": false,
+      "resamplingApplied": false,
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": false,
+      "predecessorSha256": "fd166aafa93192e9cdcf23a22c327b0ff3a9a4990739bc5d514f4cdc74a1d7dd",
+      "runAlignmentOffsetY": 160,
+      "effectBounds": [
+        410,
+        0,
+        300,
+        444
+      ],
+      "correction": "OTT upward basin geyser on a taller transparent fault layer; original native tap gush retained at exact coordinates",
+      "animationFrame": 1,
+      "inheritedByteIdenticalFromV11": true
+    },
+    "sink-broken-gush-2": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/sink-broken-gush-2-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/sink-broken-gush-2-native.png",
+      "dimensions": [
+        1368,
+        444
+      ],
+      "sha256": "4287aa0910821e5c5b312a3da8ac9695141d8c588880392cfa9d3e85e03f475d",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-25-v7/native-assets/fitted-overlay-on-native.png",
+      "sourceSha256": "4897b8a73735e7e5200bc1efeb59527fd57864a8dfd74de049337bb045b97eee",
+      "role": "sink-owned animated broken-state gush",
+      "frame": 2,
+      "scaleApplied": false,
+      "resamplingApplied": false,
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": false,
+      "predecessorSha256": "d310579ab10213d1b45ce2fc6a529bd09a81ce8d4167949ec7aa30c9238f557e",
+      "runAlignmentOffsetY": 160,
+      "effectBounds": [
+        410,
+        0,
+        300,
+        444
+      ],
+      "correction": "OTT upward basin geyser on a taller transparent fault layer; original native tap gush retained at exact coordinates",
+      "animationFrame": 2,
+      "inheritedByteIdenticalFromV11": true
+    },
+    "sink-broken-gush-3": {
+      "file": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/sink-broken-gush-3-native.png",
+      "publicReviewFile": "public/keeper-review/kitchen-room-layout-v12/assets/sink-broken-gush-3-native.png",
+      "dimensions": [
+        1368,
+        444
+      ],
+      "sha256": "02c7af9e68bd2c85963e3daf5d0a4b6bff72e9f1342bced28e8224d29a616e8e",
+      "source": "art/drafts/kitchen-room-layout-review-2026-10-25-v7/native-assets/fitted-overlay-on-native.png",
+      "sourceSha256": "4897b8a73735e7e5200bc1efeb59527fd57864a8dfd74de049337bb045b97eee",
+      "role": "sink-owned animated broken-state gush",
+      "frame": 3,
+      "scaleApplied": false,
+      "resamplingApplied": false,
+      "inheritedByteIdenticalFromV8": true,
+      "inheritedByteIdenticalFromV9": true,
+      "inheritedByteIdenticalFromV10": false,
+      "predecessorSha256": "692cdba76e11d9afab7c69385f08ebd89b74e8196728c16e34f9672cc5adabec",
+      "runAlignmentOffsetY": 160,
+      "effectBounds": [
+        410,
+        0,
+        300,
+        444
+      ],
+      "correction": "OTT upward basin geyser on a taller transparent fault layer; original native tap gush retained at exact coordinates",
+      "animationFrame": 3,
+      "inheritedByteIdenticalFromV11": true
+    }
+  },
+  "predecessor": {
+    "register": "art/drafts/kitchen-room-layout-review-2026-10-25-v11/native-assets/extraction-register.json",
+    "sha256": "ff79b7db93ae3ddceaaadc35b2a731656b2cb7f78f5bd8b2ccdca6550a93b26c"
+  },
+  "corrections": {
+    "toaster": "detached countertop splodges removed; own feet establish support",
+    "bowl": "V11 broken-bowl pixels remain unapproved and byte-identical; review exposes an exact native-pixel contact-depth control",
+    "sink": "three-frame tap-outlet gush plus sink-centred walking-plane puddle",
+    "dishwasher": "three isolated warning lenses can be dragged independently and report exact native-pixel offsets",
+    "oven": "Broken retains the approved closed oven; only the exact cavity behind its glass flickers, with no fascia or open-door overlay",
+    "waterOwnership": "no broken-overlay leak below dishwasher/fridge and no puddle below oven/fridge",
+    "floorWater": "separate spills beneath sink, dishwasher and fridge; no oven spill and no fitted-run registration",
+    "reviewShell": "version label and reversible-boundary copy corrected",
+    "onSink": "straight vertical native stream from tap outlet; no basin splash or pooling",
+    "sinkGush": "unchanged native V11 geyser pixels translated eight native pixels rearward in the review composition"
+  },
+  "reviewCalibration": {
+    "sinkEffectOffsetY": -8,
+    "dishwasherWarningBasePositions": [
+      [
+        720,
+        116
+      ],
+      [
+        742,
+        116
+      ],
+      [
+        764,
+        116
+      ]
+    ],
+    "dishwasherWarningInitialOffsets": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "brokenBowlInitialContactOffsetY": 0
+  }
+}

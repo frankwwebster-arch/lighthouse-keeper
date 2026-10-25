@@ -278,21 +278,23 @@ not asset resolution: one 10.5-lp pace is 114 kitchen-source pixels and every
 228-pixel fitted bay is exactly two paces wide.
 
 The active movable composition redraft is
-`/keeper-review/kitchen-room-layout-v11/`. The fitted units are approved and
+`/keeper-review/kitchen-room-layout-v12/`. The fitted units are approved and
 hash-locked as one fixed native base; only their separate warning, light and
-effect layers may change. V11 preserves V10's straight ON sink stream,
+effect layers may change. V12 preserves V11's straight ON sink stream,
 target-sized shadowless loose family, transparent chair gaps, forward worktop
 placement, shared Prime scale, exact pace anchors and table → seated Keeper →
-chair depth order. In Broken, the bowl uses its intact shell row as the explicit
-worktop contact so the connected shard hangs in front of the fascia. A tall
-three-frame geyser shoots upward from the basin; separate walking-plane spills
-remain beneath the sink, dishwasher and fridge but not the oven. The oven
-alternates between complete opaque dark/lit cavity states, while its fixed
-fascia lens pulses independently. The approved base and loose-asset pixels are
-not scaled or resampled; only the separate oven light state is tone-mapped.
-Camera zoom still applies only to the complete composed world. V11 changes no
-gameplay or live runtime asset; V10 remains immutable predecessor evidence and
-V4's fitted-unit approval remains binding.
+chair depth order. In Broken, the unchanged geyser is composed eight native
+pixels farther behind the basin front; walking-plane spills remain beneath the
+sink, dishwasher and fridge but not the oven. The rejected open oven and fascia
+overlays are absent: the approved closed oven remains in place and only its
+cavity behind the existing glass alternates between dark and lit states. Each
+dishwasher lens is an isolated 22 × 24 image with a four-pixel transparent
+gutter and can be dragged independently with exact native-pixel offset readout.
+The V11 broken-bowl pixels remain visibly unapproved and byte-identical; V12
+adds a native-pixel contact-depth control so placement can be diagnosed without
+another irreversible art guess. Camera zoom applies only to the composed world.
+V12 changes no gameplay or live runtime asset; V11 remains immutable
+predecessor evidence and V4's fitted-unit approval remains binding.
 
 ```sh
 npm run verify:kitchen-approved-family
@@ -308,6 +310,7 @@ npm run verify:kitchen-room-layout-review-v8
 npm run verify:kitchen-room-layout-review-v9
 npm run verify:kitchen-room-layout-review-v10
 npm run verify:kitchen-room-layout-review-v11
+npm run verify:kitchen-room-layout-review-v12
 ```
 
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page

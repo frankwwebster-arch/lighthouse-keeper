@@ -133,18 +133,20 @@ hash is pinned in the promotion record.
 ## Current loose-asset review
 
 The active redraft review is published at
-`/keeper-review/kitchen-room-layout-v11/`. It uses the locked fitted base in all
+`/keeper-review/kitchen-room-layout-v12/`. It uses the locked fitted base in all
 three global states, so the full cabinet run cannot move and no source-sheet row
-boundary can appear. V11 retains V10's ON sink effect: the visible water is a
+boundary can appear. V12 retains V11's ON sink effect: the visible water is a
 straight native-pixel stream directly beneath the spout, with no splash or
 pooling at the stream's foot, and is clipped before the unchanged opaque basin
-front. In Broken, a taller transparent three-frame fault layer sends an
-intentionally exaggerated geyser upward from the basin. Separate walking-plane
-spills sit beneath the sink, dishwasher and fridge; the oven interval remains
-transparent. The three dishwasher warning lenses stay fixed while pulsing. The
-oven alternates between complete opaque dark/lit cavity states, and its fixed
-red fascia lens pulses independently. None of these effects participates in the
-fitted-run box.
+front. In Broken, the unchanged V11 three-frame geyser is composed eight native
+pixels farther behind the basin front. Separate walking-plane spills sit beneath
+the sink, dishwasher and fridge; the oven interval remains transparent. Each
+dishwasher warning lens is an isolated 22 × 24 layer with a four-pixel
+transparent gutter; the review allows independent dragging and reports exact
+native-pixel offsets. The rejected open-oven and fascia layers are absent. The
+approved closed oven remains visible from the locked base and only its cavity
+behind the existing glass alternates between complete dark/lit states. None of
+these effects participates in the fitted-run box.
 
 The toaster, kettle, bin, bowl, table and rear-facing chair are target-sized
 source drawings extracted 1:1, with no downscaling, resampling or colour
@@ -175,10 +177,13 @@ source; camera zoom applies uniformly to the composed world.
 This page is review-only: no approved source or runtime pixel is overwritten or
 promoted. Its exact outputs, source hashes, support rows, global-state map,
 world-scale equation, pace mapping and discard boundary are recorded in
-`data/kitchen_room_layout_review_v11.json` and its extraction register. The
+`data/kitchen_room_layout_review_v12.json` and its extraction register. The
 table and rear-facing chair share exact pace 16 beyond the fridge; depth order
-is table, rear-seated Keeper, chair. V11 exposes the immutable V10 predecessor and
-the corrected draft side-by-side. V5 is rejected shadowed evidence; V4's
+is table, rear-seated Keeper, chair. The V11 broken-bowl pixels remain
+byte-identical and explicitly unapproved; V12 exposes an exact native-pixel
+contact-depth control for diagnosis rather than silently rewriting the art.
+V12 exposes immutable V11 as predecessor evidence. V5 is rejected shadowed
+evidence; V4's
 fitted-unit approval remains binding.
 
 V1 is rejected and frozen only as historical evidence. It incorrectly used the

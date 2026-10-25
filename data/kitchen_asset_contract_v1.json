@@ -127,6 +127,6 @@
     "runtimeReworkReason": "Promotion V1 downscales the approved master; future promotion must retain native source pixels and use camera zoom",
     "runtimePromotion": "data/kitchen_runtime_promotion_v1.json",
     "retainedLegacyRoom": "public/sprites/room_kitchen.png",
-    "activeReview": "data/kitchen_room_layout_review_v11.json"
+    "activeReview": "data/kitchen_room_layout_review_v12.json"
   }
 }
