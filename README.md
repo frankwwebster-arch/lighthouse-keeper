@@ -278,23 +278,22 @@ not asset resolution: one 10.5-lp pace is 114 kitchen-source pixels and every
 228-pixel fitted bay is exactly two paces wide.
 
 The active movable composition redraft is
-`/keeper-review/kitchen-room-layout-v12/`. The fitted units are approved and
-hash-locked as one fixed native base; only their separate warning, light and
-effect layers may change. V12 preserves V11's straight ON sink stream,
-target-sized shadowless loose family, transparent chair gaps, forward worktop
-placement, shared Prime scale, exact pace anchors and table → seated Keeper →
-chair depth order. In Broken, the unchanged geyser is composed eight native
-pixels farther behind the basin front; walking-plane spills remain beneath the
-sink, dishwasher and fridge but not the oven. The rejected open oven and fascia
-overlays are absent: the approved closed oven remains in place and only its
-cavity behind the existing glass alternates between dark and lit states. Each
-dishwasher lens is an isolated 22 × 24 image with a four-pixel transparent
-gutter and can be dragged independently with exact native-pixel offset readout.
-The V11 broken-bowl pixels remain visibly unapproved and byte-identical; V12
-adds a native-pixel contact-depth control so placement can be diagnosed without
-another irreversible art guess. Camera zoom applies only to the composed world.
-V12 changes no gameplay or live runtime asset; V11 remains immutable
-predecessor evidence and V4's fitted-unit approval remains binding.
+`/keeper-review/kitchen-room-layout-v13/`. The fitted units are approved and
+hash-locked as one fixed native base; only separate loose assets, warning,
+light and floor-effect layers may change. V13 preserves V12's straight ON sink
+stream, target-sized shadowless loose family, transparent chair gaps, shared
+Prime scale, exact pace anchors, closed-oven cavity flicker and table → seated
+Keeper → chair depth order. The redrafted broken bowl now retains the complete
+curved foot/base and declares native contact row 116. Drag state is isolated by
+asset kind, so moving that worktop asset cannot alter the table or chair.
+Dishwasher lenses begin at the accepted `-5,-2` native-pixel offsets, have no
+fixed right-edge remnants, and flash independently through amber, cyan and
+violet at irregular intervals. Broken-state walking-plane water has tapered
+sink edges and a larger translucent, finely frothy dishwasher spill; the oven
+interval remains dry and the fridge spill is preserved. Camera zoom applies
+only to the composed world. V13 changes no gameplay or live runtime asset; V12
+remains immutable predecessor evidence and V4's fitted-unit approval remains
+binding.
 
 ```sh
 npm run verify:kitchen-approved-family
@@ -311,6 +310,7 @@ npm run verify:kitchen-room-layout-review-v9
 npm run verify:kitchen-room-layout-review-v10
 npm run verify:kitchen-room-layout-review-v11
 npm run verify:kitchen-room-layout-review-v12
+npm run verify:kitchen-room-layout-review-v13
 ```
 
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
@@ -833,7 +833,7 @@ must remain paused to avoid duplicate alerts.
 - `data/keeper_pose_registry.json`, `data/keeper_endpoint_audit.json` and `data/keeper_endpoint_exceptions.json` — shared pose vocabulary, current real-pixel endpoint evidence, and the frozen legacy migration boundary.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
 - `public/keeper-review/index.html` — canonical online-only reviewer deployed at `/keeper-review/`; `docs/keeper-scale-audit/review.html` is the generated audit artifact and must be byte-identical, but when opened outside `/keeper-review` it sends the viewer to the live platform instead of presenting a second workspace. Its gallery is a compact visual scan (name, review state, last local save/redraft, playback and frame stepping); `Open close review` opens any chosen card immediately. `Find animation` searches names and overrides all other filters; otherwise independently filter by review state, pose and active/reserve use list. Close review lets Frank override the inferred pose tag, relegate a likely duplicate to the reversible reserve list, expand/compress retained draft comparisons, and select canonical or every exact-name draft as an exportable preferred-promotion candidate—without mutating production. **Hand back to Codex** always asks for confirmation, saves any unsaved cards to that browser if confirmed, then submits the full batch to the durable server-side queue. The server records a semantic exact-name delta (ignoring save timestamps), comparing the first server hand-back to the shipped review baseline and later ones to the prior hand-back; the receipt reports only the changed animation count for later Codex work. When Codex claims a batch, the online reviewer becomes read-only until the delivery is completed, while retaining playback and inspection; JSON backup/import is collapsed as an exceptional browser-recovery option.
-- `review-archive/`, `docs/REVIEW_ARCHIVE.md`, `scripts/archive_keeper_review_media.mjs` and `scripts/replace_keeper_review_set.mjs` — content-addressed storage for review-only images, GIFs and oversized review JSON. The index has 4,223 review references across 138 set manifests resolving to 2,349 committed-tree SHA-256 objects hosted outside Vercel deployments. The global sweep ignores unrelated untracked objects, and the single-set replacement path remains available for an isolated reversible batch. Immutable page bytes and old URLs are preserved through short-lived redirect routes; new animations preload every moving frame before playback. The clean `public/` payload is 47.32 MiB beneath the unchanged 50 MiB guard. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
+- `review-archive/`, `docs/REVIEW_ARCHIVE.md`, `scripts/archive_keeper_review_media.mjs` and `scripts/replace_keeper_review_set.mjs` — content-addressed storage for review-only images, GIFs and oversized review JSON. The index has 4,483 review references across 149 set manifests resolving to 2,433 committed-tree SHA-256 objects hosted outside Vercel deployments. The global sweep ignores unrelated untracked objects, and the single-set replacement path remains available for an isolated reversible batch. Immutable page bytes and old URLs are preserved through short-lived redirect routes; new animations preload every moving frame before playback. The clean `public/` payload is 47.56 MiB beneath the unchanged 50 MiB guard. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
 - `data/keeper_side_on_beard_occlusion_audit.json`, `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/`, and `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` — completed draft-only v2 beard/hand audit and preserved rejected v1 history. The active reviewer shows v2 beside canonical and the separate Frank-selected darts draft; the verifier prevents implicit promotion.
 - `data/keeper_review_drafts.json` and `art/drafts/` — SHA-256-pinned, exact-name review comparisons: the draft-only darts candidate, seven active V11 artist-smock candidates, the accepted complete-route `keeper_snooker` candidate, the 41 exact-name 11 October amendment candidates and the separate party-hat frame-2 v2 variant, plus the ten selected canonical promotions and their reversible previous versions. Hash-addressed reviewer copies prevent same-name historical and current variants from overwriting one another. `scripts/verify_keeper_review_drafts.ts` checks every registered source, canonical/current comparison, sidecar, gutter, publication and reviewer attachment.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.

@@ -207,21 +207,23 @@ compatibility boundary; its 84 × 74 derivatives are not visual authority and
 must not be used for art review. The fitted units are approved and locked to the
 hash in `docs/review/kitchen-fitted-units-lock-approval-2026-10-24.json`; never
 change their bodies. The active loose-asset reviewer is
-`/keeper-review/kitchen-room-layout-v12/`. V12 preserves V11's fixed native fitted
+`/keeper-review/kitchen-room-layout-v13/`. V13 preserves V12's fixed native fitted
 base, straight ON sink stream, transparent rear-chair gaps, separate
 state/effect layers, target-sized shadowless loose objects, forward worktop
 placement, 228/168 Prime registration, exact pace-16 furniture anchor and table
-→ seated Keeper → chair depth order. In Broken, the V11 geyser pixels are
-composed eight native pixels farther behind the basin front; walking-plane
-spills remain under the sink, dishwasher and fridge but not the oven; each
-dishwasher lens is an isolated four-gutter crop that can be moved independently
-with exact native-pixel offsets; and the approved closed oven remains in place
-while only its behind-glass cavity alternates between complete dark/lit states.
-The rejected open-door and fascia overlays are absent. V11's broken-bowl pixels
-remain byte-identical and unapproved; the review exposes a native-pixel
-contact-depth control rather than silently rewriting them. Kitchen art is never
-downscaled or resampled, and gameplay/runtime art is unchanged. V11 remains
-immutable predecessor evidence,
+→ seated Keeper → chair depth order. In Broken, the V11 geyser pixels remain
+eight native pixels farther behind the basin front. The sink floor spill has
+tapered edges; the larger dishwasher-owned spill is translucent and finely
+frothy; the oven interval remains dry; and the fridge spill is preserved. The
+three isolated four-gutter dishwasher lenses use accepted `-5,-2` offsets and
+flash independently through amber, cyan and violet with no fixed right-hand
+artifacts. The approved closed oven remains in place while only its behind-glass
+cavity alternates between complete dark/lit states. The broken bowl is rebuilt
+from the standard body with a full curved foot/base at contact row 116, and drag
+scope isolation prevents it from moving table or chair anchors. The rejected
+open-door and fascia overlays remain absent. Kitchen art is never downscaled or
+resampled, and gameplay/runtime art is unchanged. V12 remains immutable
+predecessor evidence,
 V5 remains rejected
 shadowed evidence, and the fitted-unit subset approved in V4 remains locked.
 

@@ -1,0 +1,113 @@
+{
+  "schema": "lighthouse-keeper/kitchen-room-layout-review@13",
+  "version": 13,
+  "createdOn": "2026-10-25",
+  "status": "review-only-awaiting-v13-bowl-light-and-water-review",
+  "reviewRoute": "/keeper-review/kitchen-room-layout-v13/",
+  "supersedesReview": "/keeper-review/kitchen-room-layout-v12/",
+  "authority": {
+    "document": "docs/KITCHEN_ASSET_AUTHORITY.md",
+    "contract": "data/kitchen_asset_contract_v1.json",
+    "roomGrid": "data/kitchen_room_grid_contract_v2.json",
+    "lockedFittedBaseSha256": "ba84022371aea330e2fe50e5ad8fb37bf9d210aa1e09649d7f2fc69f460f49b1"
+  },
+  "nativeAssets": {
+    "register": "art/drafts/kitchen-room-layout-review-2026-10-25-v13/native-assets/extraction-register.json",
+    "registerSha256": "cdefa08f7b99f8cf989a1189475f14b468c375d323db572d2ed239200df62fe8",
+    "predecessorRegister": "art/drafts/kitchen-room-layout-review-2026-10-25-v12/native-assets/extraction-register.json",
+    "predecessorRegisterSha256": "fa7eb77f5d9b68db2e104e369401bc1e8e410d15ef78ad9a4ab8c9d7fcbdacfd",
+    "scaleAppliedToKitchenArt": false,
+    "downscalingApplied": false,
+    "resamplingApplied": false,
+    "approvedBaseColourTransformApplied": false,
+    "separateEffectColourTransformsApplied": true
+  },
+  "corrections": {
+    "toaster": "detached countertop splodges removed; own feet establish support",
+    "bowl": "complete standard-bowl body and foot/base retained; connected front-left wall section removed with restrained cracks and no debris",
+    "sink": "three-frame tap-outlet gush plus sink-centred walking-plane puddle",
+    "dishwasher": "accepted -5,-2 offsets; old arcs removed; amber/cyan/violet isolated lenses change colour and blink at irregular random intervals",
+    "oven": "Broken retains the approved closed oven; only the exact cavity behind its glass flickers, with no fascia or open-door overlay",
+    "waterOwnership": "no broken-overlay leak below dishwasher/fridge and no puddle below oven/fridge",
+    "floorWater": "sink edges taper organically; dishwasher spill is larger, translucent and finely frothy; oven remains dry",
+    "reviewShell": "version label and reversible-boundary copy corrected",
+    "onSink": "straight vertical native stream from tap outlet; no basin splash or pooling",
+    "sinkGush": "unchanged native V11 geyser pixels translated eight native pixels rearward in the review composition",
+    "movement": "drag mutation is scoped by asset kind so worktop movement cannot alter table, chair or any floor anchor"
+  },
+  "reviewCalibration": {
+    "sinkEffectOffsetY": -8,
+    "dishwasherWarningBasePositions": [
+      [
+        720,
+        116
+      ],
+      [
+        742,
+        116
+      ],
+      [
+        764,
+        116
+      ]
+    ],
+    "dishwasherWarningInitialOffsets": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "brokenBowlInitialContactOffsetY": 0,
+    "dishwasherWarningAcceptedOffsets": [
+      [
+        -5,
+        -2
+      ],
+      [
+        -5,
+        -2
+      ],
+      [
+        -5,
+        -2
+      ]
+    ],
+    "dishwasherWarningColours": [
+      "amber",
+      "cyan",
+      "violet"
+    ],
+    "dishwasherWarningFiles": [
+      [
+        "dishwasher-warning-1-native.png",
+        "dishwasher-warning-1-cyan-native.png",
+        "dishwasher-warning-1-violet-native.png"
+      ],
+      [
+        "dishwasher-warning-2-native.png",
+        "dishwasher-warning-2-cyan-native.png",
+        "dishwasher-warning-2-violet-native.png"
+      ],
+      [
+        "dishwasher-warning-3-native.png",
+        "dishwasher-warning-3-cyan-native.png",
+        "dishwasher-warning-3-violet-native.png"
+      ]
+    ]
+  },
+  "boundary": {
+    "runtimeChanged": false,
+    "gameplayChanged": false,
+    "approvedFittedUnitsChanged": false,
+    "roomGridChanged": false,
+    "rollback": "Rejecting V13 discards only its route, page and V13 native correction directory. V1-V12, the V4 fitted-unit lock, Runtime Promotion V1 and retained 84 x 74 runtime room remain byte-identical."
+  }
+}

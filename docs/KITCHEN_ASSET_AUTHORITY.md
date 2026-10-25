@@ -133,20 +133,23 @@ hash is pinned in the promotion record.
 ## Current loose-asset review
 
 The active redraft review is published at
-`/keeper-review/kitchen-room-layout-v12/`. It uses the locked fitted base in all
+`/keeper-review/kitchen-room-layout-v13/`. It uses the locked fitted base in all
 three global states, so the full cabinet run cannot move and no source-sheet row
-boundary can appear. V12 retains V11's ON sink effect: the visible water is a
+boundary can appear. V13 retains V12's ON sink effect: the visible water is a
 straight native-pixel stream directly beneath the spout, with no splash or
 pooling at the stream's foot, and is clipped before the unchanged opaque basin
 front. In Broken, the unchanged V11 three-frame geyser is composed eight native
-pixels farther behind the basin front. Separate walking-plane spills sit beneath
-the sink, dishwasher and fridge; the oven interval remains transparent. Each
-dishwasher warning lens is an isolated 22 × 24 layer with a four-pixel
-transparent gutter; the review allows independent dragging and reports exact
-native-pixel offsets. The rejected open-oven and fascia layers are absent. The
-approved closed oven remains visible from the locked base and only its cavity
-behind the existing glass alternates between complete dark/lit states. None of
-these effects participates in the fitted-run box.
+pixels farther behind the basin front. The sink floor spill now tapers at both
+native-pixel edges. The dishwasher has a larger translucent spill with fine
+froth; it never enters the oven interval, and the fridge spill remains separate.
+Each dishwasher warning lens is an isolated 22 × 24 layer with a four-pixel
+transparent gutter. All three begin at Frank's accepted `-5,-2` offsets and
+flash independently at irregular intervals through amber, cyan and violet;
+rejected fixed pixels and right-edge arcs are neutralised in the separate Broken
+overlay. The rejected open-oven and fascia layers are absent. The approved
+closed oven remains visible from the locked base and only its cavity behind the
+existing glass alternates between complete dark/lit states. None of these
+effects participates in the fitted-run box.
 
 The toaster, kettle, bin, bowl, table and rear-facing chair are target-sized
 source drawings extracted 1:1, with no downscaling, resampling or colour
@@ -156,11 +159,11 @@ gutter. Countertop support is local y=84, thirteen native
 pixels forward from V4, so the objects occupy the visible worktop plane rather
 than its rear edge. Toaster On is one connected silhouette with toast seated in
 its slots. Kettle On is byte-identical to Off and has no drawn steam. The broken
-bowl physically loses its front-left wall; its former hanging unstriped panel,
-remaining striped front-left panel and detached debris are absent. The broken
-bowl's intact shell row 54 is its explicit worktop contact; connected shard rows
-55–64 hang in front of the fascia instead of lifting or hiding the shell. The
-broken toaster likewise rests on its own
+bowl is rebuilt from the complete standard body, physically loses a connected
+front-left wall section, and retains its full curved foot/base. Its native
+contact row is 116 with anchor x=69; detached debris is absent. Movement state
+is scoped by asset kind, so dragging this worktop asset cannot mutate the table
+or chair floor anchors. The broken toaster likewise rests on its own
 feet, with no detached black/brown support artefacts. The rear chair retains
 every V6 wood pixel but removes five enclosed white source-paper islands, so
 the seated Keeper is visible between its slats.
@@ -177,12 +180,11 @@ source; camera zoom applies uniformly to the composed world.
 This page is review-only: no approved source or runtime pixel is overwritten or
 promoted. Its exact outputs, source hashes, support rows, global-state map,
 world-scale equation, pace mapping and discard boundary are recorded in
-`data/kitchen_room_layout_review_v12.json` and its extraction register. The
+`data/kitchen_room_layout_review_v13.json` and its extraction register. The
 table and rear-facing chair share exact pace 16 beyond the fridge; depth order
-is table, rear-seated Keeper, chair. The V11 broken-bowl pixels remain
-byte-identical and explicitly unapproved; V12 exposes an exact native-pixel
-contact-depth control for diagnosis rather than silently rewriting the art.
-V12 exposes immutable V11 as predecessor evidence. V5 is rejected shadowed
+is table, rear-seated Keeper, chair. V13's bowl, warning and water corrections
+remain review-only and are not promoted art. V12 remains immutable predecessor
+evidence. V5 is rejected shadowed
 evidence; V4's
 fitted-unit approval remains binding.
 
