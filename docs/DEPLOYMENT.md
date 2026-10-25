@@ -1,6 +1,6 @@
 # Deployment: workflow, retention and rollback
 
-_Last updated 21 October 2026._
+_Last updated 25 October 2026._
 
 ## Why this exists
 
@@ -78,14 +78,19 @@ version at the URL above.
 
 ## Retention policy
 
-**Status (14 October 2026): not yet applied.** The policy can be changed only
-in the Vercel dashboard (the API and connector cannot set it), and Claude in
-Chrome is not permitted on vercel.com. Until it is set, Hobby's default of
-30 days applies. The deploy gate already stops the growth; the shorter policy
-only clears old builds faster.
+**Status (checked 25 October 2026): applied.** The project's
+`deploymentExpiration` setting reads `expirationDays: 1`,
+`expirationDaysCanceled: 1`, `expirationDaysErrored: 1`,
+`expirationDaysProduction: 7` and `deploymentsToKeep: 10`, which matches the
+target below. (On 14 October it was not yet set; it was applied in the
+dashboard some time after.) The policy can be changed only in the Vercel
+dashboard, and Claude in Chrome is not permitted on vercel.com. To read the
+current setting:
+`npx vercel api "/v9/projects/prj_tlJx4kAYbll5Mq6xISKPrdXEWqX2?teamId=team_UpVksYbRSmV1Yqak6TY6ocG6"`
+and look at `deploymentExpiration`.
 
-Target policy (Vercel → lighthouse-keeper → Settings → Security →
-Deployment Retention Policy → Save):
+Policy (Vercel → lighthouse-keeper → Settings → Security →
+Deployment Retention Policy):
 
 | Deployment state | Kept for |
 | --- | --- |
@@ -119,6 +124,43 @@ Nothing is rebuilt, and it takes seconds.
 
 After a rollback, `main` still holds the newer code. The next `[deploy]` will
 release it again, so fix forward on `main` before deploying.
+
+## Clean-up of 25 October 2026
+
+Approved by Frank on the project page (answers v1 and v2) after a read-only
+safety check. Removed with the Vercel CLI (already signed in as
+`frankwwebster-4308`), one deployment ID per call, with `--safe` (skip anything
+with an active alias). Never `vercel remove <project-name>`: that removes every
+deployment of the project.
+
+- **Before:** 45 deployments, all from 23–25 October (24 READY production
+  releases, 21 CANCELED skipped pushes). No tool reports per-deployment
+  storage; each release carries 47–50 MiB of `public/` plus functions, so
+  roughly 55–60 MB each, about 1.4 GB in all. The other 25 projects on the
+  account keep about 3 deployments each.
+- **Removed (31):** every deployment created before 24 October 18:18 UTC that
+  was not the live one or one of the three previous releases: 16 READY
+  releases (about 0.9 GB) and 15 CANCELED pushes, from `da1922e`
+  (`dpl_4YePeNcHuTfDPga46MGBVADXFJ9U`, 23 Oct 09:45 UTC) to `65f097c`
+  (`dpl_Fxww8gtNjX36mjpGYyrJoDgC4PXw`, 24 Oct 11:52 UTC). All 31 reported
+  success; none was skipped. They are restorable until about 24 November under
+  Settings → Security → Recently Deleted.
+- **Kept (14):** production `03f6661` (`dpl_8kZ7UVnouiJMBBrKsmT73rsVUXHt`,
+  Kitchen V13), the rollback versions `2a65167`
+  (`dpl_6ZLQs7a5rjoookxHV2GicLWK5485`, Kitchen V12), `0f32be8`
+  (`dpl_HBASgvRdKT9KqQ9fcFHGTEMC9cm8`, Kitchen V11) and `7e4983b`
+  (`dpl_FDdxEkKvZ8wadDj48fqu7khffgeo`, Kitchen V10), and everything else from
+  the 24 hours before the plan (four more releases, six skipped pushes).
+- **Verified afterwards:** production is still `dpl_8kZ7…` and READY, with the
+  live alias; the three rollback versions are READY; the game, `/studio`,
+  `/studio/stories` and `/keeper-review/kitchen-room-layout-v13` load; 20
+  random review and bubble-picture addresses return byte-identical pictures
+  (SHA-256 checked). The deploy gate's 6 tests pass.
+- **Not changed:** the project, domains, environment variables, retention
+  policy, either desk's unsaved files or stashes, and the live database.
+- **Known, not caused by this clean-up:** `/keeper-review/kitchen` returns 404.
+  Codex removed that redirect (to the retired cabinetry review) in `d0c7179`
+  on 24 October; the current kitchen review is `kitchen-room-layout-v13`.
 
 ## Initial state after the 14 October cleanup
 
