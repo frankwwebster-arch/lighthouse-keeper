@@ -1,0 +1,44 @@
+{
+  "schema": "lighthouse-keeper/kitchen-room-layout-review@11",
+  "version": 11,
+  "createdOn": "2026-10-25",
+  "status": "review-only-awaiting-broken-state-review",
+  "reviewRoute": "/keeper-review/kitchen-room-layout-v11/",
+  "supersedesReview": "/keeper-review/kitchen-room-layout-v10/",
+  "authority": {
+    "document": "docs/KITCHEN_ASSET_AUTHORITY.md",
+    "contract": "data/kitchen_asset_contract_v1.json",
+    "roomGrid": "data/kitchen_room_grid_contract_v2.json",
+    "lockedFittedBaseSha256": "ba84022371aea330e2fe50e5ad8fb37bf9d210aa1e09649d7f2fc69f460f49b1"
+  },
+  "nativeAssets": {
+    "register": "art/drafts/kitchen-room-layout-review-2026-10-25-v11/native-assets/extraction-register.json",
+    "registerSha256": "ff79b7db93ae3ddceaaadc35b2a731656b2cb7f78f5bd8b2ccdca6550a93b26c",
+    "predecessorRegister": "art/drafts/kitchen-room-layout-review-2026-10-25-v10/native-assets/extraction-register.json",
+    "predecessorRegisterSha256": "421ff8176eddf1fc76a6a2c46a9a450d7bad55dc5f27898aed0f86d382568683",
+    "scaleAppliedToKitchenArt": false,
+    "downscalingApplied": false,
+    "resamplingApplied": false,
+    "approvedBaseColourTransformApplied": false,
+    "separateLightEffectToneMapApplied": true
+  },
+  "corrections": {
+    "toaster": "detached countertop splodges removed; own feet establish support",
+    "bowl": "intact shell row 54 is the explicit worktop contact; hanging shard rows 55-64 overlap the fascia",
+    "sink": "three-frame tap-outlet gush plus sink-centred walking-plane puddle",
+    "dishwasher": "fixed lens-only overlays pulse without cream rectangles or translation",
+    "oven": "actual opaque cavity-state replacement flickers; fascia lens pulses independently; no flat translucent overlay",
+    "waterOwnership": "no broken-overlay leak below dishwasher/fridge and no puddle below oven/fridge",
+    "floorWater": "separate spills beneath sink, dishwasher and fridge; no oven spill and no fitted-run registration",
+    "reviewShell": "version label and reversible-boundary copy corrected",
+    "onSink": "straight vertical native stream from tap outlet; no basin splash or pooling",
+    "sinkGush": "three-frame OTT geyser shoots upward from the basin on a taller transparent effect layer"
+  },
+  "boundary": {
+    "runtimeChanged": false,
+    "gameplayChanged": false,
+    "approvedFittedUnitsChanged": false,
+    "roomGridChanged": false,
+    "rollback": "Rejecting V11 discards only its route, page and V11 native correction directory. V1-V10, the V4 fitted-unit lock, Runtime Promotion V1 and retained 84 x 74 runtime room remain byte-identical."
+  }
+}

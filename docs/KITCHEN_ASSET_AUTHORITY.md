@@ -133,16 +133,18 @@ hash is pinned in the promotion record.
 ## Current loose-asset review
 
 The active redraft review is published at
-`/keeper-review/kitchen-room-layout-v10/`. It uses the locked fitted base in all
+`/keeper-review/kitchen-room-layout-v11/`. It uses the locked fitted base in all
 three global states, so the full cabinet run cannot move and no source-sheet row
-boundary can appear. V10 changes only V9's ON sink effect: the visible water is
-a straight native-pixel stream directly beneath the spout, with no splash or
+boundary can appear. V11 retains V10's ON sink effect: the visible water is a
+straight native-pixel stream directly beneath the spout, with no splash or
 pooling at the stream's foot, and is clipped before the unchanged opaque basin
-front. In Broken, three native tap-gush frames animate independently, the puddle is
-limited to the sink footprint on the walking plane, the three dishwasher warning
-lenses remain in fixed locations while pulsing, and a cavity-only translucent
-amber layer supplies the oven flicker. Water is absent below the dishwasher,
-oven and fridge. None of these effects participates in the fitted-run box.
+front. In Broken, a taller transparent three-frame fault layer sends an
+intentionally exaggerated geyser upward from the basin. Separate walking-plane
+spills sit beneath the sink, dishwasher and fridge; the oven interval remains
+transparent. The three dishwasher warning lenses stay fixed while pulsing. The
+oven alternates between complete opaque dark/lit cavity states, and its fixed
+red fascia lens pulses independently. None of these effects participates in the
+fitted-run box.
 
 The toaster, kettle, bin, bowl, table and rear-facing chair are target-sized
 source drawings extracted 1:1, with no downscaling, resampling or colour
@@ -153,7 +155,10 @@ pixels forward from V4, so the objects occupy the visible worktop plane rather
 than its rear edge. Toaster On is one connected silhouette with toast seated in
 its slots. Kettle On is byte-identical to Off and has no drawn steam. The broken
 bowl physically loses its front-left wall; its former hanging unstriped panel,
-remaining striped front-left panel and detached debris are absent. The broken toaster likewise rests on its own
+remaining striped front-left panel and detached debris are absent. The broken
+bowl's intact shell row 54 is its explicit worktop contact; connected shard rows
+55–64 hang in front of the fascia instead of lifting or hiding the shell. The
+broken toaster likewise rests on its own
 feet, with no detached black/brown support artefacts. The rear chair retains
 every V6 wood pixel but removes five enclosed white source-paper islands, so
 the seated Keeper is visible between its slats.
@@ -170,9 +175,9 @@ source; camera zoom applies uniformly to the composed world.
 This page is review-only: no approved source or runtime pixel is overwritten or
 promoted. Its exact outputs, source hashes, support rows, global-state map,
 world-scale equation, pace mapping and discard boundary are recorded in
-`data/kitchen_room_layout_review_v10.json` and its extraction register. The
+`data/kitchen_room_layout_review_v11.json` and its extraction register. The
 table and rear-facing chair share exact pace 16 beyond the fridge; depth order
-is table, rear-seated Keeper, chair. V10 exposes the immutable V9 predecessor and
+is table, rear-seated Keeper, chair. V11 exposes the immutable V10 predecessor and
 the corrected draft side-by-side. V5 is rejected shadowed evidence; V4's
 fitted-unit approval remains binding.
 

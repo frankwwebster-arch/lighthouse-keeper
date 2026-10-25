@@ -278,19 +278,21 @@ not asset resolution: one 10.5-lp pace is 114 kitchen-source pixels and every
 228-pixel fitted bay is exactly two paces wide.
 
 The active movable composition redraft is
-`/keeper-review/kitchen-room-layout-v10/`. The fitted units are approved and
+`/keeper-review/kitchen-room-layout-v11/`. The fitted units are approved and
 hash-locked as one fixed native base; only their separate warning, light and
-effect layers may change. V10 preserves V9's target-sized shadowless loose
-family, transparent chair gaps, forward worktop placement, shared Prime scale,
-exact pace anchors and table → seated Keeper → chair depth order. It changes
-only the ON sink effect: water is a straight native-pixel stream beneath the
-spout, with no splash or pooling at its foot. The broken state remains V9's
-sink-owned animated gush and walking-plane puddle, fixed dishwasher warning
-lenses, and translucent oven-cavity flicker. The review exposes V9 and V10
-side-by-side and applies no scaling, resampling or colour transform. Camera
-zoom still applies only to the complete composed world. V10 changes no gameplay
-or live runtime asset; V9 remains immutable predecessor evidence and V4's
-fitted-unit approval remains binding.
+effect layers may change. V11 preserves V10's straight ON sink stream,
+target-sized shadowless loose family, transparent chair gaps, forward worktop
+placement, shared Prime scale, exact pace anchors and table → seated Keeper →
+chair depth order. In Broken, the bowl uses its intact shell row as the explicit
+worktop contact so the connected shard hangs in front of the fascia. A tall
+three-frame geyser shoots upward from the basin; separate walking-plane spills
+remain beneath the sink, dishwasher and fridge but not the oven. The oven
+alternates between complete opaque dark/lit cavity states, while its fixed
+fascia lens pulses independently. The approved base and loose-asset pixels are
+not scaled or resampled; only the separate oven light state is tone-mapped.
+Camera zoom still applies only to the complete composed world. V11 changes no
+gameplay or live runtime asset; V10 remains immutable predecessor evidence and
+V4's fitted-unit approval remains binding.
 
 ```sh
 npm run verify:kitchen-approved-family
@@ -305,6 +307,7 @@ npm run verify:kitchen-room-layout-review-v7
 npm run verify:kitchen-room-layout-review-v8
 npm run verify:kitchen-room-layout-review-v9
 npm run verify:kitchen-room-layout-review-v10
+npm run verify:kitchen-room-layout-review-v11
 ```
 
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
