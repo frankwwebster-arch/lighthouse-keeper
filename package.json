@@ -213,7 +213,9 @@
     "build:kitchen-room-layout-review-v12": "node scripts/build_kitchen_room_layout_review_v12.mjs",
     "verify:kitchen-room-layout-review-v12": "node scripts/verify_kitchen_room_layout_review_v12.mjs",
     "build:kitchen-room-layout-review-v13": "node scripts/build_kitchen_room_layout_review_v13.mjs",
-    "verify:kitchen-room-layout-review-v13": "node scripts/verify_kitchen_room_layout_review_v13.mjs"
+    "verify:kitchen-room-layout-review-v13": "node scripts/verify_kitchen_room_layout_review_v13.mjs",
+    "export:makko": "node scripts/export_makko_approved_art.mjs",
+    "verify:makko-export": "node scripts/export_makko_approved_art.mjs --check"
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.10.4",

@@ -590,6 +590,31 @@ of truth for the 14-riser, 7-lp-tread, 98 × 60-lp flight and 105-lp reserved
 core; the accompanying SVG preserves the plain test staircase. Future rail,
 balustrade and newel artwork must conform to it rather than resizing the flight.
 
+## Makko approved-art export
+
+`npm run export:makko` builds the local, self-contained
+`makko-approved-art-2026-10-25/` handoff without changing canonical artwork.
+The generated folder is deliberately gitignored because it contains copied
+binary delivery files; the exporter and selection policy are versioned.
+
+The handoff contains the original concept references, approved Prime Keeper
+identity art, 27 promoted runtime sprite sheets, all 14 approved playable
+review routes as numbered frames, all ten approved V12 sequence strips, the
+approved kitchen V4 master and locked fitted-unit base, the compatibility
+kitchen state/animation sprites, 84 explicitly approved/current activity-story
+pictures and the first production environment batch. Every animation has JSON
+timing/geometry metadata. `MANIFEST.json` records every source path and SHA-256,
+and `CHECKSUMS.sha256` provides an independent package check.
+
+Rejected or superseded drafts, untracked experiments, the non-production
+held-tool proxy, unapproved loose-kitchen work and the conflicting legacy
+Keeper bank are intentionally excluded. Rebuild and verify with:
+
+```sh
+npm run export:makko
+npm run verify:makko-export
+```
+
 ## Run it
 ```
 npm install

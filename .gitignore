@@ -9,3 +9,6 @@ next-env.d.ts
 
 # Story sheets drawn by npm run stories -- render
 /tmp/
+
+# Rebuildable local delivery containing copied approved art for Makko.
+/makko-approved-art-*/

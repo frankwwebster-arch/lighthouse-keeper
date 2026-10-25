@@ -1,4 +1,4 @@
-# Lighthouse Keeper: status write-up (24 Oct 2026)
+# Lighthouse Keeper: status write-up (25 Oct 2026)
 
 ## What it is
 A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthouse; kids type commands (typo-tolerant, curated, no live AI) or click objects (Sims-style menus, auto-zoom camera). Needs and mood, credits, phone, bedtime, multi-day play, a day report, quiz pop-ins, time-aware chat, cheeky humour.
@@ -11,6 +11,16 @@ A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthou
 - Database: Neon Postgres via `DATABASE_URL` (verified: `/api/players` answers `db:true`). Tables are created on first use: players, saves, player_rules, settings (PIN hash).
 
 ## Built
+The approved artwork is now available as one reproducible local Makko handoff:
+`makko-approved-art-2026-10-25/`. It contains 27 promoted Prime sprite sheets,
+all 14 approved playable Prime routes, the ten approved V12 sequences, the
+approved kitchen V4 native master and locked fitted run, 84 explicitly approved
+current activity-story pictures, the original concept references and the first
+production environment batch. Rejected/superseded work and unapproved kitchen
+or Keeper candidates are excluded. `npm run export:makko` rebuilds the ignored
+binary folder; `npm run verify:makko-export` checks every exported and source
+SHA-256 against its generated manifest.
+
 The approved kitchen art/geometry authority is Warm Ligne-Claire Family V4,
 and Runtime Promotion V1 is now wired into the room code. All six fitted bodies
 remain exact 84 × 74 assets in the approved 772 × 224 coordinate system. The
