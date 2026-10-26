@@ -252,20 +252,21 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - Sink taps rise from the rear of the worktop reveal and stay below the window sill (y 274).
 
 ### 10b. Day-1 layouts and reserved footprint budget
-**Kitchen (layout v6, UNFITTED 1950s, 2048 module, walkY 502) (Frank, 26 Oct).** No fitted runs, no continuous worktop: every piece is freestanding furniture with its own top, with wall between pieces. Items and tiers from Frank's `data/upgrades.csv`; every item reserves its largest tier, centred on its stop. Codex may adjust spans by a few px to keep at least 8 px of wall between pieces; midpoints stay on their stops.
+**Kitchen (layout v7, 1950s, 2048 module, walkY 502) (Frank, 26 Oct).** A HARMONIOUS 1950s SET: the cabinets are one consistent family (rounded corners, glossy enamel-like finish, chrome or copper handles, pastel hue), each a SEPARATE freestanding cabinet with its own top and a little wall between them, so nothing has to join. The APPLIANCES bring the variety. Decorative WALL CUPBOARDS in the same family give the instant "kitchen" read even at TOWER scale (detail only, no interaction, never over windows or the cooker hood). Floor: CHECKERBOARD tiles (Frank loves mood image 01), drawn as flat rows of tiles in the floor band, no vanishing points. Mood references (local only, not committed): `reference/kitchen-mood/` — 01 is the primary 1950s reference (rounded glossy pastel cabinets, white enamel appliances, chrome, red diner set, checkerboard floor, wall cupboards); 02–06 are secondary for colour and hardware.
 
 | Item | Reserved span (x) | Midpoint stop | Surface for |
 |---|---|---|---|
-| Fridge: t1 small counter-height fridge → t2 fridge-freezer → t3 American-style (0.90 m) | 378–530 | 454 (stop 2) | — |
-| Belfast sink mounted in its own freestanding base cabinet (cupboard doors below, own wooden top either side of the sink as a small draining area; 1.0 m), under the left window (Frank, 26 Oct: cabinet-mounted, not on legs) | 622–790 | 706 (stop 5) | washing-up |
-| Small kitchen cupboard with its own top (0.75 m) | 811–937 | 874 (stop 7) | KETTLE |
-| Cooker: t1 basic oven (0.60 m, freestanding) → t2 two-oven range → t3 fancy professional; 1.2 m reserved for the range | 1025–1227 | 1126 (stop 10) | — |
-| Scrubbed wooden work table (1.2 m) with one chair tucked in at its right end, under the right window | 1244–1513 | 1378 (stop 13) | MIXER, food prep; he can sit at it |
-| Dresser: plate rack above, counter shelf and cupboards below (0.90 m, tall) | 1555–1705 | 1630 (stop 16) | TOASTER |
-| Tall larder cupboard (0.75 m) | 1735–1861 | 1798 (stop 18) | food storage |
+| Low freestanding rounded fridge (counter height, NOT a surface); t2 fridge-freezer / t3 American-style fill the 0.90 m reservation later | 378–530 | 454 (stop 2) | — |
+| Cabinet 1: Belfast sink cabinet (1.0 m), under the left window | 622–790 | 706 (stop 5) | washing-up |
+| Cabinet 2 (0.75 m) | 811–937 | 874 (stop 7) | KETTLE |
+| Cooker: t1 tall freestanding oven with eye-level grill and hood (0.60 m, about 1.5 m tall); 1.2 m reserved for t2 two-oven range / t3 professional | 1025–1227 | 1126 (stop 10) | — |
+| 1950s diner table (chrome legs) with two chairs, under the right window (all below the sill) | 1244–1513 | 1378 (stop 13) | eating; he can sit |
+| Cabinet 3 (0.75 m) | 1567–1693 | 1630 (stop 16) | TOASTER |
+| Cabinet 4 (0.75 m) | 1735–1861 | 1798 (stop 18) | MIXER |
 | Pedal bin (0.25 m) | 1945–1987 | 1966 (stop 20) | — |
 
-- The pet bowl is left out for now (no pet in V1; see D18). Counter items (kettle, toaster, mixer) are separate sprites placed on their piece's top at its stop.
+- Wall cupboards: above cabinets 2, 3 and 4 and above the fridge, top line about y 130, bottom about y 230; none in the window spans (x 622–790, 1294–1462) or above the cooker. Separate parts, decorative only.
+- Dresser and larder dropped (Frank, 26 Oct). Pet bowl out for now (no pet in V1; see D18). Counter items are separate sprites on their cabinet's top at its stop.
 - Broom → basic hoover → super hoover live behind the right door. The door tiers in `data/upgrades.csv` (old wooden door → knocker and peephole → smart door) now belong to the lobby's front door.
 
 **Other Day-1 rooms (proposed budgets for the fit check):**
@@ -383,6 +384,7 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - Proposed changes: (none yet)
 
 ## 19. Agent notes (Codex ⇄ Claude)
+- DRAFT (not GO) · 26 Oct · Claude → Codex: KITCHEN v7 (supersedes v6 layout). 1950s harmonious set per section 10b: one consistent family of four separate rounded, glossy pastel cabinets (sink cabinet + three), low rounded fridge, tall freestanding oven with eye-level grill and hood, diner table and two chairs under the right window, decorative wall cupboards, checkerboard floor. Mood references in `reference/kitchen-mood/` (01 primary). Method: generate freely to the calibration's line quality, keeper in for scale, then slide pieces onto their stops; no palette snapping, re-inking or shadows. Palette: [Frank to confirm].
 - NOTICE · 26 Oct · Claude → Codex: the GO RULE is now in force (see 'Shared channel' at the top). Nothing below is GO yet: finish or pause your current task, report, and wait.
 - DRAFT (not GO) · 26 Oct · Claude → Codex: ROOM WIDENED (Frank). The module is now 2048 × 576 (was 1536); height, scale, keeper, walkY and every vertical value are unchanged. 20 stops at x = 370 + 84(n−1); right jamb at x 2016–2048; windows centred on stops 5 and 13 (x 622–790 and 1294–1462). Kitchen layout v6 in section 10b (Belfast sink mounted in its own base cabinet, NOT on legs) adds a 1.2 m range reservation, a work table with chair, a dresser and a tall larder cupboard. Build the kitchen v5-method (free generation to the calibration's quality with the keeper for scale, then slide pieces onto stops) on THIS geometry; ignore the 1536 layouts.
 - DRAFT (not GO) · 26 Oct · Claude → Codex: KITCHEN v5 METHOD CHANGE (Frank: kitchen-proof-v4-painted-room is "very disappointing" — it is the fitted v4 layout, and its art is flat and toy-like next to the approved calibration). Build the UNFITTED layout v5 below, but change the method: (1) generate the kitchen FREELY, as you did the approved calibration, using the calibration image itself as the style/quality reference input and the unchanged Prime Keeper composited in for scale; no rigid pixel layout guide during generation; match the calibration's richness (bevels, layered edges, material weight, dense detail); (2) then cut each freestanding piece out and SLIDE it horizontally so its midpoint sits on its stop (section 10b); scale only uniformly, and only if a piece's real size is off; (3) counter items (kettle, toaster, mixer) are separate sprites. Show Frank the freely painted room beside the calibration first, then the re-positioned room. No palette snapping, no re-inking, no shadows.
@@ -430,3 +432,4 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - 26 Oct 2026 (Claude): (Frank) module widened to 2048 × 576 (20 stops); windows centred on stops 5 and 13; kitchen layout v6 with range reservation, table and chair, dresser and larder.
 - 26 Oct 2026 (Claude): (Frank) Belfast sink mounted in its own base cabinet, not on legs.
 - 26 Oct 2026 (Claude): GO rule (Frank): Codex only starts section 19 notes marked GO; kitchen notes set to DRAFT.
+- 26 Oct 2026 (Claude): (Frank) kitchen layout v7: harmonious 1950s set of four separate pastel cabinets, low fridge, tall oven with eye-level grill and hood, diner table and chairs, decorative wall cupboards, checkerboard floor; dresser and larder dropped; mood references added locally.
