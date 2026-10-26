@@ -5,7 +5,8 @@ Status: first draft of the brief, for Codex. Nothing here is drawn yet. The keep
 
 Read with:
 - `docs/AMBIENCE_AND_BACKDROP.md`: the weather keys, the sound partner of each layer, the weather overlays and the great lamp's start-up;
-- `docs/DOORS_STAIRS_AND_COSTUMES.md`: 56 px floors, the stairway alongside the rooms;
+- `docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`: one hidden circulation entrance per floor, no visible stair/lift, and the stone-footstep placeholder;
+- `docs/DOORS_STAIRS_AND_COSTUMES.md`: historical costume/activity rules only where they do not conflict with the hidden-circulation authority;
 - `docs/RECIPES.md`: object types, variants and standing spots.
 
 ## 1. Ground rules
@@ -85,7 +86,7 @@ A short sequence. It plays during the morning, when the tower opens and the new 
 - **Moon and stars.** The moon's path is the same as the sun's but slower; phases come later.
 - **The lighthouse at night, lit room by room.** No light art is needed: the game shades each room.
   - A room the keeper isn't in is dark.
-  - **In the evening, a room's light comes on as he opens its door and goes off as the door closes behind him.** The stairway is always lit.
+  - **In the evening, a room's light comes on as he opens its door and goes off as the door closes behind him.** The circulation slot is off-stage, so it has no player-visible lighting layer.
   - At bedtime the tower closes like a doll's house and only the bedroom window stays lit until the keeper's light clicks off (`EXPANSION_DESIGN.md`, "Bedroom, diving board and night ending").
   - For the art, this means two things. Room plates must still read when darkened, so don't rely on mid-greys that disappear under the night shade. And the closed tower needs `tower_window_lit` and `tower_window_dark` for each floor band.
 - **The lamp beam** sweeps above the night tint. Its start-up sequence is in `AMBIENCE_AND_BACKDROP.md` §3a.

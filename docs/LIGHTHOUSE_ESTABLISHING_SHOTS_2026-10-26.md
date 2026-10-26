@@ -1,8 +1,12 @@
 # Lighthouse establishing-shot drafts — 26 October 2026
 
-These two generated images are master layout/style drafts for the foreground
-lighthouse and island. They are review references, not approved runtime art.
-The animated sky and sea are intentionally absent.
+These two generated images are rejected historical layout drafts for the
+foreground lighthouse and island. They remain measured review evidence, but
+they are neither current visual direction nor approved runtime art. Frank
+rejected their sterile rectangular/apartment-block character in favour of the
+original concept's warm tapered lighthouse, rich distant-island backdrop and
+magical island-splitting expansion. The current circulation, door and sound
+authority is `docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`.
 
 ## Files
 
@@ -27,13 +31,19 @@ lamp room, gallery and exterior shell down to the measured ground line.
 - The expanded tower has exactly 20 enclosed floors above ground, with three
   equal room modules on every floor. It also has a three-module boathouse at
   the waterline and a three-module lair below it.
-- There is one ordinary hinged internal door per floor, between the aligned
-  stairwell and that floor's room. There are no hinged doors between the three
-  room modules. The bedroom alone has a second door into the en-suite on its
-  right. The ground-floor arched exterior entrance is separate.
-- Internal door leaves are gameplay occluders. Their runtime layer order is
-  `room shell -> Keeper -> open door leaf`; the leaf opens toward the player
-  and hides the Keeper during a costume change.
+- There is one circulation entrance per floor between a narrow concealed
+  vertical slot and that floor's room. No stair, landing, lift car or shaft is
+  visible. There are no doors between width modules. The bedroom alone has a
+  second door into the en-suite on its right, and the ground-floor exterior
+  entrance is separate.
+- A closed circulation entrance shows only its slim side jamb. Its flat opaque
+  door panel appears only while opening toward the player and becomes the
+  foreground occluder (`room shell -> Keeper -> open door panel`). Stair
+  travel and, after its upgrade, lift travel happen entirely behind it.
+- Hidden stair travel owns the replaceable sound placeholder
+  `footsteps_stone_stairwell`: Keeper boots on worn stone with a short enclosed
+  tower echo. It starts after full departure occlusion and stops before the
+  destination entrance opens; it never plays for the lift.
 - Magenta is reserved for the removed sky/sea layers and glass/open-water
   apertures.
 
@@ -64,5 +74,6 @@ following brief requirements remain unresolved:
 - The lamp room and module geometry are stylistically related across the two
   canvases but are not pixel-identical in size.
 
-These limitations are recorded deliberately: the PNGs are useful composition
-and door-layout references, but they are not safe production foregrounds yet.
+These limitations are recorded deliberately. The PNGs may still help explain
+the rejected orthographic experiment, but they must not be used as composition,
+door-layout or production foreground authority.

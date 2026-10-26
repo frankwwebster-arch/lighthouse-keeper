@@ -10,6 +10,13 @@
 > Frank reaffirmed on 17 October 2026 that this applies to **all** first-draft
 > animations. Old art is choreography evidence, never reusable visible actor
 > art; palette fixes and partial identity patches are not sufficient.
+>
+> **26 October circulation revision:** ordinary stairs and the lift are now
+> fully hidden behind one room entrance per floor. The accepted climbing and
+> lift studies remain immutable animation evidence, but standard inter-floor
+> travel no longer requires them on screen. Costume changes can occur during
+> the single continuous hidden interval; see
+> `docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`.
 
 **Checkpoint:** 17 October 2026
 **Purpose:** this is the restart document for the keeper-animation work. A new
@@ -371,13 +378,13 @@ route frames and 29 V4 Keeper images are exact; its 23-frame tail adds only the
 upper stop/reach/open/restart/exit. The V5 perspective door is rejected and is
 not part of the motion approval.
 
-The active reversible V6 page changes only that door presentation. It uses the
+The historical reversible V6 page changes only that door presentation. It uses the
 same 111 Keeper frames, roots and timing byte-for-byte. The door is a flat,
 constant-size 20 × 48-lp opaque rectangle, right-hinged as viewed, with no
-perspective widening or gradient; only its handle protrudes. Every door is
-two-way and opens away from the approaching Keeper. Its leaf supplies the real
-crossing occlusion, and the scenery controller closes it automatically only
-after the Keeper fully clears the doorway. The rule is pinned in
+perspective widening or gradient; only its handle protrudes. Its two-way,
+open-away behaviour is superseded for ordinary inter-floor travel by the
+player-facing panel in
+`docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`. The historical rule is pinned in
 `docs/review/keeper-two-way-door-contract-2026-10-16.json`. Frank approved the
 complete animation flow; V6 remains unpromoted. The separately requested
 two-times-faster V4 turn remains deferred.
@@ -775,19 +782,22 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 
 - Every costume change happens while the keeper is fully hidden behind the
   opaque door leaf. Room-boundary clipping is not a substitute for the leaf.
-- Room doors swing both ways and always open away from the approaching Keeper.
-  The flat leaf renders in front of him during the crossing, then the scenery
-  controller closes it automatically only after his complete bounds clear the
-  doorway. It does not remain open throughout the activity. Never draw a
-  separate closing animation for every costume.
+- Each circulation door panel opens only toward the player. It is a flat
+  foreground occluder, never a perspective box or an open-away leaf. The
+  scenery controller closes it automatically only after the Keeper has fully
+  entered the concealed slot or fully emerged into the room. It does not remain
+  open throughout the activity. Never draw a separate closing animation for
+  every costume.
 - The keeper enters in the old outfit; the foreground door creates full-body
   occlusion; runtime swaps outfit while no part of him is visible; he emerges
   in the new outfit. There is no visible morph or dressing animation.
 - The party hat follows this rule. `keeper_party_hat_put_on_back` remains
   optional flavour/reference art, not required gameplay plumbing.
-- Between rooms, use two hidden changes: costume to standard at the exit door,
-  then standard to the target costume at the destination door. This keeps him
-  in standard uniform on shared stairs, ladders, lift and slide.
+- The former two-swap rule (standard clothes on visible stairs/ladders/lift)
+  is superseded for ordinary inter-floor travel. The Keeper stays hidden from
+  departure entry through destination emergence, so runtime may perform the
+  required costume change anywhere inside that single hidden interval. After
+  the lift upgrade, the change occurs inside the unseen lift.
 - Bathroom privacy can use the same door/cubicle occlusion. Privacy mosaic,
   foam and towels are privacy states, not outfits, and should eventually move
   from manifest `outfit` to a separate `privacy` field.

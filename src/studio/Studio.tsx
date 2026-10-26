@@ -8,6 +8,7 @@ import { CATEGORIES, DRAFTS } from './drafts'
 import { Inspector, KIND_LABEL } from './Inspector'
 import { bridgesFor, checkSolids, type BridgeClip, cleanRecipe, compile, everyVariant, joinsOf, type Issue, type Join, hashOf, mainOf, moveStep, newCue, newId, resolveRecipe, shotAt, soundsUsed, withStep, type Bounds, type Category, type ClipInfo, type Recipe, type Step, type StepKind } from './recipe'
 import { SoundLibrary } from './SoundLibrary'
+import { SOUND_PLACEHOLDER_IDS } from './soundPlaceholders'
 import { StageView, type Sel, type SheetEntry } from './StageView'
 import { deleteSound, loadStudio, resetDoc, saveDoc, saveType, soundIdFrom, uploadSound, type SavedCategory, type SavedDoc, type SoundInfo } from './store'
 import { TimelineView } from './TimelineView'
@@ -355,7 +356,7 @@ function Studio() {
 
   const all = Object.values(docs).sort((a, b) => a.title.localeCompare(b.title))
   const shown = all.filter((d) => (d.title + d.id).toLowerCase().includes(filter.toLowerCase()))
-  const placeholders = [...new Set([...soundsUsed(Object.values(docs)), ...tl.cues.map((c) => c.sound)])].sort().filter((s) => !sounds.some((x) => x.id === s))
+  const placeholders = [...new Set([...SOUND_PLACEHOLDER_IDS, ...soundsUsed(Object.values(docs)), ...tl.cues.map((c) => c.sound)])].sort().filter((s) => !sounds.some((x) => x.id === s))
   const draftMoved = saved[doc.id]?.draftHash && DRAFT_BY_ID[doc.id] && saved[doc.id].draftHash !== hashOf(DRAFT_BY_ID[doc.id])
   const editable = !!pin
 

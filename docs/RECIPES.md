@@ -18,10 +18,10 @@ Code: `src/studio/recipe.ts` (format, compiler and checks; pure and tested), `sr
 
 All units are the art's logical pixels and real seconds.
 
-- The current studio implementation is **110 wide and 56 tall**. The agreed replacement standard-room target is **172 wide and 56 tall**, with implementation and migration still pending; see `KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`. x = 0 is the room's stair-side wall; the **stairway** runs alongside on the left (x from −38 to 0). Floor y = 0; heights count upwards.
+- The current studio implementation is **110 wide and 56 tall**. The agreed replacement standard-room target is **172 wide and 56 tall**, with implementation and migration still pending; see `KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`. x = 0 is the room's circulation-side wall. The current `stairs` area at x from −38 to 0 is a historical authoring proxy; production circulation is an unseen vertical slot behind the entrance, not a visible stair room. See `HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`. Floor y = 0; heights count upwards.
 - The door is in the wall at x = 0. Until Codex's door art fixes the numbers, `DOOR` in `recipe.ts` says: a 4 px jamb on the stairway side, and a **24 px** leaf (Codex's minimum opening) that opens into the room towards the camera, 44 px tall. That is wide enough to hide all of him. Change those constants when the real door exists; every recipe follows.
 - **Every door has a clear area** (Frank's rule): no object may stand in the first `DOOR_CLEAR` = 46 px of the room at each door (the open leaf plus room for him to stand clear of it). The studio shades it and flags any object, or any variant of one, that intrudes. The current 110 px implementation leaves 64 px; the agreed 172 px target leaves 126 px, exactly twelve proposed 10.5 px locomotion intervals (less where an inner door adds another exclusion).
-- Named places he can walk to: `stairs` (the ladder, x = −27), `doorOut` and `doorIn` (just clear of the doorway on each side), `innerIn` and `innerOut` (for a room with an inner door on the right), `action` (the action point), or any number.
+- Named places he can walk to: `stairs` (the legacy hidden-side proxy at x = −27), `doorOut` and `doorIn` (just clear of the doorway on each side), `innerIn` and `innerOut` (for the bedroom's en-suite door on the right), `action` (the action point), or any number.
 - `KEEPER_HALF` = 11 is his standing half-width, used where a frame's own pixels aren't known.
 
 ## A recipe
@@ -67,6 +67,7 @@ Any step may end with `doorAfter: "open"` or `"close"`, and may carry sound `cue
 - `trimStart` / `trimEnd` are seconds into the sound file (`null` = its end).
 - `loop` repeats the sound until the step ends.
 - A sound is named; the studio's library holds the files (database `studio_sounds`, up to 3 MB each). A name with no file yet is a **placeholder**: it plays a short blip with its own pitch, so timing can be judged now. Frank drops a file on the placeholder and every cue with that name gets it.
+- `data/studio/sound_placeholders.json` seeds named sounds that must be ready for upload before their final runtime route exists. It currently includes `footsteps_stone_stairwell`, the hidden stair-travel cue. This registry makes the placeholder visible in the sound library without incorrectly attaching it to an ordinary room walk or Keeper sprite.
 
 ## Object types: one recipe for every variant
 
@@ -86,7 +87,7 @@ Every asset in the game can be upgraded (Frank), so a recipe normally names an o
 
 - **Route** draws his whole route in a stark magenta: each walk as a line with an arrow, each hidden doorway crossing dashed in blue, and a numbered marker at each stop (the number is the step's number). It is worked out from the objects' positions, so it stretches live as you drag them.
 - **Ghosts** shows faint copies of him in the first pose of each stop.
-- **Evening** darkens the outside and shades the room. The room's light is on only while its door is open (he opens it on the way in; it closes behind him as he leaves). The stairway is always lit.
+- **Evening** darkens the outside and shades the room. The room's light is on only while its door is open (he opens it on the way in; it closes behind him as he leaves). The current Studio still lights its historical stair-side proxy; production circulation is concealed and has no player-visible lighting state.
 
 ## Universal action ingress
 
@@ -163,7 +164,7 @@ These match Codex's plan for the keeper sheets.
 ## Not built yet
 
 - The game itself playing recipes, with routes between floors and the doors on the way.
-- Real door, stairway and furniture art (the studio shows placeholders and switches to the art when it exists).
+- Real door and furniture art, plus the hidden inter-floor travel state. The current Studio still shows its historical stair-side proxy; it must eventually keep the Keeper occluded from departure entry through destination emergence and time `footsteps_stone_stairwell` across that hidden interval.
 - A pyjama brushing clip (the bedtime version of brushing teeth).
 - Reading object types straight from Codex's sidecars (`docs/BACKGROUND_ELEMENTS.md` §5) instead of `data/studio/categories/`.
 - Thought bubbles and the keeper's feelings panel (proposed in `docs/EXPANSION_DESIGN.md`). Recipes would carry the icon he shows when he wants to do the activity.
@@ -171,4 +172,3 @@ These match Codex's plan for the keeper sheets.
 ## Bubble stories
 
 The studio's **Bubble stories** page (`/studio/stories`) edits the picture stories that play in the bubble above the keeper while he works with his back to us. They are a separate format from recipes, with their own drafts in `data/activity-stories/` and their own picture library that Codex maintains. Frank's edits are saved as `story-<id>` in `studio_docs`. Formats and workflows: `data/activity-stories/README.md`.
-

@@ -1551,7 +1551,15 @@ Historical catalogue bands: 110 × 35. Plates: 105 × 35. The agreed replacement
 - [ ] Reviewed
 - Notes:
 
-## Lift service core (`lift`)
+## Hidden lift entrance (`lift`; revised 26 Oct 2026)
+
+The shaft, landing-bay and visible carrier proposals below are historical
+catalogue entries. The production lift stays entirely inside the same unseen
+circulation slot as the stairs. Only a subtly more engineered version of the
+room-side jamb is visible; do not create a shaft segment, lift car or separate
+room module without a new decision. Costume changes may occur inside the
+hidden lift. See
+`docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`.
 
 **service_core · 22 × 35 logical pixels · aligned service core; follows saved floor exits**
 
@@ -1584,7 +1592,14 @@ Historical catalogue bands: 110 × 35. Plates: 105 × 35. The agreed replacement
 - [ ] Reviewed
 - Notes:
 
-## Ladders / spiral stair core (`stairs`)
+## Hidden circulation core (`stairs`; revised 26 Oct 2026)
+
+The visible ladder/spiral-stair asset proposals below are historical catalogue
+entries and must not be drawn for ordinary travel. Current authority keeps the
+stairs and later lift fully off-stage behind one entrance per floor; only the
+door jamb changes subtly after the lift upgrade. Preserve these rows as prior
+planning evidence until the catalogue receives a dedicated hidden-core model.
+See `docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`.
 
 **service_core · 10 × 35 logical pixels · aligned service core; follows saved floor exits**
 

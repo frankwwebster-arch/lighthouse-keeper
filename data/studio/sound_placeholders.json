@@ -1,0 +1,8 @@
+[
+  {
+    "id": "footsteps_stone_stairwell",
+    "label": "Hidden stairwell footsteps",
+    "description": "Keeper boots on worn stone steps with a short enclosed-tower echo. Start only after the departure door fully occludes him, continue without restarting across intermediate floors, and stop before the destination door opens. Stair travel only; never use for the lift or ordinary room walking.",
+    "scope": "hidden-stair-travel"
+  }
+]

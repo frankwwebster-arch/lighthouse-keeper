@@ -2,12 +2,17 @@
 
 A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by typing or tapping objects, then keep him happy through the day. The playable cutaway currently has a kitchen, living room, bedroom with en suite, and lamp room.
 
-The latest whole-island Day 1 and fully expanded foreground layout drafts are
-in `public/art/reference/`. Their measured ground/water lines, the binding
-one-door-per-floor gameplay rule and the remaining production blockers are
-recorded in
+The generated whole-island Day 1 and fully expanded foreground drafts in
+`public/art/reference/` are rejected historical evidence, not current visual
+direction or runtime art. The lighthouse should recover the original concept's
+warm tapered exterior, rich distant-island atmosphere and magical
+island-splitting expansion. Ordinary stairs and the lift remain completely
+off-stage behind one circulation entrance per floor; the bedroom alone adds
+its en-suite door. The current door, hidden-travel and replaceable
+`footsteps_stone_stairwell` sound-placeholder contract is
+[`docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`](docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md).
+Measurements and rejection reasons for the old pair remain in
 [`docs/LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md`](docs/LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md).
-These are review references, not approved runtime art.
 
 The current Prime animation review is `/prime-keeper-animation-drafts`
 (versioned permalink `/prime-keeper-animation-drafts-v12`): ten reversible
@@ -562,17 +567,17 @@ from approved V4 remain exact; only two already accepted stair-route door-reach
 drawings are added, with V4's opacity rule. The doorway is explicitly 90° to
 the straight-on dollhouse camera.
 
-The reversible door-only V6 candidate is at
+The historical reversible door-only V6 candidate is at
 `/keeper-review/keeper-prime-ladder-transitions-v6/`. It reuses all 111
 approved V5 Keeper frames byte-for-byte and replaces only the rejected door.
-The new contract is a flat, constant-size 20 × 48-lp rectangular leaf with no
-perspective gradient or widening; only the handle protrudes. Doors swing both
-ways and always open away from the approaching Keeper. The opaque leaf itself
-provides the crossing mask. The scenery controller closes it automatically
-only after the Keeper has fully cleared the doorway, so closing requires no
-costume-specific Keeper frames. The rule is pinned in
+That candidate used a flat, constant-size 20 × 48-lp rectangular leaf with no
+perspective gradient or widening; only the handle protruded. Its two-way,
+open-away behaviour is superseded for player-facing circulation doors by
+`docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`: those panels open only
+toward the player as flat foreground occluders. The historical rule is pinned in
 `docs/review/keeper-two-way-door-contract-2026-10-16.json`. V6 awaits door-only
-visual approval and changes no Final, runtime or production art.
+visual approval only as preserved evidence and changes no Final, runtime or
+production art.
 
 This means a complete upward room-to-room flow is now reviewable for both
 stairs (approved Stair Transition V6) and ladder (approved V5 Keeper motion;
@@ -645,7 +650,7 @@ npm run verify:keeper-prime-ladder-transitions-v2 # V1-exact art with corrected 
 npm run verify:keeper-prime-ladder-transitions-v3 # complete ladder plus alpha-opaque Keeper frames
 npm run verify:keeper-prime-ladder-transitions-v4 # smooth opaque paint plus persistent no-rebuild playback
 npm run verify:keeper-prime-ladder-transitions-v4-approval # exact V4 approval plus deferred 2× turn timing
-node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_ladder_transitions_v6.ts # approved V5 Keeper motion plus flat two-way door-only candidate
+node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_ladder_transitions_v6.ts # historical approved V5 motion plus superseded two-way door candidate
 npm run verify:keeper-prime-ladder-transitions-v5 # complete room-to-room ladder flow and side-on outward-door occlusion
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
@@ -827,7 +832,7 @@ must remain paused to avoid duplicate alerts.
 - `keeper_sweep_broom` V1–V8 are rejected, preserved review provenance. V8's formal record pins Frank's four-arm, turn-breakup, pixelation and non-Prime-walk findings. Frank approved the broomless V3 POC as proof that one two-hand shaft-grip state can traverse eight gait phases and nine turn angles with zero prop pixels. It remains a phase-matched motion proxy, not production art. That approval authorised the current separable layered V1 review gate; it never authorises promotion of the proxy, layered candidate or an implement.
 - Frank judged walk → stop → turn to camera V1 excellent and approved Fast Timing V1 on 14 October 2026. Its artwork remains exact at `/keeper-review/keeper-prime-walk-stop-turn-front-v1/`; the timing authority is reviewed at `/keeper-timing-lab` and pinned in `art/drafts/keeper-fast-transition-timing-2026-10-14-v1/`. The 32-frame route now previews in approximately 2.996 seconds with the approved 10/12/16 fps transition cadence and zero neutral pause. Root motion and exact endpoints remain unchanged. Action timing is explicitly excluded. The route remains outside Final and production.
 - Frank approved walk → stop → turn fully away V2 on 14 October 2026 with “good now working fine. approved.” Its Keeper artwork, Fast Timing V1 schedule, 32-frame route, 374-pixel travel, zero turn root motion and exact rear endpoint remain byte-identical to V1. V2 changes delivery only: fresh versioned asset paths preload and decode every moving frame before playback, eliminating the blank/stale-frame flicker exposed in V1. The approval-only V3 record pins that exact route in `art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v3/`. It is a core transition authority but remains outside Final and production; V1 is unchanged historical provenance.
-- The movement-foundation V2 presentation correction adds two non-promotable review gates while preserving V1 unchanged. `/keeper-review/keeper-root-motion-gate-v2/` uses the same five archived, byte-identical approved neutral/bridge/Walk-F1 images to explain the current 76-ku root schedule versus Claude's proposed 84-ku schedule in plain English. `/keeper-review/keeper-vertical-circulation-v2/` is deterministic construction motion—not finished Keeper art—for stairs continue/exit from both landing parities, ladder continue/dismount-to-walk, and lift entry/exit. Its proposed vertical module is 60 lp floor-to-floor (56 clear + 4 shared deck); the stair is 16 × 3.75 lp rise and 16 × 5.25 lp run inside a separate 105-lp core. The 4× pane is an authoring ruler; runtime screen scale is responsive. Nothing has entered Final, production or runtime.
+- The movement-foundation V2 presentation correction adds two non-promotable review gates while preserving V1 unchanged. `/keeper-review/keeper-root-motion-gate-v2/` uses the same five archived, byte-identical approved neutral/bridge/Walk-F1 images to explain the current 76-ku root schedule versus Claude's proposed 84-ku schedule in plain English. `/keeper-review/keeper-vertical-circulation-v2/` is deterministic construction motion—not finished Keeper art—for stairs continue/exit from both landing parities, ladder continue/dismount-to-walk, and lift entry/exit. Its proposed vertical module is 60 lp floor-to-floor (56 clear + 4 shared deck); the stair is 16 × 3.75 lp rise and 16 × 5.25 lp run inside a separate 105-lp core. The 4× pane is an authoring ruler; runtime screen scale is responsive. Nothing entered Final, production or runtime, and the 26 October hidden-circulation decision now supersedes this visible-core proposal for ordinary gameplay.
 - The separate `/keeper-review/keeper-object-approach-oven-v1/` context gate applies the candidate root schedule to a complete three-interval approach: 42-ku acceleration, one exact eight-frame Walk V6 cycle, 42-ku deceleration, a fixed-root approved Turn V9 and its exact rear endpoint. A solid 30 × 30 lp oven proxy is centred on the 120-lp interaction anchor in a 172 × 56 lp room. The page reuses 20 archived approved frame URLs, preloads them before playback and can switch to the current 244-ku route, which finishes exactly 1 lp short. This remains an unapproved, reversible layout/root-motion review; the oven proxy is not art.
 - Oven Approach V7 (`/keeper-review/keeper-object-approach-oven-v7/`) preserves the exact Keeper route and records the former calculated-depth experiment. Its 42-lp notional depth, 4% room convergence, 1% furnishing convergence and raised 30-lp proxy are now historical evidence only. Kitchen and standard-room authoring instead follows `flat-cutaway-v1`: constant Keeper/asset scale, parallel geometry, no vanishing point or runtime depth scaling, a 5-lp floor cue and the real object/contact dimensions. V3–V7 remain immutable unapproved placement provenance.
 - The separate `/keeper-review/keeper-lift-entry-alignment-v1/` construction gate corrects the V2 lift path without altering the immutable V2 page. Door centre x=126 lp to lift centre x=42 lp is 84 lp: eight grid steps/four full strides. The Keeper remains on x=42 while stopped, pressing the button with his right hand, turning away and entering in depth; the doors close only after occlusion. The even-step route explicitly remains blocked on separately reviewed Walk F5-to-neutral stop art. No runtime geometry or approved pixels changed.
@@ -870,7 +875,8 @@ must remain paused to avoid duplicate alerts.
 - `data/keeper_side_on_beard_occlusion_audit.json`, `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/`, and `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` — completed draft-only v2 beard/hand audit and preserved rejected v1 history. The active reviewer shows v2 beside canonical and the separate Frank-selected darts draft; the verifier prevents implicit promotion.
 - `data/keeper_review_drafts.json` and `art/drafts/` — SHA-256-pinned, exact-name review comparisons: the draft-only darts candidate, seven active V11 artist-smock candidates, the accepted complete-route `keeper_snooker` candidate, the 41 exact-name 11 October amendment candidates and the separate party-hat frame-2 v2 variant, plus the ten selected canonical promotions and their reversible previous versions. Hash-addressed reviewer copies prevent same-name historical and current variants from overwriting one another. `scripts/verify_keeper_review_drafts.ts` checks every registered source, canonical/current comparison, sidecar, gutter, publication and reviewer attachment.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.
-- `docs/DOORS_STAIRS_AND_COSTUMES.md` — agreed stairway, door and costume-change rules, seamless clip joins, and the decisions still to make.
+- `docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md` — current one-entrance-per-floor hidden stair/lift, door-occlusion, costume-change and stone-footstep placeholder authority.
+- `docs/DOORS_STAIRS_AND_COSTUMES.md` — historical visible-stairway and costume-routing record; use only where it does not conflict with the 26 October hidden-circulation authority.
 - `docs/BACKGROUND_ELEMENTS.md` — Codex's brief for every background layer, sunrise and sunset, night lighting, and the every-asset-can-be-upgraded rule for objects.
 - `docs/AMBIENCE_AND_BACKDROP.md` — backdrop layers, weather overlays, ambient sound, the lamp's start-up, audio file specs and the decisions still to make.
 - `docs/CLAUDE_WORKBENCH_NOTES.md` — Claude's plan of approach for the shared review workbench (the next major build).

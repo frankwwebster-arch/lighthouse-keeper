@@ -404,10 +404,14 @@ full-body occlusion; there is no visible dressing or morphing transition.
 `keeper_party_hat_put_on_back` is optional flavour/reference art, not required
 gameplay plumbing.
 
-Use two hidden swaps between rooms—costume to standard while leaving, standard
-to the target costume while entering—so only the standard uniform needs shared
-stairs, ladders, lift and slide. Furniture declares stable approach, use, seat,
-look and hand points plus a semantic interaction tag. The controller supplies
+The former two-swap/standard-uniform climbing rule is superseded for ordinary
+inter-floor travel by the 26 October hidden-circulation authority. The Keeper
+remains unseen from departure entry through destination emergence, and may
+change directly to the target costume during that interval; after the upgrade,
+the change happens inside the unseen lift. Existing stair, ladder, lift and
+slide animations remain preserved assets rather than required standard-route
+frames. Furniture declares stable approach, use, seat, look and hand points
+plus a semantic interaction tag. The controller supplies
 phase-aware walk-stop, facing/posture bridges, action entry/loop/exit and the
 return to walking. The full required graph and current gaps are in
 `docs/KEEPER_ANIMATION_HANDOFF.md`.

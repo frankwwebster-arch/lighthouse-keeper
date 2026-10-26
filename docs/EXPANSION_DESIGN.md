@@ -50,7 +50,7 @@ At dawn:
 2. Existing middle floors shift to make the saved random slot.
 3. The front façade peels open in two dollhouse-like panels.
 4. The new room appears with a warm outline, sparkles and two gentle shine pulses.
-5. The keeper appears at the stairs and comments on it.
+5. The keeper emerges through the new room's circulation entrance and comments on it.
 6. A short card introduces the room's objects and new capabilities.
 
 Sample reusable lines:
@@ -261,16 +261,24 @@ The boiler uses standard/on/broken art: pilot light; active flame/pressure; then
 
 ## Transport through a growing tower
 
-Agreed 9 Oct 2026: transport runs in one continuous stairway separate from the rooms, entered through a door on every room. See `docs/DOORS_STAIRS_AND_COSTUMES.md`.
+Revised 26 Oct 2026: ordinary vertical transport is completely off-stage in a
+narrow circulation slot behind one entrance per floor. Early travel is implied
+stairs; the later lift replaces that journey in the same hidden slot and is
+signalled only by a subtly different jamb. The Keeper remains covered from
+departure entry through destination emergence, so neither route needs a
+visible climbing or lift animation. See
+`docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`.
 
-Progression can be:
+The optional helter-skelter slide remains a separate exterior spectacle rather
+than part of the ordinary circulation core. If retained, it can hide the
+Keeper in an opaque tube, show a moving bump and flash his face past small
+windows. It reads the saved dynamic floor order and may be keeper-owned and
+breakable: jammed flaps, blocked tube, wrong-floor exits and trapped laundry
+provide faults.
 
-1. Ladders — slow both ways.
-2. Spiral staircase — better upward movement.
-3. Helter-skelter slide wrapped around the stair core — fast, fun downward travel with an exit at every floor.
-4. Lift — fast movement both ways once the tower becomes tall.
-
-The slide reads the saved dynamic floor order. Animation can hide the keeper in an opaque tube, show a moving bump and flash his face past small windows. It is keeper-owned and breakable: jammed flaps, blocked tube, wrong-floor exits and trapped laundry provide faults.
+Hidden stair travel uses the replaceable `footsteps_stone_stairwell` sound
+placeholder: boots on worn stone with a short tower echo. The lift does not use
+that cue.
 
 ## External and island-scale expansions
 

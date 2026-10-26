@@ -4,6 +4,11 @@
 **Purpose:** the shortest safe entry point for a fresh Codex task. The task must
 be able to continue without this chat.
 
+**Circulation update:** its visible zigzag stairs, ladder/lift route and
+open-away door presentation are historical. For current player-facing
+architecture and hidden-travel audio, use
+`docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`.
+
 **Newer checkpoint:** for work after the ten-animation V12 approval on
 23 October 2026, begin with
 `docs/PRIME_KEEPER_NEXT_ANIMATION_RUN_HANDOFF_2026-10-23.md`. This older file

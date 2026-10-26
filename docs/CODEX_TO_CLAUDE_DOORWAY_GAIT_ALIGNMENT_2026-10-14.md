@@ -1,5 +1,12 @@
 # Codex to Claude: preserve approved locomotion and use the doorway as the gait-alignment boundary
 
+> **Circulation presentation superseded 26 October 2026:** retain this note's
+> locomotion/occlusion reasoning, but do not use its two-way, open-away door or
+> visible transfer architecture. Ordinary inter-floor travel now happens in an
+> unseen slot behind one entrance per floor; its panel opens only toward the
+> player. See
+> [`HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`](HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md).
+>
 > **Superseded for same-room locomotion:** Frank subsequently clarified that
 > direct, natural object-to-object movement inside one room is required. The
 > replacement architecture response is

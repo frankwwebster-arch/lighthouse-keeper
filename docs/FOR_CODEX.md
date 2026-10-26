@@ -722,15 +722,14 @@ alpha ≥240 →255 rule. The doorway is 90° to the straight-on dollhouse camer
 the V5 perspective door presentation is rejected and is not part of that
 approval.
 
-Review the door-only successor at
+Historical review evidence for the door-only successor remains at
 `/keeper-review/keeper-prime-ladder-transitions-v6/`. All 111 approved Keeper
 frames, roots and timings remain exact. V6 uses a flat 20 × 48-lp rectangular
 leaf, right-hinged as viewed, with no gradient or perspective widening and only
-the handle protruding. It is a two-way door which always opens away from the
-approaching Keeper. The opaque leaf—not an artificial room-boundary clip—hides
-him while he crosses. The scenery controller closes it only after his bounds
-fully clear the doorway and requires no costume-specific closing artwork. The
-contract is pinned at
+the handle protruding. Its two-way, open-away behaviour is superseded for
+ordinary inter-floor travel: the current circulation panel opens only toward
+the player and works as a flat foreground occluder. The historical contract is
+pinned at
 `docs/review/keeper-two-way-door-contract-2026-10-16.json`. Run the V6 verifier
 through the archive hook or the complete test suite. V6 is unapproved and
 changes no Final/runtime/production asset; V4's requested 25-ms turn pass is
@@ -878,16 +877,20 @@ The recipe format now exists: `docs/RECIPES.md`. Please follow it for the sideca
 
 Frank can now change any animation's fps while playing (Grown-ups → Animation speeds), using the same 1–20 fps, 0.5-step range as your review page. Frank is writing a proposed speed for every clip into its sheet's metadata, which stays the real record. The in-game setting is a global tweak on top, for when clips are wired and playing in place. Each tweak remembers the sheet speed it was made against: once the metadata changes, the sheet wins and the tweak stops applying. "Copy for the metadata" gives `{ "animationFps": { "<sprite name>": <fps>, … } }` to write back into the sidecars. Logic: `src/game/animFps.ts`; storage key `animFps` in the `settings` table.
 
-## Doors, stairway and costumes (9 Oct 2026; door rule revised 16 Oct)
+## Doors, hidden circulation and costumes (revised 26 Oct 2026)
 
-Frank has answered every open question; the full record is `docs/DOORS_STAIRS_AND_COSTUMES.md` (sections 2 and 9). What it asks of you:
+Current authority is
+`docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`.
+`docs/DOORS_STAIRS_AND_COSTUMES.md` remains historical wherever it conflicts.
+What the current design asks of you:
 
 - **Floors are 56 px floorboards to ceiling.** Set the floor/ceiling thickness, then that band height is fixed for every standard floor. Redraw the three room plates and the shell at the new height.
-- **Stairway alongside the rooms; you pick the side.** Ladders first, then a spiral staircase (if it can look right), then the lift. How the lift arrives is yours, as part of the lighthouse growing left, right, up and down. The slide goes on the outside of the tower.
-- **Doors** swing both ways, always open away from the approaching Keeper and auto-close only after his complete bounds clear; the opaque leaf must fully hide him (with hats, 48 px tall). They do not remain open during the activity. Room doors never break.
-- **Bedroom floor:** en suite only through the bedroom, a walk-in closet off the bedroom, and the toilet in its own cubicle (door shut only for a poo). Other loos follow the same format.
+- **No visible stairs or lift.** A narrow concealed circulation slot runs behind one entrance per floor. Closed, only the slim side jamb is visible. The flat opaque panel appears only while opening toward the player and must fully hide the Keeper, including hats.
+- **Lift upgrade.** The same entrance gains a subtly more engineered jamb; do not draw a lift car, shaft or separate lift module. The Keeper may change costume inside the unseen lift.
+- **Bedroom floor:** en suite only through the bedroom; it is the sole additional ordinary room door. The toilet may still use its own privacy cubicle when required.
 - **New clips:** a standing neutral frame for every outfit. The scenery-controlled two-way leaf removes the former requirement for a dedicated pyjama door-close clip. Naps happen in an armchair, so the armchair is a new object.
-- Yours to settle without Frank: lamp-room access (trapdoor and ladder suggested), the shared door design, splitting `privacy` from `outfit` in the manifest.
+- **Sound placeholder:** `footsteps_stone_stairwell` is already seeded in the Recipe Studio. Its eventual file is boots on worn stone with a short enclosed-tower echo; it belongs to the hidden travel state, not sprite `sfxCues`.
+- Still to settle: exact jamb/leaf art, lamp-room use of the same hidden entrance, and splitting `privacy` from `outfit` in the manifest.
 
 ## Missions and new floors (updated 8 Oct 2026: any order)
 
@@ -900,7 +903,7 @@ The fixed mission chain is gone. Logic follows the locked layout in `docs/EXPANS
 - The diving extension (`DIVING_EXTENSION` in `floors.tsx`) now reads the bedroom's live height, so it rises with the bedroom.
 - Floor modules: `UNLOCKABLE_FLOORS` in `src/ui/floors.tsx` (plain grey walls for now; yours to dress). Room plates `room_aquarium`, `room_weather`, `room_lair` are already looked up through the manifest, so they appear as soon as they exist.
 - New clickable objects (`obj_<id>_<state>`): `tank`, `fishfood` (aquarium), `barometer`, `radio` (weather station), `console`, `gadgets` (lair). Their x positions in `OBJECTS` are guesses; move them. Until art exists they draw as dashed labelled boxes.
-- Lift: travel logic only (faster up and down, behind the stairs at `STAIRS_X`), drawn as a faint dashed shaft stand-in (`.lift` in `Scene.tsx`).
+- Lift: current travel logic is faster up/down and the faint dashed `.lift` shaft in `Scene.tsx` is explicitly a temporary stand-in. Production uses the same unseen circulation slot and shows only the upgraded entrance jamb.
 - Preview: `?floors=all` shows every floor and the lift.
 - Underground: day 1 shows nothing below the ground. The view grows downward only once the lair arrives.
 
