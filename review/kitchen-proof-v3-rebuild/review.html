@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kitchen V3 rebuild</title>
+  <style>
+    :root { color-scheme:dark; --bg:#08131b; --panel:#122735; --line:#31576b; --cream:#ffefc6; --cyan:#67dce9; --gold:#ffb84d; --green:#78e29f; }
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:#e9f2f4;font:16px/1.5 Arial,sans-serif} header,main,footer{width:min(1600px,96vw);margin:auto} header{padding:34px 0 16px} h1,h2{color:var(--cream)} h1{font-size:clamp(32px,5vw,58px);margin:.15em 0} h2{margin-top:40px}.status{display:inline-block;background:var(--gold);color:#15232b;font-weight:700;padding:7px 12px;border-radius:99px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin:15px 0;overflow:auto}.room{min-width:900px}.pixel{image-rendering:pixelated} img{display:block;max-width:100%;height:auto}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:18px}.pass{color:var(--green);font-weight:700} table{border-collapse:collapse;width:100%;min-width:700px}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--cyan)}footer{padding:30px 0 70px;color:#9fb7c0}
+  </style>
+</head>
+<body>
+  <header><span class="status">REVIEW ONLY · AWAITING FRANK</span><h1>Kitchen V3 rebuild</h1><p>Approved illustrative quality, exact bay geometry, zero cast shadows.</p></header>
+  <main>
+    <h2>Native room view · 1536 × 576</h2><div class="card"><img class="room" src="outputs/kitchen_v3_rebuild_room.png" width="1536" height="576" alt="Kitchen V3 modular rebuild"></div>
+    <h2>Approved calibration vs modular rebuild</h2><div class="card"><img src="outputs/calibration_vs_rebuild.png" width="3072" height="628" alt="Approved calibration beside rebuild"></div>
+    <div class="grid">
+      <section><h2>2× nearest</h2><div class="card"><img class="room pixel" src="outputs/kitchen_v3_rebuild_room_2x.png" alt="Rebuild at two times"></div></section>
+      <section><h2>Tower scale · 1/4</h2><div class="card"><img class="pixel" src="outputs/kitchen_v3_rebuild_tower_scale.png" width="384" height="144" alt="Rebuild at tower scale"></div></section>
+    </div>
+    <h2>Prime Keeper · unchanged 1:1</h2><div class="card"><img src="outputs/keeper_check_sheet.png" alt="Prime Keeper at fridge sink and cooker"></div>
+    <h2>Every isolated part</h2><div class="card"><img src="outputs/contact_sheet.png" alt="Kitchen rebuild production parts"></div>
+    <h2>Mechanical gates</h2>
+    <div class="card"><table><tbody>
+      <tr><th>Exact key</th><td class="pass">21,624 #FF00FF pixels; zero near-magenta</td></tr>
+      <tr><th>Window exclusion</th><td class="pass">zero item pixels above y=274</td></tr>
+      <tr><th>Run geometry</th><td class="pass">continuous opaque tiles; declared joints only</td></tr>
+      <tr><th>Cooker alignment</th><td class="pass">hob y=305; plinth y=468–485</td></tr>
+      <tr><th>Shadow policy</th><td class="pass">generated exterior halo discarded; detached partial alpha rejected</td></tr>
+      <tr><th>Isolation</th><td class="pass">549 changed pixels, all inside the sink insert</td></tr>
+    </tbody></table><img src="outputs/isolation_sink_taps_diff.png" width="1536" height="576" alt="Sink-only isolation difference"></div>
+  </main>
+  <footer>See TECHNICAL_REPORT.md, manifest.json and verify_review.py for the complete evidence.</footer>
+</body>
+</html>

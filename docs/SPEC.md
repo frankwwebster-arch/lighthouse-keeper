@@ -71,7 +71,7 @@ Built from Codex's technical review of v1.3 (commit 42ec2552), with engine-side 
 - Open, the door panel is a foreground occluder. Draw order: room shell → keeper → open door panel / jamb.
 - Travel: the keeper walks left into the door, is occluded, the screen fades, and he emerges from the destination floor's door at the door standing point (x 118) on that room's walkY.
 - The lift upgrade changes only the door jamb; the lift lives entirely in the hidden core. Costume and tool swaps may happen inside it.
-- FRONT DOOR (to the island): only on the ground-floor ENTRANCE LOBBY, and never seen. It is in the lobby's right outer wall INSIDE the end closet (the cloakroom, section 3j): the keeper walks into the cloakroom to go out and reappears outside at the tower's right side; coming home, he walks into the tower's right side and steps out of the cloakroom into the lobby. No room ever has a door drawn on its back wall (the back wall faces away from the island).
+- FRONT DOOR (to the island): only on the ground-floor ENTRANCE LOBBY, and never seen. It lies behind the lobby's RIGHT DOOR (section 3j): the keeper walks into the right door to go out and reappears outside at the tower's right side; coming home, he walks into the tower's right side and steps out of the right door into the lobby. No room ever has a door drawn on its back wall (the back wall faces away from the island).
 
 ### 3d. Horizontal expansion
 - Tiers: 1, 2 or 3 complete modules per floor. The 172/193/214 width tiers are retired.
@@ -83,7 +83,7 @@ Built from Codex's technical review of v1.3 (commit 42ec2552), with engine-side 
 Bottom to top:
 1. Lair (optional, LATER): always the very bottom, below the waterline.
 2. Boathouse (optional, LATER): at the waterline beneath the lobby; sea arch in its rightmost module; jetty runs from the arch.
-3. Entrance lobby with laundry and cloakroom: fixed ground floor; its floor-slab top (module y 544) is exactly on the island ground line. The front door is hidden inside its end-closet cloakroom.
+3. Entrance lobby with laundry: fixed ground floor; its floor-slab top (module y 544) is exactly on the island ground line. Its right door leads to the cloakroom and the hidden front door.
 4. Kitchen: fixed first floor, directly above the lobby.
 5. Middle floors: saved random order (catalogue rule).
 6. Bedroom with en-suite: always directly beneath the lamp room.
@@ -110,7 +110,7 @@ Up to 20 above-ground floors. Day 1 = entrance lobby, kitchen, living room, bedr
 - KEEPER: drawn in the same convention: profile body, slight top reveal on cap and shoulders only; no contact shadow.
 - LIGHT: upper left. Top reveals are the lightest tone, front faces mid. No cast or contact shadows anywhere.
 - REAL MEASUREMENTS: every asset is sized from a real-world reference before drawing. Heights and depths are real at 168 px/m; widths round to whole 0.50 m bays. Record `realSizeM: [width, depth, height]` and the drawn bay width in `item.json`, plus the reference source. Codex proposes measurements in each item's brief; Frank approves.
-- Starting reference sizes (to be confirmed per item; bays in brackets): base unit 0.50 × 0.60 × 0.90 m, worktop 0.90 m high (1); tall fridge-freezer 0.50 × 0.60 × 1.80 m (1); utility cupboard 0.50 × 0.60 × 2.00 m (1); slot-in cooker 0.50 × 0.60 × 0.90 m (1); range cooker 1.00 × 0.60 × 0.90 m (2); upright piano 1.45 × 0.60 × 1.20 m (3); armchair 0.85 × 0.85 × 0.95 m (2); bookshelf 0.80 × 0.30 × 1.80 m (2); bed side-on 1.95 long × 0.95 deep × 0.50 m, four-poster frame 2.10 m high (4, see D16); desk 1.20 × 0.60 × 0.75 m (2); basin 0.55 × 0.45 × 0.85 m (1); CRT television 0.60 × 0.50 × 0.50 m on a 0.50 m stand (1).
+- Starting reference sizes (to be confirmed per item; bays in brackets): base unit 0.50 × 0.60 × 0.90 m, worktop 0.90 m high (1); 1950s rounded fridge 0.50 × 0.60 × 1.50 m (1); 1950s gas cooker with eye-level grill 0.50 × 0.60 × 1.50 m (1); narrow dresser 0.50 × 0.40 × 1.80 m (1); range cooker 1.00 × 0.60 × 0.90 m (2); upright piano 1.45 × 0.60 × 1.20 m (3); armchair 0.85 × 0.85 × 0.95 m (2); bookshelf 0.80 × 0.30 × 1.80 m (2); bed side-on 1.95 long × 0.95 deep × 0.50 m, four-poster frame 2.10 m high (4, see D16); desk 1.20 × 0.60 × 0.75 m (2); basin 0.55 × 0.45 × 0.85 m (1); CRT television 0.60 × 0.50 × 0.50 m on a 0.50 m stand (1).
 
 ### 3i. Gait lattice (Prime Keeper)
 - Walking uses the approved Prime Keeper gait (Walk V7, the approval record for the exact Walk V6 pixels), with 1 ku = 1 px: steady walk 21 px per frame; one step (F1 → F5) 84 px; one cycle 168 px; start bridge 2, 6, 12, 18 (38 px); stop bridge 18, 12, 6, 2 (38 px).
@@ -120,12 +120,12 @@ Up to 20 above-ground floors. Day 1 = entrance lobby, kitchen, living room, bedr
 - 2-bay items (sink, range cooker, desk): each declares a `useBay` (1 or 2) and is designed with its working point there (the sink's tap and bowl, the range's hob centre). He stops at that bay's centre.
 - Exact arrival needs every move to be a whole number of 84 px steps. That requires the pending gait decision (D15): re-time start and stop to 42 px each (3, 7, 13, 19 / 19, 13, 7, 3) and add the opposite-foot F5 stop. Until D15 is approved, reachable stops from the door are only 76 + 168n px.
 
-### 3j. End closets — occluded walk-in spaces (Frank, 26 Oct)
-- Any space the keeper must disappear into (WC, en-suite, the lobby cloakroom with the front door) is an END CLOSET at the FAR RIGHT of its room: bays 13–14 (x 1336–1504), full height, so he simply keeps walking right and vanishes.
-- Construction: a camera-facing FRONT PANEL across bays 13–14, standing at the front of the floor (bottom on y 544) and reaching the ceiling band, drawn as interior wall in the room's colour (it may carry a small sign, hook or frosted pane). Its doorway is in the closet's LEFT side, seen only edge-on as a jamb at x 1336–1344. The closet's contents (toilet, coats, front door) are never drawn.
-- Use: the keeper walks along walkY to the jamb (x 1336), steps right behind the front panel (draw order: shell → keeper → front panel) and is hidden. Swaps happen while hidden: toilet use, outfit changes (pyjamas in the en-suite; outdoor gear in the cloakroom), and leaving or entering the tower (cloakroom only). He reappears the same way.
-- End closets cost no item art beyond the front panel and jamb, and no keeper animation beyond the walk.
-- Bays 13–14 are therefore never available for items in a room with an end closet. Camera-facing cupboard doors (utility cupboard, section 9a) remain a separate mechanic for tools within a room.
+### 3j. The RIGHT DOOR — the magic cupboard (Frank, 26 Oct)
+- Every floor has TWO doorways, both in the side walls at the front and both seen only as a jamb: the LEFT door (x 0–32) leads to the hidden stair core; the RIGHT door (x 1504–1536, y 208–544, in the rightmost module) leads into a fictional space between the room and the tower's outer wall that holds whatever that room needs. Like the stairs, it is a deliberate fiction: it never takes up a bay and is never drawn.
+- What lies behind the right door, by room: kitchen and most rooms = the cupboard of myriads (tools: broom, hoover, super hoover, mop, toolbox, watering can, fishing rod and so on); bedroom = the en-suite (WC, outfit changes to and from pyjamas); entrance lobby = the cloakroom/boot room (coats, boots, outdoor gear, a downstairs WC, and the front door to the island).
+- Use: the keeper walks along walkY to the right wall, passes behind the jamb and is hidden (draw order: shell → keeper → right jamb). Swaps happen while hidden: tool in or out, outfit change, toilet use, leaving or entering the tower. He reappears the same way, already holding the tool or in the new outfit.
+- Costs: no bays, no item art beyond the jamb, no keeper animation beyond the walk. Bays 13–14 stay available for items; anything there stands behind walkY, so the keeper walks in front of it to the door.
+- No camera-facing cupboards are needed anywhere. The toilet is never seen, anywhere in the game.
 
 ## 4. Modular tower kit
 Location `/public/art/tower/<version>/` with `tower_kit.json`:
@@ -173,7 +173,7 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 ## 8. Sprite-sheet and asset safety
 
 ### 8-0. Asset isolation and change control (prevents redraw cascades)
-- Every visual element is its own file: each unit front, worktop tile, end cap, plinth tile, insert, slot-in appliance, light overlay, counter-top item, wall item and FX sprite. Runs, rooms and towers are ASSEMBLED from these in code, never painted as one picture.
+- Every visual element is its own file: each unit front, worktop tile, end cap, plinth tile, insert, freestanding appliance, light overlay, counter-top item, wall item and FX sprite. Runs, rooms and towers are ASSEMBLED from these in code, never painted as one picture.
 - PROPORTIONS AND SIZE (Claude, 26 Oct, from the first kitchen item batch): every asset is drawn at its exact in-game proportions (from its real size at 168 px/m and its bay width) and judged at 1:1 game size before approval. A larger working canvas is fine only if it has exactly the same aspect ratio and is reduced uniformly. Never stretch, squash or crop to fit. Detail that won't survive at game size (thin gloss streaks, tiny dial ticks) is simplified at the drawing stage.
 - A fix to one asset touches ONLY that asset's file. A Codex task names the exact file(s) it may change, and must not modify any other asset.
 - Regression gate: after any art change, the build re-assembles the affected rooms and verifies that every untouched asset file is byte-identical (hash check), and that the assembled room differs from the previous approved render only inside the changed asset's rectangle. Any other difference fails the change.
@@ -192,20 +192,16 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - The existing bubble-story library (339+ pictures, engine, `/studio/stories`, `data/activity-stories/`) is retained as an illustrated UI layer. Only the bubble frame, pointer and orchestration marks are redrawn in the ligne-claire style. Internal pictures stay unchanged; ids, recipes and timing are preserved. Individual pictures are redrawn later only on a demonstrated clash.
 - Ownership: Claude owns the story engine and studio; Codex owns the pictures.
 
-## 9a. Utility cupboard mechanic [V1]
-- The lobby's CLOAKROOM (its end closet, section 3j) is the tower's boot room (Frank, 26 Oct): coats, boots, outdoor gear, tools, a WC and the hidden front door, all behind its front panel. Tool fetches from the lobby use it exactly like a cupboard.
-- A UTILITY CUPBOARD is OPTIONAL per room: each room layout declares `hasCupboard`. Where present, it is a 1-bay full-height item (0.50 × 0.60 × 2.00 m) against the back wall, in a non-window bay, with a door that swings OPEN TOWARD THE CAMERA.
-- Use: the keeper walks to the cupboard, the door swings open as a foreground occluder (draw order: cupboard interior → keeper → open door panel), he steps behind it, and he emerges already holding and using the tool. The pickup itself is never animated: the door hides the swap.
-- Tools are separate prop sprites on the keeper's hand anchors, never painted into keeper frames. The keeper returns the same way.
-- Every room can be cleaned. If the room has a cupboard, the tool comes from it; if not, the keeper fetches it via the circulation door (same door-occlusion swap). Tool tiers: broom (t1) → hoover (t2) → super hoover (t3). Each tier is a prop swap plus its matching loop, not a new room animation.
-- Day-1 keeper clips this adds: cupboard enter/exit (reuse neutral-side plus door occlusion, no extra frames where possible), SWEEP-WALK loop (side, moves along walkY), and HOOVER-PUSH loop (side). Super hoover reuses the hoover loop with its own prop.
-- Later tools use the same mechanic with no new architecture: mop, duster, watering can, toolbox (repairs), fishing rod, paintbrush.
-- Item states: cupboard door CLOSED and OPEN (the open door is a separate small overlay over the closed master).
+## 9a. Tools and cleaning [V1]
+- Tools come from behind the room's RIGHT DOOR (section 3j). The pickup is never animated: the keeper walks into the right door and walks back out already holding and using the tool. Tools are separate prop sprites on the keeper's hand anchors, never painted into keeper frames.
+- Every room can be cleaned. Tool tiers: broom (t1) → hoover (t2) → super hoover (t3). Each tier is a prop swap plus its matching loop, not a new room animation.
+- Day-1 keeper clips this adds: SWEEP-WALK loop (side, moves along walkY) and HOOVER-PUSH loop (side). Super hoover reuses the hoover loop with its own prop.
+- Later tools use the same mechanic: mop, duster, watering can, toolbox (repairs), fishing rod, paintbrush.
 - The engine owns which tool appears, its prop anchors per facing, and the cleaning effect (tidiness rising, dust puffs as FX).
 
 ## 9b. Occluding doors and costume changes
-- Anything the keeper passes behind (circulation door, end closet, cupboard door) can hide a swap: tool in or out, or outfit change. Outdoor gear (wellies, sou'wester, winter coat, woolly hat) goes on and off in the lobby cloakroom, by weather, as he leaves or comes home.
-- The en-suite is the bedroom's END CLOSET (section 3j, bays 13–14): the keeper walks right into it and comes out changed (day clothes → pyjamas at night, and the reverse in the morning, by game time). The toilet is NEVER seen in use, anywhere in the game; every WC is an end closet.
+- Anything the keeper passes behind (the left stair door or the right door) can hide a swap: tool in or out, or outfit change. Outdoor gear (wellies, sou'wester, winter coat, woolly hat) goes on and off behind the lobby's right door (the cloakroom), by weather, as he leaves or comes home.
+- The en-suite is behind the bedroom's RIGHT DOOR (section 3j): the keeper walks in and comes out changed (day clothes → pyjamas at night, and the reverse in the morning, by game time). The toilet is NEVER seen in use, anywhere in the game.
 - Getting into bed IS animated (Frank, 26 Oct): a short get-into-bed clip in pyjamas (about 4–6 frames, side view, climbing in and pulling the covers up). On its last frame the keeper sprite hands over to the bed's OCCUPIED state (the bed art with his head on the pillow, covers up), drawn as a bed item state; sleeping is that still state, not a loop. In the morning the lights brighten and he steps out beside the bed in pyjamas (cut, or the clip reversed if it reads well).
 - Brushing teeth happens at the basin, facing the mirror, so his back is to the camera: it uses the rear-work loop (in pyjamas) plus a bubble story.
 - The costume list is fixed and short. No others without Frank's decision:
@@ -214,8 +210,8 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
   | Day clothes (default) | Everything | — | Full vocabulary | V1 |
   | Pyjamas | Night in the bedroom | En-suite WC door | Side walk; stop + turn (side↔back); brush-teeth rear loop at the basin; get into bed. Nothing else. | V1 — REQUIRED (Frank, 26 Oct) |
   | Swimming | Pool, lido, sea swim | Changing-room door | Walk to water, swim loop, exit | LATER |
-  | Snow-sweeping (winter gear) | Clearing snow outside | Lobby cloakroom | Walk, snow-sweep loop | LATER |
-  | Sou'wester / oilskins | Outdoor jobs in rain and storms | Lobby cloakroom | Walk, outdoor-work loop | LATER |
+  | Snow-sweeping (winter gear) | Clearing snow outside | Lobby right door (cloakroom) | Walk, snow-sweep loop | LATER |
+  | Sou'wester / oilskins | Outdoor jobs in rain and storms | Lobby right door (cloakroom) | Walk, outdoor-work loop | LATER |
 - Pyjamas are REQUIRED for V1. Every other costume is DROPPABLE: the game must play completely without them. If one proves troublesome, the engine falls back to day clothes for that context with no other change, and the costume can be removed from scope by Frank's decision alone.
 - Cheaper option to try first for rain and snow: a separate hat sprite (sou'wester, woolly hat) on a per-frame head anchor over the day-clothes clips, instead of a whole new costume set.
 - Costume sets follow the same canon, palette and approval rules as the day keeper (section 6), drawn from Prime Keeper frames.
@@ -233,28 +229,27 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
   2. UNIT FRONTS: each fitted item supplies only its front (doors, drawers, dishwasher front, sink cabinet), exactly its bay width, with no outer edges drawn.
   3. WORKTOP strip: one continuous worktop per run, made of a tileable 1-bay piece (84 × 32: 1/4-scale top reveal plus front edge), left and right end caps (16 px), and a 2 px joint line between tiles. Worktops are never part of an individual item.
   4. INSERTS: the sink and any built-in hob are NEVER cut into the worktop. The worktop tile underneath is always the same plain tile. Each insert is a separate sprite laid ON TOP of it, with its own rim wide enough to cover the join. No worktop art ever contains a hole or knows what sits on it.
-- SLOT-IN appliances (`slotIn`) keep their own top and plinth because that is how they really look (a freestanding cooker between units). The run puts end caps on either side of a slot-in item; the slot-in's hob top sits exactly at worktop height and its plinth on the run's plinth line.
 - APPLIANCES ARE FREESTANDING (Frank, 26 Oct), with a 1950s character: e.g. a gas cooker with an eye-level grill and hood, a rounded fridge, later the lobby's washing machine and dryer. Each stands centred in its bay with a small gap of wall either side (76 px body in an 84 px bay), finished sides, feet on the unit base line; fitted runs stop with end caps on either side. Fitted runs are only for sinks and cupboards. No dishwasher.
-- Tall fitted items (fridge-freezer, larder, utility cupboard) are `fittedTall`: they break the worktop, and the run puts end caps on either side.
+- Anything tall or freestanding next to a run breaks the worktop, and the run puts end caps on either side.
 - Freestanding items (table, chairs, bin, pet bowl) are separate sprites; counter-top items (toaster, kettle, mixing bowl) sit at mid-depth of the worktop at declared counter anchors.
 - The engine (or build step) assembles runs automatically from contiguous bays tagged `fitted`, so neighbours always join perfectly, and an upgrade only swaps fronts, inserts or slot-ins while the run recomputes.
 - One shared style for all runs in a room: matching door colour, handles, worktop material and plinth.
 
 ### 10a-3. Standard fitted vertical positions (0.60 m deep units against the back wall)
 - Matched to the approved kitchen proof draft: unit base (front-face bottom) y 485. Plinth: y 468–485. Unit fronts: y 336–468. Worktop front edge (a chunky slab, as on V7): y 322–336. Worktop top reveal (0.60 m × 1/6 = 17 px): y 305–322. Counter items stand on y 314. With the keeper at walkY 502, the worktop edge is 180 px above his soles (60% of his height).
-- Fridge-freezer (1.80 m): front y 183–485, top reveal y 166–183. Utility cupboard (2.00 m): front y 149–485, top reveal y 132–149.
+- Freestanding 1950s fridge (1.50 m): feet on y 485, front y 233–485, rounded top. Freestanding 1950s gas cooker: feet on y 485, body front y 336–485, hob top y 305–322 (level with the worktop), splashback with eye-level grill and hood up to y 233.
 - Sink taps rise from the rear of the worktop reveal and stay below the window sill (y 274).
 
 ### 10b. Day-1 layouts and reserved footprint budget
 **Kitchen (proof v3 layout, 14 of 14 bays, walkY 502):**
 | Bay | Item | Keeper stop x |
 |---|---|---|
-| 1 | Utility cupboard (fittedTall, door opens toward camera) | 370 |
-| 2 | Fridge-freezer (fittedTall) | 454 |
-| 3 | Drawer unit (fitted) | 538 |
+| 1 | Narrow 1950s dresser / plate rack (freestanding; proposed, decorative) | 370 |
+| 2 | Rounded 1950s fridge (freestanding) | 454 |
+| 3 | Cupboard unit (fitted) | 538 |
 | 4–5 | Sink cabinet + sink insert, useBay 1 (under left window) | 622 |
-| 6 | Dishwasher (fitted) | 790 |
-| 7 | Cooker: new 1-bay slot-in in V7's style; bays 7–8 reserved for the range upgrade | 874 |
+| 6 | Drawer unit (fitted) | 790 |
+| 7 | 1950s gas cooker with eye-level grill and hood (freestanding); bays 7–8 reserved for the range upgrade | 874 |
 | 8 | Drawer unit (fitted; removed when the range arrives) | 958 |
 | 9 | Drawer unit + toaster | 1042 |
 | 10–11 | Cupboard fronts, worktop clear (under right window) | — |
@@ -266,13 +261,13 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 **Other Day-1 rooms (proposed budgets for the fit check):**
 | Room | Items (max bays) | Total |
 |---|---|---|
-| Entrance lobby + laundry (ground floor) | Proposed: 1 tool cupboard (optional; tools can live in the cloakroom); 3 laundry sink; 4 washing machine and 5 tumble dryer (under the left window, below the sill); 6 laundry basket; 7–12 free for later (shoe bench, ironing board, workbench, fishing gear; nothing tall in 10–11); 13–14 CLOAKROOM end closet (coats, boots, WC, hidden front door) | 6 of 14 + closet (D17) |
-| Living | CRT TV unit 2, bookshelf 2, piano 3, armchair 2, optional utility cupboard 1 | 9–10 of 14 |
-| Bedroom + en-suite | Bed side-on 4 (four-poster in the same reservation, with OCCUPIED state), phone/bedside 1, desk 2, basin 1, en-suite END CLOSET in bays 13–14 (no cupboard needed) | 10 of 14 |
+| Entrance lobby + laundry (ground floor) | Proposed: 3 laundry sink; 4 washing machine and 5 tumble dryer (under the left window, below the sill); 6 laundry basket; 1–2 and 7–14 free for later (coat stand, shoe bench, ironing board, workbench, fishing gear; nothing tall in 10–11). Cloakroom, WC and front door are behind the right door | 4 of 14 (D17) |
+| Living | CRT TV unit 2, bookshelf 2, piano 3, armchair 2 (tools behind the right door) | 9 of 14 |
+| Bedroom + en-suite | Bed side-on 4 (four-poster in the same reservation, with OCCUPIED state), phone/bedside 1, desk 2, basin 1, en-suite behind the right door (no bays) | 8 of 14 |
 | Lamp room (lantern grid) | Lamp mechanism 2, telescope 2 | 4 of 12 |
 - Bedroom walkY: bed 0.95 m deep + 0.40 m → y 517.
 - Lobby walkY: 0.60 m appliances + 0.40 m → y 502.
-- The en-suite is an end closet in bays 13–14 (section 3j); the basin and mirror sit elsewhere, below the window sill. Confirm in the Day-1 layout proof (D12).
+- The en-suite is behind the bedroom's right door (section 3j); the basin and mirror sit in the room, below the window sill. Confirm in the Day-1 layout proof (D12).
 
 ### 10c. States
 - One master per item per tier, drawn in its OFF state. That is usually the ONLY full drawing the item ever needs.
@@ -286,7 +281,7 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 - TOWER and ISLAND views: a room-level badge on the affected room and, off-screen, edge indicators (section 13).
 
 ### 10e. Item metadata (minimum)
-`id, tier, bayWidth, reservedBayWidth, useBay, fitted | fittedTall | slotIn | freestanding | counter, realSizeM, canvasPx, anchorPx, standPointX, lightOverlays[], movingPartOverlays[], interactionAnchors[{id, offsetPx, facing}], bubbleOriginPx, effectOriginPx, statusLightPointPx, faultRecipes[], palette, styleReference, sourceSha256, files{}`.
+`id, tier, bayWidth, reservedBayWidth, useBay, fitted | freestanding | counter, realSizeM, canvasPx, anchorPx, standPointX, lightOverlays[], movingPartOverlays[], interactionAnchors[{id, offsetPx, facing}], bubbleOriginPx, effectOriginPx, statusLightPointPx, faultRecipes[], palette, styleReference, sourceSha256, files{}`.
 
 ### 10f. Fault effects kit (no broken art, ever)
 - Every fault is an engine RECIPE layered on unchanged item art, combining:
@@ -366,8 +361,8 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 - D8 (grid): 1536 × 576, 14 × 84 px bays, 168 px/m, 2.0 m depth, per-room walkY. Formal confirmation at Gate 0 after the kitchen proof.
 - D9 (V1 gameplay rules): needs bars, decay rates, activity restores, day end, credit rules. To be settled at the Claude Code kickoff and recorded in section 16.
 - D11: lantern width (proposed 1072 × 576 px, 12 bays). Confirm at Gate 2.
-- D12: bedroom en-suite and lobby cloakroom are end closets in bays 13–14 (Frank, 26 Oct); basin position confirmed at Gate 5.
-- D14: utility cupboard per room is optional. Day-1 proposal: kitchen yes, living room yes or no (Frank to choose), bedroom no (the en-suite door handles outfit changes).
+- D12 RESOLVED (Frank, 26 Oct): every floor's right door hides that room's cupboard of myriads, the bedroom en-suite or the lobby cloakroom; no end closets or camera-facing cupboards. Basin position confirmed at Gate 5.
+- D14 RESOLVED (Frank, 26 Oct): no utility cupboards in rooms; the right door replaces them.
 - D15 OPEN, BLOCKING exact stops: approve the Prime gait re-time (start/stop 42 px each, max +4 px cumulative change) and the F5 opposite-foot stop, so every lattice point is reachable. The kitchen proof renders both versions.
 - D17 RESOLVED (Frank, 26 Oct): ground-floor entrance lobby with boot room (the lobby's cupboard), laundry and a downstairs WC; kitchen on the first floor; laundry → washing line on the lawn is a V1 activity. Exact bay layout to be confirmed in the lobby proof.
 - D16 NEW: bed footprint. In a 2.0 m-deep room the bed must be shown side-on, so it needs 4 bays (2.0 m), with the four-poster in the same reservation. This replaces Frank's earlier "bed 2 bays → four-poster 3 bays" decision, which predates the new scale. Frank to confirm.
@@ -376,6 +371,7 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 - Proposed changes: (none yet)
 
 ## 19. Agent notes (Codex ⇄ Claude)
+- OPEN · 26 Oct · Claude → Codex: CHANGE from Frank, applies to the current kitchen pass: there is NO utility cupboard or larder in the room. Tools come from a magic cupboard behind a RIGHT-WALL door seen only as a jamb (x 1504–1536, y 208–544, timber like the left jamb), mirroring the stair door (section 3j). Add the right jamb to room_shell_kitchen.png. Bay 1 becomes a narrow freestanding 1950s dresser / plate rack (decorative, 76 px body, under 2.00 m). Drop the cupboard and larder files and their open overlays.
 - OPEN · 26 Oct · Claude → Codex (one combined instruction from Frank):
   1. Your style calibration and the first item batch (kettle, toaster, sink cabinet, drawer unit, cooker) are approved in STYLE. Keep the 1950s feel.
   2. Carry out `docs/prompts/KITCHEN_V3_REBUILD_2026-10-26.md` and `docs/prompts/KITCHEN_V3_AMENDMENT_FREESTANDING_2026-10-26.md` together in ONE pass (one versioned folder, /review/kitchen-proof-v3-rebuild/): where they differ, the amendment wins (freestanding 1950s gas cooker with eye-level grill and hood, rounded 1950s fridge, freestanding larder cupboard, no dishwasher). No shadows anywhere.
@@ -399,3 +395,4 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 - 26 Oct 2026 (Claude): moved to `docs/SPEC.md` in the repo as the shared Codex ⇄ Claude channel; status set to working spec (Frank); shared-channel rules and section 19 (agent notes) added.
 - 26 Oct 2026 (Claude): no shadows in the game (Frank): no cast, wall, floor or contact shadows for items or the keeper; shading inside objects stays.
 - 26 Oct 2026 (Claude): appliances freestanding with a 1950s character (Frank); fitted runs only for sinks and cupboards; dishwasher dropped.
+- 26 Oct 2026 (Claude): RIGHT DOOR rule (Frank): every floor has a right-wall door seen only as a jamb, hiding the room's cupboard of myriads, the bedroom en-suite or the lobby cloakroom with the front door; replaces end closets and in-room utility cupboards; kitchen bay 1 becomes a dresser.

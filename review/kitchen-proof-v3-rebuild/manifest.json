@@ -1,0 +1,1356 @@
+{
+  "schema": "lighthouse-keeper/kitchen-proof-v3-rebuild@1",
+  "status": "review-only-awaiting-frank",
+  "canonMutation": false,
+  "runtimeMutation": false,
+  "geometry": {
+    "modulePx": [
+      1536,
+      576
+    ],
+    "scalePxPerM": 168,
+    "topRevealPxPerM": 28,
+    "walkY": 502,
+    "floorBandY": [
+      460,
+      544
+    ],
+    "bayFieldX": [
+      328,
+      1504
+    ],
+    "bayCount": 14,
+    "bayWidthPx": 84,
+    "windows": [
+      [
+        580,
+        106,
+        748,
+        274
+      ],
+      [
+        1084,
+        106,
+        1252,
+        274
+      ]
+    ],
+    "glassLocalRects": [
+      [
+        28,
+        25,
+        78,
+        79
+      ],
+      [
+        89,
+        25,
+        139,
+        79
+      ],
+      [
+        28,
+        91,
+        78,
+        141
+      ],
+      [
+        89,
+        91,
+        139,
+        141
+      ]
+    ],
+    "verticals": {
+      "unitBase": 485,
+      "plinth": [
+        468,
+        485
+      ],
+      "fronts": [
+        336,
+        468
+      ],
+      "worktopEdge": [
+        322,
+        336
+      ],
+      "worktopReveal": [
+        305,
+        322
+      ],
+      "fridge": [
+        166,
+        485
+      ],
+      "utility": [
+        132,
+        485
+      ]
+    }
+  },
+  "keeper": {
+    "sourceScale": 1.0,
+    "standingHeightPx": 298,
+    "soleDatumY": 316,
+    "roomSoleY": 502,
+    "positions": [
+      454,
+      622,
+      874
+    ],
+    "worktopEdgeHeightPx": 180,
+    "worktopEdgePercent": 60.4
+  },
+  "style": {
+    "approvedCalibrationSha256": "99efc21c386422683f734d2d8dd559a5bcebba43e933b1a272360965420de7a5",
+    "v7Sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538",
+    "fillPalette": "palette_env-v1",
+    "fillPaletteSize": 50,
+    "normalization": "generated alpha >=200 becomes silhouette; lower-alpha exterior halo/shadow discarded; final antialias created only by deterministic resampling"
+  },
+  "checks": {
+    "exactMagentaPixels": 21624,
+    "nearMagentaPixels": 0,
+    "itemPixelsAboveWindowLimit": 0,
+    "worktopRuns": [
+      [
+        496,
+        832
+      ],
+      [
+        916,
+        1336
+      ]
+    ],
+    "worktopTopY": 305,
+    "cookerTopY": 305,
+    "plinthY": [
+      468,
+      485
+    ],
+    "cookerPlinthY": [
+      468,
+      485
+    ],
+    "castShadowPolicy": "none; generated exterior alpha below threshold discarded before fitting",
+    "itemInkPx": "2\u20133 at native scale",
+    "keeperInkPx": "3\u20134 at native scale",
+    "isolation": {
+      "changedLocalTapPixels": 549,
+      "roomDiffPixels": 549,
+      "roomDiffBoundsInclusive": [
+        581,
+        275,
+        745,
+        319
+      ],
+      "allowedBoundsInclusive": [
+        580,
+        274,
+        747,
+        321
+      ],
+      "allStoredPartHashesUnchanged": true
+    },
+    "overlayRects": {
+      "overlay_oven_window.png": [
+        16,
+        75,
+        68,
+        142
+      ],
+      "overlay_dishwasher_led.png": [
+        17,
+        23,
+        40,
+        31
+      ]
+    }
+  },
+  "shell": {
+    "file": "parts/room_shell_kitchen.png",
+    "canvasPx": [
+      1536,
+      576
+    ],
+    "category": "shell",
+    "bayWidth": 0,
+    "sha256": "544a3a5e4e7bc966d3b77685a0c72041b02a4bd59b6a2cd1e8bab6b18a98aaab",
+    "sourceSha256": "bf3d40ba46d16937bb4d2c6e939e1adbb1c1c5a9ac9423b2bf9cf99746ba3eeb"
+  },
+  "parts": {
+    "worktop_tile.png": {
+      "id": "worktop_tile",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "component",
+      "realSizeM": [
+        0.5,
+        0.6,
+        0.083
+      ],
+      "canvasPx": [
+        84,
+        31
+      ],
+      "anchorPx": [
+        0,
+        31
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "cdf0fd0b17da8c50cadb636650f3663f17183c28a897c460424acee6a970fe6b",
+      "files": {
+        "master": "worktop_tile.png"
+      },
+      "sha256": "06b6f52ab6f4f4634f6dd383e2140302153c045f97888717f49cdcc8ebf19634"
+    },
+    "worktop_cap_left.png": {
+      "id": "worktop_cap_left",
+      "tier": 1,
+      "bayWidth": 0,
+      "reservedBayWidth": 0,
+      "useBay": null,
+      "category": "component",
+      "realSizeM": [
+        0.095,
+        0.6,
+        0.083
+      ],
+      "canvasPx": [
+        16,
+        31
+      ],
+      "anchorPx": [
+        0,
+        31
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "cdf0fd0b17da8c50cadb636650f3663f17183c28a897c460424acee6a970fe6b",
+      "files": {
+        "master": "worktop_cap_left.png"
+      },
+      "sha256": "da4c087fa18b9f05887d4171e4500aa94917f1c72ff498dbab5380348afe6e3b"
+    },
+    "worktop_cap_right.png": {
+      "id": "worktop_cap_right",
+      "tier": 1,
+      "bayWidth": 0,
+      "reservedBayWidth": 0,
+      "useBay": null,
+      "category": "component",
+      "realSizeM": [
+        0.095,
+        0.6,
+        0.083
+      ],
+      "canvasPx": [
+        16,
+        31
+      ],
+      "anchorPx": [
+        0,
+        31
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "cdf0fd0b17da8c50cadb636650f3663f17183c28a897c460424acee6a970fe6b",
+      "files": {
+        "master": "worktop_cap_right.png"
+      },
+      "sha256": "d02ff7ffff825e3ca3d5014da3ae301d88431861dcd8a44f6c1c70a3f933fd5d"
+    },
+    "worktop_joint.png": {
+      "id": "worktop_joint",
+      "tier": 1,
+      "bayWidth": 0,
+      "reservedBayWidth": 0,
+      "useBay": null,
+      "category": "component",
+      "realSizeM": [
+        0.012,
+        0.6,
+        0.083
+      ],
+      "canvasPx": [
+        2,
+        31
+      ],
+      "anchorPx": [
+        0,
+        31
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "cdf0fd0b17da8c50cadb636650f3663f17183c28a897c460424acee6a970fe6b",
+      "files": {
+        "master": "worktop_joint.png"
+      },
+      "sha256": "fdf56593b4a476d0bbed6ccf51cc93356a1f603a4078c80d56ca204eaf8d0c22"
+    },
+    "plinth_tile.png": {
+      "id": "plinth_tile",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "component",
+      "realSizeM": [
+        0.5,
+        0.6,
+        0.1
+      ],
+      "canvasPx": [
+        84,
+        17
+      ],
+      "anchorPx": [
+        0,
+        17
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "9281928a5723e55fc79a3aab3e9ffd33f10c6da4cf0f3f069d8e28dc0753e292",
+      "files": {
+        "master": "plinth_tile.png"
+      },
+      "sha256": "c32d64d6b18519e05b736d6dc7d60ecfc159e1a3178ea07f092d2539d64cabfb"
+    },
+    "plinth_cap_left.png": {
+      "id": "plinth_cap_left",
+      "tier": 1,
+      "bayWidth": 0,
+      "reservedBayWidth": 0,
+      "useBay": null,
+      "category": "component",
+      "realSizeM": [
+        0,
+        0,
+        0
+      ],
+      "canvasPx": [
+        16,
+        17
+      ],
+      "anchorPx": [
+        0,
+        17
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "9281928a5723e55fc79a3aab3e9ffd33f10c6da4cf0f3f069d8e28dc0753e292",
+      "files": {
+        "master": "plinth_cap_left.png"
+      },
+      "sha256": "8c71e5fee82a9dbafcad92e2472a4c208c5dc18b7629e99a9217f4b69c7da689"
+    },
+    "plinth_cap_right.png": {
+      "id": "plinth_cap_right",
+      "tier": 1,
+      "bayWidth": 0,
+      "reservedBayWidth": 0,
+      "useBay": null,
+      "category": "component",
+      "realSizeM": [
+        0,
+        0,
+        0
+      ],
+      "canvasPx": [
+        16,
+        17
+      ],
+      "anchorPx": [
+        0,
+        17
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "9281928a5723e55fc79a3aab3e9ffd33f10c6da4cf0f3f069d8e28dc0753e292",
+      "files": {
+        "master": "plinth_cap_right.png"
+      },
+      "sha256": "7ff0069acf0cb26966f3eb2fb2c7cf123363964eb1affe4e58ab03f9b7688dc1"
+    },
+    "front_drawers.png": {
+      "id": "front_drawers",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "fitted",
+      "realSizeM": [
+        0.5,
+        0.6,
+        0.79
+      ],
+      "canvasPx": [
+        84,
+        132
+      ],
+      "anchorPx": [
+        0,
+        132
+      ],
+      "standPointX": 538,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "b5f9775e4f3fe5f9aa10116a7160a2e4e325a9e5c429dcf194cc65373a2cfe5d",
+      "files": {
+        "master": "front_drawers.png"
+      },
+      "sha256": "8e527e3e61b87db44dffe9f3366e44d9b5721a85105c2b68bddc2935b5fc83e6"
+    },
+    "front_cupboard.png": {
+      "id": "front_cupboard",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "fitted",
+      "realSizeM": [
+        0.5,
+        0.6,
+        0.79
+      ],
+      "canvasPx": [
+        84,
+        132
+      ],
+      "anchorPx": [
+        0,
+        132
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "c73fed38f8e6140e4669dc462acf28056160e59c8757d88b1e716b57dff51b35",
+      "files": {
+        "master": "front_cupboard.png"
+      },
+      "sha256": "947332ad093c3f8e08f112a18c2e0e9bd406e6a70b8dbfc5201ee8797b1fc4dd"
+    },
+    "front_sink_belfast_2bay.png": {
+      "id": "front_sink_belfast_2bay",
+      "tier": 1,
+      "bayWidth": 2,
+      "reservedBayWidth": 2,
+      "useBay": 1,
+      "category": "fitted",
+      "realSizeM": [
+        1.0,
+        0.6,
+        0.79
+      ],
+      "canvasPx": [
+        168,
+        132
+      ],
+      "anchorPx": [
+        0,
+        132
+      ],
+      "standPointX": 622,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "1584e52df559c2b3d4a585a50e66d48f7c1f68115218eea67d4d6911dc4bc407",
+      "files": {
+        "master": "front_sink_belfast_2bay.png"
+      },
+      "sha256": "5111744997e09841ddfd52d230d04571e87358b64cdd6e18b8f785f7064a101c"
+    },
+    "front_dishwasher.png": {
+      "id": "front_dishwasher",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "fitted",
+      "realSizeM": [
+        0.5,
+        0.6,
+        0.79
+      ],
+      "canvasPx": [
+        84,
+        132
+      ],
+      "anchorPx": [
+        0,
+        132
+      ],
+      "standPointX": 790,
+      "lightOverlays": [
+        {
+          "id": "dishwasher_led",
+          "file": "overlay_dishwasher_led.png",
+          "rectPx": [
+            17,
+            23,
+            40,
+            31
+          ]
+        }
+      ],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "b543f96fcac05e29026bbb507b06710ce2d77b38553f14c240bdbf228a4511a2",
+      "files": {
+        "master": "front_dishwasher.png"
+      },
+      "sha256": "778a8e25c6e2b29d889163ce310c73fb44f46e5ceb34e861c0d5632670c7a30a"
+    },
+    "front_cupboard_2bay.png": {
+      "id": "front_cupboard_2bay",
+      "tier": 1,
+      "bayWidth": 2,
+      "reservedBayWidth": 2,
+      "useBay": null,
+      "category": "fitted",
+      "realSizeM": [
+        1.0,
+        0.6,
+        0.79
+      ],
+      "canvasPx": [
+        168,
+        132
+      ],
+      "anchorPx": [
+        0,
+        132
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "c73fed38f8e6140e4669dc462acf28056160e59c8757d88b1e716b57dff51b35",
+      "files": {
+        "master": "front_cupboard_2bay.png"
+      },
+      "sha256": "de8fb3349df473357ccbe97fceb145451561d50b74ebcd21b2417e328fa7f368"
+    },
+    "insert_sink_2bay.png": {
+      "id": "insert_sink_2bay",
+      "tier": 1,
+      "bayWidth": 2,
+      "reservedBayWidth": 2,
+      "useBay": 1,
+      "category": "fitted",
+      "realSizeM": [
+        1.0,
+        0.52,
+        0.29
+      ],
+      "canvasPx": [
+        168,
+        48
+      ],
+      "anchorPx": [
+        0,
+        48
+      ],
+      "standPointX": 622,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "7bf31b706f7b0c13a5f2f1a26bc9d6ccba54c9287fe6926ec833db5b1727bc7a",
+      "files": {
+        "master": "insert_sink_2bay.png"
+      },
+      "sha256": "7997852249b61856bea0b644fb478b31123a76916b1491fe0dff0521a4b8fa37"
+    },
+    "cooker.png": {
+      "id": "cooker",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 2,
+      "useBay": null,
+      "category": "slotIn",
+      "realSizeM": [
+        0.5,
+        0.6,
+        0.9
+      ],
+      "canvasPx": [
+        84,
+        180
+      ],
+      "anchorPx": [
+        0,
+        180
+      ],
+      "standPointX": 874,
+      "lightOverlays": [
+        {
+          "id": "oven_window",
+          "file": "overlay_oven_window.png",
+          "rectPx": [
+            16,
+            75,
+            68,
+            142
+          ]
+        }
+      ],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "bc311d61c89f543115493d830a49d7aa57d903099e41ff8c5c8165ab15573b84",
+      "files": {
+        "master": "cooker.png"
+      },
+      "sha256": "bd1c4c9aa404c2f3efa2d2caeb1fad8fb86329593f4f162a5ba36105e587ae9b"
+    },
+    "overlay_oven_window.png": {
+      "id": "overlay_oven_window",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "component",
+      "realSizeM": [
+        0,
+        0,
+        0
+      ],
+      "canvasPx": [
+        84,
+        180
+      ],
+      "anchorPx": [
+        0,
+        180
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "b3270f55d55bab70a7bf8bba577bedc3e1faff97820056add45c85fb2e2694ee",
+      "files": {
+        "master": "overlay_oven_window.png"
+      },
+      "sha256": "1288d233d1cf9c378dc19a23ba1c40c17d7657836221caf14578fb47eee4e304"
+    },
+    "overlay_dishwasher_led.png": {
+      "id": "overlay_dishwasher_led",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "component",
+      "realSizeM": [
+        0,
+        0,
+        0
+      ],
+      "canvasPx": [
+        84,
+        132
+      ],
+      "anchorPx": [
+        0,
+        132
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "b543f96fcac05e29026bbb507b06710ce2d77b38553f14c240bdbf228a4511a2",
+      "files": {
+        "master": "overlay_dishwasher_led.png"
+      },
+      "sha256": "4c5d0d32b2453219d56fc47a0e438881313b2d964b811b3c893ff7b1de23e03c"
+    },
+    "unit_utility_cupboard_closed.png": {
+      "id": "unit_utility_cupboard_closed",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "fittedTall",
+      "realSizeM": [
+        0.5,
+        0.6,
+        2.0
+      ],
+      "canvasPx": [
+        84,
+        353
+      ],
+      "anchorPx": [
+        0,
+        353
+      ],
+      "standPointX": 370,
+      "lightOverlays": [],
+      "movingPartOverlays": [
+        {
+          "id": "open_door",
+          "file": "overlay_utility_cupboard_open.png",
+          "rectPx": [
+            0,
+            0,
+            126,
+            336
+          ]
+        }
+      ],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "f5023d97841b58801259c757eac49a8279d2516a680ef1c93f2bfab97407beff",
+      "files": {
+        "master": "unit_utility_cupboard_closed.png"
+      },
+      "sha256": "c0e9cf5d749131c1c76c94f5d559893ee85a47cebe0c89e44fdca7e4388191cf"
+    },
+    "overlay_utility_cupboard_open.png": {
+      "id": "overlay_utility_cupboard_open",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "component",
+      "realSizeM": [
+        0,
+        0,
+        0
+      ],
+      "canvasPx": [
+        126,
+        336
+      ],
+      "anchorPx": [
+        0,
+        336
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "896a983754ba6478f3270d2be90fc89530064b780122180d615a9e2668214dd6",
+      "files": {
+        "master": "overlay_utility_cupboard_open.png"
+      },
+      "sha256": "d7006a75ba29f25d70a1cf8a3c6c71c3bf3ca333898ae69fc0d0fac23975ae4f"
+    },
+    "unit_fridge_freezer.png": {
+      "id": "unit_fridge_freezer",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "fittedTall",
+      "realSizeM": [
+        0.5,
+        0.6,
+        1.8
+      ],
+      "canvasPx": [
+        84,
+        319
+      ],
+      "anchorPx": [
+        0,
+        319
+      ],
+      "standPointX": 454,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "29e9ed2a19a5bf33cac41334505514588629a342f332b56c8482a6f047c313e2",
+      "files": {
+        "master": "unit_fridge_freezer.png"
+      },
+      "sha256": "e831dd816c075d7d1fcf2c82ba20286cf702e7c4c5186bcbdb17ac68463ef9e4"
+    },
+    "toaster.png": {
+      "id": "toaster",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "counter",
+      "realSizeM": [
+        0.38,
+        0.25,
+        0.24
+      ],
+      "canvasPx": [
+        64,
+        42
+      ],
+      "anchorPx": [
+        32,
+        42
+      ],
+      "standPointX": 1042,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "d9c34eda67a563a4b2bb02ad48494b3253e5e87077a9fe2d4c7df62f90eb3f46",
+      "files": {
+        "master": "toaster.png"
+      },
+      "sha256": "f5cc8f01628ee8a76db478b8cb81a4dc771004e8790a3fb18c8bdcc216e6a1e6"
+    },
+    "kettle.png": {
+      "id": "kettle",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "counter",
+      "realSizeM": [
+        0.33,
+        0.28,
+        0.35
+      ],
+      "canvasPx": [
+        56,
+        58
+      ],
+      "anchorPx": [
+        28,
+        58
+      ],
+      "standPointX": 1294,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "0bf4e7d0a0e89c7d611d74876b918b02ba01e73d89573d2dbd67f2805cef0fb7",
+      "files": {
+        "master": "kettle.png"
+      },
+      "sha256": "e1926107ab827b9e8de7ba42a8b72e5193ae554ee6180b1bd32cbbbecb015378"
+    },
+    "pet_bowl.png": {
+      "id": "pet_bowl",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "freestanding",
+      "realSizeM": [
+        0.5,
+        0.3,
+        0.17
+      ],
+      "canvasPx": [
+        84,
+        28
+      ],
+      "anchorPx": [
+        42,
+        28
+      ],
+      "standPointX": 1378,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "f30bb74d42d14380156422fec6e40fbf3425007e6d2a9b9f0eeabd858576e615",
+      "files": {
+        "master": "pet_bowl.png"
+      },
+      "sha256": "004cf4164570a88618cdc8bc7ab9523dc623005ef9c6446050edc700e9e5f12f"
+    },
+    "pedal_bin.png": {
+      "id": "pedal_bin",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "freestanding",
+      "realSizeM": [
+        0.5,
+        0.3,
+        0.55
+      ],
+      "canvasPx": [
+        84,
+        100
+      ],
+      "anchorPx": [
+        42,
+        100
+      ],
+      "standPointX": 1462,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "8085f2abdda952a8fab94a9b2d9ac8afc48b7df42d5e739a789f99e653407bec",
+      "files": {
+        "master": "pedal_bin.png"
+      },
+      "sha256": "237e2d2bf66c89d35d1e0211f2a4963b7f772f4a2529618bac468072e3447310"
+    }
+  },
+  "files": {
+    "parts/cooker.png": {
+      "sha256": "bd1c4c9aa404c2f3efa2d2caeb1fad8fb86329593f4f162a5ba36105e587ae9b",
+      "bytes": 8136
+    },
+    "parts/front_cupboard.png": {
+      "sha256": "947332ad093c3f8e08f112a18c2e0e9bd406e6a70b8dbfc5201ee8797b1fc4dd",
+      "bytes": 2687
+    },
+    "parts/front_cupboard_2bay.png": {
+      "sha256": "de8fb3349df473357ccbe97fceb145451561d50b74ebcd21b2417e328fa7f368",
+      "bytes": 3179
+    },
+    "parts/front_dishwasher.png": {
+      "sha256": "778a8e25c6e2b29d889163ce310c73fb44f46e5ceb34e861c0d5632670c7a30a",
+      "bytes": 2773
+    },
+    "parts/front_drawers.png": {
+      "sha256": "8e527e3e61b87db44dffe9f3366e44d9b5721a85105c2b68bddc2935b5fc83e6",
+      "bytes": 3813
+    },
+    "parts/front_sink_belfast_2bay.png": {
+      "sha256": "5111744997e09841ddfd52d230d04571e87358b64cdd6e18b8f785f7064a101c",
+      "bytes": 4163
+    },
+    "parts/insert_sink_2bay.png": {
+      "sha256": "7997852249b61856bea0b644fb478b31123a76916b1491fe0dff0521a4b8fa37",
+      "bytes": 4926
+    },
+    "parts/item.json": {
+      "sha256": "1327dca0668dc34bea853d70c043f5d21bb9ea63c9a7a483b978a0ef935fdde8",
+      "bytes": 26375
+    },
+    "parts/kettle.png": {
+      "sha256": "e1926107ab827b9e8de7ba42a8b72e5193ae554ee6180b1bd32cbbbecb015378",
+      "bytes": 3242
+    },
+    "parts/overlay_dishwasher_led.png": {
+      "sha256": "4c5d0d32b2453219d56fc47a0e438881313b2d964b811b3c893ff7b1de23e03c",
+      "bytes": 193
+    },
+    "parts/overlay_oven_window.png": {
+      "sha256": "1288d233d1cf9c378dc19a23ba1c40c17d7657836221caf14578fb47eee4e304",
+      "bytes": 2965
+    },
+    "parts/overlay_utility_cupboard_open.png": {
+      "sha256": "d7006a75ba29f25d70a1cf8a3c6c71c3bf3ca333898ae69fc0d0fac23975ae4f",
+      "bytes": 7920
+    },
+    "parts/pedal_bin.png": {
+      "sha256": "237e2d2bf66c89d35d1e0211f2a4963b7f772f4a2529618bac468072e3447310",
+      "bytes": 2409
+    },
+    "parts/pet_bowl.png": {
+      "sha256": "004cf4164570a88618cdc8bc7ab9523dc623005ef9c6446050edc700e9e5f12f",
+      "bytes": 2166
+    },
+    "parts/plinth_cap_left.png": {
+      "sha256": "8c71e5fee82a9dbafcad92e2472a4c208c5dc18b7629e99a9217f4b69c7da689",
+      "bytes": 163
+    },
+    "parts/plinth_cap_right.png": {
+      "sha256": "7ff0069acf0cb26966f3eb2fb2c7cf123363964eb1affe4e58ab03f9b7688dc1",
+      "bytes": 183
+    },
+    "parts/plinth_tile.png": {
+      "sha256": "c32d64d6b18519e05b736d6dc7d60ecfc159e1a3178ea07f092d2539d64cabfb",
+      "bytes": 378
+    },
+    "parts/room.json": {
+      "sha256": "012e7b64ce23c253c5228559980ca6e3af49c41f103e8f1707515fbd5bfc0a84",
+      "bytes": 891
+    },
+    "parts/room_shell_kitchen.png": {
+      "sha256": "544a3a5e4e7bc966d3b77685a0c72041b02a4bd59b6a2cd1e8bab6b18a98aaab",
+      "bytes": 22690
+    },
+    "parts/toaster.png": {
+      "sha256": "f5cc8f01628ee8a76db478b8cb81a4dc771004e8790a3fb18c8bdcc216e6a1e6",
+      "bytes": 2401
+    },
+    "parts/unit_fridge_freezer.png": {
+      "sha256": "e831dd816c075d7d1fcf2c82ba20286cf702e7c4c5186bcbdb17ac68463ef9e4",
+      "bytes": 5506
+    },
+    "parts/unit_utility_cupboard_closed.png": {
+      "sha256": "c0e9cf5d749131c1c76c94f5d559893ee85a47cebe0c89e44fdca7e4388191cf",
+      "bytes": 4581
+    },
+    "parts/worktop_cap_left.png": {
+      "sha256": "da4c087fa18b9f05887d4171e4500aa94917f1c72ff498dbab5380348afe6e3b",
+      "bytes": 379
+    },
+    "parts/worktop_cap_right.png": {
+      "sha256": "d02ff7ffff825e3ca3d5014da3ae301d88431861dcd8a44f6c1c70a3f933fd5d",
+      "bytes": 350
+    },
+    "parts/worktop_joint.png": {
+      "sha256": "fdf56593b4a476d0bbed6ccf51cc93356a1f603a4078c80d56ca204eaf8d0c22",
+      "bytes": 82
+    },
+    "parts/worktop_tile.png": {
+      "sha256": "06b6f52ab6f4f4634f6dd383e2140302153c045f97888717f49cdcc8ebf19634",
+      "bytes": 972
+    },
+    "outputs/calibration_vs_rebuild.png": {
+      "sha256": "619660c9f5a0cb46d2a0a460ef7a26920991e431d7ae5ef574bef18c768086ad",
+      "bytes": 1022747
+    },
+    "outputs/contact_sheet.png": {
+      "sha256": "be8055d86d0f43b6166f98d3daf22525b4f92c2fa00533954f3bb98db3eab667",
+      "bytes": 285774
+    },
+    "outputs/isolation_sink_taps_diff.png": {
+      "sha256": "411d6338cb69c9863e0b4329af472f6808451c8b11d5659208459090f33e44f2",
+      "bytes": 4020
+    },
+    "outputs/keeper_check_cooker.png": {
+      "sha256": "ff43af5b8fa2126e0b59f2a5b7ff14f77c361e2614b5f79c26f2051f2b608018",
+      "bytes": 133073
+    },
+    "outputs/keeper_check_fridge.png": {
+      "sha256": "29f46f53eb59a001345fb99287cab70332675b8948cb7e26698cfabd45479792",
+      "bytes": 137225
+    },
+    "outputs/keeper_check_sheet.png": {
+      "sha256": "1ed4389bc213bc59f6bc29f77f3e793b9172cee08bac44819215330cc14e8a0f",
+      "bytes": 415116
+    },
+    "outputs/keeper_check_sink.png": {
+      "sha256": "2abc75d9d6f1d19b88f63477e81baba45ab70e3ecc4dfeb4861635fe3c2033f6",
+      "bytes": 135943
+    },
+    "outputs/kitchen_v3_rebuild_room.png": {
+      "sha256": "f1a383f377edde8edde7521d324d70e6b006b1090035efc407decefe947cb27b",
+      "bytes": 77738
+    },
+    "outputs/kitchen_v3_rebuild_room_2x.png": {
+      "sha256": "137fff9f9b95237e40dc4368d6d440c831df93b41e33b19f3367689047801ff4",
+      "bytes": 107938
+    },
+    "outputs/kitchen_v3_rebuild_tower_scale.png": {
+      "sha256": "dc2e8fa4d09cdf0db911cb0cca0b06abaa604939cbd5cf7adb38167255e0b284",
+      "bytes": 24505
+    },
+    "sources/SOURCE_TASK.md": {
+      "sha256": "45b3d17267b72170d80fc8d15af0cd93d9f08adab2eae978c20441fadfb4e5bc",
+      "bytes": 8019
+    },
+    "sources/approved-style-calibration.png": {
+      "sha256": "99efc21c386422683f734d2d8dd559a5bcebba43e933b1a272360965420de7a5",
+      "bytes": 1467595
+    },
+    "sources/generated/bin-source.png": {
+      "sha256": "8085f2abdda952a8fab94a9b2d9ac8afc48b7df42d5e739a789f99e653407bec",
+      "bytes": 430051
+    },
+    "sources/generated/cooker-clean-source.png": {
+      "sha256": "bc311d61c89f543115493d830a49d7aa57d903099e41ff8c5c8165ab15573b84",
+      "bytes": 1213572
+    },
+    "sources/generated/cooker-source.png": {
+      "sha256": "4fd136047254236f548fa2eac124a315ab096b9662b553d80f65f3cc1b201475",
+      "bytes": 1191036
+    },
+    "sources/generated/cupboard-source.png": {
+      "sha256": "c73fed38f8e6140e4669dc462acf28056160e59c8757d88b1e716b57dff51b35",
+      "bytes": 778739
+    },
+    "sources/generated/dishwasher-source.png": {
+      "sha256": "b543f96fcac05e29026bbb507b06710ce2d77b38553f14c240bdbf228a4511a2",
+      "bytes": 996194
+    },
+    "sources/generated/drawers-source.png": {
+      "sha256": "b5f9775e4f3fe5f9aa10116a7160a2e4e325a9e5c429dcf194cc65373a2cfe5d",
+      "bytes": 950553
+    },
+    "sources/generated/fridge-source.png": {
+      "sha256": "29e9ed2a19a5bf33cac41334505514588629a342f332b56c8482a6f047c313e2",
+      "bytes": 989888
+    },
+    "sources/generated/kettle-source.png": {
+      "sha256": "0bf4e7d0a0e89c7d611d74876b918b02ba01e73d89573d2dbd67f2805cef0fb7",
+      "bytes": 900830
+    },
+    "sources/generated/oven-overlay-source.png": {
+      "sha256": "b3270f55d55bab70a7bf8bba577bedc3e1faff97820056add45c85fb2e2694ee",
+      "bytes": 934312
+    },
+    "sources/generated/pet-bowl-source.png": {
+      "sha256": "f30bb74d42d14380156422fec6e40fbf3425007e6d2a9b9f0eeabd858576e615",
+      "bytes": 834608
+    },
+    "sources/generated/plinth-source.png": {
+      "sha256": "9281928a5723e55fc79a3aab3e9ffd33f10c6da4cf0f3f069d8e28dc0753e292",
+      "bytes": 726376
+    },
+    "sources/generated/sink-front-source.png": {
+      "sha256": "1584e52df559c2b3d4a585a50e66d48f7c1f68115218eea67d4d6911dc4bc407",
+      "bytes": 1026073
+    },
+    "sources/generated/sink-insert-left-source.png": {
+      "sha256": "7bf31b706f7b0c13a5f2f1a26bc9d6ccba54c9287fe6926ec833db5b1727bc7a",
+      "bytes": 1160155
+    },
+    "sources/generated/sink-insert-source.png": {
+      "sha256": "d027bdf49ca777b3b08ecf80fb863380e57b5d07a2802fe788c1f759cb163cb4",
+      "bytes": 1160545
+    },
+    "sources/generated/toaster-source.png": {
+      "sha256": "d9c34eda67a563a4b2bb02ad48494b3253e5e87077a9fe2d4c7df62f90eb3f46",
+      "bytes": 1091617
+    },
+    "sources/generated/utility-open-door-source.png": {
+      "sha256": "896a983754ba6478f3270d2be90fc89530064b780122180d615a9e2668214dd6",
+      "bytes": 963432
+    },
+    "sources/generated/utility-source.png": {
+      "sha256": "f5023d97841b58801259c757eac49a8279d2516a680ef1c93f2bfab97407beff",
+      "bytes": 989001
+    },
+    "sources/generated/window-source.png": {
+      "sha256": "bf3d40ba46d16937bb4d2c6e939e1adbb1c1c5a9ac9423b2bf9cf99746ba3eeb",
+      "bytes": 1023122
+    },
+    "sources/generated/worktop-source.png": {
+      "sha256": "cdf0fd0b17da8c50cadb636650f3663f17183c28a897c460424acee6a970fe6b",
+      "bytes": 393194
+    },
+    "sources/keeper_prime_master-neutral-standing-back_f1.png": {
+      "sha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86",
+      "bytes": 59998
+    },
+    "sources/style-authority-user-reference.png": {
+      "sha256": "b421b00fe77969a9da0cee0f0d331f8150ca93d4b9bc05d01cfcf328a8c4ea9f",
+      "bytes": 528450
+    },
+    "sources/v7-oven-authority.png": {
+      "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538",
+      "bytes": 1065901
+    }
+  }
+}

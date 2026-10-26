@@ -1,0 +1,83 @@
+{
+  "schema": "lighthouse-keeper/kitchen-v3-rebuild-room@1",
+  "canvasPx": [
+    1536,
+    576
+  ],
+  "walkY": 502,
+  "bayFieldX": [
+    328,
+    1504
+  ],
+  "bayWidthPx": 84,
+  "bayCount": 14,
+  "runs": [
+    [
+      3,
+      6
+    ],
+    [
+      8,
+      12
+    ]
+  ],
+  "windows": [
+    [
+      580,
+      106,
+      748,
+      274
+    ],
+    [
+      1084,
+      106,
+      1252,
+      274
+    ]
+  ],
+  "placements": {
+    "utility": [
+      1,
+      370
+    ],
+    "fridge": [
+      2,
+      454
+    ],
+    "drawers": [
+      3,
+      538
+    ],
+    "sink": [
+      [
+        4,
+        5
+      ],
+      622
+    ],
+    "dishwasher": [
+      6,
+      790
+    ],
+    "cooker": [
+      7,
+      874
+    ],
+    "toaster": [
+      9,
+      1042
+    ],
+    "kettle": [
+      12,
+      1294
+    ],
+    "petBowl": [
+      13,
+      1378
+    ],
+    "pedalBin": [
+      14,
+      1462
+    ]
+  }
+}
