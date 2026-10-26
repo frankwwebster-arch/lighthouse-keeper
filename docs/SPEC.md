@@ -270,7 +270,7 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 |---|---|---|
 | Entrance lobby + laundry (ground floor) | Proposed: 3 laundry sink; 4 washing machine and 5 tumble dryer (under the left window, below the sill); 6 laundry basket; 1–2 and 7–13 free for later (coat stand, shoe bench, ironing board, workbench, fishing gear; nothing tall in 10–11). 14 small hand basin beside the right door (WC, signed; way out beyond) | 5 of 14 (D17) |
 | Living | CRT TV unit 2, bookshelf 2, piano 3, armchair 2 (tools behind the right door) | 9 of 14 |
-| Bedroom + en-suite | Bed side-on 4 (four-poster in the same reservation, with OCCUPIED state), phone/bedside 1, desk 2, basin 1, en-suite bathroom in bays 9–14 (basin, bath, shower; WC behind the right door) | 8 of 14 |
+| Bedroom + en-suite | Bedroom bays 1–8: bed side-on 4 (four-poster in the same reservation, with OCCUPIED state), bedside table with phone 1, desk 2. En-suite bathroom bays 9–14: basin 1, bath 3, shower 1, towel rail 1; WC behind the right door | 14 of 14 |
 | Lamp room (lantern grid) | Lamp mechanism 2, telescope 2 | 4 of 12 |
 - Bedroom walkY: bed 0.95 m deep + 0.40 m → y 517.
 - Lobby walkY: 0.60 m appliances + 0.40 m → y 502.
