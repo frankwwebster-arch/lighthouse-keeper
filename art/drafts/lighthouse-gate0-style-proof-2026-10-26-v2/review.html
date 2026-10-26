@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lighthouse Keeper · Gate 0 style proof V2</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b1118; --panel:#151f2a; --line:#334455; --text:#edf4fa; --muted:#a9bac8; --amber:#e6b955; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+    header, main { width:min(1800px,100%); margin:auto; padding:22px; }
+    header { border-bottom:1px solid var(--line); }
+    h1,h2,h3,p { margin-top:0; }
+    .status { display:inline-block; border:1px solid var(--amber); border-radius:999px; padding:5px 10px; color:#ffe6a3; }
+    .rule { border-left:4px solid var(--amber); background:#282315; padding:12px 16px; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    article { min-width:0; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px; }
+    figure { margin:0; }
+    img { display:block; max-width:100%; height:auto; background:#080c10; border:1px solid #566879; }
+    .room img { width:100%; }
+    .tower-stage { min-height:190px; display:grid; place-items:center; background:#080c10; border:1px solid #566879; overflow:auto; }
+    .tower-stage img { width:384px; max-width:none; border:0; image-rendering:auto; }
+    .pixel-room { image-rendering:pixelated; }
+    dl { display:grid; grid-template-columns:max-content 1fr; gap:4px 12px; color:var(--muted); }
+    dt { color:var(--text); font-weight:650; }
+    .decision { margin-top:18px; padding:18px; border:1px solid var(--amber); border-radius:12px; background:#1d1b13; }
+    details { margin:0 0 22px; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:12px 14px; }
+    summary { cursor:pointer; font-weight:700; }
+    details img { margin-top:12px; width:min(100%,1040px); }
+    code { color:#b7ddff; }
+    @media(max-width:900px) { .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="status">Candidate · awaiting Frank</span>
+    <h1>Gate 0 · rendering style A/B · depth-corrected V2</h1>
+    <p>Same furnished 1536 × 512 room, same Keeper scale, same room-depth rule and same exact-magenta windows. Choose the rendering language only.</p>
+  </header>
+  <main>
+    <p class="rule"><strong>Applied room rule:</strong> furniture is on the back layer; the Keeper occupies the thin front walking strip; the left circulation opening is a jamb only. No back-wall door, stairs, angled side walls or perspective floor.</p>
+
+    <details>
+      <summary>Show Frank's source room-depth rule</summary>
+      <img src="sources/room_depth_rule.png" alt="Room-depth rule showing furniture against the back wall and the Keeper walking along a front strip">
+    </details>
+
+    <p class="rule"><strong>Decision:</strong> A high-resolution pixel illustration, or B smooth flat-colour illustration. The chosen style freezes until 20 December.</p>
+
+    <h2>ROOM view</h2>
+    <section class="grid room">
+      <article>
+        <h3>A · high-resolution pixel</h3>
+        <figure><img class="pixel-room" src="assets/candidate-a-room-1536x512.png" alt="Candidate A high-resolution pixel furnished kitchen with the Keeper on the front walking strip"></figure>
+        <dl>
+          <dt>Authoring</dt><dd>768 × 256</dd>
+          <dt>Delivery</dt><dd>exact nearest-neighbour 2×</dd>
+          <dt>Edges</dt><dd>hard pixels and hard alpha</dd>
+          <dt>Keeper</dt><dd>250 px candidate</dd>
+        </dl>
+      </article>
+      <article>
+        <h3>B · smooth flat colour</h3>
+        <figure><img src="assets/candidate-b-room-1536x512.png" alt="Candidate B smooth flat-colour furnished kitchen with the Keeper on the front walking strip"></figure>
+        <dl>
+          <dt>Authoring</dt><dd>1536 × 512</dd>
+          <dt>Delivery</dt><dd>native smooth raster</dd>
+          <dt>Edges</dt><dd>antialiased contours</dd>
+          <dt>Keeper</dt><dd>248 px candidate</dd>
+        </dl>
+      </article>
+    </section>
+
+    <h2 style="margin-top:24px">TOWER-scale view</h2>
+    <section class="grid">
+      <article>
+        <h3>A · 384 × 128 mip</h3>
+        <div class="tower-stage"><img class="pixel-room" src="assets/candidate-a-tower-384x128.png" alt="Candidate A at tower scale"></div>
+      </article>
+      <article>
+        <h3>B · 384 × 128 reduction</h3>
+        <div class="tower-stage"><img src="assets/candidate-b-tower-384x128.png" alt="Candidate B at tower scale"></div>
+      </article>
+    </section>
+
+    <section class="decision">
+      <h2>What this does not approve</h2>
+      <p>Neither Keeper is canon. The one-band versus two-stripe identity question remains a Gate 3 matter. The illustrative furniture proves depth and style only; it is not a set of production item masters. Palette finalisation, lantern width and the production tower kit also remain unapproved.</p>
+      <p>Machine record: <code>manifest.json</code>. Provenance and prompts: <code>PROMPT_LOG.md</code>.</p>
+    </section>
+  </main>
+</body>
+</html>

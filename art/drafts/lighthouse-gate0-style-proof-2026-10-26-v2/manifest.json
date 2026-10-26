@@ -1,0 +1,252 @@
+{
+  "schema": "lighthouse-keeper/gate0-style-proof@2",
+  "status": "candidate-awaiting-frank",
+  "date": "2026-10-26",
+  "canonMutation": false,
+  "geometry": {
+    "deliveredModulePx": [
+      1536,
+      512
+    ],
+    "authoringModuleAu": [
+      768,
+      256
+    ],
+    "floorSurfaceY": 480,
+    "walkInZoneX": [
+      32,
+      256
+    ],
+    "bayFieldX": [
+      256,
+      1504
+    ],
+    "bayCount": 13,
+    "bayWidthPx": 96,
+    "windows": [
+      {
+        "x": 544,
+        "y": 128,
+        "width": 192,
+        "height": 192,
+        "bays": [
+          4,
+          5
+        ]
+      },
+      {
+        "x": 1120,
+        "y": 128,
+        "width": 192,
+        "height": 192,
+        "bays": [
+          10,
+          11
+        ]
+      }
+    ],
+    "depthRule": {
+      "logicalPlan": {
+        "backFurniturePercent": 70,
+        "frontWalkingPercent": 30
+      },
+      "frontProjection": "strict orthographic front elevation",
+      "floorStripY": [
+        480,
+        511
+      ],
+      "doorJambX": [
+        32,
+        48
+      ],
+      "doorPanel": false,
+      "visibleStairs": false,
+      "angledSideWalls": false,
+      "floorSeenFromAbove": false,
+      "layerOrder": [
+        "back-wall shell",
+        "back-wall furniture",
+        "Keeper/front walking strip"
+      ]
+    },
+    "furniture": [
+      {
+        "id": "fridge",
+        "bays": [
+          1,
+          2
+        ],
+        "x": [
+          256,
+          448
+        ]
+      },
+      {
+        "id": "cooker",
+        "bays": [
+          3
+        ],
+        "x": [
+          448,
+          544
+        ]
+      },
+      {
+        "id": "worktop",
+        "bays": [
+          4,
+          5
+        ],
+        "x": [
+          544,
+          736
+        ]
+      },
+      {
+        "id": "sink",
+        "bays": [
+          6,
+          7
+        ],
+        "x": [
+          736,
+          928
+        ]
+      },
+      {
+        "id": "dresser",
+        "bays": [
+          8,
+          9
+        ],
+        "x": [
+          928,
+          1120
+        ]
+      },
+      {
+        "id": "bin",
+        "bays": [
+          10
+        ],
+        "x": [
+          1120,
+          1216
+        ]
+      }
+    ]
+  },
+  "candidates": {
+    "A": {
+      "label": "High-resolution pixel illustration",
+      "room": "assets/candidate-a-room-1536x512.png",
+      "tower": "assets/candidate-a-tower-384x128.png",
+      "authoring": "assets/candidate-a-authoring-768x256.png",
+      "keeperHeightPx": 250,
+      "keeperCentreX": 1010,
+      "keeperFootY": 480,
+      "rendering": "768x256 authoring; exact nearest-neighbour 2x delivery; hard alpha"
+    },
+    "B": {
+      "label": "Smooth flat-colour illustration",
+      "room": "assets/candidate-b-room-1536x512.png",
+      "tower": "assets/candidate-b-tower-384x128.png",
+      "keeperHeightPx": 248,
+      "keeperCentreX": 1010,
+      "keeperFootY": 480,
+      "rendering": "1536x512 smooth antialiased delivery; flat palette; exact key panes restored after rasterisation"
+    }
+  },
+  "sources": {
+    "LIGHTHOUSE_SPEC_v2_DRAFT.md": {
+      "path": "sources/LIGHTHOUSE_SPEC_v2_DRAFT.md",
+      "sha256": "30d1281ea25631d55078d312716deca7bf53c3f5b73162023b54cf178cb7506e"
+    },
+    "keeper-approved-side.png": {
+      "path": "sources/keeper-approved-side.png",
+      "sha256": "e6af1304187329a92a3bfb8aed64de549f82c7f09a92fedc7b6699126a6cd98a"
+    },
+    "keeper-approved-front.png": {
+      "path": "sources/keeper-approved-front.png",
+      "sha256": "6895631c3d5c3f714a5a8dcf61eba199387f6b4b677e2c427f8e840fefc4990d"
+    },
+    "keeper-approved-back.png": {
+      "path": "sources/keeper-approved-back.png",
+      "sha256": "0635a32f6f998a94753a9ca869967f459e0501be6fd5a5ea3d6fafe64d2fe728"
+    },
+    "keeper-candidate-a-generated.png": {
+      "path": "sources/keeper-candidate-a-generated.png",
+      "sha256": "1ee4653d606aaa61ff860838bd32806826d0fef674b5316f5eb631af0129c4f9"
+    },
+    "keeper-candidate-b-generated.png": {
+      "path": "sources/keeper-candidate-b-generated.png",
+      "sha256": "db63b16bf05004e0782238b1012931cbc34da14a9d34ea9b535c7048a170d014"
+    },
+    "room-source-a-rejected.png": {
+      "path": "sources/room-source-a-rejected.png",
+      "sha256": "c22746eb00777692c74e14d2ebe8c79eacf8f6b56b995440393905430bba5f7f"
+    },
+    "room-source-b-rejected.png": {
+      "path": "sources/room-source-b-rejected.png",
+      "sha256": "6007cfa8b23e7e17e5cea704e41414808953e65e5e8f03b9c3db16b9fda69d50"
+    },
+    "room_depth_rule.png": {
+      "path": "sources/room_depth_rule.png",
+      "sha256": "5512e986a8b733837fe73787bf536c03451e6e2f6f14b8378ffa190ef7daf6ba"
+    }
+  },
+  "outputs": {
+    "candidateAAuthoring": {
+      "path": "assets/candidate-a-authoring-768x256.png",
+      "sha256": "ba5f59717346eb45b7195037012c3964560abe11de7ccee27ad78a9d64f72816",
+      "size": [
+        768,
+        256
+      ],
+      "magentaPixels": 11400,
+      "hardAlpha": true
+    },
+    "candidateARoom": {
+      "path": "assets/candidate-a-room-1536x512.png",
+      "sha256": "9f1a7666fc8ae1dc0fcfb730cb29c1b328fe017161fc65015aaf27174e9f7d68",
+      "size": [
+        1536,
+        512
+      ],
+      "magentaPixels": 45600,
+      "hardAlpha": true
+    },
+    "candidateATower": {
+      "path": "assets/candidate-a-tower-384x128.png",
+      "sha256": "27e5517c09d0f4cbcedd2f1a5beea49c3cd8bd2e395dc2dfce519b1fedb340da",
+      "size": [
+        384,
+        128
+      ],
+      "magentaPixels": 2888,
+      "hardAlpha": true
+    },
+    "candidateBRoom": {
+      "path": "assets/candidate-b-room-1536x512.png",
+      "sha256": "4bef55cfd95607abb4878a67197fe16f2d22526404ea0b3ec6fba61a3bbe10f6",
+      "size": [
+        1536,
+        512
+      ],
+      "magentaPixels": 45600,
+      "hardAlpha": true
+    },
+    "candidateBTower": {
+      "path": "assets/candidate-b-tower-384x128.png",
+      "sha256": "f1941715f4ac0d88fbb12b74a11e9d4ba1e4d598c83467533533da5eabf2cae4",
+      "size": [
+        384,
+        128
+      ],
+      "magentaPixels": 1828,
+      "hardAlpha": true
+    }
+  },
+  "knownBoundary": "The approved Prime identity references contain one broad torso stripe while the proposed reboot text describes two separate chest stripes. These non-canon style candidates preserve the approved source identity rather than deciding Gate 3 stripe geometry.",
+  "revision": "V2 supersedes V1 for review only by applying Frank's room-depth rule: fitted furniture on the back layer, Keeper on the front walking strip, left-front jamb only, and no perspective floor, angled wall, stair or back-wall door."
+}
