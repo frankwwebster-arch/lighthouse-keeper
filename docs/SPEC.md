@@ -122,10 +122,12 @@ Up to 20 above-ground floors. Day 1 = entrance lobby, kitchen, living room, bedr
 
 ### 3j. The RIGHT DOOR — the magic cupboard (Frank, 26 Oct)
 - Every floor has TWO doorways, both in the side walls at the front and both seen only as a jamb: the LEFT door (x 0–32) leads to the hidden stair core; the RIGHT door (x 1504–1536, y 208–544, in the rightmost module) leads into a fictional space between the room and the tower's outer wall that holds whatever that room needs. Like the stairs, it is a deliberate fiction: it never takes up a bay and is never drawn.
-- What lies behind the right door, by room: kitchen and most rooms = the cupboard of myriads (tools: broom, hoover, super hoover, mop, toolbox, watering can, fishing rod and so on); entrance lobby = the downstairs WC (a small "WC" sign on the jamb), and through it the hidden way out to the island; bedroom = the WC, reached through the en-suite (section 3k), also signed.
+- What lies behind the right door, by room: kitchen and most rooms = the cupboard of myriads (indoor tools: broom, hoover, super hoover, mop, duster, toolbox and so on); entrance lobby = the downstairs WC (a small "WC" sign on the jamb), and through it the hidden way out to the island; bedroom = the WC, reached through the en-suite (section 3k), also signed.
 - Use: the keeper walks along walkY to the right wall, passes behind the jamb and is hidden (draw order: shell → keeper → right jamb). Swaps happen while hidden: tool in or out, outfit change, toilet use, leaving or entering the tower. He reappears the same way, already holding the tool or in the new outfit.
 - Costs: no bays, no item art beyond the jamb, no keeper animation beyond the walk. Bays 13–14 stay available for items; anything there stands behind walkY, so the keeper walks in front of it to the door.
 - No camera-facing cupboards are needed anywhere. The toilet is never seen, anywhere in the game.
+- DOORS OPEN BY THEMSELVES (Frank, 26 Oct): every door opens automatically as the keeper reaches it and closes behind him. There is no door-opening animation for the keeper, ever; a visible door is just a closed/open state swapped by the engine.
+- GARDEN SHED (Frank, 26 Oct): the outdoor equivalent of the magic cupboard. Outdoor tools and kit (lawnmower, watering can, spade, fishing rod and tackle, crab pots, paint for the boat) come from the shed on its island plot, with the same walk-in, hidden-swap, walk-out mechanic.
 
 ### 3k. The en-suite (Frank, 26 Oct)
 - The bedroom's EN-SUITE is an actual, visible bathroom at the right of the bedroom floor: bays 9–14 (x 1000–1504, 3.0 m), proposed, confirmed in the bedroom proof.
@@ -203,7 +205,7 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - Tools come from behind the room's RIGHT DOOR (section 3j). The pickup is never animated: the keeper walks into the right door and walks back out already holding and using the tool. Tools are separate prop sprites on the keeper's hand anchors, never painted into keeper frames.
 - Every room can be cleaned. Tool tiers: broom (t1) → hoover (t2) → super hoover (t3). Each tier is a prop swap plus its matching loop, not a new room animation.
 - Day-1 keeper clips this adds: SWEEP-WALK loop (side, moves along walkY) and HOOVER-PUSH loop (side). Super hoover reuses the hoover loop with its own prop.
-- Later tools use the same mechanic: mop, duster, watering can, toolbox (repairs), fishing rod, paintbrush.
+- Later indoor tools use the same mechanic: mop, duster, toolbox (repairs), paintbrush. Outdoor tools come from the garden shed (section 3j).
 - The engine owns which tool appears, its prop anchors per facing, and the cleaning effect (tidiness rising, dust puffs as FX).
 
 ## 9b. Occluding doors and costume changes
@@ -407,3 +409,4 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 - 26 Oct 2026 (Claude): END ROOMS (Frank): the en-suite and lobby cloakroom are actual visible small rooms in bays 13–14 behind an edge-on partition with an open doorway; the WC (and front door) are behind their right door.
 - 26 Oct 2026 (Codex): recorded the verified Kitchen V3 rebuild handoff in section 19, marked the acted-on Claude instructions DONE and flagged two geometry-wording discrepancies for Claude; no body decision changed.
 - 26 Oct 2026 (Claude): (Frank) lobby WC is the right door with a sign plus a small hand basin; the en-suite is a visible bathroom (bays 9–14: basin, bath, shower) with the WC behind the right door; cloakroom end room dropped.
+- 26 Oct 2026 (Claude): (Frank) all doors open and close automatically, no door animations; garden shed is the outdoor magic cupboard (lawnmower, fishing kit etc.); indoor right-door cupboard holds indoor tools only.
