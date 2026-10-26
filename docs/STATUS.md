@@ -11,8 +11,24 @@ A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthou
 - Database: Neon Postgres via `DATABASE_URL` (verified: `/api/players` answers `db:true`). Tables are created on first use: players, saves, player_rules, settings (PIN hash).
 
 ## Built
-The approved artwork is now available as one reproducible local Makko handoff:
-`makko-approved-art-2026-10-25/`. It contains 27 promoted Prime sprite sheets,
+
+The current target graphics authority is `docs/CODEX_BRIEF.md`: Codex-authored,
+non-pixel, bright flat 2D illustration on a strict orthographic side elevation;
+a straight-sided tower; exact 1536 × 512 master-derived room modules; pure
+`#FF00FF` see-through areas; and separate minimal-state item masters. The new
+tower kit and `/public/art/keeper/canon/` migration have not been built. Existing
+approved/runtime art remains immutable until those migrations receive their own
+review and approval.
+
+The required new-art delivery pipeline has not been built either. The legacy
+`npm run sprites` path removes `#FF00FF`, so it must not process the only copy
+of a tower, island or environment master. A reviewed source/runtime boundary
+that retains and verifies exact magenta is a prerequisite to producing the new
+tower kit.
+
+The former reproducible local Makko handoff remains a historical snapshot only:
+`makko-approved-art-2026-10-25/`. Makko is no longer used. The snapshot contains
+27 promoted Prime sprite sheets,
 all 14 approved playable Prime routes, the ten approved V12 sequences, the
 ten earlier Frank-selected canonical legacy sheets kept in their own section,
 the approved kitchen V4 native master and locked fitted run, 84 explicitly approved
@@ -22,17 +38,16 @@ or Keeper candidates are excluded. `npm run export:makko` rebuilds the ignored
 binary folder; `npm run verify:makko-export` checks every exported and source
 SHA-256 against its generated manifest.
 
-A reversible Lighthouse Pixel Style Test V4 is built at
-`public/art/concepts/pixel/` and awaits visual review. A and B are exact
-32-colour/16-colour hard-pixel candidates with the restored
-red-and-warm-white tapered shell, concealed circulation pocket, identical
-hairline stair-door marks on every floor, no en-suite partition at one-module
-width and a code-enforced side-profile island; C explicitly uses the rejected
-Day 1 source as a code-only failure control. The package changes no canon or
-runtime art. See `docs/LIGHTHOUSE_PIXEL_STYLE_TEST_2026-10-26.md`.
+Lighthouse Pixel Style Test V4 is preserved at
+`public/art/concepts/pixel/` as rejected historical evidence. Frank rejected
+the 8-bit/16-bit direction as too blocky when zoomed in; its tapered tower,
+small modules and omitted en-suite are also superseded by the straight-sided
+1536 × 512 production brief. It changed no canon or runtime art. See
+`docs/LIGHTHOUSE_PIXEL_STYLE_TEST_2026-10-26.md`.
 
-The approved kitchen art/geometry authority is Warm Ligne-Claire Family V4,
-and Runtime Promotion V1 is now wired into the room code. All six fitted bodies
+The approved installed legacy kitchen art/geometry authority is Warm
+Ligne-Claire Family V4, and Runtime Promotion V1 is now wired into the room
+code. All six fitted bodies
 remain exact 84 × 74 assets in the approved 772 × 224 coordinate system. The
 current fixed-width floor applies one uniform outer transform. Cooker drives
 the Oven Off/On/Broken art and its cavity-light-only Broken loop; Fridge drives
@@ -41,7 +56,9 @@ inactive until a gameplay Dishwasher exists. The prior room plate is retained
 and hash-pinned for rollback. Full source, state and reversible-promotion
 contracts are in `docs/KITCHEN_ASSET_AUTHORITY.md` and
 `data/kitchen_runtime_promotion_v1.json`. The 158 earlier formal room/furniture
-drafts remain retired.
+drafts remain retired. This authority preserves the live and rollback bytes;
+it does not govern future module or item art, which now follows the 1536 × 512
+and 96/192 px rules in `docs/CODEX_BRIEF.md`.
 Engine (seeded, deterministic, 122 tests), SVG cutaway scene with zoom camera, typo matcher, quizzes levels 1-3, credit economy with admin dials (allowance from per-need green bars, prices, gifting, quiz level and breakdown pressure per player), who-is-playing screen, per-player saves (DB or localStorage), grown-ups PIN (starts 1234; change it).
 
 The first three playable floors are now modular fixed-width components: kitchen, living room, and bedroom with en suite. Objects have a runtime `standard` / `on` / `broken` contract, state-specific strip support, shared broken effects, keyboard/touch hit areas, and rear-facing cooker/basin keeper fallbacks. Random keeper-owned breakdowns are off by default and controlled by grown-ups' frequency and maximum-concurrent dials; broken assets block normal use until repaired. Floor 3 reserves an invisible two-door changing zone for the later diving-board extension.
@@ -402,8 +419,10 @@ closed when evidence is missing. Rejected Back V1 must fail and corrected Back
 V2 must pass. The specification exists; the bank-wide verifier has not yet been
 implemented and no artwork change is authorised by it.
 
-1. The evidence-based beard/hand audit classifies every manifest frame and pins `keeper_clear_snow` as the canonical fuller stepped beard. A landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It remains fail-closed for unavailable evidence: 163 side-on standing/sitting sheets are inventoried, eight zero-difference reference self-comparisons match, and 994 different-pose frames—including `keeper_darts` 3–6—are non-comparable because no approved beard masks, facial landmarks or hand-depth/component evidence exists. Frank reviewed Darts 3–6 visually on 11 October and accepted the beards with no amendment required; no beard draft is active or promotable. Next, use GPT-5.6 Sol to establish comparison inputs for any future claim, then run the later frame-isolation and released-prop audits.
-2. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. Frank's immutable second visual review recorded 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed; the current reviewer has 97 Happy and 67 Awaiting after Frank selected the Darts draft as his preferred candidate. Frank's saved per-animation width and height remain final production art direction.
+1. Install Frank-approved Keeper references at `/public/art/keeper/canon/` before any new Keeper pose is authored. The current Prime bank remains immutable and must not be silently relabelled: its stripe geometry, palette and source scale do not match the new absolute brief.
+2. Establish an exact-magenta-preserving source/runtime delivery path, then build the native non-pixel modular tower kit from `docs/CODEX_BRIEF.md`: one 1536 × 512 master module, recoloured room variants, straight shell walls, dividers, gallery/cap pieces, empty magenta lantern and code-assembled 4 × 1 / 3 × 2 proof previews. The legacy `npm run sprites` cleanup route is not valid for these masters. Do not start room items until their base/upgraded bay plan fits all 13 bays.
+3. The evidence-based beard/hand audit classifies every manifest frame and pins `keeper_clear_snow` as the canonical fuller stepped beard. A landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It remains fail-closed for unavailable evidence: 163 side-on standing/sitting sheets are inventoried, eight zero-difference reference self-comparisons match, and 994 different-pose frames—including `keeper_darts` 3–6—are non-comparable because no approved beard masks, facial landmarks or hand-depth/component ownership evidence exists. Frank reviewed Darts 3–6 visually on 11 October and accepted the beards with no amendment required; no beard draft is active or promotable. Next, use GPT-5.6 Sol to establish comparison inputs for any future claim, then run the later frame-isolation and released-prop audits.
+4. Preserve the historical neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`, but do not continue it while the new Keeper canon gate is unresolved. After Frank-approved references populate `/public/art/keeper/canon/`, a reviewed migration must decide whether each Prime-era repair remains applicable before any draft is created. Frank's immutable second visual review recorded 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed; the current reviewer has 97 Happy and 67 Awaiting after Frank selected the Darts draft as his preferred candidate.
    The complete internally consistent V11 artist-smock family is now preserved
    as seven active authored-animation comparisons plus eight deterministic
    technical neutral/bridge assets. Its front-turn final frame is byte-identical
@@ -414,12 +433,12 @@ implemented and no artwork change is authorised by it.
    cue, play two strokes, release it, return to exact neutral, turn and walk
    left. The production eight-frame snooker strip remains unchanged pending
    Frank's separate platform verdict.
-3. Art for the mission floors (aquarium, weather station, hidden lair), their furniture, the lift and a floor-arrival effect (Codex; hooks in docs/FOR_CODEX.md).
-4. Tier art for upgrades (Codex; list in docs/FOR_CODEX.md). Typed commands for upgrading ("upgrade the TV") are not in yet; upgrades are bought from the tap menu.
-5. Mini games: fishing, cooking, telescope spotting.
-6. Day/night palette, non-skippable ~30s night recap.
-7. Replace the temporary on-island shop fallback with an early off-island unlock and boat travel through an indoor water-filled boathouse/dry dock. Boat tiers: rowing boat, tug, speedboat. The external shop never breaks; the keeper's boathouse, jetty and boat may.
-8. Workshop floor that reduces breakdown pressure; tune its effect only after Ralph's playtesting shows whether faults are fun or irritating.
+5. Art for the mission floors (aquarium, weather station, hidden lair), their furniture, the lift and a floor-arrival effect (Codex; hooks in docs/FOR_CODEX.md).
+6. Tier art for upgrades (Codex; list in docs/FOR_CODEX.md). Typed commands for upgrading ("upgrade the TV") are not in yet; upgrades are bought from the tap menu.
+7. Mini games: fishing, cooking, telescope spotting.
+8. Day/night palette, non-skippable ~30s night recap.
+9. Replace the temporary on-island shop fallback with an early off-island unlock and boat travel through an indoor water-filled boathouse/dry dock. Boat tiers: rowing boat, tug, speedboat. The external shop never breaks; the keeper's boathouse, jetty and boat may.
+10. Workshop floor that reduces breakdown pressure; tune its effect only after Ralph's playtesting shows whether faults are fun or irritating.
 
 ## Housekeeping for Frank
 - Change the grown-ups PIN from 1234.

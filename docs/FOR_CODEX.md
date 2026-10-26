@@ -1,5 +1,11 @@
 # Notes for Codex from Claude (integration hooks)
 
+> **Current graphics authority (26 October 2026):** Read `AGENTS.md` and
+> `docs/CODEX_BRIEF.md` before any art work. Their non-pixel, straight-sided,
+> 1536 × 512 module, magenta-key, Keeper and item rules supersede conflicting
+> historical guidance below. Existing approved bytes remain immutable pending
+> an explicit migration.
+
 ## Bubble stories platform (20 Oct 2026)
 
 Frank has moved bubble-story motion to Claude; Codex keeps the pictures,
@@ -193,9 +199,11 @@ is available in the Bubble creation tool and protected as a minimum by
 `data/activity-stories/catalogue-closure-2026-10-22.json` and
 `npm run verify:activity-stories`.
 
-## Kitchen art authority (24 Oct 2026)
+## Installed legacy kitchen art authority (24 Oct 2026)
 
-The only continuing kitchen art authority is Warm Ligne-Claire Family V4.
+Warm Ligne-Claire Family V4 remains the exact authority for the installed
+legacy kitchen and its reversible runtime boundary. It does not govern new
+module/item authoring under the superseding 26 October brief.
 Read `docs/KITCHEN_ASSET_AUTHORITY.md`,
 `data/kitchen_asset_contract_v1.json` and
 `data/kitchen_room_grid_contract_v2.json` before kitchen work. The exact
@@ -807,16 +815,15 @@ The room-fit check you asked for, using catalogue frame widths (only the TV has 
 
 So the grid costs 1.5–19.5 lp of room width. The living room, bedroom, weather station and the professional-oven kitchen exceed 110 lp even without a grid. Frank is being asked about room widths (D5). Details are in plan section 3.5 and Appendix B. If Frank agrees, my pure route compiler can export exact frame and root tables for your gate 4 and 5 pages.
 
-## Current standard-room geometry (agreed 14 Oct 2026)
+## Historical standard-room geometry (agreed 14 Oct; superseded 26 Oct 2026)
 
-Frank approved a 172 × 56 logical-pixel initial standard room: 46 px clear at
-the stair-side doorway plus twelve proposed 10.5 px furnishing/interaction
-intervals. Global width upgrades add 21 px/two intervals at the far wall while
-all existing coordinates stay fixed. The dimensioned Claude handoff and exact
-drag/drop contract are in
-`docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`. The 110 × 56 studio and
-110 × 35/105 × 35 delivered assets remain the current implementation and
-historical provenance until that migration is built.
+Frank approved a 172 × 56 logical-pixel proposal on 14 October. Its dimensioned
+handoff is hash-pinned evidence in
+`docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md` and must not be edited. The
+26 October brief supersedes it for new art with one exact 1536 × 512 master,
+an x=32–256 empty walk-in zone and thirteen 96 px bays. The 110 × 56 Studio and
+110 × 35/105 × 35 delivered assets remain the current runtime implementation;
+no geometry is implicitly scaled during migration.
 
 ## Historical reply: door-centred alignment adopted, then superseded (14 Oct 2026)
 
@@ -845,7 +852,9 @@ The studio now checks every handover between clips, pixel for pixel (`docs/RECIP
 - **Poses need held props.** `keeper_cake_turn_right` is registered as starting `standing-side-right`, but it starts back to the camera holding the cake. Please register poses with a `+prop` suffix (`standing-back+cake`), so empty-handed turns can't bridge prop moments.
 - `keeper_turn_right_front` has no poses at all.
 - **Pyjamas have no turn to face left**, so after getting out of bed he can't turn to walk back to the door.
-- Doors: the placeholder door leaf is now 24 px (your minimum opening), and he walks behind it without stopping, changing costume while it covers him. **Room layouts must keep 46 px clear at each door** (Frank's rule). That leaves 64 px in the current 110 px studio and 126 px/twelve proposed locomotion intervals in the agreed 172 px target.
+- Doors: the legacy placeholder leaf is 24 px, and he walks behind it without
+  stopping while it covers him. The current Studio still enforces its 46 px
+  clearance; new room art instead keeps the full x=32–256 walk-in zone empty.
 
 ## Background elements brief (10 Oct 2026)
 
@@ -865,7 +874,9 @@ Frank wants ambient sound (a gentle seascape and changing weather) planned as pa
 - each backdrop layer with what changes per weather and time of day;
 - the weather overlays (rain, snow, fog, lightning, heat), masked out of the cutaway rooms;
 - `weather` and `sfxCues` on backdrop sidecars;
-- the great lamp's start-up animation: about 3 s of warm-up glow, then the lens turning up to speed, then the beam. Hand-drawn turning frames, the beam locked to the lens, beam strength showing the lamp's shine, and a version per upgrade tier.
+- the great lamp's start-up animation: about 3 s of warm-up glow, then the lens
+  turning up to speed, then the beam. The lens, glow and beam are separate
+  runtime assets; never bake them into the empty foreground `lantern.png`.
 
 Audio files come from Frank, not from you.
 
@@ -884,7 +895,9 @@ Current authority is
 `docs/DOORS_STAIRS_AND_COSTUMES.md` remains historical wherever it conflicts.
 What the current design asks of you:
 
-- **Floors are 56 px floorboards to ceiling.** Set the floor/ceiling thickness, then that band height is fixed for every standard floor. Redraw the three room plates and the shell at the new height.
+- **New floors use the exact 1536 × 512 module.** Its top ceiling, bottom slab
+  and side walls are each 32 px. Derive every room shell from one master; do not
+  redraw or scale the three legacy room plates into it.
 - **No visible stairs or lift.** A narrow concealed circulation slot runs behind one entrance per floor. Closed, only the slim side jamb is visible. The flat opaque panel appears only while opening toward the player and must fully hide the Keeper, including hats.
 - **Lift upgrade.** The same entrance gains a subtly more engineered jamb; do not draw a lift car, shaft or separate lift module. The Keeper may change costume inside the unseen lift.
 - **Bedroom floor:** en suite only through the bedroom; it is the sole additional ordinary room door. The toilet may still use its own privacy cubicle when required.
@@ -907,17 +920,32 @@ The fixed mission chain is gone. Logic follows the locked layout in `docs/EXPANS
 - Preview: `?floors=all` shows every floor and the lift.
 - Underground: day 1 shows nothing below the ground. The view grows downward only once the lair arrives.
 
-Authoritative progression detail is in `HANDOFF_TO_CLAUDE.md` under **“Locked rule: future floor progression is non-linear”**. Geometry and art must never force mission order: all standard floors share the active width tier, the lamp room stays topmost, and stripes come from world Y. The agreed replacement initial band is 172 × 56; the delivered 110 × 35 assets are historical.
+Authoritative progression detail is in `HANDOFF_TO_CLAUDE.md` under **“Locked
+rule: future floor progression is non-linear”**. Geometry and art must never
+force mission order: standard floors use equal master-derived modules, the
+lamp room stays topmost, and stripes continue through the assembled shell. The
+former 110 × 35 and 172 × 56 systems are runtime/history, not new-art targets.
 
 The consolidated design backlog—including floor reveal, moving bedroom/diving board, weather, pool, boiler, transport, solar and proposed rooms—is `docs/EXPANSION_DESIGN.md`.
 
-## Upgrade tiers: art request (8 Oct 2026)
+## Upgrade tiers: gameplay inventory and superseded art request (8 Oct 2026)
 
-Almost every object gets three tiers: Basic (what he starts with), Middle and Top. **The list is `data/upgrades.csv`**: one row per object per tier, with its name, price, what it does, the sprite name and three art-status columns. Frank edits names, prices and perks in his tracker page; Claude syncs that page and the CSV both ways. Please draw from the CSV and, as each sprite lands, set its `normal` / `working` / `broken` cell to `done` (`n/a` where a state is not needed, as for the door's working state). Do not change the `object`, `tier` or `sprite` columns without telling Claude: the game reads them.
+Almost every object gets three tiers: Basic (what he starts with), Middle and
+Top. **The gameplay list is `data/upgrades.csv`**: one row per object per tier,
+with its name, price, effect and legacy sprite/status fields. Keep those stable
+for the current runtime, but do not use its three-state columns as the new art
+contract. Before drawing any room, list every base and upgraded item's 96/192
+px bay width and prove the fully upgraded layout fits 13 bays. New item output
+is one folder with `master.png`, only the minimal differing state PNGs and
+`item.json`; broken, dirty and alert visuals are engine overlays. Do not change
+the `object`, `tier` or `sprite` columns without telling Claude: the game reads
+them.
 
 - Columns: `room, object, tier, name, price, perk, sprite, normal, working, broken, notes`.
-- States in the CSV map to the runtime names: normal = `standard`, working = `on`, broken = `broken`.
-- File names: `<sprite>_<state>_f<frames>.png`, e.g. `obj_cooker_t2_on_f4.png`. Tier 1 has no tier suffix. Same footprint and bottom-centre anchor as tier 1 unless you tell me otherwise.
+- The CSV's normal/working/broken mapping describes the legacy runtime only.
+  Never create a baked broken item for new art.
+- New-art filenames and anchors come from each `item.json`; the legacy
+  `<sprite>_<state>_f<frames>.png` pattern remains only for installed sprites.
 - Runtime lookup: `obj_<id>_t<n>_<state>`, `obj_<id>_t<n>`, then each lower tier, then tier 1. Until a tier sprite exists the game shows the lower tier's art with a small `T2`/`T3` text tag.
 - Preview: `?tiers=3` shows every object at its top tier; `?tiers=tv:3,bed:2` picks them. Works with `?broken=`.
 - Each object's `<g>` carries `data-tier` and a `tier-<n>` class. No upgrade-arrival effect yet; say if you want one (for example reusing `fx_floor_arrival_smoke`).

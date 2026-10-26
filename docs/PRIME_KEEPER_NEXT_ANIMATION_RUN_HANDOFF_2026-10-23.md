@@ -1,10 +1,18 @@
 # Prime Keeper: next animation run handoff
 
+> **Paused by the 26 October 2026 Keeper migration gate:** This handoff remains
+> exact evidence for the installed Prime bank, but it no longer authorises a
+> new animation-art run. The current absolute brief requires Frank-approved
+> canon references at `/public/art/keeper/canon/`; that target is not yet
+> populated and its stripe, palette and scale contract conflicts with Prime.
+> Do not generate, redraw or promote a new Keeper pose until the target canon
+> is installed. Preserve every Prime authority and approved byte unchanged.
+
 Checkpoint: 23 October 2026
 
-Purpose: the authoritative starting point for the next standard-uniform Prime
-Keeper animation run. A fresh Codex task must be able to continue from this
-file without reconstructing decisions from chat history.
+Historical purpose: this was the authoritative starting point for the next
+standard-uniform Prime Keeper animation run. It now preserves that checkpoint
+without reopening the paused work.
 
 ## Read these first
 

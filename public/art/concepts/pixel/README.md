@@ -1,15 +1,20 @@
 # Lighthouse pixel-style comparison V4
 
-Status: review-only style experiment; awaiting Frank's verdict. Nothing in
-this package is approved canon, runtime art or production art. Its review page
-may be published without promoting a candidate into the game.
+Status: rejected historical style experiment. Frank rejected both pixel
+densities as too blocky when zoomed in. Nothing in this package is approved
+canon, runtime art or production art.
 
-V4 compares two authored pixel densities with one deliberately weak code-only
+V4 compared two authored pixel densities with one deliberately weak code-only
 control. It responds to Frank's direction that the tower must immediately read
 as a classic lighthouse: alternating deep-red and warm-white masonry, a slight
 continuous exterior taper around fixed rectangular rooms, a broader
 gallery/lantern silhouette and a believable but completely invisible
 stair-sized circulation pocket between the shell and the left room jamb.
+
+The later authority in `docs/CODEX_BRIEF.md` requires non-pixel illustration
+and a straight-sided tower with no taper. It also restores the en-suite inside
+the much wider 1536 × 512 bedroom module. Those rules supersede every V4
+production implication; this package remains only reproducible evidence.
 
 The cutaway remains a flat, straight-on doll's house. Rooms have no inset depth
 or visible side planes. No stair, landing, shaft or lift car appears. Every
@@ -51,10 +56,14 @@ It is converted in code to the candidate's grid, palette and hard alpha.
 
 ## Files and packaging
 
-- `manifest-v4.json` is the current machine-readable authority for source/output
-  hashes, exact geometry, palette counts, Keeper placement and known breaks.
+- `manifest-v4.json` is the immutable pre-verdict machine-readable record of
+  source/output hashes, exact geometry, palette counts, Keeper placement and
+  known breaks. Its review-only status is intentionally unchanged; the later
+  rejection is recorded in the current authority documents, not back-written
+  into the historical manifest.
 - `PROMPTS-v2.md` records the generated-source prompt chain shared by V2–V4.
-- `/keeper-review/lighthouse-pixel-style-v4/` is the current same-size visual review.
+- `/keeper-review/lighthouse-pixel-style-v4/` is the immutable historical
+  review snapshot. Its frozen “awaiting verdict” text predates the rejection.
 - The immutable V2/V3 reviews and their manifests remain as superseded evidence.
   V2's nominal outdoor plots were partly covered by the tapered shell. V3 fixed
   those widths but retained a visually heavy stair jamb and a cramped bedroom

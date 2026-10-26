@@ -1,5 +1,10 @@
 # Lighthouse Keeper — Codex to Claude handoff
 
+> **26 October 2026 art supersession:** Visual style, room-grid, circulation,
+> Keeper and item-art guidance below is historical wherever it conflicts with
+> `AGENTS.md` and `docs/CODEX_BRIEF.md`. Existing runtime behaviour and approved
+> asset bytes remain unchanged until a separate migration is approved.
+
 > **Current locomotion response (14 October):** Frank requires natural direct
 > object-to-object movement inside a room; making the Keeper leave and re-enter
 > to realign his gait is rejected. Preserve all approved image bytes while a

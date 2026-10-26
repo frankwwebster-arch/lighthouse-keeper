@@ -1,6 +1,12 @@
 # Lighthouse Keeper production art style guide
 
-This guide is the working visual contract for new assets. It is based on the
+> **Superseded for new art on 26 October 2026:** This Pixel guide is retained
+> as provenance for installed and reviewed legacy assets. The current graphics
+> authority is `../CODEX_BRIEF.md`: bright clean non-pixel 2D illustration,
+> strict flat orthographic elevation, exact master-derived modules and the new
+> item-state contract. Do not overwrite approved legacy bytes while migrating.
+
+This guide was the working visual contract for legacy Pixel assets. It is based on the
 approved original CRT television, the approved inset lantern cap, the full
 lighthouse reference and the supplied BBC NEWS reference as adapted into the
 `B B SEA` broadcast. New art should be checked against the finished TV at both
@@ -8,7 +14,7 @@ logical size and 4× review size before it is proposed for the game.
 
 ## The target
 
-The game is a warm, hand-authored pixel illustration with crisp construction,
+The legacy game art is a warm, hand-authored pixel illustration with crisp construction,
 recognisable silhouettes and a little human imperfection. It is detailed at
 the source-pixel level, but never noisy. Objects should look deliberately
 drawn rather than like a generic pixel-art filter was applied to a photograph.

@@ -1,5 +1,13 @@
 # Doors, stairway, costumes and seamless animation
 
+> **Superseded for ordinary circulation on 26 October 2026:** This document is
+> preserved as historical costume, animation and approval evidence. Do not use
+> its visible stair/ladder/lift architecture, 56/172 px room geometry,
+> standard-clothes-on-stairs route or multiple standard room doors as current
+> design. `docs/CODEX_BRIEF.md` owns new room/door geometry; hidden travel,
+> occlusion and audio are in
+> `docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`.
+
 Date: 9 October 2026; door lifecycle revised 16 October 2026
 Status: agreed design. Frank answered the original open decisions on 9 October 2026 (section 9) and replaced the former stay-open door lifecycle with the two-way rule on 16 October 2026. The remaining layout choices are Codex's. The fixed-scale visual transition review described in section 7 is now built; the door/stair/costume-routing gameplay and automated pose contracts are not. Written for Frank, Codex and later Claude sessions. Decisions Frank has agreed are marked **Agreed**.
 

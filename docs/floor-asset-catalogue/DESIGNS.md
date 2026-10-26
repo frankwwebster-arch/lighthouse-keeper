@@ -1,8 +1,14 @@
 # Floor and facility design review
 
+> **26 October 2026 art supersession:** Product ideas and recorded approvals
+> below remain evidence, but all new visual style, room-grid, door, window,
+> Keeper and item-art rules come from `../CODEX_BRIEF.md` and `AGENTS.md`.
+> Pixel dimensions, the 172 × 56 proposal and baked broken-state art are
+> historical compatibility data, not future authoring instructions.
+
 Base: `cdb109b2904ce0834fa559760e5d34e1ddc8f4f2`. 71 discussed spaces/variants, including retired garage. All non-runtime numbers are proposals. Frank selected sharp detailed artwork and the original CRT style; coarse exports, the full-width lamp room and stretched TV are rejected. The top lantern cap is inset (95x35 logical), with a wraparound walkway, rather than an ordinary 110-wide floor. Density-4 source images preserve footprints and TV proportions. ON is required for operating devices; passive furniture uses standard art plus actor-layer occupied/seated poses. No progression code changed.
 
-Historical catalogue bands: 110 × 35. Plates: 105 × 35. The agreed replacement standard-room target is 172 × 56 (`../KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`); these catalogue dimensions remain provenance until the migration is implemented. Kitchen base, lamp top, bedroom beneath lamp, other standard floors saved random middle position. Nonstandard previews show their separate proposed footprints. No fixed-height dependency.
+Historical catalogue bands: 110 × 35. Plates: 105 × 35. The later 172 × 56 replacement proposal (`../KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`) is also superseded. Both remain provenance; the current new-art target is the exact 1536 × 512 master grid in `../CODEX_BRIEF.md`. Kitchen base, lamp top, bedroom beneath lamp, other standard floors saved random middle position. Nonstandard previews show their separate historical proposed footprints. No fixed-height dependency.
 
 ## Decision register
 

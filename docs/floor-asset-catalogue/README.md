@@ -1,5 +1,12 @@
 # Frank’s floor and asset review
 
+> **26 October 2026 art supersession:** This review remains historical product,
+> runtime and approval evidence. Its pixel studio, dimensions, item-state art
+> and visual-style instructions do not govern new graphics. Use
+> `../CODEX_BRIEF.md` and the repository `AGENTS.md` for the current non-pixel
+> 1536 × 512 module and 96/192 px item contracts. Existing approved bytes and
+> annotations remain unchanged.
+
 Open **[review.html](review.html)**. This self-contained review canvas works without a server or network connection. It contains 71 documented spaces/variants, searchable design cards and diagrams, a 1,579-row CSV-style catalogue, mechanical tier proposals, required states, production thumbnails and annotation tools.
 
 Native Codex Canvas publishing is unavailable in this session. This is a durable standalone HTML review artifact, not a claimed native Canvas publication. It can be imported or published there when that capability is available.
@@ -42,15 +49,15 @@ shopping and boat previews cover the newer actions. TV has separate
 `keeper-watch-tv-right-preview.gif` and `keeper-watch-tv-left-preview.gif`
 reviews from one mirrored rear-three-quarter strip, with the seat offset far
 enough to keep the screen visible. See `../KEEPER_ANIMATIONS.md` for the index and
-`../KEEPER_ASSET_SCALE.md` for authoritative object-alignment measurements.
+`../KEEPER_ASSET_SCALE.md` for approved legacy object-alignment measurements.
 
 ## Art corrections recorded from this review
 
 Frank’s later directions supersede earlier coarse one-source-pixel exports:
 
 1. The original `style_b_pixel/obj_tv_{standard,on,broken}_ai.png` images establish the correct CRT style. The original casing is now reused as the production master, preserving aspect ratio, feet, aerial and cabinet across every state. No wide-screen stretching.
-2. The lamp room is an **inset glazed iron lantern chamber with a wraparound outside walkway** and a visible centred Fresnel optic, lamp and machinery base behind clear glazing. It is not a full-width timber domestic room. The existing renderer’s 95 × 35 logical glass footprint and the catalogue's 110 × 35 / 105 × 35 standard-floor previews remain historical references. The agreed replacement standard room is 172 × 56; see `../KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`. Lamp stays topmost; bedroom stays directly beneath it.
-3. Operating devices at every upgrade level require **standard + ON + broken** where fault behaviour applies. Tables, chairs and passive furniture do not need artificial ON frames; they use standard art plus an actor-layer occupied/seated pose when useful. The shop is proprietor-owned and has no keeper-repair broken state. Decorative noninteractive dressing does not acquire arbitrary upgrades.
+2. In this historical batch the lamp room was an **inset glazed iron lantern chamber with a wraparound outside walkway** and a visible centred Fresnel optic, lamp and machinery base. Current foreground art instead uses the empty magenta-glass lamp room in `../CODEX_BRIEF.md`; the lens is a separate later asset. The 95 × 35, 110 × 35, 105 × 35 and 172 × 56 proposals are all historical. Lamp stays topmost; bedroom stays directly beneath it.
+3. This historical batch used **standard + ON + broken** for operating devices. New item art never bakes broken, dirty or alert states into the item; the engine owns those overlays. Tables, chairs and passive furniture still do not need artificial ON frames. The shop is proprietor-owned and has no keeper-repair fault state. Decorative noninteractive dressing does not acquire arbitrary upgrades.
 4. Sharp detail is retained with **density 4**: a 28 × 23 logical TV uses a 112 × 92 source frame; its display footprint stays 112 × 92 CSS px at the existing logical 4× scale. A 95 × 35 lamp surround uses 380 × 140 source pixels. No fractional object positioning or raster rotation is introduced. Legacy density-1 deliveries continue unchanged.
 5. Coarse exports and the full-width lamp study are rejected and retained outside `art/raw/`. Their presence is provenance, never approval or runtime readiness.
 

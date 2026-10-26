@@ -1,5 +1,12 @@
 # Recipes and the recipe studio
 
+> **26 October 2026 geometry boundary:** The Studio coordinates below describe
+> the current legacy runtime only. The former 172 × 56 proposal is superseded.
+> New room/item art follows the exact 1536 × 512 master, x=32–256 empty
+> walk-in zone and thirteen 96 px bays in `docs/CODEX_BRIEF.md`. Do not scale
+> either coordinate system into the other without a separately reviewed
+> runtime migration.
+
 Date: 10 October 2026. Written for Codex and later Claude sessions; Frank uses the studio itself.
 
 A **recipe** is one activity written as data: the room, its objects, where he stands, the outfit he starts in, and the steps he goes through. For example: enter by the door, walk to the armchair, sit, nap, stand up, leave. A **macro** is a reusable run of steps, such as entering or leaving a room. A recipe uses a macro by name, so improving the macro improves every recipe that uses it.
@@ -18,9 +25,17 @@ Code: `src/studio/recipe.ts` (format, compiler and checks; pure and tested), `sr
 
 All units are the art's logical pixels and real seconds.
 
-- The current studio implementation is **110 wide and 56 tall**. The agreed replacement standard-room target is **172 wide and 56 tall**, with implementation and migration still pending; see `KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`. x = 0 is the room's circulation-side wall. The current `stairs` area at x from −38 to 0 is a historical authoring proxy; production circulation is an unseen vertical slot behind the entrance, not a visible stair room. See `HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`. Floor y = 0; heights count upwards.
+- The current Studio implementation is **110 wide and 56 tall**. The former
+  172 × 56 target in `KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md` is preserved
+  as hash-pinned historical movement evidence, not the next production shell.
+  x = 0 is the legacy room's circulation-side wall. The current `stairs` area
+  at x from −38 to 0 is an authoring proxy; production circulation is unseen
+  behind the left-wall door. Floor y = 0; heights count upwards.
 - The door is in the wall at x = 0. Until Codex's door art fixes the numbers, `DOOR` in `recipe.ts` says: a 4 px jamb on the stairway side, and a **24 px** leaf (Codex's minimum opening) that opens into the room towards the camera, 44 px tall. That is wide enough to hide all of him. Change those constants when the real door exists; every recipe follows.
-- **Every door has a clear area** (Frank's rule): no object may stand in the first `DOOR_CLEAR` = 46 px of the room at each door (the open leaf plus room for him to stand clear of it). The studio shades it and flags any object, or any variant of one, that intrudes. The current 110 px implementation leaves 64 px; the agreed 172 px target leaves 126 px, exactly twelve proposed 10.5 px locomotion intervals (less where an inner door adds another exclusion).
+- **Every legacy Studio door has a clear area**: no object may stand in
+  `DOOR_CLEAR` = 46 legacy px at a door. The Studio shades it and flags any
+  object or variant that intrudes. New 1536 × 512 art instead keeps the entire
+  x=32–256 walk-in zone empty; item layout begins at the thirteen-bay zone.
 - Named places he can walk to: `stairs` (the legacy hidden-side proxy at x = −27), `doorOut` and `doorIn` (just clear of the doorway on each side), `innerIn` and `innerOut` (for the bedroom's en-suite door on the right), `action` (the action point), or any number.
 - `KEEPER_HALF` = 11 is his standing half-width, used where a frame's own pixels aren't known.
 

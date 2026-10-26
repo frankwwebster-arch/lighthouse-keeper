@@ -1,5 +1,13 @@
 # Keeper animation handoff: review, scale and seamless transitions
 
+> **Paused for new art on 26 October 2026:** This file remains installed-Prime
+> animation and route evidence. It does not authorise another Keeper draft.
+> The current absolute brief requires Frank-approved references at
+> `/public/art/keeper/canon/`, which is not yet populated and conflicts with
+> Prime's stripe, palette and scale contract. Preserve all Prime bytes; do not
+> generate, redraw or promote a Keeper pose until that migration gate is
+> satisfied. Hidden ordinary travel also requires no stair animation.
+
 > **17 October 2026 normalisation authority:** before creating or assessing
 > another action draft, read
 > `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md`.
@@ -19,8 +27,8 @@
 > `docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`.
 
 **Checkpoint:** 17 October 2026
-**Purpose:** this is the restart document for the keeper-animation work. A new
-Codex task should be able to continue from here without relying on the old chat.
+**Historical purpose:** this was the restart document for Prime animation work.
+It now preserves that checkpoint without reopening the paused art queue.
 
 ## Approved side-right sit/stand authority V6 — 17 October 2026
 

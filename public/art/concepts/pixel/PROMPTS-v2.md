@@ -1,5 +1,8 @@
 # Lighthouse pixel-style comparison V2–V4 — generated-source prompts
 
+Status: rejected historical provenance. `docs/CODEX_BRIEF.md` now requires
+non-pixel production art and a straight-sided tower.
+
 These are normalized provenance records for the generated source passes. They
 record the art direction and corrections that materially affected the result;
 the deterministic builders, not the image model, own the final native grids,

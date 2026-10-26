@@ -2,29 +2,27 @@
 
 A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by typing or tapping objects, then keep him happy through the day. The playable cutaway currently has a kitchen, living room, bedroom with en suite, and lamp room.
 
-The generated whole-island Day 1 and fully expanded foreground drafts in
-`public/art/reference/` are rejected historical evidence, not current visual
-direction or runtime art. The lighthouse should recover the original concept's
-warm tapered exterior, rich distant-island atmosphere and magical
-island-splitting expansion. Ordinary stairs and the lift remain completely
-off-stage behind one circulation entrance per floor; the bedroom adds an
-en-suite only in a layout wide enough to house it. At one-module width the
-en-suite partition and extra door are omitted. Every closed stair entrance is
-identical: only a hairline edge and tiny handle, with no recess or perspective
-cue. The current door, hidden-travel and replaceable
+The current graphics authority is
+[`docs/CODEX_BRIEF.md`](docs/CODEX_BRIEF.md): bright, clean non-pixel 2D
+illustration; a completely flat orthographic side elevation; a straight-sided
+red-and-white tower with no taper; exact 1536 × 512 room modules derived from
+one master; and pure `#FF00FF` only for glass, sky, sea and other see-through
+areas. Codex produces all new game graphics; Makko is no longer used. Existing
+approved/runtime bytes remain unchanged until a separate migration is approved.
+
+Ordinary stairs and the lift remain off-stage. The leftmost module on every
+floor has the same plain wooden door in its left wall and an empty x=32–256
+walk-in zone. At the new production width the top-floor bedroom includes its
+en-suite partition near the right end. The hidden-travel and replaceable
 `footsteps_stone_stairwell` sound-placeholder contract is
 [`docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`](docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md).
-Measurements and rejection reasons for the old pair remain in
-[`docs/LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md`](docs/LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md).
 
-A separate V4 pixel-style comparison now tests generated-and-enforced 16-bit
-and 8-bit treatments against a code-only conversion of that rejected Day 1
-draft. The candidates restore a classic red-and-warm-white tapered shell and
-leave a believable but invisible circulation pocket behind identical minimal
-door marks on every floor; the one-module bedroom has no en-suite partition.
-The control deliberately preserves its two-floor, visible-stair and
-non-modular failures. This package is awaiting review and changes no canon or
-runtime art. See
+The generated whole-island drafts and the 8-bit/16-bit V2–V4 comparison are
+rejected historical evidence. Pixel art was too blocky when zoomed in, and the
+experimental tapered tower is not the production geometry. Their immutable
+measurements and review evidence remain in
+[`docs/LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md`](docs/LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md)
+and
 [`docs/LIGHTHOUSE_PIXEL_STYLE_TEST_2026-10-26.md`](docs/LIGHTHOUSE_PIXEL_STYLE_TEST_2026-10-26.md).
 
 The current Prime animation review is `/prime-keeper-animation-drafts`
@@ -253,35 +251,39 @@ the row was opaque; it did not prove that the pelvis ended there. It is not a
 chair-height authority. Side-right V6 now measures the actual first transparent
 support row beneath the pelvis at y=32.25, or 7.75 lp above the floor. The
 Keeper pixels remain byte-identical to V1. Stair Descent V2 is approved with its
-slight overstride accepted; the future finished staircase must retain its
-locked geometry while adding two newel posts, a foreground balustrade and a
-continuous rail. The approval record is
+slight overstride accepted. Its former finished-staircase requirement (two
+newel posts, foreground balustrade and continuous rail) is preserved as
+historical animation/construction evidence only; ordinary production
+circulation is now hidden and no staircase is drawn. The approval record is
 [`docs/review/keeper-prime-stair-descent-v2-approval-2026-10-16.json`](docs/review/keeper-prime-stair-descent-v2-approval-2026-10-16.json).
 
-The current runtime still uses the first-generation room plates. The agreed
-replacement standard-room geometry is **172 × 56 logical pixels**, with a
-46-pixel doorway exclusion and twelve 10.5-pixel furnishing/interaction
-intervals. Drag/drop, expansion and pacing requirements are in
+The current runtime still uses the first-generation room plates. The former
+**172 × 56 logical-pixel** replacement proposal, with its 46-pixel doorway
+exclusion and twelve 10.5-pixel intervals, is also superseded and must not be
+implemented as the new room shell. It remains useful registration evidence in
 [`docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`](docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md);
-implementation is pending and must not rescale the historical room art.
+new art uses the exact 1536 × 512 master grid in `docs/CODEX_BRIEF.md`. Any
+runtime migration must preserve approved historical bytes and receive a
+separate review.
 
-A new reversible movement-foundation batch is ready for review, but is not
-approved or wired into the game. `/keeper-review/keeper-root-motion-gate-v2/`
-plainly compares the exact approved stop/walk images under the current 76-ku
-and proposed 84-ku stop-to-stop schedules. The separate
-`/keeper-review/keeper-vertical-circulation-v2/` construction lab establishes
-a proposed 60-lp finished-floor pitch (56 clear + 4 shared deck), 16-step
-alternating flights, a straight ladder and lift entry/exit routes before any
-finished animation art is drawn. Its 4× pane is an authoring ruler, not a fixed
-device-size promise: the live 1200 × 760 scene responsively fits its viewport.
-The V1 pages remain immutable historical evidence. Technical details are in
+The reversible movement-foundation and vertical-circulation batches are now
+immutable historical evidence. `/keeper-review/keeper-root-motion-gate-v2/`
+compares the exact approved stop/walk images under the old 76-ku and proposed
+84-ku schedules; `/keeper-review/keeper-vertical-circulation-v2/` records the
+superseded 60-lp floor, visible flight, ladder and lift-route construction
+study. They are not pending production art: the current brief needs no stair
+animation or visible circulation geometry, and new Keeper work is gated on the
+missing target canon. Technical details remain hash-pinned in
 [`docs/CODEX_TO_CLAUDE_VERTICAL_CIRCULATION_2026-10-14.md`](docs/CODEX_TO_CLAUDE_VERTICAL_CIRCULATION_2026-10-14.md).
-The kitchen has one consolidated approved art and geometry authority: the
-Warm Ligne-Claire Family V4 package dated 24 October 2026. It provides six
+The installed legacy kitchen has one consolidated approved art and geometry
+authority: the Warm Ligne-Claire Family V4 package dated 24 October 2026. It provides six
 equal native 228-pixel source bays, legacy 84 × 74 compatibility bodies,
 Off/On/Broken states and the two approved light-only Broken animations. Its high-resolution source,
 machine-readable geometry/state contract and verification commands are listed
 in [`docs/KITCHEN_ASSET_AUTHORITY.md`](docs/KITCHEN_ASSET_AUTHORITY.md).
+These bytes and rollback contracts remain exact, but they do not define new
+room or item art: future items use 96/192 px bays, minimal master-derived states
+and engine-owned fault overlays under `docs/CODEX_BRIEF.md`.
 
 This approval supersedes every earlier kitchen art and review candidate. The
 158 earlier formal room/furniture draft packages and their duplicate source, raw, review and
@@ -466,11 +468,10 @@ timeline, timing, root positions, stair contacts, body pixels outside the
 masks, palette and cell geometry are unchanged. V18 is review-only and has not
 been promoted into the runtime or production bank.
 
-The later staircase scenery must use two newel posts—one at the lower entrance
-and one at the upper landing—with a foreground balustrade and continuous
-handrail between them. That foreground architecture may naturally cover parts
-of the Keeper's boots and lower legs, but it may not change the approved
-fourteen-riser contact geometry.
+The former staircase-scenery contract used two newel posts, a foreground
+balustrade and a continuous handrail without changing the fourteen-riser
+contact geometry. It remains immutable review evidence, not a production-art
+instruction: the current lighthouse draws no stairs, landings or shaft.
 
 The approved reversible stair-transition authority is
 `/keeper-review/keeper-prime-stair-transitions-v6/`. It composes exact approved
@@ -588,34 +589,36 @@ perspective gradient or widening; only the handle protruded. Its two-way,
 open-away behaviour is superseded for player-facing circulation doors by
 `docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`: those panels open only
 toward the player as flat foreground occluders. The historical rule is pinned in
-`docs/review/keeper-two-way-door-contract-2026-10-16.json`. V6 awaits door-only
-visual approval only as preserved evidence and changes no Final, runtime or
-production art.
+`docs/review/keeper-two-way-door-contract-2026-10-16.json`. V6 is frozen
+unapproved evidence and changes no Final, runtime or production art.
 
-This means a complete upward room-to-room flow is now reviewable for both
-stairs (approved Stair Transition V6) and ladder (approved V5 Keeper motion;
-V6 door presentation awaiting review). Stair Descent V1 is retained as rejected
-provenance: reversing and mirroring the ascent made the visible left leg remain
-airborne while the right repeatedly took each step. Frank approved its
-replacement Stair Descent V2 at
+Historically, those assets made a complete visible upward flow reviewable for
+stairs and ladder. That route is no longer a production requirement. Stair
+Descent V1 is retained as rejected provenance: reversing and mirroring the
+ascent made the visible left leg remain airborne while the right repeatedly
+took each step. Frank approved its replacement Stair Descent V2 at
 `/keeper-review/keeper-prime-stair-descent-v2/`, accepting the slight visible
 overstride. V2 adds four descent-specific poses and repeats the explicit gait
 RIGHT contact → LEFT passing → LEFT contact → RIGHT passing, giving exactly
-seven contacts per leg over the unchanged 14-riser flight. The remaining core
-transition families are: the six-view seated endpoint gate and subsequent
-stand↔sit joins; downward ladder travel and dismount/exit; complete Prime lift
-call/enter and lift-exit/walk routes; and any asymmetric left/right door or
-interaction reach that cannot be certified as a safe mirror.
-The shared open-door room emergence/return handoff also needs a deterministic
-route, but reuses standard walking and occlusion rather than new costume art.
+seven contacts per leg over the unchanged 14-riser flight. The former remaining
+transition list included seated joins, downward ladder travel and complete
+Prime lift routes. Under the current brief, ordinary floor travel needs only
+standard walking, the flat door occluder and off-stage timing; any reusable
+Prime choreography remains frozen until the target canon migration is resolved.
 
 The staircase construction geometry is stored independently at
 `art/drafts/keeper-staircase-geometry-2026-10-16-v1/`. Its JSON is the source
 of truth for the 14-riser, 7-lp-tread, 98 × 60-lp flight and 105-lp reserved
-core; the accompanying SVG preserves the plain test staircase. Future rail,
-balustrade and newel artwork must conform to it rather than resizing the flight.
+core; the accompanying SVG preserves the plain test staircase. The former rail,
+balustrade and newel artwork was required to conform to it. Under the
+26 October brief that geometry remains historical evidence only; do not build
+ordinary lighthouse stair scenery from it without a new explicit decision.
 
-## Makko approved-art export
+## Historical Makko approved-art export
+
+Makko is no longer part of the graphics workflow. This exporter remains only
+to reproduce the 25 October approved-asset snapshot and must not be treated as
+the destination for new work; current graphics follow `docs/CODEX_BRIEF.md`.
 
 `npm run export:makko` builds the local, self-contained
 `makko-approved-art-2026-10-25/` handoff without changing canonical artwork.
@@ -814,10 +817,14 @@ must remain paused to avoid duplicate alerts.
 
 ## Current implementation
 
-- Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The first production Pixel batch now supplies the red/white shell bands and those three 105 × 35 room plates; interactive furniture remains separate. The toilet and wash basin are both in the en suite.
-- Future standard floors are intentionally non-linear: kitchen anchors the base, lamp room stays topmost, bedroom stays directly below it, and each other floor receives a one-time random saved middle position. Concept-art taper is decorative and never fixes room width or unlock order.
+The runtime notes below describe the currently shipped compatibility art. They
+do not override the new non-pixel 1536 × 512 authoring target, and no approved
+asset byte changes until a separate versioned migration is reviewed.
+
+- Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The legacy runtime pixel batch still supplies the red/white shell bands and three 105 × 35 compatibility plates; interactive furniture remains separate. The new target instead derives every 1536 × 512 room shell from one master module. The toilet and wash basin are both in the en suite.
+- Future standard floors remain non-linear: kitchen anchors the base, lamp room stays topmost, bedroom stays directly below it, and each other floor receives a one-time random saved middle position. New tower art is straight-sided with no taper and may grow to three equal modules wide.
 - Missions run side by side, so floors arrive in any order; a finished floor appears the next morning in a random middle place that the save keeps (kitchen at the bottom, bedroom under the lamp room).
-- Every object renderer accepts `standard`, `on`, and `broken`; active gameplay drives `on`. Broken objects share integer-step casing wobble, smoke and sparks. Add `?broken=tv,cooker` (or `?broken=all`) to the URL for the internal art-state preview.
+- Every object renderer currently accepts `standard`, `on`, and `broken`; active gameplay drives `on`. New item masters must not bake broken, dirty or alert states into the item: the engine owns smoke, sparks, drips and other overlays. Existing compatibility sprites remain unchanged until migration. Add `?broken=tv,cooker` (or `?broken=all`) to the URL for the internal art-state preview.
 - Objects can be upgraded with credits from their tap menu. The tier list is `data/upgrades.csv`; the living-room armchair now progresses from basic armchair to rocking chair to Lazyboy-style recliner, always on the same 11 px seat datum. Higher tiers do more good, faster; the bed's tier sets the morning's energy. Grown-ups set upgrade prices (overall %, then per tier) and can gift upgrades. Tier sprites are `obj_<id>_t<n>_<state>`; until they exist a `T<n>` tag stands in. `?tiers=3` previews top tiers.
 - The recipe studio (`/studio`, linked from Grown-ups) is the design tool for how each activity plays. It covers walks, doors and hidden costume changes, clips, timing, sounds (drop audio files onto placeholders, then trim and set volume) and solid-object checks against each frame's real pixels. Format and workflow: `docs/RECIPES.md`.
 - Grown-ups can change any animation's speed while playing (Grown-ups → Animation speeds): search the animated sprites, watch one in a preview, and step its fps from 1 to 20 in halves. One setting for the whole game, saved with the PIN (database `settings`, else the browser), is applied live. The sprite sheets' metadata remains authoritative: a tweak only lasts while its sheet keeps the speed it was made against, and "Copy for the metadata" gives `{ "animationFps": { … } }` to write back into the sheets.
@@ -864,7 +871,9 @@ must remain paused to avoid duplicate alerts.
 - `public/sprites/` — production room, TV/effect and keeper review PNGs plus their runtime manifest.
 - `art/source/keeper-first-batch/` — the generated keeper turnaround, deterministic density-4 authoring script, contact sheet and provenance notes.
 - `art/source/first-production-batch/` — untouched generated sources and prompt/provenance notes; `scripts/build_first_asset_batch.py` rebuilds the exact `art/raw/` deliveries, then `npm run sprites` publishes them.
-- `docs/PRODUCTION_ASSET_KIT.md` — exact Pixel filenames, dimensions, anchors, pivots, z-order, frame counts, fps, and delivery order.
+- `docs/PRODUCTION_ASSET_KIT.md` — historical Pixel filenames, dimensions,
+  anchors, pivots, z-order, frame counts, fps and delivery order for legacy
+  assets; not current new-art authority.
 - `docs/KEEPER_ANIMATIONS.md` — plain-English animation index, direction rules and object-alignment instructions.
 - `docs/KEEPER_ANIMATION_WORKBENCH.md`, `data/keeper_animation_workbench.json` and `src/animation-workbench/` — the separate Draft/Final framework for non-destructive frame editing, section loops and complete transition previews. Its editor remains implemented and the library remains intentionally empty until the approved core turns are assembled into complete transition routes. Front ↔ side Turn V1 is approved with one accepted minor 45° cadence limitation. Exact nine-frame side ↔ back V9 is approved and pinned by V10; V8's 16-frame cadence trial remains rejected as jerkier. Only world-distance walking will vary in runtime, beginning hidden behind the departure door; production remains unchanged.
 - `docs/CODEX_TO_CLAUDE_HANDOFF_2026-10-14.md` — current cross-agent handoff: public review links, exact Keeper Prime approval boundaries, next core-animation gates and a bounded furniture-placement/phase-aware-locomotion architecture task for Claude.
@@ -910,7 +919,8 @@ A "Who is playing?" screen lets each child have their own game and their own gro
 
 ## Verification
 
-Last verified on 14 October 2026 (176 tests, type-check and production build):
+Last verified on 26 October 2026 (436 tests across 23 files and a 29-page
+production build):
 
 ```sh
 npm test

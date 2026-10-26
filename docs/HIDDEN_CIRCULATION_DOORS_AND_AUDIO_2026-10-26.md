@@ -1,32 +1,35 @@
 # Hidden circulation, room doors and travel audio
 
 Date: 26 October 2026
-Status: current design authority
+Status: current travel/occlusion/audio authority; room and door geometry is
+owned by `docs/CODEX_BRIEF.md`
 
 This decision replaces the earlier player-facing stair, ladder, spiral-stair
 and visible lift-shaft proposals. Their review pages, geometry and approved
 Keeper animation assets remain historical evidence; they are not the target
 presentation for ordinary travel between lighthouse floors.
 
+The later 26 October graphics brief supersedes this document's earlier narrow
+pixel-module, tapered-shell and no-en-suite assumptions. Production room art is
+straight-sided and uses the exact 1536 × 512 master-module grid.
+
 ## What the player sees
 
 - The lighthouse remains a straight-on doll's-house cutaway. Stairs, landings,
   a lift car and a lift shaft are never drawn inside the rooms or beside them.
-- A narrow concealed circulation slot runs vertically behind the room edge.
-  It is architectural negative space, not another visible room module.
-- Every ordinary floor has exactly one entrance between that concealed slot
-  and its room. In the stair configuration, every entrance is identical and
-  occupies the same local position on every floor. A later lift replaces all
-  of them with one equally consistent lift-entrance treatment. There are no
-  doors between width modules.
-- The ground floor additionally has the exterior front door. A bedroom
-  en-suite remains a wider-layout gameplay requirement, but its partition and
-  extra door are omitted at one-module width because they cannot fit
-  believably. Do not squeeze them into the standard room.
-- The closed circulation entrance shows only a hairline door edge and tiny
-  handle. Do not draw a broad jamb, visible panel face, frame, inset, recess or
-  perspective cue. The door panel itself is visible only while it opens toward
-  the player.
+- The hidden stairway runs vertically inside the tower wall. It is never a
+  visible room module, recess or shaft.
+- The leftmost 1536 × 512 module on every floor has one identical plain wooden
+  door in its LEFT wall. Its empty walk-in zone is always x=32–256. Extra width
+  modules join through an open doorway in a 32 px divider and never gain
+  another stair door or walk-in zone.
+- The ground floor additionally has its arched exterior front door on the back
+  wall within the walk-in zone. The top-floor bedroom includes an en-suite
+  partition near its right end; the new production module is wide enough for
+  it. The V4 pixel experiment's no-en-suite decision is rejected history.
+- In the straight-on elevation the closed left-wall stair door stays visually
+  minimal and flat; its panel becomes visible only while it opens toward the
+  player. Do not introduce an inset, recess or perspective surface.
 - The open panel is flat, opaque foreground scenery. Layer order is
   `room shell -> Keeper -> open door panel`, so it completely covers the
   Keeper as he crosses. It must not introduce an angled wall, floor, ceiling,
@@ -42,8 +45,8 @@ When the lift is unlocked, it occupies the same unseen circulation slot. The
 room entrance changes only through a subtly more engineered jamb treatment;
 the lift car, shaft and machinery remain off-stage. The Keeper walks into the
 entrance, changes costume inside the hidden lift when required, and emerges at
-the destination. The lighthouse expansion may widen the tapered building and
-pull the island apart, but it does not expose a lift module.
+the destination. The lighthouse expansion may widen the straight-sided tower
+and pull the island apart, but it does not expose a lift module.
 
 ## Stair-travel sound placeholder
 

@@ -1,4 +1,11 @@
-# Prime Keeper: animation work still required
+# Prime Keeper: installed-bank gaps (paused migration evidence)
+
+> **Paused 26 October 2026:** The gaps below describe the installed Prime bank
+> and its historical review queue. They do not authorise new art. Do not resume
+> a corrective or missing-animation run until Frank-approved canon references
+> populate `/public/art/keeper/canon/` and a reviewed migration decides which
+> Prime choreography still applies. Ordinary stair/ladder animation is not
+> needed for the hidden inter-floor route.
 
 Updated: 23 October 2026
 Machine-readable inventory: `data/keeper_prime_animation_gaps.json`
@@ -12,13 +19,13 @@ loop. Approved front/side/back turns now bridge rear work and seating; TV,
 nature TV, armchair nap, reading and piano use side sit → hold → stand; diary
 uses turn → back sit → hold → stand → turn.
 
-Stair ascent has one open corrective review: V18 normalises the lower beard
+Historically, Stair Ascent had one open corrective review: V18 normalises the lower beard
 across its four unique drawings after a visible contact/passing jump was found.
 It preserves the complete approved V16 choreography and changes only two
 recorded contact-beard masks. V16 and the current runtime remain immutable
 until this correction is explicitly approved.
 
-The current versioned review batch is
+The last versioned Prime review batch is
 `/prime-keeper-animation-drafts-v12` (also served at
 `/prime-keeper-animation-drafts`). It contains ten independently redraftable
 sequences and 162 frame occurrences. V11 preserves V3's lift omission, brighter

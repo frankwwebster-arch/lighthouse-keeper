@@ -1,5 +1,12 @@
 # Keeper-derived object dimensions
 
+> **26 October 2026 migration boundary:** These measurements and
+> `data/keeper_object_dimensions.json` govern installed Prime/legacy runtime
+> registrations only. They must not size new 96/192 px item art or substitute
+> for the missing target Keeper canon. Once Frank-approved references populate
+> `/public/art/keeper/canon/`, measure the new canon and review an explicit
+> coordinate mapping; preserve all existing values until then.
+
 The keeper's delivered reviewed pose is the ruler for the world. The baseline
 machine-readable dimensions are in `data/keeper_object_dimensions.json`; they
 are derived from the anatomy and interaction contacts in

@@ -3,6 +3,12 @@
 Date: 8 October 2026  
 Status: living product-design write-up. It records Frank's locked directions separately from the unbuilt idea backlog so future Claude/Codex sessions do not mistake current placeholder code for the final design.
 
+> **26 October 2026 graphics supersession:** Product systems, progression and
+> spectacle ideas below remain useful where they do not conflict with
+> `docs/CODEX_BRIEF.md`. That brief now owns all new visual style, tower,
+> module, door, window, item and foreground geometry. Pixel-art export rules,
+> taper and older room dimensions in this document are historical only.
+
 ## Product principles
 
 - Unlock challenges should use varied accomplishments, observation and small puzzles. Repeating the same action many times is tedious and must not be the main progression mechanism.
@@ -10,7 +16,9 @@ Status: living product-design write-up. It records Frank's locked directions sep
 - Floors should add systems, choices or relationships with other rooms—not merely another isolated clickable object.
 - Every upgrade must have a clear, measurable gameplay benefit. Cosmetic changes can communicate or celebrate an improvement, but an object stays single-tier when there is no worthwhile mechanical upgrade.
 - Activities remain curated and child-friendly. The computer room does not use live email, news or generative AI.
-- Ordinary floors use the common fixed-width production geometry and nearest-neighbour 4× rendering.
+- Ordinary floors use the exact 1536 × 512 master-module geometry in
+  `docs/CODEX_BRIEF.md`; the installed runtime's older scale remains a
+  compatibility boundary until a reviewed migration.
 
 ## Locked tower layout
 
@@ -19,7 +27,8 @@ Status: living product-design write-up. It records Frank's locked directions sep
 - The kitchen/entrance remains the ground-floor anchor.
 - Other standard floors have no canonical vertical order. When one unlocks, choose a random available position in the middle stack, then persist that order in the save. Do not reshuffle it every night.
 - A new insertion may push existing middle floors up or down. Their size and internal layout never change.
-- Concept-art taper is decorative only and never controls width, eligibility or order.
+- The production tower is straight-sided with no taper. Width, eligibility and
+  order come from equal master modules, never exterior silhouette.
 - Shell stripe colour is derived from absolute world Y after layout.
 - The underground lair remains below ground. Exterior bays and island facilities do not consume standard stack positions.
 
@@ -65,7 +74,8 @@ Sample reusable lines:
 
 Room-specific lines are encouraged. Only one major reveal should play each morning; extra completed unlocks can wait in a reveal queue.
 
-Use hand-drawn pixel-safe frames or integer translations for the façade. Do not blur or smoothly rotate raster art.
+Use crisp authored states and deterministic code assembly for the façade. Do
+not introduce perspective, arbitrary raster rotation or blurry interpolation.
 
 ## Furniture migration
 
@@ -199,7 +209,9 @@ Activities can include:
 - Recover lunch, tools or the cat's toys from the ceiling.
 - Complete comic astronaut training.
 
-The movement can reuse some of the pool's broad swimming language, but needs its own normal-clothes or spacesuit silhouette. Keep pixel motion crisp: integer translations and hand-drawn orientations rather than arbitrary raster rotation.
+The movement can reuse some of the pool's broad swimming language, but needs
+its own normal-clothes or spacesuit silhouette. Keep motion clean and stable:
+use authored orientations rather than arbitrary raster rotation.
 
 The room depends on electrical power. A controlled shutdown gently restores gravity; a breakdown makes everything hang for a beat and then fall into padded nets with a comic crash. Storm power loss, solar batteries, the computer room and observatory can all feed its missions.
 
@@ -257,7 +269,11 @@ When broken, water activities remain possible but are degraded rather than wholl
 | Swimming/hot tub | Comfortable | Short cold use or refusal unless necessary |
 | Cold-weather sleep | Normal restoration | Reduced restoration until heating returns |
 
-The boiler uses standard/on/broken art: pilot light; active flame/pressure; then shared wobble/smoke/sparks plus a pipe or gauge cue. Repair can ask the player to inspect pressure, choose a reset/pipe/fuse action and test a hot tap. Wrong choices create jokes, not permanent damage.
+The boiler's master may provide minimal normal/active states such as pilot light
+and active flame/pressure. Fault wobble, smoke, sparks and alert cues are
+engine-owned overlays, never baked into a broken item drawing. Repair can ask
+the player to inspect pressure, choose a reset/pipe/fuse action and test a hot
+tap. Wrong choices create jokes, not permanent damage.
 
 ## Transport through a growing tower
 
@@ -267,7 +283,8 @@ stairs; the later lift replaces that journey in the same hidden slot and is
 signalled only by a subtly different jamb. The Keeper remains covered from
 departure entry through destination emergence, so neither route needs a
 visible climbing or lift animation. See
-`docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`.
+`docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md` and the binding room
+geometry in `docs/CODEX_BRIEF.md`.
 
 The optional helter-skelter slide remains a separate exterior spectacle rather
 than part of the ordinary circulation core. If retained, it can hide the

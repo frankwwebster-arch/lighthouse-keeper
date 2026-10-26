@@ -1,5 +1,11 @@
 # Ambience and the backdrop
 
+> **26 October 2026 art supersession:** The ambience, weather and audio intent
+> below remains product guidance. Any visual style, pixel scale, export or
+> foreground geometry instruction that conflicts with `docs/CODEX_BRIEF.md` is
+> historical. New foreground art exposes the animated backdrop only through
+> exact pure-magenta apertures.
+
 Date: 10 October 2026
 Status: design and production instructions. **Nothing here is built yet.** Written for Codex (backdrop art), for whoever supplies the audio, and for later Claude sessions (the code). Frank asked for ambient sound (a gentle seascape and changing weather) to be planned as part of the backdrop build, so the picture and the sound are designed from one list.
 
@@ -62,9 +68,13 @@ Back to front. The keeper and the tower sit between the island layers and the fo
 
 Rules for the moving art:
 
-- Movement is in whole pixels, with no blur and no smooth rotation (the nearest-neighbour 4× rule).
-- Drift and parallax are whole-pixel steps every few frames, not fractional speeds.
-- Fog and heat shimmer use a few stepped transparency levels or dithering in the game's palette. Never soft blur.
+- Keep movement stable and crisp, with no soft blur or arbitrary raster
+  rotation. The old nearest-neighbour 4× requirement applies only to legacy
+  Pixel assets.
+- Drift and parallax should use deliberate, repeatable steps rather than camera
+  perspective tricks.
+- Fog and heat shimmer use restrained transparency levels in the environment
+  palette. Never soft blur the foreground architecture.
 
 ## 3a. The great lamp
 

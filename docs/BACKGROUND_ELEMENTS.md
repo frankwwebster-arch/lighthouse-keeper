@@ -1,5 +1,12 @@
 # Background elements: art brief
 
+> **26 October 2026 art supersession:** Keep the weather, time-of-day, sound
+> pairing and layer-ownership ideas below where compatible, but do not use this
+> page's pixel scale, export geometry or foreground-composition rules for new
+> art. `docs/CODEX_BRIEF.md` now requires non-pixel art and pure `#FF00FF` in
+> every foreground sky/sea/glass opening; clouds, birds, sun, waves, horizon,
+> islands and ships belong only to game-drawn background/animation layers.
+
 Date: 10 October 2026
 Status: first draft of the brief, for Codex. Nothing here is drawn yet. The keeper is the measuring stick for everything (`data/keeper_asset_contract.json`); this brief applies the same discipline to the world around him.
 
@@ -12,11 +19,12 @@ Read with:
 ## 1. Ground rules
 
 - **One logical pixel is four screen pixels**, nearest-neighbour only. Movement is in whole pixels; no blur, no smooth rotation, no fractional scrolling.
-- **Room windows reveal this one global backdrop.** Every window or porthole is
-  a true alpha knockout through its room-wall layer plus a separate opaque
-  frame. A room asset never contains a painted sky, sea, horizon, weather or
-  time-of-day proxy. If a window follows movable furniture, the wall knockout,
-  frame and parent object share one transform.
+- **Room windows reveal this one global backdrop.** In every new source master,
+  the complete see-through area is flat exact `#FF00FF`, with its opaque frame
+  and glazing bars drawn separately around/across it. A room asset never
+  contains painted sky, sea, horizon, weather or time-of-day imagery. Any
+  source-to-runtime conversion belongs to the reviewed magenta-preserving
+  pipeline boundary in `docs/CODEX_BRIEF.md`.
 - **The keeper is 38 px tall.** Near things are at his scale. Far things are smaller and simpler: houses on the far shore are a few pixels, and ships on the horizon have a readable silhouette at telescope size. Every element states its scale relative to him in its sidecar notes.
 - **The world grows, so nothing is one fixed picture.**
   - The tower gains floors upward (and downward with the lair), so the sky must keep going up without a seam.

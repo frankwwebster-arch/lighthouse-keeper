@@ -1,5 +1,10 @@
 # Lighthouse Keeper — implementation handoff report
 
+> **26 October 2026 art supersession:** Visual style, room-grid, circulation,
+> Keeper and item-art guidance below is historical wherever it conflicts with
+> `AGENTS.md` and `docs/CODEX_BRIEF.md`. Existing runtime behaviour and approved
+> asset bytes remain unchanged until a separate migration is approved.
+
 > **Current handoff:** this 8 October report is retained as implementation
 > history. For the active Keeper Prime animation state and the bounded
 > furniture/locomotion architecture task, begin with
@@ -27,7 +32,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
 - Cooker and basin activities use the named production rear-work aliases. The wider keeper set is exported and reviewable; most newer clips remain unwired until their matching world mechanics exist.
 - The seeded breakdown/repair loop is playable. Grown-ups can set average game-minutes between faults and the maximum concurrent faults; both zero values disable faults. Broken objects reject normal actions and expose a 25-game-minute repair action. The event stream carries placeholder SFX categories, but no audio engine/files are delivered.
 - The shop is explicitly excluded from keeper-owned faults. Its current on-island placement is a temporary gameplay fallback; the agreed later route is keeper jetty → upgradeable rowing boat/tug/speedboat → off-island shop. The keeper's jetty, garden/greenhouse, and future boat may break. A future workshop floor reduces fault pressure.
-- The exact current asset contract is [docs/CODEX_BRIEF.md](docs/CODEX_BRIEF.md), with production details in [docs/PRODUCTION_ASSET_KIT.md](docs/PRODUCTION_ASSET_KIT.md).
+- The exact current new-art contract is [docs/CODEX_BRIEF.md](docs/CODEX_BRIEF.md). [docs/PRODUCTION_ASSET_KIT.md](docs/PRODUCTION_ASSET_KIT.md) records the installed legacy pixel-era production details only.
 - Delivery-order item 1 is integrated: two 110 × 8 shell stripe tiles and three 105 × 35 room plates. Untouched generated sources and prompts live in `art/source/first-production-batch/`; the existing concept pack remains reference-only.
 
 ## 1. Files, format, naming and scale
@@ -145,7 +150,14 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
    - `on`: animated active/use appearance.
    - `broken`: animated fault appearance.
 
-2. Broken-state grammar is fixed across the game: gentle casing wobble, looping smoke, and occasional sparks. Add only a small object-specific cue when useful. The user specifically approved this for the TV and wants it reused rather than reinvented per object.
+   These remain runtime states. For every newly drawn item, the base item art
+   contains only the brief's minimal states; the engine supplies smoke,
+   exclamation marks, sparkles, drips and other broken/dirty/alert overlays.
+
+2. Broken-state presentation grammar remains fixed at runtime: gentle casing
+   wobble plus looping smoke, occasional sparks and a small object-specific cue
+   when useful. The engine composes those overlays; never bake them into a new
+   item's master or state frames. The TV preserves the historical visual test.
 3. **Delivered fact:** TV is the sole visual three-state test. It is a concept reference, with no separated wobble/smoke/spark frames. All other delivered object files are basic placeholder PNGs, not complete state sets.
 4. Recommended first production object table:
 
@@ -170,9 +182,12 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
 ## 4. Lighthouse, floors, expansion and backgrounds
 
 1. Day 1 floor order, bottom to top, is fixed: kitchen; living room; bedroom with en suite; lamp room. The lamp room is always the topmost room.
-2. The game is a flat, front-on 2D cutaway — not isometric and not full 3D. The lighthouse is the visual anchor: classic alternating red-and-white stripes, dark pixel outlines, funny but not babyish.
-3. The main shaft must retain a constant gameplay width. Do not taper ordinary floors. Any apparent taper is a tiny decorative outer-wall treatment only. The lamp room may be inset/fixed width and has a wraparound rail/outdoor walkway.
-4. The delivered first-generation floor bands are **110 x 35 logical pixels** with **105 x 35** room plates. They remain historical source/provenance, not the replacement geometry. Frank agreed the new standard-room target on 14 October 2026: **172 x 56**, including a 46 px doorway exclusion and twelve proposed 10.5 px interaction intervals. Claude's drag/drop, expansion and migration contract is `docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`; implementation remains pending.
+2. The game is a flat, front-on 2D cutaway — not isometric and not full 3D. The lighthouse is the visual anchor: classic alternating red-and-white stripes, clean dark outlines, bright non-pixel flat colour and storybook charm without becoming babyish.
+3. The tower shell is straight-sided with **no taper**, including decorative
+   outer-wall taper. Equal 1536 px modules control horizontal growth. The
+   full-width gallery sits above the stack; the same-size lamp room remains
+   centred above it.
+4. The delivered first-generation floor bands are **110 x 35 logical pixels** with **105 x 35** room plates. They remain historical source/provenance. The later **172 x 56** proposal is also superseded and stays hash-pinned as movement evidence in `docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`. New art uses the exact **1536 x 512** master grid in `docs/CODEX_BRIEF.md`; runtime migration remains separate and pending.
 5. Stripe continuity must be world-coordinate-based, never based on the insertion order of floor assets. Recommended rule, evaluated against global vertical coordinate:
 
    ```ts
@@ -184,7 +199,14 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
 
 ### Locked rule: future floor progression is non-linear
 
-The tapered concept paintings do **not** impose a construction order. Future standard floors use the common active standard-room width and the player may unlock eligible floor types in different orders. The agreed initial target is 172 x 56; global width tiers are 193 and 214. Do not assign Workshop, Weather Station, Radio Room, Marine Lab, Map Room, or other future standard floors to permanent height numbers merely to reproduce the concept silhouette. The full idea backlog and system relationships are in `docs/EXPANSION_DESIGN.md`.
+Historical tapered concept paintings do **not** impose a construction order.
+Future standard floors use equal 1536 × 512 master-derived modules and the
+player may unlock eligible floor types in different orders. Horizontal growth
+adds whole equal modules, up to three wide; the former 172/193/214 width tiers
+are superseded. Do not assign Workshop, Weather Station, Radio Room, Marine
+Lab, Map Room, or other future standard floors to permanent height numbers.
+The full idea backlog and system relationships are in
+`docs/EXPANSION_DESIGN.md`.
 
 When a standard floor is unlocked:
 
@@ -194,9 +216,21 @@ When a standard floor is unlocked:
 4. Persist the resulting order in the save and never reshuffle it nightly.
 5. Recalculate shell stripes from absolute world Y; never store stripe colour on the floor type.
 
-Day 1 remains fixed—kitchen, living room, bedroom/en-suite, lamp room—but the identity and eventual middle-stack position of later standard floors are not predetermined. A gameplay dependency may restrict eligibility (for example, the lift becomes necessary after more than six complete floors), but it must be an explicit systems rule rather than an art/geometry restriction.
+Day 1 remains fixed—kitchen, living room, bedroom/en-suite, lamp room—but the identity and eventual middle-stack position of later standard floors are not predetermined. A gameplay dependency may restrict eligibility, but it must be an explicit systems rule rather than an art/geometry restriction.
 
-Side/rear extensions, the lift service core and the underground lair do not consume standard stack slots and must not be used to force a linear ordinary-floor sequence. The diving changing-room/board extension follows the bedroom as it moves upward; the keeper may eventually dive the full lighthouse height. The current fixed Floor 3 reservation is implementation debt.
+The current art brief does not require a lift or reserve a visible lift service
+core at any height. Ordinary travel remains behind the one circulation door in
+the left wall of each leftmost module. Optional lair and boathouse modules sit
+below the ground floor in the order defined by `docs/CODEX_BRIEF.md`; horizontal
+growth joins whole modules through the specified divider. Any future lift or
+special side extension needs a new explicit decision and separate kit entry.
+
+### Historical expansion and gameplay backlog
+
+The remaining numbered notes in this section predate the 26 October art brief.
+They remain idea/runtime history only and cannot reserve geometry, introduce
+visible circulation, override the exact module kit or authorize new graphics.
+
 6. New floors may slide into position or arrive in a large reusable puff of smoke. Recommendation: `fx_floor_arrival_smoke`, 64 x 64 logical pixels, 8 frames at 12 fps. This effect is not yet delivered.
 7. Expansion architecture is deliberately magical:
 
@@ -206,7 +240,7 @@ Side/rear extensions, the lift service core and the underground lair do not cons
    - Garden, boat/jetty and chicken coop are mission unlocks and are intentionally absent from Day 1. The shop is an off-island destination rather than an island building; its current island depiction is non-canonical concept/fallback material.
 
 8. Underground development is a surprise. Day 1 shows normal grass, soil, and rock only — no obvious empty basement, shaft, cave, or reserved area. When a Batcave-like lair unlocks, extend terrain downward then reveal the interior. The first `ground_strip.png` is specified at 300 x 30 logical pixels.
-9. The lift becomes necessary at roughly seven floors (more than six complete floors). Keep it in a rear or side aligned service core/bay so it does not consume every front-facing room. Each floor still needs one aligned landing door.
+9. **Superseded lift proposal:** the former plan made a lift necessary at roughly seven floors and placed it in a rear or side service core. The current brief does not adopt that trigger, reserve that core or require separate landing-door art.
 10. **Superseded implementation note:** the current code fixes the diving changing room to Floor 3, but the approved design attaches it to the bedroom wherever that room moves. Its beam/floor plane must align with the current bedroom band, allowing a full-height dive as the tower grows. Sequence: normal travel to the bedroom; keeper walks through the inner door in ordinary clothes; closes and disappears; comic zip/change SFX plays; outfit swaps off-screen; exterior door opens; he emerges in Victorian red-and-white bathing suit and walks to the board. Never show the keeper in the narrow space between the two doors.
 11. At maximum height, parachuting from the lamp-room roof is a possible late-game comic unlock, not a Day 1 requirement.
 12. Existing background plates are opaque single images. They cannot support parallax, camera crops, night tinting, or expansion cleanly. Required production layers are: `bg_sky`, `bg_clouds`, `bg_distant_village`, `bg_sea`, `bg_island_back`, `bg_lighthouse_shell`, `bg_terrain`, and `bg_foreground`. The village should remain in the distance as a telescope target; it is visible in the early concept direction.
@@ -245,38 +279,44 @@ Side/rear extensions, the lift service core and the underground lair do not cons
 ## 7. Gaps, risks, prioritised work and estimate
 
 1. The current concepts should **not** be sliced into gameplay sprites as a shortcut. The major risk is inconsistent scale/style and no reusable pivots, not lack of PNG files.
-2. Required first production deliverables, in order:
+2. Current first production deliverables, in order:
 
-   1. Extend the approved keeper set in the priority order in `docs/KEEPER_ANIMATIONS.md`, preserving `data/keeper_asset_contract.json`.
-   2. Build object art against the keeper's fixed switch, handle, seat, worktop, bowl and ground-use heights.
-   3. Rebuild the standard lighthouse shell and room modules for the agreed 172 x 56 target, preserving the delivered 110 x 35 / 105 x 35 files as historical source rather than overwriting them.
-   4. TV production assets for all three states, including separate wobble/smoke/spark effects; then cooker, shower and bed.
-   5. Separated day/night world layers and the reusable floor-arrival smoke effect.
-   6. Lift/expansion bay specification, then the Floor-3 diving changing-room sequence.
-   7. Telescope, chicken coop, labour-saving systems, underground lair, visitors, ships and other unlockable content.
+   1. Establish a reviewed source/runtime pipeline that preserves and verifies exact `#FF00FF`; the legacy sprite cleanup route is not valid for the new masters.
+   2. Build the modular tower kit in `docs/CODEX_BRIEF.md` from one exact 1536 × 512 master, including room recolours, straight shell walls, dividers, gallery, empty lantern and both assembly proofs.
+   3. Install Frank-approved canon references at `/public/art/keeper/canon/`; author no new Keeper pose before that path satisfies the absolute brief.
+   4. Before drawing a room's items, list base and upgraded 96/192 px bay widths and prove the fully upgraded layout fits all 13 bays. Then author minimal master-derived states; faults remain engine overlays.
+   5. Build the code-assembled Day 1 and expanded island views, their geometry JSON and environment palette; foreground openings remain exact magenta and animated sky/sea/weather remain separate runtime layers.
+   6. Continue mission-floor, expansion, outdoor-structure and item art only from those accepted shared masters.
 
 3. Estimated final asset volume: approximately **650–900 individual frame/source PNGs**, excluding audio and full-scene promotional art. A reasonable split is 150–220 keeper/outfit frames, 220–320 object-state frames, 80–120 effects/bubbles, 80–120 floor/world modules, and 120–180 cats/visitors/telescope targets. Expect 8–12 runtime atlases after padding and packing.
 4. Key technical risks and mitigation:
 
    | Risk | Mitigation |
    |---|---|
-   | Pixel blur/jitter | integer coordinates, nearest-neighbour, no runtime raster rotation |
+   | Exact-magenta loss | use the separately reviewed source/runtime boundary; never send the only master through the legacy cleanup path |
+   | Master-module drift | derive every room shell from `module_master.png` and verify unchanged pixels deterministically |
+   | Keeper identity drift | author no new Keeper pose before Frank-approved target canon is installed |
    | Lighthouse becoming too narrow | fixed core width; use extension bays/global wall push |
    | Stripe mismatch after insertion | calculate colour from global world Y |
    | iPad performance | atlas dynamic sprites, pool effects, pause off-screen animation |
    | Night recap unreadable | prototype its typography/timing on target iPad before content expands |
-   | Costume-change complexity | hide the sprite between two aligned Floor-3 changing-room doors |
+   | Costume-change complexity | keep the Keeper fully hidden by the single outward-opening circulation door or the bedroom en-suite door while a change occurs |
    | Underground telegraphed too early | keep Day 1 terrain solid; reveal only on unlock |
 
 5. Undecided items with recommendations:
 
    | Item | Decision status | Recommendation |
    |---|---|---|
-   | Exact final floor width | Decided | 110 logical pixels; do not taper or rescale existing floors |
+   | Exact new-art floor width | Decided | One module is 1536 px; stack or join whole equal modules and never taper them |
    | Final day/night implementation | Undecided | Tint layered art; do not maintain two geometry sets |
-   | Whether global lift uses rear or side core | Undecided | Prefer rear core where visible cutaway readability permits; otherwise side bay |
-   | Object tier visual language | Undecided | Keep silhouette/anchor stable and add clearer utility/detail at higher tiers |
-   | Exact animation implementation | Undecided | Begin with frame strips; move only proven reusable limbs to a part rig |
+   | Future lift treatment | Deferred | Do not add visible lift art to the current tower kit without a new decision; ordinary circulation stays concealed |
+   | Object tier visual language | Partly decided | Fit base and upgraded versions into exact 96/192 px bays before drawing; keep master-derived states pixel-identical outside the changed element |
+   | Exact animation implementation | Partly decided | Use 2–4 key poses per action with engine motion; locomotion may use more frames |
    | SFX files/engine | Undecided | Define event hooks now; commission/source audio after interactions are playable |
 
-6. This handoff deliberately distinguishes the implemented runtime from the remaining production asset set. Delivery-order item 1 is complete; delivery-order item 2 and the 77-export keeper review set exist for review at 4× logical scale. Continue remaining keeper work from the prioritized backlog in `docs/KEEPER_ANIMATIONS.md`, and build every prop from `data/keeper_asset_contract.json` rather than estimating scale from concept art.
+6. This handoff deliberately distinguishes the implemented legacy runtime from
+   the new production-art target. Do not continue the old Keeper backlog or
+   build new props from the legacy pixel dimensions: first satisfy the
+   exact-magenta delivery gate, build and approve the 1536 × 512 modular tower
+   kit, and populate `/public/art/keeper/canon/` with Frank-approved target
+   references. Existing Keeper and runtime assets remain immutable meanwhile.

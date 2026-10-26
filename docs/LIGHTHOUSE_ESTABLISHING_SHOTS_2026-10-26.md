@@ -3,16 +3,18 @@
 These two generated images are rejected historical layout drafts for the
 foreground lighthouse and island. They remain measured review evidence, but
 they are neither current visual direction nor approved runtime art. Frank
-rejected their sterile rectangular/apartment-block character in favour of the
-original concept's warm tapered lighthouse, rich distant-island backdrop and
-magical island-splitting expansion. The current circulation, door and sound
-authority is `docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`.
+first rejected their sterile rectangular/apartment-block character in favour
+of the original concept's warmth and richer setting. The later 26 October art
+brief settled the production geometry: a warm but **straight-sided** classic
+red-and-white lighthouse with no taper, assembled from exact 1536 × 512
+modules. `docs/CODEX_BRIEF.md` is the current graphics authority; the current
+travel/audio contract is
+`docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`.
 
-The later V3 pixel-style test is documented in
-`docs/LIGHTHOUSE_PIXEL_STYLE_TEST_2026-10-26.md`. It does not rehabilitate
-either rejected establishing shot or alter the binding hidden-circulation
-contract; its Concept C intentionally preserves the Day 1 image as a failure
-control.
+The later V2–V4 pixel-style test is documented in
+`docs/LIGHTHOUSE_PIXEL_STYLE_TEST_2026-10-26.md`. It too is rejected historical
+evidence: pixel art was too blocky when zoomed, and its taper, small module and
+omitted en-suite are not production rules.
 
 ## Files
 
@@ -25,16 +27,21 @@ control.
 Coordinates use a top-left origin. Tower bounds are inclusive and cover the
 lamp room, gallery and exterior shell down to the measured ground line.
 
-## Binding layout decisions
+## Historical layout encoded by these drafts (non-binding)
+
+The bullets below document what the two files attempted. They do not override
+the current brief. In particular, current Day 1 is kitchen, living room,
+bedroom and lamp room; all new modules use the exact master grid; and every
+new foreground see-through pixel is byte-exact `#FF00FF`.
 
 - The view is a straight-on orthographic doll's-house cutaway. Back walls are
   flat panels; floors are horizontal bands; side and partition walls are
   vertical bands. The island is a side elevation, not an isometric ground
   plane.
-- Day 1 has two enclosed floors: the ground-floor kitchen/entrance and the
+- The draft Day 1 has two enclosed floors: the ground-floor kitchen/entrance and the
   top-floor bedroom/en-suite. The lamp room sits above them. There is no Day 1
   living-room floor or underground room.
-- The expanded tower has exactly 20 enclosed floors above ground, with three
+- The draft expanded tower has exactly 20 enclosed floors above ground, with three
   equal room modules on every floor. It also has a three-module boathouse at
   the waterline and a three-module lair below it.
 - There is one circulation entrance per floor between a narrow concealed

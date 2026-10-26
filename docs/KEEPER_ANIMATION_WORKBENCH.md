@@ -1,8 +1,15 @@
 # Keeper Animation Workbench
 
+> **26 October 2026 migration boundary:** This workbench remains exact
+> installed-Prime review and animation evidence. It does not authorize new
+> Keeper art. New Keeper work is paused until Frank-approved canon references
+> populate `/public/art/keeper/canon/`; preserve every installed Prime byte.
+> Prime's one broad stripe and current scale are not the target canon defined by
+> `CODEX_BRIEF.md`.
+
 Last updated: 14 October 2026.
 
-## Current state
+## Installed Prime workbench state
 
 The separate workbench is deployed at `/animation-workbench`. **Final contains
 zero animations and Draft contains zero active animation proposals.** Frank

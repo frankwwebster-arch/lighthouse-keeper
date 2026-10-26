@@ -1,5 +1,13 @@
 # Keeper scale and interaction contract
 
+> **26 October 2026 migration boundary:** This page remains authoritative for
+> measuring and preserving the installed Prime-era Keeper and its existing
+> interaction registrations. It is not authority for drawing new Keeper art.
+> The new absolute contract is in `docs/CODEX_BRIEF.md`; because its canon path
+> is not yet populated and conflicts with Prime scale/stripe/palette details,
+> no new Keeper pose may be authored until Frank-approved canon references are
+> installed. Existing approved bytes stay immutable.
+
 The keeper is the measuring stick for every room, prop and interaction. The
 authoritative machine-readable data is `data/keeper_asset_contract.json`; this
 page explains it in ordinary language.

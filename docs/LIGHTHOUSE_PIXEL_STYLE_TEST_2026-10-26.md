@@ -1,11 +1,12 @@
 # Lighthouse pixel-style test V4 — 26 October 2026
 
-Status: review-only; awaiting Frank's visual verdict.
+Status: rejected; retained as immutable historical evidence.
 
-This is a reversible comparison of two authored pixel densities against one
-deliberately weak code-only control. It asks which pixel language, if any, is
-worth pursuing. It does not amend the current lighthouse, room-grid, hidden
-circulation, runtime or production authorities.
+This reversible comparison tested two authored pixel densities against one
+deliberately weak code-only control. Frank rejected both pixel candidates as
+too blocky when zoomed in. The current authority, `docs/CODEX_BRIEF.md`, uses
+non-pixel illustration and a straight-sided tower with no taper. No candidate
+amended canon, runtime art or production art.
 
 ## Review package
 
@@ -30,6 +31,9 @@ fully opaque final pixels, equal flat rooms and no visible interior stair or
 lift architecture.
 
 ## Why V4 exists
+
+This section records the historical reasoning at the time of the test. It is
+not current production direction.
 
 Frank rejected the earlier rectangular result because it had lost the feeling
 of a lighthouse. The tapered V2 correction restored the identity, and V3 fixed
@@ -90,7 +94,8 @@ the standard maintenance pass; the review URLs and package manifest remain
 stable while `public/` stays below its 50 MiB deployment guard.
 
 No candidate has been promoted or wired into runtime. Publishing the review
-page does not change that status. The magenta
+page did not change that status. The immutable page's “awaiting verdict” label
+is a frozen pre-rejection snapshot. The magenta
 background is technical isolation for this style test, not a reversal of the
 current preference for the original concept's warm atmosphere and distant
 island detail when the separate animated background layers are composed.

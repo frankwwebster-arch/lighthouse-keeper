@@ -1,18 +1,27 @@
-# Production sprites — current route
+# Production sprites — legacy runtime route
 
-The first production Pixel batch is live for the shell stripes and three implemented room plates. The review catalogue adds the CRT television, shared broken effects and inset lantern surround. The keeper review batch adds aligned front/back master parts and the initial movement/action set; unbuilt objects, character actions, effects and room art retain vector fallbacks. Existing files under `style_b_pixel/` remain concept/prototype references and must not be sliced into production sprites.
+> **26 October 2026 art supersession:** This page documents the installed
+> pixel-era sprite pipeline and remains useful for maintaining existing runtime
+> assets. It is not the authoring route for new graphics. New visual style,
+> 1536 × 512 module geometry, exact-magenta masters, Keeper gates and 96/192 px
+> item rules come from `docs/CODEX_BRIEF.md` and `AGENTS.md`. In particular,
+> `npm run sprites` removes `#FF00FF` and must not receive the only copy of a
+> new tower or environment master.
 
-The authoritative art inputs are:
+The first legacy production Pixel batch is live for the shell stripes and three implemented room plates. The review catalogue adds the CRT television, shared broken effects and inset lantern surround. The keeper review batch adds aligned front/back master parts and the initial movement/action set; unbuilt objects, character actions, effects and room art retain vector fallbacks. Existing files under `style_b_pixel/` remain concept/prototype references and must not be sliced into production sprites.
 
-- `docs/CODEX_BRIEF.md` — exact Pixel style, filenames and base dimensions.
-- `docs/PRODUCTION_ASSET_KIT.md` — anchors, pivots, z-order, frame counts, fps, interaction points and first-batch delivery order.
+For the legacy runtime route, the relevant records are:
+
+- `docs/CODEX_BRIEF.md` — current non-pixel graphics authority; it supersedes
+  the future-authoring parts of this legacy route.
+- `docs/PRODUCTION_ASSET_KIT.md` — historical anchors, pivots, z-order, frame counts, fps, interaction points and first-batch delivery order.
 - `art/asset_inventory.json` — factual inventory of the existing prototype PNGs only.
 - `docs/KEEPER_ANIMATIONS.md` — plain-English clip names, direction reuse and object-alignment recipe.
-- `docs/KEEPER_ASSET_SCALE.md` and `data/keeper_asset_contract.json` — authoritative character scale, pivots and object-use datums.
+- `docs/KEEPER_ASSET_SCALE.md` and `data/keeper_asset_contract.json` — approved legacy character scale, pivots and object-use datums.
 
-## Bringing art into the game
+## Maintaining legacy art in the game
 
-Put delivered PNGs in `art/raw/` (subfolders fine) and run `npm run sprites`. It removes `#FF00FF` backgrounds, snaps each picture to one source pixel per logical pixel, writes it to `public/sprites/`, rebuilds `public/sprites/manifest.json` (with `w`, `h`, `frames`, `fps`, and keeper pivots from the asset kit), and lists any file whose size differs from `docs/CODEX_BRIEF.md` / `docs/PRODUCTION_ASSET_KIT.md`. Snapped entries draw at their own size × 4 on whole pixels.
+For existing legacy assets only, put delivered PNGs in `art/raw/` (subfolders fine) and run `npm run sprites`. It removes `#FF00FF` backgrounds, snaps each picture to one source pixel per logical pixel, writes it to `public/sprites/`, rebuilds `public/sprites/manifest.json` (with `w`, `h`, `frames`, `fps`, and keeper pivots from the legacy asset kit), and reports size mismatches. Snapped entries draw at their own size × 4 on whole pixels. Do not use this route for new tower/environment masters.
 
 ## Runtime manifest
 

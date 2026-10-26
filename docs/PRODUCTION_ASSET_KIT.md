@@ -1,6 +1,13 @@
 # Lighthouse Keeper — first-three-floor production asset kit
 
-Status: production specification. Delivery-order item 1 is complete for the two shell stripe bands and the kitchen, living-room, and bedroom/en-suite plates. All older PNGs remain concept/prototype references; do not cut sprites out of the scene plates. The modular keeper-part section below is retained as historical rig documentation only: Frank rejected those part images and `keeper_reference` as reviewable final art. Production animation, scale and object work now follows `data/keeper_asset_contract.json`, `data/keeper_object_dimensions.json` and `docs/keeper-scale-audit/`.
+> **26 October 2026 art supersession:** This is a historical pixel-era
+> production specification and an accurate record of installed/approved legacy
+> bytes. Do not use its room sizes, pixel export rules, Keeper construction,
+> baked broken states or item footprints for new art. `docs/CODEX_BRIEF.md` and
+> `AGENTS.md` now own all new graphics; existing approved assets remain
+> immutable until a separate reviewed migration.
+
+Status: legacy production specification. Delivery-order item 1 is complete for the two shell stripe bands and the kitchen, living-room, and bedroom/en-suite plates. All older PNGs remain concept/prototype references; do not cut sprites out of the scene plates. The modular keeper-part section below is retained as historical rig documentation only: Frank rejected those part images and `keeper_reference` as reviewable final art. Maintenance of the installed animation, scale and object work follows `data/keeper_asset_contract.json`, `data/keeper_object_dimensions.json` and `docs/keeper-scale-audit/`; new art follows the superseding brief above.
 
 ## Coordinate and export contract
 

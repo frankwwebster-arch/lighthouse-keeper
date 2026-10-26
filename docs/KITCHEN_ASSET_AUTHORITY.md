@@ -1,5 +1,13 @@
 # Kitchen asset authority
 
+> **26 October 2026 migration boundary:** This package remains the exact
+> approved authority for the currently installed legacy kitchen and its
+> reversible runtime promotion. It is not the geometry, state or item-size
+> authority for new room art. New modules and items follow
+> `docs/CODEX_BRIEF.md`: 1536 × 512 master-derived shells, 96/192 px item bays,
+> minimal master-derived states and engine-owned fault overlays. Do not alter
+> or silently reinterpret the approved kitchen bytes.
+
 The kitchen's approved art and geometry authority is the single consolidated
 Warm Ligne-Claire Family package dated 24 October 2026.
 
@@ -100,10 +108,12 @@ placeholder. No final audio is baked into art or animation.
 ## Status
 
 Frank approved this visual family and its perspective on 24 October 2026. It is
-the only continuing kitchen art authority. Runtime Promotion V1 is wired and
-technically verified, but its reduced 84 × 74 visual presentation is rejected
-and must be replaced by a native-resolution promotion after the loose assets
-complete review. Until then it remains the reversible live compatibility
+the exact continuing authority for the installed legacy kitchen and its
+rollback bytes. Runtime Promotion V1 is wired and technically verified, but
+its reduced 84 × 74 visual presentation was rejected. The former plan for a
+native-resolution promotion remains historical pending a separately reviewed
+migration to the new master-module/item contract. Until then Runtime Promotion
+V1 remains the reversible live compatibility
 implementation. It maps the existing `cooker` gameplay object to V4 Oven and
 `fridge` to V4 Fridge; the other four fitted modules remain Off until they gain
 gameplay consumers. Broken Oven uses only the approved cavity-light strip. The

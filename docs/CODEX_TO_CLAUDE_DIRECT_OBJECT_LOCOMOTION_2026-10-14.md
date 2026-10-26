@@ -1,5 +1,12 @@
 # Codex to Claude: direct object-to-object locomotion and the universal action anchor
 
+> **26 October 2026 geometry boundary:** Direct same-room walking and the
+> locomotion arithmetic below remain useful installed-Prime evidence. Its
+> 172 × 56 room, doorway and object coordinates are superseded for new art by
+> the exact 1536 × 512 master, x=32–256 empty walk-in zone and thirteen 96 px
+> bays in `docs/CODEX_BRIEF.md`. Do not scale one grid into the other or create
+> new Keeper art while the target canon path is unpopulated.
+
 Date: 14 October 2026
 
 From: Codex

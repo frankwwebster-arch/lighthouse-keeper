@@ -1,6 +1,7 @@
 # Activity-callout art and authoring standard
 
-**Status:** binding authoring standard for future Lighthouse Keeper activity-callout work
+**Status:** binding for activity-callout ownership, composition, isolation and
+verification, where compatible with the current world-art brief
 
 **Revision:** 1.1 — 20 October 2026
 
@@ -10,6 +11,13 @@ This is the single starting point for extending the activity-callout vocabulary.
 It records what Frank accepted as the right direction across the V2–V6 work,
 what failed, and the exact method required to make later additions look and
 behave like one family.
+
+> **26 October 2026 world-art boundary:** `CODEX_BRIEF.md` is the standing
+> authority for all newly drawn game graphics. Its bright, clean, non-pixel,
+> flat-colour language overrides older painterly, tactile or production-pixel
+> wording below. Existing accepted callout tokens remain immutable provenance;
+> this document continues to govern their semantic ownership, transparent
+> isolation, animation composition and deterministic verification.
 
 An activity callout is animated pictorial narration of an action whose detail
 is hidden or too small to read. It is not dialogue, a thought bubble, a want,
@@ -21,17 +29,20 @@ the action and its result; the callout only communicates it.
 Use references for their declared purpose rather than blending them
 indiscriminately:
 
-1. **Product and separation authority:**
+1. **Current world-art authority:** `CODEX_BRIEF.md`. It governs palette,
+   rendering, lighting and material treatment for every newly drawn token.
+2. **Product and separation authority:**
    `KEEPER_BACK_WORK_ACTIVITY_CALLOUT_BRIEF_2026-10-19.md`.
-2. **Validated visual direction:** the illustrated V2/V3 activity components,
+3. **Validated component direction:** the illustrated V2/V3 activity components,
    followed by the retained V5/V6 token sources and their exact prompt logs.
-3. **Current data and timing authority:** Composer V6's catalogue. A future
+   They govern silhouette, readability and family resemblance only where they
+   do not conflict with the current world-art authority.
+4. **Current data and timing authority:** Composer V6's catalogue. A future
    immutable composer may supersede this only through an explicit new version.
-4. **General world palette and material language:**
-   `floor-asset-catalogue/ART_STYLE_GUIDE.md`. Callout tokens deliberately use
-   smooth illustrated contours rather than the world's final production-pixel
-   rendering, but they must still feel made for the same lighthouse.
-5. **Directional composition only:** Claude's sketch and Frank's supplied
+5. **Historical palette provenance only:**
+   `floor-asset-catalogue/ART_STYLE_GUIDE.md`. It explains existing token
+   choices but does not govern new graphics or restore pixel-art direction.
+6. **Directional composition only:** Claude's sketch and Frank's supplied
    reference pictures. They explain the idea or subject; they are not pixel,
    layout, identity or final-style authorities.
 
@@ -41,32 +52,33 @@ does not silently approve a body pose, runtime recipe or household asset.
 
 ## The visual language
 
-The concise style phrase is:
+For new tokens, the concise style phrase is:
 
-> Polished hand-painted 2D game iconography for a cosy maritime Lighthouse
-> Keeper game: smooth dark-navy outer contours, warm cream highlights, aged
-> brass and copper, sea-glass teal, storm blue and restrained coral; tactile
-> materials, compact silhouettes and clear reading at game scale.
+> Bright, clean, non-pixel 2D game iconography for a cheerful maritime
+> Lighthouse Keeper game: crisp dark-navy outer contours, flat colour fills,
+> at most one simple shadow tone per material, compact silhouettes and clear
+> reading at game scale; no gradients, glossy highlights or airbrushed shading.
 
 Every token must have:
 
 - one strong, immediately recognisable silhouette;
 - a substantial dark-navy exterior contour, with lighter material-coloured
   interior seams where appropriate;
-- two or three purposeful material values rather than noisy texture;
-- restrained painterly highlights that describe form and material;
+- one flat base colour and at most one purposeful shadow tone per material;
+- short simple shadows falling right from light at the upper left;
 - rounded, friendly construction without becoming an emoji;
 - enough simplification to survive thumbnail display, but enough specific
   hardware or texture to avoid generic clip art;
 - a compact centre of mass that can orbit, hop and tilt without visual chatter;
 - genuine transparency around the complete object.
 
-Reference colour roles are `#14243a` deep ink, `#f3e7cc` warm cream,
+Existing reference colour roles are `#14243a` deep ink, `#f3e7cc` warm cream,
 `#e6b955` brass/light, `#267da0` sea teal, `#68a7c5` sea glass,
 `#c8463c` restrained coral/red and `#23262b` charcoal. These are anchors, not
-a requirement to flatten every subject into seven colours. Natural subject
-colours remain welcome when the shared contour, highlight and saturation
-discipline keep them in the family.
+a requirement to flatten every subject into seven colours. New work snaps to
+the environment palette required by `CODEX_BRIEF.md`; natural subject colours
+remain welcome when the shared contour and saturation discipline keep them in
+the family.
 
 ### Token scope
 
@@ -130,14 +142,14 @@ Asset type: isolated game activity-callout token
 Primary request: Create exactly one [SUBJECT], immediately recognisable as [READ]. [SUBJECT-SPECIFIC CONSTRUCTION AND MATERIAL CUES].
 Input images: The supplied images are directional reference only for subject and the established illustrated Lighthouse Keeper game language; do not copy their layout, text, branding or identifiable people.
 Scene/backdrop: genuinely transparent background.
-Style/medium: highly polished hand-painted 2D game illustration; smooth anti-aliased contours; strong dark-navy outer line; warm cream highlights; aged brass/copper, sea-glass teal, storm blue and restrained coral where appropriate; subtle tactile painterly texture; matching the established Lighthouse Keeper activity-callout tokens.
+Style/medium: bright clean non-pixel 2D game illustration; smooth anti-aliased contours; strong dark-navy outer line; crisp flat colour fills with at most one simple shadow tone per material; light from the upper left with short shadows falling right; no gradients, glossy highlights, airbrushed shading or painterly texture; matching the current Lighthouse Keeper world-art brief while retaining the established activity-callout silhouette language.
 Composition/framing: exactly one owned illustration, centred, compact and readable at thumbnail size, with generous transparent margin on all four sides.
 Constraints: preserve actual alpha transparency; no Keeper, person unless explicitly requested, room, floor, panel, text, letter, number, logo, watermark, frame, vignette, background glow, cast shadow into the margin, detached fragment or additional object.
 ```
 
-For symbols such as odour, bubbles, sparks or notation, replace painterly volume
-with clean flat hand-painted marks while retaining the navy contour, restrained
-palette and hard transparent cutout. Explicitly prohibit aura, haze and glow.
+For symbols such as odour, bubbles, sparks or notation, use clean flat marks
+while retaining the navy contour, restrained palette and hard transparent
+cutout. Explicitly prohibit aura, haze and glow.
 
 ### Six-token source-sheet scaffold
 
@@ -149,7 +161,7 @@ Use case: stylized-concept
 Asset type: transparent 3x2 source sheet for household activity-callout sprites
 Primary request: six compact separate illustrations, in reading order: (1) [A], (2) [B], (3) [C], (4) [D], (5) [E], (6) [F].
 Scene/backdrop: genuinely transparent background; no panel, tile, floor, scenery or cast shadow outside each object.
-Style/medium: polished hand-painted cartoon game iconography for a cosy maritime Lighthouse Keeper game; chunky dark-navy outline, warm cream highlights, muted brass-gold, sea-teal, coral and storm-blue palette, subtle painterly texture, strong readable silhouettes at thumbnail size.
+Style/medium: bright clean non-pixel 2D game iconography for a cheerful maritime Lighthouse Keeper game; chunky dark-navy outline, crisp flat colour fills with at most one simple shadow tone per material, warm cream, brass-gold, sea-teal, coral and storm-blue palette, no gradients or painterly texture, strong readable silhouettes at thumbnail size.
 Composition/framing: exact regular 3-column by 2-row grid. Reserve a completely empty transparent margin of at least 80 pixels on every side of every 512 by 512 cell. Keep each complete illustration inside the central 352 by 352 area of its own cell. Fully transparent lanes at x=512, x=1024 and y=512 must contain no part, glow or antialiasing from any illustration.
 Constraints: six cells exactly in requested order; no words, letters, numbers, logos, watermark, border, labels, background glow, opaque backdrop, human figure or Keeper. Each cell has exactly one owned illustration and no stray marks.
 ```

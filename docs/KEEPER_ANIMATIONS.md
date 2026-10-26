@@ -1,5 +1,12 @@
 # Keeper animations — plain-English index
 
+> **26 October 2026 migration boundary:** This is the human-readable index for
+> the installed Prime/legacy animation banks. It is not current authority for
+> drawing another Keeper pose. New Keeper work is paused until Frank-approved
+> canon references populate `/public/art/keeper/canon/`; preserve all existing
+> approved bytes and treat climbing clips as historical evidence because
+> ordinary stairs are hidden.
+
 This is the human-readable index for the keeper. Start here rather than trying
 to infer meaning from filenames or Git history.
 

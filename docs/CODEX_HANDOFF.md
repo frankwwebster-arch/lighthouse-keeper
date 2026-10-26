@@ -1,5 +1,10 @@
 # Lighthouse Keeper — handoff decisions
 
+> **26 October 2026 art supersession:** Visual style, room-grid, circulation,
+> Keeper and item-art guidance below is historical wherever it conflicts with
+> `AGENTS.md` and `docs/CODEX_BRIEF.md`. Existing runtime behaviour and approved
+> asset bytes remain unchanged until a separate migration is approved.
+
 > **Current cross-agent handoff:** this 8 October decision record remains useful
 > history. For current Keeper Prime authorities, Timing Lab state, next gates
 > and Claude's furniture/locomotion architecture task, read
@@ -10,12 +15,12 @@ Date: 2026-10-08
 
 This note records the decisions made in the visual-design conversation so implementation can continue without relying on chat history.
 
-> **26 October supersession for whole-island establishing art:** the Day 1
-> four-floor statement below is historical. The current establishing-shot
-> brief uses two enclosed Day 1 floors (kitchen and bedroom/en-suite) plus the
-> lamp room, and a 20-floor, three-module expanded tower. Door, geometry and
-> draft-status details are in
-> [`LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md`](LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md).
+> **26 October supersession for whole-island establishing art:** the current
+> brief restores Day 1 to kitchen, living room, bedroom and lamp room. It uses
+> exact 1536 × 512 modules, a straight-sided shell and code assembly for both
+> Day 1 and expanded views. The earlier two-floor generated draft and all pixel
+> tests are rejected history. Current authority: [`CODEX_BRIEF.md`](CODEX_BRIEF.md);
+> draft provenance: [`LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md`](LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md).
 
 ## Visual direction
 
@@ -40,7 +45,12 @@ Broken objects share a visual grammar: gentle casing wobble, looping smoke, and 
 - Day 1 begins with four floors, bottom to top: kitchen, living room, bedroom with en suite, and lamp room.
 - The lighthouse can expand upward and downward. It does not need to be realistic.
 - The lamp room must always remain at the top.
-- The main gameplay shaft uses one active standard-room width per floor and never tapers. The delivered first-generation assets are 110 × 35; the agreed replacement initial target is 172 × 56, with later whole-lighthouse tiers of 193 and 214. Any apparent taper is decorative exterior shading only. The lamp room is inset/fixed-width, with a wraparound rail and outdoor walkway. See `KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`.
+- The main gameplay shaft uses one active standard-room width per floor. The
+  delivered first-generation assets are 110 × 35 and the later 172/193/214
+  proposal is historical. New art uses equal 1536 × 512 modules, up to three
+  modules wide, with a straight-sided shell and no taper. The lamp room stays
+  centred above the full-width gallery and is empty in foreground art. See
+  `CODEX_BRIEF.md`.
 - Future standard-floor progression is deliberately non-linear. Keep kitchen at the base, lamp room topmost and bedroom directly below it; give every other eligible floor a one-time random middle-stack position and persist the resulting order. Do not pre-assign future room types to heights or let concept-art taper dictate their order. Derive stripe phase from world Y.
 - New floors can slide into place or materialise in a large puff of smoke. Reuse one arrival animation for all new floors.
 - New floors must continue the alternating exterior stripe pattern. Calculate stripe phase from world/floor position so inserted floors align automatically.
