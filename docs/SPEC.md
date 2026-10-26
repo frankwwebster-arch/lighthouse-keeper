@@ -233,6 +233,7 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
   3. WORKTOP strip: one continuous worktop per run, made of a tileable 1-bay piece (84 × 32: 1/4-scale top reveal plus front edge), left and right end caps (16 px), and a 2 px joint line between tiles. Worktops are never part of an individual item.
   4. INSERTS: the sink and any built-in hob are NEVER cut into the worktop. The worktop tile underneath is always the same plain tile. Each insert is a separate sprite laid ON TOP of it, with its own rim wide enough to cover the join. No worktop art ever contains a hole or knows what sits on it.
 - SLOT-IN appliances (`slotIn`) keep their own top and plinth because that is how they really look (a freestanding cooker between units). The run puts end caps on either side of a slot-in item; the slot-in's hob top sits exactly at worktop height and its plinth on the run's plinth line.
+- APPLIANCES ARE FREESTANDING (Frank, 26 Oct), with a 1950s character: e.g. a gas cooker with an eye-level grill and hood, a rounded fridge, later the lobby's washing machine and dryer. Each stands centred in its bay with a small gap of wall either side (76 px body in an 84 px bay), finished sides, feet on the unit base line; fitted runs stop with end caps on either side. Fitted runs are only for sinks and cupboards. No dishwasher.
 - Tall fitted items (fridge-freezer, larder, utility cupboard) are `fittedTall`: they break the worktop, and the run puts end caps on either side.
 - Freestanding items (table, chairs, bin, pet bowl) are separate sprites; counter-top items (toaster, kettle, mixing bowl) sit at mid-depth of the worktop at declared counter anchors.
 - The engine (or build step) assembles runs automatically from contiguous bays tagged `fitted`, so neighbours always join perfectly, and an upgrade only swaps fronts, inserts or slot-ins while the run recomputes.
@@ -374,6 +375,7 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 - Proposed changes: (none yet)
 
 ## 19. Agent notes (Codex ⇄ Claude)
+- OPEN · 26 Oct · Claude → Codex: Frank has decided all appliances are freestanding with a 1950s feel (section 10a-2). Finish and report the Kitchen v3 rebuild as briefed, then run `docs/prompts/KITCHEN_V3_AMENDMENT_FREESTANDING_2026-10-26.md` (cooker with eye-level grill, rounded fridge, larder cupboard, no dishwasher). Keep the 1950s direction you're already taking.
 - OPEN · 26 Oct · Claude → Codex: Spec moved to `docs/SPEC.md` as the shared channel (see "Shared channel" at the top). Next art task is the Kitchen v3 rebuild Frank sends you; report results here as well as to Frank. Your style calibration is approved as the look (Frank, 26 Oct).
 
 ## Change log (history only — the body above is authoritative)
@@ -392,3 +394,4 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 - 26 Oct 2026: amendment. END CLOSET rule: WCs, the en-suite and the lobby cloakroom sit at the far right (bays 13–14) behind a camera-facing front panel with an edge-on doorway, so the keeper walks right and vanishes; the front door is hidden inside the lobby cloakroom (boot room, coats, WC, tools).
 - 26 Oct 2026 (Claude): moved to `docs/SPEC.md` in the repo as the shared Codex ⇄ Claude channel; status set to working spec (Frank); shared-channel rules and section 19 (agent notes) added.
 - 26 Oct 2026 (Claude): no shadows in the game (Frank): no cast, wall, floor or contact shadows for items or the keeper; shading inside objects stays.
+- 26 Oct 2026 (Claude): appliances freestanding with a 1950s character (Frank); fitted runs only for sinks and cupboards; dishwasher dropped.
