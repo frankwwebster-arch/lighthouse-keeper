@@ -48,23 +48,23 @@ Built from Codex's technical review of v1.3 (commit 42ec2552), with engine-side 
 ### 3a. Standard module (structure included in the dimensions)
 | | Delivered px |
 |---|---|
-| Module | 1536 × 576 |
+| Module | 2048 × 576 (Frank, 26 Oct: widened from 1536 for room to grow) |
 | Left wall / right wall | 32 / 32 |
 | Ceiling band / floor slab | 32 / 32 |
 | Walk-in zone (always clear) | x 32–328 |
-| Bay field | x 328–1504 |
+| Furniture field | x 328–2016 |
 | Stopping lattice | x = 370 + 84n (one Prime Keeper step apart) |
 
 - Vertical layout (y from the module top): ceiling band 0–32; back wall 32–460 (2.55 m); floor band 460–544 (84 px = 2.0 m room depth × 1/4); floor slab 544–576.
 - Back-wall line (where the wall meets the floor): y = 460. Front edge of the floor: y = 544.
 - Keeper walking line: per room (`walkY`, section 3g). Kitchen walkY = 502.
-- Stopping lattice points ('stops') are numbered 1–14 from the door side: x = 370 + 84(n−1): 370, 454, 538, 622, 706, 790, 874, 958, 1042, 1126, 1210, 1294, 1378, 1462. They are NOT furniture slots. Layouts may still use 'bay' as shorthand for the 84 px interval around a stop when measuring, but no item width is tied to it.
+- Stopping lattice points ('stops') are numbered 1–20 from the door side: x = 370 + 84(n−1): 370, 454, 538, 622, 706, 790, 874, 958, 1042, 1126, 1210, 1294, 1378, 1462, 1546, 1630, 1714, 1798, 1882, 1966. They are NOT furniture slots. Layouts may still use 'bay' as shorthand for the 84 px interval around a stop when measuring, but no item width is tied to it.
 - WHY 84: the stop spacing equals one Prime Keeper step (F1→F5 = 84 px), and the door clearance is set so the door point (x 118) is exactly three steps from stop 1. Every stop is therefore a whole number of steps from the door and from every other stop, so he can walk to and stop exactly on any item whose midpoint is placed on a stop.
 
 ### 3b. Windows
-- Two per above-ground module, 168 × 168 px, each CENTRED ON A STOP so a sink or desk can sit centred beneath it: left window centred on stop 4 (x 538–706), right window centred on stop 11 (x 1126–1294), symmetric about the module centre, at y 106–274. The sill (y 274) is 186 px ≈ 1.11 m above the back-wall line; the head is 74 px below the ceiling band.
+- Two per above-ground module, 168 × 168 px, each CENTRED ON A STOP so a sink or desk can sit centred beneath it: left window centred on stop 5 (x 622–790), right window centred on stop 13 (x 1294–1462), roughly symmetric about the module centre, at y 106–274. The sill (y 274) is 186 px ≈ 1.11 m above the back-wall line; the head is 74 px below the ceiling band.
 - Frames and glazing bars are artwork; the whole glass region is exact #FF00FF with hard edges (no anti-aliasing against magenta). Window geometry is identical across all recoloured standard modules.
-- **HARD RULE: no furniture or item may ever occlude a window.** No item may rise above y 274 inside x 538–706 or x 1126–1294, at any tier. No wall-mounted item, shelf, picture, curtain, pelmet or FX may overlap a window's frame or glass. Tall items (fridge-freezer, dresser, bookshelf, wardrobe, piano, four-poster canopy) stay clear of the window spans. Counter-top items (kettle, toaster) are not allowed under windows. The layout validator fails the build on any overlap, checked at every item's maximum-tier artwork bounds. The keeper is foreground and exempt.
+- **HARD RULE: no furniture or item may ever occlude a window.** No item may rise above y 274 inside x 622–790 or x 1294–1462, at any tier. No wall-mounted item, shelf, picture, curtain, pelmet or FX may overlap a window's frame or glass. Tall items (fridge-freezer, dresser, bookshelf, wardrobe, piano, four-poster canopy) stay clear of the window spans. Counter-top items (kettle, toaster) are not allowed under windows. The layout validator fails the build on any overlap, checked at every item's maximum-tier artwork bounds. The keeper is foreground and exempt.
 
 ### 3c. Hidden-circulation door
 - One circulation entrance per floor, in the LEFT WALL of the leftmost module, at the FRONT of the room. No visible stairs, shaft, landing, lift car or recess.
@@ -72,7 +72,7 @@ Built from Codex's technical review of v1.3 (commit 42ec2552), with engine-side 
 - Open, the door panel is a foreground occluder. Draw order: room shell → keeper → open door panel / jamb.
 - Travel: the keeper walks left into the door, is occluded, the screen fades, and he emerges from the destination floor's door at the door standing point (x 118) on that room's walkY.
 - The lift upgrade changes only the door jamb; the lift lives entirely in the hidden core. Costume and tool swaps may happen inside it.
-- FRONT DOOR (to the island) (Frank, 26 Oct): the ONE door drawn on a back wall, in the ground-floor ENTRANCE LOBBY only. An arched wooden front door, 1.0 m × 2.0 m, centred on bay 4 (x 538–706, y 124–460), left of centre, with a doormat on the floor in front. It replaces the lobby's left window. The floor in front of it (bays 3–5) stays clear. Going out: the keeper walks to x 622, turns to the back, the door swings open by itself, he WALKS through it (walk-away clip, section 7: about 3 steps, from walkY up to and through the doorway, his sprite drawn behind the door frame once he crosses the threshold), and the door closes behind him. Coming in: the door opens, he walks in towards the camera (walk-toward clip) to walkY, the door closes behind him, he turns to the side. Outdoor-costume swaps happen while he is out of sight beyond the closed door. Outside, he appears from behind the tower's base. No other room has a back-wall door.
+- FRONT DOOR (to the island) (Frank, 26 Oct): the ONE door drawn on a back wall, in the ground-floor ENTRANCE LOBBY only. An arched wooden front door, 1.0 m × 2.0 m, centred on stop 5 (x 622–790, y 124–460), in place of the lobby's left window, left of centre, with a doormat on the floor in front. The floor in front of it stays clear. Going out: the keeper walks to x 706, turns to the back, the door swings open by itself, he WALKS through it (walk-away clip, section 7: about 3 steps, from walkY up to and through the doorway, his sprite drawn behind the door frame once he crosses the threshold), and the door closes behind him. Coming in: the door opens, he walks in towards the camera (walk-toward clip) to walkY, the door closes behind him, he turns to the side. Outdoor-costume swaps happen while he is out of sight beyond the closed door. Outside, he appears from behind the tower's base. No other room has a back-wall door.
 
 ### 3d. Horizontal expansion
 - Tiers: 1, 2 or 3 complete modules per floor. The 172/193/214 width tiers are retired.
@@ -95,7 +95,7 @@ Up to 20 above-ground floors. Day 1 = entrance lobby (with utility and downstair
 ### 3f. Lantern cap
 - A full-width gallery and cornice across the active tower width (`gallery_left` + n × `gallery_mid` + `gallery_right`).
 - One fixed-width lantern chamber, centred, with identical dimensions at every tower width. The shell is empty; lamp and telescope are separate sprites; glazing is exact magenta.
-- Width: the lantern sits on its own lantern-floor grid. Proposed starting value 1072 × 576 px (32 + 12 bays × 84 + 32), centred on a one-module tower so a 232 px gallery walkway shows on each side. Confirmed by the Gate 2 tower proof, then frozen (D11).
+- Width: the lantern sits on its own lantern-floor grid. Proposed starting value 1072 × 576 px, centred on a one-module (2048 px) tower so a 488 px gallery walkway shows on each side; may grow with the wider module. Confirmed by the Gate 2 tower proof, then frozen (D11).
 
 ### 3g. Room depth and walking line
 - Standard room depth 2.0 m (floor band 84 px). Furniture stands against the back wall; the floor in front of it is the keeper's walking space.
@@ -121,7 +121,7 @@ Up to 20 above-ground floors. Day 1 = entrance lobby (with utility and downstair
 - Exact arrival needs every move to be a whole number of 84 px steps. That requires the pending gait decision (D15): re-time start and stop to 42 px each (3, 7, 13, 19 / 19, 13, 7, 3) and add the opposite-foot F5 stop. Until D15 is approved, reachable stops from the door are only 76 + 168n px.
 
 ### 3j. The RIGHT DOOR — the magic cupboard (Frank, 26 Oct)
-- Every floor has TWO doorways, both in the side walls at the front and both seen only as a jamb: the LEFT door (x 0–32) leads to the hidden stair core; the RIGHT door (x 1504–1536, y 208–544, in the rightmost module) leads into a fictional space between the room and the tower's outer wall that holds whatever that room needs. Like the stairs, it is a deliberate fiction: it never takes up a bay and is never drawn.
+- Every floor has TWO doorways, both in the side walls at the front and both seen only as a jamb: the LEFT door (x 0–32) leads to the hidden stair core; the RIGHT door (x 2016–2048, y 208–544, in the rightmost module) leads into a fictional space between the room and the tower's outer wall that holds whatever that room needs. Like the stairs, it is a deliberate fiction: it never takes up a bay and is never drawn.
 - What lies behind the right door, by room: kitchen and most rooms = the cupboard of myriads (indoor tools: broom, hoover, super hoover, mop, duster, toolbox and so on); entrance lobby = the downstairs WC (a small "WC" sign on the jamb); bedroom = the WC, reached through the en-suite (section 3k), also signed.
 - Use: the keeper walks along walkY to the right wall, passes behind the jamb and is hidden (draw order: shell → keeper → right jamb). Swaps happen while hidden: tool in or out, outfit change, toilet use, leaving or entering the tower. He reappears the same way, already holding the tool or in the new outfit.
 - Costs: no bays, no item art beyond the jamb, no keeper animation beyond the walk. Bays 13–14 stay available for items; anything there stands behind walkY, so the keeper walks in front of it to the door.
@@ -130,8 +130,8 @@ Up to 20 above-ground floors. Day 1 = entrance lobby (with utility and downstair
 - GARDEN SHED (Frank, 26 Oct): the outdoor equivalent of the magic cupboard. Outdoor tools and kit (lawnmower, watering can, spade, fishing rod and tackle, crab pots, paint for the boat) come from the shed on its island plot, with the same walk-in, hidden-swap, walk-out mechanic.
 
 ### 3k. The en-suite (Frank, 26 Oct)
-- The bedroom's EN-SUITE is an actual, visible bathroom at the right of the bedroom floor: bays 9–14 (x 1000–1504, 3.0 m), proposed, confirmed in the bedroom proof.
-- It is separated from the bedroom by a partition seen edge-on: a 16 px interior wall strip centred on x 1000 (clear of the right window, which starts at x 1084), from the ceiling band to the floor, with an open doorway at the front where walkY crosses it. Same back wall, floor and ceiling lines; the en-suite may have its own wall colour or tiles.
+- The bedroom's EN-SUITE is an actual, visible bathroom at the right of the bedroom floor, about 3.0 m wide (x ≈ 1512–2016 on the 2048 module), proposed, confirmed in the bedroom proof.
+- It is separated from the bedroom by a partition seen edge-on: a 16 px interior wall strip at about x 1504 (clear of the right window, which ends at x 1462), from the ceiling band to the floor, with an open doorway at the front where walkY crosses it. Same back wall, floor and ceiling lines; the en-suite may have its own wall colour or tiles.
 - Contents, drawn as items: basin with mirror (bay 9), bath (bays 10–12, low enough to pass under the window sill), shower cubicle (bay 13, not a window bay), towel rail or laundry basket (bay 14). Teeth-brushing is rear-work at the basin.
 - The WC is behind the floor's RIGHT DOOR, signed "WC", never seen. Pyjama changes happen there too.
 - The lobby has NO end room and no internal doors: its right door is the downstairs WC (signed), with a small hand basin in the lobby beside it (bay 14).
@@ -251,28 +251,28 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - Sink taps rise from the rear of the worktop reveal and stay below the window sill (y 274).
 
 ### 10b. Day-1 layouts and reserved footprint budget
-**Kitchen (layout v5, UNFITTED 1950s, walkY 502) (Frank, 26 Oct).** No fitted runs, no continuous worktop, no plinth strip: every piece is freestanding furniture with its OWN top, standing on its own with wall showing between pieces. Items and upgrade tiers come from Frank's `data/upgrades.csv`. Every item reserves its largest tier's width from the start, centred on its stop. Codex may adjust spans by a few px to keep at least 4 px of wall between pieces, but midpoints stay on their stops.
+**Kitchen (layout v6, UNFITTED 1950s, 2048 module, walkY 502) (Frank, 26 Oct).** No fitted runs, no continuous worktop: every piece is freestanding furniture with its own top, with wall between pieces. Items and tiers from Frank's `data/upgrades.csv`; every item reserves its largest tier, centred on its stop. Codex may adjust spans by a few px to keep at least 8 px of wall between pieces; midpoints stay on their stops.
 
 | Item | Reserved span (x) | Midpoint stop | Surface for |
 |---|---|---|---|
-| Fridge: t1 small fridge, counter height, freestanding (0.60 m) → t2 fridge-freezer → t3 American-style (0.90 m) | 378–530 | 454 | — |
-| Belfast sink on legs or brick piers, with a small draining board (1.0 m) | 538–706 | 622 (under the left window) | washing-up |
-| Small kitchen cupboard with its own wooden or enamel top (0.75 m) | 727–853 | 790 | KETTLE |
-| Cooker: t1 basic oven (freestanding, in its own 1.0 m housing with pan drawers, one item) → t2 two-oven range → t3 fancy professional | 874–1042 | 874 + 84 = 958 | — |
-| Scrubbed wooden work table (1.2 m, 0.75 m high, legs visible) | 1109–1311 | 1210 (under the right window, below the sill) | MIXER, food prep |
-| Dresser: plate rack above, counter shelf and cupboards below (0.78 m, tall) | 1313–1443 | 1378 | TOASTER |
-| Pedal bin (0.25 m) | 1441–1483 | 1462 | — |
+| Fridge: t1 small counter-height fridge → t2 fridge-freezer → t3 American-style (0.90 m) | 378–530 | 454 (stop 2) | — |
+| Belfast sink on legs with draining board (1.0 m), under the left window | 622–790 | 706 (stop 5) | washing-up |
+| Small kitchen cupboard with its own top (0.75 m) | 811–937 | 874 (stop 7) | KETTLE |
+| Cooker: t1 basic oven (0.60 m, freestanding) → t2 two-oven range → t3 fancy professional; 1.2 m reserved for the range | 1025–1227 | 1126 (stop 10) | — |
+| Scrubbed wooden work table (1.2 m) with one chair tucked in at its right end, under the right window | 1244–1513 | 1378 (stop 13) | MIXER, food prep; he can sit at it |
+| Dresser: plate rack above, counter shelf and cupboards below (0.90 m, tall) | 1555–1705 | 1630 (stop 16) | TOASTER |
+| Tall larder cupboard (0.75 m) | 1735–1861 | 1798 (stop 18) | food storage |
+| Pedal bin (0.25 m) | 1945–1987 | 1966 (stop 20) | — |
 
-- Cooker midpoint stop is 958 (span 874–1042). The pet bowl is left out for now (no pet in V1; see D18).
-- Counter items (kettle, toaster, mixer) are separate sprites placed on their piece's top at its stop.
+- The pet bowl is left out for now (no pet in V1; see D18). Counter items (kettle, toaster, mixer) are separate sprites placed on their piece's top at its stop.
 - Broom → basic hoover → super hoover live behind the right door. The door tiers in `data/upgrades.csv` (old wooden door → knocker and peephole → smart door) now belong to the lobby's front door.
 
 **Other Day-1 rooms (proposed budgets for the fit check):**
 | Room | Items (max bays) | Total |
 |---|---|---|
-| Entrance lobby + utility (ground floor) | 1–2 boot bench and rack, coats on wall hooks above; 3–5 FRONT DOOR on the back wall (floor in front kept clear, doormat); 6 washing machine; 7 tumble dryer; 8 laundry sink; 9 laundry basket; 10–11 low clothes airer or ironing board (under the right window, below the sill); 12–13 free for later; 14 small hand basin; right door = downstairs WC (signed). No internal doors | 10 of 14 (D17) |
+| Entrance lobby + utility (ground floor) | (bay numbers from the old 1536 module; re-lay on the 2048 module at the lobby proof) 1–2 boot bench and rack, coats on wall hooks above; 3–5 FRONT DOOR on the back wall (floor in front kept clear, doormat); 6 washing machine; 7 tumble dryer; 8 laundry sink; 9 laundry basket; 10–11 low clothes airer or ironing board (under the right window, below the sill); 12–13 free for later; 14 small hand basin; right door = downstairs WC (signed). No internal doors | 10 of 14 (D17) |
 | Living | CRT TV unit 2, bookshelf 2, piano 3, armchair 2 (tools behind the right door) | 9 of 14 |
-| Bedroom + en-suite | Bedroom bays 1–8: bed side-on 4 (four-poster in the same reservation, with OCCUPIED state), bedside table with phone 1, desk 2. En-suite bathroom bays 9–14: basin 1, bath 3, shower 1, towel rail 1; WC behind the right door | 14 of 14 |
+| Bedroom + en-suite | (old 1536 numbering; re-lay on the 2048 module at the bedroom proof) Bedroom bays 1–8: bed side-on 4 (four-poster in the same reservation, with OCCUPIED state), bedside table with phone 1, desk 2. En-suite bathroom bays 9–14: basin 1, bath 3, shower 1, towel rail 1; WC behind the right door | 14 of 14 |
 | Lamp room (lantern grid) | Lamp mechanism 2, telescope 2 | 4 of 12 |
 - Bedroom walkY: bed 0.95 m deep + 0.40 m → y 517.
 - Lobby walkY: 0.60 m appliances + 0.40 m → y 502.
@@ -306,7 +306,7 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - The approved kitchen sheet's drawn broken states (flooding sink, falling doors, burnt toaster, cracked kettle, spilt bin) are reference for these effects only, not production art.
 
 ## 11. Island and outdoor art
-- Same units as the tower: 1 module width (FW) = 1536 px; 1 bay = 84 px. Major plots use module-width units; facilities may use whole-bay increments. The "12 lp outdoor grid" is withdrawn.
+- Same units as the tower: 1 module width (FW) = 2048 px; 1 bay = 84 px. Major plots use module-width units; facilities may use whole-bay increments. The "12 lp outdoor grid" is withdrawn.
 - Ground line level with the entrance lobby's floor-slab top. Same front-on top-reveal projection and 168 px/m scale as the rooms.
 - Day 1: full island rock including below a level waterline; short grass; rough grass and rocks on uncleared ground; play lawn; vegetable bed; barbecue terrace; cliff steps; wooden jetty; moored rowing boat with outboard; empty future plots; separate surface and edge pieces where expansion needs them.
 - Never in the foreground master: sky, sea, clouds, birds, waves, horizon, distant islands, ships.
@@ -318,7 +318,7 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 **Scaling:**
 - World geometry is always 1:1: no asset is ever scaled relative to another. Display scaling applies uniformly to the whole composed view, so relative line weights stay consistent.
 - Review and approval happen at 1:1 delivered px.
-- ROOM view: the module (1536 × 576) fits the viewport width; leftover margin shows tower exterior and sky, never stretching.
+- ROOM view: the module (2048 × 576) fits the viewport width, or on narrow screens the camera frames the keeper and pans with him; leftover margin shows tower exterior and sky, never stretching.
 - TOWER and ISLAND views use pre-generated, reviewed mip levels (1/2, 1/4, 1/8 where needed). Thin critical features (window bars, railings, the keeper's face, status lights, item legs, structural seams) get declared minimum-feature preservation or a hand-corrected mip. The runtime picks the nearest larger mip and downsamples smoothly from it (never more than 2×).
 - Transitions: a jump cut, or a glide that pans at the outgoing view's scale, then crossfades (about 0.25 s) to the incoming view. Camera position snaps to whole display pixels.
 - Engine work this needs: mip-set selector per view, viewport fitting, pixel-snapped camera, two-layer crossfade. A planned task, not a blocker.
@@ -355,7 +355,7 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - Art freeze: once Gates 0–2 pass, style, palette and grid are frozen until 20 Dec; changes need Frank's explicit decision.
 
 ## 17. Gates
-- **Gate 0 (Frank):** approve the ligne-claire style with V7 as style authority; the 1536 × 576 module with 14 × 84 px bays; scale 1 m = 168 px with the Prime Keeper 1:1 at 298 px; 2.0 m room depth with per-room walkY; the minimal animation strategy; bubble-story retention; no-reflow reserved footprints; 1–3 module widening.
+- **Gate 0 (Frank):** approve the ligne-claire style with V7 as style authority; the 2048 × 576 module with 20 stops 84 px apart; scale 1 m = 168 px with the Prime Keeper 1:1 at 298 px; 2.0 m room depth with per-room walkY; the minimal animation strategy; bubble-story retention; no-reflow reserved footprints; 1–3 module widening.
 - **Gate 1:** the exact-magenta master survives the build unchanged and produces a verified exact-match RGBA derivative.
 - **Gate 2:** one representative room (the kitchen) is approved at ROOM, TOWER and ISLAND scale (including mips and the lantern width).
 - **Gate 3:** the Prime Keeper contract and approved clips are recorded in `active.json` with hashes.
@@ -367,7 +367,7 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 
 ## 18. Open decisions and proposals
 - D7 (style): ligne claire, V7 as style authority (Frank, 26 Oct). Formal confirmation at Gate 0.
-- D8 (grid): 1536 × 576, 14 × 84 px bays, 168 px/m, 2.0 m depth, per-room walkY. Formal confirmation at Gate 0 after the kitchen proof.
+- D8 (grid): 2048 × 576, 20 stops 84 px apart, free widths, 168 px/m, 2.0 m depth, per-room walkY. Formal confirmation at Gate 0 after the kitchen proof.
 - D9 (V1 gameplay rules): needs bars, decay rates, activity restores, day end, credit rules. To be settled at the Claude Code kickoff and recorded in section 16.
 - D11: lantern width (proposed 1072 × 576 px, 12 bays). Confirm at Gate 2.
 - D12 RESOLVED (Frank, 26 Oct): every floor's right door hides the cupboard of myriads or the WC (signed) in the lobby and the bedroom floor; the en-suite is a visible bathroom in bays 9–14 (section 3k).
@@ -382,6 +382,7 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - Proposed changes: (none yet)
 
 ## 19. Agent notes (Codex ⇄ Claude)
+- OPEN · 26 Oct · Claude → Codex: ROOM WIDENED (Frank). The module is now 2048 × 576 (was 1536); height, scale, keeper, walkY and every vertical value are unchanged. 20 stops at x = 370 + 84(n−1); right jamb at x 2016–2048; windows centred on stops 5 and 13 (x 622–790 and 1294–1462). Kitchen layout v6 in section 10b adds a 1.2 m range reservation, a work table with chair, a dresser and a tall larder cupboard. Build the kitchen v5-method (free generation to the calibration's quality with the keeper for scale, then slide pieces onto stops) on THIS geometry; ignore the 1536 layouts.
 - OPEN · 26 Oct · Claude → Codex: KITCHEN v5 METHOD CHANGE (Frank: kitchen-proof-v4-painted-room is "very disappointing" — it is the fitted v4 layout, and its art is flat and toy-like next to the approved calibration). Build the UNFITTED layout v5 below, but change the method: (1) generate the kitchen FREELY, as you did the approved calibration, using the calibration image itself as the style/quality reference input and the unchanged Prime Keeper composited in for scale; no rigid pixel layout guide during generation; match the calibration's richness (bevels, layered edges, material weight, dense detail); (2) then cut each freestanding piece out and SLIDE it horizontally so its midpoint sits on its stop (section 10b); scale only uniformly, and only if a piece's real size is off; (3) counter items (kettle, toaster, mixer) are separate sprites. Show Frank the freely painted room beside the calibration first, then the re-positioned room. No palette snapping, no re-inking, no shadows.
 - SUPERSEDED BY THE METHOD CHANGE ABOVE (layout still applies) · 26 Oct · Claude → Codex: KITCHEN REDO v5 — supersedes the v4 note below. Frank does NOT want a fitted kitchen: no matching run of units, no continuous worktop, no plinth strip. Build the UNFITTED 1950s kitchen in section 10b (layout v5): freestanding small fridge, Belfast sink on legs with draining board, small cupboard with its own top (kettle), freestanding basic oven in its own 1.0 m housing, scrubbed wooden work table under the right window (mixer), dresser with plate rack and counter shelf (toaster), pedal bin. Each piece has its own top and stands alone with wall between pieces, midpoint on its stop; reserve each item's largest tier. Pieces should look like a collected, characterful 1950s kitchen (complementary, not identical, finishes: cream enamel, painted wood, scrubbed pine, the approved blues and coppers). Same method: paint the whole set as one 3072 × 1152 image over a layout guide (with dashed largest-tier outlines), show Frank beside the calibration BEFORE cutting, then cut; no palette snapping, no re-inking, no shadows. Windows centred on stops 4 and 11; right jamb; no back-wall door.
 - OPEN · 26 Oct · Claude → Codex (FYI, no action yet): Frank's bills-and-overdraft rule (D19) will later need small UI art in the ligne-claire style: a red overdrawn balance treatment, a bill line for the day recap (power and heating icons), and a 'worried' keeper expression or bubble token. Wait for a brief before drawing.
@@ -424,3 +425,4 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - 26 Oct 2026 (Claude): recorded D19 (Frank, 15 Oct): nightly bills (power and heating), gentle overdraft, running costs that vary by upgrade; reverses the bank room's 'no overdrafts' rule; not yet built.
 - 26 Oct 2026 (Claude): (Frank) kitchen goes fully UNFITTED 1950s (layout v5): freestanding pieces each with their own top; kettle on a small cupboard, mixer on a work table, toaster on the dresser; pet bowl out for now.
 - 26 Oct 2026 (Claude): art method revised: generate freely with the calibration as reference, then cut freestanding pieces and slide them onto their stops; rigid layout guides dropped.
+- 26 Oct 2026 (Claude): (Frank) module widened to 2048 × 576 (20 stops); windows centred on stops 5 and 13; kitchen layout v6 with range reservation, table and chair, dresser and larder.
