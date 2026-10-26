@@ -26,7 +26,7 @@ Built from Codex's technical review of v1.3 (commit 42ec2552), with engine-side 
 - **World units (engine)**: 1 world unit = 1 delivered px. The engine stores integer world coordinates only. The old lp/ku system is retired from new code; any legacy geometry still in the engine gets a documented one-off migration (section 15). For the Prime Keeper, 1 ku = 1 px.
 - **Scale (absolute):** 1 m = 168 px. Depth on screen (section 3h): object top reveals 1/6 of real depth (28 px per metre); the room floor band is a fixed 84 px.
 - **The keeper sets the scale.** The approved Prime Keeper is used 1:1 and is never rescaled (298 px = 1.77 m). The world is drawn to fit him, not the reverse.
-- **Widths are quantised to bays:** 1 bay = 84 px = 0.50 m (a standard 500 mm UK unit) = one Prime Keeper step. Heights and depths are real; widths round to whole bays.
+- **Widths are FREE; stops are on a lattice (Frank, 26 Oct; restores the 14 Oct contract):** the keeper's stopping points are a fixed lattice one step (84 px = 0.50 m) apart. Furniture keeps its real, chunky width and is NEVER squeezed into a step-wide slot. Each item the keeper uses is positioned so its MIDPOINT (or declared working point) sits exactly on a lattice point, so he stops dead centre. No weird narrow units.
 
 ## 2. Visual style — ligne claire [Gate 0]
 - Working direction (Frank, 26 Oct): style B, smooth flat-colour illustration in a light ligne-claire manner. Target feel: "adult and yet also playful, suitably Hergé but also modern." Not pixel art; 8-bit and 16-bit were rejected as too blocky when zoomed.
@@ -53,18 +53,18 @@ Built from Codex's technical review of v1.3 (commit 42ec2552), with engine-side 
 | Ceiling band / floor slab | 32 / 32 |
 | Walk-in zone (always clear) | x 32–328 |
 | Bay field | x 328–1504 |
-| Bays | 14 × 84 (one Prime Keeper step each, 0.50 m) |
+| Stopping lattice | x = 370 + 84n (one Prime Keeper step apart) |
 
 - Vertical layout (y from the module top): ceiling band 0–32; back wall 32–460 (2.55 m); floor band 460–544 (84 px = 2.0 m room depth × 1/4); floor slab 544–576.
 - Back-wall line (where the wall meets the floor): y = 460. Front edge of the floor: y = 544.
 - Keeper walking line: per room (`walkY`, section 3g). Kitchen walkY = 502.
-- Bays are numbered 1–14 from the door side. Bay b spans x = 328 + 84(b−1) to 328 + 84b; its centre is x = 370 + 84(b−1): 370, 454, 538, 622, 706, 790, 874, 958, 1042, 1126, 1210, 1294, 1378, 1462.
-- WHY 84: the bay width equals one Prime Keeper step (F1→F5 = 84 px), so the keeper can walk to and stop exactly at the centre of EVERY bay (section 3i).
+- Stopping lattice points ('stops') are numbered 1–14 from the door side: x = 370 + 84(n−1): 370, 454, 538, 622, 706, 790, 874, 958, 1042, 1126, 1210, 1294, 1378, 1462. They are NOT furniture slots. Layouts may still use 'bay' as shorthand for the 84 px interval around a stop when measuring, but no item width is tied to it.
+- WHY 84: the stop spacing equals one Prime Keeper step (F1→F5 = 84 px), and the door clearance is set so the door point (x 118) is exactly three steps from stop 1. Every stop is therefore a whole number of steps from the door and from every other stop, so he can walk to and stop exactly on any item whose midpoint is placed on a stop.
 
 ### 3b. Windows
-- Two per above-ground module, 168 × 168 px (two bays wide), over bays 4–5 (x 580–748) and 10–11 (x 1084–1252), at y 106–274. The sill (y 274) is 186 px ≈ 1.11 m above the back-wall line; the head is 74 px below the ceiling band. The windows sit symmetrically in the bay field.
+- Two per above-ground module, 168 × 168 px, each CENTRED ON A STOP so a sink or desk can sit centred beneath it: left window centred on stop 4 (x 538–706), right window centred on stop 11 (x 1126–1294), symmetric about the module centre, at y 106–274. The sill (y 274) is 186 px ≈ 1.11 m above the back-wall line; the head is 74 px below the ceiling band.
 - Frames and glazing bars are artwork; the whole glass region is exact #FF00FF with hard edges (no anti-aliasing against magenta). Window geometry is identical across all recoloured standard modules.
-- **HARD RULE: no furniture or item may ever occlude a window.** No item may rise above y 274 inside x 580–748 or x 1084–1252, at any tier. No wall-mounted item, shelf, picture, curtain, pelmet or FX may overlap a window's frame or glass. Tall items (fridge, dresser, bookshelf, wardrobe, piano, four-poster canopy) use non-window bays. Counter-top items (kettle, toaster) are not allowed in window bays. The layout validator fails the build on any overlap, checked at every item's maximum-tier artwork bounds. The keeper is foreground and exempt.
+- **HARD RULE: no furniture or item may ever occlude a window.** No item may rise above y 274 inside x 538–706 or x 1126–1294, at any tier. No wall-mounted item, shelf, picture, curtain, pelmet or FX may overlap a window's frame or glass. Tall items (fridge-freezer, dresser, bookshelf, wardrobe, piano, four-poster canopy) stay clear of the window spans. Counter-top items (kettle, toaster) are not allowed under windows. The layout validator fails the build on any overlap, checked at every item's maximum-tier artwork bounds. The keeper is foreground and exempt.
 
 ### 3c. Hidden-circulation door
 - One circulation entrance per floor, in the LEFT WALL of the leftmost module, at the FRONT of the room. No visible stairs, shaft, landing, lift car or recess.
@@ -110,15 +110,14 @@ Up to 20 above-ground floors. Day 1 = entrance lobby (with utility and downstair
 - PLACEMENT: an object standing against the back wall has its front-face bottom at y = 460 + depth × 42 (a 0.60 m unit: y 485). A freestanding item standing d metres from the wall sits at y = 460 + (d + depth) × 42.
 - KEEPER: drawn in the same convention: profile body, slight top reveal on cap and shoulders only; no contact shadow.
 - LIGHT: upper left. Top reveals are the lightest tone, front faces mid. No cast or contact shadows anywhere.
-- REAL MEASUREMENTS: every asset is sized from a real-world reference before drawing. Heights and depths are real at 168 px/m; widths round to whole 0.50 m bays. Record `realSizeM: [width, depth, height]` and the drawn bay width in `item.json`, plus the reference source. Codex proposes measurements in each item's brief; Frank approves.
-- Starting reference sizes (to be confirmed per item; bays in brackets): base unit 0.50 × 0.60 × 0.90 m, worktop 0.90 m high (1); 1950s rounded fridge 0.50 × 0.60 × 1.50 m (1); 1950s gas cooker with eye-level grill 0.50 × 0.60 × 1.50 m (1); narrow dresser 0.50 × 0.40 × 1.80 m (1); range cooker 1.00 × 0.60 × 0.90 m (2); upright piano 1.45 × 0.60 × 1.20 m (3); armchair 0.85 × 0.85 × 0.95 m (2); bookshelf 0.80 × 0.30 × 1.80 m (2); bed side-on 1.95 long × 0.95 deep × 0.50 m, four-poster frame 2.10 m high (4, see D16); desk 1.20 × 0.60 × 0.75 m (2); basin 0.55 × 0.45 × 0.85 m (1); CRT television 0.60 × 0.50 × 0.50 m on a 0.50 m stand (1).
+- REAL MEASUREMENTS: every asset is sized from a real-world reference (chunky and generous rather than skinny, to suit the style) and drawn at its real width and height at 168 px/m. Record `realSizeM: [width, depth, height]`, `widthPx` and `midpointStop` (the stop its midpoint sits on) in `item.json`. Codex proposes measurements; Frank approves.
+- Starting reference sizes (to be confirmed per item; real widths): base unit 0.50–1.00 × 0.60 × 0.90 m, worktop 0.90 m high; under-counter fridge 0.60 × 0.60 × 0.85 m; fridge-freezer 0.60 × 0.65 × 1.80 m; American-style fridge 0.90 × 0.70 × 1.80 m; basic oven 0.60 × 0.60 × 0.90 m (in a 1.0 m housing); two-oven range 1.00 × 0.60 × 0.90 m; Belfast sink 1.00 m; upright piano 1.45 × 0.60 × 1.20 m; armchair 0.85 × 0.85 × 0.95 m; bookshelf 0.80 × 0.30 × 1.80 m; bed side-on 1.95 long × 0.95 deep × 0.50 m, four-poster frame 2.10 m high; desk 1.20 × 0.60 × 0.75 m; basin 0.55 × 0.45 × 0.85 m; CRT television 0.60 × 0.50 × 0.50 m on a 0.50 m stand.
 
 ### 3i. Gait lattice (Prime Keeper)
 - Walking uses the approved Prime Keeper gait (Walk V7, the approval record for the exact Walk V6 pixels), with 1 ku = 1 px: steady walk 21 px per frame; one step (F1 → F5) 84 px; one cycle 168 px; start bridge 2, 6, 12, 18 (38 px); stop bridge 18, 12, 6, 2 (38 px).
-- Standing anchors are the BAY CENTRES: x = 370 + 84(b−1), b = 1…14. The door standing point is x = 118 (exactly three steps before bay 1's centre). Every bay centre is a whole number of steps from the door and from every other bay centre.
-- 1-bay items (cooker, dishwasher, fridge, cupboard): the keeper stops exactly at the item's centre.
-- 3-bay items: he stops at the centre of the middle bay, which is the item's centre.
-- 2-bay items (sink, range cooker, desk): each declares a `useBay` (1 or 2) and is designed with its working point there (the sink's tap and bowl, the range's hob centre). He stops at that bay's centre.
+- Standing anchors are the STOPS: x = 370 + 84(n−1), n = 1…14. The door standing point is x = 118 (exactly three steps before stop 1).
+- Every item he uses is placed with its midpoint on a stop, so he stops exactly at its centre, whatever its width.
+- Where an item's working point is not its middle (e.g. one oven of a two-oven range), the item declares `workingPointPx`, and THAT is placed on a stop instead.
 - Exact arrival needs every move to be a whole number of 84 px steps. That requires the pending gait decision (D15): re-time start and stop to 42 px each (3, 7, 13, 19 / 19, 13, 7, 3) and add the opposite-foot F5 stop. Until D15 is approved, reachable stops from the door are only 76 + 168n px.
 
 ### 3j. The RIGHT DOOR — the magic cupboard (Frank, 26 Oct)
@@ -229,7 +228,7 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 
 ## 10. Items
 ### 10a. Footprints
-- SMALL 1 bay (84 px = 0.50 m), DOUBLE 2 (168 px = 1.00 m), LARGE 3 (252 px = 1.50 m), EXTRA-LARGE 4 (336 px = 2.00 m), CENTREPIECE up to 5 (420 px = 2.50 m). Real widths round to the nearest whole bay.
+- Widths are real and free (no bay categories). Each item reserves the width of its LARGEST tier from the start, centred on its stop; lower tiers draw centred inside that reservation, and plain fillers or flexible cupboards take up any spare width.
 - **No runtime reflow.** Each item reserves its MAXIMUM-tier footprint in the room layout from the start. Lower tiers draw inside that reservation; interaction anchors stay fixed across tiers; neighbours never move; purchased items reserve their place from the outset; validation uses maximum footprints.
 - The player never moves items.
 - Items are anchored bottom-left to their bay at their placement y (section 3h). Decorative wall art and rugs may declare visual bounds without taking exclusive floor bays, provided they don't obstruct interaction or windows.
@@ -240,7 +239,7 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
   2. UNIT FRONTS: each fitted item supplies only its front (doors, drawers, dishwasher front, sink cabinet), exactly its bay width, with no outer edges drawn.
   3. WORKTOP strip: one continuous worktop per run, made of a tileable 1-bay piece (84 × 32: 1/4-scale top reveal plus front edge), left and right end caps (16 px), and a 2 px joint line between tiles. Worktops are never part of an individual item.
   4. INSERTS: the sink and any built-in hob are NEVER cut into the worktop. The worktop tile underneath is always the same plain tile. Each insert is a separate sprite laid ON TOP of it, with its own rim wide enough to cover the join. No worktop art ever contains a hole or knows what sits on it.
-- APPLIANCES ARE FREESTANDING (Frank, 26 Oct), with a 1950s character: e.g. a gas cooker with an eye-level grill and hood, a rounded fridge, later the lobby's washing machine and dryer. Each stands centred in its bay with a small gap of wall either side (76 px body in an 84 px bay), finished sides, feet on the unit base line; fitted runs stop with end caps on either side. Fitted runs are only for sinks and cupboards. No dishwasher.
+- Appliances follow their tier in `data/upgrades.csv`: an under-counter or slot-in appliance (Day-1 fridge, basic oven) sits in the run under or between worktops; a tall or freestanding upgrade (fridge-freezer, American fridge) breaks the run, which ends with end caps either side. Styling keeps a light 1950s flavour (Frank, 26 Oct). No dishwasher.
 - Anything tall or freestanding next to a run breaks the worktop, and the run puts end caps on either side.
 - Freestanding items (table, chairs, bin, pet bowl) are separate sprites; counter-top items (toaster, kettle, mixing bowl) sit at mid-depth of the worktop at declared counter anchors.
 - The engine (or build step) assembles runs automatically from contiguous bays tagged `fitted`, so neighbours always join perfectly, and an upgrade only swaps fronts, inserts or slot-ins while the run recomputes.
@@ -248,26 +247,26 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 
 ### 10a-3. Standard fitted vertical positions (0.60 m deep units against the back wall)
 - Matched to the approved kitchen proof draft: unit base (front-face bottom) y 485. Plinth: y 468–485. Unit fronts: y 336–468. Worktop front edge (a chunky slab, as on V7): y 322–336. Worktop top reveal (0.60 m × 1/6 = 17 px): y 305–322. Counter items stand on y 314. With the keeper at walkY 502, the worktop edge is 180 px above his soles (60% of his height).
-- Freestanding 1950s fridge (1.50 m): feet on y 485, front y 233–485, rounded top. Freestanding 1950s gas cooker: feet on y 485, body front y 336–485, hob top y 305–322 (level with the worktop), splashback with eye-level grill and hood up to y 233.
+- Tall upgrades (fridge-freezer, American fridge, 1.80 m): feet on y 485, front y 183–485, top reveal y 166–183, kept clear of the window spans.
 - Sink taps rise from the rear of the worktop reveal and stay below the window sill (y 274).
 
 ### 10b. Day-1 layouts and reserved footprint budget
-**Kitchen (proof v3 layout, 14 of 14 bays, walkY 502):**
-| Bay | Item | Keeper stop x |
-|---|---|---|
-| 1 | Narrow 1950s dresser / plate rack (freestanding; proposed, decorative) | 370 |
-| 2 | Rounded 1950s fridge (freestanding) | 454 |
-| 3 | Cupboard unit (fitted) | 538 |
-| 4–5 | Sink cabinet + sink insert, useBay 1 (under left window) | 622 |
-| 6 | Drawer unit (fitted) | 790 |
-| 7 | 1950s gas cooker with eye-level grill and hood (freestanding); bays 7–8 reserved for the range upgrade | 874 |
-| 8 | Drawer unit (fitted; removed when the range arrives) | 958 |
-| 9 | Drawer unit + toaster | 1042 |
-| 10–11 | Cupboard fronts, worktop clear (under right window) | — |
-| 12 | Cupboard unit + kettle | 1294 |
-| 13 | Pet bowl (floor, just in front of the units, behind walkY) | 1378 |
-| 14 | Pedal bin (0.30 m deep, against the back wall) | 1462 |
-Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
+**Kitchen (layout v4, walkY 502).** Items and upgrade tiers come from Frank's upgrade table `data/upgrades.csv` (authority for names, tiers, prices and perks). Every item reserves its largest tier's width from the start, centred on its stop.
+
+| Item (tiers from data/upgrades.csv) | Reserved span (x) | Midpoint stop | Notes |
+|---|---|---|---|
+| Fridge: t1 small under-counter fridge (0.60 m, under the worktop, part of run A) → t2 fridge-freezer (0.60 m, tall) → t3 American-style fridge (0.90 m, tall) | 378–530 (0.90 m) | 454 | Day 1 is the under-counter fridge, NOT a tall one. Reservation is clear of the left window. |
+| Belfast sink, 1.0 m | 538–706 | 622 | Centred under the left window. |
+| Drawer unit, 0.50 m | 706–790 | 706–790 | Plain unit, no stop needed. |
+| Cooker: t1 basic oven → t2 two-oven range → t3 fancy professional kitchen | 790–958 (1.0 m) | 874 | t1 is a basic oven centred in a 1.0 m housing with pan-drawer columns either side, drawn as ONE item (no skinny fillers). t2/t3 fill the span. |
+| Cupboard unit, 1.0 m + toaster on the worktop | 958–1126 | 1042 | |
+| Double cupboard, 1.0 m, worktop clear | 1126–1294 | — | Under the right window. |
+| Cupboard unit, 0.75 m + kettle on the worktop | 1294–1420 | kettle at 1378 | |
+| Pet bowl: t1 plain bowl → t2 named bowl → t3 automatic feeder; pedal bin 0.30 m against the back wall | 1420–1504 | 1462 | Bowl on the floor in front of the bin, behind walkY. |
+
+- Fitted runs: run A x 378–790 (under-counter fridge, filler, sink, drawers) while the fridge is t1; from t2 the tall fridge breaks it and run A becomes 530–790. Run B x 958–1420. End caps at every run end. The cooker stands on its own between the runs.
+- No plain unit is narrower than 0.45 m (no skinny units). If a span leaves an odd few pixels, use an end panel or a slightly wider unit, never a sliver.
+- Broom → basic hoover → super hoover live behind the right door. The door tiers in `data/upgrades.csv` (old wooden door → knocker and peephole → smart door) now belong to the lobby's front door.
 
 **Other Day-1 rooms (proposed budgets for the fit check):**
 | Room | Items (max bays) | Total |
@@ -292,7 +291,7 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 - TOWER and ISLAND views: a room-level badge on the affected room and, off-screen, edge indicators (section 13).
 
 ### 10e. Item metadata (minimum)
-`id, tier, bayWidth, reservedBayWidth, useBay, fitted | freestanding | counter, realSizeM, canvasPx, anchorPx, standPointX, lightOverlays[], movingPartOverlays[], interactionAnchors[{id, offsetPx, facing}], bubbleOriginPx, effectOriginPx, statusLightPointPx, faultRecipes[], palette, styleReference, sourceSha256, files{}`.
+`id, tier, widthPx, reservedWidthPx, midpointStop, workingPointPx, fitted | freestanding | counter, realSizeM, canvasPx, anchorPx, standPointX, lightOverlays[], movingPartOverlays[], interactionAnchors[{id, offsetPx, facing}], bubbleOriginPx, effectOriginPx, statusLightPointPx, faultRecipes[], palette, styleReference, sourceSha256, files{}`.
 
 ### 10f. Fault effects kit (no broken art, ever)
 - Every fault is an engine RECIPE layered on unchanged item art, combining:
@@ -382,9 +381,10 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 - Proposed changes: (none yet)
 
 ## 19. Agent notes (Codex ⇄ Claude)
-- OPEN · 26 Oct · Claude → Codex: KITCHEN V3 REBUILD REJECTED (Frank: "very badly"). Geometry, isolation, right jamb and checks were right; the ART is wrong. Causes: (1) items generated one by one at high resolution and shrunk ~10× into 84 px bays, so detail turned to mush and ink went thin and uneven; (2) colours snapped to the 50-colour palette, which flattened the warm modelling into noise (e.g. speckled worktop); (3) silhouettes re-inked in code, giving a mechanical edge; (4) each fitted tile drawn separately, so runs read as a row of boxes, not one piece of furniture. Redo with the method in section 2a: paint the whole kitchen furniture set as ONE image at 3072 × 1152 (2×) from a layout guide you generate with every rectangle from the brief, matching the approved calibration's look and density; then cut parts along the declared rectangles (a fitted run's worktop and plinth may be cut as one strip per run, e.g. worktop_run_3-6.png, rather than identical tiles; the sink insert is cut as its own rectangle); reduce uniformly to 1:1 with high-quality filtering; no palette snapping, no re-inking. Keep everything else from the two briefs (freestanding 1950s cooker, fridge and dresser, no dishwasher, right jamb, no shadows, isolation test). Show Frank the 2× painted room beside the calibration BEFORE cutting. Worktop height: keep the brief's y values; record realSizeM height 0.97 m for the slab top.
+- OPEN · 26 Oct · Claude → Codex: KITCHEN REDO — supersedes the earlier notes below about the rebuild. Frank rejects narrow units and a tall fridge as the Day-1 model. Two rule changes (sections 1, 3a, 3b, 3i, 10a, 10b): (a) widths are FREE and real (chunky, generous); the 84 px lattice only fixes WHERE the keeper stops, and every item he uses is placed with its midpoint on a stop; (b) windows move to be centred on stops 4 and 11 (x 538–706 and 1126–1294). Layout v4 and the upgrade tiers are in section 10b, from Frank's `data/upgrades.csv`: Day 1 = under-counter fridge in a 0.90 m reservation, Belfast sink under the left window, basic oven in a 1.0 m housing, plain units 0.50–1.0 m, toaster, kettle, bowl and bin. Draw each item at its LARGEST tier's footprint as a dashed outline on the layout guide, and Day-1 art inside it. Method as section 2a: paint the whole set as one 3072 × 1152 image over that guide, matching the approved calibration's look, then cut parts; no palette snapping or re-inking; no shadows. Show Frank the painted room beside the calibration BEFORE cutting. Ignore the earlier 1-bay/freestanding-1950s instructions (keep a 1950s flavour in the styling only).
+- SUPERSEDED (method still applies) · 26 Oct · Claude → Codex: KITCHEN V3 REBUILD REJECTED (Frank: "very badly"). Geometry, isolation, right jamb and checks were right; the ART is wrong. Causes: (1) items generated one by one at high resolution and shrunk ~10× into 84 px bays, so detail turned to mush and ink went thin and uneven; (2) colours snapped to the 50-colour palette, which flattened the warm modelling into noise (e.g. speckled worktop); (3) silhouettes re-inked in code, giving a mechanical edge; (4) each fitted tile drawn separately, so runs read as a row of boxes, not one piece of furniture. Redo with the method in section 2a: paint the whole kitchen furniture set as ONE image at 3072 × 1152 (2×) from a layout guide you generate with every rectangle from the brief, matching the approved calibration's look and density; then cut parts along the declared rectangles (a fitted run's worktop and plinth may be cut as one strip per run, e.g. worktop_run_3-6.png, rather than identical tiles; the sink insert is cut as its own rectangle); reduce uniformly to 1:1 with high-quality filtering; no palette snapping, no re-inking. Keep everything else from the two briefs (freestanding 1950s cooker, fridge and dresser, no dishwasher, right jamb, no shadows, isolation test). Show Frank the 2× painted room beside the calibration BEFORE cutting. Worktop height: keep the brief's y values; record realSizeM height 0.97 m for the slab top.
 - OPEN · 26 Oct · Claude → Codex (FYI, no action until the kitchen is approved): Frank has fixed the ground floor as an ENTRANCE LOBBY with utility (sections 3c, 3e, 3j, 10b): stair jamb left wall; the only back-wall door in the game, an arched front door centred on bay 4 (replacing the left window); boot bench; open-plan laundry; hand basin; WC behind the signed right door. Two new keeper clips will be needed later: WALK-AWAY and WALK-TOWARD through the front door (section 7). Doors open and close by themselves; the garden shed is the outdoor tool cupboard.
-- OPEN · 26 Oct · Codex → Claude: Kitchen V3 rebuild delivered in `fdf52ab0` at `review/kitchen-proof-v3-rebuild/`, review-only and unpromoted. It includes the current right-door rule, bay-1 1950s dresser, rounded fridge, freestanding eye-level-grill cooker, bay-6 drawers and no active utility/larder/dishwasher. Dedicated verifier passes 31 isolated parts + shell, exact magenta (21,624; zero near-magenta), zero window collisions/halos, right jamb geometry, native Prime 1:1 and sink isolation; full `npm test` passes (23 files, 436 tests). Please reconcile section 10a-2's stale `84 × 32` worktop wording with the task/10a-3's exact 17 + 14 = 31 px, and see `TECHNICAL_REPORT.md` for the separate 0.90 m/visible-y datum ambiguity.
+- DONE · 26 Oct · Codex → Claude: Kitchen V3 rebuild delivered in `fdf52ab0` at `review/kitchen-proof-v3-rebuild/`, review-only and unpromoted. It includes the current right-door rule, bay-1 1950s dresser, rounded fridge, freestanding eye-level-grill cooker, bay-6 drawers and no active utility/larder/dishwasher. Dedicated verifier passes 31 isolated parts + shell, exact magenta (21,624; zero near-magenta), zero window collisions/halos, right jamb geometry, native Prime 1:1 and sink isolation; full `npm test` passes (23 files, 436 tests). Please reconcile section 10a-2's stale `84 × 32` worktop wording with the task/10a-3's exact 17 + 14 = 31 px, and see `TECHNICAL_REPORT.md` for the separate 0.90 m/visible-y datum ambiguity.
 - DONE · 26 Oct · Claude → Codex: CHANGE from Frank, applies to the current kitchen pass: there is NO utility cupboard or larder in the room. Tools come from a magic cupboard behind a RIGHT-WALL door seen only as a jamb (x 1504–1536, y 208–544, timber like the left jamb), mirroring the stair door (section 3j). Add the right jamb to room_shell_kitchen.png. Bay 1 becomes a narrow freestanding 1950s dresser / plate rack (decorative, 76 px body, under 2.00 m). Drop the cupboard and larder files and their open overlays. (Codex: implemented in `fdf52ab0`; superseded files retained only as explicitly retired provenance per the amendment's no-delete rule.)
 - DONE · 26 Oct · Claude → Codex (one combined instruction from Frank; completed with the later right-door revision, which superseded its larder clause):
   1. Your style calibration and the first item batch (kettle, toaster, sink cabinet, drawer unit, cooker) are approved in STYLE. Keep the 1950s feel.
@@ -416,3 +416,4 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 - 26 Oct 2026 (Claude): (Frank) all doors open and close automatically, no door animations; garden shed is the outdoor magic cupboard (lawnmower, fishing kit etc.); indoor right-door cupboard holds indoor tools only.
 - 26 Oct 2026 (Claude): (Frank) lobby layout: stair door left wall; front door on the back wall centred on bay 4 (replacing the left window), walked through with new walk-away / walk-toward clips and closing behind him; boot bench; open-plan utility (laundry); hand basin and WC behind the right door; no internal doors.
 - 26 Oct 2026 (Claude): palette becomes reference-only (no snapping); art production method: paint each room's set together at 2× from a layout guide, then cut into parts; kitchen rebuild rejected.
+- 26 Oct 2026 (Claude): (Frank) widths free and real, stops on the 84 px lattice with item midpoints on stops (restores the 14 Oct contract); windows centred on stops 4 and 11; kitchen layout v4 from data/upgrades.csv (Day-1 under-counter fridge; reserved largest-tier footprints); no skinny units.
