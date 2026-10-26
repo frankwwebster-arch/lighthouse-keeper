@@ -1,0 +1,393 @@
+# Lighthouse Keeper — Unified Spec v2.1
+
+Version 2.1 DRAFT · 26 Oct 2026 · Single source of truth for Claude Code (engine) and Codex (graphics) once approved.
+Built from Codex's technical review of v1.3 (commit 42ec2552), with engine-side resolutions by Claude and Frank's decisions of 26 Oct. v2.1 folds every 26 Oct amendment into the body: the body now states one set of numbers, and the change log is history only.
+
+> STATUS: WORKING SPEC (Frank, 26 Oct). Codex and Claude follow it for all new work. Items marked [Gate 0] still need Frank's formal sign-off. Existing runtime code and approved asset bytes stay unchanged until a migration is approved; no historical or hash-pinned asset or document is moved, renamed or overwritten.
+
+## Shared channel — how Codex and Claude use this file
+- This file lives at `docs/SPEC.md` in the repo (GitHub `frankwwebster-arch/lighthouse-keeper`, working copy `~/Documents/ChatGPT/Lighthouse Keeper`). It is the ONE shared source of truth and the channel between Codex and Claude. Frank should never need to attach or relay it.
+- Before any task: `git pull`, then read this file. A task brief from Frank may override it for that task only.
+- Either agent may edit it. Every edit: (1) change the body so it states one current answer (never append a contradiction); (2) add a dated change-log line naming the author (Codex or Claude) and the reason; (3) commit only this file with a message starting `SPEC:`; (4) push.
+- Frank's decisions are recorded as "(Frank, date)" and may only be changed by Frank. Anything that would change one, or any open question, goes in section 18 as a proposal or question, signed and dated, for Frank.
+- Messages for the other agent go in section 19 (Agent notes): newest first, signed and dated, marked OPEN until the other agent answers or acts, then DONE. Keep it short; delete DONE notes older than a week.
+- Never edit this file and other files in the same commit; never rewrite history; on a merge conflict, keep both changes and flag it in section 19.
+
+## 0. Authority and provenance
+- Precedence once approved: Frank's explicit decisions > this spec > `AGENTS.md` / `CLAUDE.md` > catalogue > historical briefs and handoffs. A task brief may override this spec for that task only, and says so.
+- Superseded documents (v1.0–v1.4 `LIGHTHOUSE_SPEC.md`, `ENGINE_BRIEF.md`, `ART_BRIEF.md`, `KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`, the design-review catalogue's geometry, and v2.0 of this file) are RETAINED unchanged as history. They are marked superseded in an index, never deleted.
+- Correction: v1.3/v1.4 wrongly ranked the 14 Oct 172 handoff above Frank's later 26 Oct grid decision. v2 follows the later decision.
+- Note: an uncommitted draft `docs/LIGHTHOUSE_SPEC.md` (v1.4) was written to the working tree on 26 Oct. It is not authority. Frank decides whether to keep it as history or discard it; nothing else touches it.
+- `AGENTS.md` and `CLAUDE.md` point here. Proposals from either tool go in section 18; only Frank promotes them. Superseded copies outside the repo (Frank's Downloads folder) are not authority.
+- Active-version manifest: `/public/art/manifest/active.json` names the exact approved versions (by path and SHA-256) of keeper canon, palette, tower kit, item masters and runtime derivatives. Nothing resolves "latest" by directory order.
+
+## 1. Units and scale
+- **px** (delivered pixels): production assets are authored and delivered at the same resolution. The pixel-reboot "au" grid (1 au = 2 px) is retired with the pixel style (section 2).
+- **World units (engine)**: 1 world unit = 1 delivered px. The engine stores integer world coordinates only. The old lp/ku system is retired from new code; any legacy geometry still in the engine gets a documented one-off migration (section 15). For the Prime Keeper, 1 ku = 1 px.
+- **Scale (absolute):** 1 m = 168 px. Depth on screen (section 3h): object top reveals 1/6 of real depth (28 px per metre); the room floor band is a fixed 84 px.
+- **The keeper sets the scale.** The approved Prime Keeper is used 1:1 and is never rescaled (298 px = 1.77 m). The world is drawn to fit him, not the reverse.
+- **Widths are quantised to bays:** 1 bay = 84 px = 0.50 m (a standard 500 mm UK unit) = one Prime Keeper step. Heights and depths are real; widths round to whole bays.
+
+## 2. Visual style — ligne claire [Gate 0]
+- Working direction (Frank, 26 Oct): style B, smooth flat-colour illustration in a light ligne-claire manner. Target feel: "adult and yet also playful, suitably Hergé but also modern." Not pixel art; 8-bit and 16-bit were rejected as too blocky when zoomed.
+- STYLE AUTHORITY: the approved Kitchen Oven V7 drawing, `art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png`, SHA-256 `0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538` (historical blob at commit `52e94f2a`; absent from the current working tree, read from git history). It is a STYLE reference only: it is never mapped into the game, and it stays hash-locked.
+- What to carry from it: one uniform, confident near-black outline weight on every edge, matched to the keeper's outline at 1:1; flat, clean colour fills; at most one shadow tone per material; simple, readable shapes with hand-drawn charm; small details as plain line work (dial ticks, rack bars). Anti-aliased edges are fine. The only soft gradient permitted is light glow (oven cavity, lamps, screens), and that lives in light overlays, never in base art.
+- Light from the upper left; short simple shadows falling right. Friendly, colourful, architectural; kid-appealing for ages 7–11, not babyish.
+- Camera and depth: "front-on with a top reveal" (section 3h) everywhere: rooms, items, keeper, tower and island. Never isometric, never vanishing-point perspective.
+- Kitchen colour reference: Frank's previously approved kitchen sheet (royal-blue units, cyan worktop, cream enamel appliances, copper/orange handles and knobs). Its drawn broken states are FX reference only (section 10f).
+- Warmth and materials reference: `docs/lighthouse-island-orthographic-bare-shell-concept-v1.png` (warmth, materials, rock, outline weight). It is NOT authority for stairs, baked sky or sea, room count, geometry, windows, composition or the keeper.
+- Retained catalogue decisions: original CRT box-telly character; later TV tiers stay a CRT-derived family; never stretched.
+
+### 2a. Palette
+- One shared named FILL palette (`palette_env-v1`, up to 64 colours), plus technical magenta #FF00FF, which is not counted. Flat fills snap to it; anti-aliased edge pixels are exempt.
+- The keeper palette is a named subset of the shared palette, measured from the Prime Keeper.
+- No pink or near-magenta colour anywhere in any asset.
+
+## 3. Room module and tower grid [Gate 0]
+### 3a. Standard module (structure included in the dimensions)
+| | Delivered px |
+|---|---|
+| Module | 1536 × 576 |
+| Left wall / right wall | 32 / 32 |
+| Ceiling band / floor slab | 32 / 32 |
+| Walk-in zone (always clear) | x 32–328 |
+| Bay field | x 328–1504 |
+| Bays | 14 × 84 (one Prime Keeper step each, 0.50 m) |
+
+- Vertical layout (y from the module top): ceiling band 0–32; back wall 32–460 (2.55 m); floor band 460–544 (84 px = 2.0 m room depth × 1/4); floor slab 544–576.
+- Back-wall line (where the wall meets the floor): y = 460. Front edge of the floor: y = 544.
+- Keeper walking line: per room (`walkY`, section 3g). Kitchen walkY = 502.
+- Bays are numbered 1–14 from the door side. Bay b spans x = 328 + 84(b−1) to 328 + 84b; its centre is x = 370 + 84(b−1): 370, 454, 538, 622, 706, 790, 874, 958, 1042, 1126, 1210, 1294, 1378, 1462.
+- WHY 84: the bay width equals one Prime Keeper step (F1→F5 = 84 px), so the keeper can walk to and stop exactly at the centre of EVERY bay (section 3i).
+
+### 3b. Windows
+- Two per above-ground module, 168 × 168 px (two bays wide), over bays 4–5 (x 580–748) and 10–11 (x 1084–1252), at y 106–274. The sill (y 274) is 186 px ≈ 1.11 m above the back-wall line; the head is 74 px below the ceiling band. The windows sit symmetrically in the bay field.
+- Frames and glazing bars are artwork; the whole glass region is exact #FF00FF with hard edges (no anti-aliasing against magenta). Window geometry is identical across all recoloured standard modules.
+- **HARD RULE: no furniture or item may ever occlude a window.** No item may rise above y 274 inside x 580–748 or x 1084–1252, at any tier. No wall-mounted item, shelf, picture, curtain, pelmet or FX may overlap a window's frame or glass. Tall items (fridge, dresser, bookshelf, wardrobe, piano, four-poster canopy) use non-window bays. Counter-top items (kettle, toaster) are not allowed in window bays. The layout validator fails the build on any overlap, checked at every item's maximum-tier artwork bounds. The keeper is foreground and exempt.
+
+### 3c. Hidden-circulation door
+- One circulation entrance per floor, in the LEFT WALL of the leftmost module, at the FRONT of the room. No visible stairs, shaft, landing, lift car or recess.
+- Because the camera looks straight at the back wall, only the door's jamb is visible: a vertical strip at x 0–32, y 208–544 (2.0 m from the floor front). No door panel is ever drawn on the back wall.
+- Open, the door panel is a foreground occluder. Draw order: room shell → keeper → open door panel / jamb.
+- Travel: the keeper walks left into the door, is occluded, the screen fades, and he emerges from the destination floor's door at the door standing point (x 118) on that room's walkY.
+- The lift upgrade changes only the door jamb; the lift lives entirely in the hidden core. Costume and tool swaps may happen inside it.
+- FRONT DOOR (to the island): only on the ground-floor ENTRANCE LOBBY, and never seen. It is in the lobby's right outer wall INSIDE the end closet (the cloakroom, section 3j): the keeper walks into the cloakroom to go out and reappears outside at the tower's right side; coming home, he walks into the tower's right side and steps out of the cloakroom into the lobby. No room ever has a door drawn on its back wall (the back wall faces away from the island).
+
+### 3d. Horizontal expansion
+- Tiers: 1, 2 or 3 complete modules per floor. The 172/193/214 width tiers are retired.
+- Extra modules attach through a 32 px divider with an open doorway, have no circulation door, and add 14 bays each.
+- Never stretch a module; never move or rescale existing content. Existing world coordinates stay stable when a module is added (modules attach to the right).
+- Joins preserve floor and ceiling heights, external band alignment and gallery alignment.
+
+### 3e. Tower stack
+Bottom to top:
+1. Lair (optional, LATER): always the very bottom, below the waterline.
+2. Boathouse (optional, LATER): at the waterline beneath the lobby; sea arch in its rightmost module; jetty runs from the arch.
+3. Entrance lobby with laundry and cloakroom: fixed ground floor; its floor-slab top (module y 544) is exactly on the island ground line. The front door is hidden inside its end-closet cloakroom.
+4. Kitchen: fixed first floor, directly above the lobby.
+5. Middle floors: saved random order (catalogue rule).
+6. Bedroom with en-suite: always directly beneath the lamp room.
+7. Lantern cap: always on top.
+
+Up to 20 above-ground floors. Day 1 = entrance lobby, kitchen, living room, bedroom with en-suite, lantern cap.
+
+### 3f. Lantern cap
+- A full-width gallery and cornice across the active tower width (`gallery_left` + n × `gallery_mid` + `gallery_right`).
+- One fixed-width lantern chamber, centred, with identical dimensions at every tower width. The shell is empty; lamp and telescope are separate sprites; glazing is exact magenta.
+- Width: the lantern sits on its own lantern-floor grid. Proposed starting value 1072 × 576 px (32 + 12 bays × 84 + 32), centred on a one-module tower so a 232 px gallery walkway shows on each side. Confirmed by the Gate 2 tower proof, then frozen (D11).
+
+### 3g. Room depth and walking line
+- Standard room depth 2.0 m (floor band 84 px). Furniture stands against the back wall; the floor in front of it is the keeper's walking space.
+- **The keeper walks close to the furniture, never along the front edge of the floor.** In the top-reveal view anything further back is drawn higher, so a keeper far forward would see a worktop at chest height.
+- Each room declares `walkY` = back-wall line + (deepest back-row item depth + 0.40 m) × 42, capped at y 536. Kitchen: 0.60 m units + 0.40 m = 1.00 m → walkY 502. With the keeper at walkY 502, the worktop edge reads at about 60% of his height.
+- Floor items deliberately placed in front of the walking line (rare; e.g. a rug edge) are drawn after the keeper. Items behind it are drawn before him.
+- Reference diagrams: `room_depth_rule.png` (layout) and `depth_projection_rule.png` (projection). Both predate the walkY rule; the text here wins.
+
+### 3h. Projection — ABSOLUTE (applies to every room and every asset)
+- PROJECTION ("front-on with a top reveal"): every front face is drawn flat and true to size as a pure elevation. Depth is shown ONLY as a shallow top reveal drawn straight up, at 1/6 of the object's real depth (28 px per metre; a 0.60 m worktop = 17 px), matching the approved V7 oven and the approved kitchen proof draft. Round things on top surfaces (hotplates, bowls, sink basins, rims) are drawn as ellipses about 1/3 as tall as wide, so they read clearly. Recesses (oven cavity, fireplace, sink bowl) may show converging interior walls toward their own centre. No vanishing points, no sideways skew, no side faces, no visible ceilings, no angled walls. Sprites never change size with depth. This keeps assets mirrorable, stackable and consistent wherever they stand.
+- FLOOR: a fixed 84 px band (y 460–544) in every room — a house rule, not derived from the reveal ratio — with floorboards or tiles as horizontal lines only. Its back edge meets the back wall at y 460. Placement on the floor uses the floor band's own scale (42 px per metre of floor depth).
+- PLACEMENT: an object standing against the back wall has its front-face bottom at y = 460 + depth × 42 (a 0.60 m unit: y 485). A freestanding item standing d metres from the wall sits at y = 460 + (d + depth) × 42.
+- KEEPER: drawn in the same convention: profile body, slight top reveal on cap and shoulders only; contact shadow on the floor band.
+- LIGHT: upper left. Top reveals are the lightest tone, front faces mid, contact shadows dark on the floor band.
+- REAL MEASUREMENTS: every asset is sized from a real-world reference before drawing. Heights and depths are real at 168 px/m; widths round to whole 0.50 m bays. Record `realSizeM: [width, depth, height]` and the drawn bay width in `item.json`, plus the reference source. Codex proposes measurements in each item's brief; Frank approves.
+- Starting reference sizes (to be confirmed per item; bays in brackets): base unit 0.50 × 0.60 × 0.90 m, worktop 0.90 m high (1); tall fridge-freezer 0.50 × 0.60 × 1.80 m (1); utility cupboard 0.50 × 0.60 × 2.00 m (1); slot-in cooker 0.50 × 0.60 × 0.90 m (1); range cooker 1.00 × 0.60 × 0.90 m (2); upright piano 1.45 × 0.60 × 1.20 m (3); armchair 0.85 × 0.85 × 0.95 m (2); bookshelf 0.80 × 0.30 × 1.80 m (2); bed side-on 1.95 long × 0.95 deep × 0.50 m, four-poster frame 2.10 m high (4, see D16); desk 1.20 × 0.60 × 0.75 m (2); basin 0.55 × 0.45 × 0.85 m (1); CRT television 0.60 × 0.50 × 0.50 m on a 0.50 m stand (1).
+
+### 3i. Gait lattice (Prime Keeper)
+- Walking uses the approved Prime Keeper gait (Walk V7, the approval record for the exact Walk V6 pixels), with 1 ku = 1 px: steady walk 21 px per frame; one step (F1 → F5) 84 px; one cycle 168 px; start bridge 2, 6, 12, 18 (38 px); stop bridge 18, 12, 6, 2 (38 px).
+- Standing anchors are the BAY CENTRES: x = 370 + 84(b−1), b = 1…14. The door standing point is x = 118 (exactly three steps before bay 1's centre). Every bay centre is a whole number of steps from the door and from every other bay centre.
+- 1-bay items (cooker, dishwasher, fridge, cupboard): the keeper stops exactly at the item's centre.
+- 3-bay items: he stops at the centre of the middle bay, which is the item's centre.
+- 2-bay items (sink, range cooker, desk): each declares a `useBay` (1 or 2) and is designed with its working point there (the sink's tap and bowl, the range's hob centre). He stops at that bay's centre.
+- Exact arrival needs every move to be a whole number of 84 px steps. That requires the pending gait decision (D15): re-time start and stop to 42 px each (3, 7, 13, 19 / 19, 13, 7, 3) and add the opposite-foot F5 stop. Until D15 is approved, reachable stops from the door are only 76 + 168n px.
+
+### 3j. End closets — occluded walk-in spaces (Frank, 26 Oct)
+- Any space the keeper must disappear into (WC, en-suite, the lobby cloakroom with the front door) is an END CLOSET at the FAR RIGHT of its room: bays 13–14 (x 1336–1504), full height, so he simply keeps walking right and vanishes.
+- Construction: a camera-facing FRONT PANEL across bays 13–14, standing at the front of the floor (bottom on y 544) and reaching the ceiling band, drawn as interior wall in the room's colour (it may carry a small sign, hook or frosted pane). Its doorway is in the closet's LEFT side, seen only edge-on as a jamb at x 1336–1344. The closet's contents (toilet, coats, front door) are never drawn.
+- Use: the keeper walks along walkY to the jamb (x 1336), steps right behind the front panel (draw order: shell → keeper → front panel) and is hidden. Swaps happen while hidden: toilet use, outfit changes (pyjamas in the en-suite; outdoor gear in the cloakroom), and leaving or entering the tower (cloakroom only). He reappears the same way.
+- End closets cost no item art beyond the front panel and jamb, and no keeper animation beyond the walk.
+- Bays 13–14 are therefore never available for items in a room with an end closet. Camera-facing cupboard doors (utility cupboard, section 9a) remain a separate mechanic for tools within a room.
+
+## 4. Modular tower kit
+Location `/public/art/tower/<version>/` with `tower_kit.json`:
+`module_master.png`, `module_kitchen.png`, `module_living.png`, `module_bedroom.png`, `module_boathouse.png`, `module_lair.png`, `divider.png`, `wall_left.png`, `wall_right.png`, `wall_left_base.png`, `wall_right_base.png`, `gallery_left.png`, `gallery_mid.png`, `gallery_right.png`, `lantern.png`, `roof.png`. Every floor-height piece is 576 px tall.
+
+- `module_master.png` is the geometry authority. Variants are produced only through declared wall-colour masks and declared permanent-feature overlays; no freehand structural redraws.
+- Verification proves: identical window pixels; identical wall, floor, ceiling and skirting geometry; identical door geometry where required; differences only inside declared regions; dimensions and anchors match the manifest; no near-magenta pixels.
+- Required code-assembled proofs before further furniture: (1) Day-1 tower, 4 floors × 1 module; (2) 3 floors × 2 modules; (3) a 3-module structural stress test; (4) ground-floor base and island join; (5) boathouse beneath the kitchen; (6) lair beneath the boathouse; (7) lantern and gallery alignment at all three widths. No hand-painted full-tower image is ever runtime authority.
+
+## 5. Exact-magenta pipeline
+- **Canonical key master:** an opaque environment PNG keeping exact #FF00FF (alpha 255). Never passed through tolerance removal; never the only copy.
+- **Runtime derivative (built at BUILD time, not in the browser):** exact #FF00FF becomes alpha 0 with RGB zeroed; every other pixel is byte-identical. No tolerance, no defringe. This works because every key/non-key boundary is a hard edge (section 3b).
+- **Reserved-colour validation:** exact key only; no visible art uses the key; near-magenta non-key colours fail validation; all key/non-key boundaries are hard edges.
+- Validator record per asset: sourceSha256, runtimeSha256, width, height, magentaPixelCount, nearMagentaPixelCount (0), unexpectedMagentaPixelCount (0), nonKeyPixelChanges (0).
+- Magenta is used only in opaque environment masters (sky and sea apertures, window glass, glazed doors, lantern glass, boathouse arch, lair portholes). Keeper, items, UI, bubble tokens and FX use true RGBA.
+- Acceptance: the master keeps exact magenta through build and copy; the derivative keys exactly the same pixel count; non-key RGB is byte-identical; no legacy sprite command touches masters; rebuilds give identical hashes; both files are in the manifest; test fixtures cover enclosed windows, open sea and isolated portholes.
+
+**Engine requirements (Claude):**
+- Ship and load only the prebuilt RGBA derivatives; never chroma-key in the browser. The build strips gAMA, cHRM, iCCP and sRGB chunks from all PNGs, because decoded colours can shift with embedded colour profiles.
+- Sampling: high-quality smooth filtering, using the supplied reviewed mips (section 12). The engine never builds its own mipmaps.
+- Use non-premultiplied alpha handling on upload, or verify that anti-aliased edges don't darken.
+
+## 6. Keeper canon — the Prime Keeper [Gate 3]
+- The approved Prime Keeper animation bank is the only keeper authority. Identity contract: `data/keeper_prime_identity_contract.json` (Codex's working folder). `canon/active.json` records the contract and every approved clip by path and SHA-256.
+- Registration: authoring cell 256 × 320 px; anchor [128, 320]; opaque sole datum y 316; standing height 298 px (= 1.77 m at 168 px/m). The engine places the sole datum on the room's walkY (the anchor therefore sits 4 px below walkY). The runtime cell recorded in the contract (128 × 160 at density 4) is a packaging detail; on screen the keeper is always 1:1 with the room art.
+- NEVER rescale the keeper relative to the world. Scaling frames while keeping the 21 px/frame root motion makes planted feet slide, and a non-integer downscale softens his outline against the ligne-claire art. (An 83.89% display transform was proposed and rejected on 26 Oct.)
+- Approved clips: neutral side, Walk V7 (= Walk V6 pixels), start and stop bridges, side↔back turn. New keeper art always starts from approved frames as the input reference and changes only the pose; candidates go to a review folder with a side-by-side against canon and enter the game only on Frank's approval.
+- Retained design: navy peaked cap with small gold badge; full white beard and moustache; pink nose; bright blue knitted jumper, two white chest stripes, one per sleeve, ribbed cuffs and hem; navy trousers; chunky navy boots; stocky, about 3 heads tall.
+- Forbidden drift: sailor collar, scarf, coat, apron, different hat, glasses, extra stripes, logos, weapons, changed face, beard or proportions, props painted into keeper frames.
+- Every frame in a direction set shares the same cell, anchor and floor line. Root movement only where locomotion metadata records it; idles, turns and activities never wander.
+- The approved Makko-era clips (walk loop, idles, turns) are retained unchanged as identity history. They are not production animation.
+
+## 7. Animation strategy
+- A small shared vocabulary. Most household activities reuse a rear-facing work loop, while bubble stories and separate effects explain the detail. Bespoke poses are exceptional and need a demonstrated readability or interaction need.
+- Day-1 vocabulary (day clothes unless stated): neutral side, front and back; side walk loop; sweep-walk loop and hoover-push loop (cupboard tools, section 9a); front↔side turn; side↔back turn; rear-work entry, loop and exit; sit; stand; door-crossing compatibility. One get-into-bed clip (pyjamas only, section 9b); no sleep loop, get-out-of-bed or toilet animations: sleeping is shown by the bed's OCCUPIED state and toilet use is always hidden. No stair animations.
+- Indicative budgets (not frozen until visual testing): walk 8 frames per cycle (168 px ÷ 21); turns 4–6 per direction or one exact reversible sequence; rear-work entry 2–3, loop 4, exit = reversed entry where valid; sit/stand 4–6; get into bed 4–6.
+- Timing lives in clip metadata: locomotion about 8–10 fps, rear work about 6–8 fps, idle holds via per-frame durations, footfalls and bubble cues as named events.
+- Mirroring is allowed only with no asymmetric prop, no text or directional symbol, valid costume, and declared mirrored facing. Mirrored walks negate root deltas. Props are separate sprites, positioned per facing.
+
+**Engine requirements (Claude):**
+- Locomotion: walk speed comes from the clip's recorded root motion. Every move between lattice points is a whole number of 84 px steps (start bridge → steady frames → stop bridge). A 1-step move goes start bridge straight into stop bridge. No stretching of artwork or root motion, no snapping, no shortened steps. Until D15 lands, a stop that can't hit its anchor exactly finishes on the nearest stop-capable frame and records the error in dev builds.
+- Walk → idle and idle → walk join on frames flagged `stopCapable` / `startCapable` in clip metadata, not hard-coded frame numbers.
+- Clip JSON is the only source of timing; the engine has no global frame-duration constant.
+
+## 8. Sprite-sheet and asset safety
+
+### 8-0. Asset isolation and change control (prevents redraw cascades)
+- Every visual element is its own file: each unit front, worktop tile, end cap, plinth tile, insert, slot-in appliance, light overlay, counter-top item, wall item and FX sprite. Runs, rooms and towers are ASSEMBLED from these in code, never painted as one picture.
+- A fix to one asset touches ONLY that asset's file. A Codex task names the exact file(s) it may change, and must not modify any other asset.
+- Regression gate: after any art change, the build re-assembles the affected rooms and verifies that every untouched asset file is byte-identical (hash check), and that the assembled room differs from the previous approved render only inside the changed asset's rectangle. Any other difference fails the change.
+- Approved assets are locked by hash in the manifest. Changing a locked asset requires a new versioned draft (below) and Frank's approval.
+
+### 8-1. Frames and sheets
+- Canonical frames are stored individually (`clip/frames/frame_000.png` …) with `clip.json`; `sheet.png` / `sheet.json` are generated deterministically from them and are never the only source.
+- Every frame has an explicit cell; everything belonging to it (body, prop, shadow, particle) stays inside; minimum 8 px transparent gutter on every edge; shared cell boundaries have alpha 0; ownership comes from geometry and metadata, never from connected-component order.
+- Alpha: fully transparent pixels have RGB 0. Partial alpha is allowed only on anti-aliased outline edges and in light-overlay glows; no coloured fringes or halos.
+- Every sheet verifies: dimensions, cell size, frame count, anchor and floor-line equality, palette (fills), alpha, gutters, zero shared-edge alpha, zero ambiguous or unowned pixels, metadata/image agreement, source and output hashes.
+- Reversible amendments: corrections to approved art start in a new versioned draft directory, leave the approved asset untouched, record both hashes, include side-by-side and animated comparisons, are promoted only on explicit approval, and are rejected by deleting only the draft directory. Immutable review exports are never rewritten.
+
+## 9. Activities and bubble stories [V1]
+- Flow: walk to the interaction anchor → turn to rear → entry → shared rear-work loop (plus small separate hand, tool or effect sprites) → bubble story shows the specific activity → bubble resolves → exit to neutral.
+- Every activity maps to: item, interaction anchor, keeper pose (rear-work or one of the few dedicated clips), bubble story, duration, need effects.
+- The existing bubble-story library (339+ pictures, engine, `/studio/stories`, `data/activity-stories/`) is retained as an illustrated UI layer. Only the bubble frame, pointer and orchestration marks are redrawn in the ligne-claire style. Internal pictures stay unchanged; ids, recipes and timing are preserved. Individual pictures are redrawn later only on a demonstrated clash.
+- Ownership: Claude owns the story engine and studio; Codex owns the pictures.
+
+## 9a. Utility cupboard mechanic [V1]
+- The lobby's CLOAKROOM (its end closet, section 3j) is the tower's boot room (Frank, 26 Oct): coats, boots, outdoor gear, tools, a WC and the hidden front door, all behind its front panel. Tool fetches from the lobby use it exactly like a cupboard.
+- A UTILITY CUPBOARD is OPTIONAL per room: each room layout declares `hasCupboard`. Where present, it is a 1-bay full-height item (0.50 × 0.60 × 2.00 m) against the back wall, in a non-window bay, with a door that swings OPEN TOWARD THE CAMERA.
+- Use: the keeper walks to the cupboard, the door swings open as a foreground occluder (draw order: cupboard interior → keeper → open door panel), he steps behind it, and he emerges already holding and using the tool. The pickup itself is never animated: the door hides the swap.
+- Tools are separate prop sprites on the keeper's hand anchors, never painted into keeper frames. The keeper returns the same way.
+- Every room can be cleaned. If the room has a cupboard, the tool comes from it; if not, the keeper fetches it via the circulation door (same door-occlusion swap). Tool tiers: broom (t1) → hoover (t2) → super hoover (t3). Each tier is a prop swap plus its matching loop, not a new room animation.
+- Day-1 keeper clips this adds: cupboard enter/exit (reuse neutral-side plus door occlusion, no extra frames where possible), SWEEP-WALK loop (side, moves along walkY), and HOOVER-PUSH loop (side). Super hoover reuses the hoover loop with its own prop.
+- Later tools use the same mechanic with no new architecture: mop, duster, watering can, toolbox (repairs), fishing rod, paintbrush.
+- Item states: cupboard door CLOSED and OPEN (the open door is a separate small overlay over the closed master).
+- The engine owns which tool appears, its prop anchors per facing, and the cleaning effect (tidiness rising, dust puffs as FX).
+
+## 9b. Occluding doors and costume changes
+- Anything the keeper passes behind (circulation door, end closet, cupboard door) can hide a swap: tool in or out, or outfit change. Outdoor gear (wellies, sou'wester, winter coat, woolly hat) goes on and off in the lobby cloakroom, by weather, as he leaves or comes home.
+- The en-suite is the bedroom's END CLOSET (section 3j, bays 13–14): the keeper walks right into it and comes out changed (day clothes → pyjamas at night, and the reverse in the morning, by game time). The toilet is NEVER seen in use, anywhere in the game; every WC is an end closet.
+- Getting into bed IS animated (Frank, 26 Oct): a short get-into-bed clip in pyjamas (about 4–6 frames, side view, climbing in and pulling the covers up). On its last frame the keeper sprite hands over to the bed's OCCUPIED state (the bed art with his head on the pillow, covers up), drawn as a bed item state; sleeping is that still state, not a loop. In the morning the lights brighten and he steps out beside the bed in pyjamas (cut, or the clip reversed if it reads well).
+- Brushing teeth happens at the basin, facing the mirror, so his back is to the camera: it uses the rear-work loop (in pyjamas) plus a bubble story.
+- The costume list is fixed and short. No others without Frank's decision:
+  | Costume | Used for | Changed via | Minimal clip set | Scope |
+  |---|---|---|---|---|
+  | Day clothes (default) | Everything | — | Full vocabulary | V1 |
+  | Pyjamas | Night in the bedroom | En-suite WC door | Side walk; stop + turn (side↔back); brush-teeth rear loop at the basin; get into bed. Nothing else. | V1 — REQUIRED (Frank, 26 Oct) |
+  | Swimming | Pool, lido, sea swim | Changing-room door | Walk to water, swim loop, exit | LATER |
+  | Snow-sweeping (winter gear) | Clearing snow outside | Lobby cloakroom | Walk, snow-sweep loop | LATER |
+  | Sou'wester / oilskins | Outdoor jobs in rain and storms | Lobby cloakroom | Walk, outdoor-work loop | LATER |
+- Pyjamas are REQUIRED for V1. Every other costume is DROPPABLE: the game must play completely without them. If one proves troublesome, the engine falls back to day clothes for that context with no other change, and the costume can be removed from scope by Frank's decision alone.
+- Cheaper option to try first for rain and snow: a separate hat sprite (sou'wester, woolly hat) on a per-frame head anchor over the day-clothes clips, instead of a whole new costume set.
+- Costume sets follow the same canon, palette and approval rules as the day keeper (section 6), drawn from Prime Keeper frames.
+
+## 10. Items
+### 10a. Footprints
+- SMALL 1 bay (84 px = 0.50 m), DOUBLE 2 (168 px = 1.00 m), LARGE 3 (252 px = 1.50 m), EXTRA-LARGE 4 (336 px = 2.00 m), CENTREPIECE up to 5 (420 px = 2.50 m). Real widths round to the nearest whole bay.
+- **No runtime reflow.** Each item reserves its MAXIMUM-tier footprint in the room layout from the start. Lower tiers draw inside that reservation; interaction anchors stay fixed across tiers; neighbours never move; purchased items reserve their place from the outset; validation uses maximum footprints.
+- The player never moves items.
+- Items are anchored bottom-left to their bay at their placement y (section 3h). Decorative wall art and rugs may declare visual bounds without taking exclusive floor bays, provided they don't obstruct interaction or windows.
+
+### 10a-2. Fitted runs (kitchen units, and later bathroom, workshop and lab benches)
+- Fitted furniture must read as one joined run. A fitted item is NEVER drawn with its own worktop, plinth or side panels. A run is assembled from four layers:
+  1. PLINTH strip: one tileable 1-bay piece (84 × 17), plus left and right end caps, along the unit base line.
+  2. UNIT FRONTS: each fitted item supplies only its front (doors, drawers, dishwasher front, sink cabinet), exactly its bay width, with no outer edges drawn.
+  3. WORKTOP strip: one continuous worktop per run, made of a tileable 1-bay piece (84 × 32: 1/4-scale top reveal plus front edge), left and right end caps (16 px), and a 2 px joint line between tiles. Worktops are never part of an individual item.
+  4. INSERTS: the sink and any built-in hob are NEVER cut into the worktop. The worktop tile underneath is always the same plain tile. Each insert is a separate sprite laid ON TOP of it, with its own rim wide enough to cover the join. No worktop art ever contains a hole or knows what sits on it.
+- SLOT-IN appliances (`slotIn`) keep their own top and plinth because that is how they really look (a freestanding cooker between units). The run puts end caps on either side of a slot-in item; the slot-in's hob top sits exactly at worktop height and its plinth on the run's plinth line.
+- Tall fitted items (fridge-freezer, larder, utility cupboard) are `fittedTall`: they break the worktop, and the run puts end caps on either side.
+- Freestanding items (table, chairs, bin, pet bowl) are separate sprites; counter-top items (toaster, kettle, mixing bowl) sit at mid-depth of the worktop at declared counter anchors.
+- The engine (or build step) assembles runs automatically from contiguous bays tagged `fitted`, so neighbours always join perfectly, and an upgrade only swaps fronts, inserts or slot-ins while the run recomputes.
+- One shared style for all runs in a room: matching door colour, handles, worktop material and plinth.
+
+### 10a-3. Standard fitted vertical positions (0.60 m deep units against the back wall)
+- Matched to the approved kitchen proof draft: unit base (front-face bottom) y 485. Plinth: y 468–485. Unit fronts: y 336–468. Worktop front edge (a chunky slab, as on V7): y 322–336. Worktop top reveal (0.60 m × 1/6 = 17 px): y 305–322. Counter items stand on y 314. With the keeper at walkY 502, the worktop edge is 180 px above his soles (60% of his height).
+- Fridge-freezer (1.80 m): front y 183–485, top reveal y 166–183. Utility cupboard (2.00 m): front y 149–485, top reveal y 132–149.
+- Sink taps rise from the rear of the worktop reveal and stay below the window sill (y 274).
+
+### 10b. Day-1 layouts and reserved footprint budget
+**Kitchen (proof v3 layout, 14 of 14 bays, walkY 502):**
+| Bay | Item | Keeper stop x |
+|---|---|---|
+| 1 | Utility cupboard (fittedTall, door opens toward camera) | 370 |
+| 2 | Fridge-freezer (fittedTall) | 454 |
+| 3 | Drawer unit (fitted) | 538 |
+| 4–5 | Sink cabinet + sink insert, useBay 1 (under left window) | 622 |
+| 6 | Dishwasher (fitted) | 790 |
+| 7 | Cooker: new 1-bay slot-in in V7's style; bays 7–8 reserved for the range upgrade | 874 |
+| 8 | Drawer unit (fitted; removed when the range arrives) | 958 |
+| 9 | Drawer unit + toaster | 1042 |
+| 10–11 | Cupboard fronts, worktop clear (under right window) | — |
+| 12 | Cupboard unit + kettle | 1294 |
+| 13 | Pet bowl (floor, just in front of the units, behind walkY) | 1378 |
+| 14 | Pedal bin (0.30 m deep, against the back wall) | 1462 |
+Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
+
+**Other Day-1 rooms (proposed budgets for the fit check):**
+| Room | Items (max bays) | Total |
+|---|---|---|
+| Entrance lobby + laundry (ground floor) | Proposed: 1 tool cupboard (optional; tools can live in the cloakroom); 3 laundry sink; 4 washing machine and 5 tumble dryer (under the left window, below the sill); 6 laundry basket; 7–12 free for later (shoe bench, ironing board, workbench, fishing gear; nothing tall in 10–11); 13–14 CLOAKROOM end closet (coats, boots, WC, hidden front door) | 6 of 14 + closet (D17) |
+| Living | CRT TV unit 2, bookshelf 2, piano 3, armchair 2, optional utility cupboard 1 | 9–10 of 14 |
+| Bedroom + en-suite | Bed side-on 4 (four-poster in the same reservation, with OCCUPIED state), phone/bedside 1, desk 2, basin 1, en-suite END CLOSET in bays 13–14 (no cupboard needed) | 10 of 14 |
+| Lamp room (lantern grid) | Lamp mechanism 2, telescope 2 | 4 of 12 |
+- Bedroom walkY: bed 0.95 m deep + 0.40 m → y 517.
+- Lobby walkY: 0.60 m appliances + 0.40 m → y 502.
+- The en-suite is an end closet in bays 13–14 (section 3j); the basin and mirror sit elsewhere, below the window sill. Confirm in the Day-1 layout proof (D12).
+
+### 10c. States
+- One master per item per tier, drawn in its OFF state. That is usually the ONLY full drawing the item ever needs.
+- LIGHT OVERLAYS replace drawn ON and FLASHING states. Any part of an item that lights up (oven window, fridge interior, lamp bulb, TV screen glow, radio dial, indicator LED) is a separate small overlay sprite with a declared rectangle in `item.json` (`lightOverlays[{id, file, rectPx}]`). The engine controls each overlay: `off`, `on` (steady), `pulse`, or `flicker` (random intervals and brightness). Example: the cooker is one OFF drawing plus one "oven window lit" overlay. No flicker frames are ever drawn.
+- Moving parts that can't be done with a light overlay (fridge door opening, cupboard door swinging, TV picture) are the only drawn extra frames, and each is a separate small overlay over the OFF master, not a redraw of the whole item.
+- Every overlay or derived frame differs from the master only inside its declared rectangle (pixel-diff verified).
+- Never drawn: broken, dirty or alert variants. Faults are section 10f.
+
+### 10d. Fault indicators
+- ROOM view: a status light with an icon over the item, engine-drawn, with colour plus icon redundancy for accessibility: red ✕ broken, amber ! needs attention, green ✓ ready, blue i information. Tapping it sends the keeper.
+- TOWER and ISLAND views: a room-level badge on the affected room and, off-screen, edge indicators (section 13).
+
+### 10e. Item metadata (minimum)
+`id, tier, bayWidth, reservedBayWidth, useBay, fitted | fittedTall | slotIn | freestanding | counter, realSizeM, canvasPx, anchorPx, standPointX, lightOverlays[], movingPartOverlays[], interactionAnchors[{id, offsetPx, facing}], bubbleOriginPx, effectOriginPx, statusLightPointPx, faultRecipes[], palette, styleReference, sourceSha256, files{}`.
+
+### 10f. Fault effects kit (no broken art, ever)
+- Every fault is an engine RECIPE layered on unchanged item art, combining:
+  1. SHAKE: whole-sprite jiggle, now and then (no art).
+  2. LIGHT FAULT: the item's own light overlay driven to flicker, stutter or die.
+  3. PARTICLES: shared small animated sprites: smoke puff, sparks, steam, drips.
+  4. FLOOR DECALS: placed in front of the item, never on it: a spreading puddle, a scorch smudge.
+  5. STATUS LIGHT with icon (section 10d).
+  6. SFX: clunk, fizz, drip, alarm beep, plus an onset chime.
+  7. FIXED: sparkle burst and a "ding" when the keeper sorts it.
+- Example recipes: cooker = stuttering window glow + smoke + occasional bang with shake; dishwasher = spreading puddle + drips + beeping LED; fridge = door-open state + cold mist; lamp = flicker → sparks → dark.
+- The kit is about 8–10 small sprites, made once (Codex task after the kitchen proof). A new fault never needs new art.
+- The approved kitchen sheet's drawn broken states (flooding sink, falling doors, burnt toaster, cracked kettle, spilt bin) are reference for these effects only, not production art.
+
+## 11. Island and outdoor art
+- Same units as the tower: 1 module width (FW) = 1536 px; 1 bay = 84 px. Major plots use module-width units; facilities may use whole-bay increments. The "12 lp outdoor grid" is withdrawn.
+- Ground line level with the entrance lobby's floor-slab top. Same front-on top-reveal projection and 168 px/m scale as the rooms.
+- Day 1: full island rock including below a level waterline; short grass; rough grass and rocks on uncleared ground; play lawn; vegetable bed; barbecue terrace; cliff steps; wooden jetty; moored rowing boat with outboard; empty future plots; separate surface and edge pieces where expansion needs them.
+- Never in the foreground master: sky, sea, clouds, birds, waves, horizon, distant islands, ships.
+- Later plots (catalogue list plus play lawn, beehives, shed, spare plot) are listed with sizes for approval before drawing.
+
+## 12. Rendering, mips and zoom
+**Layers, back to front:** sky (time of day, weather; clouds and birds as engine sprites) → sea → island and tower foreground → items, keeper, FX → waterline wave band (y from the art manifest) → weather overlay, UI, edge indicators.
+
+**Scaling:**
+- World geometry is always 1:1: no asset is ever scaled relative to another. Display scaling applies uniformly to the whole composed view, so relative line weights stay consistent.
+- Review and approval happen at 1:1 delivered px.
+- ROOM view: the module (1536 × 576) fits the viewport width; leftover margin shows tower exterior and sky, never stretching.
+- TOWER and ISLAND views use pre-generated, reviewed mip levels (1/2, 1/4, 1/8 where needed). Thin critical features (window bars, railings, the keeper's face, status lights, item legs, structural seams) get declared minimum-feature preservation or a hand-corrected mip. The runtime picks the nearest larger mip and downsamples smoothly from it (never more than 2×).
+- Transitions: a jump cut, or a glide that pans at the outgoing view's scale, then crossfades (about 0.25 s) to the incoming view. Camera position snaps to whole display pixels.
+- Engine work this needs: mip-set selector per view, viewport fitting, pixel-snapped camera, two-layer crossfade. A planned task, not a blocker.
+
+**Ghosting:** a runtime tint (about 25% saturation, 55% brightness) on non-active floors. It keeps edges and alpha, never needs separate art, and never applies to event overlays or alerts.
+
+## 13. Camera behaviour
+- Fixed views: ROOM, TOWER, ISLAND (section 12 for scaling).
+- ROOM framing: the active room's module, centred vertically. On multi-module floors, ROOM view frames the module the keeper is in, and walking into a neighbouring module pans horizontally at the same scale. Neighbouring floors are ghosted and not tappable in Director mode; event overlays in ghosted rooms draw at full brightness and are tappable.
+- DIRECTOR MODE (default): cut to the room the keeper enters; on floor travel, glide out to TOWER and cut to ROOM on arrival; when the player sends him to an item elsewhere, glide out as he starts moving; outdoors uses ISLAND; events needing attention cut to them.
+- EXPLORE MODE: starts on drag, swipe or scroll; pans TOWER and ISLAND; tapping a room or plot cuts to ROOM; tapping an item sends the keeper and returns to Director mode. Events never move the camera in Explore; they show edge indicators. 8 s idle returns to Director mode. A permanent "find the keeper" button.
+- Priority: one event owns the camera at a time; the rest queue as indicators; never cut during a mini-game or mid-tap.
+- V1 simplification: Director mode plus basic vertical and island scrolling; full Explore mode if time allows.
+
+## 14. Catalogue reconciliation
+- The catalogue remains authority for: room and activity inventory, unlock challenges, need effects, timings, breakdown rules, bathroom-access rules, and tier names where wanted.
+- It is NOT authority for: room dimensions, free-x placement, visible stairs or lift shafts, pixel density, broken-item frames, historical plates and item frame sizes, or style.
+- Decided: hidden circulation over visible stairs, lift or slide art; boathouse under the lobby over shore placement; engine fault recipes over broken frames; bay indices over free-x; CRT family retained.
+- Snooker: approved in principle as a LATER dedicated room unlocked by buying the table (CENTREPIECE). It stays in the games hall's catalogue entry until that room is specified and approved. No V1 impact.
+
+## 15. Engine migration (Claude)
+- New geometry module using world units = delivered px, with the module, bay, window, door, floor and per-room walkY constants from section 3, generated from `tower_kit.json` and room layout files rather than hard-coded.
+- One-off converters for any stored legacy ku/lp coordinates (saves, layouts) into world px, with tests. Old geometry code is kept until the converter is verified, then marked deprecated, not deleted, until Frank approves removal.
+- The 172-handoff drag-and-drop contract is retired (the player never moves items). Its route and clearance checks are re-expressed on the 14-bay grid: walk-in zone clear, reserved footprints non-overlapping, windows unoccluded, every interaction anchor reachable on the step lattice, keeper action envelopes unobstructed.
+- Draw order by placement y: back-row items → items behind walkY → keeper → items in front of walkY → occluding doors and jamb.
+- Asset loading reads only manifest-listed runtime derivatives and verifies hashes in dev builds.
+
+## 16. Christmas version (V1) — target 20 Dec 2026
+- Players: Ralph (7) and Eddie (11), separate saves and difficulty.
+- In V1: Day-1 tower (entrance lobby with laundry, kitchen, living room, bedroom with en-suite, lamp room), island scenery with the boat at the jetty; needs bars; daily credits based on each need ending the day green (rules per D9); everyday activities (eat/cook, sleep, wash, toilet, clean, laundry → washing line, relax, lamp duty) via rear-work and bubble stories; pyjamas; faults and repair per section 10f; day/night and basic weather backdrop; camera per section 13 (simplified); base-tier items only; upgrade spending only if it fits. Existing features (typed commands, phone, day report, quizzes): keep if solid, hide if flaky.
+- Not in V1: full catalogue conversion, tier-2/3 furniture art, bespoke per-activity animation, new bubble vocabulary, other costumes, lair, boathouse unlock, multi-module widening, advanced weather, island facilities, snooker room, non-essential mini-games, maths and admin dials, gifting.
+- Production order: Gate 0 → kitchen proof v3 → magenta pipeline → ROOM/TOWER/ISLAND style proof → lock palette and grid → keeper canon manifest → master module and kit → Day-1 tower and island → base-tier items → fault effects kit → minimal keeper clips → bubble integration → UI, needs and credits art → sky, sea and weather layers → verify all activity flows → multi-zoom, palette, gutter and magenta verification → stabilise and release.
+- Indicative schedule: 26 Oct–2 Nov spec, kitchen proof, pipeline · 3–9 Nov kit and canon manifest · 10–23 Nov rooms, island, base items · 24 Nov–6 Dec keeper clips, bubbles, UI, backgrounds · 7–13 Dec integration · 14–19 Dec bug fixing and polish · 20 Dec release.
+- Art freeze: once Gates 0–2 pass, style, palette and grid are frozen until 20 Dec; changes need Frank's explicit decision.
+
+## 17. Gates
+- **Gate 0 (Frank):** approve the ligne-claire style with V7 as style authority; the 1536 × 576 module with 14 × 84 px bays; scale 1 m = 168 px with the Prime Keeper 1:1 at 298 px; 2.0 m room depth with per-room walkY; the minimal animation strategy; bubble-story retention; no-reflow reserved footprints; 1–3 module widening.
+- **Gate 1:** the exact-magenta master survives the build unchanged and produces a verified exact-match RGBA derivative.
+- **Gate 2:** one representative room (the kitchen) is approved at ROOM, TOWER and ISLAND scale (including mips and the lantern width).
+- **Gate 3:** the Prime Keeper contract and approved clips are recorded in `active.json` with hashes.
+- **Gate 4:** one- and multi-module assemblies pass geometry and pixel-diff checks.
+- **Gate 5:** maximum reserved footprints fit all four Day-1 rooms, with no window occlusion.
+- **Gate 6:** one complete activity runs: walk → stop on the bay centre → turn → rear work → bubble → completion → neutral.
+- **Gate 7:** all sheets pass gutter, ownership, alpha, palette, anchor and metadata checks.
+- **Gate 8:** the complete Day-1 loop works in all three views with no missing art, stale legacy geometry or unverified assets.
+
+## 18. Open decisions and proposals
+- D7 (style): ligne claire, V7 as style authority (Frank, 26 Oct). Formal confirmation at Gate 0.
+- D8 (grid): 1536 × 576, 14 × 84 px bays, 168 px/m, 2.0 m depth, per-room walkY. Formal confirmation at Gate 0 after the kitchen proof.
+- D9 (V1 gameplay rules): needs bars, decay rates, activity restores, day end, credit rules. To be settled at the Claude Code kickoff and recorded in section 16.
+- D11: lantern width (proposed 1072 × 576 px, 12 bays). Confirm at Gate 2.
+- D12: bedroom en-suite and lobby cloakroom are end closets in bays 13–14 (Frank, 26 Oct); basin position confirmed at Gate 5.
+- D14: utility cupboard per room is optional. Day-1 proposal: kitchen yes, living room yes or no (Frank to choose), bedroom no (the en-suite door handles outfit changes).
+- D15 OPEN, BLOCKING exact stops: approve the Prime gait re-time (start/stop 42 px each, max +4 px cumulative change) and the F5 opposite-foot stop, so every lattice point is reachable. The kitchen proof renders both versions.
+- D17 RESOLVED (Frank, 26 Oct): ground-floor entrance lobby with boot room (the lobby's cupboard), laundry and a downstairs WC; kitchen on the first floor; laundry → washing line on the lawn is a V1 activity. Exact bay layout to be confirmed in the lobby proof.
+- D16 NEW: bed footprint. In a 2.0 m-deep room the bed must be shown side-on, so it needs 4 bays (2.0 m), with the four-poster in the same reservation. This replaces Frank's earlier "bed 2 bays → four-poster 3 bays" decision, which predates the new scale. Frank to confirm.
+- D13 RESOLVED (Frank, 26 Oct): toilet use is always hidden behind the WC door; no bathroom pose.
+- Catalogue register items (marine lab, radio room, greenhouse, transport, power, bank, bowling/gaming/hot-tub/roof, solar tracker) remain open as listed there.
+- Proposed changes: (none yet)
+
+## 19. Agent notes (Codex ⇄ Claude)
+- OPEN · 26 Oct · Claude → Codex: Spec moved to `docs/SPEC.md` as the shared channel (see "Shared channel" at the top). Next art task is the Kitchen v3 rebuild Frank sends you; report results here as well as to Frank. Your style calibration is approved as the look (Frank, 26 Oct).
+
+## Change log (history only — the body above is authoritative)
+- 26 Oct 2026: v2.0 DRAFT. Rebuilt from Codex's technical review of v1.3 plus engine-side resolutions: pixel reboot at 768 × 256 au ×2; 1536 × 512 / 13-bay grid; au/px units; 244–250 px keeper in a 256 × 320 cell; left-wall circulation door; 1–3 module widening; reserved maximum footprints with no reflow; exact-match magenta with build-time derivatives; integer-scale rendering with reviewed mips; clip-metadata timing; sprite safety and provenance rules; bubble stories as a separate illustrated layer; snooker approved in principle as LATER; lantern width deferred to proof. v1.x and the 172 handoff retained as history.
+- 26 Oct 2026: amendment. Hard rule that nothing ever occludes a window; room depth rule (left-wall front door seen only as a jamb); utility cupboard mechanic with door-occlusion tool swaps and broom → hoover → super hoover cleaning.
+- 26 Oct 2026: amendment. Utility cupboard optional per room (`hasCupboard`); en-suite door as the outfit-change point; fixed costume list, all droppable except pyjamas (REQUIRED); pyjama clips: walk, stop + turn, brush teeth, get into bed; sleep as the bed OCCUPIED state; toilet always hidden.
+- 26 Oct 2026: amendment. Absolute projection rule ("front-on with a top reveal", 1/4 depth); every asset sized from real measurements; fitted-run assembly with inserts on top of the worktop (never cut-outs); asset isolation, hash locks and a regression gate; light overlays with engine-driven off/on/pulse/flicker replace drawn ON and FLASHING states.
+- 26 Oct 2026: amendment. Bays changed from 13 × 96 px to 14 × 84 px so that one bay = one Prime Keeper step; walk-in zone x 32–328; door point x 118; 2-bay items declare a useBay; D15 gait re-time.
+- 26 Oct 2026: amendment. Approved Kitchen Oven V7 named as the ligne-claire style authority; slot-in appliance category; V7 then confirmed as style reference only (Frank: "adult and yet also playful, suitably Hergé but also modern"), with a new 1-bay slot-in cooker in bay 7 and bay 8 reserved for the range.
+- 26 Oct 2026: amendment. Prime Keeper kept 1:1 (298 px, sole datum y 316); the 83.89% downscale rejected; scale 1 m = 168 px (bay = 0.50 m); module 1536 × 576.
+- 26 Oct 2026: amendment. Worktop-height fix: keeper walks close to the furniture on a per-room walkY; room depth 2.0 m; ceiling 2.55 m; new vertical values.
+- 26 Oct 2026: amendment. Fault effects kit (engine recipes; no broken art).
+- 26 Oct 2026: v2.1 DRAFT consolidation. All amendments folded into the body; pixel-reboot rules (au grid, nearest-neighbour sampling, 0/255 alpha, full palette snapping) replaced by ligne-claire equivalents; keeper canon section rewritten around the Prime Keeper contract; kitchen layout recorded in 10b; lantern proposal re-derived for 84 px bays (1072 px); footprint categories in metres at the new scale; D16 (side-on bed, 4 bays) raised.
+- 26 Oct 2026: amendment. Ground floor becomes an ENTRANCE LOBBY with laundry; kitchen moves to the first floor; front door in the lobby's right wall (jamb only) and outdoor-costume change point; no doors on back walls ever (the kitchen proof's arched back-wall door was a brief error).
+- 26 Oct 2026: amendment. Lobby gets a boot room (the lobby's cupboard and outdoor-costume change point) and a downstairs WC; laundry → washing line is V1. Projection matched to the approved kitchen proof draft: object top reveals 1/6 of depth, floor band a fixed 84 px house rule; ellipses for round things on tops; kitchen vertical values updated (worktop reveal 305–322, edge 322–336, fronts 336–468).
+- 26 Oct 2026: amendment. END CLOSET rule: WCs, the en-suite and the lobby cloakroom sit at the far right (bays 13–14) behind a camera-facing front panel with an edge-on doorway, so the keeper walks right and vanishes; the front door is hidden inside the lobby cloakroom (boot room, coats, WC, tools).
+- 26 Oct 2026 (Claude): moved to `docs/SPEC.md` in the repo as the shared Codex ⇄ Claude channel; status set to working spec (Frank); shared-channel rules and section 19 (agent notes) added.

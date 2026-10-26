@@ -1,5 +1,7 @@
 # Lighthouse Keeper: notes for coding agents (Codex and others)
 
+> **Shared spec (Frank, 26 Oct 2026):** `docs/SPEC.md` is the single working spec and the shared channel between Codex and Claude. `git pull` and read it before every task; where it conflicts with older rules below or with `docs/CODEX_BRIEF.md`, the spec wins. Follow its "Shared channel" rules to update it and leave notes for Claude in its section 19.
+
 **Deployment is manual.** Pushing to `main` does not deploy. Vercel builds only
 when the newest commit on `main` has a subject line ending in `[deploy]`; branch
 pushes never build.

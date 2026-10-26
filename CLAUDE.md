@@ -1,5 +1,7 @@
 # Lighthouse Keeper: notes for Claude
 
+> **Shared spec (Frank, 26 Oct 2026):** `docs/SPEC.md` is the single working spec and the shared channel with Codex. `git pull` and read it before every task; it overrides older graphics and geometry rules below. Update it and leave notes for Codex per its "Shared channel" rules (section 19). The working copy is `~/Documents/ChatGPT/Lighthouse Keeper`; `~/Projects/lighthouse-keeper` is an old duplicate — don't work there.
+
 Project page (the record of every decision, and the user guide): https://claude.ai/artifact/Ehjz6SdSEvsDYLTLWuKZP4. Read it with the Artifact tool, and re-read it before every republish.
 
 - **Stack:** Next.js 14 (App Router), React 18, TypeScript and Vitest, deployed on Vercel at https://lighthouse-keeper-mu.vercel.app. **Pushes do not deploy:** only a commit on `main` whose subject line ends with `[deploy]` builds. Release with `npm run deploy -- "note"`, once per review batch, never in ordinary commits. Details, retention and rollback: `docs/DEPLOYMENT.md`. Neon Postgres is optional (`DATABASE_URL`).
