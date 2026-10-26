@@ -1,6 +1,6 @@
 # Codex task — Kitchen v3 amendment: freestanding 1950s appliances (Frank, 26 Oct 2026)
 
-Run this AFTER the Kitchen v3 rebuild (docs/prompts/KITCHEN_V3_REBUILD_2026-10-26.md) has been reported, as a new versioned draft (/review/kitchen-proof-v3-freestanding/). Everything in the rebuild brief stays in force except what is listed here. Keep the approved look and the 1950s feel of the assets you are already building. Because every part is its own file, only the files named below change; prove the rest are byte-identical.
+Run this TOGETHER with the Kitchen v3 rebuild (docs/prompts/KITCHEN_V3_REBUILD_2026-10-26.md) in one pass, in its folder (/review/kitchen-proof-v3-rebuild/); where they differ, this amendment wins. Everything in the rebuild brief stays in force except what is listed here. Keep the approved look and the 1950s feel of the assets you are already building. Because every part is its own file, only the files named below change; prove the rest are byte-identical.
 
 ## Decision (Frank, 26 Oct)
 All appliances are FREESTANDING, with a 1950s character. Only the sink and cupboards remain a short fitted run. No shadows anywhere (unchanged).
@@ -19,4 +19,4 @@ All appliances are FREESTANDING, with a 1950s character. Only the sink and cupbo
 - item.json for each new item: placement freestanding, realSizeM, bayWidth 1, standPointX, lightOverlays.
 
 ## Checks
-Re-assemble the room; prove every file not named above is byte-identical and the room differs only inside bays 1, 2, 6 and 7. Composite the Prime Keeper at the cooker and check the eye-level grill sits at about his eye level. Window rule, magenta and no-shadow checks as before. Report to Frank and note it in section 19 of docs/SPEC.md.
+Run the rebuild brief's isolation test as written. Composite the Prime Keeper at the cooker and check the eye-level grill sits at about his eye level. Window rule, magenta and no-shadow checks as before. Report to Frank and note it in section 19 of docs/SPEC.md.
