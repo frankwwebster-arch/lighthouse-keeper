@@ -2,6 +2,13 @@
 
 A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by typing or tapping objects, then keep him happy through the day. The playable cutaway currently has a kitchen, living room, bedroom with en suite, and lamp room.
 
+The latest whole-island Day 1 and fully expanded foreground layout drafts are
+in `public/art/reference/`. Their measured ground/water lines, the binding
+one-door-per-floor gameplay rule and the remaining production blockers are
+recorded in
+[`docs/LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md`](docs/LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md).
+These are review references, not approved runtime art.
+
 The current Prime animation review is `/prime-keeper-animation-drafts`
 (versioned permalink `/prime-keeper-animation-drafts-v12`): ten reversible
 sequences with 162 frame occurrences. V12 retains V3's accepted palette, lift

@@ -10,6 +10,13 @@ Date: 2026-10-08
 
 This note records the decisions made in the visual-design conversation so implementation can continue without relying on chat history.
 
+> **26 October supersession for whole-island establishing art:** the Day 1
+> four-floor statement below is historical. The current establishing-shot
+> brief uses two enclosed Day 1 floors (kitchen and bedroom/en-suite) plus the
+> lamp room, and a 20-floor, three-module expanded tower. Door, geometry and
+> draft-status details are in
+> [`LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md`](LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md).
+
 ## Visual direction
 
 - Use the Pixel direction as the primary style.

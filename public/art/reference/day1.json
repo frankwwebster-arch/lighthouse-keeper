@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "source": "day1.png",
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "groundLineY": 571,
+  "waterlineY": 705,
+  "towerBounds": {
+    "xMin": 576,
+    "yMin": 0,
+    "xMax": 962,
+    "yMax": 571,
+    "width": 387,
+    "height": 572
+  },
+  "measurement": {
+    "coordinateSystem": "origin at top-left; inclusive bounds; integer pixels",
+    "towerDefinition": "lamp room, gallery, and tower exterior down to the measured ground line",
+    "exactPureMagentaPixelCount": 0,
+    "approximateMagentaKeyPixelCount": 859213,
+    "totalPixelCount": 1573352
+  }
+}

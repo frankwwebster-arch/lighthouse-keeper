@@ -1,5 +1,14 @@
 # Art references (from Frank)
 
+## Current local whole-island drafts
+
+- `public/art/reference/day1.png`
+- `public/art/reference/expanded.png`
+- Geometry, door-layer rules and known blockers:
+  `docs/LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md`
+
+These two files are review references only. They are not approved runtime art.
+
 Style steers for the sprites. Check each licence before using any pack in the game.
 
 - Harbor City backgrounds: https://blueberry-assets.itch.io/harbor-city-backgrounds
