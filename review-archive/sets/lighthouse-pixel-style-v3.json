@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "set": "lighthouse-pixel-style-v3",
+  "page": {
+    "path": "public/keeper-review/lighthouse-pixel-style-v3/index.html",
+    "sha256": "5e77df1b033624c8b83c01e6fa0f7bdaaaf2bb621615f4013c9d015d6ca837ee",
+    "bytes": 3640
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/lighthouse-pixel-style-v3/assets/comparison-a-b-c-v3.png": {
+      "sha256": "647a9953d8643cfdd232abae7846ad32ba82408e26f3bc098d62004ac4ff1e1f",
+      "extension": ".png",
+      "bytes": 754260,
+      "object": "review-archive/objects/64/647a9953d8643cfdd232abae7846ad32ba82408e26f3bc098d62004ac4ff1e1f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/64/647a9953d8643cfdd232abae7846ad32ba82408e26f3bc098d62004ac4ff1e1f.png"
+    },
+    "/keeper-review/lighthouse-pixel-style-v3/assets/concept-a-16bit-native-v3.png": {
+      "sha256": "db5dc898fd6de766508fbbf84d21fd9b1185ae4f9cfea9b4188b994e7bb1c6be",
+      "extension": ".png",
+      "bytes": 38137,
+      "object": "review-archive/objects/db/db5dc898fd6de766508fbbf84d21fd9b1185ae4f9cfea9b4188b994e7bb1c6be.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/db5dc898fd6de766508fbbf84d21fd9b1185ae4f9cfea9b4188b994e7bb1c6be.png"
+    },
+    "/keeper-review/lighthouse-pixel-style-v3/assets/concept-a-16bit-view-x3-v3.png": {
+      "sha256": "a457aabea2bb5d3814ef32282a787d50957c507f49936ef526e9032b3a2a3f54",
+      "extension": ".png",
+      "bytes": 116129,
+      "object": "review-archive/objects/a4/a457aabea2bb5d3814ef32282a787d50957c507f49936ef526e9032b3a2a3f54.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a4/a457aabea2bb5d3814ef32282a787d50957c507f49936ef526e9032b3a2a3f54.png"
+    },
+    "/keeper-review/lighthouse-pixel-style-v3/assets/concept-b-8bit-native-v3.png": {
+      "sha256": "b4b1afb053467c6bbc3766cb5f82ca64a475ae072e48f746419845436c1f2f87",
+      "extension": ".png",
+      "bytes": 14059,
+      "object": "review-archive/objects/b4/b4b1afb053467c6bbc3766cb5f82ca64a475ae072e48f746419845436c1f2f87.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b4/b4b1afb053467c6bbc3766cb5f82ca64a475ae072e48f746419845436c1f2f87.png"
+    },
+    "/keeper-review/lighthouse-pixel-style-v3/assets/concept-b-8bit-view-x6-v3.png": {
+      "sha256": "ac90c6611d2de5d8013716aff4ebb547e281fa82aa8fe91b202e02622faee0af",
+      "extension": ".png",
+      "bytes": 93748,
+      "object": "review-archive/objects/ac/ac90c6611d2de5d8013716aff4ebb547e281fa82aa8fe91b202e02622faee0af.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ac/ac90c6611d2de5d8013716aff4ebb547e281fa82aa8fe91b202e02622faee0af.png"
+    },
+    "/keeper-review/lighthouse-pixel-style-v3/assets/concept-c-code-only-legacy-control-native-v3.png": {
+      "sha256": "d6dd31b21328b869048719f1a627c5398114f78efe71cbdaefa35b659310f2e4",
+      "extension": ".png",
+      "bytes": 609939,
+      "object": "review-archive/objects/d6/d6dd31b21328b869048719f1a627c5398114f78efe71cbdaefa35b659310f2e4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d6/d6dd31b21328b869048719f1a627c5398114f78efe71cbdaefa35b659310f2e4.png"
+    },
+    "/keeper-review/lighthouse-pixel-style-v3/assets/concept-c-code-only-legacy-control-view-x3-v3.png": {
+      "sha256": "b0fca7b61fe6421456f03b5d99ffb0d7abcf4dd9edcf53bf24fa9f04be7b68c3",
+      "extension": ".png",
+      "bytes": 914246,
+      "object": "review-archive/objects/b0/b0fca7b61fe6421456f03b5d99ffb0d7abcf4dd9edcf53bf24fa9f04be7b68c3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b0/b0fca7b61fe6421456f03b5d99ffb0d7abcf4dd9edcf53bf24fa9f04be7b68c3.png"
+    }
+  }
+}

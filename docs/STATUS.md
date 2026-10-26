@@ -22,6 +22,14 @@ or Keeper candidates are excluded. `npm run export:makko` rebuilds the ignored
 binary folder; `npm run verify:makko-export` checks every exported and source
 SHA-256 against its generated manifest.
 
+A reversible Lighthouse Pixel Style Test V3 is built at
+`public/art/concepts/pixel/` and awaits visual review. A and B are exact
+32-colour/16-colour hard-pixel candidates with the restored
+red-and-warm-white tapered shell, concealed circulation pocket and
+code-enforced side-profile island; C explicitly uses the rejected Day 1 source
+as a code-only failure control. The package changes no canon, runtime art or
+deployment. See `docs/LIGHTHOUSE_PIXEL_STYLE_TEST_2026-10-26.md`.
+
 The approved kitchen art/geometry authority is Warm Ligne-Claire Family V4,
 and Runtime Promotion V1 is now wired into the room code. All six fitted bodies
 remain exact 84 × 74 assets in the approved 772 × 224 coordinate system. The
@@ -418,14 +426,13 @@ implemented and no artwork change is authorised by it.
 
 ## Verification and delivery
 
-The review-payload housekeeping pass completed on 21 October 2026. The exact
-clean-checkout baseline failed at 53.3148 MiB; the content-addressed sweep now
-archives every review image plus JSON/JSON.GZ at or above 24 KiB, leaving HTML
-and small JSON public. After Kitchen Complete Room Layout V5, 260 set manifests
-resolve 8,093 references to 3,372 immutable objects;
-6,162 literal page references resolve and `public/` is 49.72 MiB, below the
-unchanged 50 MiB guard. Runtime
-`public/sprites` is now 40.1033 MiB, including the 27 versioned Prime sheets.
+The review-payload housekeeping pass was refreshed for Lighthouse Pixel Style
+Test V3 on 26 October 2026. The content-addressed sweep archives every review
+image plus JSON/JSON.GZ at or above 24 KiB, leaving HTML and small JSON public.
+The current index has 151 set manifests resolving 4,497 references to 2,447
+immutable objects; 5,480 literal page references resolve and `public/` is
+48.85 MiB, below the unchanged 50 MiB guard. Runtime `public/sprites` is
+40.2859 MiB, including the 27 versioned Prime sheets.
 Use `npm run maintain:keeper-review` after any review builder; it archives,
 verifies object and manifest hashes, checks historical URL resolution and then
 checks the deployment payload. Repository size, `review-archive/` and

@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "status": "review-only; no runtime or canon promotion",
+  "supersededBy": "public/art/concepts/pixel/manifest-v3.json",
+  "supersededReason": "The tapered shell covered one quarter of the nominal lawn and terrace, and the outer bed/boat had no edge breathing room. V3 widens the canvas and verifies fully visible plots from the real shell edges.",
+  "builtBy": "scripts/build_lighthouse_pixel_concepts_v2.py",
+  "magenta": "#FF00FF",
+  "packaging": {
+    "entrypoint": "public/art/concepts/pixel/",
+    "reviewSet": "lighthouse-pixel-style-v2",
+    "reviewAssets": "public/keeper-review/lighthouse-pixel-style-v2/assets/",
+    "archivePolicy": "Run npm run maintain:keeper-review after building; PNGs move to content-addressed review-archive objects while their review URLs remain stable."
+  },
+  "architectureRevision": {
+    "reason": "User feedback: restore classic lighthouse identity.",
+    "features": [
+      "alternating red and warm-white masonry shell",
+      "slight exterior taper around fixed rectangular rooms",
+      "wider gallery and lantern crown",
+      "concealed stair-sized pocket behind the left room jamb"
+    ]
+  },
+  "supersededGeneratedSources": [
+    "art/drafts/lighthouse-pixel-style-test-2026-10-26-v2/sources/concept-a-16bit-generated-source-v1.png",
+    "art/drafts/lighthouse-pixel-style-test-2026-10-26-v2/sources/concept-b-8bit-generated-source-v1.png"
+  ],
+  "keeperSourceSubstitution": {
+    "requestedPath": "public/art/keeper/canon/ (missing)",
+    "usedPath": "review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png",
+    "reason": "Exact approved 256 x 320 smooth side-right idle authority."
+  },
+  "concepts": [
+    {
+      "id": "A-generated-16-bit",
+      "source": "art/drafts/lighthouse-pixel-style-test-2026-10-26-v2/sources/concept-a-16bit-generated-source-v2.png",
+      "sourceSha256": "6035c673d148ea4ca81b8084a4e018105d335f43c9dc9efed074cf745b8d46fe",
+      "native": {
+        "path": "public/keeper-review/lighthouse-pixel-style-v2/assets/concept-a-16bit-native-v2.png",
+        "sha256": "0c6c10f2e262d16ab8f219cdb20a54eadb199acee029f6b11cf17b4638064df0",
+        "size": [
+          1920,
+          1080
+        ],
+        "paletteCount": 32,
+        "paletteLimit": 32,
+        "magentaPixels": 1234217,
+        "alphaValues": [
+          255
+        ]
+      },
+      "view": {
+        "path": "public/keeper-review/lighthouse-pixel-style-v2/assets/concept-a-16bit-view-x3-v2.png",
+        "sha256": "ba6c5bd91af834701ceabe7af6dc39baf6b48ffcf98207cb49be55ec4a7240cd",
+        "size": [
+          5760,
+          3240
+        ],
+        "integerUpscale": 3,
+        "resampling": "nearest-neighbour"
+      },
+      "geometry": {
+        "towerBounds": [
+          768,
+          272,
+          1152,
+          656
+        ],
+        "module": [
+          384,
+          128
+        ],
+        "wallBand": 8,
+        "floorCeilingBand": 8,
+        "walkInZone": [
+          776,
+          832
+        ],
+        "bayWidth": 24,
+        "windowOuterSize": [
+          48,
+          48
+        ],
+        "windowGlassRects": [
+          [
+            [
+              906,
+              306,
+              949,
+              345
+            ],
+            [
+              1050,
+              306,
+              1093,
+              345
+            ]
+          ],
+          [
+            [
+              906,
+              434,
+              949,
+              473
+            ],
+            [
+              1050,
+              434,
+              1093,
+              473
+            ]
+          ],
+          [
+            [
+              906,
+              562,
+              949,
+              601
+            ],
+            [
+              1050,
+              562,
+              1093,
+              601
+            ]
+          ]
+        ],
+        "floorTops": [
+          272,
+          400,
+          528
+        ],
+        "groundLineY": 648,
+        "outerShell": {
+          "topBounds": [
+            720,
+            1200
+          ],
+          "baseBounds": [
+            672,
+            1248
+          ],
+          "bodyY": [
+            272,
+            656
+          ],
+          "stripeHeight": 32,
+          "taperPerSide": 48
+        },
+        "hiddenCirculationPocket": {
+          "visible": false,
+          "leftShellToRoomGapAtTop": 48,
+          "leftShellToRoomGapAtBase": 96,
+          "entrancePresentation": "slim edge-on jamb only"
+        },
+        "outdoors": {
+          "groundLineY": 648,
+          "waterlineY": 860,
+          "visibleTopFaces": false,
+          "presentation": "single orthographic side-profile panel",
+          "bedBounds": [
+            0,
+            616,
+            384,
+            648
+          ],
+          "lawnBounds": [
+            384,
+            648,
+            768,
+            664
+          ],
+          "terraceBounds": [
+            1152,
+            648,
+            1536,
+            664
+          ],
+          "plotWidth": 384,
+          "stairPresentation": "side profile on far-right cliff only"
+        }
+      },
+      "keeper": {
+        "bbox": [
+          793,
+          586,
+          814,
+          648
+        ],
+        "visibleHeight": 62,
+        "source": "review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png",
+        "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+        "hardAlphaBeforeComposite": true
+      },
+      "ruleBreaks": []
+    },
+    {
+      "id": "B-generated-8-bit",
+      "source": "art/drafts/lighthouse-pixel-style-test-2026-10-26-v2/sources/concept-b-8bit-generated-source-v2.png",
+      "sourceSha256": "f4c91a33101136d02aed69acf0d44445e63b58a560329f42830554d0459d4887",
+      "native": {
+        "path": "public/keeper-review/lighthouse-pixel-style-v2/assets/concept-b-8bit-native-v2.png",
+        "sha256": "a7d1350a96d685fd0dc1ebef76962f24d840bfef7603760ef34bb54b57263166",
+        "size": [
+          960,
+          540
+        ],
+        "paletteCount": 16,
+        "paletteLimit": 16,
+        "magentaPixels": 306030,
+        "alphaValues": [
+          255
+        ]
+      },
+      "view": {
+        "path": "public/keeper-review/lighthouse-pixel-style-v2/assets/concept-b-8bit-view-x6-v2.png",
+        "sha256": "b29751f2b542820b015b184e3a5099fd5b22b8dde88b753cc3d170a8ba51ce92",
+        "size": [
+          5760,
+          3240
+        ],
+        "integerUpscale": 6,
+        "resampling": "nearest-neighbour"
+      },
+      "geometry": {
+        "towerBounds": [
+          384,
+          136,
+          576,
+          328
+        ],
+        "module": [
+          192,
+          64
+        ],
+        "wallBand": 4,
+        "floorCeilingBand": 4,
+        "walkInZone": [
+          388,
+          416
+        ],
+        "bayWidth": 12,
+        "windowOuterSize": [
+          24,
+          24
+        ],
+        "windowGlassRects": [
+          [
+            [
+              453,
+              153,
+              474,
+              172
+            ],
+            [
+              525,
+              153,
+              546,
+              172
+            ]
+          ],
+          [
+            [
+              453,
+              217,
+              474,
+              236
+            ],
+            [
+              525,
+              217,
+              546,
+              236
+            ]
+          ],
+          [
+            [
+              453,
+              281,
+              474,
+              300
+            ],
+            [
+              525,
+              281,
+              546,
+              300
+            ]
+          ]
+        ],
+        "floorTops": [
+          136,
+          200,
+          264
+        ],
+        "groundLineY": 324,
+        "outerShell": {
+          "topBounds": [
+            360,
+            600
+          ],
+          "baseBounds": [
+            336,
+            624
+          ],
+          "bodyY": [
+            136,
+            328
+          ],
+          "stripeHeight": 16,
+          "taperPerSide": 24
+        },
+        "hiddenCirculationPocket": {
+          "visible": false,
+          "leftShellToRoomGapAtTop": 24,
+          "leftShellToRoomGapAtBase": 48,
+          "entrancePresentation": "slim edge-on jamb only"
+        },
+        "outdoors": {
+          "groundLineY": 324,
+          "waterlineY": 430,
+          "visibleTopFaces": false,
+          "presentation": "single orthographic side-profile panel",
+          "bedBounds": [
+            0,
+            308,
+            192,
+            324
+          ],
+          "lawnBounds": [
+            192,
+            324,
+            384,
+            332
+          ],
+          "terraceBounds": [
+            576,
+            324,
+            768,
+            332
+          ],
+          "plotWidth": 192,
+          "stairPresentation": "side profile on far-right cliff only"
+        }
+      },
+      "keeper": {
+        "bbox": [
+          396,
+          293,
+          407,
+          324
+        ],
+        "visibleHeight": 31,
+        "source": "review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png",
+        "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+        "hardAlphaBeforeComposite": true
+      },
+      "ruleBreaks": []
+    },
+    {
+      "id": "C-code-only-legacy-control",
+      "source": "public/art/reference/day1.png",
+      "sourceSha256": "e3de09ee87fb79884fd6c4c7f443331244225049d7269a87c87be9359c056adb",
+      "native": {
+        "path": "public/keeper-review/lighthouse-pixel-style-v2/assets/concept-c-code-only-legacy-control-native-v2.png",
+        "sha256": "3ef77b31422dcc82aab66104bbd3448a827979a06eb9a561654352abcb36361d",
+        "size": [
+          1920,
+          1080
+        ],
+        "paletteCount": 32,
+        "paletteLimit": 32,
+        "magentaPixels": 1132121,
+        "alphaValues": [
+          255
+        ]
+      },
+      "view": {
+        "path": "public/keeper-review/lighthouse-pixel-style-v2/assets/concept-c-code-only-legacy-control-view-x3-v2.png",
+        "sha256": "070a3a385973d5197bb3ef2f59400489f84f39ce9c468e9ad411b58779a3eca0",
+        "size": [
+          5760,
+          3240
+        ],
+        "integerUpscale": 3,
+        "resampling": "nearest-neighbour"
+      },
+      "geometry": null,
+      "keeper": {
+        "bbox": [
+          807,
+          592,
+          828,
+          654
+        ],
+        "visibleHeight": 62,
+        "source": "review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png",
+        "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+        "hardAlphaBeforeComposite": true,
+        "placementNote": "Placed in the legacy ground-floor walk-in area without altering its architecture."
+      },
+      "ruleBreaks": [
+        "The supplied legacy source has two room floors rather than the requested three; the missing living-room floor was not invented in a code-only control.",
+        "The supplied legacy source visibly contains stair flights and stair recesses rather than the new concealed circulation slot.",
+        "Whole-frame conversion cannot produce the requested exact 384 x 128 room module geometry without redrawing the source."
+      ]
+    }
+  ],
+  "comparison": {
+    "path": "public/keeper-review/lighthouse-pixel-style-v2/assets/comparison-a-b-c-v2.png",
+    "sha256": "72d71dab71950ed9726c2b5ae5a2d11de8061d7ecae50c3f74b705c45455ae8c",
+    "size": [
+      5760,
+      1176
+    ],
+    "panelSize": [
+      1920,
+      1080
+    ],
+    "labelBarHeight": 96,
+    "note": "B is shown at exact x2 beside native A/C so all scenes have the same display size and 8-bit pixels remain visibly twice as large."
+  }
+}

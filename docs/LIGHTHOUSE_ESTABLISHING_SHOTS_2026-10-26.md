@@ -8,6 +8,12 @@ original concept's warm tapered lighthouse, rich distant-island backdrop and
 magical island-splitting expansion. The current circulation, door and sound
 authority is `docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`.
 
+The later V3 pixel-style test is documented in
+`docs/LIGHTHOUSE_PIXEL_STYLE_TEST_2026-10-26.md`. It does not rehabilitate
+either rejected establishing shot or alter the binding hidden-circulation
+contract; its Concept C intentionally preserves the Day 1 image as a failure
+control.
+
 ## Files
 
 - Day 1: `public/art/reference/day1.png`
