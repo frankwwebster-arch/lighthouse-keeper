@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lighthouse Keeper — Pixel Style Test V4</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        background: #101827;
+        color: #f5e9c5;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 24px; }
+      main { width: min(1600px, 100%); margin: 0 auto; }
+      h1 { margin: 0 0 8px; font-size: clamp(22px, 3vw, 38px); }
+      p { line-height: 1.55; max-width: 88ch; }
+      .status { color: #ffcc69; }
+      figure {
+        margin: 28px 0;
+        border: 1px solid #35445c;
+        background: #172235;
+        padding: 12px;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        image-rendering: pixelated;
+        background: #ff00ff;
+      }
+      figcaption { padding: 10px 2px 0; line-height: 1.45; }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+        gap: 18px;
+      }
+      .warning { border-left: 4px solid #e65252; padding-left: 12px; }
+      code { color: #9ed8ff; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Lighthouse Keeper — Pixel Style Test V4</h1>
+      <p class="status">Review-only. Awaiting Frank’s verdict; no runtime or canon promotion.</p>
+      <p>
+        A and B restore the classic red-and-warm-white tapered lighthouse,
+        broad gallery and fully concealed stair-sized circulation pocket. The
+        six-module canvas also preserves the complete lawn, bed and terrace
+        widths outside the tapered shell, with rough ground and sea breathing
+        room at the edges. Rooms remain flat, rectangular doll’s-house panels;
+        no stair, landing, lift shaft or recessed box is visible. Every floor
+        uses the same almost-invisible stair door: one hairline edge and one
+        tiny handle, with no frame or perspective. The bedroom en-suite is
+        omitted because it is not believable at this one-module width.
+      </p>
+
+      <figure>
+        <img
+          src="/keeper-review/lighthouse-pixel-style-v4/assets/comparison-a-b-c-v4.png"
+          alt="Side-by-side 16-bit, 8-bit and code-only legacy-control lighthouse concepts"
+        />
+        <figcaption>
+          Same-size comparison. B is enlarged by exact nearest-neighbour ×2
+          relative to A and C so its coarser native pixel grid remains visible.
+        </figcaption>
+      </figure>
+
+      <div class="grid">
+        <figure>
+          <img
+            loading="lazy"
+            src="/keeper-review/lighthouse-pixel-style-v4/assets/concept-a-16bit-native-v4.png"
+            alt="Generated and code-enforced 16-bit lighthouse concept"
+          />
+          <figcaption>A — 2304 × 1080 native, exactly 32 colours.</figcaption>
+        </figure>
+        <figure>
+          <img
+            loading="lazy"
+            src="/keeper-review/lighthouse-pixel-style-v4/assets/concept-b-8bit-native-v4.png"
+            alt="Generated and code-enforced 8-bit lighthouse concept"
+          />
+          <figcaption>B — 1152 × 540 native, exactly 16 colours.</figcaption>
+        </figure>
+        <figure>
+          <img
+            loading="lazy"
+            src="/keeper-review/lighthouse-pixel-style-v4/assets/concept-c-code-only-legacy-control-native-v4.png"
+            alt="Code-only pixel conversion of the rejected historical Day 1 lighthouse image"
+          />
+          <figcaption class="warning">
+            C — deliberately weak control. It retains the rejected source’s
+            two floors, visible stairs and non-modular geometry.
+          </figcaption>
+        </figure>
+      </div>
+    </main>
+  </body>
+</html>

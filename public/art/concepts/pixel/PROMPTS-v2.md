@@ -1,10 +1,14 @@
-# Lighthouse pixel-style comparison V2/V3 — generated-source prompts
+# Lighthouse pixel-style comparison V2–V4 — generated-source prompts
 
 These are normalized provenance records for the generated source passes. They
 record the art direction and corrections that materially affected the result;
 the deterministic builders, not the image model, own the final native grids,
 room geometry, outdoor elevation, palette limits, hard alpha and exact
 `#FF00FF` key.
+
+V4 does not add another generated source pass. It is a deterministic-only
+geometry correction: identical minimal stair-door marks on every floor and no
+en-suite partition at one-module width.
 
 The user-supplied reference at
 `art/drafts/lighthouse-pixel-style-test-2026-10-26-v2/sources/user-lighthouse-direction-reference-v1.png`

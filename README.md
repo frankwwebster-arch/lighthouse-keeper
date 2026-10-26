@@ -7,20 +7,24 @@ The generated whole-island Day 1 and fully expanded foreground drafts in
 direction or runtime art. The lighthouse should recover the original concept's
 warm tapered exterior, rich distant-island atmosphere and magical
 island-splitting expansion. Ordinary stairs and the lift remain completely
-off-stage behind one circulation entrance per floor; the bedroom alone adds
-its en-suite door. The current door, hidden-travel and replaceable
+off-stage behind one circulation entrance per floor; the bedroom adds an
+en-suite only in a layout wide enough to house it. At one-module width the
+en-suite partition and extra door are omitted. Every closed stair entrance is
+identical: only a hairline edge and tiny handle, with no recess or perspective
+cue. The current door, hidden-travel and replaceable
 `footsteps_stone_stairwell` sound-placeholder contract is
 [`docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md`](docs/HIDDEN_CIRCULATION_DOORS_AND_AUDIO_2026-10-26.md).
 Measurements and rejection reasons for the old pair remain in
 [`docs/LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md`](docs/LIGHTHOUSE_ESTABLISHING_SHOTS_2026-10-26.md).
 
-A separate V3 pixel-style comparison now tests generated-and-enforced 16-bit
+A separate V4 pixel-style comparison now tests generated-and-enforced 16-bit
 and 8-bit treatments against a code-only conversion of that rejected Day 1
 draft. The candidates restore a classic red-and-warm-white tapered shell and
-leave a believable but invisible circulation pocket behind the room jamb; the
-control deliberately preserves its two-floor, visible-stair and non-modular
-failures. This package is awaiting review and changes no canon, runtime art or
-deployment. See
+leave a believable but invisible circulation pocket behind identical minimal
+door marks on every floor; the one-module bedroom has no en-suite partition.
+The control deliberately preserves its two-floor, visible-stair and
+non-modular failures. This package is awaiting review and changes no canon or
+runtime art. See
 [`docs/LIGHTHOUSE_PIXEL_STYLE_TEST_2026-10-26.md`](docs/LIGHTHOUSE_PIXEL_STYLE_TEST_2026-10-26.md).
 
 The current Prime animation review is `/prime-keeper-animation-drafts`
@@ -880,7 +884,7 @@ must remain paused to avoid duplicate alerts.
 - `data/keeper_pose_registry.json`, `data/keeper_endpoint_audit.json` and `data/keeper_endpoint_exceptions.json` — shared pose vocabulary, current real-pixel endpoint evidence, and the frozen legacy migration boundary.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
 - `public/keeper-review/index.html` — canonical online-only reviewer deployed at `/keeper-review/`; `docs/keeper-scale-audit/review.html` is the generated audit artifact and must be byte-identical, but when opened outside `/keeper-review` it sends the viewer to the live platform instead of presenting a second workspace. Its gallery is a compact visual scan (name, review state, last local save/redraft, playback and frame stepping); `Open close review` opens any chosen card immediately. `Find animation` searches names and overrides all other filters; otherwise independently filter by review state, pose and active/reserve use list. Close review lets Frank override the inferred pose tag, relegate a likely duplicate to the reversible reserve list, expand/compress retained draft comparisons, and select canonical or every exact-name draft as an exportable preferred-promotion candidate—without mutating production. **Hand back to Codex** always asks for confirmation, saves any unsaved cards to that browser if confirmed, then submits the full batch to the durable server-side queue. The server records a semantic exact-name delta (ignoring save timestamps), comparing the first server hand-back to the shipped review baseline and later ones to the prior hand-back; the receipt reports only the changed animation count for later Codex work. When Codex claims a batch, the online reviewer becomes read-only until the delivery is completed, while retaining playback and inspection; JSON backup/import is collapsed as an exceptional browser-recovery option.
-- `review-archive/`, `docs/REVIEW_ARCHIVE.md`, `scripts/archive_keeper_review_media.mjs` and `scripts/replace_keeper_review_set.mjs` — content-addressed storage for review-only images, GIFs and oversized review JSON. After the Lighthouse Pixel Style Test V3 archive pass, the index has 4,497 review references across 151 set manifests resolving to 2,447 SHA-256 objects hosted outside Vercel deployments. The global sweep ignores unrelated untracked objects, and the single-set replacement path remains available for an isolated reversible batch. Immutable page bytes and old URLs are preserved through short-lived redirect routes; new animations preload every moving frame before playback. The verified `public/` payload is 48.85 MiB, beneath the unchanged 50 MiB guard. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
+- `review-archive/`, `docs/REVIEW_ARCHIVE.md`, `scripts/archive_keeper_review_media.mjs` and `scripts/replace_keeper_review_set.mjs` — content-addressed storage for review-only images, GIFs and oversized review JSON. After the Lighthouse Pixel Style Test V4 archive pass, the index has 4,504 review references across 152 set manifests resolving to 2,452 SHA-256 objects hosted outside Vercel deployments. The global sweep ignores unrelated untracked objects, and the single-set replacement path remains available for an isolated reversible batch. Immutable page bytes and old URLs are preserved through short-lived redirect routes; new animations preload every moving frame before playback. The verified `public/` payload is 48.87 MiB, beneath the unchanged 50 MiB guard. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
 - `data/keeper_side_on_beard_occlusion_audit.json`, `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/`, and `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` — completed draft-only v2 beard/hand audit and preserved rejected v1 history. The active reviewer shows v2 beside canonical and the separate Frank-selected darts draft; the verifier prevents implicit promotion.
 - `data/keeper_review_drafts.json` and `art/drafts/` — SHA-256-pinned, exact-name review comparisons: the draft-only darts candidate, seven active V11 artist-smock candidates, the accepted complete-route `keeper_snooker` candidate, the 41 exact-name 11 October amendment candidates and the separate party-hat frame-2 v2 variant, plus the ten selected canonical promotions and their reversible previous versions. Hash-addressed reviewer copies prevent same-name historical and current variants from overwriting one another. `scripts/verify_keeper_review_drafts.ts` checks every registered source, canonical/current comparison, sidecar, gutter, publication and reviewer attachment.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.

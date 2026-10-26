@@ -1,6 +1,8 @@
 {
   "schemaVersion": 1,
   "status": "review-only; no runtime or canon promotion",
+  "supersededBy": "public/art/concepts/pixel/manifest-v4.json",
+  "supersededReason": "V4 makes every stair entrance an identical hairline edge plus tiny handle and omits the en-suite at one-module width.",
   "builtBy": "scripts/build_lighthouse_pixel_concepts_v3.py",
   "magenta": "#FF00FF",
   "packaging": {

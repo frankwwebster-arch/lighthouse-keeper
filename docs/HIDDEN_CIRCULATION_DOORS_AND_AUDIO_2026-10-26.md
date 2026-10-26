@@ -15,12 +15,18 @@ presentation for ordinary travel between lighthouse floors.
 - A narrow concealed circulation slot runs vertically behind the room edge.
   It is architectural negative space, not another visible room module.
 - Every ordinary floor has exactly one entrance between that concealed slot
-  and its room. There are no doors between width modules.
-- The ground floor additionally has the exterior front door. The bedroom is
-  the sole ordinary-floor exception: it has one further door into the en-suite
-  on its right.
-- The closed circulation entrance shows only its slim side jamb. The door
-  panel itself is visible only while it opens toward the player.
+  and its room. In the stair configuration, every entrance is identical and
+  occupies the same local position on every floor. A later lift replaces all
+  of them with one equally consistent lift-entrance treatment. There are no
+  doors between width modules.
+- The ground floor additionally has the exterior front door. A bedroom
+  en-suite remains a wider-layout gameplay requirement, but its partition and
+  extra door are omitted at one-module width because they cannot fit
+  believably. Do not squeeze them into the standard room.
+- The closed circulation entrance shows only a hairline door edge and tiny
+  handle. Do not draw a broad jamb, visible panel face, frame, inset, recess or
+  perspective cue. The door panel itself is visible only while it opens toward
+  the player.
 - The open panel is flat, opaque foreground scenery. Layer order is
   `room shell -> Keeper -> open door panel`, so it completely covers the
   Keeper as he crosses. It must not introduce an angled wall, floor, ceiling,

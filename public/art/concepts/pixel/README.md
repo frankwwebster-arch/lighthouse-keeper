@@ -1,9 +1,10 @@
-# Lighthouse pixel-style comparison V3
+# Lighthouse pixel-style comparison V4
 
 Status: review-only style experiment; awaiting Frank's verdict. Nothing in
-this package is approved canon, runtime art, production art or a deployment.
+this package is approved canon, runtime art or production art. Its review page
+may be published without promoting a candidate into the game.
 
-V3 compares two authored pixel densities with one deliberately weak code-only
+V4 compares two authored pixel densities with one deliberately weak code-only
 control. It responds to Frank's direction that the tower must immediately read
 as a classic lighthouse: alternating deep-red and warm-white masonry, a slight
 continuous exterior taper around fixed rectangular rooms, a broader
@@ -11,9 +12,12 @@ gallery/lantern silhouette and a believable but completely invisible
 stair-sized circulation pocket between the shell and the left room jamb.
 
 The cutaway remains a flat, straight-on doll's house. Rooms have no inset depth
-or visible side planes. No stair, landing, shaft or lift car appears. A closed
-circulation entrance is only a slim edge-on jamb; the ground floor separately
-has its exterior door, and the bedroom alone adds its en-suite jamb.
+or visible side planes. No stair, landing, shaft or lift car appears. Every
+floor uses the same closed circulation-door mark in the same local position:
+one pixel-equivalent hairline edge and one pixel-equivalent warm handle, with no visible
+panel, frame, recess or perspective surface. The ground floor separately has
+its exterior door. The bedroom en-suite is omitted because its partition and
+second door are not believable at this one-module width.
 
 ## Concepts
 
@@ -47,19 +51,20 @@ It is converted in code to the candidate's grid, palette and hard alpha.
 
 ## Files and packaging
 
-- `manifest-v3.json` is the current machine-readable authority for source/output
+- `manifest-v4.json` is the current machine-readable authority for source/output
   hashes, exact geometry, palette counts, Keeper placement and known breaks.
-- `PROMPTS-v2.md` records the generated-source prompt chain shared by V2/V3.
-- `/keeper-review/lighthouse-pixel-style-v3/` is the current same-size visual review.
-- The immutable V2 review and `manifest-v2.json` remain as superseded evidence:
-  their nominal outdoor plots were partly covered by the tapered shell. V3
-  widens the canvas and measures the visible plots from the real shell edges.
+- `PROMPTS-v2.md` records the generated-source prompt chain shared by V2–V4.
+- `/keeper-review/lighthouse-pixel-style-v4/` is the current same-size visual review.
+- The immutable V2/V3 reviews and their manifests remain as superseded evidence.
+  V2's nominal outdoor plots were partly covered by the tapered shell. V3 fixed
+  those widths but retained a visually heavy stair jamb and a cramped bedroom
+  en-suite strip. V4 changes only those deterministic room marks.
 - Generated inputs remain reversible under
   `art/drafts/lighthouse-pixel-style-test-2026-10-26-v2/sources/`. V1 source
   passes are explicitly superseded, not overwritten.
 
 Large PNGs initially build under
-`public/keeper-review/lighthouse-pixel-style-v3/assets/`. The mandatory review
+`public/keeper-review/lighthouse-pixel-style-v4/assets/`. The mandatory review
 maintenance step moves them into immutable content-addressed
 `review-archive/objects/` storage while preserving those stable review URLs.
 This keeps the live `public/` payload below its 50 MiB ceiling. The package
@@ -71,10 +76,10 @@ Python 3 needs Pillow and NumPy. In the Codex workspace, use the bundled Python
 runtime returned by the workspace-dependency helper.
 
 ```sh
-python3 scripts/build_lighthouse_pixel_concepts_v3.py
-python3 scripts/verify_lighthouse_pixel_concepts_v3.py
+python3 scripts/build_lighthouse_pixel_concepts_v4.py
+python3 scripts/verify_lighthouse_pixel_concepts_v4.py
 npm run maintain:keeper-review
-python3 scripts/verify_lighthouse_pixel_concepts_v3.py
+python3 scripts/verify_lighthouse_pixel_concepts_v4.py
 ```
 
 The first verification proves the freshly built files. The second proves that
