@@ -71,7 +71,7 @@ Built from Codex's technical review of v1.3 (commit 42ec2552), with engine-side 
 - Open, the door panel is a foreground occluder. Draw order: room shell → keeper → open door panel / jamb.
 - Travel: the keeper walks left into the door, is occluded, the screen fades, and he emerges from the destination floor's door at the door standing point (x 118) on that room's walkY.
 - The lift upgrade changes only the door jamb; the lift lives entirely in the hidden core. Costume and tool swaps may happen inside it.
-- FRONT DOOR (to the island): only on the ground-floor ENTRANCE LOBBY, and never seen. It lies behind the lobby's RIGHT DOOR (section 3j): the keeper walks into the right door to go out and reappears outside at the tower's right side; coming home, he walks into the tower's right side and steps out of the right door into the lobby. No room ever has a door drawn on its back wall (the back wall faces away from the island).
+- FRONT DOOR (to the island): only on the ground-floor ENTRANCE LOBBY, and never seen. Proposed (Frank to confirm): it lies behind the lobby's RIGHT DOOR, beyond the downstairs WC, inside the same fictional space (section 3j): the keeper walks into the right door to go out and reappears outside at the tower's right side; coming home, he walks into the tower's right side and steps out of the right door into the lobby. No room ever has a door drawn on its back wall (the back wall faces away from the island).
 
 ### 3d. Horizontal expansion
 - Tiers: 1, 2 or 3 complete modules per floor. The 172/193/214 width tiers are retired.
@@ -83,7 +83,7 @@ Built from Codex's technical review of v1.3 (commit 42ec2552), with engine-side 
 Bottom to top:
 1. Lair (optional, LATER): always the very bottom, below the waterline.
 2. Boathouse (optional, LATER): at the waterline beneath the lobby; sea arch in its rightmost module; jetty runs from the arch.
-3. Entrance lobby with laundry: fixed ground floor; its floor-slab top (module y 544) is exactly on the island ground line. Its cloakroom (an end room, section 3k) holds the right door to the WC and the hidden front door.
+3. Entrance lobby with laundry: fixed ground floor; its floor-slab top (module y 544) is exactly on the island ground line. Its right door is the downstairs WC (signed), with the hidden way out to the island beyond it.
 4. Kitchen: fixed first floor, directly above the lobby.
 5. Middle floors: saved random order (catalogue rule).
 6. Bedroom with en-suite: always directly beneath the lamp room.
@@ -122,17 +122,17 @@ Up to 20 above-ground floors. Day 1 = entrance lobby, kitchen, living room, bedr
 
 ### 3j. The RIGHT DOOR — the magic cupboard (Frank, 26 Oct)
 - Every floor has TWO doorways, both in the side walls at the front and both seen only as a jamb: the LEFT door (x 0–32) leads to the hidden stair core; the RIGHT door (x 1504–1536, y 208–544, in the rightmost module) leads into a fictional space between the room and the tower's outer wall that holds whatever that room needs. Like the stairs, it is a deliberate fiction: it never takes up a bay and is never drawn.
-- What lies behind the right door, by room: kitchen and most rooms = the cupboard of myriads (tools: broom, hoover, super hoover, mop, toolbox, watering can, fishing rod and so on); bedroom = the toilet (inside the en-suite, below); entrance lobby = the toilet and the front door to the island (inside the cloakroom, below).
+- What lies behind the right door, by room: kitchen and most rooms = the cupboard of myriads (tools: broom, hoover, super hoover, mop, toolbox, watering can, fishing rod and so on); entrance lobby = the downstairs WC (a small "WC" sign on the jamb), and through it the hidden way out to the island; bedroom = the WC, reached through the en-suite (section 3k), also signed.
 - Use: the keeper walks along walkY to the right wall, passes behind the jamb and is hidden (draw order: shell → keeper → right jamb). Swaps happen while hidden: tool in or out, outfit change, toilet use, leaving or entering the tower. He reappears the same way, already holding the tool or in the new outfit.
 - Costs: no bays, no item art beyond the jamb, no keeper animation beyond the walk. Bays 13–14 stay available for items; anything there stands behind walkY, so the keeper walks in front of it to the door.
 - No camera-facing cupboards are needed anywhere. The toilet is never seen, anywhere in the game.
 
-### 3k. End rooms — en-suite and cloakroom (Frank, 26 Oct)
-- The bedroom's EN-SUITE and the lobby's CLOAKROOM are actual, visible small rooms at the far right of their floor: bays 13–14 (x 1336–1504, 1.0 m wide), proposed size, confirm in each room's proof.
-- They are separated from the main room by a partition seen edge-on: a 16 px interior wall strip centred on x 1336, from the ceiling band to the floor, with an open doorway (no door) at the front where walkY crosses it, so the keeper simply walks through. Same back wall, floor and ceiling lines as the main room; the end room may have its own wall colour or tiles.
-- En-suite contents: basin with mirror and a small shower or bath, drawn as items; brushing teeth happens here (rear-work at the basin). The WC is behind the right door, never seen. Pyjama changes happen behind the right door.
-- Cloakroom contents: coat hooks with coats, boot bench and wellies, a small basin. The WC and the front door are behind the right door. Outdoor-gear changes happen behind the right door as he leaves or comes home.
-- Items in end rooms follow every normal rule (bays, proportions, windows, no shadows).
+### 3k. The en-suite (Frank, 26 Oct)
+- The bedroom's EN-SUITE is an actual, visible bathroom at the right of the bedroom floor: bays 9–14 (x 1000–1504, 3.0 m), proposed, confirmed in the bedroom proof.
+- It is separated from the bedroom by a partition seen edge-on: a 16 px interior wall strip centred on x 1000 (clear of the right window, which starts at x 1084), from the ceiling band to the floor, with an open doorway at the front where walkY crosses it. Same back wall, floor and ceiling lines; the en-suite may have its own wall colour or tiles.
+- Contents, drawn as items: basin with mirror (bay 9), bath (bays 10–12, low enough to pass under the window sill), shower cubicle (bay 13, not a window bay), towel rail or laundry basket (bay 14). Teeth-brushing is rear-work at the basin.
+- The WC is behind the floor's RIGHT DOOR, signed "WC", never seen. Pyjama changes happen there too.
+- The lobby has NO end room: its right door is the downstairs WC (signed), with a small hand basin in the lobby beside it (bay 14).
 
 ## 4. Modular tower kit
 Location `/public/art/tower/<version>/` with `tower_kit.json`:
@@ -207,8 +207,8 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - The engine owns which tool appears, its prop anchors per facing, and the cleaning effect (tidiness rising, dust puffs as FX).
 
 ## 9b. Occluding doors and costume changes
-- Anything the keeper passes behind (the left stair door or the right door) can hide a swap: tool in or out, or outfit change. Outdoor gear (wellies, sou'wester, winter coat, woolly hat) goes on and off behind the right door in the lobby's cloakroom (section 3k), by weather, as he leaves or comes home.
-- The en-suite is an actual end room (section 3k); the keeper goes behind its RIGHT DOOR and comes out changed (day clothes → pyjamas at night, and the reverse in the morning, by game time). The toilet is NEVER seen in use, anywhere in the game.
+- Anything the keeper passes behind (the left stair door or the right door) can hide a swap: tool in or out, or outfit change. Outdoor gear (wellies, sou'wester, winter coat, woolly hat) goes on and off behind the lobby's right door, by weather, as he leaves or comes home.
+- The en-suite is an actual bathroom (section 3k); the keeper goes behind the bedroom floor's RIGHT DOOR (the WC) and comes out changed (day clothes → pyjamas at night, and the reverse in the morning, by game time). The toilet is NEVER seen in use, anywhere in the game.
 - Getting into bed IS animated (Frank, 26 Oct): a short get-into-bed clip in pyjamas (about 4–6 frames, side view, climbing in and pulling the covers up). On its last frame the keeper sprite hands over to the bed's OCCUPIED state (the bed art with his head on the pillow, covers up), drawn as a bed item state; sleeping is that still state, not a loop. In the morning the lights brighten and he steps out beside the bed in pyjamas (cut, or the clip reversed if it reads well).
 - Brushing teeth happens at the basin, facing the mirror, so his back is to the camera: it uses the rear-work loop (in pyjamas) plus a bubble story.
 - The costume list is fixed and short. No others without Frank's decision:
@@ -268,13 +268,13 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 **Other Day-1 rooms (proposed budgets for the fit check):**
 | Room | Items (max bays) | Total |
 |---|---|---|
-| Entrance lobby + laundry (ground floor) | Proposed: 3 laundry sink; 4 washing machine and 5 tumble dryer (under the left window, below the sill); 6 laundry basket; 1–2 and 7–14 free for later (coat stand, shoe bench, ironing board, workbench, fishing gear; nothing tall in 10–11). Cloakroom end room in bays 13–14 (coats, boots, basin), with the WC and front door behind its right door | 4 of 12 + cloakroom (D17) |
+| Entrance lobby + laundry (ground floor) | Proposed: 3 laundry sink; 4 washing machine and 5 tumble dryer (under the left window, below the sill); 6 laundry basket; 1–2 and 7–13 free for later (coat stand, shoe bench, ironing board, workbench, fishing gear; nothing tall in 10–11). 14 small hand basin beside the right door (WC, signed; way out beyond) | 5 of 14 (D17) |
 | Living | CRT TV unit 2, bookshelf 2, piano 3, armchair 2 (tools behind the right door) | 9 of 14 |
-| Bedroom + en-suite | Bed side-on 4 (four-poster in the same reservation, with OCCUPIED state), phone/bedside 1, desk 2, basin 1, en-suite end room in bays 13–14 (basin, mirror, shower; WC behind the right door) | 8 of 14 |
+| Bedroom + en-suite | Bed side-on 4 (four-poster in the same reservation, with OCCUPIED state), phone/bedside 1, desk 2, basin 1, en-suite bathroom in bays 9–14 (basin, bath, shower; WC behind the right door) | 8 of 14 |
 | Lamp room (lantern grid) | Lamp mechanism 2, telescope 2 | 4 of 12 |
 - Bedroom walkY: bed 0.95 m deep + 0.40 m → y 517.
 - Lobby walkY: 0.60 m appliances + 0.40 m → y 502.
-- The en-suite is an end room in bays 13–14 (section 3k) with the basin, mirror and shower; the WC is behind its right door. Confirm in the Day-1 layout proof (D12).
+- The en-suite is a bathroom in bays 9–14 (section 3k) with basin, bath and shower; the WC is behind the right door. Bedroom proper: bays 1–8. Confirm in the Day-1 layout proof (D12).
 
 ### 10c. States
 - One master per item per tier, drawn in its OFF state. That is usually the ONLY full drawing the item ever needs.
@@ -368,7 +368,7 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 - D8 (grid): 1536 × 576, 14 × 84 px bays, 168 px/m, 2.0 m depth, per-room walkY. Formal confirmation at Gate 0 after the kitchen proof.
 - D9 (V1 gameplay rules): needs bars, decay rates, activity restores, day end, credit rules. To be settled at the Claude Code kickoff and recorded in section 16.
 - D11: lantern width (proposed 1072 × 576 px, 12 bays). Confirm at Gate 2.
-- D12 RESOLVED (Frank, 26 Oct): every floor's right door hides the cupboard of myriads or, in the en-suite and cloakroom end rooms (section 3k), the WC (and in the lobby, the front door). End-room width (bays 13–14) confirmed at each room's proof.
+- D12 RESOLVED (Frank, 26 Oct): every floor's right door hides the cupboard of myriads or the WC (signed) in the lobby and the bedroom floor; the en-suite is a visible bathroom in bays 9–14 (section 3k).
 - D14 RESOLVED (Frank, 26 Oct): no utility cupboards in rooms; the right door replaces them.
 - D15 OPEN, BLOCKING exact stops: approve the Prime gait re-time (start/stop 42 px each, max +4 px cumulative change) and the F5 opposite-foot stop, so every lattice point is reachable. The kitchen proof renders both versions.
 - D17 RESOLVED (Frank, 26 Oct): ground-floor entrance lobby with boot room (the lobby's cupboard), laundry and a downstairs WC; kitchen on the first floor; laundry → washing line on the lawn is a V1 activity. Exact bay layout to be confirmed in the lobby proof.
@@ -378,8 +378,9 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 - Proposed changes: (none yet)
 
 ## 19. Agent notes (Codex ⇄ Claude)
-- OPEN · 26 Oct · Claude → Codex: CHANGE from Frank, applies to the current kitchen pass: there is NO utility cupboard or larder in the room. Tools come from a magic cupboard behind a RIGHT-WALL door seen only as a jamb (x 1504–1536, y 208–544, timber like the left jamb), mirroring the stair door (section 3j). Add the right jamb to room_shell_kitchen.png. Bay 1 becomes a narrow freestanding 1950s dresser / plate rack (decorative, 76 px body, under 2.00 m). Drop the cupboard and larder files and their open overlays.
-- OPEN · 26 Oct · Claude → Codex (one combined instruction from Frank):
+- OPEN · 26 Oct · Codex → Claude: Kitchen V3 rebuild delivered in `fdf52ab0` at `review/kitchen-proof-v3-rebuild/`, review-only and unpromoted. It includes the current right-door rule, bay-1 1950s dresser, rounded fridge, freestanding eye-level-grill cooker, bay-6 drawers and no active utility/larder/dishwasher. Dedicated verifier passes 31 isolated parts + shell, exact magenta (21,624; zero near-magenta), zero window collisions/halos, right jamb geometry, native Prime 1:1 and sink isolation; full `npm test` passes (23 files, 436 tests). Please reconcile section 10a-2's stale `84 × 32` worktop wording with the task/10a-3's exact 17 + 14 = 31 px, and see `TECHNICAL_REPORT.md` for the separate 0.90 m/visible-y datum ambiguity.
+- DONE · 26 Oct · Claude → Codex: CHANGE from Frank, applies to the current kitchen pass: there is NO utility cupboard or larder in the room. Tools come from a magic cupboard behind a RIGHT-WALL door seen only as a jamb (x 1504–1536, y 208–544, timber like the left jamb), mirroring the stair door (section 3j). Add the right jamb to room_shell_kitchen.png. Bay 1 becomes a narrow freestanding 1950s dresser / plate rack (decorative, 76 px body, under 2.00 m). Drop the cupboard and larder files and their open overlays. (Codex: implemented in `fdf52ab0`; superseded files retained only as explicitly retired provenance per the amendment's no-delete rule.)
+- DONE · 26 Oct · Claude → Codex (one combined instruction from Frank; completed with the later right-door revision, which superseded its larder clause):
   1. Your style calibration and the first item batch (kettle, toaster, sink cabinet, drawer unit, cooker) are approved in STYLE. Keep the 1950s feel.
   2. Carry out `docs/prompts/KITCHEN_V3_REBUILD_2026-10-26.md` and `docs/prompts/KITCHEN_V3_AMENDMENT_FREESTANDING_2026-10-26.md` together in ONE pass (one versioned folder, /review/kitchen-proof-v3-rebuild/): where they differ, the amendment wins (freestanding 1950s gas cooker with eye-level grill and hood, rounded 1950s fridge, freestanding larder cupboard, no dishwasher). No shadows anywhere.
   3. Proportions (section 8-0): draw every asset at its exact game proportions and judge it at 1:1 game size. The batch's drawer unit is about square, but a 1-bay unit is 84 × 149 px including plinth; the cooker is far too squat and is still the old electric slot-in, while the new cooker is 76 × 252 px including the grill. The sink cabinet's 2-bay proportions are about right. Check the kettle (≈42 px wide) and toaster (≈50 px) at game size; simplify detail that turns to mush.
@@ -404,3 +405,5 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 - 26 Oct 2026 (Claude): appliances freestanding with a 1950s character (Frank); fitted runs only for sinks and cupboards; dishwasher dropped.
 - 26 Oct 2026 (Claude): RIGHT DOOR rule (Frank): every floor has a right-wall door seen only as a jamb, hiding the room's cupboard of myriads, the bedroom en-suite or the lobby cloakroom with the front door; replaces end closets and in-room utility cupboards; kitchen bay 1 becomes a dresser.
 - 26 Oct 2026 (Claude): END ROOMS (Frank): the en-suite and lobby cloakroom are actual visible small rooms in bays 13–14 behind an edge-on partition with an open doorway; the WC (and front door) are behind their right door.
+- 26 Oct 2026 (Codex): recorded the verified Kitchen V3 rebuild handoff in section 19, marked the acted-on Claude instructions DONE and flagged two geometry-wording discrepancies for Claude; no body decision changed.
+- 26 Oct 2026 (Claude): (Frank) lobby WC is the right door with a sign plus a small hand basin; the en-suite is a visible bathroom (bays 9–14: basin, bath, shower) with the WC behind the right door; cloakroom end room dropped.
