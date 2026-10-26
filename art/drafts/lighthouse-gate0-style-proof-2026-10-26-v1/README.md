@@ -1,0 +1,67 @@
+# Gate 0 style proof V1
+
+Status: **candidate — awaiting Frank's A/B decision**.
+
+This is a reversible style comparison for the conditional Gate 0 decision in
+`LIGHTHOUSE_SPEC_v2_DRAFT.md`. It changes no existing file, canon asset,
+runtime binding or active manifest.
+
+Open `review.html` and choose:
+
+- **A — high-resolution pixel illustration:** authored at 768 × 256 and
+  delivered by exact nearest-neighbour 2× to 1536 × 512.
+- **B — smooth flat-colour illustration:** drawn at 1536 × 512 with smooth
+  antialiased contours, flat fills and restrained shadow tones.
+
+Both candidates use the same approved geometry:
+
+- 1536 × 512 delivered module;
+- 13 bays of 96 px;
+- walk-in zone x=32–256;
+- floor surface y=480;
+- 192 × 192 windows over bays 4–5 and 10–11;
+- identical exact `#FF00FF` pane masks;
+- 244–250 px Keeper standing in the walk-in zone;
+- empty room, no furniture or visible circulation architecture.
+
+The approved side/front/back Prime frames are identity references only. The
+two candidate Keeper redraws are not canon and are not promoted anywhere.
+
+## Known identity boundary
+
+The approved Prime images supplied by the repository have one broad white
+torso band. The proposed reboot prose describes two separate chest stripes.
+This style proof preserves the approved reference rather than deciding that
+Gate 3 identity detail. The A/B decision is about rendering style, not canon
+promotion.
+
+## Generated-source boundary
+
+Two initial full-room generations are retained under `sources/` as rejected
+provenance. They were not used as the proof because they introduced a
+perspective floor and non-key window panes. The final rooms use deterministic
+shared geometry and the transparent candidate Keeper renders.
+
+## Rebuild and verify
+
+Use the bundled workspace Python with Pillow:
+
+```sh
+/Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 \
+  art/drafts/lighthouse-gate0-style-proof-2026-10-26-v1/build_review.py
+
+/Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 \
+  art/drafts/lighthouse-gate0-style-proof-2026-10-26-v1/verify_review.py
+```
+
+The verifier checks source/output hashes, dimensions, 13-bay geometry metadata,
+exact 2× delivery for A, identical exact-magenta aperture masks, absence of
+near-magenta pixels and the intended palette distinction.
+
+## Documentation audit
+
+Completed on 26 October 2026. Existing repository documentation remains
+unchanged because this package is an unapproved A/B candidate and therefore
+does not supersede `AGENTS.md`, `docs/CODEX_BRIEF.md` or any runtime contract.
+The candidate status, rebuild commands, known Keeper stripe boundary and
+non-canon/non-runtime scope are recorded entirely inside this new folder.
