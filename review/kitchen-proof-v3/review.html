@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kitchen Proof V3</title>
+  <style>
+    :root { color-scheme: dark; --ink:#09151e; --panel:#122735; --line:#315466; --cream:#fff0ca; --cyan:#29b5d2; --gold:#f3b34c; --warn:#ffb36b; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--ink); color:#e9f1f3; font:16px/1.5 Arial,sans-serif; }
+    header, main { width:min(1600px, 96vw); margin:auto; }
+    header { padding:36px 0 18px; }
+    h1,h2 { color:var(--cream); margin:.2em 0; }
+    h1 { font-size:clamp(30px,4vw,54px); }
+    h2 { margin-top:42px; }
+    .status { display:inline-block; color:#15232b; background:var(--gold); font-weight:700; padding:7px 12px; border-radius:999px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px; margin:18px 0; overflow:auto; }
+    img { display:block; max-width:100%; height:auto; background:#0d1b24; }
+    .room { min-width:900px; image-rendering:auto; }
+    .pixel { image-rendering:pixelated; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:18px; }
+    table { border-collapse:collapse; width:100%; min-width:760px; }
+    th,td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); }
+    th { color:var(--cyan); }
+    .pass { color:#7ee0a3; font-weight:700; }
+    .warn { color:var(--warn); font-weight:700; }
+    code { color:#afe5ef; }
+    footer { padding:35px 0 70px; color:#9fb5be; }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="status">REVIEW ONLY · AWAITING FRANK</span>
+    <h1>Kitchen Proof V3</h1>
+    <p>Native-scale Prime Keeper, 168 px/m world, 14 × 84 px bays, ligne-claire modular kit.</p>
+  </header>
+  <main>
+    <h2>Room view · 1:1</h2>
+    <div class="card"><img class="room" src="outputs/kitchen_v3_room.png" width="1536" height="576" alt="Kitchen V3 room"></div>
+
+    <div class="grid">
+      <section><h2>2× nearest-neighbour</h2><div class="card"><img class="room pixel" src="outputs/kitchen_v3_room_2x.png" width="3072" height="1152" alt="Kitchen V3 at 2x"></div></section>
+      <section><h2>Tower scale · 1/4</h2><div class="card"><img class="pixel" src="outputs/kitchen_v3_tower_scale.png" width="384" height="144" alt="Kitchen V3 at tower scale"></div></section>
+    </div>
+
+    <h2>Route arithmetic</h2>
+    <div class="card">
+      <table>
+        <thead><tr><th>Leg</th><th>Current stop/error</th><th>D15 stop/error</th><th>D15 phase</th></tr></thead>
+        <tbody>
+          <tr><td>Door 118 → sink 622 · 6 steps</td><td>698 / <span class="warn">+76</span></td><td>622 / <span class="pass">0</span></td><td class="warn">F5 stop missing</td></tr>
+          <tr><td>Sink 622 → dishwasher 790 · 2 steps</td><td>866 / <span class="warn">+76</span></td><td>790 / <span class="pass">0</span></td><td class="warn">F5 stop missing</td></tr>
+          <tr><td>Dishwasher 790 → cooker 874 · 1 step</td><td>866 / <span class="warn">−8</span></td><td>874 / <span class="pass">0</span></td><td class="pass">existing phase valid</td></tr>
+          <tr><td>Cooker 874 → fridge 454 · 5 steps</td><td>462 / <span class="warn">+8</span></td><td>454 / <span class="pass">0</span></td><td class="pass">existing phase valid</td></tr>
+        </tbody>
+      </table>
+      <p class="warn">D15 proves exact root positions, not an approved pose sequence for legs 1–2. Their F1 bridge pixels are labelled placeholders because the required F5-to-neutral bridge does not exist.</p>
+    </div>
+
+    <div class="grid">
+      <section><h2>Current 38/38</h2><div class="card"><img src="outputs/route_current_38px.gif" width="1536" height="576" alt="Current route proof"></div></section>
+      <section><h2>D15 42/42 draft</h2><div class="card"><img src="outputs/route_d15_draft_42px.gif" width="1536" height="576" alt="D15 route draft"></div></section>
+    </div>
+
+    <h2>Frame-by-frame evidence</h2>
+    <div class="grid">
+      <div class="card"><img src="outputs/route_current_38px_frame_sheet.png" alt="Current route frame sheet"></div>
+      <div class="card"><img src="outputs/route_d15_draft_42px_frame_sheet.png" alt="D15 route frame sheet"></div>
+    </div>
+
+    <h2>Separate kit against V7</h2>
+    <div class="card"><img src="outputs/contact_sheet.png" alt="Every Kitchen V3 part beside V7 authority crop"></div>
+
+    <h2>Mechanical evidence</h2>
+    <div class="card">
+      <p><span class="pass">PASS</span> 39,200 exact-magenta pixels in the declared panes; zero near-magenta; zero item pixels above y=274 in window bays.</p>
+      <p><span class="pass">PASS</span> Cooker/worktop top y=309; cooker/run plinth y=468–485; native Prime sole y=316 placed on room y=502.</p>
+      <p><span class="pass">PASS</span> Sink recolour changes 271 room pixels, all within the sink insert rectangle; every stored part remains byte-identical.</p>
+      <img src="outputs/isolation_sink_taps_diff.png" width="1536" height="576" alt="Sink-only isolation difference">
+    </div>
+  </main>
+  <footer><main>See <code>TECHNICAL_REPORT.md</code>, <code>manifest.json</code> and <code>verify_review.py</code> for the full contract.</main></footer>
+</body>
+</html>

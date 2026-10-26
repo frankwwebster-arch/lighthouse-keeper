@@ -1,0 +1,582 @@
+{
+  "schema": "lighthouse-keeper/kitchen-v3-parts@1",
+  "walkY": 502,
+  "parts": {
+    "worktop_tile.png": {
+      "file": "worktop_tile.png",
+      "pixelSize": [
+        84,
+        32
+      ],
+      "sha256": "b140aca5cd0ac1b44a09a843fb06721ecab9b65929ffa5998f32dce93be8bc70",
+      "realSizeM": [
+        0.5,
+        0.6,
+        0.04
+      ],
+      "bayWidth": 1,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        32
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "worktop_cap_left.png": {
+      "file": "worktop_cap_left.png",
+      "pixelSize": [
+        16,
+        32
+      ],
+      "sha256": "ea16a7edc64fe2f83e5bc4665d429983e34b34bd2cfb58b98df97bdb02946b1b",
+      "realSizeM": [
+        0.095,
+        0.6,
+        0.04
+      ],
+      "bayWidth": 0,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        32
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "worktop_cap_right.png": {
+      "file": "worktop_cap_right.png",
+      "pixelSize": [
+        16,
+        32
+      ],
+      "sha256": "ec4786ca54e02f2e46a7f4864ac8217a600337a3ea2ef27a0e194623105b89e0",
+      "realSizeM": [
+        0.095,
+        0.6,
+        0.04
+      ],
+      "bayWidth": 0,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        32
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "worktop_joint.png": {
+      "file": "worktop_joint.png",
+      "pixelSize": [
+        2,
+        32
+      ],
+      "sha256": "50a8ad3c59eae3b980190464e2eeae8a1aa4e8f89d3465e3b7e7f7ab020c873d",
+      "realSizeM": [
+        0.012,
+        0.6,
+        0.04
+      ],
+      "bayWidth": 0,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        32
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "plinth_tile.png": {
+      "file": "plinth_tile.png",
+      "pixelSize": [
+        84,
+        17
+      ],
+      "sha256": "92578df597069a00332ee5a648071c0e8a6d5ebca174edd4fd993aca824e85ff",
+      "realSizeM": [
+        0.5,
+        0.6,
+        0.1
+      ],
+      "bayWidth": 1,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        17
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "plinth_cap_left.png": {
+      "file": "plinth_cap_left.png",
+      "pixelSize": [
+        16,
+        17
+      ],
+      "sha256": "e8ef7b765c35e89590426a8c8934ec3fa3604a735bb71257154a766bfcbf2cb7",
+      "realSizeM": [
+        0.095,
+        0.6,
+        0.1
+      ],
+      "bayWidth": 0,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        17
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "plinth_cap_right.png": {
+      "file": "plinth_cap_right.png",
+      "pixelSize": [
+        16,
+        17
+      ],
+      "sha256": "487995acf9bb0d9441fa8d284a11b9a391abfd0665882d1137ff5844af8114fa",
+      "realSizeM": [
+        0.095,
+        0.6,
+        0.1
+      ],
+      "bayWidth": 0,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        17
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "front_drawers.png": {
+      "file": "front_drawers.png",
+      "pixelSize": [
+        84,
+        127
+      ],
+      "sha256": "933c51333b714505274f46ec403cf263792a44fc962accd48e5bac0fe4309582",
+      "realSizeM": [
+        0.5,
+        0.6,
+        0.76
+      ],
+      "bayWidth": 1,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        127
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "front_cupboard.png": {
+      "file": "front_cupboard.png",
+      "pixelSize": [
+        84,
+        127
+      ],
+      "sha256": "d99e1e832ae76a069bbe3c09db6962a606ea3f9d862e8023d95e0ae70d1d95e9",
+      "realSizeM": [
+        0.5,
+        0.6,
+        0.76
+      ],
+      "bayWidth": 1,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        127
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "front_sink_2bay.png": {
+      "file": "front_sink_2bay.png",
+      "pixelSize": [
+        168,
+        127
+      ],
+      "sha256": "b3f7b2cda14e3e039e40685edcdf194c4fb49b34df4257775f05a1f7d5d19a62",
+      "realSizeM": [
+        1.0,
+        0.6,
+        0.76
+      ],
+      "bayWidth": 2,
+      "useBay": 1,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        127
+      ],
+      "standPointX": 622,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "front_dishwasher.png": {
+      "file": "front_dishwasher.png",
+      "pixelSize": [
+        84,
+        127
+      ],
+      "sha256": "504d71b65bd709c225ca639ca5933cd89981bb68fcd9fce465721b59d1fc033f",
+      "realSizeM": [
+        0.5,
+        0.6,
+        0.76
+      ],
+      "bayWidth": 1,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        127
+      ],
+      "standPointX": 790,
+      "lightOverlays": [
+        "overlay_dishwasher_led.png"
+      ],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "insert_sink_2bay.png": {
+      "file": "insert_sink_2bay.png",
+      "pixelSize": [
+        168,
+        67
+      ],
+      "sha256": "05210632f219c0896d41901f70c08b151734b7c4451d98f4808b207e18870cc4",
+      "realSizeM": [
+        1.0,
+        0.52,
+        0.31
+      ],
+      "bayWidth": 2,
+      "useBay": 1,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        67
+      ],
+      "standPointX": 622,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "cooker.png": {
+      "file": "cooker.png",
+      "pixelSize": [
+        84,
+        176
+      ],
+      "sha256": "9de49a7062d7d2b2a910d0cbef2d9dd8fb5d737e95ef654dee3e7313ccb5dadf",
+      "realSizeM": [
+        0.5,
+        0.6,
+        0.9
+      ],
+      "bayWidth": 1,
+      "useBay": null,
+      "slotIn": true,
+      "anchorPx": [
+        0,
+        176
+      ],
+      "standPointX": 874,
+      "lightOverlays": [
+        "overlay_oven_window.png"
+      ],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "overlay_oven_window.png": {
+      "file": "overlay_oven_window.png",
+      "pixelSize": [
+        84,
+        176
+      ],
+      "sha256": "22494442fe689d251660dca6238f31747e1ba2f8506578371320ebc6e25a0fff",
+      "realSizeM": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bayWidth": 1,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        176
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "overlay_dishwasher_led.png": {
+      "file": "overlay_dishwasher_led.png",
+      "pixelSize": [
+        84,
+        127
+      ],
+      "sha256": "0248dc9e238b6bc1c9ef2bba0f7e2c01d4ca5c735531dab2f4d0607bd604934f",
+      "realSizeM": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bayWidth": 1,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        127
+      ],
+      "standPointX": null,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "unit_utility_cupboard_closed.png": {
+      "file": "unit_utility_cupboard_closed.png",
+      "pixelSize": [
+        84,
+        361
+      ],
+      "sha256": "e08906e7db3c8350f20d0a9c8f05af1bcae940e0cd2cd16ec65a4e435af67c47",
+      "realSizeM": [
+        0.5,
+        0.6,
+        2.0
+      ],
+      "bayWidth": 1,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        361
+      ],
+      "standPointX": 370,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "unit_utility_cupboard_open.png": {
+      "file": "unit_utility_cupboard_open.png",
+      "pixelSize": [
+        126,
+        361
+      ],
+      "sha256": "07a9d196da8dd37c20b6e70b381ece4b07515938c18d4c76f7465f2d760db73c",
+      "realSizeM": [
+        0.5,
+        0.6,
+        2.0
+      ],
+      "bayWidth": 1,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        361
+      ],
+      "standPointX": 370,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "unit_fridge_freezer.png": {
+      "file": "unit_fridge_freezer.png",
+      "pixelSize": [
+        84,
+        327
+      ],
+      "sha256": "7a45688eb2fbef4003268653126c21d71328a2f282d8c2c67d3f39e47a182c42",
+      "realSizeM": [
+        0.5,
+        0.6,
+        1.8
+      ],
+      "bayWidth": 1,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        0,
+        327
+      ],
+      "standPointX": 454,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "toaster.png": {
+      "file": "toaster.png",
+      "pixelSize": [
+        64,
+        44
+      ],
+      "sha256": "6ef50853c632fe729116134e2d9c1b14c21b0bc198fb727999b3686284f8ca50",
+      "realSizeM": [
+        0.38,
+        0.25,
+        0.24
+      ],
+      "bayWidth": 1,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        32,
+        44
+      ],
+      "standPointX": 1042,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "kettle.png": {
+      "file": "kettle.png",
+      "pixelSize": [
+        56,
+        60
+      ],
+      "sha256": "451d3ff6a05e008c207c323ab8c91e0ea1718a6ca4355a58f913bc1eee19b47c",
+      "realSizeM": [
+        0.33,
+        0.28,
+        0.36
+      ],
+      "bayWidth": 1,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        28,
+        60
+      ],
+      "standPointX": 1294,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "pet_bowl.png": {
+      "file": "pet_bowl.png",
+      "pixelSize": [
+        84,
+        28
+      ],
+      "sha256": "d4ce3d60386b07b2970317e964468fccefc6a3c9f425759b8e1ad41350f58868",
+      "realSizeM": [
+        0.5,
+        0.3,
+        0.17
+      ],
+      "bayWidth": 1,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        42,
+        28
+      ],
+      "standPointX": 1378,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    },
+    "pedal_bin.png": {
+      "file": "pedal_bin.png",
+      "pixelSize": [
+        84,
+        105
+      ],
+      "sha256": "e26cd2b3a7ddc769af89d545add0ee760ad6cf61463261c41e10805ff1556309",
+      "realSizeM": [
+        0.5,
+        0.3,
+        0.55
+      ],
+      "bayWidth": 1,
+      "useBay": null,
+      "slotIn": false,
+      "anchorPx": [
+        42,
+        105
+      ],
+      "standPointX": 1462,
+      "lightOverlays": [],
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      }
+    }
+  }
+}

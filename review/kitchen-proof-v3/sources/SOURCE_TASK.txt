@@ -1,0 +1,92 @@
+Do NOT apply the 83.89% display transform. Scaling the frames while keeping 21 px/frame world motion makes planted feet slide ~3.4 px/frame, and a non-integer downscale softens the uniform ligne-claire outline and breaks the integer-scale rule. Agreed: align the opaque sole datum (frame y 316), not the registered anchor (y 320), to the walking line.
+
+Decisions (Frank, 26 Oct): the Prime Keeper stays 1:1 and unchanged. The world scales to him: 1 m = 168 px (keeper 298 px = 1.77 m; one step = one bay = 84 px = 0.50 m, a standard 500 mm UK unit). Module 1536 × 576. Room depth 2.0 m. The keeper walks close to the furniture on a per-room walking line (walkY = deepest back-row item + 0.40 m), not at the front edge of the floor, so worktops read at a believable height. This supersedes all earlier vertical values. Full reissued brief follows.
+
+TASK: Kitchen proof v3 (style B ligne claire, 1/4 top-reveal projection, 1536 × 576 module, 14 × 84 px bays, Prime Keeper gait)
+
+Authority for this task: the attached LIGHTHOUSE_SPEC_v2_DRAFT.md (Frank's working draft) plus this brief; where they differ, this brief wins. Create everything in a NEW versioned review folder: /review/kitchen-proof-v3/. Do not modify, move or overwrite any existing file, approved asset or hash-pinned document.
+
+STYLE — LIGNE CLAIRE AUTHORITY (style reference only; never placed in the game)
+The approved Kitchen Oven V7 sets the look for every part in this task:
+art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png
+SHA-256 0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538 (historical blob at commit 52e94f2a). Read it from git history; never modify it.
+Target feel (Frank): "adult and yet also playful, suitably Hergé but also modern."
+Carry from it: one uniform, confident near-black outline weight on every edge; flat, clean colour fills; at most one shadow tone; simple readable shapes with hand-drawn charm; small details as plain line work (dial ticks, rack bars). Match the keeper's outline weight at 1:1. Soft gradients only for light glows, and those go in light overlays, never in base art. Colours: royal-blue units, cyan worktop, cream enamel, copper/orange handles and knobs (also see approved_kitchen_reference.png; do NOT reproduce its broken states). Light from the upper left. Put a V7 crop beside every new part on the contact sheet.
+
+PROJECTION AND SCALE (absolute)
+"Front-on with a top reveal": every front face is a flat, true-size elevation. Depth is shown ONLY as a top surface drawn straight up at exactly 1/4 of real depth (42 px per metre of depth). No vanishing points, no side faces, no angled walls, no visible ceiling. Scale: 1 m = 168 px. Widths are quantised to 0.50 m bays. Sprites never change size with depth.
+
+MODULE GEOMETRY (delivered px, module 1536 × 576, y measured from the top)
+- Ceiling band y 0–32. Left wall x 0–32. Right wall x 1504–1536.
+- Back wall y 32–460 (x 32–1504; 2.55 m), flat, front-on. Back-wall line y 460.
+- Floor band y 460–544 (84 px = 2.0 m depth × 1/4), floorboards as horizontal lines only.
+- Floor slab y 544–576.
+- Kitchen walking line (keeper soles) y 502 = 1.00 m from the back wall (0.60 m units + 0.40 m).
+- Circulation door: in the LEFT wall at the FRONT. Only its jamb is visible: a vertical strip at x 0–32, y 208–544. No door panel on the back wall. No stairs anywhere.
+- Kitchen exterior front door: arched wooden door on the back wall, x 176–296, y 124–460 (2.0 m).
+- Walk-in zone x 32–328: always clear floor. Door standing point x 118.
+- Bays: 14 × 84 px, x 328–1504. Bay b spans x 328+84(b−1) to 328+84b. Bay centres x = 370 + 84(b−1): 370, 454, 538, 622, 706, 790, 874, 958, 1042, 1126, 1210, 1294, 1378, 1462.
+- Windows: 168 × 168 px at x 580–748 (bays 4–5) and x 1084–1252 (bays 10–11), y 106–274. Frames and glazing bars drawn; ALL glass exact #FF00FF with hard edges, no anti-aliasing against magenta, no near-magenta anywhere in the image.
+- HARD RULE: no furniture or item may rise above y 274 inside x 580–748 or x 1084–1252. (The keeper is foreground and exempt.)
+
+KITCHEN LAYOUT (bay: item → keeper stop x)
+1: utility cupboard, full height 0.50 × 0.60 × 2.00 m (fittedTall), door opens toward camera (closed + open) → 370
+2: fridge-freezer 0.50 × 0.60 × 1.80 m (fittedTall) → 454
+3: drawer unit (fitted) → 538
+4–5: sink cabinet front (2 bays, fitted) + sink insert ON TOP of the worktop, bowl and tap centred over bay 4 (useBay 1) → 622
+6: dishwasher front (fitted) → 790
+7: COOKER — NEW 1-bay slot-in cooker 0.50 × 0.60 × 0.90 m, drawn in V7's style (its own hob top with two hotplates, its own plinth, copper dials and handle, oven window) → 874. Bays 7–8 are a 2-bay reservation for a later range-cooker upgrade.
+8: drawer unit (fitted; removed when the range upgrade arrives) → 958
+9: drawer unit (fitted); toaster on the worktop here → 1042
+10–11: cupboard fronts (fitted), worktop clear, nothing on top (under right window)
+12: cupboard unit (fitted); kettle on the worktop here → 1294
+13: pet bowl on the floor just in front of the units (feet at y 492, behind the keeper's walking line) → 1378
+14: pedal bin 0.30 m deep, against the back wall (base y 473) → 1462
+Fitted runs: bays 3–6 and bays 8–12. The tall units in bays 1–2 and the slot-in cooker in bay 7 break the worktop. Run end caps at x 496 (left edge of bay 3), x 832 (right edge of bay 6), x 916 (left edge of bay 8) and x 1336 (right edge of bay 12).
+
+VERTICAL POSITIONS (0.60 m deep units against the back wall)
+- Front-face bottom (base) y 485 (= 460 + 0.60 m × 42).
+- Plinth 0.10 m: y 468–485.
+- Unit fronts: y 341–468.
+- Worktop front edge 0.04 m: y 334–341 (worktop height 0.90 m). Worktop top reveal (0.60 m × 1/4 = 25 px): y 309–334.
+- Check: the worktop front edge sits 168 px above the keeper's soles = 56% of his height (real 0.90 / 1.77 = 51%).
+- Sink taps: rise from the rear of the worktop reveal and stay below y 274.
+- Counter items stand at mid-depth of the worktop, on y 322.
+- Fridge-freezer: base y 485, front y 183–485, top reveal y 158–183.
+- Utility cupboard: base y 485, front y 149–485, top reveal y 124–149.
+
+COOKER (slot-in, drawn new)
+- Exactly 84 px wide. Its own blue plinth y 468–485, front y 341–468, hob top edge y 334–341, hob top reveal y 309–334, so it sits exactly at worktop height and on the run's plinth line.
+- Oven door centred in the bay; keeper stop x 874 is the centre of the oven door.
+- Deliver cooker.png (the OFF base: dark, unlit oven window) and overlay_oven_window.png (cavity glow only, the one soft gradient allowed). The engine runs the overlay off, on, pulse or flicker. Pixel-diff: base + overlay changes pixels only inside the window rectangle.
+
+FITTED RUN KIT (separate files, assembled in code — never painted as one picture)
+- worktop_tile.png (84 × 32: reveal + front edge), worktop_cap_left.png and worktop_cap_right.png (16 px wide), worktop_joint.png (2 px joint line between tiles).
+- plinth_tile.png (84 × 17), plinth_cap_left.png and plinth_cap_right.png.
+- Unit fronts, exactly 84 or 168 px wide, y 341–468, with no worktop, plinth or outer side edges: front_drawers.png, front_cupboard.png, front_sink_2bay.png, front_dishwasher.png.
+- Inserts laid ON TOP of a plain worktop tile, never cut-outs: insert_sink_2bay.png (bowl over bay 4, rim wide enough to hide tile joins, taps below y 274).
+- Slot-in: cooker.png.
+- Light overlays: overlay_oven_window.png, overlay_dishwasher_led.png. The engine will run them off, on, pulse or flicker.
+- Tall units: unit_fridge_freezer.png, unit_utility_cupboard_closed.png, unit_utility_cupboard_open.png (door swung toward camera as a foreground occluder).
+- Freestanding and counter items, each its own file: kettle.png, toaster.png, pet_bowl.png, pedal_bin.png.
+- Every file has its exact declared size, plus item.json with realSizeM [w, d, h], bayWidth, useBay (2-bay items), slotIn (true/false), anchorPx, standPointX, lightOverlays and styleReference (the V7 path and hash). The room's data file records walkY 502.
+
+KEEPER (Prime Keeper — the approved animation bank is the only authority)
+- Use only approved Prime Keeper frames at 1:1: neutral side, Walk V7 (the approval record for the Walk V6 pixels), approved start and stop bridges, approved side↔back turn. Do not redraw, rescale or modify any frame.
+- Registration: 256 × 320 authoring cell, anchor [128, 320], opaque sole datum y 316. Place frames so the sole datum lands on room y 502 (the frame's anchor therefore sits at y 506). Keeper standing height 298 px (top of head at y 204).
+- Draw order: the keeper is in front of all back-row furniture and behind the left door jamb and the open utility-cupboard door.
+- Gait: steady walk 21 px/frame; one step (F1→F5) 84 px = one bay; one cycle 168 px. Current approved bridges: start 2, 6, 12, 18 (38 px), stop 18, 12, 6, 2 (38 px). Proposed (decision D15): start 3, 7, 13, 19 and stop 19, 13, 7, 3 (42 px each) plus an F5 opposite-foot stop, which makes every k-step move exactly 84k px.
+- Route proof (animated GIF plus frame-by-frame sheet), each leg ending with stop → approved side→back turn → 1 s neutral back → turn to side:
+  1) emerge from the left-wall door (occluded by the jamb) at x 118 → walk to the sink stop x 622 (6 steps)
+  2) sink 622 → dishwasher 790 (2 steps)
+  3) dishwasher 790 → cooker 874 (1 step: start bridge straight into stop bridge, no steady frames)
+  4) cooker 874 → fridge-freezer 454 (5 steps leftward, mirrored frames, negated root deltas)
+- Render the route twice: (a) with the current 38/38 bridges, marking every stop's error in px; (b) with the proposed 42/42 bridges and F5 stop as a clearly labelled DRAFT, proving every stop lands exactly on its bay centre. No stretched strides, no snapping, no shortened steps.
+
+ASSEMBLY AND CHECKS (in code)
+- Draw order: shell → plinth → unit fronts and slot-in cooker → worktop → inserts → counter items → floor items behind walkY → keeper → open cupboard door and jamb occluders.
+- Outputs: kitchen_v3_room.png (1536 × 576, 1:1), kitchen_v3_room_2x.png (nearest-neighbour), kitchen_v3_tower_scale.png (1/4), both route GIFs, and a contact sheet of every separate part with its file name, size and a V7 crop for style comparison.
+- Verify and report: the V7 historical blob hash; window rectangles contain only exact #FF00FF, and no item crosses y 274 in window bays; worktops are continuous across bays 3–6 and 8–12 with seams only at declared joints; the cooker's hob top is level with the worktop and its plinth with the run's plinth; the worktop's height as a % of keeper height when he stands at the sink; every part is exactly its declared size; no part contains a cut-out; overlays change pixels only inside their declared rectangles; every keeper stop x and error; keeper outline weight vs item outline weight.
+- Isolation test: change only insert_sink_2bay.png (e.g. recolour the taps), re-assemble, and prove that every other file is byte-identical and the room differs only inside the sink insert's rectangle.
+
+Do not start any other room. Report results, open questions and anything in this brief that is physically inconsistent before polishing.
