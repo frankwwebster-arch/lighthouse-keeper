@@ -1,6 +1,6 @@
 # Codex task — Kitchen v3 rebuild (Frank, 26 Oct 2026)
 
-CONFIRMED: your style calibration is the right artistic direction (Frank, 26 Oct). Substantial designed objects, organic black ink, bevelled panels and real material weight, warm restrained modelling, dense purposeful appliance detail, adult-playful ligne claire: keep all of it. Agreed on your two caveats: geometry must be re-snapped (this task), and cast shadows must be softer and restrained (one translucent tone, short, falling right), as separate sprites. Proceed to modularise.
+CONFIRMED: your style calibration is the right artistic direction (Frank, 26 Oct). Substantial designed objects, organic black ink, bevelled panels and real material weight, warm restrained modelling, dense purposeful appliance detail, adult-playful ligne claire: keep all of it. Agreed on your caveats: geometry must be re-snapped (this task), and the cast shadows were too aggressive. Decision (Frank, 26 Oct): NO SHADOWS IN THE GAME. No cast shadows on walls, no floor or contact shadows, under items or the keeper (they would look wrong with the keeper walking through them). Shading inside an object (its one shadow tone, bevels, modelling) stays. Proceed to modularise.
 
 Authority: `docs/SPEC.md` (v2.1, the shared working spec; git pull and read it first) plus this brief; where they differ, this brief wins. Create everything in a NEW versioned folder: /review/kitchen-proof-v3-rebuild/. Do not modify, move or overwrite any existing file, approved asset or hash-pinned document, including your style calibration. Report results to Frank and add a short note in section 19 of docs/SPEC.md.
 
@@ -13,7 +13,7 @@ Your style calibration is the approved LOOK: palette, ink, bevelled panels, laye
 3. Every unit is exactly 84 px (1 bay) or 168 px (2 bays) wide and sits in its bays (layout below).
 4. The cooker is a 1-bay slot-in (84 px), redrawn narrower in exactly the calibration's style: own blue hob top with two hotplates, copper dials and handle, red indicator, oven window, blue plinth.
 5. Windows: outer frame including the sill ledge exactly 168 × 168 at x 580–748 and x 1084–1252, y 106–274; glass inside the frame, exact #FF00FF.
-6. Cast shadows: softer and restrained (one translucent tone, short, falling right), as separate per-item sprites, never painted on the wall.
+6. Remove every cast, wall, floor and contact shadow. Shading inside objects stays.
 7. Every unit's plinth bottom on y 485.
 
 ## Style (unchanged from the calibration)
@@ -53,7 +53,7 @@ Front faces are flat true elevations. Object tops show 1/6 of real depth, drawn 
 - Sink taps stay below y 274.
 
 ## Parts (separate files, each its exact declared size, assembled in code — never painted as one picture)
-- Shell: room_shell_kitchen.png (back wall, skirting, floor, ceiling beam, side walls, jamb; windows with magenta glass; NO furniture, NO shadows).
+- Shell: room_shell_kitchen.png (back wall, skirting, floor, ceiling beam, side walls, jamb; windows with magenta glass; NO furniture, NO shadows of any kind).
 - Run kit: worktop_tile.png (84 × 31), worktop_cap_left.png, worktop_cap_right.png (16 px), worktop_joint.png (2 px); plinth_tile.png (84 × 17), plinth_cap_left.png, plinth_cap_right.png.
 - Fronts (84 or 168 wide, y 336–468, no worktop/plinth/outer edges): front_drawers.png, front_cupboard.png, front_cupboard_2bay.png, front_sink_belfast_2bay.png, front_dishwasher.png.
 - Insert: insert_sink_2bay.png (bowl rim + taps, laid on a plain worktop tile).
@@ -61,8 +61,7 @@ Front faces are flat true elevations. Object tops show 1/6 of real depth, drawn 
 - Tall: unit_utility_cupboard_closed.png, overlay_utility_cupboard_open.png, unit_fridge_freezer.png.
 - Items: toaster.png, kettle.png, pet_bowl.png, pedal_bin.png.
 - Light overlays: overlay_oven_window.png (cavity glow + loaf lit), overlay_dishwasher_led.png.
-- Shadows: shadow_wall_<item>.png for each tall unit and appliance, shadow_floor_<item>.png contact shadows. Shadows travel with the item, never baked into the shell.
-- item.json per item: realSizeM, bayWidth, useBay, fitted | fittedTall | slotIn | freestanding | counter, anchorPx, standPointX, lightOverlays, shadows, styleReference. room.json: walkY 502, bays, runs.
+- item.json per item: realSizeM, bayWidth, useBay, fitted | fittedTall | slotIn | freestanding | counter, anchorPx, standPointX, lightOverlays, styleReference. room.json: walkY 502, bays, runs.
 
 ## Keeper check (no keeper art changes)
 Composite the unchanged Prime Keeper (1:1, 298 px, sole datum frame y 316 on y 502) standing at the sink (x 622), the cooker (x 874) and the fridge (x 454), facing the back. Report the worktop edge height as a % of keeper height, and compare keeper and item ink weight. The full route proof follows in a later task once D15 is decided.
@@ -70,7 +69,7 @@ Composite the unchanged Prime Keeper (1:1, 298 px, sole datum frame y 316 on y 5
 ## Outputs and checks
 - kitchen_v3_rebuild_room.png (1536 × 576, 1:1), a 2× nearest-neighbour copy, and a side-by-side with your style calibration at the same scale.
 - Contact sheet of every part with file name and size.
-- Verify and report: window glass is only exact #FF00FF with hard edges; nothing crosses y 274 in window bays; every part is its declared size and sits in its bays; worktops continuous across bays 3–6 and 8–12 with seams only at declared joints; cooker hob level with the worktop; no cut-outs; overlays and shadows change pixels only inside their rectangles.
+- Verify and report: window glass is only exact #FF00FF with hard edges; nothing crosses y 274 in window bays; every part is its declared size and sits in its bays; worktops continuous across bays 3–6 and 8–12 with seams only at declared joints; cooker hob level with the worktop; no cut-outs; overlays change pixels only inside their rectangles; no cast, wall, floor or contact shadow pixels anywhere.
 - Isolation test: recolour only insert_sink_2bay.png's taps, re-assemble, and prove every other file is byte-identical and the room differs only inside the sink insert's rectangle.
 
 Do not start any other room. Report results and anything physically inconsistent before polishing.
