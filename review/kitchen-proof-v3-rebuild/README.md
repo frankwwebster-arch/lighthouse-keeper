@@ -3,10 +3,14 @@
 Status: **review-only candidate; awaiting Frank.** This folder does not alter
 canon, runtime art or any previous immutable review set.
 
-The package rebuilds the approved style calibration as 23 separate item/run
-parts plus one room shell on the exact `1536 × 576`, 14-bay geometry. Authored high-resolution
-sources are normalised into deterministic bay-sized sprites, assembled only in
-code and checked against the 26 October rebuild brief.
+The package rebuilds the approved style calibration as 30 separate item/run/
+overlay parts plus one room shell on the exact `1536 × 576`, 14-bay geometry.
+It incorporates the same-pass freestanding amendment: a 1950s larder, rounded
+single-door fridge and eye-level-grill gas cooker are active; the earlier fitted
+utility/fridge, slot-in cooker and dishwasher parts remain only as explicitly
+retired provenance. Authored high-resolution sources are normalised into
+deterministic bay-sized sprites, assembled only in code and checked against
+both 26 October briefs.
 
 ## Review
 
@@ -17,6 +21,8 @@ Open `review.html`. The principal files are:
   the same display scale;
 - `outputs/keeper_check_sheet.png` — exact Prime Keeper at fridge, sink and
   cooker;
+- `outputs/freestanding_state_overlays.png` — open larder, open/lit fridge and
+  cooker light-overlay states;
 - `outputs/contact_sheet.png` — every isolated part with its dimensions;
 - `parts/item.json` and `parts/room.json` — asset and assembly contracts;
 - `TECHNICAL_REPORT.md` — results, method and physical notes.

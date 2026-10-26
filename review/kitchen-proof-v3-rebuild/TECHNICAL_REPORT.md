@@ -4,21 +4,28 @@
 
 The approved calibration has been rebuilt as a grid-snapped modular kitchen,
 without the rejected V3's schematic treatment and without the calibration's
-cast shadows. The source illustrations carry substantial bevels, layered
-enamel edges, organic near-black ink, warm internal modelling and detailed
-hardware; deterministic processing supplies exact geometry and key colour.
+cast shadows. Frank's same-pass amendment is included: the active appliance
+set is a freestanding blue larder, rounded single-door 1950s fridge and
+freestanding gas cooker with an eye-level grill. The dishwasher is absent and
+bay 6 is drawers. Superseded rebuild parts are retained and marked
+`retired-from-kitchen`, never deleted. The source illustrations carry
+substantial bevels, layered enamel edges, organic near-black ink, warm internal
+modelling and detailed hardware; deterministic processing supplies exact
+geometry and key colour.
 
 | Gate | Result |
 |---|---:|
 | Module | `1536 × 576` |
 | Bays | `14 × 84 px`, x `328–1504` |
-| Production parts | 23 item/run PNGs plus one room shell |
+| Production parts | 30 item/run/overlay PNGs plus one room shell |
 | Exact magenta | 21,624 pixels, confined to eight panes |
 | Near-magenta | 0 |
 | Item pixels above y=274 in window bays | 0 |
 | Worktop runs | x `496–832`, `916–1336` |
-| Worktop/cooker top | both y=305 |
-| Run/cooker plinth | both y=468–485 |
+| Worktop/cooker hob top | both y=305 |
+| Freestanding cooker | top y=233; eye-level grill y=251–291; feet y=485 |
+| Freestanding fridge | 76 × 252 px; x=416–492; y=233–485 |
+| Freestanding larder | 76 × 353 px; x=332–408; y=132–485 |
 | Prime Keeper | exact 256×320 source, composited 1:1 |
 | Sink isolation delta | 549 pixels, x `581–745`, y `275–319` |
 
@@ -37,12 +44,13 @@ The build performs these deterministic steps:
 4. snap opaque fills to the shared 50-colour `palette_env-v1` set;
 5. restore a near-black native-scale silhouette edge;
 6. write window panes as hard exact `#FF00FF` rectangles;
-7. assemble shell, plinth, fronts, cooker, worktop, inserts, counter items and
-   floor items from separate files.
+7. assemble shell, plinth, fronts, freestanding appliances, worktop, inserts,
+   counter items and floor items from separate files.
 
 The base worktop tiles remain full opaque rectangles beneath the sink insert.
-No worktop knows what is placed on it. Light and moving-door states are
-separate overlays. No generated Keeper pixels were used.
+No worktop knows what is placed on it. The larder and fridge open states and
+the cooker's oven, grill and gas-flame states are separate overlays. No
+generated Keeper pixels were used.
 
 ## Keeper check
 
@@ -51,7 +59,9 @@ at x=454, 622 and 874. The worktop's displayed top edge is 180 px above his
 soles, `180/298 = 60.40%` of his standing height. Major item contours are
 2–3 px at native scale against the Keeper's 3–4 px; their visual weight is
 compatible, although the smallest internal appliance details necessarily fall
-to 1–2 px inside an 84 px bay.
+to 1–2 px inside an 84 px bay. The cooker's grill band at y=251–291 overlaps
+the Keeper's visual head/eye band in the x=874 comparison, satisfying the
+amendment's eye-level check without changing or scaling the Prime.
 
 ## Physical/specification notes
 

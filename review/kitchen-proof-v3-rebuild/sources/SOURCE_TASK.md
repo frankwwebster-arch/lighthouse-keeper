@@ -73,3 +73,11 @@ Composite the unchanged Prime Keeper (1:1, 298 px, sole datum frame y 316 on y 5
 - Isolation test: recolour only insert_sink_2bay.png's taps, re-assemble, and prove every other file is byte-identical and the room differs only inside the sink insert's rectangle.
 
 Do not start any other room. Report results and anything physically inconsistent before polishing.
+
+## Same-pass amendment applied
+
+`docs/prompts/KITCHEN_V3_AMENDMENT_FREESTANDING_2026-10-26.md` is applied in
+this same folder and wins where it differs: bay 1 is a freestanding larder;
+bay 2 is a rounded one-door 1950s freestanding fridge; bay 6 is drawers; bay 7
+is a freestanding 1.50 m gas cooker with eye-level grill; the dishwasher and
+superseded fitted/slot-in parts are retained only as retired provenance.

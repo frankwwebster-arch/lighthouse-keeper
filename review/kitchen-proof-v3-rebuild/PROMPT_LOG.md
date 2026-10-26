@@ -1,7 +1,8 @@
 # Image-generation record
 
 Mode: built-in image-generation tool. Use case for all calls:
-`stylized-concept`, except the sink correction (`precise-object-edit`).
+`stylized-concept`, except the sink correction and open-state derivations
+(`precise-object-edit`).
 
 References supplied to every new asset:
 
@@ -56,6 +57,13 @@ Per-asset final subject instructions:
   deterministic technical key.
 - `oven-overlay`: only the lit cavity contents inside a landscape rectangle:
   amber glow, rack bars and one loaf in a cream tray; no cooker body.
+- `cooker-1950s`: cream freestanding 0.50 × 0.60 × 1.50 m British gas cooker;
+  shallow hob reveal with three elliptical burners; copper controls and oven
+  handle; blue trim; a splashback supports a dark EYE-LEVEL GRILL and hood.
+- `fridge-1950s`: rounded cream 1950s freestanding refrigerator; one door,
+  one copper/chrome lever handle, period badge, blue trim and short legs.
+- `larder`: narrow freestanding 1950s blue larder; finished side cheeks,
+  cream trim, recessed panels, copper handle and feet.
 
 Corrective edit applied to the first sink source:
 
@@ -63,7 +71,14 @@ Corrective edit applied to the first sink source:
 > with an integrated draining board; retain one bowl on the left and centre
 > both orange knobs and the silver arched spout above it. Change nothing else.
 
+Precise open-state edits were made from the final fridge and larder sources:
+
+> Preserve the exact outer cabinet and ligne-claire finish. Swing its one door
+> toward the viewer to the left, expose the period interior and shelves, keep
+> the entire moving door inside the canvas, and add no cast/contact shadow,
+> floor, scenery or exterior glow.
+
 The first cooker generation and its attempted shadow-removal edit are retained
 as provenance. Production normalisation, rather than model alpha, enforces the
-no-shadow boundary.
-
+no-shadow boundary. The freestanding amendment sources use that same
+normalisation and are recorded in `manifest.json` by SHA-256.

@@ -142,6 +142,8 @@ def save_part(name: str, image: Image.Image, metadata: dict, records: dict) -> N
         "reservedBayWidth": metadata.get("reservedBayWidth", metadata.get("bayWidth", 0)),
         "useBay": metadata.get("useBay"),
         "category": metadata.get("category", "component"),
+        "placement": metadata.get("placement", metadata.get("category", "component")),
+        "kitchenUsage": metadata.get("kitchenUsage", "active"),
         "realSizeM": metadata.get("realSizeM", [0, 0, 0]),
         "canvasPx": list(image.size),
         "anchorPx": metadata.get("anchorPx", [0, image.height]),
@@ -204,7 +206,8 @@ def make_parts() -> dict[str, dict]:
             solid.alpha_composite(image)
             image = solid
         overlays = [{"id": "dishwasher_led", "file": "overlay_dishwasher_led.png", "rectPx": [17, 23, 40, 31]}] if filename == "front_dishwasher.png" else []
-        save_part(filename, image, {"bayWidth": bays, "useBay": use_bay, "category": "fitted", "realSizeM": [0.5 * bays, 0.6, 0.79], "standPointX": stand, "lightOverlays": overlays, "sourceSha256": source_hash(source)}, records)
+        usage = "retired-from-kitchen" if filename == "front_dishwasher.png" else "active"
+        save_part(filename, image, {"bayWidth": bays, "useBay": use_bay, "category": "fitted", "realSizeM": [0.5 * bays, 0.6, 0.79], "standPointX": stand, "lightOverlays": overlays, "kitchenUsage": usage, "sourceSha256": source_hash(source)}, records)
     cupboard = Image.open(PARTS / "front_cupboard.png").convert("RGBA")
     cupboard2 = Image.new("RGBA", (168, 132), (0, 0, 0, 0)); cupboard2.alpha_composite(cupboard); cupboard2.alpha_composite(cupboard, (84, 0))
     save_part("front_cupboard_2bay.png", cupboard2, {"bayWidth": 2, "category": "fitted", "realSizeM": [1.0, 0.6, 0.79], "sourceSha256": source_hash("cupboard-source.png")}, records)
@@ -213,7 +216,7 @@ def make_parts() -> dict[str, dict]:
     save_part("insert_sink_2bay.png", sink, {"bayWidth": 2, "useBay": 1, "category": "fitted", "realSizeM": [1.0, 0.52, 0.29], "standPointX": 622, "sourceSha256": source_hash("sink-insert-left-source.png")}, records)
 
     cooker = clean_source("cooker-clean-source.png", (84, 180), outline=True)
-    save_part("cooker.png", cooker, {"bayWidth": 1, "reservedBayWidth": 2, "category": "slotIn", "realSizeM": [0.5, 0.6, 0.9], "standPointX": 874, "lightOverlays": [{"id": "oven_window", "file": "overlay_oven_window.png", "rectPx": [16, 75, 68, 142]}], "sourceSha256": source_hash("cooker-clean-source.png")}, records)
+    save_part("cooker.png", cooker, {"bayWidth": 1, "reservedBayWidth": 2, "category": "slotIn", "realSizeM": [0.5, 0.6, 0.9], "standPointX": 874, "lightOverlays": [{"id": "oven_window", "file": "overlay_oven_window.png", "rectPx": [16, 75, 68, 142]}], "kitchenUsage": "retired-from-kitchen", "sourceSha256": source_hash("cooker-clean-source.png")}, records)
     oven_overlay = Image.new("RGBA", (84, 180), (0, 0, 0, 0))
     oven_content = clean_source("oven-overlay-source.png", (50, 55), outline=False)
     oven_overlay.alpha_composite(oven_content, (17, 82))
@@ -222,14 +225,68 @@ def make_parts() -> dict[str, dict]:
     led = Image.new("RGBA", (84, 132), (0, 0, 0, 0)); led_draw = ImageDraw.Draw(led)
     for x in (18, 27, 35):
         led_draw.ellipse((x, 24, x + 5, 29), fill=(83, 237, 136, 255), outline=INK, width=1)
-    save_part("overlay_dishwasher_led.png", led, {"bayWidth": 1, "category": "component", "sourceSha256": source_hash("dishwasher-source.png")}, records)
+    save_part("overlay_dishwasher_led.png", led, {"bayWidth": 1, "category": "component", "kitchenUsage": "retired-from-kitchen", "sourceSha256": source_hash("dishwasher-source.png")}, records)
 
     utility = clean_source("utility-source.png", (84, 353), outline=True)
-    save_part("unit_utility_cupboard_closed.png", utility, {"bayWidth": 1, "category": "fittedTall", "realSizeM": [0.5, 0.6, 2.0], "standPointX": 370, "movingPartOverlays": [{"id": "open_door", "file": "overlay_utility_cupboard_open.png", "rectPx": [0, 0, 126, 336]}], "sourceSha256": source_hash("utility-source.png")}, records)
+    save_part("unit_utility_cupboard_closed.png", utility, {"bayWidth": 1, "category": "fittedTall", "realSizeM": [0.5, 0.6, 2.0], "standPointX": 370, "movingPartOverlays": [{"id": "open_door", "file": "overlay_utility_cupboard_open.png", "rectPx": [0, 0, 126, 336]}], "kitchenUsage": "retired-from-kitchen", "sourceSha256": source_hash("utility-source.png")}, records)
     open_door = clean_source("utility-open-door-source.png", (126, 336), pad=1, outline=True)
-    save_part("overlay_utility_cupboard_open.png", open_door, {"bayWidth": 1, "category": "component", "sourceSha256": source_hash("utility-open-door-source.png")}, records)
+    save_part("overlay_utility_cupboard_open.png", open_door, {"bayWidth": 1, "category": "component", "kitchenUsage": "retired-from-kitchen", "sourceSha256": source_hash("utility-open-door-source.png")}, records)
     fridge = clean_source("fridge-source.png", (84, 319), outline=True)
-    save_part("unit_fridge_freezer.png", fridge, {"bayWidth": 1, "category": "fittedTall", "realSizeM": [0.5, 0.6, 1.8], "standPointX": 454, "sourceSha256": source_hash("fridge-source.png")}, records)
+    save_part("unit_fridge_freezer.png", fridge, {"bayWidth": 1, "category": "fittedTall", "realSizeM": [0.5, 0.6, 1.8], "standPointX": 454, "kitchenUsage": "retired-from-kitchen", "sourceSha256": source_hash("fridge-source.png")}, records)
+
+    # Frank's later same-pass amendment replaces the fitted/slot-in appliances
+    # with narrow freestanding 1950s designs. The original rebuild parts above
+    # remain in this review package as explicitly retired provenance.
+    cooker_1950s = clean_source("cooker-1950s-source.png", (76, 252), outline=True)
+    cooker_lights = [
+        {"id": "oven_window", "file": "overlay_oven_window.png", "rectPx": [11, 132, 65, 190]},
+        {"id": "grill_glow", "file": "overlay_grill_glow.png", "rectPx": [10, 18, 66, 58]},
+        {"id": "burner_flames", "file": "overlay_burner_flames.png", "rectPx": [8, 72, 68, 108]},
+    ]
+    save_part("cooker_1950s.png", cooker_1950s, {
+        "bayWidth": 1, "reservedBayWidth": 2, "category": "freestanding", "placement": "freestanding",
+        "realSizeM": [0.5, 0.6, 1.5], "anchorPx": [38, 252], "standPointX": 874,
+        "lightOverlays": cooker_lights, "sourceSha256": source_hash("cooker-1950s-source.png"),
+    }, records)
+
+    oven_new = Image.new("RGBA", (76, 252), (0, 0, 0, 0))
+    oven_new.alpha_composite(clean_source("oven-overlay-source.png", (52, 56), outline=False), (12, 133))
+    save_part("overlay_oven_window.png", oven_new, {"bayWidth": 1, "category": "component", "sourceSha256": source_hash("oven-overlay-source.png")}, records)
+
+    grill_glow = Image.new("RGBA", (76, 252), (0, 0, 0, 0))
+    gd = ImageDraw.Draw(grill_glow)
+    gd.rounded_rectangle((12, 21, 64, 55), radius=4, fill=COPPER_LIGHT, outline=INK, width=2)
+    gd.line((17, 47, 59, 47), fill=CREAM_LIGHT, width=2)
+    save_part("overlay_grill_glow.png", grill_glow, {"bayWidth": 1, "category": "component", "sourceSha256": source_hash("cooker-1950s-source.png")}, records)
+
+    flames = Image.new("RGBA", (76, 252), (0, 0, 0, 0))
+    fd = ImageDraw.Draw(flames)
+    for cx, cy in ((19, 95), (38, 84), (57, 95)):
+        fd.ellipse((cx - 9, cy - 3, cx + 9, cy + 3), outline=CYAN_LIGHT, width=2)
+        for dx in (-5, 0, 5):
+            fd.polygon(((cx + dx - 2, cy), (cx + dx, cy - 8), (cx + dx + 2, cy)), fill=CYAN_LIGHT)
+    save_part("overlay_burner_flames.png", flames, {"bayWidth": 1, "category": "component", "sourceSha256": source_hash("cooker-1950s-source.png")}, records)
+
+    larder = clean_source("larder-source.png", (76, 353), outline=True)
+    save_part("unit_larder_cupboard_closed.png", larder, {
+        "bayWidth": 1, "category": "freestanding", "placement": "freestanding", "realSizeM": [0.5, 0.6, 2.0],
+        "anchorPx": [38, 353], "standPointX": 370,
+        "movingPartOverlays": [{"id": "open_door", "file": "overlay_larder_cupboard_open.png", "rectPx": [-50, 0, 76, 353]}],
+        "sourceSha256": source_hash("larder-source.png"),
+    }, records)
+    larder_open = clean_source("larder-open-source.png", (126, 353), outline=True)
+    save_part("overlay_larder_cupboard_open.png", larder_open, {"bayWidth": 1, "category": "component", "sourceSha256": source_hash("larder-open-source.png")}, records)
+
+    fridge_1950s = clean_source("fridge-1950s-source.png", (76, 252), outline=True)
+    save_part("fridge_1950s.png", fridge_1950s, {
+        "bayWidth": 1, "category": "freestanding", "placement": "freestanding", "realSizeM": [0.5, 0.6, 1.5],
+        "anchorPx": [38, 252], "standPointX": 454,
+        "movingPartOverlays": [{"id": "open_door", "file": "overlay_fridge_open.png", "rectPx": [-50, 0, 76, 252]}],
+        "lightOverlays": [{"id": "interior_light", "file": "overlay_fridge_open.png", "rectPx": [-50, 0, 76, 252]}],
+        "sourceSha256": source_hash("fridge-1950s-source.png"),
+    }, records)
+    fridge_open = clean_source("fridge-open-source.png", (126, 252), outline=True)
+    save_part("overlay_fridge_open.png", fridge_open, {"bayWidth": 1, "category": "component", "sourceSha256": source_hash("fridge-open-source.png")}, records)
 
     loose = {
         "toaster.png": ("toaster-source.png", (64, 42), [0.38, 0.25, 0.24], "counter", 1042),
@@ -317,18 +374,25 @@ def paste(layer: Image.Image, part: Image.Image, x: int, y: int) -> None:
     layer.alpha_composite(part, (x, y))
 
 
-def assemble(parts: dict[str, Image.Image], keeper_x: int | None = None, sink_override: Image.Image | None = None, open_utility: bool = False) -> tuple[Image.Image, Image.Image]:
+def assemble(
+    parts: dict[str, Image.Image],
+    keeper_x: int | None = None,
+    sink_override: Image.Image | None = None,
+    open_larder: bool = False,
+    open_fridge: bool = False,
+    lit_cooker: bool = False,
+) -> tuple[Image.Image, Image.Image]:
     room = room_shell()
     item_layer = Image.new("RGBA", room.size, (0, 0, 0, 0))
-    paste(item_layer, parts["unit_utility_cupboard_closed.png"], 328, 132)
-    paste(item_layer, parts["unit_fridge_freezer.png"], 412, 166)
+    paste(item_layer, parts["unit_larder_cupboard_closed.png"], 332, 132)
+    paste(item_layer, parts["fridge_1950s.png"], 416, 233)
 
     for x in (496, 580, 664, 748, 916, 1000, 1084, 1168, 1252):
         paste(item_layer, parts["plinth_tile.png"], x, 468)
     paste(item_layer, parts["front_drawers.png"], 496, 336)
     paste(item_layer, parts["front_sink_belfast_2bay.png"], 580, 336)
-    paste(item_layer, parts["front_dishwasher.png"], 748, 336)
-    paste(item_layer, parts["cooker.png"], 832, 305)
+    paste(item_layer, parts["front_drawers.png"], 748, 336)
+    paste(item_layer, parts["cooker_1950s.png"], 836, 233)
     paste(item_layer, parts["front_drawers.png"], 916, 336)
     paste(item_layer, parts["front_drawers.png"], 1000, 336)
     paste(item_layer, parts["front_cupboard_2bay.png"], 1084, 336)
@@ -350,11 +414,17 @@ def assemble(parts: dict[str, Image.Image], keeper_x: int | None = None, sink_ov
     paste(item_layer, parts["pedal_bin.png"], 1420, 373)
     room.alpha_composite(item_layer)
 
+    if open_larder:
+        paste(room, parts["overlay_larder_cupboard_open.png"], 282, 132)
+    if open_fridge:
+        paste(room, parts["overlay_fridge_open.png"], 366, 233)
+    if lit_cooker:
+        for name in ("overlay_oven_window.png", "overlay_grill_glow.png", "overlay_burner_flames.png"):
+            paste(room, parts[name], 836, 233)
+
     if keeper_x is not None:
         keeper = Image.open(SOURCES / "keeper_prime_master-neutral-standing-back_f1.png").convert("RGBA")
         room.alpha_composite(keeper, (keeper_x - 128, 502 - 316))
-    if open_utility:
-        paste(room, parts["overlay_utility_cupboard_open.png"], 328, 149)
     # Reapply jamb as the final foreground occluder.
     jd = ImageDraw.Draw(room)
     jd.rectangle((0, 208, 31, 543), fill=WOOD_DARK)
@@ -407,6 +477,19 @@ def main() -> None:
     room.resize((3072, 1152), Image.Resampling.NEAREST).save(OUTPUTS / "kitchen_v3_rebuild_room_2x.png", optimize=True)
     room.resize((384, 144), Image.Resampling.LANCZOS).save(OUTPUTS / "kitchen_v3_rebuild_tower_scale.png", optimize=True)
 
+    state_sheet = Image.new("RGBA", (W, H * 3), (0, 0, 0, 255))
+    state_draw = ImageDraw.Draw(state_sheet)
+    for index, (label, options) in enumerate((
+        ("LARDER OPEN", {"open_larder": True}),
+        ("FRIDGE OPEN / INTERIOR LIT", {"open_fridge": True}),
+        ("COOKER LIGHT OVERLAYS", {"lit_cooker": True}),
+    )):
+        state_room, _ = assemble(parts, **options)
+        state_sheet.alpha_composite(state_room, (0, index * H))
+        state_draw.rounded_rectangle((45, index * H + 42, 370, index * H + 84), radius=8, fill=(7, 17, 24, 225))
+        state_draw.text((62, index * H + 52), label, font=font(18, True), fill=CREAM_LIGHT)
+    state_sheet.save(OUTPUTS / "freestanding_state_overlays.png", optimize=True)
+
     keeper_checks = []
     for label, x in (("fridge", 454), ("sink", 622), ("cooker", 874)):
         image, _ = assemble(parts, keeper_x=x)
@@ -435,14 +518,14 @@ def main() -> None:
     isolated, _ = assemble(parts, sink_override=sink)
     diff = ImageChops.difference(room, isolated).convert("RGB")
     bbox_raw = diff.getbbox(); bbox = None if bbox_raw is None else [bbox_raw[0], bbox_raw[1], bbox_raw[2] - 1, bbox_raw[3] - 1]
-    diff_pixels = sum(1 for pixel in diff.getdata() if pixel != (0, 0, 0))
+    diff_pixels = sum(1 for pixel in diff.get_flattened_data() if pixel != (0, 0, 0))
     evidence = Image.new("RGBA", room.size, (0, 0, 0, 0)); ep = evidence.load()
     for y in range(H):
         for x in range(W):
             if diff.getpixel((x, y)) != (0, 0, 0): ep[x, y] = (255, 210, 48, 255)
     evidence.save(OUTPUTS / "isolation_sink_taps_diff.png", optimize=True)
 
-    room_pixels = list(room.getdata())
+    room_pixels = list(room.get_flattened_data())
     exact_magenta = sum(1 for p in room_pixels if p == MAGENTA)
     near_magenta = sum(1 for r, g, b, a in room_pixels if a and r >= 180 and b >= 180 and g <= 100 and (r, g, b, a) != MAGENTA)
     forbidden = 0
@@ -455,7 +538,8 @@ def main() -> None:
         "schema": "lighthouse-keeper/kitchen-v3-rebuild-room@1", "canvasPx": [W, H], "walkY": 502,
         "bayFieldX": [328, 1504], "bayWidthPx": 84, "bayCount": 14,
         "runs": [[3, 6], [8, 12]], "windows": WINDOWS,
-        "placements": {"utility": [1, 370], "fridge": [2, 454], "drawers": [3, 538], "sink": [[4, 5], 622], "dishwasher": [6, 790], "cooker": [7, 874], "toaster": [9, 1042], "kettle": [12, 1294], "petBowl": [13, 1378], "pedalBin": [14, 1462]},
+        "placements": {"larder": [1, 370], "fridge": [2, 454], "drawers": [[3, 538], [6, 790], [8, 958], [9, 1042]], "sink": [[4, 5], 622], "cooker": [7, 874], "toaster": [9, 1042], "kettle": [12, 1294], "petBowl": [13, 1378], "pedalBin": [14, 1462]},
+        "retiredFromKitchen": ["unit_utility_cupboard_closed.png", "overlay_utility_cupboard_open.png", "unit_fridge_freezer.png", "front_dishwasher.png", "overlay_dishwasher_led.png", "cooker.png"],
     }, indent=2) + "\n", encoding="utf-8")
 
     files = {}
@@ -464,10 +548,10 @@ def main() -> None:
             if path.is_file(): files[path.relative_to(ROOT).as_posix()] = {"sha256": sha256(path), "bytes": path.stat().st_size}
     manifest = {
         "schema": "lighthouse-keeper/kitchen-proof-v3-rebuild@1", "status": "review-only-awaiting-frank", "canonMutation": False, "runtimeMutation": False,
-        "geometry": {"modulePx": [W, H], "scalePxPerM": 168, "topRevealPxPerM": 28, "walkY": 502, "floorBandY": [460, 544], "bayFieldX": [328, 1504], "bayCount": 14, "bayWidthPx": 84, "windows": WINDOWS, "glassLocalRects": GLASS_LOCAL_RECTS, "verticals": {"unitBase": 485, "plinth": [468, 485], "fronts": [336, 468], "worktopEdge": [322, 336], "worktopReveal": [305, 322], "fridge": [166, 485], "utility": [132, 485]}},
+        "geometry": {"modulePx": [W, H], "scalePxPerM": 168, "topRevealPxPerM": 28, "walkY": 502, "floorBandY": [460, 544], "bayFieldX": [328, 1504], "bayCount": 14, "bayWidthPx": 84, "windows": WINDOWS, "glassLocalRects": GLASS_LOCAL_RECTS, "verticals": {"unitBase": 485, "plinth": [468, 485], "fronts": [336, 468], "worktopEdge": [322, 336], "worktopReveal": [305, 322], "fridge1950s": [233, 485], "larder": [132, 485], "cooker1950s": [233, 485], "cookerHobReveal": [305, 322]}},
         "keeper": {"sourceScale": 1.0, "standingHeightPx": 298, "soleDatumY": 316, "roomSoleY": 502, "positions": [454, 622, 874], "worktopEdgeHeightPx": 180, "worktopEdgePercent": round(180 / 298 * 100, 2)},
         "style": {"approvedCalibrationSha256": sha256(SOURCES / "approved-style-calibration.png"), "v7Sha256": V7_SHA, "fillPalette": "palette_env-v1", "fillPaletteSize": len(PALETTE), "normalization": "generated alpha >=200 becomes silhouette; lower-alpha exterior halo/shadow discarded; final antialias created only by deterministic resampling"},
-        "checks": {"exactMagentaPixels": exact_magenta, "nearMagentaPixels": near_magenta, "itemPixelsAboveWindowLimit": forbidden, "worktopRuns": [[496, 832], [916, 1336]], "worktopTopY": 305, "cookerTopY": 305, "plinthY": [468, 485], "cookerPlinthY": [468, 485], "castShadowPolicy": "none; generated exterior alpha below threshold discarded before fitting", "itemInkPx": "2–3 at native scale", "keeperInkPx": "3–4 at native scale", "isolation": {"changedLocalTapPixels": changed_local, "roomDiffPixels": diff_pixels, "roomDiffBoundsInclusive": bbox, "allowedBoundsInclusive": [580, 274, 747, 321], "allStoredPartHashesUnchanged": True}, "overlayRects": {"overlay_oven_window.png": [16, 75, 68, 142], "overlay_dishwasher_led.png": [17, 23, 40, 31]}},
+        "checks": {"exactMagentaPixels": exact_magenta, "nearMagentaPixels": near_magenta, "itemPixelsAboveWindowLimit": forbidden, "worktopRuns": [[496, 832], [916, 1336]], "worktopTopY": 305, "cookerHobTopY": 305, "cookerTopY": 233, "cookerFeetY": 485, "eyeLevelGrillY": [251, 291], "plinthY": [468, 485], "castShadowPolicy": "none; generated exterior alpha below threshold discarded before fitting", "itemInkPx": "2–3 at native scale", "keeperInkPx": "3–4 at native scale", "isolation": {"changedLocalTapPixels": changed_local, "roomDiffPixels": diff_pixels, "roomDiffBoundsInclusive": bbox, "allowedBoundsInclusive": [580, 274, 747, 321], "allStoredPartHashesUnchanged": True}, "overlayRects": {"overlay_oven_window.png": [11, 132, 65, 190], "overlay_grill_glow.png": [10, 18, 66, 58], "overlay_burner_flames.png": [8, 72, 68, 108]}},
         "shell": {"file": "parts/room_shell_kitchen.png", **shell_record},
         "parts": records, "files": files,
     }

@@ -109,7 +109,7 @@ def main() -> None:
     check(near == manifest["checks"]["nearMagentaPixels"] == 0, "near-magenta exists")
 
     # Part contract, dimensions, source pins and exterior-halo removal.
-    required = {"id", "tier", "bayWidth", "reservedBayWidth", "useBay", "category", "realSizeM", "canvasPx", "anchorPx", "standPointX", "lightOverlays", "movingPartOverlays", "interactionAnchors", "bubbleOriginPx", "effectOriginPx", "statusLightPointPx", "faultRecipes", "palette", "styleReference", "sourceSha256", "files", "sha256"}
+    required = {"id", "tier", "bayWidth", "reservedBayWidth", "useBay", "category", "placement", "kitchenUsage", "realSizeM", "canvasPx", "anchorPx", "standPointX", "lightOverlays", "movingPartOverlays", "interactionAnchors", "bubbleOriginPx", "effectOriginPx", "statusLightPointPx", "faultRecipes", "palette", "styleReference", "sourceSha256", "files", "sha256"}
     for name, record in items["parts"].items():
         check(required <= record.keys(), f"metadata incomplete: {name}")
         path = PARTS / name
@@ -123,9 +123,25 @@ def main() -> None:
         image = Image.open(PARTS / name).convert("RGBA")
         check(image.getchannel("A").getextrema() == (255, 255), f"cut-out/gap in solid fitted component: {name}")
     check(Image.open(PARTS / "worktop_tile.png").size == (84, 31), "task-authority 84x31 worktop drift")
+    expected_freestanding = {
+        "unit_larder_cupboard_closed.png": ([76, 353], [0.5, 0.6, 2.0], 370),
+        "fridge_1950s.png": ([76, 252], [0.5, 0.6, 1.5], 454),
+        "cooker_1950s.png": ([76, 252], [0.5, 0.6, 1.5], 874),
+    }
+    for name, (size, real_size, stop_x) in expected_freestanding.items():
+        record = items["parts"][name]
+        check(record["canvasPx"] == size, f"freestanding dimensions drift: {name}")
+        check(record["realSizeM"] == real_size, f"freestanding physical size drift: {name}")
+        check(record["placement"] == record["category"] == "freestanding", f"placement drift: {name}")
+        check(record["bayWidth"] == 1 and record["standPointX"] == stop_x, f"bay/stop drift: {name}")
+    retired = set(room_data["retiredFromKitchen"])
+    check({"cooker.png", "unit_fridge_freezer.png", "unit_utility_cupboard_closed.png", "front_dishwasher.png", "overlay_dishwasher_led.png"} <= retired, "superseded appliances not retired")
+    check("dishwasher" not in room_data["placements"], "dishwasher remains in active room layout")
+    check(room_data["placements"]["drawers"][1] == [6, 790], "bay 6 is not drawers")
     check(manifest["checks"]["worktopRuns"] == [[496, 832], [916, 1336]], "run endpoints drift")
-    check(manifest["checks"]["worktopTopY"] == manifest["checks"]["cookerTopY"] == 305, "cooker/worktop top mismatch")
-    check(manifest["checks"]["plinthY"] == manifest["checks"]["cookerPlinthY"] == [468, 485], "cooker/run plinth mismatch")
+    check(manifest["checks"]["worktopTopY"] == manifest["checks"]["cookerHobTopY"] == 305, "cooker hob/worktop top mismatch")
+    check(manifest["checks"]["cookerTopY"] == 233 and manifest["checks"]["cookerFeetY"] == 485, "freestanding cooker envelope drift")
+    check(manifest["checks"]["eyeLevelGrillY"] == [251, 291], "eye-level grill band drift")
     check(manifest["checks"]["itemPixelsAboveWindowLimit"] == 0, "item crosses y274 window exclusion")
 
     # Independent reconstruction proves the declared item layer leaves both
@@ -140,7 +156,11 @@ def main() -> None:
                 check(item_layer.getpixel((x, y))[3] == 0, f"item/window collision at {x},{y}")
 
     # Overlay alpha and actual composite differences stay within declarations.
-    overlay_bases = {"overlay_oven_window.png": "cooker.png", "overlay_dishwasher_led.png": "front_dishwasher.png"}
+    overlay_bases = {
+        "overlay_oven_window.png": "cooker_1950s.png",
+        "overlay_grill_glow.png": "cooker_1950s.png",
+        "overlay_burner_flames.png": "cooker_1950s.png",
+    }
     for overlay_name, base_name in overlay_bases.items():
         overlay = Image.open(PARTS / overlay_name).convert("RGBA")
         base = Image.open(PARTS / base_name).convert("RGBA")
@@ -160,6 +180,9 @@ def main() -> None:
         actual = Image.open(OUTPUTS / f"keeper_check_{label}.png").convert("RGBA")
         check(expected.tobytes() == actual.tobytes(), f"Prime composite changed/scaled: {label}")
 
+    state_sheet = Image.open(OUTPUTS / "freestanding_state_overlays.png").convert("RGBA")
+    check(state_sheet.size == (1536, 1728), "freestanding overlay review sheet size drift")
+
     isolation = manifest["checks"]["isolation"]
     check(isolation["changedLocalTapPixels"] == isolation["roomDiffPixels"] > 0, "isolation cardinality mismatch")
     x0, y0, x1, y1 = isolation["roomDiffBoundsInclusive"]
@@ -171,6 +194,8 @@ def main() -> None:
     print(f"  {len(items['parts'])} item/component parts plus one shell with exact dimensions and source pins")
     print(f"  {exact} exact-magenta pixels; 0 near-magenta; 0 item/window collisions")
     print("  no detached partial-alpha halos; solid run components contain no cut-outs")
+    print("  same-pass amendment: freestanding larder/fridge/cooker active; dishwasher and fitted predecessors retired")
+    print("  cooker: hob y305, eye-level grill y251–291, feet y485")
     print("  Prime Keeper: exact 256x320 source, native 1:1 at x454/x622/x874")
     print(f"  sink isolation: {isolation['roomDiffPixels']} pixels, confined to {isolation['roomDiffBoundsInclusive']}")
 

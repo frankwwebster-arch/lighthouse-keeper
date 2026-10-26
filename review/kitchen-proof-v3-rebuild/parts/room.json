@@ -36,7 +36,7 @@
     ]
   ],
   "placements": {
-    "utility": [
+    "larder": [
       1,
       370
     ],
@@ -45,8 +45,22 @@
       454
     ],
     "drawers": [
-      3,
-      538
+      [
+        3,
+        538
+      ],
+      [
+        6,
+        790
+      ],
+      [
+        8,
+        958
+      ],
+      [
+        9,
+        1042
+      ]
     ],
     "sink": [
       [
@@ -54,10 +68,6 @@
         5
       ],
       622
-    ],
-    "dishwasher": [
-      6,
-      790
     ],
     "cooker": [
       7,
@@ -79,5 +89,13 @@
       14,
       1462
     ]
-  }
+  },
+  "retiredFromKitchen": [
+    "unit_utility_cupboard_closed.png",
+    "overlay_utility_cupboard_open.png",
+    "unit_fridge_freezer.png",
+    "front_dishwasher.png",
+    "overlay_dishwasher_led.png",
+    "cooker.png"
+  ]
 }
