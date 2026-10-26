@@ -378,6 +378,7 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - D16 NEW: bed footprint. In a 2.0 m-deep room the bed must be shown side-on, so it needs 4 bays (2.0 m), with the four-poster in the same reservation. This replaces Frank's earlier "bed 2 bays → four-poster 3 bays" decision, which predates the new scale. Frank to confirm.
 - D13 RESOLVED (Frank, 26 Oct): toilet use is always hidden behind the WC door; no bathroom pose.
 - Catalogue register items (marine lab, radio room, greenhouse, transport, power, bank, bowling/gaming/hot-tub/roof, solar tracker) remain open as listed there.
+- D18 DEFERRED (Frank, 26 Oct): review of `data/upgrades.csv`, room by room, as each room is built (kitchen first, once its proof is approved). Known issues to resolve then: fridge t3 'pet cannot steal' (no pet in V1; the pet bowl itself is provisional); door tiers move to the lobby front door; bedroom basin tiers vs the en-suite's basin, bath and shower; toilet tiers now invisible (sound/behaviour only, or drop); TV t2 flat-screen vs the CRT-family decision; new upgrades for lobby laundry and garden shed; largest-tier widths in the living room (grand piano, cinema wall, library wall); jetty t3 vs boathouse; garden t3 vs greenhouse facility; modern vs retro tone. Until then the table stands, except that the fridge t3 pet clause is ignored.
 - Proposed changes: (none yet)
 
 ## 19. Agent notes (Codex ⇄ Claude)
