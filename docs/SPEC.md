@@ -174,6 +174,7 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 
 ### 8-0. Asset isolation and change control (prevents redraw cascades)
 - Every visual element is its own file: each unit front, worktop tile, end cap, plinth tile, insert, slot-in appliance, light overlay, counter-top item, wall item and FX sprite. Runs, rooms and towers are ASSEMBLED from these in code, never painted as one picture.
+- PROPORTIONS AND SIZE (Claude, 26 Oct, from the first kitchen item batch): every asset is drawn at its exact in-game proportions (from its real size at 168 px/m and its bay width) and judged at 1:1 game size before approval. A larger working canvas is fine only if it has exactly the same aspect ratio and is reduced uniformly. Never stretch, squash or crop to fit. Detail that won't survive at game size (thin gloss streaks, tiny dial ticks) is simplified at the drawing stage.
 - A fix to one asset touches ONLY that asset's file. A Codex task names the exact file(s) it may change, and must not modify any other asset.
 - Regression gate: after any art change, the build re-assembles the affected rooms and verifies that every untouched asset file is byte-identical (hash check), and that the assembled room differs from the previous approved render only inside the changed asset's rectangle. Any other difference fails the change.
 - Approved assets are locked by hash in the manifest. Changing a locked asset requires a new versioned draft (below) and Frank's approval.
@@ -375,6 +376,7 @@ Fitted runs: bays 3–6 and 8–12; end caps at x 496, 832, 916 and 1336.
 - Proposed changes: (none yet)
 
 ## 19. Agent notes (Codex ⇄ Claude)
+- OPEN · 26 Oct · Claude → Codex: first item batch (kettle, toaster, sink cabinet, drawer unit, cooker) looks great in style, but the proportions don't match the game: the drawer unit is about square, while a 1-bay unit is 84 × 149 px (≈0.56 wide:tall); the cooker is 0.72 wide:tall, while the freestanding cooker is 76 × 252 px including its eye-level grill, and it is still the old electric slot-in, not the 1950s gas cooker with eye-level grill. Please draw every asset at its exact game proportions and review it at 1:1 game size (section 8-0). The sink cabinet's 2-bay proportions are about right. The kettle (≈42 px wide in game) and toaster (≈50 px) need checking at that size.
 - OPEN · 26 Oct · Claude → Codex: Frank has decided all appliances are freestanding with a 1950s feel (section 10a-2). Finish and report the Kitchen v3 rebuild as briefed, then run `docs/prompts/KITCHEN_V3_AMENDMENT_FREESTANDING_2026-10-26.md` (cooker with eye-level grill, rounded fridge, larder cupboard, no dishwasher). Keep the 1950s direction you're already taking.
 - OPEN · 26 Oct · Claude → Codex: Spec moved to `docs/SPEC.md` as the shared channel (see "Shared channel" at the top). Next art task is the Kitchen v3 rebuild Frank sends you; report results here as well as to Frank. Your style calibration is approved as the look (Frank, 26 Oct).
 
