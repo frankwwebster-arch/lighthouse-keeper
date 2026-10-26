@@ -77,7 +77,10 @@ Do not start any other room. Report results and anything physically inconsistent
 ## Same-pass amendment applied
 
 `docs/prompts/KITCHEN_V3_AMENDMENT_FREESTANDING_2026-10-26.md` is applied in
-this same folder and wins where it differs: bay 1 is a freestanding larder;
-bay 2 is a rounded one-door 1950s freestanding fridge; bay 6 is drawers; bay 7
-is a freestanding 1.50 m gas cooker with eye-level grill; the dishwasher and
-superseded fitted/slot-in parts are retained only as retired provenance.
+this same folder and wins where it differs. Frank's later right-door revision
+also applies: bay 1 is a freestanding 1950s dresser/plate rack; the room has no
+utility cupboard or larder; the right wall has a timber jamb at x 1504–1536,
+y 208–544 for the hidden magic cupboard. Bay 2 is a rounded one-door 1950s
+freestanding fridge; bay 6 is drawers; bay 7 is a freestanding 1.50 m gas
+cooker with eye-level grill. The dishwasher and superseded fitted/slot-in/
+larder parts are retained only as retired provenance.

@@ -124,7 +124,7 @@ def main() -> None:
         check(image.getchannel("A").getextrema() == (255, 255), f"cut-out/gap in solid fitted component: {name}")
     check(Image.open(PARTS / "worktop_tile.png").size == (84, 31), "task-authority 84x31 worktop drift")
     expected_freestanding = {
-        "unit_larder_cupboard_closed.png": ([76, 353], [0.5, 0.6, 2.0], 370),
+        "dresser_1950s.png": ([76, 302], [0.5, 0.4, 1.8], 370),
         "fridge_1950s.png": ([76, 252], [0.5, 0.6, 1.5], 454),
         "cooker_1950s.png": ([76, 252], [0.5, 0.6, 1.5], 874),
     }
@@ -135,13 +135,16 @@ def main() -> None:
         check(record["placement"] == record["category"] == "freestanding", f"placement drift: {name}")
         check(record["bayWidth"] == 1 and record["standPointX"] == stop_x, f"bay/stop drift: {name}")
     retired = set(room_data["retiredFromKitchen"])
-    check({"cooker.png", "unit_fridge_freezer.png", "unit_utility_cupboard_closed.png", "front_dishwasher.png", "overlay_dishwasher_led.png"} <= retired, "superseded appliances not retired")
+    check({"cooker.png", "unit_fridge_freezer.png", "unit_utility_cupboard_closed.png", "overlay_utility_cupboard_open.png", "unit_larder_cupboard_closed.png", "overlay_larder_cupboard_open.png", "front_dishwasher.png", "overlay_dishwasher_led.png"} <= retired, "superseded appliances not retired")
+    check(items["parts"]["unit_larder_cupboard_closed.png"]["kitchenUsage"] == "retired-from-kitchen", "larder remains active")
     check("dishwasher" not in room_data["placements"], "dishwasher remains in active room layout")
+    check("larder" not in room_data["placements"] and room_data["placements"]["dresser"] == [1, 370], "bay 1 is not the dresser")
     check(room_data["placements"]["drawers"][1] == [6, 790], "bay 6 is not drawers")
     check(manifest["checks"]["worktopRuns"] == [[496, 832], [916, 1336]], "run endpoints drift")
     check(manifest["checks"]["worktopTopY"] == manifest["checks"]["cookerHobTopY"] == 305, "cooker hob/worktop top mismatch")
     check(manifest["checks"]["cookerTopY"] == 233 and manifest["checks"]["cookerFeetY"] == 485, "freestanding cooker envelope drift")
     check(manifest["checks"]["eyeLevelGrillY"] == [251, 291], "eye-level grill band drift")
+    check(manifest["checks"]["rightJambPx"] == room_data["rightDoorJambPx"] == [1504, 208, 1536, 544], "right-door jamb geometry drift")
     check(manifest["checks"]["itemPixelsAboveWindowLimit"] == 0, "item crosses y274 window exclusion")
 
     # Independent reconstruction proves the declared item layer leaves both
@@ -150,6 +153,8 @@ def main() -> None:
     part_images = {name: Image.open(PARTS / name).convert("RGBA") for name in items["parts"]}
     rebuilt, item_layer = builder.assemble(part_images)
     check(rebuilt.tobytes() == room.tobytes(), "room is not deterministic code assembly")
+    for y in (208, 300, 502, 543):
+        check(room.getpixel((1519, y))[3] == 255, f"right-door jamb missing at y={y}")
     for x0, _, x1, _ in manifest["geometry"]["windows"]:
         for y in range(274):
             for x in range(x0, x1):
@@ -194,7 +199,8 @@ def main() -> None:
     print(f"  {len(items['parts'])} item/component parts plus one shell with exact dimensions and source pins")
     print(f"  {exact} exact-magenta pixels; 0 near-magenta; 0 item/window collisions")
     print("  no detached partial-alpha halos; solid run components contain no cut-outs")
-    print("  same-pass amendment: freestanding larder/fridge/cooker active; dishwasher and fitted predecessors retired")
+    print("  same-pass amendment: bay-1 dresser, rounded fridge and eye-level-grill cooker active")
+    print("  right-door magic-cupboard jamb exact at x1504–1536/y208–544; no in-room utility/larder")
     print("  cooker: hob y305, eye-level grill y251–291, feet y485")
     print("  Prime Keeper: exact 256x320 source, native 1:1 at x454/x622/x874")
     print(f"  sink isolation: {isolation['roomDiffPixels']} pixels, confined to {isolation['roomDiffBoundsInclusive']}")

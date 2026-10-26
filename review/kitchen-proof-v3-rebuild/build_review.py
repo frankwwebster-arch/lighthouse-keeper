@@ -272,10 +272,17 @@ def make_parts() -> dict[str, dict]:
         "bayWidth": 1, "category": "freestanding", "placement": "freestanding", "realSizeM": [0.5, 0.6, 2.0],
         "anchorPx": [38, 353], "standPointX": 370,
         "movingPartOverlays": [{"id": "open_door", "file": "overlay_larder_cupboard_open.png", "rectPx": [-50, 0, 76, 353]}],
+        "kitchenUsage": "retired-from-kitchen",
         "sourceSha256": source_hash("larder-source.png"),
     }, records)
     larder_open = clean_source("larder-open-source.png", (126, 353), outline=True)
-    save_part("overlay_larder_cupboard_open.png", larder_open, {"bayWidth": 1, "category": "component", "sourceSha256": source_hash("larder-open-source.png")}, records)
+    save_part("overlay_larder_cupboard_open.png", larder_open, {"bayWidth": 1, "category": "component", "kitchenUsage": "retired-from-kitchen", "sourceSha256": source_hash("larder-open-source.png")}, records)
+
+    dresser = clean_source("dresser-1950s-source.png", (76, 302), outline=True)
+    save_part("dresser_1950s.png", dresser, {
+        "bayWidth": 1, "category": "freestanding", "placement": "freestanding", "realSizeM": [0.5, 0.4, 1.8],
+        "anchorPx": [38, 302], "standPointX": 370, "sourceSha256": source_hash("dresser-1950s-source.png"),
+    }, records)
 
     fridge_1950s = clean_source("fridge-1950s-source.png", (76, 252), outline=True)
     save_part("fridge_1950s.png", fridge_1950s, {
@@ -363,6 +370,13 @@ def room_shell() -> Image.Image:
     rect((9, 208, 17, 544), WOOD_LIGHT)
     line((26, 208, 26, 544), INK, 3)
 
+    # Matching right-wall jamb: the cupboard of myriads is fictional and
+    # never occupies a bay or appears behind this timber edge.
+    rect((1504, 208, 1536, 544), WOOD_DARK)
+    rect((1510, 208, 1531, 544), WOOD)
+    rect((1519, 208, 1527, 544), WOOD_LIGHT)
+    line((1510, 208, 1510, 544), INK, 3)
+
     image = image.resize((W, H), Image.Resampling.LANCZOS)
     window = build_window()
     image.alpha_composite(window, (580, 106))
@@ -378,13 +392,12 @@ def assemble(
     parts: dict[str, Image.Image],
     keeper_x: int | None = None,
     sink_override: Image.Image | None = None,
-    open_larder: bool = False,
     open_fridge: bool = False,
     lit_cooker: bool = False,
 ) -> tuple[Image.Image, Image.Image]:
     room = room_shell()
     item_layer = Image.new("RGBA", room.size, (0, 0, 0, 0))
-    paste(item_layer, parts["unit_larder_cupboard_closed.png"], 332, 132)
+    paste(item_layer, parts["dresser_1950s.png"], 332, 183)
     paste(item_layer, parts["fridge_1950s.png"], 416, 233)
 
     for x in (496, 580, 664, 748, 916, 1000, 1084, 1168, 1252):
@@ -414,8 +427,6 @@ def assemble(
     paste(item_layer, parts["pedal_bin.png"], 1420, 373)
     room.alpha_composite(item_layer)
 
-    if open_larder:
-        paste(room, parts["overlay_larder_cupboard_open.png"], 282, 132)
     if open_fridge:
         paste(room, parts["overlay_fridge_open.png"], 366, 233)
     if lit_cooker:
@@ -431,6 +442,10 @@ def assemble(
     jd.rectangle((5, 208, 25, 543), fill=WOOD)
     jd.rectangle((9, 208, 16, 543), fill=WOOD_LIGHT)
     jd.line((26, 208, 26, 543), fill=INK, width=3)
+    jd.rectangle((1504, 208, 1535, 543), fill=WOOD_DARK)
+    jd.rectangle((1510, 208, 1530, 543), fill=WOOD)
+    jd.rectangle((1519, 208, 1526, 543), fill=WOOD_LIGHT)
+    jd.line((1510, 208, 1510, 543), fill=INK, width=3)
     return room, item_layer
 
 
@@ -480,7 +495,7 @@ def main() -> None:
     state_sheet = Image.new("RGBA", (W, H * 3), (0, 0, 0, 255))
     state_draw = ImageDraw.Draw(state_sheet)
     for index, (label, options) in enumerate((
-        ("LARDER OPEN", {"open_larder": True}),
+        ("RIGHT DOOR · JAMB ONLY", {}),
         ("FRIDGE OPEN / INTERIOR LIT", {"open_fridge": True}),
         ("COOKER LIGHT OVERLAYS", {"lit_cooker": True}),
     )):
@@ -538,8 +553,9 @@ def main() -> None:
         "schema": "lighthouse-keeper/kitchen-v3-rebuild-room@1", "canvasPx": [W, H], "walkY": 502,
         "bayFieldX": [328, 1504], "bayWidthPx": 84, "bayCount": 14,
         "runs": [[3, 6], [8, 12]], "windows": WINDOWS,
-        "placements": {"larder": [1, 370], "fridge": [2, 454], "drawers": [[3, 538], [6, 790], [8, 958], [9, 1042]], "sink": [[4, 5], 622], "cooker": [7, 874], "toaster": [9, 1042], "kettle": [12, 1294], "petBowl": [13, 1378], "pedalBin": [14, 1462]},
-        "retiredFromKitchen": ["unit_utility_cupboard_closed.png", "overlay_utility_cupboard_open.png", "unit_fridge_freezer.png", "front_dishwasher.png", "overlay_dishwasher_led.png", "cooker.png"],
+        "placements": {"dresser": [1, 370], "fridge": [2, 454], "drawers": [[3, 538], [6, 790], [8, 958], [9, 1042]], "sink": [[4, 5], 622], "cooker": [7, 874], "toaster": [9, 1042], "kettle": [12, 1294], "petBowl": [13, 1378], "pedalBin": [14, 1462]},
+        "rightDoorJambPx": [1504, 208, 1536, 544],
+        "retiredFromKitchen": ["unit_utility_cupboard_closed.png", "overlay_utility_cupboard_open.png", "unit_larder_cupboard_closed.png", "overlay_larder_cupboard_open.png", "unit_fridge_freezer.png", "front_dishwasher.png", "overlay_dishwasher_led.png", "cooker.png"],
     }, indent=2) + "\n", encoding="utf-8")
 
     files = {}
@@ -548,10 +564,10 @@ def main() -> None:
             if path.is_file(): files[path.relative_to(ROOT).as_posix()] = {"sha256": sha256(path), "bytes": path.stat().st_size}
     manifest = {
         "schema": "lighthouse-keeper/kitchen-proof-v3-rebuild@1", "status": "review-only-awaiting-frank", "canonMutation": False, "runtimeMutation": False,
-        "geometry": {"modulePx": [W, H], "scalePxPerM": 168, "topRevealPxPerM": 28, "walkY": 502, "floorBandY": [460, 544], "bayFieldX": [328, 1504], "bayCount": 14, "bayWidthPx": 84, "windows": WINDOWS, "glassLocalRects": GLASS_LOCAL_RECTS, "verticals": {"unitBase": 485, "plinth": [468, 485], "fronts": [336, 468], "worktopEdge": [322, 336], "worktopReveal": [305, 322], "fridge1950s": [233, 485], "larder": [132, 485], "cooker1950s": [233, 485], "cookerHobReveal": [305, 322]}},
+        "geometry": {"modulePx": [W, H], "scalePxPerM": 168, "topRevealPxPerM": 28, "walkY": 502, "floorBandY": [460, 544], "bayFieldX": [328, 1504], "bayCount": 14, "bayWidthPx": 84, "windows": WINDOWS, "glassLocalRects": GLASS_LOCAL_RECTS, "leftDoorJambPx": [0, 208, 32, 544], "rightDoorJambPx": [1504, 208, 1536, 544], "verticals": {"unitBase": 485, "plinth": [468, 485], "fronts": [336, 468], "worktopEdge": [322, 336], "worktopReveal": [305, 322], "dresser1950s": [183, 485], "fridge1950s": [233, 485], "cooker1950s": [233, 485], "cookerHobReveal": [305, 322]}},
         "keeper": {"sourceScale": 1.0, "standingHeightPx": 298, "soleDatumY": 316, "roomSoleY": 502, "positions": [454, 622, 874], "worktopEdgeHeightPx": 180, "worktopEdgePercent": round(180 / 298 * 100, 2)},
         "style": {"approvedCalibrationSha256": sha256(SOURCES / "approved-style-calibration.png"), "v7Sha256": V7_SHA, "fillPalette": "palette_env-v1", "fillPaletteSize": len(PALETTE), "normalization": "generated alpha >=200 becomes silhouette; lower-alpha exterior halo/shadow discarded; final antialias created only by deterministic resampling"},
-        "checks": {"exactMagentaPixels": exact_magenta, "nearMagentaPixels": near_magenta, "itemPixelsAboveWindowLimit": forbidden, "worktopRuns": [[496, 832], [916, 1336]], "worktopTopY": 305, "cookerHobTopY": 305, "cookerTopY": 233, "cookerFeetY": 485, "eyeLevelGrillY": [251, 291], "plinthY": [468, 485], "castShadowPolicy": "none; generated exterior alpha below threshold discarded before fitting", "itemInkPx": "2–3 at native scale", "keeperInkPx": "3–4 at native scale", "isolation": {"changedLocalTapPixels": changed_local, "roomDiffPixels": diff_pixels, "roomDiffBoundsInclusive": bbox, "allowedBoundsInclusive": [580, 274, 747, 321], "allStoredPartHashesUnchanged": True}, "overlayRects": {"overlay_oven_window.png": [11, 132, 65, 190], "overlay_grill_glow.png": [10, 18, 66, 58], "overlay_burner_flames.png": [8, 72, 68, 108]}},
+        "checks": {"exactMagentaPixels": exact_magenta, "nearMagentaPixels": near_magenta, "itemPixelsAboveWindowLimit": forbidden, "worktopRuns": [[496, 832], [916, 1336]], "worktopTopY": 305, "cookerHobTopY": 305, "cookerTopY": 233, "cookerFeetY": 485, "eyeLevelGrillY": [251, 291], "rightJambPx": [1504, 208, 1536, 544], "plinthY": [468, 485], "castShadowPolicy": "none; generated exterior alpha below threshold discarded before fitting", "itemInkPx": "2–3 at native scale", "keeperInkPx": "3–4 at native scale", "isolation": {"changedLocalTapPixels": changed_local, "roomDiffPixels": diff_pixels, "roomDiffBoundsInclusive": bbox, "allowedBoundsInclusive": [580, 274, 747, 321], "allStoredPartHashesUnchanged": True}, "overlayRects": {"overlay_oven_window.png": [11, 132, 65, 190], "overlay_grill_glow.png": [10, 18, 66, 58], "overlay_burner_flames.png": [8, 72, 68, 108]}},
         "shell": {"file": "parts/room_shell_kitchen.png", **shell_record},
         "parts": records, "files": files,
     }

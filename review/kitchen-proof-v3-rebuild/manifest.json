@@ -61,6 +61,18 @@
         141
       ]
     ],
+    "leftDoorJambPx": [
+      0,
+      208,
+      32,
+      544
+    ],
+    "rightDoorJambPx": [
+      1504,
+      208,
+      1536,
+      544
+    ],
     "verticals": {
       "unitBase": 485,
       "plinth": [
@@ -79,12 +91,12 @@
         305,
         322
       ],
-      "fridge1950s": [
-        233,
+      "dresser1950s": [
+        183,
         485
       ],
-      "larder": [
-        132,
+      "fridge1950s": [
+        233,
         485
       ],
       "cooker1950s": [
@@ -139,6 +151,12 @@
       251,
       291
     ],
+    "rightJambPx": [
+      1504,
+      208,
+      1536,
+      544
+    ],
     "plinthY": [
       468,
       485
@@ -192,7 +210,7 @@
     ],
     "category": "shell",
     "bayWidth": 0,
-    "sha256": "544a3a5e4e7bc966d3b77685a0c72041b02a4bd59b6a2cd1e8bab6b18a98aaab",
+    "sha256": "8d3d94885b64c0f25c81951db9302e22577306004371aae25329e3d285bc3c0a",
     "sourceSha256": "bf3d40ba46d16937bb4d2c6e939e1adbb1c1c5a9ac9423b2bf9cf99746ba3eeb"
   },
   "parts": {
@@ -1170,7 +1188,7 @@
       "useBay": null,
       "category": "freestanding",
       "placement": "freestanding",
-      "kitchenUsage": "active",
+      "kitchenUsage": "retired-from-kitchen",
       "realSizeM": [
         0.5,
         0.6,
@@ -1222,7 +1240,7 @@
       "useBay": null,
       "category": "component",
       "placement": "component",
-      "kitchenUsage": "active",
+      "kitchenUsage": "retired-from-kitchen",
       "realSizeM": [
         0,
         0,
@@ -1254,6 +1272,47 @@
         "master": "overlay_larder_cupboard_open.png"
       },
       "sha256": "fc8cc635af9e34f614d0ed9083c1eef5263af65684c7b546d0b2bb44b8804f87"
+    },
+    "dresser_1950s.png": {
+      "id": "dresser_1950s",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "freestanding",
+      "placement": "freestanding",
+      "kitchenUsage": "active",
+      "realSizeM": [
+        0.5,
+        0.4,
+        1.8
+      ],
+      "canvasPx": [
+        76,
+        302
+      ],
+      "anchorPx": [
+        38,
+        302
+      ],
+      "standPointX": 370,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "25cf1be4d91187a8cd7fe32ebe5b05e17636154f801c4e319f7aa68617c2b310",
+      "files": {
+        "master": "dresser_1950s.png"
+      },
+      "sha256": "261800d9650af9abba950b74cb70dcbd71a1b2006a20ee52d049cd2292aaec61"
     },
     "fridge_1950s.png": {
       "id": "fridge_1950s",
@@ -1533,6 +1592,10 @@
       "sha256": "ce7286a9a8a19dda47021817ea0195e277389b8473f20094038fa865ad4e5653",
       "bytes": 9437
     },
+    "parts/dresser_1950s.png": {
+      "sha256": "261800d9650af9abba950b74cb70dcbd71a1b2006a20ee52d049cd2292aaec61",
+      "bytes": 11206
+    },
     "parts/fridge_1950s.png": {
       "sha256": "ffc1a09a2fd68250261b165622c203b5213d7e9d2bf2c578f5c48b8dcd4346bd",
       "bytes": 5606
@@ -1562,8 +1625,8 @@
       "bytes": 4926
     },
     "parts/item.json": {
-      "sha256": "55b38c763721e721b622e1a76b2a62140f8f73ec269ff8fb2773d669012b4d2c",
-      "bytes": 37469
+      "sha256": "cf92416973e96ed07c8765793bc01e9b4a587b137db9a2dce42169fcb28f43b7",
+      "bytes": 38677
     },
     "parts/kettle.png": {
       "sha256": "e1926107ab827b9e8de7ba42a8b72e5193ae554ee6180b1bd32cbbbecb015378",
@@ -1618,12 +1681,12 @@
       "bytes": 378
     },
     "parts/room.json": {
-      "sha256": "51e686e7a2b1923fe478637693538ff4a926cf64e7e3abe3b0c982de29da711a",
-      "bytes": 1207
+      "sha256": "91c98e7ea59d718386b8f1d488d872724d538a38449d76ea1d2c061428d9dddd",
+      "bytes": 1352
     },
     "parts/room_shell_kitchen.png": {
-      "sha256": "544a3a5e4e7bc966d3b77685a0c72041b02a4bd59b6a2cd1e8bab6b18a98aaab",
-      "bytes": 22690
+      "sha256": "8d3d94885b64c0f25c81951db9302e22577306004371aae25329e3d285bc3c0a",
+      "bytes": 23422
     },
     "parts/toaster.png": {
       "sha256": "f5cc8f01628ee8a76db478b8cb81a4dc771004e8790a3fb18c8bdcc216e6a1e6",
@@ -1658,56 +1721,56 @@
       "bytes": 972
     },
     "outputs/calibration_vs_rebuild.png": {
-      "sha256": "18aa04adb9f0ee2f939bae52de19ca48a199a7f85f79b0484525ed0a16947661",
-      "bytes": 1024320
+      "sha256": "5171c28815be209767f3a722fb4d884fd2dbc2bbf8cabfca80ac56d487468937",
+      "bytes": 1034766
     },
     "outputs/contact_sheet.png": {
-      "sha256": "9f596b06c974aeab263e6fa9c70400da61c37eefe310653f330259558e1d25f2",
-      "bytes": 405645
+      "sha256": "77f8560664bc89d27796f2e908180c0a4dc1c1954d8d83fe8be2d49386c4ec22",
+      "bytes": 426087
     },
     "outputs/freestanding_state_overlays.png": {
-      "sha256": "8e183e6f255553b1f52e855ff45f8b8bbc30ea4a461c81217c93f7b57a30150f",
-      "bytes": 272587
+      "sha256": "a57a9f60cd4916d049861053b718840128d39a98968abdf88c61918115a0b824",
+      "bytes": 279731
     },
     "outputs/isolation_sink_taps_diff.png": {
       "sha256": "411d6338cb69c9863e0b4329af472f6808451c8b11d5659208459090f33e44f2",
       "bytes": 4020
     },
     "outputs/keeper_check_cooker.png": {
-      "sha256": "af3d9104ba700b295d6e6bfbdba1dcf0bb28daf7da81f4df8f88dd0a968ee297",
-      "bytes": 133731
+      "sha256": "8f6e9ef13ab0f76ad7f006773cbab71b1d09a48c45b9f9c1288350ab2a0f01b5",
+      "bytes": 141531
     },
     "outputs/keeper_check_fridge.png": {
-      "sha256": "0dcca866f4cba3dc4175aa5be0fa915a0f2fd7dd187d8f538a2a6074e8e0f708",
-      "bytes": 137948
+      "sha256": "a3af8577e0bd719727abe73ed1cfd0c5c9ff28ba8c995ca2ee6f52c775e31476",
+      "bytes": 144627
     },
     "outputs/keeper_check_sheet.png": {
-      "sha256": "c80abe5fa9003e4009c9fa3aabce450f90dfa21815be92b714b619d263d1d769",
-      "bytes": 418433
+      "sha256": "19589679c876bc1d843333d59c2c0733b926b8652e669ca8c3a176f63a990189",
+      "bytes": 439996
     },
     "outputs/keeper_check_sink.png": {
-      "sha256": "8b6bb74afce99800f9385034c1e0453bdffe93929ec8712eeb0593b18984c220",
-      "bytes": 137603
+      "sha256": "b88beae8a0d7d8683266aca1642e5cd6edef5c7dd1bcfb13f5b815b7cbe02f57",
+      "bytes": 145344
     },
     "outputs/kitchen_v3_rebuild_room.png": {
-      "sha256": "695beed2ca90bb6fdcbab0c770bd342f0cca0e19b784cd23db0441e336b0adc3",
-      "bytes": 79539
+      "sha256": "9c895bcdb78ba3adfd8b8c4dcd92ee73a162217b8a3ba5b2f66a7eeaf108b873",
+      "bytes": 87204
     },
     "outputs/kitchen_v3_rebuild_room_2x.png": {
-      "sha256": "f723490af0ab5b2d3594caae0686951bf2777b76c3e8820e9f9a16325c0ee98d",
-      "bytes": 109564
+      "sha256": "7ba1e0355ccd05fc61e8e346ffcbd83fecfc6ae8be0af9f55511863a6f252f26",
+      "bytes": 118797
     },
     "outputs/kitchen_v3_rebuild_tower_scale.png": {
-      "sha256": "08fa9bb2aee7cfcee7293e58ef23ccb365756d2c8f4208bfb78a73c06b459bb6",
-      "bytes": 25155
+      "sha256": "b0d91cf2950a03b4d2928611983d1316837fcacd44758306205daab568a16bbd",
+      "bytes": 26530
     },
     "sources/AMENDMENT_TASK.md": {
-      "sha256": "ecfd9e9ac3d50773f73d386dd76e52359402678f8dfa5f1b81f4181032224dbd",
-      "bytes": 1418
+      "sha256": "7e6f2b3c0b1b132f2b05fad3ec1a247462e96613b2691ad0800b9ea9ed362f93",
+      "bytes": 1608
     },
     "sources/SOURCE_TASK.md": {
-      "sha256": "b2480548d8023a90308510a052964ddd516dcc33e8c17d310399a86b062b39fd",
-      "bytes": 8434
+      "sha256": "f17b3549325eb1ab72b46d4aade1ff49517032885c7fc5462221da46e4eeab73",
+      "bytes": 8646
     },
     "sources/approved-style-calibration.png": {
       "sha256": "99efc21c386422683f734d2d8dd559a5bcebba43e933b1a272360965420de7a5",
@@ -1740,6 +1803,10 @@
     "sources/generated/drawers-source.png": {
       "sha256": "b5f9775e4f3fe5f9aa10116a7160a2e4e325a9e5c429dcf194cc65373a2cfe5d",
       "bytes": 950553
+    },
+    "sources/generated/dresser-1950s-source.png": {
+      "sha256": "25cf1be4d91187a8cd7fe32ebe5b05e17636154f801c4e319f7aa68617c2b310",
+      "bytes": 1434503
     },
     "sources/generated/fridge-1950s-source.png": {
       "sha256": "ae5d3856ba4720b65ea2ddecb3b2f9b1c7076afebde425c742075e6cea574c92",

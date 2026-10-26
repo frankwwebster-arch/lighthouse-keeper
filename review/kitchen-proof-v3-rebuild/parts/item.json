@@ -976,7 +976,7 @@
       "useBay": null,
       "category": "freestanding",
       "placement": "freestanding",
-      "kitchenUsage": "active",
+      "kitchenUsage": "retired-from-kitchen",
       "realSizeM": [
         0.5,
         0.6,
@@ -1028,7 +1028,7 @@
       "useBay": null,
       "category": "component",
       "placement": "component",
-      "kitchenUsage": "active",
+      "kitchenUsage": "retired-from-kitchen",
       "realSizeM": [
         0,
         0,
@@ -1060,6 +1060,47 @@
         "master": "overlay_larder_cupboard_open.png"
       },
       "sha256": "fc8cc635af9e34f614d0ed9083c1eef5263af65684c7b546d0b2bb44b8804f87"
+    },
+    "dresser_1950s.png": {
+      "id": "dresser_1950s",
+      "tier": 1,
+      "bayWidth": 1,
+      "reservedBayWidth": 1,
+      "useBay": null,
+      "category": "freestanding",
+      "placement": "freestanding",
+      "kitchenUsage": "active",
+      "realSizeM": [
+        0.5,
+        0.4,
+        1.8
+      ],
+      "canvasPx": [
+        76,
+        302
+      ],
+      "anchorPx": [
+        38,
+        302
+      ],
+      "standPointX": 370,
+      "lightOverlays": [],
+      "movingPartOverlays": [],
+      "interactionAnchors": [],
+      "bubbleOriginPx": null,
+      "effectOriginPx": null,
+      "statusLightPointPx": null,
+      "faultRecipes": [],
+      "palette": "palette_env-v1",
+      "styleReference": {
+        "path": "art/source/kitchen-built-in-state-ligne-claire-2026-10-21-v7/oven-on-user-confirmed-visual-authority.png",
+        "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+      },
+      "sourceSha256": "25cf1be4d91187a8cd7fe32ebe5b05e17636154f801c4e319f7aa68617c2b310",
+      "files": {
+        "master": "dresser_1950s.png"
+      },
+      "sha256": "261800d9650af9abba950b74cb70dcbd71a1b2006a20ee52d049cd2292aaec61"
     },
     "fridge_1950s.png": {
       "id": "fridge_1950s",

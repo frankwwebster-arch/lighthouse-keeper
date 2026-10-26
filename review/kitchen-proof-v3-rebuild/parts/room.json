@@ -36,7 +36,7 @@
     ]
   ],
   "placements": {
-    "larder": [
+    "dresser": [
       1,
       370
     ],
@@ -90,9 +90,17 @@
       1462
     ]
   },
+  "rightDoorJambPx": [
+    1504,
+    208,
+    1536,
+    544
+  ],
   "retiredFromKitchen": [
     "unit_utility_cupboard_closed.png",
     "overlay_utility_cupboard_open.png",
+    "unit_larder_cupboard_closed.png",
+    "overlay_larder_cupboard_open.png",
     "unit_fridge_freezer.png",
     "front_dishwasher.png",
     "overlay_dishwasher_led.png",

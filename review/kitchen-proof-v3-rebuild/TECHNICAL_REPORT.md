@@ -5,9 +5,11 @@
 The approved calibration has been rebuilt as a grid-snapped modular kitchen,
 without the rejected V3's schematic treatment and without the calibration's
 cast shadows. Frank's same-pass amendment is included: the active appliance
-set is a freestanding blue larder, rounded single-door 1950s fridge and
-freestanding gas cooker with an eye-level grill. The dishwasher is absent and
-bay 6 is drawers. Superseded rebuild parts are retained and marked
+set is a narrow freestanding dresser/plate rack, rounded single-door 1950s
+fridge and freestanding gas cooker with an eye-level grill. The right-wall
+magic-cupboard door is represented only by its timber jamb; there is no utility
+cupboard or larder in the room. The dishwasher is absent and bay 6 is drawers.
+Superseded rebuild parts are retained and marked
 `retired-from-kitchen`, never deleted. The source illustrations carry
 substantial bevels, layered enamel edges, organic near-black ink, warm internal
 modelling and detailed hardware; deterministic processing supplies exact
@@ -17,7 +19,7 @@ geometry and key colour.
 |---|---:|
 | Module | `1536 × 576` |
 | Bays | `14 × 84 px`, x `328–1504` |
-| Production parts | 30 item/run/overlay PNGs plus one room shell |
+| Production parts | 31 item/run/overlay PNGs plus one room shell |
 | Exact magenta | 21,624 pixels, confined to eight panes |
 | Near-magenta | 0 |
 | Item pixels above y=274 in window bays | 0 |
@@ -25,7 +27,8 @@ geometry and key colour.
 | Worktop/cooker hob top | both y=305 |
 | Freestanding cooker | top y=233; eye-level grill y=251–291; feet y=485 |
 | Freestanding fridge | 76 × 252 px; x=416–492; y=233–485 |
-| Freestanding larder | 76 × 353 px; x=332–408; y=132–485 |
+| Freestanding dresser | 76 × 302 px; x=332–408; y=183–485 |
+| Right magic-cupboard jamb | x=1504–1536; y=208–544; no panel/interior |
 | Prime Keeper | exact 256×320 source, composited 1:1 |
 | Sink isolation delta | 549 pixels, x `581–745`, y `275–319` |
 
@@ -48,9 +51,10 @@ The build performs these deterministic steps:
    counter items and floor items from separate files.
 
 The base worktop tiles remain full opaque rectangles beneath the sink insert.
-No worktop knows what is placed on it. The larder and fridge open states and
-the cooker's oven, grill and gas-flame states are separate overlays. No
-generated Keeper pixels were used.
+No worktop knows what is placed on it. The fridge open state and the cooker's
+oven, grill and gas-flame states are separate overlays. The retained larder
+files are explicitly retired and not assembled. No generated Keeper pixels
+were used.
 
 ## Keeper check
 

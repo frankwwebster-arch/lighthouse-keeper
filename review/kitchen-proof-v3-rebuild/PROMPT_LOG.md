@@ -64,6 +64,9 @@ Per-asset final subject instructions:
   one copper/chrome lever handle, period badge, blue trim and short legs.
 - `larder`: narrow freestanding 1950s blue larder; finished side cheeks,
   cream trim, recessed panels, copper handle and feet.
+- `dresser-1950s`: narrow 0.50 × 0.40 × 1.80 m freestanding blue kitchen
+  dresser/plate rack; open cream-trimmed shelves with upright plates, lower
+  drawer/cupboard, finished cheeks and feet; decorative, not a utility store.
 
 Corrective edit applied to the first sink source:
 
@@ -71,7 +74,8 @@ Corrective edit applied to the first sink source:
 > with an integrated draining board; retain one bowl on the left and centre
 > both orange knobs and the silver arched spout above it. Change nothing else.
 
-Precise open-state edits were made from the final fridge and larder sources:
+Precise open-state edits were made from the final fridge and (now-retired)
+larder sources:
 
 > Preserve the exact outer cabinet and ligne-claire finish. Swing its one door
 > toward the viewer to the left, expose the period interior and shelves, keep
@@ -81,4 +85,6 @@ Precise open-state edits were made from the final fridge and larder sources:
 The first cooker generation and its attempted shadow-removal edit are retained
 as provenance. Production normalisation, rather than model alpha, enforces the
 no-shadow boundary. The freestanding amendment sources use that same
-normalisation and are recorded in `manifest.json` by SHA-256.
+normalisation and are recorded in `manifest.json` by SHA-256. Frank's later
+right-door decision retired the larder before room assembly; its source and
+overlay remain only as reversible provenance.
