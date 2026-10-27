@@ -1,0 +1,421 @@
+{
+ "module": [
+  2048,
+  576
+ ],
+ "vanishingPoint": [
+  1024,
+  250
+ ],
+ "datums": {
+  "base": 485,
+  "plinth": [
+   468,
+   485
+  ],
+  "front": [
+   348,
+   468
+  ],
+  "worktopEdge": [
+   334,
+   348
+  ],
+  "worktopReveal": [
+   317,
+   334
+  ],
+  "counterSurfaceY": 326,
+  "keeperSoles": 502,
+  "backWallLine": 460,
+  "floorFront": 544
+ },
+ "stops": [
+  370,
+  454,
+  538,
+  622,
+  706,
+  790,
+  874,
+  958,
+  1042,
+  1126,
+  1210,
+  1294,
+  1378,
+  1462,
+  1546,
+  1630,
+  1714,
+  1798,
+  1882,
+  1966
+ ],
+ "items": [
+  {
+   "id": "back_wall",
+   "kind": "shell",
+   "rect": [
+    160,
+    32,
+    1888,
+    460
+   ],
+   "w": 1728,
+   "h": 428,
+   "stop": null,
+   "note": "flat cream plaster; skirting at base"
+  },
+  {
+   "id": "floor_band",
+   "kind": "shell",
+   "rect": [
+    0,
+    460,
+    2048,
+    544
+   ],
+   "w": 2048,
+   "h": 84,
+   "stop": null,
+   "note": "honey timber boards, horizontal"
+  },
+  {
+   "id": "window_L",
+   "kind": "shell",
+   "rect": [
+    622,
+    106,
+    790,
+    274
+   ],
+   "w": 168,
+   "h": 168,
+   "stop": null,
+   "note": "glass exact #FF00FF, crisp edges"
+  },
+  {
+   "id": "window_R",
+   "kind": "shell",
+   "rect": [
+    1294,
+    106,
+    1462,
+    274
+   ],
+   "w": 168,
+   "h": 168,
+   "stop": null,
+   "note": "glass exact #FF00FF, crisp edges"
+  },
+  {
+   "id": "bin",
+   "kind": "freestanding",
+   "rect": [
+    349,
+    384,
+    391,
+    485
+   ],
+   "w": 42,
+   "h": 101,
+   "stop": 370,
+   "note": "enamel pedal bin 0.60 m"
+  },
+  {
+   "id": "runA_endcap_L",
+   "kind": "worktop",
+   "rect": [
+    392,
+    317,
+    404,
+    348
+   ],
+   "w": 12,
+   "h": 31,
+   "stop": null,
+   "note": "ONLY tapered piece of run A (exposed end)"
+  },
+  {
+   "id": "fridge_undercounter",
+   "kind": "fitted",
+   "rect": [
+    404,
+    348,
+    504,
+    485
+   ],
+   "w": 100,
+   "h": 137,
+   "stop": 454,
+   "note": "under the worktop; separate door; complete interior"
+  },
+  {
+   "id": "cupboard_A1",
+   "kind": "fitted",
+   "rect": [
+    504,
+    348,
+    622,
+    485
+   ],
+   "w": 118,
+   "h": 137,
+   "stop": null,
+   "note": "plain double-door base cupboard 0.70 m"
+  },
+  {
+   "id": "sink_cabinet",
+   "kind": "fitted",
+   "rect": [
+    622,
+    348,
+    790,
+    485
+   ],
+   "w": 168,
+   "h": 137,
+   "stop": 706,
+   "note": "Belfast sink front; bowl+taps is a separate insert on the worktop"
+  },
+  {
+   "id": "cupboard_A2",
+   "kind": "fitted",
+   "rect": [
+    790,
+    348,
+    979,
+    485
+   ],
+   "w": 189,
+   "h": 137,
+   "stop": null,
+   "note": "base cupboard 1.12 m; KETTLE stands on worktop at stop 874"
+  },
+  {
+   "id": "runA_worktop",
+   "kind": "worktop",
+   "rect": [
+    404,
+    317,
+    979,
+    348
+   ],
+   "w": 575,
+   "h": 31,
+   "stop": null,
+   "note": "ONE continuous worktop strip; right end SQUARE (abuts cooker)"
+  },
+  {
+   "id": "cooker",
+   "kind": "slot-in",
+   "rect": [
+    979,
+    149,
+    1105,
+    485
+   ],
+   "w": 126,
+   "h": 336,
+   "stop": 1042,
+   "note": "hob top y317-334 flush with worktops; grill box y149-215 (1.6-2.0 m); own plinth; separate oven door"
+  },
+  {
+   "id": "cupboard_B1",
+   "kind": "fitted",
+   "rect": [
+    1105,
+    348,
+    1231,
+    485
+   ],
+   "w": 126,
+   "h": 137,
+   "stop": null,
+   "note": "base cupboard 0.75 m; TOASTER at stop 1126; replaced by range t2 later (range spans 979-1231)"
+  },
+  {
+   "id": "cupboard_B2",
+   "kind": "fitted",
+   "rect": [
+    1231,
+    348,
+    1462,
+    485
+   ],
+   "w": 231,
+   "h": 137,
+   "stop": null,
+   "note": "base cupboards 1.38 m (two doors pairs); MIXER at stop 1210; nothing on top under the window"
+  },
+  {
+   "id": "runB_worktop",
+   "kind": "worktop",
+   "rect": [
+    1105,
+    317,
+    1462,
+    348
+   ],
+   "w": 357,
+   "h": 31,
+   "stop": null,
+   "note": "ONE continuous strip; left end SQUARE (abuts cooker)"
+  },
+  {
+   "id": "runB_endcap_R",
+   "kind": "worktop",
+   "rect": [
+    1462,
+    317,
+    1474,
+    348
+   ],
+   "w": 12,
+   "h": 31,
+   "stop": null,
+   "note": "ONLY tapered piece of run B (exposed end)"
+  },
+  {
+   "id": "table",
+   "kind": "freestanding",
+   "rect": [
+    1538,
+    364,
+    1723,
+    492
+   ],
+   "w": 185,
+   "h": 128,
+   "stop": 1630,
+   "note": "scrubbed pine 1.10 m, top 0.76 m; feet y492"
+  },
+  {
+   "id": "chair_L",
+   "kind": "freestanding",
+   "rect": [
+    1500,
+    341,
+    1584,
+    492
+   ],
+   "w": 84,
+   "h": 151,
+   "stop": null,
+   "note": "seat 0.45 m (y416); faces right"
+  },
+  {
+   "id": "chair_R",
+   "kind": "freestanding",
+   "rect": [
+    1677,
+    341,
+    1761,
+    492
+   ],
+   "w": 84,
+   "h": 151,
+   "stop": null,
+   "note": "mirror of chair_L"
+  },
+  {
+   "id": "dresser",
+   "kind": "freestanding",
+   "rect": [
+    1723,
+    149,
+    1873,
+    485
+   ],
+   "w": 150,
+   "h": 336,
+   "stop": 1798,
+   "note": "counter shelf at y334 (same line as worktops); 2.00 m tall"
+  },
+  {
+   "id": "wall_cupboard_1",
+   "kind": "wall",
+   "rect": [
+    806,
+    140,
+    962,
+    241
+   ],
+   "w": 156,
+   "h": 101,
+   "stop": null,
+   "note": "bottom 1.45 m (y241), 0.60 m tall"
+  },
+  {
+   "id": "wall_cupboard_2",
+   "kind": "wall",
+   "rect": [
+    1121,
+    140,
+    1277,
+    241
+   ],
+   "w": 156,
+   "h": 101,
+   "stop": null,
+   "note": "clear of right window (starts 1294)"
+  },
+  {
+   "id": "kettle",
+   "kind": "counter",
+   "rect": [
+    853,
+    284,
+    895,
+    326
+   ],
+   "w": 42,
+   "h": 42,
+   "stop": 874,
+   "note": "feet on y326"
+  },
+  {
+   "id": "toaster",
+   "kind": "counter",
+   "rect": [
+    1100,
+    292,
+    1152,
+    326
+   ],
+   "w": 52,
+   "h": 34,
+   "stop": 1126,
+   "note": "feet on y326"
+  },
+  {
+   "id": "mixer",
+   "kind": "counter",
+   "rect": [
+    1178,
+    267,
+    1242,
+    326
+   ],
+   "w": 64,
+   "h": 59,
+   "stop": 1210,
+   "note": "feet on y326"
+  },
+  {
+   "id": "prime_keeper",
+   "kind": "keeper",
+   "rect": [
+    982,
+    204,
+    1102,
+    502
+   ],
+   "w": 120,
+   "h": 298,
+   "stop": 1042,
+   "note": "NEVER scaled; soles y502; in front"
+  }
+ ]
+}
