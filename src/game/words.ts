@@ -62,6 +62,7 @@ const refuse = (h: Happening): string => {
   if (why === 'phone_none') return 'Everyone I know is already here!'
   if (why === 'broke' && h.id === 'upgrade') return 'We cannot afford that upgrade yet. Save up a bit more!'
   if (why === 'broke') return h.item ? `I cannot afford the ${foodById(h.item)?.label.toLowerCase() ?? 'that'}. Not enough credits.` : 'We have not got the credits for that today.'
+  if (why === 'overdrawn') return 'We are overdrawn. Nothing new until a good day gets us back above zero.'
   if (why === 'broken') return 'It is broken. I need to repair it first.'
   if (why === 'notready') return 'Nothing is ready to pick. Water the garden first.'
   if (why === 'pizza_pending') return 'We have already ordered one. Be patient!'
@@ -93,6 +94,10 @@ export function tell(h: Happening, s: State): Told {
   switch (h.kind) {
     case 'dawn':
       return { diary: `Day ${s.day}. ${t}. A fresh start.`, say: s.day === 1 ? 'Morning! What shall we do today?' : `Good morning! A new day. ${h.amount ? `We have ${h.amount} fresh credits.` : ''}` }
+    case 'bills':
+      return { diary: `${t} Paid ${h.amount} credits of bills for power and heating.`, tone: 'info' }
+    case 'overdrawn':
+      return { say: `Oh dear, we are ${Math.abs(h.amount ?? 0)} credits overdrawn. Let's have a really good day to pay it back.`, diary: `${t} Overdrawn by ${Math.abs(h.amount ?? 0)} credits. He looked worried.`, tone: 'bad' }
     case 'chose': {
       const def = h.id ? interactionById(h.id) : undefined
       if (h.id === 'react') return { diary: `${t} He felt like doing something silly.`, say: undefined }

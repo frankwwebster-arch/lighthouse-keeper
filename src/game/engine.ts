@@ -48,6 +48,7 @@ import {
 import type { Quiz } from './quiz'
 import { countEvents, eventsOf, floorCount, freshMissions, goalTarget, insertFloor, isMiddleFloor, objectAvailable, openMissions, rewardOf, type MissionState } from './missions'
 import type { ChatQ } from './chat'
+import { OVERDRAWN_WORRY, billFor, payOvernight, type DayBill } from './bills'
 
 // ─── What a game is ──────────────────────────────────────────────────────────
 
@@ -112,9 +113,9 @@ export type HKind =
   | 'dawn' | 'chose' | 'done' | 'refuse' | 'moan' | 'caller' | 'caller_met' | 'caller_gone' | 'visitor_left'
   | 'horn' | 'ship' | 'storm' | 'thunder' | 'dusk' | 'lamp_lit' | 'lamp_out' | 'spotted' | 'bed' | 'annoyed'
   | 'ring' | 'friend_coming' | 'pizza_ordered' | 'pizza_arrived' | 'pet' | 'bought' | 'locked' | 'react' | 'quiz' | 'chat'
-  | 'credits' | 'breakdown' | 'repaired' | 'upgraded' | 'mission_done' | 'unlocked'
+  | 'credits' | 'breakdown' | 'repaired' | 'upgraded' | 'mission_done' | 'unlocked' | 'bills' | 'overdrawn'
 
-export type RefuseWhy = 'missing' | 'storm' | 'nobody' | 'early' | 'quiz' | 'bursting' | 'grumpy' | 'phone_busy' | 'phone_mood' | 'phone_none' | 'empty' | 'broke' | 'broken' | 'notready' | 'pizza_pending' | 'stuck'
+export type RefuseWhy = 'missing' | 'storm' | 'nobody' | 'early' | 'quiz' | 'bursting' | 'grumpy' | 'phone_busy' | 'phone_mood' | 'phone_none' | 'empty' | 'broke' | 'broken' | 'notready' | 'pizza_pending' | 'stuck' | 'overdrawn'
 
 export interface Happening {
   n: number
@@ -156,6 +157,8 @@ export interface DayResult {
   shipSafe: boolean
   /** What the next morning's allowance will be. */
   allowance: number
+  /** Tonight's bills, paid before the allowance arrives (missing in saves from before bills). */
+  bills?: DayBill
 }
 
 /** A question waiting for an answer. */
@@ -442,7 +445,7 @@ function fitUpgrade(s: State, id: ObjectId, price: number, isGift: boolean): Sta
 export function upgrade(s: State, id: ObjectId): State {
   const up = nextUpgrade(s, id)
   if (!up || !objectAvailable(s, id)) return s
-  if (s.credits < up.price) return note(s, { kind: 'refuse', id: 'upgrade', why: 'broke', item: id })
+  if (s.credits < up.price) return note(s, { kind: 'refuse', id: 'upgrade', why: s.credits < 0 ? 'overdrawn' : 'broke', item: id })
   return fitUpgrade(s, id, up.price, false)
 }
 
@@ -579,7 +582,7 @@ function begin(s: State, o: Order, by: 'player' | 'self', sulky: boolean): State
   }
   if (id === 'phone_pizza') {
     if (s.pizzaAt !== null) return refuse('pizza_pending')
-    if (s.credits < priceOf(s, foodById('pizza')!)) return refuse('broke')
+    if (s.credits < priceOf(s, foodById('pizza')!)) return refuse(s.credits < 0 ? 'overdrawn' : 'broke')
   }
   if (id === 'garden_pick' && s.garden.ready <= 0) return refuse('notready')
   if (id === 'fridge_snack' || id === 'cooker_cook') {
@@ -934,7 +937,7 @@ export function buy(s: State, foodId: string): State {
   const food = foodById(foodId)
   if (!food || food.cost <= 0 || food.kind === 'takeaway' || !shopOpen(s)) return s
   const cost = priceOf(s, food)
-  if (s.credits < cost) return note(s, { kind: 'refuse', id: 'shop_buy', why: 'broke', item: foodId })
+  if (s.credits < cost) return note(s, { kind: 'refuse', id: 'shop_buy', why: s.credits < 0 ? 'overdrawn' : 'broke', item: foodId })
   return note({ ...s, credits: s.credits - cost, items: { ...s.items, [foodId]: (s.items[foodId] ?? 0) + 1 } }, { kind: 'bought', item: foodId, amount: cost })
 }
 
@@ -1020,7 +1023,7 @@ export function dayResult(s: State): DayResult {
     return { id, avg: Math.round(avg), green: avg >= s.rules.greenAt }
   })
   const greens = needs.filter((n) => n.green).length
-  return { day: s.day, score, rating: G.ratings.find((r) => score >= r.from)!.id, parts, mood: Math.round(mood), needs, greens, shipSafe, allowance: allowanceFor(s.rules, greens) }
+  return { day: s.day, score, rating: G.ratings.find((r) => score >= r.from)!.id, parts, mood: Math.round(mood), needs, greens, shipSafe, allowance: allowanceFor(s.rules, greens), bills: billFor(s) }
 }
 
 /** The next morning. Yesterday's score sets today's allowance. */
@@ -1030,7 +1033,8 @@ export function nextDay(s: State): State {
   const { plan, visits, rng } = planDay(s.rng)
   const O = G.overnight
   const allowance = last?.allowance ?? s.rules.allowanceBase
-  const saved = Math.min(s.rules.carryCap, s.credits)
+  const bill = last?.bills?.total ?? 0
+  const credits = payOvernight(s.credits, allowance, bill, s.rules)
   const gardenGrows = s.garden.watered ? Math.min(3, s.garden.ready + 1) : s.garden.ready
   const next: State = {
     ...s,
@@ -1038,7 +1042,7 @@ export function nextDay(s: State): State {
     day: s.day + 1,
     clock: G.day.start,
     needs: { ...s.needs, energy: G.upgrades.bedEnergy[Math.min(tierOf(s, 'bed'), G.upgrades.bedEnergy.length) - 1], hunger: Math.max(O.hungerFloor, s.needs.hunger - O.hungerLoss), bladder: Math.min(s.needs.bladder, O.bladder), hygiene: clamp(s.needs.hygiene - O.hygieneLoss) },
-    spirits: s.spirits / 2,
+    spirits: Math.max(-G.mood.spiritsLimit, s.spirits / 2 - (credits < 0 ? OVERDRAWN_WORRY : 0)),
     doing: null,
     queue: [],
     idle: 0,
@@ -1050,7 +1054,7 @@ export function nextDay(s: State): State {
     visits,
     thunderAt: plan.storm ? plan.storm.from + 5 : Infinity,
     pet: { hunger: Math.max(35, s.pet.hunger - 20), fun: Math.max(35, s.pet.fun - 10), fright: 0 },
-    credits: saved + allowance,
+    credits,
     garden: { ready: gardenGrows, watered: false },
     phoneReadyAt: 0,
     ringing: null,
@@ -1061,7 +1065,10 @@ export function nextDay(s: State): State {
     tally: freshTally(),
     phase: 'day',
   }
-  return buildOvernight(note(next, { kind: 'dawn', amount: allowance }))
+  let woke = note(next, { kind: 'dawn', amount: allowance })
+  if (bill > 0) woke = note(woke, { kind: 'bills', amount: bill })
+  if (credits < 0) woke = note(woke, { kind: 'overdrawn', amount: credits })
+  return buildOvernight(woke)
 }
 
 // Keep these exports used (the screen reads them).

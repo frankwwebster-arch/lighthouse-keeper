@@ -248,12 +248,14 @@ describe('bedtime and the next day', () => {
     s = tick(s, 17 * 60)
     expect(s.phase).toBe('report')
     const greens = s.history[0].greens
+    const bill = s.history[0].bills?.total ?? 0
     const credits = s.credits
     s = nextDay(s)
     expect(s.phase).toBe('day')
     expect(s.day).toBe(2)
     expect(s.clock).toBe(G.day.start)
-    expect(s.credits).toBe(Math.min(s.rules.carryCap, credits) + allowanceFor(s.rules, greens))
+    expect(bill).toBeGreaterThan(0)
+    expect(s.credits).toBe(Math.min(s.rules.carryCap, credits - bill) + allowanceFor(s.rules, greens))
     expect(s.needs.energy).toBe(G.upgrades.bedEnergy[0])
     expect(s.prompt).toBeNull()
   })

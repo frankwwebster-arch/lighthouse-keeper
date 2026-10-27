@@ -169,7 +169,7 @@ Supports proper meals, visitors, celebrations and table-setting challenges. The 
 
 A small, reassuring lighthouse bank where the keeper can move credits out of his spending purse and into savings. Saved money earns a modest amount of interest after several completed in-game days, rewarding patience without making waiting more profitable than playing.
 
-The room can include a brass counter, coin scales, deposit tubes, a chunky safe and a savings book that visibly fills with stamps. The account balance, next interest date and expected interest should always be shown plainly. Deposits and withdrawals are allowed without punishment; there are no loans, debt, overdrafts, gambling or real financial products.
+The room can include a brass counter, coin scales, deposit tubes, a chunky safe and a savings book that visibly fills with stamps. The account balance, next interest date and expected interest should always be shown plainly. Deposits and withdrawals are allowed without punishment; the bank never lends, gambles or offers real financial products. (Since 27 Oct 2026 the keeper can go gently overdrawn when a day does not pay the nightly bills; see `docs/DECISIONS.md`, “Bills and a gentle overdraft”.)
 
 Possible activities and challenges:
 

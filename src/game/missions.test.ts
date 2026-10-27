@@ -69,7 +69,7 @@ describe('missions in the game', () => {
     s = morning(s)
     expect(s.unlocked).toEqual(['aquarium'])
     expect(s.arriving).toEqual([])
-    expect(s.happenings.map((h) => h.kind)).toEqual(['dawn', 'unlocked'])
+    expect(s.happenings.map((h) => h.kind)).toEqual(['dawn', 'bills', 'unlocked'])
     expect(objectAvailable(s, 'tank')).toBe(true)
   })
 

@@ -28,6 +28,9 @@ function clean(r: Record<string, unknown>) {
     missionReward: clampNum(r.missionReward, 0, 999, 10),
     missionGoals,
     missionRewards,
+    billsOn: r.billsOn !== false,
+    billScale: clampNum(r.billScale, 0, 300, 100),
+    overdraftLimit: clampNum(r.overdraftLimit, 0, 999, 20),
   }
 }
 
