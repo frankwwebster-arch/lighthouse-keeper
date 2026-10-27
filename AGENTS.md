@@ -1,5 +1,7 @@
 # Lighthouse Keeper: notes for coding agents (Codex and others)
 
+> **Vercel guard (Frank, 27 Oct):** never deploy to show review art; deploy only when `docs/SPEC.md` section 19 has a GO'd DEPLOY note, at most once per day. No GIFs or review images over ~2 MB committed. See the guard in `docs/SPEC.md`.
+
 > **Shared spec (Frank, 26 Oct 2026):** `docs/SPEC.md` is the single working spec and the shared channel between Codex and Claude. `git pull` and read it before every task; where it conflicts with older rules below or with `docs/CODEX_BRIEF.md`, the spec wins. Follow its "Shared channel" rules to update it and leave notes for Claude in its section 19.
 
 **Deployment is manual.** Pushing to `main` does not deploy. Vercel builds only
