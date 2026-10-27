@@ -1,0 +1,250 @@
+{
+ "module": [
+  2048,
+  576
+ ],
+ "stops": [
+  370,
+  454,
+  538,
+  622,
+  706,
+  790,
+  874,
+  958,
+  1042,
+  1126,
+  1210,
+  1294,
+  1378,
+  1462,
+  1546,
+  1630,
+  1714,
+  1798,
+  1882,
+  1966
+ ],
+ "items": [
+  {
+   "id": "doorbell",
+   "kind": "wall",
+   "rect": [
+    184,
+    236,
+    240,
+    292
+   ],
+   "w": 56,
+   "h": 56,
+   "stop": null,
+   "note": "t1 bell on the back wall beside the LEFT door (rings when a visitor knocks; t2 intercom, t3 Door-o-Matic)"
+  },
+  {
+   "id": "hat_stand",
+   "kind": "freestanding",
+   "rect": [
+    286,
+    166,
+    454,
+    485
+   ],
+   "w": 168,
+   "h": 319,
+   "stop": 370,
+   "note": "hat and coat stand (1.0 m wide with gear, 1.9 m): oilskin + sou'wester, winter coat + woolly hat + scarf as separate garment sprites, hidden while worn"
+  },
+  {
+   "id": "boot_bench",
+   "kind": "freestanding",
+   "rect": [
+    454,
+    409,
+    622,
+    485
+   ],
+   "w": 168,
+   "h": 76,
+   "stop": 538,
+   "note": "1.0 m bench (seat 0.45 m); wellies and snow boots beneath as separate sprites, hidden while worn; t1 boot rack"
+  },
+  {
+   "id": "weather_instrument",
+   "kind": "wall",
+   "rect": [
+    674,
+    190,
+    738,
+    300
+   ],
+   "w": 64,
+   "h": 110,
+   "stop": 706,
+   "note": "t1 thermometer (t2 barometer): checked before going out"
+  },
+  {
+   "id": "shoe_station",
+   "kind": "freestanding",
+   "rect": [
+    790,
+    355,
+    958,
+    485
+   ],
+   "w": 168,
+   "h": 130,
+   "stop": 874,
+   "note": "boot-cleaning station: scraper, brushes, polish box (1.0 m)"
+  },
+  {
+   "id": "clothes_airer",
+   "kind": "wall",
+   "rect": [
+    1126,
+    40,
+    1462,
+    150
+   ],
+   "w": 336,
+   "h": 110,
+   "stop": null,
+   "note": "t1 ceiling pulley airer (Sheila Maid): washing and wet outdoor gear hang here to dry (slow); keeper walks beneath. t2 replaces it with a tumble dryer on the floor"
+  },
+  {
+   "id": "washing_machine",
+   "kind": "freestanding",
+   "rect": [
+    1546,
+    334,
+    1714,
+    485
+   ],
+   "w": 168,
+   "h": 151,
+   "stop": 1630,
+   "note": "1.0 x 0.9 m front-loader-style twin-tub (t1); status lamp"
+  },
+  {
+   "id": "laundry_basket",
+   "kind": "counter",
+   "rect": [
+    1588,
+    284,
+    1672,
+    334
+   ],
+   "w": 84,
+   "h": 50,
+   "stop": 1630,
+   "note": "wicker basket sitting on top of the washing machine"
+  },
+  {
+   "id": "hand_basin",
+   "kind": "freestanding",
+   "rect": [
+    1722,
+    334,
+    1882,
+    485
+   ],
+   "w": 160,
+   "h": 151,
+   "stop": 1798,
+   "note": "basin on a painted vanity cabinet; mirror above (wall)"
+  },
+  {
+   "id": "mirror",
+   "kind": "wall",
+   "rect": [
+    1752,
+    200,
+    1852,
+    290
+   ],
+   "w": 100,
+   "h": 90,
+   "stop": null,
+   "note": ""
+  },
+  {
+   "id": "wc_sign",
+   "kind": "wall",
+   "rect": [
+    1892,
+    250,
+    1940,
+    280
+   ],
+   "w": 48,
+   "h": 30,
+   "stop": null,
+   "note": "'WC' sign on the RIGHT side-wall door (the loo behind it)"
+  },
+  {
+   "id": "prime_keeper",
+   "kind": "keeper",
+   "rect": [
+    190,
+    204,
+    310,
+    502
+   ],
+   "w": 120,
+   "h": 298,
+   "stop": null,
+   "note": "scale; the LEFT side-wall door leads to the hallway with the stairs AND the front door"
+  }
+ ],
+ "upgradeSlots": [
+  {
+   "id": "DOORBELL t3 Door-o-Matic (periscope + bell-pull)",
+   "rect": [
+    160,
+    60,
+    286,
+    312
+   ],
+   "maxHeightPx": 252
+  },
+  {
+   "id": "BOOT BENCH t3 Boot-Buffing Machine",
+   "rect": [
+    454,
+    149,
+    622,
+    485
+   ],
+   "maxHeightPx": 336
+  },
+  {
+   "id": "WEATHER t3 Weather Engine (wall)",
+   "rect": [
+    640,
+    100,
+    840,
+    360
+   ],
+   "maxHeightPx": 260
+  },
+  {
+   "id": "AIRER t2 Tumble dryer (floor, 1.0 x 0.9 m; status lamp)",
+   "rect": [
+    1378,
+    334,
+    1546,
+    485
+   ],
+   "maxHeightPx": 336
+  },
+  {
+   "id": "LAUNDRY t3 Laundry Engine (absorbs the airer)",
+   "rect": [
+    1126,
+    32,
+    1714,
+    485
+   ],
+   "maxHeightPx": 453
+  }
+ ]
+}

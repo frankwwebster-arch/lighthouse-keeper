@@ -13,6 +13,7 @@ Room-unlocking contraptions: Weather Engine (thermometer → barometer → satel
 |---|---|---|---|---|
 | Doorbell (wall, beside the left door; the front door itself is never seen) | Bell | Intercom | DOOR-O-MATIC: periscope, bell-pull and pulleys that open the front door for visitors | see visitors sooner; visitors wait longer |
 | Washing machine | Twin-tub | Front-loader | LAUNDRY ENGINE: mangle rollers and a pulley line that carries washing out to the line | faster, bigger loads, hangs washing itself |
+| Drying | Ceiling airer (Sheila Maid) | Tumble dryer (replaces the airer) | none of its own: the LAUNDRY ENGINE takes over drying | wet clothes and gear wearable again sooner |
 | Weather instrument (on the wall near the left door: check the weather before going out) | Thermometer | Barometer | WEATHER ENGINE: satellite dish on an aerial mast up the wall, ticker tape printing the forecast, needles and flashing bulbs ⇒ **UNLOCKS WEATHER STATION** | earlier and clearer storm warnings |
 | Boot rack | Boot rack | Boot-drying rack | BOOT-BUFFING MACHINE: spinning brushes that clean and polish boots | no mud tracked in (less cleaning) |
 
