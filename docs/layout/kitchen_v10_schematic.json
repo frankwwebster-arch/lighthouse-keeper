@@ -1,0 +1,454 @@
+{
+ "module": [
+  2048,
+  576
+ ],
+ "vanishingPoint": [
+  1024,
+  250
+ ],
+ "stops": [
+  370,
+  454,
+  538,
+  622,
+  706,
+  790,
+  874,
+  958,
+  1042,
+  1126,
+  1210,
+  1294,
+  1378,
+  1462,
+  1546,
+  1630,
+  1714,
+  1798,
+  1882,
+  1966
+ ],
+ "items": [
+  {
+   "id": "back_wall",
+   "kind": "shell",
+   "rect": [
+    160,
+    32,
+    1888,
+    460
+   ],
+   "w": 1728,
+   "h": 428,
+   "stop": null,
+   "note": "flat cream plaster; skirting"
+  },
+  {
+   "id": "floor_band",
+   "kind": "shell",
+   "rect": [
+    0,
+    460,
+    2048,
+    544
+   ],
+   "w": 2048,
+   "h": 84,
+   "stop": null,
+   "note": "honey timber boards"
+  },
+  {
+   "id": "window_L",
+   "kind": "shell",
+   "rect": [
+    622,
+    106,
+    790,
+    274
+   ],
+   "w": 168,
+   "h": 168,
+   "stop": null,
+   "note": ""
+  },
+  {
+   "id": "window_R",
+   "kind": "shell",
+   "rect": [
+    1294,
+    106,
+    1462,
+    274
+   ],
+   "w": 168,
+   "h": 168,
+   "stop": null,
+   "note": ""
+  },
+  {
+   "id": "clock",
+   "kind": "wall",
+   "rect": [
+    430,
+    100,
+    490,
+    160
+   ],
+   "w": 60,
+   "h": 60,
+   "stop": null,
+   "note": "shows game time"
+  },
+  {
+   "id": "calendar",
+   "kind": "wall",
+   "rect": [
+    430,
+    175,
+    490,
+    245
+   ],
+   "w": 60,
+   "h": 70,
+   "stop": null,
+   "note": "shows game day"
+  },
+  {
+   "id": "spice_rack",
+   "kind": "wall",
+   "rect": [
+    516,
+    196,
+    606,
+    240
+   ],
+   "w": 90,
+   "h": 44,
+   "stop": null,
+   "note": "small wall shelf of jars"
+  },
+  {
+   "id": "wall_cupboard_1",
+   "kind": "wall",
+   "rect": [
+    806,
+    140,
+    962,
+    241
+   ],
+   "w": 156,
+   "h": 101,
+   "stop": null,
+   "note": "decorative"
+  },
+  {
+   "id": "wall_cupboard_2",
+   "kind": "wall",
+   "rect": [
+    1121,
+    140,
+    1277,
+    241
+   ],
+   "w": 156,
+   "h": 101,
+   "stop": null,
+   "note": "decorative"
+  },
+  {
+   "id": "runA_endcap_L",
+   "kind": "worktop",
+   "rect": [
+    392,
+    317,
+    404,
+    348
+   ],
+   "w": 12,
+   "h": 31,
+   "stop": null,
+   "note": "tapered (exposed end)"
+  },
+  {
+   "id": "fridge",
+   "kind": "fitted",
+   "rect": [
+    404,
+    348,
+    504,
+    485
+   ],
+   "w": 100,
+   "h": 137,
+   "stop": 454,
+   "note": "under-counter; OPENS (separate door, full interior)"
+  },
+  {
+   "id": "cupboard_A1",
+   "kind": "fitted",
+   "rect": [
+    504,
+    348,
+    622,
+    485
+   ],
+   "w": 118,
+   "h": 137,
+   "stop": null,
+   "note": "fixed front"
+  },
+  {
+   "id": "sink_cabinet",
+   "kind": "fitted",
+   "rect": [
+    622,
+    348,
+    790,
+    485
+   ],
+   "w": 168,
+   "h": 137,
+   "stop": 706,
+   "note": "Belfast; bowl+taps insert on worktop; under left window"
+  },
+  {
+   "id": "cupboard_A2",
+   "kind": "fitted",
+   "rect": [
+    790,
+    348,
+    979,
+    485
+   ],
+   "w": 189,
+   "h": 137,
+   "stop": null,
+   "note": "fixed front"
+  },
+  {
+   "id": "runA_worktop",
+   "kind": "worktop",
+   "rect": [
+    404,
+    317,
+    979,
+    348
+   ],
+   "w": 575,
+   "h": 31,
+   "stop": null,
+   "note": "one strip; right end square"
+  },
+  {
+   "id": "cooker",
+   "kind": "slot-in",
+   "rect": [
+    979,
+    149,
+    1105,
+    485
+   ],
+   "w": 126,
+   "h": 336,
+   "stop": 1042,
+   "note": "hob y317-334; grill box y149-215; OVEN DOOR OPENS"
+  },
+  {
+   "id": "cupboard_B1",
+   "kind": "fitted",
+   "rect": [
+    1105,
+    348,
+    1231,
+    485
+   ],
+   "w": 126,
+   "h": 137,
+   "stop": null,
+   "note": "fixed; replaced by range t2 (979-1231)"
+  },
+  {
+   "id": "cupboard_B2",
+   "kind": "fitted",
+   "rect": [
+    1231,
+    348,
+    1462,
+    485
+   ],
+   "w": 231,
+   "h": 137,
+   "stop": null,
+   "note": "fixed; nothing on top under the window"
+  },
+  {
+   "id": "runB_worktop",
+   "kind": "worktop",
+   "rect": [
+    1105,
+    317,
+    1462,
+    348
+   ],
+   "w": 357,
+   "h": 31,
+   "stop": null,
+   "note": "one strip; left end square"
+  },
+  {
+   "id": "runB_endcap_R",
+   "kind": "worktop",
+   "rect": [
+    1462,
+    317,
+    1474,
+    348
+   ],
+   "w": 12,
+   "h": 31,
+   "stop": null,
+   "note": "tapered (exposed end)"
+  },
+  {
+   "id": "dresser",
+   "kind": "freestanding",
+   "rect": [
+    1476,
+    149,
+    1616,
+    485
+   ],
+   "w": 140,
+   "h": 336,
+   "stop": 1546,
+   "note": "counter shelf y334; plates above"
+  },
+  {
+   "id": "larder",
+   "kind": "freestanding",
+   "rect": [
+    1654,
+    132,
+    1774,
+    485
+   ],
+   "w": 120,
+   "h": 353,
+   "stop": 1714,
+   "note": "2.10 m; OPENS (separate door; jars, tins, bread, flour, veg)"
+  },
+  {
+   "id": "bin",
+   "kind": "freestanding",
+   "rect": [
+    1777,
+    384,
+    1819,
+    485
+   ],
+   "w": 42,
+   "h": 101,
+   "stop": 1798,
+   "note": "enamel pedal bin"
+  },
+  {
+   "id": "bread_bin",
+   "kind": "counter",
+   "rect": [
+    508,
+    286,
+    568,
+    326
+   ],
+   "w": 60,
+   "h": 40,
+   "stop": 538,
+   "note": "on cupboard A1"
+  },
+  {
+   "id": "draining_rack",
+   "kind": "counter",
+   "rect": [
+    794,
+    288,
+    844,
+    326
+   ],
+   "w": 50,
+   "h": 38,
+   "stop": null,
+   "note": "beside the sink"
+  },
+  {
+   "id": "teapot",
+   "kind": "counter",
+   "rect": [
+    852,
+    290,
+    896,
+    326
+   ],
+   "w": 44,
+   "h": 36,
+   "stop": 874,
+   "note": "Brown Betty + cups: pour a cup of tea"
+  },
+  {
+   "id": "mixer",
+   "kind": "counter",
+   "rect": [
+    1094,
+    267,
+    1158,
+    326
+   ],
+   "w": 64,
+   "h": 59,
+   "stop": 1126,
+   "note": "stand mixer on cupboard B1"
+  },
+  {
+   "id": "radio",
+   "kind": "counter",
+   "rect": [
+    1180,
+    288,
+    1240,
+    326
+   ],
+   "w": 60,
+   "h": 38,
+   "stop": 1210,
+   "note": "INTERACTIVE: weather forecast / music; status lamp"
+  },
+  {
+   "id": "toaster",
+   "kind": "counter",
+   "rect": [
+    1520,
+    300,
+    1572,
+    334
+   ],
+   "w": 52,
+   "h": 34,
+   "stop": 1546,
+   "note": "on the dresser's counter shelf"
+  },
+  {
+   "id": "prime_keeper",
+   "kind": "keeper",
+   "rect": [
+    478,
+    204,
+    598,
+    502
+   ],
+   "w": 120,
+   "h": 298,
+   "stop": 538,
+   "note": "never scaled; soles y502"
+  }
+ ]
+}
