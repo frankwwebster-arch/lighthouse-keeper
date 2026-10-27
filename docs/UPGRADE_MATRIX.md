@@ -36,6 +36,7 @@ Room-unlocking contraptions: Weather Engine (thermometer → barometer → satel
 | TV (CRT family) | Old box telly | Big wooden-cabinet colour telly | TELEVISOR: valve-lit cabinet on brass gimbals with twin aerials ⇒ **UNLOCKS CINEMA** | more fun per show; film nights |
 | Bookshelf | Wobbly shelf | Proper bookcase | LIBRARY ENGINE: rolling ladder and a book-fetching arm ⇒ **UNLOCKS LIBRARY** | reading hints for quizzes |
 | Armchair | Old armchair | Rocking chair | RECLINE-O-MATIC: lever footrest and a tea-holding arm | rest recovers more energy |
+| Radio (music) | Crackly valve radio | Big wireless | RADIOGRAM ENGINE: radio and record player with an automatic record-changing arm | music lifts his mood; more tunes |
 | Piano | Old upright piano | Polished upright piano | PIANOLA ENGINE: self-playing with punched paper rolls ⇒ **UNLOCKS MUSIC ROOM** | visitors ask him to play |
 
 ## Bedroom and en-suite (always beneath the lamp room)
@@ -43,6 +44,7 @@ Room-unlocking contraptions: Weather Engine (thermometer → barometer → satel
 |---|---|---|---|---|
 | Bed | Creaky single bed | Comfy double bed | SLEEP ENGINE four-poster: canopy, automatic curtains, bedside tea-maker | wakes with more energy |
 | Telephone | Old dial phone | Push-button phone | TELEPHONIC EXCHANGE: little switchboard with plugs and lights | ring friends more often; friends arrive sooner |
+| Radio alarm (basic asset, no upgrades) | Bedside radio alarm | — | — | wakes him in the morning; electrical (status lamp) |
 | Desk | Little desk | Writing bureau | INVENTOR'S DESK: drafting arm, magnifier, sparking gizmos ⇒ **UNLOCKS WORKSHOP** | links to workshop gadgets |
 | Basin | Chipped basin | Pedestal basin | BRUSH-O-MATIC: a mirror on a swinging arm and a toothbrush rinser | quicker morning wash |
 | Bath | Tin bath | Roll-top bath | BUBBLE ENGINE: bellows that froth the bath | washing cheers him up |

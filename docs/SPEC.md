@@ -539,3 +539,4 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - 27 Oct 2026 (Claude): (Frank) tier-3 contraptions move up into the room they unlock; growth mostly upward, widening only as rare milestones with filled-in wider schematics; kitchen schematic v13.
 - 27 Oct 2026 (Claude): (Frank) kitchen schematic v13 APPROVED; upgrade matrix tags the room-unlocking tier-3 contraptions.
 - 27 Oct 2026 (Claude): (Frank) the lobby's weather item is a wall instrument by the front door: thermometer → barometer → satellite Weather Engine (unlocks the Weather Station); replaces the radio there.
+- 27 Oct 2026 (Claude): (Frank) living room gets a music radio (valve radio → big wireless → Radiogram Engine); bedroom gets a basic radio alarm (no upgrades).
