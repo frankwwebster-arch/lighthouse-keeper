@@ -1,0 +1,67 @@
+{
+  "schema": "lighthouse-keeper/kitchen-proof-v7-precut@1",
+  "status": "review-only-awaiting-frank",
+  "cuttingPerformed": false,
+  "canonMutation": false,
+  "runtimeMutation": false,
+  "selectedSource": {
+    "file": "sources/kitchen-v7-free-pass-05-final.png",
+    "canvasPx": [2169, 725],
+    "sha256": "a3e028122b974828c0c1a9c20413e8748527b327d7a69c2e3972706c6d69cd54"
+  },
+  "geometry": {
+    "modulePx": [2048, 576],
+    "scalePxPerM": 168,
+    "walkY": 502,
+    "ceilingBandY": [0, 32],
+    "floorSlabY": [544, 576],
+    "floorBandY": [460, 544],
+    "leftJambPx": [0, 208, 32, 544],
+    "rightJambPx": [2016, 208, 2048, 544],
+    "walkInZoneX": [32, 328],
+    "stopCount": 20,
+    "stopFormula": "370 + 84 * (n - 1)",
+    "windows": [[622, 106, 790, 274], [1294, 106, 1462, 274]],
+    "paneRects": [
+      [632, 116, 701, 185], [711, 116, 780, 185],
+      [632, 195, 701, 264], [711, 195, 780, 264],
+      [1304, 116, 1373, 185], [1383, 116, 1452, 185],
+      [1304, 195, 1373, 264], [1383, 195, 1452, 264]
+    ]
+  },
+  "keeper": {
+    "file": "review/kitchen-proof-v3/sources/prime/keeper_prime_master-neutral-standing-side-right_f1.png",
+    "sourceCanvasPx": [256, 320],
+    "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+    "scale": 1.0,
+    "soleDatumY": 316,
+    "roomSoleY": 502,
+    "roomRootX": 250
+  },
+  "styleReferences": {
+    "approvedCalibrationSha256": "99efc21c386422683f734d2d8dd559a5bcebba43e933b1a272360965420de7a5",
+    "mood01Sha256": "324a3c48e7c4df044f4fc571680563526c1cf27d1c0709c8ca7b08e7e7588d34",
+    "cookerReferenceSha256": "a7575cdc4750c66254980fbeaa9ef7af433ca9485d19e8492fe3985ef0e3fff4",
+    "v7OvenAuthoritySha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+  },
+  "checks": {
+    "exactMagentaPixels": 38088,
+    "nearMagentaPixels": 0,
+    "magentaOutsidePaneRects": 0,
+    "windowStructureRestoredAfterGeneration": true,
+    "primeCompositedUnscaled": true,
+    "partsDirectoryPresent": false,
+    "statusBezelsVisibleAndUnlit": ["fridge", "cooker", "kettle", "toaster", "mixer"],
+    "nonElectricalItemsWithoutStatusBezel": ["sink", "diner-table", "diner-chairs", "pedal-bin"]
+  },
+  "files": {
+    "sources/structural-shell-2x.png": {"canvasPx": [4096, 1152], "bytes": 16468, "sha256": "b894412271ac49011374ab36f250dbfd54b21cd85fd8ace11dd72fbd66664cc3"},
+    "sources/kitchen-v7-free-pass-01.png": {"canvasPx": [2170, 725], "bytes": 1388554, "sha256": "8fbfa91a334cc8978d2530a71aaa475aaca05463ed3c9f5e44a22f21cbea80aa"},
+    "sources/kitchen-v7-free-pass-02.png": {"canvasPx": [2169, 725], "bytes": 1388667, "sha256": "a4f1725df2441beae2eef3df4765a67ee56b4f0ea6c5c0739317d91dc8657c1a"},
+    "sources/kitchen-v7-free-pass-03.png": {"canvasPx": [2169, 725], "bytes": 1506509, "sha256": "48f5ef92211dd81cb0d5c6537196cc01ffcaf8f2d7f8063e9fce2aeaa609cff8"},
+    "sources/kitchen-v7-free-pass-04-final.png": {"canvasPx": [2169, 725], "bytes": 1482157, "sha256": "52f05be8435db81e7737a433b41086d248d468e57e43726b01d309a29f3fa391"},
+    "sources/kitchen-v7-free-pass-05-final.png": {"canvasPx": [2169, 725], "bytes": 1532734, "sha256": "a3e028122b974828c0c1a9c20413e8748527b327d7a69c2e3972706c6d69cd54"},
+    "outputs/kitchen-v7-free-room-with-prime-precut.png": {"canvasPx": [2048, 576], "bytes": 985189, "sha256": "f115eaf3cf3828e510cbb623cc521a8c000413710263d2097a22634ce42fc4cd"},
+    "outputs/calibration-vs-kitchen-v7-precut.png": {"canvasPx": [4096, 660], "bytes": 1809262, "sha256": "c06d441d84798d66c0f9303980d18e46e6f3c5f8d2165c1d233a246c8d0dcb27"}
+  }
+}
