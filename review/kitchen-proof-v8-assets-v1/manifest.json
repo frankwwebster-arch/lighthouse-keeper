@@ -1,0 +1,422 @@
+{
+  "schema": "lighthouse-keeper/kitchen-v8-day1-assets@1",
+  "status": "review-candidate",
+  "runtimeMutation": false,
+  "canonMutation": false,
+  "roomBuilt": false,
+  "standardUnitWidthPx": 126,
+  "futureRangeWidthPx": 252,
+  "futureRangeDrawn": false,
+  "approvedClosedMasterAuthority": "review/kitchen-proof-v8-style-test-v2",
+  "predecessorManifestSha256": "5263ee971c348fe5beb05f1040c28b910643806aa9a36cf4187646d9a9342157",
+  "items": [
+    "belfast_sink_cabinet",
+    "cream_larder_fridge",
+    "cream_toaster",
+    "enamel_electric_kettle",
+    "enamel_pedal_bin",
+    "old_school_cooker",
+    "painted_base_cupboard",
+    "painted_dresser",
+    "painted_wall_cupboard",
+    "scrubbed_pine_table",
+    "stand_mixer",
+    "wooden_chair_side"
+  ],
+  "sourceFiles": {
+    "sources/selected/cream_larder_fridge-pass-01.png": {
+      "canvasPx": [
+        1049,
+        1499
+      ],
+      "bytes": 900754,
+      "sha256": "cb1462afd2d78001760958bbe9935d3aa0ed1419ae8e679109b4963d158d5b80"
+    },
+    "sources/selected/cream_larder_fridge.png": {
+      "canvasPx": [
+        1049,
+        1499
+      ],
+      "bytes": 1137860,
+      "sha256": "1820af6f9415f0134dcff81659abee3ebb4531be4f211bd1cbb2f27bca25ca61"
+    },
+    "sources/selected/cream_toaster.png": {
+      "canvasPx": [
+        1387,
+        1134
+      ],
+      "bytes": 952818,
+      "sha256": "2cefcab9040fec30f024c531ee37d72465d099515e299a9074ae98e71db17025"
+    },
+    "sources/selected/enamel_electric_kettle.png": {
+      "canvasPx": [
+        1148,
+        1370
+      ],
+      "bytes": 769302,
+      "sha256": "77c0ac4dea4341c93e72d1cb2aaf1c166fc1d78787763bf47c5b154e7e35bd6f"
+    },
+    "sources/selected/enamel_pedal_bin.png": {
+      "canvasPx": [
+        848,
+        1855
+      ],
+      "bytes": 656792,
+      "sha256": "b19bef57168065f3842782f5b6c86cfd306bd9527954cef8fcf4d226cf8b9bf3"
+    },
+    "sources/selected/painted_base_cupboard.png": {
+      "canvasPx": [
+        1049,
+        1499
+      ],
+      "bytes": 942499,
+      "sha256": "0ffd2fd88f27daa65d3e62aabaf42adac360c17f57ca6f5e1286cceb8ae82c8a"
+    },
+    "sources/selected/painted_wall_cupboard.png": {
+      "canvasPx": [
+        1374,
+        1145
+      ],
+      "bytes": 886737,
+      "sha256": "980879bd914e40d50e1b49e1444b055c38311018cd75c80ab0b30d64adb4846a"
+    },
+    "sources/selected/scrubbed_pine_table.png": {
+      "canvasPx": [
+        1642,
+        958
+      ],
+      "bytes": 551091,
+      "sha256": "fc79b87a8c787b63ab7cf56f31888e2f7f1d138616824249e3a9f629f08c7a40"
+    },
+    "sources/selected/stand_mixer.png": {
+      "canvasPx": [
+        1142,
+        1377
+      ],
+      "bytes": 962617,
+      "sha256": "b52a0c670687bbee558591981fdd4ba03c523cdf5e9cecde297dea406bdd342c"
+    },
+    "sources/selected/wooden_chair_side.png": {
+      "canvasPx": [
+        937,
+        1679
+      ],
+      "bytes": 538697,
+      "sha256": "ab5ff2f1d8d3696e442264003e05b91d960f301cd9cf1cb676ed92203c1caa82"
+    },
+    "sources/layers/cooker_body_open.png": {
+      "canvasPx": [
+        1024,
+        1536
+      ],
+      "bytes": 1470296,
+      "sha256": "450259e69e7672cb66797e2c30d115dc898a8598bff896fad2a5da440a97e044"
+    },
+    "sources/layers/cooker_door.png": {
+      "canvasPx": [
+        1093,
+        1439
+      ],
+      "bytes": 802244,
+      "sha256": "84bf65bf664e515115491737885e3c8cae1d319aa607796bec6b58fe579c7857"
+    },
+    "sources/layers/cottage_pie_burnt.png": {
+      "canvasPx": [
+        1536,
+        1024
+      ],
+      "bytes": 1553662,
+      "sha256": "66aaff872848765778229dfdcc48a1b78d6c1123a2fa3d96fe4ed6be6489dd3d"
+    },
+    "sources/layers/cottage_pie_cooking.png": {
+      "canvasPx": [
+        1536,
+        1024
+      ],
+      "bytes": 1413547,
+      "sha256": "afe07e5b4f22cf44e8a19b0ca8a2dd47276d28b87e7d7ac7dee00f7fd6243659"
+    },
+    "sources/layers/fridge_body_open.png": {
+      "canvasPx": [
+        1049,
+        1499
+      ],
+      "bytes": 1197390,
+      "sha256": "b569dc6cf2e1f3d875ce9d8d3a7aa02de6dfd97b5af76f7fa4977b0de3c6a7e8"
+    },
+    "sources/layers/fridge_door.png": {
+      "canvasPx": [
+        1144,
+        1375
+      ],
+      "bytes": 974458,
+      "sha256": "8a24efa77ebcdea97fb5cdb2abd3330fc90fefac16ebd3d734a6d67e244c4b61"
+    }
+  },
+  "files": {
+    "outputs/belfast_sink_cabinet-1x.png": {
+      "canvasPx": [
+        168,
+        211
+      ],
+      "bytes": 30743,
+      "sha256": "ac38e75e5ac990e6234b675789faa556c7af0e40a592c73f5f118ebc63b52927"
+    },
+    "outputs/cream_larder_fridge-1x.png": {
+      "canvasPx": [
+        126,
+        180
+      ],
+      "bytes": 16066,
+      "sha256": "100ac347abf2e672ba0f7a2fdf7c8e00e907ba693405100b852b436d58a6b308"
+    },
+    "outputs/cream_toaster-1x.png": {
+      "canvasPx": [
+        55,
+        45
+      ],
+      "bytes": 3491,
+      "sha256": "0d2902e8f97cc6cb6b5ab6f3f97a2d0e2fa4f949c5ffaece5df5778f76dbcf90"
+    },
+    "outputs/enamel_electric_kettle-1x.png": {
+      "canvasPx": [
+        52,
+        62
+      ],
+      "bytes": 5033,
+      "sha256": "7f8052fd9d9c9757d66ad8edf0686422bf49ad6e5a87d05d9bb26b40dd58fed0"
+    },
+    "outputs/enamel_pedal_bin-1x.png": {
+      "canvasPx": [
+        42,
+        92
+      ],
+      "bytes": 3980,
+      "sha256": "f19106f4122ef0e0c2fe15cbc09dc59cb0d19a99aec0bc1437170ee7976ede40"
+    },
+    "outputs/kitchen-v8-complete-assets-three-scale.png": {
+      "canvasPx": [
+        2900,
+        2360
+      ],
+      "bytes": 1017780,
+      "sha256": "076dbda0f1d772a99e402204e55a81c0377aac32e7abaa1fef89f51967238338"
+    },
+    "outputs/kitchen-v8-complete-day1-assets-1x.png": {
+      "canvasPx": [
+        2300,
+        1050
+      ],
+      "bytes": 335490,
+      "sha256": "30189e495f8ad4e9299731abce3cf5a904b582d45b37615cb0ff9d622c99f87f"
+    },
+    "outputs/kitchen-v8-registered-layers-review.png": {
+      "canvasPx": [
+        2400,
+        1300
+      ],
+      "bytes": 256031,
+      "sha256": "ebf9cc661dc042a352a9203184b70c01fe5da19f522f900ea2d25193831435cc"
+    },
+    "outputs/kitchen-v8-status-lamps-review.png": {
+      "canvasPx": [
+        1900,
+        700
+      ],
+      "bytes": 97923,
+      "sha256": "23ac39406d8fddcfb85b66d21e5c19f4b876195d2b145a20fe17968a417c1403"
+    },
+    "outputs/old_school_cooker-1x.png": {
+      "canvasPx": [
+        126,
+        252
+      ],
+      "bytes": 35364,
+      "sha256": "1c5ae1bc5376134701233db87c1c9a179feebd43fcae1b7c417cecc2a5ff448b"
+    },
+    "outputs/painted_base_cupboard-1x.png": {
+      "canvasPx": [
+        126,
+        180
+      ],
+      "bytes": 17928,
+      "sha256": "1c1c0655d75775af18525fcd38d85053033d90f171d19345a421f8573ec86437"
+    },
+    "outputs/painted_dresser-1x.png": {
+      "canvasPx": [
+        150,
+        355
+      ],
+      "bytes": 62255,
+      "sha256": "33f0ccef6d91fe6bc169750289bf971f7bf7fdd3cdd01f18fe8bfb4884ba35a5"
+    },
+    "outputs/painted_wall_cupboard-1x.png": {
+      "canvasPx": [
+        126,
+        105
+      ],
+      "bytes": 12610,
+      "sha256": "2ae62f2d0beb04ae40bda9b7e0b52b37bf74b7e418511161ddddc04554995a94"
+    },
+    "outputs/scrubbed_pine_table-1x.png": {
+      "canvasPx": [
+        252,
+        147
+      ],
+      "bytes": 20494,
+      "sha256": "5abfd9652bf14cfcc3a8bcbce5ad3c15f0f349553f1dbff5dbbceda5d185f9b2"
+    },
+    "outputs/stand_mixer-1x.png": {
+      "canvasPx": [
+        68,
+        82
+      ],
+      "bytes": 8782,
+      "sha256": "ef42c01db80b892c42687a56a7a58166ff21e093f7f2c67c1fef4031ee2fd6d9"
+    },
+    "outputs/states/cooker_body_open-1x.png": {
+      "canvasPx": [
+        126,
+        252
+      ],
+      "bytes": 40622,
+      "sha256": "0c2e82ed7a93210c1bcf6fd9f8f527534d1bd7de8dcca99d549ff2a8d33ba8ca"
+    },
+    "outputs/states/cooker_closed_registered-1x.png": {
+      "canvasPx": [
+        126,
+        252
+      ],
+      "bytes": 38118,
+      "sha256": "00f6cedb44cbaceb3876197e7d1b59c1327f0ccd6fd1ca58b50278440bc2d63d"
+    },
+    "outputs/states/cooker_contents_burnt-1x.png": {
+      "canvasPx": [
+        80,
+        34
+      ],
+      "bytes": 5795,
+      "sha256": "8c9f2a10aa8be847ad2b42e44553404b03e01740c6099547bc1e5b94fd094227"
+    },
+    "outputs/states/cooker_contents_cooking-1x.png": {
+      "canvasPx": [
+        80,
+        34
+      ],
+      "bytes": 5815,
+      "sha256": "c01aa791acc09731d3d8d8d82faa44a2806d2c0d6e0db707a080e0b71b5e77e0"
+    },
+    "outputs/states/cooker_door-1x.png": {
+      "canvasPx": [
+        126,
+        252
+      ],
+      "bytes": 11179,
+      "sha256": "c816e4f3c8978a92bb3c58ed397bc35ef97100f409327b1c7460b67d6f96fc00"
+    },
+    "outputs/states/cooker_open_lit_burnt-1x.png": {
+      "canvasPx": [
+        126,
+        252
+      ],
+      "bytes": 42372,
+      "sha256": "f0b1a511baf197df4130cdb21d88fe9838b1d4898d0fa2e059781ce64cbb30e9"
+    },
+    "outputs/states/cooker_open_lit_cooking-1x.png": {
+      "canvasPx": [
+        126,
+        252
+      ],
+      "bytes": 42446,
+      "sha256": "0f2ceaf5a8f3a79bc3acf703924af535d94640cfd772a69ceb453108e2a28fba"
+    },
+    "outputs/states/cooker_oven_light_on-1x.png": {
+      "canvasPx": [
+        126,
+        252
+      ],
+      "bytes": 465,
+      "sha256": "9be5d24f466e987393771809bd7b3bfaa64664886db871562393bd34b4ba8181"
+    },
+    "outputs/states/cream_larder_fridge_status_on-1x.png": {
+      "canvasPx": [
+        126,
+        180
+      ],
+      "bytes": 291,
+      "sha256": "ea5e79a1fd261a1c0b4d5782fd62f4edb0484e961f34f72ab40869cc6323d3c0"
+    },
+    "outputs/states/cream_toaster_status_on-1x.png": {
+      "canvasPx": [
+        55,
+        45
+      ],
+      "bytes": 194,
+      "sha256": "f17463fc267ec0460c741fbea84c32f814f7bcae70b16b60085258f54498e263"
+    },
+    "outputs/states/enamel_electric_kettle_status_on-1x.png": {
+      "canvasPx": [
+        52,
+        62
+      ],
+      "bytes": 196,
+      "sha256": "1e848b8dcbc88d999a2947d20867baab2e445460eb54be873242bafdb942b823"
+    },
+    "outputs/states/fridge_body_open-1x.png": {
+      "canvasPx": [
+        126,
+        180
+      ],
+      "bytes": 26520,
+      "sha256": "f80f8c1507a6d0526f30e154bc6feba0618a8e4a841c98464d284e7aad54297f"
+    },
+    "outputs/states/fridge_closed_registered-1x.png": {
+      "canvasPx": [
+        126,
+        180
+      ],
+      "bytes": 15384,
+      "sha256": "ba5fcd89cc67f6cf76eeec1534921e1306d255be726305e71ea75c176dbdf64e"
+    },
+    "outputs/states/fridge_door-1x.png": {
+      "canvasPx": [
+        126,
+        180
+      ],
+      "bytes": 10504,
+      "sha256": "b49203b5b5db6f4bb5eced7ce009c333245a615177126f98db24562c1e56938e"
+    },
+    "outputs/states/old_school_cooker_status_on-1x.png": {
+      "canvasPx": [
+        126,
+        252
+      ],
+      "bytes": 326,
+      "sha256": "d0d8a46d9014c3f33a42344de1d4b7c4200b8754aa83748404c791490313613d"
+    },
+    "outputs/states/stand_mixer_status_on-1x.png": {
+      "canvasPx": [
+        68,
+        82
+      ],
+      "bytes": 207,
+      "sha256": "155e2d4b5f82501a28676cb67faff57c8d72e4c58ca54bd9e4145b37b8253dd0"
+    },
+    "outputs/wooden_chair_side-1x.png": {
+      "canvasPx": [
+        84,
+        151
+      ],
+      "bytes": 10898,
+      "sha256": "78ad17b521043dc2045f718a5c8c0e86c37b7c3a12ad8aedab861b998d915fb5"
+    },
+    "outputs/wooden_chair_side_mirrored-1x.png": {
+      "canvasPx": [
+        84,
+        151
+      ],
+      "bytes": 10900,
+      "sha256": "2d96c00b8c257b893db366639947824e62d98ac29f810acd7a1375f9b1b2911f"
+    }
+  }
+}

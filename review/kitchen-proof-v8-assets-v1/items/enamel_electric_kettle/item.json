@@ -1,0 +1,19 @@
+{
+  "schema": "lighthouse-keeper/kitchen-item@1",
+  "id": "enamel_electric_kettle",
+  "status": "review-candidate",
+  "anchor": "bottom-left",
+  "canvasPx": [
+    52,
+    62
+  ],
+  "quantity": 1,
+  "states": {
+    "master": "../../outputs/enamel_electric_kettle-1x.png"
+  },
+  "statusLightPointPx": [
+    46,
+    50
+  ],
+  "engineDrawsStatusLight": true
+}

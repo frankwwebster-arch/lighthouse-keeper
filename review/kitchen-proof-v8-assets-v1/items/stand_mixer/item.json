@@ -1,0 +1,19 @@
+{
+  "schema": "lighthouse-keeper/kitchen-item@1",
+  "id": "stand_mixer",
+  "status": "review-candidate",
+  "anchor": "bottom-left",
+  "canvasPx": [
+    68,
+    82
+  ],
+  "quantity": 1,
+  "states": {
+    "master": "../../outputs/stand_mixer-1x.png"
+  },
+  "statusLightPointPx": [
+    56,
+    60
+  ],
+  "engineDrawsStatusLight": true
+}

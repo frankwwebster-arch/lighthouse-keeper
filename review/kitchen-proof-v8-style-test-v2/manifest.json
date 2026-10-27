@@ -1,0 +1,67 @@
+{
+  "schema": "lighthouse-keeper/kitchen-v8-style-test@2",
+  "status": "review-only-frank-endorsed-source",
+  "stepCompleted": 1,
+  "fullRoomBuilt": false,
+  "runtimeMutation": false,
+  "canonMutation": false,
+  "predecessor": {
+    "file": "review/kitchen-proof-v8-style-test/manifest.json",
+    "sha256": "96e1d8b6cc04b8e68309c550361899fbc6e2449bc786c00fa89241521006e0ef"
+  },
+  "styleAuthority": {
+    "file": "review/kitchen-proof-v3-rebuild/sources/v7-oven-authority.png",
+    "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538"
+  },
+  "subjectReference": {
+    "file": "reference/kitchen-mood/kitchen-mood-07-cooker.png",
+    "sha256": "a7575cdc4750c66254980fbeaa9ef7af433ca9485d19e8492fe3985ef0e3fff4"
+  },
+  "primeKeeper": {
+    "file": "review/kitchen-proof-v3/sources/prime/keeper_prime_master-neutral-standing-side-right_f1.png",
+    "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+    "canvasPx": [256, 320],
+    "scale": 1.0,
+    "soleDatumY": 316
+  },
+  "selectedSources": {
+    "belfast_sink_cabinet": {
+      "file": "sources/sink-pass-02-final.png",
+      "bytes": 1091570,
+      "sha256": "e034f63b9d355c0b1275bd104ae3aa005e1d4bd4dd5958d3a9a3565612a7deaf"
+    },
+    "painted_dresser": {
+      "file": "sources/dresser-pass-02-final.png",
+      "bytes": 1258056,
+      "sha256": "90277b1f8f80af0566f5056dd89ed72557989078c087ac24349c7be11dd4f8f8"
+    },
+    "old_school_cooker": {
+      "file": "sources/cooker-old-school-grill-pass-01-final.png",
+      "bytes": 1215860,
+      "sha256": "8b84503e77c37ee18d860b85affd659c49bce85aa7f9fe474651ca7ced997043"
+    }
+  },
+  "reviewCanvases": {
+    "outputs/belfast_sink_cabinet-1x.png": {"canvasPx": [168, 211], "bytes": 30743, "sha256": "ac38e75e5ac990e6234b675789faa556c7af0e40a592c73f5f118ebc63b52927"},
+    "outputs/painted_dresser-1x.png": {"canvasPx": [150, 355], "bytes": 62255, "sha256": "33f0ccef6d91fe6bc169750289bf971f7bf7fdd3cdd01f18fe8bfb4884ba35a5"},
+    "outputs/small_cream_cooker-1x.png": {"canvasPx": [126, 252], "bytes": 35364, "sha256": "1c5ae1bc5376134701233db87c1c9a179feebd43fcae1b7c417cecc2a5ff448b"},
+    "outputs/three-new-cottage-pieces-1x.png": {"canvasPx": [900, 384], "bytes": 137887, "sha256": "2e4fd7cb21dece912eaa841d7d4c57042cb97a2e5163e39d523c7d6c4dfda7d8"},
+    "outputs/kitchen-v8-three-piece-style-test.png": {"canvasPx": [1700, 650], "bytes": 227262, "sha256": "e2bb3277105c5435c53a8132182d46d4088251203478efefe6c101bcbb802ed2"},
+    "outputs/kitchen-v8-three-scale-review.png": {"canvasPx": [1900, 1660], "bytes": 674476, "sha256": "667d4d84f4088fffcf68eec311f4454dc501231b0d019aee09e51d4b62658e56"},
+    "outputs/kitchen-v8-cooker-correction-v2.png": {"canvasPx": [1400, 620], "bytes": 118302, "sha256": "5d0562db27b62ac422643835f9e8a55625e4e3748cec138fc49985050636362e"}
+  },
+  "checks": {
+    "exactMagentaPixelsInNewPieces": 0,
+    "nearMagentaPixelsInNewPieces": 0,
+    "transparentEdgeGutterPx": 2,
+    "standardUnitWidthPx": 126,
+    "cookerCanvasPx": [126, 252],
+    "cookerKnobs": 4,
+    "eyeLevelHoodAndGrill": true,
+    "cookerStatusBezel": "single-dark-unlit-engine-status-bezel",
+    "futureRangeWidthPx": 252,
+    "futureRangeDrawn": false,
+    "reviewScales": [2.0, 1.0, 0.125],
+    "itemsPromoted": false
+  }
+}

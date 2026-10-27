@@ -1,0 +1,16 @@
+{
+  "schema": "lighthouse-keeper/kitchen-item@1",
+  "id": "painted_base_cupboard",
+  "status": "review-candidate",
+  "anchor": "bottom-left",
+  "canvasPx": [
+    126,
+    180
+  ],
+  "standardUnitWidths": 1,
+  "quantity": 2,
+  "reuseSameBytes": true,
+  "states": {
+    "master": "../../outputs/painted_base_cupboard-1x.png"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "lighthouse-keeper/kitchen-item@1",
+  "id": "painted_dresser",
+  "status": "review-candidate",
+  "anchor": "bottom-left",
+  "canvasPx": [
+    150,
+    355
+  ],
+  "quantity": 1,
+  "states": {
+    "master": "../../outputs/painted_dresser-1x.png"
+  }
+}

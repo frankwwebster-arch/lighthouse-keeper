@@ -1,0 +1,15 @@
+{
+  "schema": "lighthouse-keeper/kitchen-item@1",
+  "id": "painted_wall_cupboard",
+  "status": "review-candidate",
+  "anchor": "bottom-left",
+  "canvasPx": [
+    126,
+    105
+  ],
+  "standardUnitWidths": 1,
+  "quantity": 1,
+  "states": {
+    "master": "../../outputs/painted_wall_cupboard-1x.png"
+  }
+}

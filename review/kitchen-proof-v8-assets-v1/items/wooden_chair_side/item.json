@@ -1,0 +1,15 @@
+{
+  "schema": "lighthouse-keeper/kitchen-item@1",
+  "id": "wooden_chair_side",
+  "status": "review-candidate",
+  "anchor": "bottom-left",
+  "canvasPx": [
+    84,
+    151
+  ],
+  "quantity": 2,
+  "states": {
+    "right": "../../outputs/wooden_chair_side-1x.png",
+    "left": "../../outputs/wooden_chair_side_mirrored-1x.png"
+  }
+}

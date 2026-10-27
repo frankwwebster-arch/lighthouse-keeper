@@ -1,0 +1,42 @@
+{
+  "schema": "lighthouse-keeper/kitchen-item@1",
+  "id": "old_school_cooker",
+  "status": "review-candidate",
+  "anchor": "bottom-left",
+  "canvasPx": [
+    126,
+    252
+  ],
+  "standardUnitWidths": 1,
+  "quantity": 1,
+  "states": {
+    "body": "../../outputs/states/cooker_body_open-1x.png",
+    "door": "../../outputs/states/cooker_door-1x.png",
+    "cookingContents": "../../outputs/states/cooker_contents_cooking-1x.png",
+    "burntContents": "../../outputs/states/cooker_contents_burnt-1x.png"
+  },
+  "door": {
+    "hinge": "bottom",
+    "pivotPx": [
+      63,
+      234
+    ]
+  },
+  "contentsOffsetPx": [
+    23,
+    193
+  ],
+  "lightRectPx": [
+    17,
+    178,
+    109,
+    231
+  ],
+  "statusLightPointPx": [
+    111,
+    156
+  ],
+  "controlKnobs": 4,
+  "engineDrawsOvenLight": true,
+  "engineDrawsStatusLight": true
+}

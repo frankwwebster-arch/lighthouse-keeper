@@ -1,0 +1,19 @@
+{
+  "schema": "lighthouse-keeper/kitchen-item@1",
+  "id": "cream_toaster",
+  "status": "review-candidate",
+  "anchor": "bottom-left",
+  "canvasPx": [
+    55,
+    45
+  ],
+  "quantity": 1,
+  "states": {
+    "master": "../../outputs/cream_toaster-1x.png"
+  },
+  "statusLightPointPx": [
+    37,
+    35
+  ],
+  "engineDrawsStatusLight": true
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "lighthouse-keeper/kitchen-item@1",
+  "id": "cream_larder_fridge",
+  "status": "review-candidate",
+  "anchor": "bottom-left",
+  "canvasPx": [
+    126,
+    180
+  ],
+  "standardUnitWidths": 1,
+  "quantity": 1,
+  "states": {
+    "body": "../../outputs/states/fridge_body_open-1x.png",
+    "door": "../../outputs/states/fridge_door-1x.png"
+  },
+  "door": {
+    "hinge": "right",
+    "pivotPx": [
+      120,
+      108
+    ]
+  },
+  "statusLightPointPx": [
+    111,
+    59
+  ],
+  "engineDrawsStatusLight": true
+}

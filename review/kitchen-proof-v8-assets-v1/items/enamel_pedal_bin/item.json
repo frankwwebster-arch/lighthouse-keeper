@@ -1,0 +1,14 @@
+{
+  "schema": "lighthouse-keeper/kitchen-item@1",
+  "id": "enamel_pedal_bin",
+  "status": "review-candidate",
+  "anchor": "bottom-left",
+  "canvasPx": [
+    42,
+    92
+  ],
+  "quantity": 1,
+  "states": {
+    "master": "../../outputs/enamel_pedal_bin-1x.png"
+  }
+}

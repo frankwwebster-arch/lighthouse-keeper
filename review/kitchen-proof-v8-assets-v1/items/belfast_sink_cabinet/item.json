@@ -1,0 +1,14 @@
+{
+  "schema": "lighthouse-keeper/kitchen-item@1",
+  "id": "belfast_sink_cabinet",
+  "status": "review-candidate",
+  "anchor": "bottom-left",
+  "canvasPx": [
+    168,
+    211
+  ],
+  "quantity": 1,
+  "states": {
+    "master": "../../outputs/belfast_sink_cabinet-1x.png"
+  }
+}

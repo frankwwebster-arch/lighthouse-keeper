@@ -1,0 +1,15 @@
+{
+  "schema": "lighthouse-keeper/kitchen-item@1",
+  "id": "scrubbed_pine_table",
+  "status": "review-candidate",
+  "anchor": "bottom-left",
+  "canvasPx": [
+    252,
+    147
+  ],
+  "standardUnitWidths": 2,
+  "quantity": 1,
+  "states": {
+    "master": "../../outputs/scrubbed_pine_table-1x.png"
+  }
+}
