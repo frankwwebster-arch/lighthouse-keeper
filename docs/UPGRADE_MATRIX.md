@@ -6,14 +6,14 @@ Design authority for upgrades once Frank approves it. The live game still reads 
 
 Names in CAPITALS are the tier-3 name plates. ⇒ **UNLOCKS …** marks a tier-3 contraption that opens a new themed floor at dawn and MOVES UP into it as the centrepiece; its old slot reverts to the tier-2 item (SPEC section 10b).
 
-Room-unlocking contraptions: Weather Engine (radio) → Weather Station · Pianola Engine → Music Room · Observatory Engine → Observatory · Library Engine → Library · Televisor → Cinema · Inventor's Desk → Workshop · Reef Engine → Aquarium · Greenhouse Engine → Greenhouse.
+Room-unlocking contraptions: Weather Engine (thermometer → barometer → satellite) → Weather Station · Pianola Engine → Music Room · Observatory Engine → Observatory · Library Engine → Library · Televisor → Cinema · Inventor's Desk → Workshop · Reef Engine → Aquarium · Greenhouse Engine → Greenhouse.
 
 ## Entrance lobby (ground floor)
 | Item | Tier 1 | Tier 2 | Tier 3 contraption | Perk direction |
 |---|---|---|---|---|
 | Front door | Old wooden door | Door with knocker and peephole | DOOR-O-MATIC: periscope, bell-pull and pulleys that swing it open for visitors | see visitors sooner; visitors wait longer |
 | Washing machine | Twin-tub | Front-loader | LAUNDRY ENGINE: mangle rollers and a pulley line that carries washing out to the line | faster, bigger loads, hangs washing itself |
-| Radio (by the front door: check the forecast before going out) | Crackly valve radio | Big wireless | WEATHER ENGINE (aerial mast, small satellite dish, ticker tape) ⇒ **UNLOCKS WEATHER STATION** | earlier and clearer storm warnings |
+| Weather instrument (on the wall by the front door: check the weather before going out) | Thermometer | Barometer | WEATHER ENGINE: satellite dish on an aerial mast up the wall, ticker tape printing the forecast, needles and flashing bulbs ⇒ **UNLOCKS WEATHER STATION** | earlier and clearer storm warnings |
 | Boot rack | Boot rack | Boot-drying rack | BOOT-BUFFING MACHINE: spinning brushes that clean and polish boots | no mud tracked in (less cleaning) |
 
 ## Kitchen (first floor) — agreed 27 Oct
@@ -68,7 +68,6 @@ Room-unlocking contraptions: Weather Engine (radio) → Weather Station · Piano
 | Item | Tier 1 | Tier 2 | Tier 3 contraption |
 |---|---|---|---|
 | Fish tank (until the Aquarium exists, it lives in the living room) | Small fish tank | Big tank | REEF ENGINE (bubbling pipework, feeding chute) ⇒ **UNLOCKS AQUARIUM** |
-| Barometer | Barometer | Weather instruments | STORM-PREDICTING ENGINE |
 | Workshop bench | Workbench | Gadget bench | ROBOT LAB |
 | Computer | Old computer | Gaming computer | SUPERCOMPUTER WALL |
 
