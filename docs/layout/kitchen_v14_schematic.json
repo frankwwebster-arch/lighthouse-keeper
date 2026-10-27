@@ -1,0 +1,422 @@
+{
+ "module": [
+  2048,
+  576
+ ],
+ "stops": [
+  370,
+  454,
+  538,
+  622,
+  706,
+  790,
+  874,
+  958,
+  1042,
+  1126,
+  1210,
+  1294,
+  1378,
+  1462,
+  1546,
+  1630,
+  1714,
+  1798,
+  1882,
+  1966
+ ],
+ "items": [
+  {
+   "id": "back_wall",
+   "kind": "shell",
+   "rect": [
+    160,
+    32,
+    1888,
+    460
+   ],
+   "w": 1728,
+   "h": 428,
+   "stop": null,
+   "note": ""
+  },
+  {
+   "id": "floor_band",
+   "kind": "shell",
+   "rect": [
+    0,
+    460,
+    2048,
+    544
+   ],
+   "w": 2048,
+   "h": 84,
+   "stop": null,
+   "note": ""
+  },
+  {
+   "id": "window_L",
+   "kind": "shell",
+   "rect": [
+    622,
+    106,
+    790,
+    274
+   ],
+   "w": 168,
+   "h": 168,
+   "stop": null,
+   "note": ""
+  },
+  {
+   "id": "window_R",
+   "kind": "shell",
+   "rect": [
+    1294,
+    106,
+    1462,
+    274
+   ],
+   "w": 168,
+   "h": 168,
+   "stop": null,
+   "note": ""
+  },
+  {
+   "id": "clock",
+   "kind": "wall",
+   "rect": [
+    200,
+    60,
+    260,
+    120
+   ],
+   "w": 60,
+   "h": 60,
+   "stop": null,
+   "note": "game time"
+  },
+  {
+   "id": "calendar",
+   "kind": "wall",
+   "rect": [
+    200,
+    140,
+    260,
+    210
+   ],
+   "w": 60,
+   "h": 70,
+   "stop": null,
+   "note": "game day"
+  },
+  {
+   "id": "fridge_t1",
+   "kind": "freestanding",
+   "rect": [
+    294,
+    183,
+    446,
+    485
+   ],
+   "w": 152,
+   "h": 302,
+   "stop": 370,
+   "note": "tall fridge-freezer 0.90 x 1.80 m; OPENS"
+  },
+  {
+   "id": "cupboard_A1",
+   "kind": "fitted",
+   "rect": [
+    446,
+    348,
+    622,
+    485
+   ],
+   "w": 176,
+   "h": 137,
+   "stop": null,
+   "note": "1.05 m double cupboard (part of fridge slot)"
+  },
+  {
+   "id": "sink_cabinet",
+   "kind": "fitted",
+   "rect": [
+    622,
+    348,
+    790,
+    485
+   ],
+   "w": 168,
+   "h": 137,
+   "stop": 706,
+   "note": "1.0 m Belfast, under left window; bin inside (empty bin here)"
+  },
+  {
+   "id": "dw_slot_cupboard",
+   "kind": "fitted",
+   "rect": [
+    790,
+    348,
+    958,
+    485
+   ],
+   "w": 168,
+   "h": 137,
+   "stop": null,
+   "note": "1.0 m; dishwasher slot (purchase)"
+  },
+  {
+   "id": "wall_cupboard_1",
+   "kind": "wall",
+   "rect": [
+    806,
+    140,
+    942,
+    241
+   ],
+   "w": 136,
+   "h": 101,
+   "stop": null,
+   "note": "belongs to dw-slot cabinet"
+  },
+  {
+   "id": "runA_worktop",
+   "kind": "worktop",
+   "rect": [
+    446,
+    317,
+    958,
+    348
+   ],
+   "w": 512,
+   "h": 31,
+   "stop": null,
+   "note": "square both ends"
+  },
+  {
+   "id": "teapot",
+   "kind": "counter",
+   "rect": [
+    852,
+    290,
+    896,
+    326
+   ],
+   "w": 44,
+   "h": 36,
+   "stop": 874,
+   "note": ""
+  },
+  {
+   "id": "cooker_t1",
+   "kind": "slot-in",
+   "rect": [
+    958,
+    149,
+    1126,
+    485
+   ],
+   "w": 168,
+   "h": 336,
+   "stop": 1042,
+   "note": "1.0 x 2.0 m; hob y317-334; grill box y149-215; OVEN OPENS"
+  },
+  {
+   "id": "cupboard_B1",
+   "kind": "fitted",
+   "rect": [
+    1126,
+    348,
+    1294,
+    485
+   ],
+   "w": 168,
+   "h": 137,
+   "stop": null,
+   "note": "1.0 m (part of cooker slot)"
+  },
+  {
+   "id": "wall_cupboard_2",
+   "kind": "wall",
+   "rect": [
+    1142,
+    140,
+    1278,
+    241
+   ],
+   "w": 136,
+   "h": 101,
+   "stop": null,
+   "note": "belongs to B1"
+  },
+  {
+   "id": "cupboard_B2",
+   "kind": "fitted",
+   "rect": [
+    1294,
+    348,
+    1462,
+    485
+   ],
+   "w": 168,
+   "h": 137,
+   "stop": null,
+   "note": "1.0 m, under right window"
+  },
+  {
+   "id": "runB_worktop",
+   "kind": "worktop",
+   "rect": [
+    1126,
+    317,
+    1462,
+    348
+   ],
+   "w": 336,
+   "h": 31,
+   "stop": null,
+   "note": "left square, right tapered"
+  },
+  {
+   "id": "runB_endcap_R",
+   "kind": "worktop",
+   "rect": [
+    1462,
+    317,
+    1474,
+    348
+   ],
+   "w": 12,
+   "h": 31,
+   "stop": null,
+   "note": ""
+  },
+  {
+   "id": "dresser",
+   "kind": "freestanding",
+   "rect": [
+    1490,
+    149,
+    1703,
+    485
+   ],
+   "w": 213,
+   "h": 336,
+   "stop": null,
+   "note": "1.27 x 2.0 m; counter shelf y334"
+  },
+  {
+   "id": "toaster",
+   "kind": "counter",
+   "rect": [
+    1520,
+    300,
+    1572,
+    334
+   ],
+   "w": 52,
+   "h": 34,
+   "stop": 1546,
+   "note": "on dresser counter"
+  },
+  {
+   "id": "mixer",
+   "kind": "counter",
+   "rect": [
+    1598,
+    275,
+    1662,
+    334
+   ],
+   "w": 64,
+   "h": 59,
+   "stop": 1630,
+   "note": "on dresser counter"
+  },
+  {
+   "id": "larder",
+   "kind": "freestanding",
+   "rect": [
+    1713,
+    166,
+    1883,
+    485
+   ],
+   "w": 170,
+   "h": 319,
+   "stop": 1798,
+   "note": "1.0 x 1.9 m; OPENS"
+  },
+  {
+   "id": "prime_keeper",
+   "kind": "keeper",
+   "rect": [
+    1150,
+    204,
+    1270,
+    502
+   ],
+   "w": 120,
+   "h": 298,
+   "stop": 1210,
+   "note": "scale"
+  }
+ ],
+ "upgradeSlots": [
+  {
+   "id": "FRIDGE slot",
+   "rect": [
+    294,
+    32,
+    622,
+    485
+   ]
+  },
+  {
+   "id": "HOT DRINKS t3 climbs",
+   "rect": [
+    790,
+    32,
+    958,
+    334
+   ]
+  },
+  {
+   "id": "DISHWASHER slot",
+   "rect": [
+    790,
+    348,
+    958,
+    485
+   ]
+  },
+  {
+   "id": "COOKER slot",
+   "rect": [
+    958,
+    32,
+    1294,
+    485
+   ]
+  },
+  {
+   "id": "ROBOCHEF (replaces dresser)",
+   "rect": [
+    1490,
+    32,
+    1703,
+    485
+   ]
+  },
+  {
+   "id": "LARDER t3",
+   "rect": [
+    1713,
+    32,
+    1883,
+    485
+   ]
+  }
+ ]
+}
