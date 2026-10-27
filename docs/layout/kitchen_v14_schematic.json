@@ -114,29 +114,29 @@
    "id": "fridge_t1",
    "kind": "freestanding",
    "rect": [
-    294,
+    286,
     183,
-    446,
+    454,
     485
    ],
-   "w": 152,
+   "w": 168,
    "h": 302,
    "stop": 370,
-   "note": "tall fridge-freezer 0.90 x 1.80 m; OPENS"
+   "note": "tall fridge-freezer 1.00 x 1.80 m; OPENS"
   },
   {
    "id": "cupboard_A1",
    "kind": "fitted",
    "rect": [
-    446,
+    454,
     348,
     622,
     485
    ],
-   "w": 176,
+   "w": 168,
    "h": 137,
    "stop": null,
-   "note": "1.05 m double cupboard (part of fridge slot)"
+   "note": "1.0 m double cupboard (part of fridge slot)"
   },
   {
    "id": "sink_cabinet",
@@ -184,12 +184,12 @@
    "id": "runA_worktop",
    "kind": "worktop",
    "rect": [
-    446,
+    454,
     317,
     958,
     348
    ],
-   "w": 512,
+   "w": 504,
    "h": 31,
    "stop": null,
    "note": "square both ends"
@@ -367,7 +367,7 @@
   {
    "id": "FRIDGE slot",
    "rect": [
-    294,
+    286,
     32,
     622,
     485
