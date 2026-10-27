@@ -367,20 +367,6 @@
    "note": "on cupboard A1"
   },
   {
-   "id": "draining_rack",
-   "kind": "counter",
-   "rect": [
-    794,
-    288,
-    844,
-    326
-   ],
-   "w": 50,
-   "h": 38,
-   "stop": null,
-   "note": "beside the sink"
-  },
-  {
    "id": "teapot",
    "kind": "counter",
    "rect": [
