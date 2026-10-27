@@ -88,9 +88,10 @@ Bottom to top:
 2. Boathouse (optional, LATER): at the waterline beneath the lobby; sea arch in its rightmost module; jetty runs from the arch.
 3. Entrance lobby with utility (laundry): fixed ground floor; its floor-slab top (module y 544) is exactly on the island ground line. Stair door in the left wall as on every floor; the front door on its back wall (section 3c); open-plan utility area; downstairs WC behind the right door.
 4. Kitchen: fixed first floor, directly above the lobby.
-5. Middle floors: saved random order (catalogue rule).
-6. Bedroom with en-suite: always directly beneath the lamp room.
-7. Lantern cap: always on top.
+5. Living room WITH THE DINING TABLE: ALWAYS the floor directly above the kitchen (Frank, 27 Oct). The keeper carries meals up one floor to eat; the kitchen has no table.
+6. Other middle floors: saved random order (catalogue rule), above the living room.
+7. Bedroom with en-suite: always directly beneath the lamp room.
+8. Lantern cap: always on top.
 
 Up to 20 above-ground floors. Day 1 = entrance lobby (with utility and downstairs WC), kitchen, living room, bedroom with en-suite, lantern cap.
 
@@ -508,3 +509,4 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - 27 Oct 2026 (Claude): absolute size table (shared worktop line y 334, table 0.76 m, chair seat 0.45 m, counter items on surfaces); symmetric shell with ordinary side-wall doors; room v2 drafted.
 - 27 Oct 2026 (Claude): (Frank) cooker overall height equals the dresser (2.0 m) with the grill at head height; hob and dresser counter stay on the shared worktop line.
 - 27 Oct 2026 (Claude): (Frank) exact layout template for the kitchen (docs/layout/kitchen_v9_layout.*), no Codex size/position choices; single continuous worktop per run with healing (square ends at slot-ins, tapers only at exposed ends).
+- 27 Oct 2026 (Claude): (Frank) dining table moves out of the kitchen; he always eats in the living room, which is always the floor directly above the kitchen; meals are carried up.
