@@ -1,0 +1,484 @@
+{
+ "module": [
+  2048,
+  576
+ ],
+ "stops": [
+  370,
+  454,
+  538,
+  622,
+  706,
+  790,
+  874,
+  958,
+  1042,
+  1126,
+  1210,
+  1294,
+  1378,
+  1462,
+  1546,
+  1630,
+  1714,
+  1798,
+  1882,
+  1966
+ ],
+ "items": [
+  {
+   "id": "back_wall",
+   "kind": "shell",
+   "rect": [
+    160,
+    32,
+    1888,
+    460
+   ],
+   "w": 1728,
+   "h": 428,
+   "stop": null,
+   "note": ""
+  },
+  {
+   "id": "floor_band",
+   "kind": "shell",
+   "rect": [
+    0,
+    460,
+    2048,
+    544
+   ],
+   "w": 2048,
+   "h": 84,
+   "stop": null,
+   "note": ""
+  },
+  {
+   "id": "window_L",
+   "kind": "shell",
+   "rect": [
+    622,
+    106,
+    790,
+    274
+   ],
+   "w": 168,
+   "h": 168,
+   "stop": null,
+   "note": ""
+  },
+  {
+   "id": "window_R",
+   "kind": "shell",
+   "rect": [
+    1294,
+    106,
+    1462,
+    274
+   ],
+   "w": 168,
+   "h": 168,
+   "stop": null,
+   "note": ""
+  },
+  {
+   "id": "fridge_t1",
+   "kind": "freestanding",
+   "rect": [
+    404,
+    183,
+    505,
+    485
+   ],
+   "w": 101,
+   "h": 302,
+   "stop": 454,
+   "note": "tall single fridge-freezer 1.80 m; OPENS"
+  },
+  {
+   "id": "cupboard_A1",
+   "kind": "fitted",
+   "rect": [
+    505,
+    348,
+    622,
+    485
+   ],
+   "w": 117,
+   "h": 137,
+   "stop": null,
+   "note": "part of fridge slot (goes when fridge upgraded)"
+  },
+  {
+   "id": "sink_cabinet",
+   "kind": "fitted",
+   "rect": [
+    622,
+    348,
+    790,
+    485
+   ],
+   "w": 168,
+   "h": 137,
+   "stop": 706,
+   "note": "Belfast, under left window"
+  },
+  {
+   "id": "dw_slot_cupboard",
+   "kind": "fitted",
+   "rect": [
+    790,
+    348,
+    891,
+    485
+   ],
+   "w": 101,
+   "h": 137,
+   "stop": null,
+   "note": "Day-1 cupboard; DISHWASHER slot (purchase)"
+  },
+  {
+   "id": "cupboard_A3",
+   "kind": "fitted",
+   "rect": [
+    891,
+    348,
+    979,
+    485
+   ],
+   "w": 88,
+   "h": 137,
+   "stop": null,
+   "note": "base cupboard; wall cupboard 1 above (part of it)"
+  },
+  {
+   "id": "wall_cupboard_1",
+   "kind": "wall",
+   "rect": [
+    806,
+    140,
+    962,
+    241
+   ],
+   "w": 156,
+   "h": 101,
+   "stop": null,
+   "note": "belongs to A3/dishwasher-slot cabinets"
+  },
+  {
+   "id": "runA_worktop",
+   "kind": "worktop",
+   "rect": [
+    505,
+    317,
+    979,
+    348
+   ],
+   "w": 474,
+   "h": 31,
+   "stop": null,
+   "note": "square both ends (fridge, cooker)"
+  },
+  {
+   "id": "teapot",
+   "kind": "counter",
+   "rect": [
+    938,
+    290,
+    978,
+    326
+   ],
+   "w": 40,
+   "h": 36,
+   "stop": 958,
+   "note": "HOT DRINKS: teapot -> coffee machine -> Grand Espresso"
+  },
+  {
+   "id": "cooker_t1",
+   "kind": "slot-in",
+   "rect": [
+    979,
+    149,
+    1105,
+    485
+   ],
+   "w": 126,
+   "h": 336,
+   "stop": 1042,
+   "note": "grill box y149-215; OVEN OPENS"
+  },
+  {
+   "id": "cupboard_B1",
+   "kind": "fitted",
+   "rect": [
+    1105,
+    348,
+    1231,
+    485
+   ],
+   "w": 126,
+   "h": 137,
+   "stop": null,
+   "note": "part of cooker slot; wall cupboard 2 above"
+  },
+  {
+   "id": "wall_cupboard_2",
+   "kind": "wall",
+   "rect": [
+    1121,
+    140,
+    1277,
+    241
+   ],
+   "w": 156,
+   "h": 101,
+   "stop": null,
+   "note": "belongs to B1; goes with the range"
+  },
+  {
+   "id": "cupboard_B2",
+   "kind": "fitted",
+   "rect": [
+    1231,
+    348,
+    1462,
+    485
+   ],
+   "w": 231,
+   "h": 137,
+   "stop": null,
+   "note": "under right window"
+  },
+  {
+   "id": "runB_worktop",
+   "kind": "worktop",
+   "rect": [
+    1105,
+    317,
+    1462,
+    348
+   ],
+   "w": 357,
+   "h": 31,
+   "stop": null,
+   "note": "left end square; right end tapered"
+  },
+  {
+   "id": "runB_endcap_R",
+   "kind": "worktop",
+   "rect": [
+    1462,
+    317,
+    1474,
+    348
+   ],
+   "w": 12,
+   "h": 31,
+   "stop": null,
+   "note": ""
+  },
+  {
+   "id": "spice_rack",
+   "kind": "wall",
+   "rect": [
+    1238,
+    196,
+    1288,
+    240
+   ],
+   "w": 50,
+   "h": 44,
+   "stop": null,
+   "note": "decor; B2 never climbs"
+  },
+  {
+   "id": "toaster",
+   "kind": "counter",
+   "rect": [
+    1352,
+    292,
+    1404,
+    326
+   ],
+   "w": 52,
+   "h": 34,
+   "stop": 1378,
+   "note": "below the sill; t3 catapult stays low"
+  },
+  {
+   "id": "dresser",
+   "kind": "freestanding",
+   "rect": [
+    1476,
+    149,
+    1616,
+    485
+   ],
+   "w": 140,
+   "h": 336,
+   "stop": 1546,
+   "note": "counter shelf y334; not upgradable"
+  },
+  {
+   "id": "radio",
+   "kind": "counter",
+   "rect": [
+    1516,
+    296,
+    1576,
+    334
+   ],
+   "w": 60,
+   "h": 38,
+   "stop": 1546,
+   "note": "on dresser counter; t3 Weather Engine mast climbs above the dresser"
+  },
+  {
+   "id": "mixer",
+   "kind": "counter",
+   "rect": [
+    1258,
+    267,
+    1322,
+    326
+   ],
+   "w": 64,
+   "h": 59,
+   "stop": 1294,
+   "note": "CONFLICT: t3 Baking Carousel hopper would rise into the right window"
+  },
+  {
+   "id": "larder",
+   "kind": "freestanding",
+   "rect": [
+    1654,
+    132,
+    1774,
+    485
+   ],
+   "w": 120,
+   "h": 353,
+   "stop": 1714,
+   "note": "OPENS"
+  },
+  {
+   "id": "bin",
+   "kind": "freestanding",
+   "rect": [
+    1777,
+    384,
+    1819,
+    485
+   ],
+   "w": 42,
+   "h": 101,
+   "stop": 1798,
+   "note": "t3 Compost Engine pipe into wall"
+  },
+  {
+   "id": "clock",
+   "kind": "wall",
+   "rect": [
+    1830,
+    60,
+    1880,
+    110
+   ],
+   "w": 50,
+   "h": 50,
+   "stop": null,
+   "note": "game time"
+  },
+  {
+   "id": "calendar",
+   "kind": "wall",
+   "rect": [
+    1830,
+    120,
+    1880,
+    190
+   ],
+   "w": 50,
+   "h": 70,
+   "stop": null,
+   "note": "game day"
+  },
+  {
+   "id": "prime_keeper",
+   "kind": "keeper",
+   "rect": [
+    230,
+    204,
+    350,
+    502
+   ],
+   "w": 120,
+   "h": 298,
+   "stop": null,
+   "note": "scale reference"
+  }
+ ],
+ "upgradeSlots": [
+  {
+   "id": "FRIDGE slot t2 American / t3 Frost Engine",
+   "rect": [
+    404,
+    32,
+    622,
+    485
+   ],
+   "note": "climbs to ceiling; never over window"
+  },
+  {
+   "id": "DISHWASHER slot (t3 Self-loader)",
+   "rect": [
+    790,
+    32,
+    891,
+    485
+   ],
+   "note": "climbs; takes wall cupboard 1"
+  },
+  {
+   "id": "HOT DRINKS t3 climbs",
+   "rect": [
+    891,
+    32,
+    979,
+    485
+   ],
+   "note": "takes wall cupboard 1"
+  },
+  {
+   "id": "COOKER slot t2 range / t3 Bake-o-Matic",
+   "rect": [
+    979,
+    32,
+    1231,
+    485
+   ],
+   "note": "climbs to ceiling"
+  },
+  {
+   "id": "RADIO t3 mast",
+   "rect": [
+    1476,
+    32,
+    1616,
+    485
+   ],
+   "note": "above dresser only"
+  },
+  {
+   "id": "LARDER t3 Pantry Lift",
+   "rect": [
+    1654,
+    32,
+    1774,
+    485
+   ],
+   "note": "climbs to ceiling"
+  }
+ ]
+}
