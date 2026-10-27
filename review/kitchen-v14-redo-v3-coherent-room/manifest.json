@@ -1,0 +1,106 @@
+{
+  "schema": "lighthouse-keeper/kitchen-v14-coherent-room-review@1",
+  "status": "review-candidate-awaiting-frank",
+  "previousDraft": "review/kitchen-v14-redo-v2",
+  "previousDraftStatus": "rejected-no-room-continuity",
+  "runtimeMutation": false,
+  "productionCutsMade": false,
+  "artMethod": "one complete room-wide OpenAI image-generation painting; code only uniformly scales, crops, masks, places approved painted references, assembles and verifies",
+  "modulePx": [
+    2048,
+    576
+  ],
+  "twoViewingScales": {
+    "room": [
+      2048,
+      576
+    ],
+    "lighthouse": [
+      256,
+      72
+    ]
+  },
+  "source": {
+    "path": "sources/imagegen/kitchen-v14-coherent-room-no-keeper.png",
+    "canvasPx": [
+      2172,
+      724
+    ],
+    "sha256": "404c4b095ee64b1b5ba37f5cea23d24081b0e1a6c70f824563e5edef93846e15",
+    "registration": {
+      "uniformScaleToPx": [
+        2048,
+        683
+      ],
+      "cropPx": [
+        0,
+        68,
+        2048,
+        644
+      ]
+    }
+  },
+  "approvedShellReuse": "exact ceiling and floor-slab boundary bands from sources/reference/kitchen-v8-room-shell-empty-1x.png",
+  "prime": {
+    "canvasPx": [
+      120,
+      298
+    ],
+    "anchorPx": [
+      1150,
+      204
+    ],
+    "sha256": "756f0a723c55997a3d5c38c625765b4077e7d959b7cd5827bcf69c17e27f4444"
+  },
+  "outputs": {
+    "kitchen-v14-v2-v3-continuity-comparison.png": {
+      "canvasPx": [
+        4300,
+        900
+      ],
+      "sha256": "e81697f5a198de0732c86b9c34c0ebe7618066c1a9b51875653ba0271b920105"
+    },
+    "kitchen-v14-v3-coherent-room-1x.png": {
+      "canvasPx": [
+        2048,
+        576
+      ],
+      "sha256": "509b4370ba4d62bfe5d6fff09c91b089488efd452964addda915eb1b5739aedf"
+    },
+    "kitchen-v14-v3-coherent-room-empty-1x.png": {
+      "canvasPx": [
+        2048,
+        576
+      ],
+      "sha256": "12ddae85e9dd5db68e97a173eeba2a5490a05c55ec67ab282124c2caf626a5a8"
+    },
+    "kitchen-v14-v3-geometry-comparison.png": {
+      "canvasPx": [
+        4300,
+        900
+      ],
+      "sha256": "a71956aad61ec327632c253429e2bf4d1ec7fc5f2f061c27938a9c5cc3760d6d"
+    },
+    "kitchen-v14-v3-prime-registered.png": {
+      "canvasPx": [
+        120,
+        298
+      ],
+      "sha256": "756f0a723c55997a3d5c38c625765b4077e7d959b7cd5827bcf69c17e27f4444"
+    },
+    "kitchen-v14-v3-two-viewing-scales.png": {
+      "canvasPx": [
+        2300,
+        980
+      ],
+      "sha256": "e6844ae847f473008aa75c7fa548afedeaeb2b5f1edfed4058d8df5cedb5f096"
+    },
+    "kitchen-v14-v3-v8-comparison.png": {
+      "canvasPx": [
+        4300,
+        900
+      ],
+      "sha256": "c87ef2c6beea39b5a0c492a9c369929f74d60670cc1474c4586976e44842f798"
+    }
+  }
+}
