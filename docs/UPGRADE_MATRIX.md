@@ -11,6 +11,7 @@ Names in CAPITALS are the tier-3 name plates.
 |---|---|---|---|---|
 | Front door | Old wooden door | Door with knocker and peephole | DOOR-O-MATIC: periscope, bell-pull and pulleys that swing it open for visitors | see visitors sooner; visitors wait longer |
 | Washing machine | Twin-tub | Front-loader | LAUNDRY ENGINE: mangle rollers and a pulley line that carries washing out to the line | faster, bigger loads, hangs washing itself |
+| Radio (by the front door: check the forecast before going out) | Crackly valve radio | Big wireless | WEATHER ENGINE (aerial mast, small satellite dish, ticker tape); may unlock the Weather Station room | earlier and clearer storm warnings |
 | Boot rack | Boot rack | Boot-drying rack | BOOT-BUFFING MACHINE: spinning brushes that clean and polish boots | no mud tracked in (less cleaning) |
 
 ## Kitchen (first floor) — agreed 27 Oct
@@ -19,7 +20,6 @@ Names in CAPITALS are the tier-3 name plates.
 | Cooker (double slot) | Old-school cooker with eye-level grill | Cottage range | BAKE-O-MATIC | cooks faster; two dishes at once; posh recipes |
 | Fridge (double slot) | Tall fridge-freezer | American-style double-door | FROST ENGINE | holds more; food keeps longer; ice |
 | Hot drinks | Brown Betty teapot | Coffee machine (teapot on its warmer) | GRAND ESPRESSO CONTRAPTION | more cheering; quicker |
-| Radio | Crackly valve radio | Big wireless | WEATHER ENGINE (aerial mast, small satellite dish, ticker tape) | earlier and clearer storm warnings |
 | Toaster | Two-slice toaster | Four-slice toaster | TOAST CATAPULT | faster breakfast; more filling |
 | Mixer | Stand mixer | Food processor | BAKING CAROUSEL | baking unlocked / faster |
 | Larder | Larder cupboard | Auto-restocking pantry | PANTRY LIFT | fewer shopping trips |
