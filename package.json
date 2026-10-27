@@ -189,6 +189,8 @@
     "verify:kitchen-approved-family": "node scripts/verify_kitchen_warm_family_v4.mjs",
     "build:kitchen-runtime": "node scripts/build_kitchen_runtime_v1.mjs",
     "verify:kitchen-runtime": "node scripts/build_kitchen_runtime_v1.mjs --check",
+    "build:kitchen-v8-room-shell": "node review/kitchen-proof-v8-room-shell-v1/build_room_shell.mjs",
+    "verify:kitchen-v8-room-shell": "node review/kitchen-proof-v8-room-shell-v1/verify_room_shell.mjs",
     "verify:kitchen-room-layout-review-v1": "node scripts/verify_kitchen_room_layout_review_v1.mjs",
     "build:kitchen-room-layout-review-v2": "node scripts/build_kitchen_room_layout_review_v2.mjs",
     "verify:kitchen-room-layout-review-v2": "node scripts/verify_kitchen_room_layout_review_v2.mjs",

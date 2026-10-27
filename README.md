@@ -5,8 +5,8 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 The current graphics authority is
 [`docs/CODEX_BRIEF.md`](docs/CODEX_BRIEF.md): bright, clean non-pixel 2D
 illustration; a completely flat orthographic side elevation; a straight-sided
-red-and-white tower with no taper; exact 1536 × 512 room modules derived from
-one master; and pure `#FF00FF` only for glass, sky, sea and other see-through
+red-and-white tower with no taper; exact 2048 × 576 room modules under the
+newer `docs/SPEC.md` geometry; and pure `#FF00FF` only for glass, sky, sea and other see-through
 areas. Codex produces all new game graphics; Makko is no longer used. Existing
 approved/runtime bytes remain unchanged until a separate migration is approved.
 
@@ -262,9 +262,17 @@ The current runtime still uses the first-generation room plates. The former
 exclusion and twelve 10.5-pixel intervals, is also superseded and must not be
 implemented as the new room shell. It remains useful registration evidence in
 [`docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`](docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md);
-new art uses the exact 1536 × 512 master grid in `docs/CODEX_BRIEF.md`. Any
+new art uses the exact 2048 × 576 grid in `docs/SPEC.md`. Any
 runtime migration must preserve approved historical bytes and receive a
 separate review.
+
+The Kitchen v8 room-shell review candidate is
+[`review/kitchen-proof-v8-room-shell-v1/`](review/kitchen-proof-v8-room-shell-v1/):
+an exact 2048 × 576 empty shell, furnished composition and three-scale sheet.
+Its two side-wall doors are at the stage front; its 168 × 168 windows use 1.11 m
+sills and 2.11 m heads with exact-magenta glass and zero furniture occlusion.
+It reuses the completed v8 furnishings and Prime Keeper unchanged, does not
+promote runtime art, and leaves the future 252 px range deferred and undrawn.
 
 The reversible movement-foundation and vertical-circulation batches are now
 immutable historical evidence. `/keeper-review/keeper-root-motion-gate-v2/`
@@ -818,10 +826,10 @@ must remain paused to avoid duplicate alerts.
 ## Current implementation
 
 The runtime notes below describe the currently shipped compatibility art. They
-do not override the new non-pixel 1536 × 512 authoring target, and no approved
+do not override the new non-pixel 2048 × 576 authoring target in `docs/SPEC.md`, and no approved
 asset byte changes until a separate versioned migration is reviewed.
 
-- Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The legacy runtime pixel batch still supplies the red/white shell bands and three 105 × 35 compatibility plates; interactive furniture remains separate. The new target instead derives every 1536 × 512 room shell from one master module. The toilet and wash basin are both in the en suite.
+- Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The legacy runtime pixel batch still supplies the red/white shell bands and three 105 × 35 compatibility plates; interactive furniture remains separate. The new target uses exact 2048 × 576 modules. Kitchen v8 shell v1 is review-only and has not replaced the installed legacy room. The toilet and wash basin are both in the en suite.
 - Future standard floors remain non-linear: kitchen anchors the base, lamp room stays topmost, bedroom stays directly below it, and each other floor receives a one-time random saved middle position. New tower art is straight-sided with no taper and may grow to three equal modules wide.
 - Missions run side by side, so floors arrive in any order; a finished floor appears the next morning in a random middle place that the save keeps (kitchen at the bottom, bedroom under the lamp room).
 - Every object renderer currently accepts `standard`, `on`, and `broken`; active gameplay drives `on`. New item masters must not bake broken, dirty or alert states into the item: the engine owns smoke, sparks, drips and other overlays. Existing compatibility sprites remain unchanged until migration. Add `?broken=tv,cooker` (or `?broken=all`) to the URL for the internal art-state preview.

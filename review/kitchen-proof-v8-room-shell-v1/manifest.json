@@ -1,0 +1,146 @@
+{
+  "schema": "lighthouse-keeper/kitchen-v8-room-shell@1",
+  "status": "review-candidate",
+  "runtimeMutation": false,
+  "canonMutation": false,
+  "modulePx": [
+    2048,
+    576
+  ],
+  "backWallLineY": 460,
+  "floorFrontY": 544,
+  "floorSlabPx": [
+    544,
+    576
+  ],
+  "walkY": 502,
+  "backWallSpanPx": [
+    290,
+    1995
+  ],
+  "windowBoundsPx": [
+    [
+      622,
+      106,
+      790,
+      274
+    ],
+    [
+      1294,
+      106,
+      1462,
+      274
+    ]
+  ],
+  "windowPanesPx": [
+    [
+      638,
+      122,
+      700,
+      185
+    ],
+    [
+      712,
+      122,
+      774,
+      185
+    ],
+    [
+      638,
+      197,
+      700,
+      258
+    ],
+    [
+      712,
+      197,
+      774,
+      258
+    ],
+    [
+      1310,
+      122,
+      1372,
+      185
+    ],
+    [
+      1384,
+      122,
+      1446,
+      185
+    ],
+    [
+      1310,
+      197,
+      1372,
+      258
+    ],
+    [
+      1384,
+      197,
+      1446,
+      258
+    ]
+  ],
+  "glassColor": "#FF00FF",
+  "doors": {
+    "left": "stage-front side wall",
+    "right": "stage-front side wall"
+  },
+  "primeKeeper": {
+    "file": "review/kitchen-proof-v3/sources/prime/keeper_prime_master-neutral-standing-side-right_f1.png",
+    "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+    "soleY": 502,
+    "stop": 8,
+    "centreX": 958
+  },
+  "furnitureAuthority": "review/kitchen-proof-v8-assets-v1",
+  "standardUnitWidthPx": 126,
+  "futureRangeWidthPx": 252,
+  "futureRangeDrawn": false,
+  "styleSources": {
+    "reference/shell/room-shell-reference-01.png": "c22746eb00777692c74e14d2ebe8c79eacf8f6b56b995440393905430bba5f7f",
+    "review/kitchen-proof-v8-room-shell-v1/sources/imagegen/room-shell-style-concept.png": "090d03176fcd8436a4aaafeac15698fa4500c6cb16d957f20c32ce581c3026f1"
+  },
+  "inputFiles": {
+    "review/kitchen-proof-v8-assets-v1/outputs/cream_larder_fridge-1x.png": "100ac347abf2e672ba0f7a2fdf7c8e00e907ba693405100b852b436d58a6b308",
+    "review/kitchen-proof-v8-assets-v1/outputs/belfast_sink_cabinet-1x.png": "ac38e75e5ac990e6234b675789faa556c7af0e40a592c73f5f118ebc63b52927",
+    "review/kitchen-proof-v8-assets-v1/outputs/painted_base_cupboard-1x.png": "1c1c0655d75775af18525fcd38d85053033d90f171d19345a421f8573ec86437",
+    "review/kitchen-proof-v8-assets-v1/outputs/old_school_cooker-1x.png": "1c5ae1bc5376134701233db87c1c9a179feebd43fcae1b7c417cecc2a5ff448b",
+    "review/kitchen-proof-v8-assets-v1/outputs/scrubbed_pine_table-1x.png": "5abfd9652bf14cfcc3a8bcbce5ad3c15f0f349553f1dbff5dbbceda5d185f9b2",
+    "review/kitchen-proof-v8-assets-v1/outputs/wooden_chair_side-1x.png": "78ad17b521043dc2045f718a5c8c0e86c37b7c3a12ad8aedab861b998d915fb5",
+    "review/kitchen-proof-v8-assets-v1/outputs/wooden_chair_side_mirrored-1x.png": "2d96c00b8c257b893db366639947824e62d98ac29f810acd7a1375f9b1b2911f",
+    "review/kitchen-proof-v8-assets-v1/outputs/painted_dresser-1x.png": "33f0ccef6d91fe6bc169750289bf971f7bf7fdd3cdd01f18fe8bfb4884ba35a5",
+    "review/kitchen-proof-v8-assets-v1/outputs/enamel_pedal_bin-1x.png": "f19106f4122ef0e0c2fe15cbc09dc59cb0d19a99aec0bc1437170ee7976ede40",
+    "review/kitchen-proof-v8-assets-v1/outputs/enamel_electric_kettle-1x.png": "7f8052fd9d9c9757d66ad8edf0686422bf49ad6e5a87d05d9bb26b40dd58fed0",
+    "review/kitchen-proof-v8-assets-v1/outputs/cream_toaster-1x.png": "0d2902e8f97cc6cb6b5ab6f3f97a2d0e2fa4f949c5ffaece5df5778f76dbcf90",
+    "review/kitchen-proof-v8-assets-v1/outputs/stand_mixer-1x.png": "ef42c01db80b892c42687a56a7a58166ff21e093f7f2c67c1fef4031ee2fd6d9",
+    "review/kitchen-proof-v8-assets-v1/outputs/painted_wall_cupboard-1x.png": "2ae62f2d0beb04ae40bda9b7e0b52b37bf74b7e418511161ddddc04554995a94"
+  },
+  "files": {
+    "outputs/kitchen-v8-room-shell-empty-1x.png": {
+      "canvasPx": [
+        2048,
+        576
+      ],
+      "bytes": 128841,
+      "sha256": "ab305e15adbe25a030a49c525a3dcb3768b9fb5fea6dfa5ffb4e8860a9057d88"
+    },
+    "outputs/kitchen-v8-room-furnished-1x.png": {
+      "canvasPx": [
+        2048,
+        576
+      ],
+      "bytes": 434225,
+      "sha256": "425d3b067995ed87990b6400e641c40a46af1d42c20b1fa2262a51dd6eced41d"
+    },
+    "outputs/kitchen-v8-room-three-scale.png": {
+      "canvasPx": [
+        4400,
+        2140
+      ],
+      "bytes": 1070090,
+      "sha256": "dc3e8d6911d61fd79d82ccdca7ea2af7879c498b467e0bdc52a19cc67c3db38b"
+    }
+  }
+}
