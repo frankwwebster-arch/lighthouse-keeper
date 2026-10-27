@@ -281,15 +281,22 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - The en-suite is a bathroom in bays 9–14 (section 3k) with basin, bath and shower; the WC is behind the right door. Bedroom proper: bays 1–8. Confirm in the Day-1 layout proof (D12).
 
 ### 10c. States
-- One master per item per tier, drawn in its OFF state. That is usually the ONLY full drawing the item ever needs.
+- **ABSOLUTE RULE — ONE IDENTICAL DRAWING, REPLACEABLE ELEMENTS ON TOP (Frank, 27 Oct).** Every item is ONE drawing, and that drawing is byte-identical in every state: off, on, in use, broken, being repaired. Nothing in the drawing ever changes for a state. No flapping or open doors for broken, no sagging, no scorch marks, no different knobs, no lit versions, no redrawn variants. Everything that changes is a separate, replaceable element positioned from points recorded in `item.json`, and almost all of it is drawn by the ENGINE, not by Codex:
+  - light behind glass (oven window, screens): `lightRectPx`, engine-drawn glow (see below);
+  - the STATUS LAMP on every electrical item: `statusLampPx`, engine-drawn dot (section 10d);
+  - fault effects (smoke, steam, sparks, drips, puddles, shake): `effectOriginPx` and the shared FX kit (section 10f);
+  - occupancy (keeper sitting, lying in bed): the keeper sprite placed at a recorded anchor.
+- The only drawn extras ever allowed are genuine moving parts needed for normal use (for example a fridge door opening when he takes food out). Each is a separate small sprite over the unchanged drawing, never a whole redraw, and it is never used to show a fault.
+- Verification: the item's drawing has ONE hash across all states; any state that changes the drawing's pixels fails the build.
+- One drawing per item per tier, in its neutral (off) appearance. It is the ONLY full drawing the item ever has.
 - LIGHT OVERLAYS replace drawn ON and FLASHING states. Any part of an item that lights up (oven window, fridge interior, lamp bulb, TV screen glow, radio dial, indicator LED) is a separate small overlay sprite with a declared rectangle in `item.json` (`lightOverlays[{id, file, rectPx}]`). The engine controls each overlay: `off`, `on` (steady), `pulse`, or `flicker` (random intervals and brightness). Example: the cooker is one OFF drawing plus one "oven window lit" overlay. No flicker frames are ever drawn.
 - PREFERRED LIGHT METHOD — ENGINE LIGHT BEHIND GLASS (Claude, 27 Oct; the overlay-registration problem behind the long-running broken-oven flicker): wherever a light sits behind glass (oven window, fridge interior seen through a door, TV screen, lamp glass), the item drawing leaves the glass as a see-through region (dark tinted glass at partial alpha, with the interior shelf/loaf drawn as line work on it) and records `lightRectPx` (the exact glass rectangle, or a mask file). The ENGINE draws the light itself BEHIND the drawing: a warm glow rectangle filling `lightRectPx`, steady for On, randomly flickering for Broken. Small indicator lamps are a recorded `indicatorPointPx`; the engine draws the dot. No separately drawn glow sprite has to line up with anything, so a redraw cannot break it.
 - Moving parts that can't be done with a light overlay (fridge door opening, cupboard door swinging, TV picture) are the only drawn extra frames, and each is a separate small overlay over the OFF master, not a redraw of the whole item.
 - Every overlay or derived frame differs from the master only inside its declared rectangle (pixel-diff verified).
-- Never drawn: broken, dirty or alert variants. Faults are section 10f.
+- Never drawn: broken, dirty, open-for-broken or alert variants. Faults are section 10f.
 
 ### 10d. Fault indicators
-- ROOM view: a status light with an icon over the item, engine-drawn, with colour plus icon redundancy for accessibility: red ✕ broken, amber ! needs attention, green ✓ ready, blue i information. Tapping it sends the keeper.
+- STATUS LAMP (Frank, 27 Oct): EVERY electrical item (cooker, fridge, washing machine, dryer, kettle, toaster, mixer, TV, radio, lamp, computer and so on) has a small lamp bezel drawn into its art, unlit, at `statusLampPx`. The ENGINE lights it: steady GREEN when the item is working normally; an angry, intermittently FLASHING RED when it is broken. Flashing versus steady (not just colour) carries the meaning, for colour-blind players. Non-electrical items (sink, table, bin) have no lamp; their faults show through FX only (drips, puddle, wobble). Tapping the item or its lamp sends the keeper.
 - TOWER and ISLAND views: a room-level badge on the affected room and, off-screen, edge indicators (section 13).
 
 ### 10e. Item metadata (minimum)
@@ -301,10 +308,11 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
   2. LIGHT FAULT: the item's own light overlay driven to flicker, stutter or die.
   3. PARTICLES: shared small animated sprites: smoke puff, sparks, steam, drips.
   4. FLOOR DECALS: placed in front of the item, never on it: a spreading puddle, a scorch smudge.
-  5. STATUS LIGHT with icon (section 10d).
+  5. STATUS LAMP flips from steady green to flashing red (section 10d).
   6. SFX: clunk, fizz, drip, alarm beep, plus an onset chime.
   7. FIXED: sparkle burst and a "ding" when the keeper sorts it.
 - Example recipes: cooker = stuttering window glow + smoke + occasional bang with shake; dishwasher = spreading puddle + drips + beeping LED; fridge = door-open state + cold mist; lamp = flicker → sparks → dark.
+- **ONE FAULT AT A TIME (Frank, 27 Oct): game rule.** Only one item in the whole lighthouse can be broken at any moment. No new fault starts until the current one is repaired. This replaces the grown-up 'maximum concurrent faults' setting (fixed at 1; the frequency setting stays). Because there is only one, its sound is the player's guide: the fault's SFX loops from the broken item, panned left/right by its position on screen and quieter the further away its floor is, so the player can find it by ear even if they miss the game director's pop-up.
 - The kit is about 8–10 small sprites, made once (Codex task after the kitchen proof). A new fault never needs new art.
 - The approved kitchen sheet's drawn broken states (flooding sink, falling doors, burnt toaster, cracked kettle, spilt bin) are reference for these effects only, not production art.
 
@@ -385,6 +393,7 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - Proposed changes: (none yet)
 
 ## 19. Agent notes (Codex ⇄ Claude)
+- **GO (part of KITCHEN v7)** · 27 Oct · Claude → Codex: ABSOLUTE (section 10c): every item is ONE drawing, identical in every state; never draw open, flapping, broken, lit or alternative versions. Every ELECTRICAL item (cooker, fridge, kettle, toaster, mixer) gets a small unlit STATUS LAMP bezel in its art; record `statusLampPx` for it, plus `lightRectPx` for the oven window glass and `effectOriginPx` for smoke/steam. The engine draws all lights and effects.
 - **GO (part of KITCHEN v7)** · 27 Oct · Claude → Codex: REPLACES the cooker light-overlay instruction below. Use the ENGINE LIGHT BEHIND GLASS method (section 10c): draw the oven-door window as see-through tinted glass (partial alpha) with the shelf and dish as line work, record `lightRectPx` for the glass and `indicatorPointPx` for the red indicator; do NOT draw separate glow or indicator sprites. Also apply this to the fridge interior if its door is ever shown open.
 - **GO (part of KITCHEN v7)** · 27 Oct · Claude → Codex: cooker additions (Frank): copper/orange knobs that pop, a small red indicator light, and an oven-door WINDOW. Draw ONE cooker (OFF: dark window, indicator unlit). [Light handling superseded by the ENGINE LIGHT BEHIND GLASS note above.]
 - **GO (part of KITCHEN v7)** · 27 Oct · Claude → Codex: cooker reference from Frank: `reference/kitchen-mood/kitchen-mood-07-cooker.png` (cream gas cooker, four burners with black pan supports, round cream knobs on a front strip, long oven-door handle, eye-level grill as a cream box hood on chrome brackets with a pull-down grill pan). Use it for the v7 cooker (section 10b). If v7 is already generated, redo only the cooker in place.
@@ -441,3 +450,4 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - 27 Oct 2026 (Claude): (Frank) cooker reference added: cream gas cooker with eye-level box grill on chrome brackets.
 - 27 Oct 2026 (Claude): (Frank) cooker gets copper/orange knobs, red indicator and an oven window; one drawing plus window and indicator light overlays.
 - 27 Oct 2026 (Claude): engine-drawn light behind see-through glass replaces drawn glow overlays for windows and screens; indicator dots drawn by the engine.
+- 27 Oct 2026 (Claude): (Frank) absolute one-drawing rule with replaceable engine-drawn elements; status lamp on every electrical item (steady green working, flashing red broken); one fault at a time, located by positional SFX.
