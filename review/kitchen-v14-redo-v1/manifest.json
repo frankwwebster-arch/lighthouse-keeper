@@ -1,0 +1,395 @@
+{
+  "schema": "lighthouse-keeper/kitchen-v14-redo-review@1",
+  "status": "review-candidate-awaiting-frank",
+  "runtimeMutation": false,
+  "rejectedV14ArtworkReused": false,
+  "modulePx": [
+    2048,
+    576
+  ],
+  "walkYPx": 502,
+  "twoViewingScales": {
+    "room": [
+      2048,
+      576
+    ],
+    "lighthouse": [
+      256,
+      72
+    ]
+  },
+  "paintMethod": "OpenAI built-in image generation; code limited to crop/uniform-scale/pad/place/mask/assemble/verify",
+  "approvedShellReuse": "sources/reference/kitchen-v8-room-shell-empty-1x.png",
+  "parts": {
+    "back_wall": {
+      "canvasPx": [
+        1728,
+        428
+      ],
+      "rectPx": [
+        160,
+        32,
+        1888,
+        460
+      ],
+      "sha256": "38be7e3d0166f88ae48846ced498e9b030e9ba9fdb63f9b18810c3d279e420c9"
+    },
+    "floor_band": {
+      "canvasPx": [
+        2048,
+        84
+      ],
+      "rectPx": [
+        0,
+        460,
+        2048,
+        544
+      ],
+      "sha256": "72998abb065c8cd2215ba1c2669999ae1f2cae4fb0f647fd425de9c50c82855f"
+    },
+    "window_L": {
+      "canvasPx": [
+        168,
+        168
+      ],
+      "rectPx": [
+        622,
+        106,
+        790,
+        274
+      ],
+      "sha256": "19f281ecb7bab17d3060339026b94d05d207e2b8794eec72a2361c16fa4afe48"
+    },
+    "window_R": {
+      "canvasPx": [
+        168,
+        168
+      ],
+      "rectPx": [
+        1294,
+        106,
+        1462,
+        274
+      ],
+      "sha256": "19f281ecb7bab17d3060339026b94d05d207e2b8794eec72a2361c16fa4afe48"
+    },
+    "clock": {
+      "canvasPx": [
+        60,
+        60
+      ],
+      "rectPx": [
+        200,
+        60,
+        260,
+        120
+      ],
+      "sha256": "b9caf0ae6cfa432f52e8e838e70b53d668e1e6a14023cb72acdb165e91ce58f4"
+    },
+    "calendar": {
+      "canvasPx": [
+        60,
+        70
+      ],
+      "rectPx": [
+        200,
+        140,
+        260,
+        210
+      ],
+      "sha256": "caecb96f7e1c7fc137621f9b1f9d0e584d1950f4e6d965dd01001c2da1230967"
+    },
+    "cupboard_A1": {
+      "canvasPx": [
+        168,
+        137
+      ],
+      "rectPx": [
+        454,
+        348,
+        622,
+        485
+      ],
+      "sha256": "9368ee9f56abf5da8add288b103205eb9b4ee37dc3ac650fa1e59f1e0ddfdf6e"
+    },
+    "dw_slot_cupboard": {
+      "canvasPx": [
+        168,
+        137
+      ],
+      "rectPx": [
+        790,
+        348,
+        958,
+        485
+      ],
+      "sha256": "9368ee9f56abf5da8add288b103205eb9b4ee37dc3ac650fa1e59f1e0ddfdf6e"
+    },
+    "cupboard_B1": {
+      "canvasPx": [
+        168,
+        137
+      ],
+      "rectPx": [
+        1126,
+        348,
+        1294,
+        485
+      ],
+      "sha256": "9368ee9f56abf5da8add288b103205eb9b4ee37dc3ac650fa1e59f1e0ddfdf6e"
+    },
+    "cupboard_B2": {
+      "canvasPx": [
+        168,
+        137
+      ],
+      "rectPx": [
+        1294,
+        348,
+        1462,
+        485
+      ],
+      "sha256": "9368ee9f56abf5da8add288b103205eb9b4ee37dc3ac650fa1e59f1e0ddfdf6e"
+    },
+    "sink_cabinet": {
+      "canvasPx": [
+        168,
+        137
+      ],
+      "rectPx": [
+        622,
+        348,
+        790,
+        485
+      ],
+      "sha256": "5da1f2c9f41dc8cf145fd01393af349526e85f382d02291e604ff7f568c895c6"
+    },
+    "wall_cupboard_1": {
+      "canvasPx": [
+        136,
+        101
+      ],
+      "rectPx": [
+        806,
+        140,
+        942,
+        241
+      ],
+      "sha256": "891bf5f79ad3f4ec7b5b6b4111b28a5147b61831ef47d3ab084b01fcd32512bd"
+    },
+    "wall_cupboard_2": {
+      "canvasPx": [
+        136,
+        101
+      ],
+      "rectPx": [
+        1142,
+        140,
+        1278,
+        241
+      ],
+      "sha256": "891bf5f79ad3f4ec7b5b6b4111b28a5147b61831ef47d3ab084b01fcd32512bd"
+    },
+    "runA_worktop": {
+      "canvasPx": [
+        504,
+        31
+      ],
+      "rectPx": [
+        454,
+        317,
+        958,
+        348
+      ],
+      "sha256": "550f7576e5a8559f4e55b5f0f2d375079134d8c639cf85a7d4ccd360a0a9c5af"
+    },
+    "runB_worktop": {
+      "canvasPx": [
+        336,
+        31
+      ],
+      "rectPx": [
+        1126,
+        317,
+        1462,
+        348
+      ],
+      "sha256": "7378b5d0ddf70a83544452e3e3f019bb1f0877658f75f6dbc8e163f1a1a8269b"
+    },
+    "runB_endcap_R": {
+      "canvasPx": [
+        12,
+        31
+      ],
+      "rectPx": [
+        1462,
+        317,
+        1474,
+        348
+      ],
+      "sha256": "952b6c752e46a8c87abbebdf20ffcdf04d519a3da75de2df0ad3647bafb6a77d"
+    },
+    "fridge_t1": {
+      "canvasPx": [
+        168,
+        302
+      ],
+      "rectPx": [
+        286,
+        183,
+        454,
+        485
+      ],
+      "sha256": "075815bbce3787016e4c6e2707a250a8d50c33a6fbb15c6c643d8ff0fed24c28"
+    },
+    "cooker_t1": {
+      "canvasPx": [
+        168,
+        336
+      ],
+      "rectPx": [
+        958,
+        149,
+        1126,
+        485
+      ],
+      "sha256": "f29ae0df9a7c1fe27c01f21dd184f63275598bb7bcb3479835eb439b9ac0cef7"
+    },
+    "larder": {
+      "canvasPx": [
+        170,
+        319
+      ],
+      "rectPx": [
+        1713,
+        166,
+        1883,
+        485
+      ],
+      "sha256": "b3fc26462a644ed7a307b511b14b6d14e3bc2741f3a829d63b2d5bc272a43d5e"
+    },
+    "dresser": {
+      "canvasPx": [
+        213,
+        336
+      ],
+      "rectPx": [
+        1490,
+        149,
+        1703,
+        485
+      ],
+      "sha256": "c7077e45a9f823ade3335a34020c2e183209a359b8c867c1d7e80b3092f2bab4"
+    },
+    "teapot": {
+      "canvasPx": [
+        44,
+        36
+      ],
+      "rectPx": [
+        852,
+        290,
+        896,
+        326
+      ],
+      "sha256": "fcb0a2ec2116bc609e10c5cc4cf6589c6d7f2321f83cc58b96da5a1728e624c1"
+    },
+    "toaster": {
+      "canvasPx": [
+        52,
+        34
+      ],
+      "rectPx": [
+        1520,
+        300,
+        1572,
+        334
+      ],
+      "sha256": "6c9e872ebdd989bcd317be139f8a12423b6e399475c807496e536315837ecb09"
+    },
+    "mixer": {
+      "canvasPx": [
+        64,
+        59
+      ],
+      "rectPx": [
+        1598,
+        275,
+        1662,
+        334
+      ],
+      "sha256": "abd647d9a7cf498736582d1a30e59253b791333fe294ba4ad531d416d817f2a5"
+    },
+    "prime_keeper": {
+      "canvasPx": [
+        120,
+        298
+      ],
+      "rectPx": [
+        1150,
+        204,
+        1270,
+        502
+      ],
+      "sha256": "756f0a723c55997a3d5c38c625765b4077e7d959b7cd5827bcf69c17e27f4444"
+    }
+  },
+  "states": {
+    "contents_burnt.png": {
+      "canvasPx": [
+        80,
+        38
+      ],
+      "sha256": "879e723fcc13ff113e6301a6f70a1f2cbce4a9f9d49364407b74e56d4650f94c"
+    },
+    "contents_cooking.png": {
+      "canvasPx": [
+        80,
+        38
+      ],
+      "sha256": "6d94666bd7aad8ca2d9fbfc69eea66829c5c5fd59aac95f0af09b2603740b16f"
+    },
+    "cooker_body_open.png": {
+      "canvasPx": [
+        168,
+        336
+      ],
+      "sha256": "bfb61e01d1dc2556cf0a3970599b2a405de039edcb41ff6a04eb27c4938bf30a"
+    },
+    "cooker_door.png": {
+      "canvasPx": [
+        168,
+        336
+      ],
+      "sha256": "05aac1bb42df420baec4e056246db754429c6ee793560a8a5b7c64041e475afd"
+    },
+    "fridge_body_open.png": {
+      "canvasPx": [
+        168,
+        302
+      ],
+      "sha256": "c7643ff27e385e62661e5b4e08cb7c739e088def0b498e3a7dea5127d6c53add"
+    },
+    "fridge_door.png": {
+      "canvasPx": [
+        168,
+        302
+      ],
+      "sha256": "b87ed2071ee0c162873e7bcfe3ae57ef67e8b37e665e6153fc3d630e5b488b04"
+    },
+    "larder_body_open.png": {
+      "canvasPx": [
+        170,
+        319
+      ],
+      "sha256": "c72dd119afbe21a2ffe7ecd5aaab5d0e1e77f95d3fd3f75bccf8159b43ec7358"
+    },
+    "larder_door.png": {
+      "canvasPx": [
+        170,
+        319
+      ],
+      "sha256": "dfeeff1709fc0d253de0cabb9c4d2e4e94dff5160bb99a628c23d886c9dc5dfe"
+    }
+  }
+}
