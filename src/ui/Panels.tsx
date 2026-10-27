@@ -7,6 +7,7 @@ import type { Order } from '../game/engine'
 import { NAMES, clockText, labelFor, moodFace, moodName } from '../game/words'
 import { floorCount, goalKey, goalTarget, goalsOf, objectAvailable, openMissions, rewardOf, scaledTarget, started } from '../game/missions'
 import { TV_CHANNELS, type TvChannel } from './tvChannels'
+import { BILL_LABEL, billChange, payOvernight } from '../game/bills'
 
 // ─── Top bar ─────────────────────────────────────────────────────────────────
 
@@ -20,7 +21,7 @@ export function Hud({ s, paused, onPause, onDiary, onMissions, onMenu }: { s: St
       <div className="hud-main">
         <strong>Day {s.day}</strong>
         <span className="clock">{clockText(s.clock)}</span>
-        <span className="coins">🪙 {s.credits}</span>
+        <span className={`coins${s.credits < 0 ? ' overdrawn' : ''}`} title={s.credits < 0 ? 'Overdrawn: nothing new until he is back above zero' : 'Credits'}>🪙 {s.credits}</span>
         <span className={`mood m-${mood}`}>{moodFace[mood]} {moodName[mood]}</span>
         {s.broken.length > 0 && <span className="faults" title="Objects waiting for repair">🛠️ {s.broken.length}</span>}
         {s.annoyedLevel > 0 && <span className="sleepy">😴 Bedtime!</span>}
@@ -93,7 +94,8 @@ export function ObjectMenu({ s, id, label, onPick, onUpgrade, onClose, tvChannel
         {up && (
           <button className="big upgrade" disabled={s.credits < up.price} onClick={onUpgrade}>
             ⬆️ Upgrade to {up.name} · 🪙 {up.price}
-            {s.credits < up.price && <small> (save {up.price - s.credits} more)</small>}
+            {s.credits < 0 ? <small> (overdrawn: not until we are back above zero)</small> : s.credits < up.price && <small> (save {up.price - s.credits} more)</small>}
+            <RunningCost change={billChange(s, id, up.tier)} />
           </button>
         )}
       </div>
@@ -302,6 +304,12 @@ export function Setup({ who, canContinue, onContinue, onStart }: { who: string; 
   )
 }
 
+/** What an upgrade does to the nightly bills. */
+function RunningCost({ change }: { change: number }) {
+  if (change === 0) return null
+  return <small className={change > 0 ? 'bill-up' : 'bill-down'}> · bills {change > 0 ? `+${change}` : change} a night</small>
+}
+
 const PART_LABEL: Record<DayResult['parts'][number]['id'], string> = { mood: 'Happy keeper', ship: 'Ship saved', friends: 'Friends & visitors', pet: 'Pet looked after', house: 'Clean & tidy', brain: 'Brainy answers', bedtime: 'Bedtime' }
 
 export function Report({ s, onNext }: { s: State; onNext: () => void }) {
@@ -342,9 +350,29 @@ export function Report({ s, onNext }: { s: State; onNext: () => void }) {
             ))}
           </ul>
           <p>Tomorrow’s allowance: <b>🪙 {r.allowance}</b> <small>(more green bars = more credits)</small></p>
+          {r.bills && r.bills.total > 0 && <Bills s={s} r={r} />}
           <button className="big" onClick={onNext}>☀️ Start day {r.day + 1}</button>
         </div>
       )}
+    </div>
+  )
+}
+
+function Bills({ s, r }: { s: State; r: DayResult }) {
+  const bills = r.bills!
+  const after = payOvernight(s.credits, r.allowance, bills.total, s.rules)
+  return (
+    <div className="bills">
+      <h3>Tonight’s bills{bills.stormy ? ' (stormy day: extra heating)' : ''}</h3>
+      <ul>
+        {bills.lines.map((l) => (
+          <li key={l.id}><span>{l.id === 'power' ? '⚡' : '🔥'} {BILL_LABEL[l.id]}</span><span /><b>🪙 {l.amount}</b></li>
+        ))}
+      </ul>
+      <p>
+        In his purse: 🪙 {s.credits} − bills 🪙 {bills.total} + allowance 🪙 {r.allowance} → tomorrow <b className={after < 0 ? 'overdrawn' : undefined}>🪙 {after}</b>
+      </p>
+      {after < 0 && <p className="overdrawn-note">Overdrawn! Nothing new from the shop or upgrades until a good day gets him back above zero.</p>}
     </div>
   )
 }
@@ -411,6 +439,14 @@ export function GrownUps({ s, rules, credits, who, verify, onRules, onGift, onGi
         <Num label="A bar is green at" hint="(average % over the day)" value={rules.greenAt} min={10} max={95} onChange={(n) => set({ greenAt: n })} />
         <Num label="First day’s credits" value={rules.firstDay} onChange={(n) => set({ firstDay: n })} />
         <Num label="Most he can save overnight" value={rules.carryCap} onChange={(n) => set({ carryCap: n })} />
+        <h3>Bills</h3>
+        <label className="num">
+          <span>Nightly bills for power and heating <small>(bigger upgrades can cost more to run; efficient ones save)</small></span>
+          <input type="checkbox" checked={rules.billsOn !== false} onChange={(e) => set({ billsOn: e.target.checked })} />
+          <b>{rules.billsOn !== false ? 'On' : 'Off'}</b>
+        </label>
+        <Num label="Bill size" hint="(% of normal)" value={rules.billScale ?? 100} max={300} onChange={(n) => set({ billScale: n })} />
+        <Num label="Deepest overdraft" hint="(credits below zero; anything beyond is let off)" value={rules.overdraftLimit ?? 20} onChange={(n) => set({ overdraftLimit: n })} />
         <h3>Questions</h3>
         <label className="num">
           <span>Difficulty <small>(1 = age 7, 2 = about 9, 3 = 11+: harder sums, fractions, percentages, spelling and general knowledge)</small></span>

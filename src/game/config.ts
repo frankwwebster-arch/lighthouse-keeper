@@ -429,9 +429,15 @@ export interface Rules {
   upgradeScale: number
   /** Your own price for one upgrade (`<object>:<tier>` → credits); beats the scale. */
   upgradePrices: Record<string, number>
+  /** Nightly bills for power and heating (see `bills.ts`). */
+  billsOn: boolean
+  /** Every bill, as a percentage of normal. */
+  billScale: number
+  /** How far below zero his credits may go; anything beyond is let off. */
+  overdraftLimit: number
 }
 
-export const DEFAULT_RULES: Rules = { allowanceBase: 8, allowanceBonus: 20, firstDay: 20, carryCap: 40, greenAt: 50, priceScale: 100, prices: {}, quizLevel: 1, breakdownMinutes: 0, maxBreakdowns: 1, missionScale: 100, missionReward: 10, missionGoals: {}, missionRewards: {}, upgradeScale: 100, upgradePrices: {} }
+export const DEFAULT_RULES: Rules = { allowanceBase: 8, allowanceBonus: 20, firstDay: 20, carryCap: 40, greenAt: 50, priceScale: 100, prices: {}, quizLevel: 1, breakdownMinutes: 0, maxBreakdowns: 1, missionScale: 100, missionReward: 10, missionGoals: {}, missionRewards: {}, upgradeScale: 100, upgradePrices: {}, billsOn: true, billScale: 100, overdraftLimit: 20 }
 
 export const GAME = {
   /** The day, in minutes after midnight. He wakes at 7am; the lamp is lit at dusk; bed is 8pm. */
