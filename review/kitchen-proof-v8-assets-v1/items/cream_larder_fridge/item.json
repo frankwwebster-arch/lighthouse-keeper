@@ -2,11 +2,72 @@
   "schema": "lighthouse-keeper/kitchen-item@1",
   "id": "cream_larder_fridge",
   "status": "review-candidate",
-  "anchor": "bottom-left",
+  "tier": 1,
+  "widthPx": 126,
+  "reservedWidthPx": 152,
+  "midpointStop": 2,
+  "workingPointPx": [
+    63,
+    178
+  ],
+  "placementType": "freestanding",
+  "realSizeM": [
+    0.75,
+    1.071
+  ],
   "canvasPx": [
     126,
     180
   ],
+  "anchor": "bottom-left",
+  "anchorPx": [
+    0,
+    180
+  ],
+  "standPointX": 454,
+  "lightOverlays": [],
+  "movingPartOverlays": [
+    {
+      "id": "door",
+      "file": "../../outputs/states/fridge_door-1x.png",
+      "hingePx": [
+        120,
+        108
+      ]
+    }
+  ],
+  "interactionAnchors": [
+    {
+      "id": "use",
+      "offsetPx": [
+        63,
+        178
+      ],
+      "facing": "back"
+    }
+  ],
+  "bubbleOriginPx": [
+    63,
+    2
+  ],
+  "effectOriginPx": [
+    63,
+    60
+  ],
+  "statusLightPointPx": [
+    111,
+    59
+  ],
+  "faultRecipes": [
+    "cream_larder_fridge_fault"
+  ],
+  "palette": "kitchen-v8-uk-cottage-reference",
+  "styleReference": "review/kitchen-proof-v8-style-test-v2/outputs/kitchen-v8-three-piece-style-test.png",
+  "sourceSha256": "b569dc6cf2e1f3d875ce9d8d3a7aa02de6dfd97b5af76f7fa4977b0de3c6a7e8",
+  "files": {
+    "body": "../../outputs/states/fridge_body_open-1x.png",
+    "door": "../../outputs/states/fridge_door-1x.png"
+  },
   "standardUnitWidths": 1,
   "quantity": 1,
   "states": {
@@ -20,9 +81,5 @@
       108
     ]
   },
-  "statusLightPointPx": [
-    111,
-    59
-  ],
   "engineDrawsStatusLight": true
 }

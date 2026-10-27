@@ -2,11 +2,63 @@
   "schema": "lighthouse-keeper/kitchen-item@1",
   "id": "painted_base_cupboard",
   "status": "review-candidate",
-  "anchor": "bottom-left",
+  "tier": 1,
+  "widthPx": 126,
+  "reservedWidthPx": 126,
+  "midpointStop": [
+    7,
+    18
+  ],
+  "workingPointPx": [
+    63,
+    178
+  ],
+  "placementType": "freestanding",
+  "realSizeM": [
+    0.75,
+    1.071
+  ],
   "canvasPx": [
     126,
     180
   ],
+  "anchor": "bottom-left",
+  "anchorPx": [
+    0,
+    180
+  ],
+  "standPointX": [
+    874,
+    1798
+  ],
+  "lightOverlays": [],
+  "movingPartOverlays": [],
+  "interactionAnchors": [
+    {
+      "id": "use",
+      "offsetPx": [
+        63,
+        178
+      ],
+      "facing": "back"
+    }
+  ],
+  "bubbleOriginPx": [
+    63,
+    2
+  ],
+  "effectOriginPx": [
+    63,
+    60
+  ],
+  "statusLightPointPx": null,
+  "faultRecipes": [],
+  "palette": "kitchen-v8-uk-cottage-reference",
+  "styleReference": "review/kitchen-proof-v8-style-test-v2/outputs/kitchen-v8-three-piece-style-test.png",
+  "sourceSha256": "0ffd2fd88f27daa65d3e62aabaf42adac360c17f57ca6f5e1286cceb8ae82c8a",
+  "files": {
+    "master": "../../outputs/painted_base_cupboard-1x.png"
+  },
   "standardUnitWidths": 1,
   "quantity": 2,
   "reuseSameBytes": true,

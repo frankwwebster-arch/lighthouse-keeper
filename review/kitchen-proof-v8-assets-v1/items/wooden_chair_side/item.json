@@ -2,11 +2,61 @@
   "schema": "lighthouse-keeper/kitchen-item@1",
   "id": "wooden_chair_side",
   "status": "review-candidate",
-  "anchor": "bottom-left",
+  "tier": 1,
+  "widthPx": 84,
+  "reservedWidthPx": 84,
+  "midpointStop": 13,
+  "workingPointPx": [
+    42,
+    149
+  ],
+  "placementType": "freestanding",
+  "realSizeM": [
+    0.5,
+    0.899
+  ],
   "canvasPx": [
     84,
     151
   ],
+  "anchor": "bottom-left",
+  "anchorPx": [
+    0,
+    151
+  ],
+  "standPointX": [
+    1336,
+    1420
+  ],
+  "lightOverlays": [],
+  "movingPartOverlays": [],
+  "interactionAnchors": [
+    {
+      "id": "use",
+      "offsetPx": [
+        42,
+        149
+      ],
+      "facing": "back"
+    }
+  ],
+  "bubbleOriginPx": [
+    42,
+    2
+  ],
+  "effectOriginPx": [
+    42,
+    50
+  ],
+  "statusLightPointPx": null,
+  "faultRecipes": [],
+  "palette": "kitchen-v8-uk-cottage-reference",
+  "styleReference": "review/kitchen-proof-v8-style-test-v2/outputs/kitchen-v8-three-piece-style-test.png",
+  "sourceSha256": "ab5ff2f1d8d3696e442264003e05b91d960f301cd9cf1cb676ed92203c1caa82",
+  "files": {
+    "right": "../../outputs/wooden_chair_side-1x.png",
+    "left": "../../outputs/wooden_chair_side_mirrored-1x.png"
+  },
   "quantity": 2,
   "states": {
     "right": "../../outputs/wooden_chair_side-1x.png",

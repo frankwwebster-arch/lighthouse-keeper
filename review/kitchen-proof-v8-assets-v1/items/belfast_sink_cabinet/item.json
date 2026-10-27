@@ -2,11 +2,59 @@
   "schema": "lighthouse-keeper/kitchen-item@1",
   "id": "belfast_sink_cabinet",
   "status": "review-candidate",
-  "anchor": "bottom-left",
+  "tier": 1,
+  "widthPx": 168,
+  "reservedWidthPx": 168,
+  "midpointStop": 5,
+  "workingPointPx": [
+    84,
+    209
+  ],
+  "placementType": "freestanding",
+  "realSizeM": [
+    1.0,
+    1.256
+  ],
   "canvasPx": [
     168,
     211
   ],
+  "anchor": "bottom-left",
+  "anchorPx": [
+    0,
+    211
+  ],
+  "standPointX": 706,
+  "lightOverlays": [],
+  "movingPartOverlays": [],
+  "interactionAnchors": [
+    {
+      "id": "use",
+      "offsetPx": [
+        84,
+        209
+      ],
+      "facing": "back"
+    }
+  ],
+  "bubbleOriginPx": [
+    84,
+    2
+  ],
+  "effectOriginPx": [
+    84,
+    70
+  ],
+  "statusLightPointPx": null,
+  "faultRecipes": [
+    "belfast_sink_cabinet_fault"
+  ],
+  "palette": "kitchen-v8-uk-cottage-reference",
+  "styleReference": "review/kitchen-proof-v8-style-test-v2/outputs/kitchen-v8-three-piece-style-test.png",
+  "sourceSha256": "e034f63b9d355c0b1275bd104ae3aa005e1d4bd4dd5958d3a9a3565612a7deaf",
+  "files": {
+    "master": "../../outputs/belfast_sink_cabinet-1x.png"
+  },
   "quantity": 1,
   "states": {
     "master": "../../outputs/belfast_sink_cabinet-1x.png"

@@ -2,18 +2,65 @@
   "schema": "lighthouse-keeper/kitchen-item@1",
   "id": "stand_mixer",
   "status": "review-candidate",
-  "anchor": "bottom-left",
+  "tier": 1,
+  "widthPx": 68,
+  "reservedWidthPx": 68,
+  "midpointStop": 18,
+  "workingPointPx": [
+    34,
+    80
+  ],
+  "placementType": "counter",
+  "realSizeM": [
+    0.405,
+    0.488
+  ],
   "canvasPx": [
     68,
     82
   ],
-  "quantity": 1,
-  "states": {
-    "master": "../../outputs/stand_mixer-1x.png"
-  },
+  "anchor": "bottom-left",
+  "anchorPx": [
+    0,
+    82
+  ],
+  "standPointX": 1798,
+  "lightOverlays": [],
+  "movingPartOverlays": [],
+  "interactionAnchors": [
+    {
+      "id": "use",
+      "offsetPx": [
+        34,
+        80
+      ],
+      "facing": "back"
+    }
+  ],
+  "bubbleOriginPx": [
+    34,
+    2
+  ],
+  "effectOriginPx": [
+    34,
+    27
+  ],
   "statusLightPointPx": [
     56,
     60
   ],
+  "faultRecipes": [
+    "stand_mixer_fault"
+  ],
+  "palette": "kitchen-v8-uk-cottage-reference",
+  "styleReference": "review/kitchen-proof-v8-style-test-v2/outputs/kitchen-v8-three-piece-style-test.png",
+  "sourceSha256": "b52a0c670687bbee558591981fdd4ba03c523cdf5e9cecde297dea406bdd342c",
+  "files": {
+    "master": "../../outputs/stand_mixer-1x.png"
+  },
+  "quantity": 1,
+  "states": {
+    "master": "../../outputs/stand_mixer-1x.png"
+  },
   "engineDrawsStatusLight": true
 }

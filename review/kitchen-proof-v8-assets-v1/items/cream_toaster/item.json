@@ -2,18 +2,65 @@
   "schema": "lighthouse-keeper/kitchen-item@1",
   "id": "cream_toaster",
   "status": "review-candidate",
-  "anchor": "bottom-left",
+  "tier": 1,
+  "widthPx": 55,
+  "reservedWidthPx": 55,
+  "midpointStop": 16,
+  "workingPointPx": [
+    27,
+    43
+  ],
+  "placementType": "counter",
+  "realSizeM": [
+    0.327,
+    0.268
+  ],
   "canvasPx": [
     55,
     45
   ],
-  "quantity": 1,
-  "states": {
-    "master": "../../outputs/cream_toaster-1x.png"
-  },
+  "anchor": "bottom-left",
+  "anchorPx": [
+    0,
+    45
+  ],
+  "standPointX": 1630,
+  "lightOverlays": [],
+  "movingPartOverlays": [],
+  "interactionAnchors": [
+    {
+      "id": "use",
+      "offsetPx": [
+        27,
+        43
+      ],
+      "facing": "back"
+    }
+  ],
+  "bubbleOriginPx": [
+    27,
+    2
+  ],
+  "effectOriginPx": [
+    27,
+    15
+  ],
   "statusLightPointPx": [
     37,
     35
   ],
+  "faultRecipes": [
+    "cream_toaster_fault"
+  ],
+  "palette": "kitchen-v8-uk-cottage-reference",
+  "styleReference": "review/kitchen-proof-v8-style-test-v2/outputs/kitchen-v8-three-piece-style-test.png",
+  "sourceSha256": "2cefcab9040fec30f024c531ee37d72465d099515e299a9074ae98e71db17025",
+  "files": {
+    "master": "../../outputs/cream_toaster-1x.png"
+  },
+  "quantity": 1,
+  "states": {
+    "master": "../../outputs/cream_toaster-1x.png"
+  },
   "engineDrawsStatusLight": true
 }

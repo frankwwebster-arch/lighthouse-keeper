@@ -2,11 +2,57 @@
   "schema": "lighthouse-keeper/kitchen-item@1",
   "id": "scrubbed_pine_table",
   "status": "review-candidate",
-  "anchor": "bottom-left",
+  "tier": 1,
+  "widthPx": 252,
+  "reservedWidthPx": 252,
+  "midpointStop": 13,
+  "workingPointPx": [
+    126,
+    145
+  ],
+  "placementType": "freestanding",
+  "realSizeM": [
+    1.5,
+    0.875
+  ],
   "canvasPx": [
     252,
     147
   ],
+  "anchor": "bottom-left",
+  "anchorPx": [
+    0,
+    147
+  ],
+  "standPointX": 1378,
+  "lightOverlays": [],
+  "movingPartOverlays": [],
+  "interactionAnchors": [
+    {
+      "id": "use",
+      "offsetPx": [
+        126,
+        145
+      ],
+      "facing": "back"
+    }
+  ],
+  "bubbleOriginPx": [
+    126,
+    2
+  ],
+  "effectOriginPx": [
+    126,
+    49
+  ],
+  "statusLightPointPx": null,
+  "faultRecipes": [],
+  "palette": "kitchen-v8-uk-cottage-reference",
+  "styleReference": "review/kitchen-proof-v8-style-test-v2/outputs/kitchen-v8-three-piece-style-test.png",
+  "sourceSha256": "fc79b87a8c787b63ab7cf56f31888e2f7f1d138616824249e3a9f629f08c7a40",
+  "files": {
+    "master": "../../outputs/scrubbed_pine_table-1x.png"
+  },
   "standardUnitWidths": 2,
   "quantity": 1,
   "states": {

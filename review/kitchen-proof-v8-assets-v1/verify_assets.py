@@ -134,11 +134,22 @@ def main() -> None:
         check(a == 255 and g > r and g > b, f"status overlay is not green at declared bezel: {name}")
 
     check(len(manifest["items"]) == 12, "Day-1 item inventory count drift")
+    required_item_keys = {
+        "id", "tier", "widthPx", "reservedWidthPx", "midpointStop", "workingPointPx",
+        "placementType", "realSizeM", "canvasPx", "anchorPx", "standPointX",
+        "lightOverlays", "movingPartOverlays", "interactionAnchors", "bubbleOriginPx",
+        "effectOriginPx", "statusLightPointPx", "faultRecipes", "palette",
+        "styleReference", "sourceSha256", "files",
+    }
     for item_id in manifest["items"]:
         item_path = HERE / "items" / item_id / "item.json"
         item = json.loads(item_path.read_text(encoding="utf-8"))
         check(item["schema"] == "lighthouse-keeper/kitchen-item@1", f"item schema drift: {item_id}")
         check(item["id"] == item_id and item["anchor"] == "bottom-left", f"item identity/anchor drift: {item_id}")
+        check(required_item_keys.issubset(item), f"minimum item metadata missing: {item_id}")
+        check(item["placementType"] in {"fitted", "freestanding", "counter"}, f"invalid placement type: {item_id}")
+        check(item["files"] == item["states"], f"files/state map drift: {item_id}")
+        check(len(item["sourceSha256"]) == 64, f"source hash missing: {item_id}")
         for relative in item["states"].values():
             check((item_path.parent / relative).resolve().is_file(), f"missing item state for {item_id}: {relative}")
     cupboards = json.loads((HERE / "items/painted_base_cupboard/item.json").read_text(encoding="utf-8"))
@@ -150,6 +161,10 @@ def main() -> None:
     cooker_item = json.loads((HERE / "items/old_school_cooker/item.json").read_text(encoding="utf-8"))
     check(cooker_item["engineDrawsOvenLight"], "oven light is not declared engine-drawn")
     check(all("oven_light" not in path for path in cooker_item["states"].values()), "review oven-light overlay leaked into production metadata")
+    check(cooker_item["reservedWidthPx"] == 252 and cooker_item["widthPx"] == 126, "one-unit cooker / two-unit reservation drift")
+    check(len(cooker_item["movingPartOverlays"]) == 1, "cooker door moving-part metadata missing")
+    fridge_item = json.loads((HERE / "items/cream_larder_fridge/item.json").read_text(encoding="utf-8"))
+    check(len(fridge_item["movingPartOverlays"]) == 1, "fridge door moving-part metadata missing")
 
     print("PASS: Kitchen v8 complete Day-1 candidate assets")
     print("  12 object types; standard unit 126 px; deferred range 252 px and absent")

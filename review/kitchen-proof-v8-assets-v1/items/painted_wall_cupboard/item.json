@@ -2,11 +2,63 @@
   "schema": "lighthouse-keeper/kitchen-item@1",
   "id": "painted_wall_cupboard",
   "status": "review-candidate",
-  "anchor": "bottom-left",
+  "tier": 1,
+  "widthPx": 126,
+  "reservedWidthPx": 126,
+  "midpointStop": [
+    7,
+    18
+  ],
+  "workingPointPx": [
+    63,
+    103
+  ],
+  "placementType": "fitted",
+  "realSizeM": [
+    0.75,
+    0.625
+  ],
   "canvasPx": [
     126,
     105
   ],
+  "anchor": "bottom-left",
+  "anchorPx": [
+    0,
+    105
+  ],
+  "standPointX": [
+    874,
+    1798
+  ],
+  "lightOverlays": [],
+  "movingPartOverlays": [],
+  "interactionAnchors": [
+    {
+      "id": "use",
+      "offsetPx": [
+        63,
+        103
+      ],
+      "facing": "back"
+    }
+  ],
+  "bubbleOriginPx": [
+    63,
+    2
+  ],
+  "effectOriginPx": [
+    63,
+    35
+  ],
+  "statusLightPointPx": null,
+  "faultRecipes": [],
+  "palette": "kitchen-v8-uk-cottage-reference",
+  "styleReference": "review/kitchen-proof-v8-style-test-v2/outputs/kitchen-v8-three-piece-style-test.png",
+  "sourceSha256": "980879bd914e40d50e1b49e1444b055c38311018cd75c80ab0b30d64adb4846a",
+  "files": {
+    "master": "../../outputs/painted_wall_cupboard-1x.png"
+  },
   "standardUnitWidths": 1,
   "quantity": 1,
   "states": {

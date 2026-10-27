@@ -2,11 +2,57 @@
   "schema": "lighthouse-keeper/kitchen-item@1",
   "id": "painted_dresser",
   "status": "review-candidate",
-  "anchor": "bottom-left",
+  "tier": 1,
+  "widthPx": 150,
+  "reservedWidthPx": 150,
+  "midpointStop": 16,
+  "workingPointPx": [
+    75,
+    353
+  ],
+  "placementType": "freestanding",
+  "realSizeM": [
+    0.893,
+    2.113
+  ],
   "canvasPx": [
     150,
     355
   ],
+  "anchor": "bottom-left",
+  "anchorPx": [
+    0,
+    355
+  ],
+  "standPointX": 1630,
+  "lightOverlays": [],
+  "movingPartOverlays": [],
+  "interactionAnchors": [
+    {
+      "id": "use",
+      "offsetPx": [
+        75,
+        353
+      ],
+      "facing": "back"
+    }
+  ],
+  "bubbleOriginPx": [
+    75,
+    2
+  ],
+  "effectOriginPx": [
+    75,
+    118
+  ],
+  "statusLightPointPx": null,
+  "faultRecipes": [],
+  "palette": "kitchen-v8-uk-cottage-reference",
+  "styleReference": "review/kitchen-proof-v8-style-test-v2/outputs/kitchen-v8-three-piece-style-test.png",
+  "sourceSha256": "90277b1f8f80af0566f5056dd89ed72557989078c087ac24349c7be11dd4f8f8",
+  "files": {
+    "master": "../../outputs/painted_dresser-1x.png"
+  },
   "quantity": 1,
   "states": {
     "master": "../../outputs/painted_dresser-1x.png"

@@ -2,18 +2,65 @@
   "schema": "lighthouse-keeper/kitchen-item@1",
   "id": "enamel_electric_kettle",
   "status": "review-candidate",
-  "anchor": "bottom-left",
+  "tier": 1,
+  "widthPx": 52,
+  "reservedWidthPx": 52,
+  "midpointStop": 7,
+  "workingPointPx": [
+    26,
+    60
+  ],
+  "placementType": "counter",
+  "realSizeM": [
+    0.31,
+    0.369
+  ],
   "canvasPx": [
     52,
     62
   ],
-  "quantity": 1,
-  "states": {
-    "master": "../../outputs/enamel_electric_kettle-1x.png"
-  },
+  "anchor": "bottom-left",
+  "anchorPx": [
+    0,
+    62
+  ],
+  "standPointX": 874,
+  "lightOverlays": [],
+  "movingPartOverlays": [],
+  "interactionAnchors": [
+    {
+      "id": "use",
+      "offsetPx": [
+        26,
+        60
+      ],
+      "facing": "back"
+    }
+  ],
+  "bubbleOriginPx": [
+    26,
+    2
+  ],
+  "effectOriginPx": [
+    26,
+    20
+  ],
   "statusLightPointPx": [
     46,
     50
   ],
+  "faultRecipes": [
+    "enamel_electric_kettle_fault"
+  ],
+  "palette": "kitchen-v8-uk-cottage-reference",
+  "styleReference": "review/kitchen-proof-v8-style-test-v2/outputs/kitchen-v8-three-piece-style-test.png",
+  "sourceSha256": "77c0ac4dea4341c93e72d1cb2aaf1c166fc1d78787763bf47c5b154e7e35bd6f",
+  "files": {
+    "master": "../../outputs/enamel_electric_kettle-1x.png"
+  },
+  "quantity": 1,
+  "states": {
+    "master": "../../outputs/enamel_electric_kettle-1x.png"
+  },
   "engineDrawsStatusLight": true
 }

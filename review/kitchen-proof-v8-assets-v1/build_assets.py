@@ -482,10 +482,72 @@ def write_metadata() -> Path:
         "stand_mixer": {"canvasPx": [68, 82], "quantity": 1, "states": {"master": "../../outputs/stand_mixer-1x.png"}, "statusLightPointPx": STATUS_BEZELS["stand_mixer"]["centrePx"], "engineDrawsStatusLight": True},
         "painted_wall_cupboard": {"canvasPx": [126, 105], "standardUnitWidths": 1, "quantity": 1, "states": {"master": "../../outputs/painted_wall_cupboard-1x.png"}},
     }
+    world_meta = {
+        "cream_larder_fridge": {"reservedWidthPx": 152, "midpointStop": 2, "standPointX": 454, "placementType": "freestanding"},
+        "belfast_sink_cabinet": {"reservedWidthPx": 168, "midpointStop": 5, "standPointX": 706, "placementType": "freestanding"},
+        "painted_base_cupboard": {"reservedWidthPx": 126, "midpointStop": [7, 18], "standPointX": [874, 1798], "placementType": "freestanding"},
+        "old_school_cooker": {"reservedWidthPx": 252, "midpointStop": 10, "standPointX": 1126, "placementType": "freestanding"},
+        "scrubbed_pine_table": {"reservedWidthPx": 252, "midpointStop": 13, "standPointX": 1378, "placementType": "freestanding"},
+        "wooden_chair_side": {"reservedWidthPx": 84, "midpointStop": 13, "standPointX": [1336, 1420], "placementType": "freestanding"},
+        "painted_dresser": {"reservedWidthPx": 150, "midpointStop": 16, "standPointX": 1630, "placementType": "freestanding"},
+        "enamel_pedal_bin": {"reservedWidthPx": 42, "midpointStop": 20, "standPointX": 1966, "placementType": "freestanding"},
+        "enamel_electric_kettle": {"reservedWidthPx": 52, "midpointStop": 7, "standPointX": 874, "placementType": "counter"},
+        "cream_toaster": {"reservedWidthPx": 55, "midpointStop": 16, "standPointX": 1630, "placementType": "counter"},
+        "stand_mixer": {"reservedWidthPx": 68, "midpointStop": 18, "standPointX": 1798, "placementType": "counter"},
+        "painted_wall_cupboard": {"reservedWidthPx": 126, "midpointStop": [7, 18], "standPointX": [874, 1798], "placementType": "fitted"},
+    }
+    source_for = {
+        "cream_larder_fridge": LAYER_SOURCES / "fridge_body_open.png",
+        "belfast_sink_cabinet": ROOT / "review/kitchen-proof-v8-style-test-v2/sources/sink-pass-02-final.png",
+        "painted_base_cupboard": SELECTED / "painted_base_cupboard.png",
+        "old_school_cooker": LAYER_SOURCES / "cooker_body_open.png",
+        "scrubbed_pine_table": SELECTED / "scrubbed_pine_table.png",
+        "wooden_chair_side": SELECTED / "wooden_chair_side.png",
+        "painted_dresser": ROOT / "review/kitchen-proof-v8-style-test-v2/sources/dresser-pass-02-final.png",
+        "enamel_pedal_bin": SELECTED / "enamel_pedal_bin.png",
+        "enamel_electric_kettle": SELECTED / "enamel_electric_kettle.png",
+        "cream_toaster": SELECTED / "cream_toaster.png",
+        "stand_mixer": SELECTED / "stand_mixer.png",
+        "painted_wall_cupboard": SELECTED / "painted_wall_cupboard.png",
+    }
     for item_id, data in item_data.items():
         item_dir = ITEMS / item_id
         item_dir.mkdir(parents=True, exist_ok=True)
-        payload = {"schema": "lighthouse-keeper/kitchen-item@1", "id": item_id, "status": "review-candidate", "anchor": "bottom-left", **data}
+        width, height = data["canvasPx"]
+        moving_parts = []
+        if "door" in data:
+            moving_parts.append({"id": "door", "file": data["states"]["door"], "hingePx": data["door"]["pivotPx"]})
+        status_point = data.get("statusLightPointPx")
+        electrical = status_point is not None
+        geometry = world_meta[item_id]
+        payload = {
+            "schema": "lighthouse-keeper/kitchen-item@1",
+            "id": item_id,
+            "status": "review-candidate",
+            "tier": 1,
+            "widthPx": width,
+            "reservedWidthPx": geometry["reservedWidthPx"],
+            "midpointStop": geometry["midpointStop"],
+            "workingPointPx": [width // 2, height - 2],
+            "placementType": geometry["placementType"],
+            "realSizeM": [round(width / 168, 3), round(height / 168, 3)],
+            "canvasPx": data["canvasPx"],
+            "anchor": "bottom-left",
+            "anchorPx": [0, height],
+            "standPointX": geometry["standPointX"],
+            "lightOverlays": [],
+            "movingPartOverlays": moving_parts,
+            "interactionAnchors": [{"id": "use", "offsetPx": [width // 2, height - 2], "facing": "back"}],
+            "bubbleOriginPx": [width // 2, 2],
+            "effectOriginPx": [width // 2, max(2, height // 3)],
+            "statusLightPointPx": status_point,
+            "faultRecipes": [f"{item_id}_fault"] if electrical or item_id in {"belfast_sink_cabinet", "enamel_pedal_bin"} else [],
+            "palette": "kitchen-v8-uk-cottage-reference",
+            "styleReference": "review/kitchen-proof-v8-style-test-v2/outputs/kitchen-v8-three-piece-style-test.png",
+            "sourceSha256": sha256(source_for[item_id]),
+            "files": data["states"],
+            **data,
+        }
         (item_dir / "item.json").write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
 
     files = {}

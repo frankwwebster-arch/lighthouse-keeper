@@ -2,11 +2,74 @@
   "schema": "lighthouse-keeper/kitchen-item@1",
   "id": "old_school_cooker",
   "status": "review-candidate",
-  "anchor": "bottom-left",
+  "tier": 1,
+  "widthPx": 126,
+  "reservedWidthPx": 252,
+  "midpointStop": 10,
+  "workingPointPx": [
+    63,
+    250
+  ],
+  "placementType": "freestanding",
+  "realSizeM": [
+    0.75,
+    1.5
+  ],
   "canvasPx": [
     126,
     252
   ],
+  "anchor": "bottom-left",
+  "anchorPx": [
+    0,
+    252
+  ],
+  "standPointX": 1126,
+  "lightOverlays": [],
+  "movingPartOverlays": [
+    {
+      "id": "door",
+      "file": "../../outputs/states/cooker_door-1x.png",
+      "hingePx": [
+        63,
+        234
+      ]
+    }
+  ],
+  "interactionAnchors": [
+    {
+      "id": "use",
+      "offsetPx": [
+        63,
+        250
+      ],
+      "facing": "back"
+    }
+  ],
+  "bubbleOriginPx": [
+    63,
+    2
+  ],
+  "effectOriginPx": [
+    63,
+    84
+  ],
+  "statusLightPointPx": [
+    111,
+    156
+  ],
+  "faultRecipes": [
+    "old_school_cooker_fault"
+  ],
+  "palette": "kitchen-v8-uk-cottage-reference",
+  "styleReference": "review/kitchen-proof-v8-style-test-v2/outputs/kitchen-v8-three-piece-style-test.png",
+  "sourceSha256": "450259e69e7672cb66797e2c30d115dc898a8598bff896fad2a5da440a97e044",
+  "files": {
+    "body": "../../outputs/states/cooker_body_open-1x.png",
+    "door": "../../outputs/states/cooker_door-1x.png",
+    "cookingContents": "../../outputs/states/cooker_contents_cooking-1x.png",
+    "burntContents": "../../outputs/states/cooker_contents_burnt-1x.png"
+  },
   "standardUnitWidths": 1,
   "quantity": 1,
   "states": {
@@ -31,10 +94,6 @@
     178,
     109,
     231
-  ],
-  "statusLightPointPx": [
-    111,
-    156
   ],
   "controlKnobs": 4,
   "engineDrawsOvenLight": true,

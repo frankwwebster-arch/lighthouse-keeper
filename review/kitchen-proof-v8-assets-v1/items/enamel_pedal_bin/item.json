@@ -2,11 +2,59 @@
   "schema": "lighthouse-keeper/kitchen-item@1",
   "id": "enamel_pedal_bin",
   "status": "review-candidate",
-  "anchor": "bottom-left",
+  "tier": 1,
+  "widthPx": 42,
+  "reservedWidthPx": 42,
+  "midpointStop": 20,
+  "workingPointPx": [
+    21,
+    90
+  ],
+  "placementType": "freestanding",
+  "realSizeM": [
+    0.25,
+    0.548
+  ],
   "canvasPx": [
     42,
     92
   ],
+  "anchor": "bottom-left",
+  "anchorPx": [
+    0,
+    92
+  ],
+  "standPointX": 1966,
+  "lightOverlays": [],
+  "movingPartOverlays": [],
+  "interactionAnchors": [
+    {
+      "id": "use",
+      "offsetPx": [
+        21,
+        90
+      ],
+      "facing": "back"
+    }
+  ],
+  "bubbleOriginPx": [
+    21,
+    2
+  ],
+  "effectOriginPx": [
+    21,
+    30
+  ],
+  "statusLightPointPx": null,
+  "faultRecipes": [
+    "enamel_pedal_bin_fault"
+  ],
+  "palette": "kitchen-v8-uk-cottage-reference",
+  "styleReference": "review/kitchen-proof-v8-style-test-v2/outputs/kitchen-v8-three-piece-style-test.png",
+  "sourceSha256": "b19bef57168065f3842782f5b6c86cfd306bd9527954cef8fcf4d226cf8b9bf3",
+  "files": {
+    "master": "../../outputs/enamel_pedal_bin-1x.png"
+  },
   "quantity": 1,
   "states": {
     "master": "../../outputs/enamel_pedal_bin-1x.png"
