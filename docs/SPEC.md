@@ -79,6 +79,7 @@ Built from Codex's technical review of v1.3 (commit 42ec2552), with engine-side 
 - Open, the door panel is a foreground occluder. Draw order: room shell → keeper → open door panel / jamb.
 - Travel: the keeper walks left into the door, is occluded, the screen fades, and he emerges from the destination floor's door at the door standing point (x 118) on that room's walkY.
 - The lift upgrade changes only the door jamb; the lift lives entirely in the hidden core. Costume and tool swaps may happen inside it.
+- LOBBY HAS NO WINDOWS (Frank, 27 Oct): the ground-floor lobby is the one floor without the standard two windows; its back wall has the front door instead.
 - FRONT DOOR (to the island) (Frank, 26 Oct): the ONE door drawn on a back wall, in the ground-floor ENTRANCE LOBBY only. An arched wooden front door, 1.0 m × 2.0 m, centred on stop 5 (x 622–790, y 124–460), in place of the lobby's left window, left of centre, with a doormat on the floor in front. The floor in front of it stays clear. Going out: the keeper walks to x 706, turns to the back, the door swings open by itself, he WALKS through it (walk-away clip, section 7: about 3 steps, from walkY up to and through the doorway, his sprite drawn behind the door frame once he crosses the threshold), and the door closes behind him. Coming in: the door opens, he walks in towards the camera (walk-toward clip) to walkY, the door closes behind him, he turns to the side. Outdoor-costume swaps happen while he is out of sight beyond the closed door. Outside, he appears from behind the tower's base. No other room has a back-wall door.
 
 ### 3d. Horizontal expansion
@@ -575,3 +576,4 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
 - 27 Oct 2026 (Claude): (Frank) kitchen v14 redo set to GO.
 - 27 Oct 2026 (Claude): (Frank) Vercel and repo-size guard: no review deploys; deploys only on an explicit GO'd DEPLOY note, max once a day; review media size caps; no GIFs committed.
 - 27 Oct 2026 (Codex): Kitchen v14 painted redo review candidate delivered at `review/kitchen-v14-redo-v1/`; exact canvases, both viewing scales, v8 comparison, door/interior layers and tests pass; no runtime promotion or deployment.
+- 27 Oct 2026 (Claude): (Frank) the lobby has NO windows (front door on the back wall instead; an exception to the identical-windows rule); laundry basket sits on the washing machine; lobby schematic v3 drafted.
