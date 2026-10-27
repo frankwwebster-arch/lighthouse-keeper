@@ -371,16 +371,18 @@
     32,
     622,
     485
-   ]
+   ],
+   "maxHeightPx": 453
   },
   {
    "id": "HOT DRINKS t3 climbs",
    "rect": [
     790,
-    32,
+    149,
     958,
     334
-   ]
+   ],
+   "maxHeightPx": 336
   },
   {
    "id": "DISHWASHER slot",
@@ -398,25 +400,28 @@
     32,
     1294,
     485
-   ]
+   ],
+   "maxHeightPx": 453
   },
   {
    "id": "ROBOCHEF (replaces dresser)",
    "rect": [
     1490,
-    32,
+    59,
     1703,
     485
-   ]
+   ],
+   "maxHeightPx": 426
   },
   {
    "id": "LARDER t3",
    "rect": [
     1713,
-    32,
+    145,
     1883,
     485
-   ]
+   ],
+   "maxHeightPx": 340
   }
  ]
 }
