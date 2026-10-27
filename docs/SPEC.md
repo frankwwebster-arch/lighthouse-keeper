@@ -311,7 +311,7 @@ Location `/public/art/tower/<version>/` with `tower_kit.json`:
   5. STATUS LAMP flips from steady green to flashing red (section 10d).
   6. SFX: clunk, fizz, drip, alarm beep, plus an onset chime.
   7. FIXED: sparkle burst and a "ding" when the keeper sorts it.
-- Example recipes: cooker = stuttering window glow + smoke + occasional bang with shake; dishwasher = spreading puddle + drips + beeping LED; fridge = door-open state + cold mist; lamp = flicker → sparks → dark.
+- Example recipes: cooker = stuttering window glow + smoke + occasional bang with shake; dishwasher = spreading puddle + drips + beeping LED; fridge = flashing red lamp + cold mist and a drip puddle; lamp = flicker → sparks → dark.
 - **ONE FAULT AT A TIME (Frank, 27 Oct): game rule.** Only one item in the whole lighthouse can be broken at any moment. No new fault starts until the current one is repaired. This replaces the grown-up 'maximum concurrent faults' setting (fixed at 1; the frequency setting stays). Because there is only one, its sound is the player's guide: the fault's SFX loops from the broken item, panned left/right by its position on screen and quieter the further away its floor is, so the player can find it by ear even if they miss the game director's pop-up.
 - The kit is about 8–10 small sprites, made once (Codex task after the kitchen proof). A new fault never needs new art.
 - The approved kitchen sheet's drawn broken states (flooding sink, falling doors, burnt toaster, cracked kettle, spilt bin) are reference for these effects only, not production art.
