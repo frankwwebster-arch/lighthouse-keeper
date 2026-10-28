@@ -145,3 +145,4 @@ Moved out of `docs/SPEC.md` on 28 Oct 2026 (Frank): the spec now holds current r
 - 28 Oct 2026 (Claude): (Frank) pieces are never deleted: In the game switch; larder kept as not in the game.
 - 28 Oct 2026 (Claude): (Frank) cupboard clearance reduced to the wall strip beside the door; kitchen: cupboard B3 in bay 8, dresser in bay 9.
 - 28 Oct 2026 (Claude): (Frank) work moved to GitHub Issues; section 19 notes and this change log moved out of SPEC.md into this archive.
+- 28 Oct 2026 (Claude): (Frank) one catalogue hub: the Room Planner; bubble-story pictures become a separate Bubbles section of it (issue #13).
