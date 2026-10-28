@@ -4,7 +4,7 @@
 
 > **Work items (Frank, 28 Oct 2026):** tasks live in GitHub Issues; your read-only list is `docs/ISSUES.md`. Start ONLY issues labelled `codex` + `go`; close with `Fixes #n` in the commit; questions go in `docs/CODEX_REPLIES.md`. Room pieces, drafts and Frank's feedback: `docs/planner/`.
 
-> **Shared spec (Frank, 26 Oct 2026):** `docs/SPEC.md` is the single working spec and the shared channel between Codex and Claude. `git pull` and read it before every task; where it conflicts with older rules below or with `docs/CODEX_BRIEF.md`, the spec wins. Follow its "Shared channel" rules to update it and leave notes for Claude in its section 19.
+> **Shared spec (Frank, 26 Oct 2026):** `docs/SPEC.md` is the single working spec and the shared channel between Codex and Claude. `git pull` and read it before every task; where it conflicts with older rules below or with `docs/CODEX_BRIEF.md`, the spec wins. Follow its "Shared channel" rules to update it; leave notes for Claude in `docs/CODEX_REPLIES.md`.
 
 **Deployment is manual.** Pushing to `main` does not deploy. Vercel builds only
 when the newest commit on `main` has a subject line ending in `[deploy]`; branch
