@@ -23,7 +23,7 @@ Tool: the **Room Planner** artifact (https://claude.ai/artifact/KAvqrmWsYootZJLm
 Unit fronts y 485 · keeper soles y 502 · worktop surface y 326 (worktop reveal y 317–334, front edge 334–348) · hob level with the worktop · stop centres · window rectangles · door positions · ceiling y 32.
 
 ## 4. Standard pieces
-Floor pieces: width 1, 2 or 3 bays (1.0 / 2.0 / 3.0 m = 168 / 336 / 504 px) × one of five heights, snapped to the approved bays: 9 as standard, left edges on x = 286 + 168k (bays 1–9 = x 286–1798; the windows fill bays 3 and 7). The strips x 160–286 and 1798–1888 are wall only. A room can be given more bays (wider room: a bulge or widening, rare). When the right door is the cupboard of myriads, the last bay (next to it) stays completely empty.
+Floor pieces: width 1, 2 or 3 bays (1.0 / 2.0 / 3.0 m = 168 / 336 / 504 px) × one of five heights, snapped to the approved bays: 9 as standard, left edges on x = 286 + 168k (bays 1–9 = x 286–1798; the windows fill bays 3 and 7). The strips x 160–286 and 1798–1888 are wall only. A room can be given more bays (wider room: a bulge or widening, rare). When the right door is the cupboard of myriads, the wall strip beside its door (x 1798–1888) stays completely empty, wall pieces included.
 
 | Height class | Height | px | Typical |
 |---|---|---|---|

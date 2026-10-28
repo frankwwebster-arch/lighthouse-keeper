@@ -182,26 +182,33 @@
     "x": 1294
    },
    {
+    "id": "cupB3",
+    "label": "Cupboard B3",
+    "piece": "kitchen-base-cupboard",
+    "t": "f-work-1",
+    "x": 1462
+   },
+   {
     "counter": true,
     "id": "dresser",
     "label": "Dresser",
     "piece": "kitchen-dresser",
     "t": "f-tall-1",
-    "x": 1462
+    "x": 1630
    },
    {
     "id": "toaster",
     "label": "Toaster",
     "piece": "kitchen-toaster",
     "t": "d-s",
-    "x": 1491
+    "x": 1659
    },
    {
     "id": "mixer",
     "label": "Mixer",
     "piece": "kitchen-mixer",
     "t": "d-m",
-    "x": 1554
+    "x": 1722
    }
   ],
   "keeper": true,
