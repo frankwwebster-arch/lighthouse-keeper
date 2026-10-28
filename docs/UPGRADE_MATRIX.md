@@ -25,7 +25,6 @@ Room-unlocking contraptions: Weather Engine (thermometer → barometer → satel
 | Hot drinks | Brown Betty teapot | Coffee machine (teapot on its warmer) | GRAND ESPRESSO CONTRAPTION | more cheering; quicker |
 | Toaster | Two-slice toaster | Four-slice toaster | TOAST CATAPULT | faster breakfast; more filling |
 | Mixer | Stand mixer | Food processor | BAKING CAROUSEL | baking unlocked / faster |
-| Larder | Larder cupboard | Auto-restocking pantry | PANTRY LIFT | fewer shopping trips |
 | Dishwasher (new purchase) | Dishwasher | Quiet, fast dishwasher | SELF-LOADER | no washing-up; never stacks up |
 | Bin | Pedal bin | Recycling bins | COMPOST ENGINE (pipe 'TO GARDEN') | tidier; feeds the garden |
 | Cleaning (behind right door) | Broom | Hoover | Super hoover | tidies faster |
@@ -78,4 +77,5 @@ Room-unlocking contraptions: Weather Engine (thermometer → barometer → satel
 - Removed: 'pet cannot steal from it' (no pet in V1), 'Fancy professional kitchen', 'Lazyboy-style recliner', 'Big flat-screen TV' (breaks the CRT family), 'Grand piano' (too wide and deep for its slot), 'Smart door with doorbell camera', 'Video phone', 'Spa bathroom with rainfall shower', 'Harbour with boat shed' (clashes with the boathouse), 'Greenhouse' as a garden tier (now the tier-3 contraption, still to reconcile with any separate greenhouse facility).
 - Pet bowl removed until a pet exists.
 - Door moved to the lobby; bedroom basin split into basin, bath and shower to match the en-suite.
-- New: hot drinks, radio, toaster, mixer, larder, dishwasher, bin (kitchen); washing machine and boot rack (lobby); dining table (living room); shed and lawnmower (outside).
+- New: hot drinks, radio, toaster, mixer, dishwasher, bin (kitchen); washing machine and boot rack (lobby); dining table (living room); shed and lawnmower (outside).
+- Larder dropped as a concept (Frank, 28 Oct).

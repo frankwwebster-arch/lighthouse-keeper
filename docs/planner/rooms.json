@@ -202,13 +202,6 @@
     "piece": "kitchen-mixer",
     "t": "d-m",
     "x": 1554
-   },
-   {
-    "id": "larder",
-    "label": "Larder",
-    "piece": "kitchen-larder",
-    "t": "f-tall-1",
-    "x": 1630
    }
   ],
   "keeper": true,

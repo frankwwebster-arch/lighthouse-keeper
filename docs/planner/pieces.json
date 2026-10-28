@@ -252,7 +252,7 @@
     "date": "2026-10-27 21:50",
     "id": "d002",
     "label": "Redo v2: stickers assembled",
-    "notes": "Pieces drawn well, but glued together like stickers: the worktop floats above the units; gaps between units; sink cabinet shorter and narrower with the sink below the worktop; hob about 25 px above the worktop; each piece has its own perspective; larder reads as a door; fridge is a blank slab.",
+    "notes": "Pieces drawn well, but glued together like stickers: the worktop floats above the units; gaps between units; sink cabinet shorter and narrower with the sink below the worktop; hob about 25 px above the worktop; each piece has its own perspective; fridge is a blank slab.",
     "pins": [],
     "source": "review/kitchen-v14-redo-v2/outputs/kitchen-v14-redo-assembled-room-1x.png",
     "tier": 1,
@@ -640,48 +640,6 @@
    {
     "desc": "",
     "name": "",
-    "unlocks": ""
-   }
-  ],
-  "updatedAt": "2026-10-28T09:00:00Z"
- },
- {
-  "about": "Tall double-door pantry cupboard with a cornice and a small fly-screen vent, so it can never read as a door. Separate door over a stocked interior.",
-  "brief": "",
-  "drafts": [
-   {
-    "blob": "aea9a90c94960db5ef2dc1a8f321520d",
-    "date": "2026-10-27 21:50",
-    "id": "d018",
-    "label": "Redo v2 larder",
-    "notes": "Reads as a door to another room.",
-    "pins": [],
-    "source": "review/kitchen-v14-redo-v2/parts/larder.png",
-    "tier": 1,
-    "verdict": "reject",
-    "image": "review/kitchen-v14-redo-v2/parts/larder.png"
-   }
-  ],
-  "id": "kitchen-larder",
-  "name": "Larder",
-  "order": 7,
-  "perk": "Fewer shopping trips.",
-  "refs": [],
-  "room": "kitchen",
-  "shape": "f-tall-1",
-  "status": "drafting",
-  "tiers": [
-   {
-    "desc": "",
-    "name": "Larder cupboard"
-   },
-   {
-    "desc": "",
-    "name": "Auto-restocking pantry"
-   },
-   {
-    "desc": "",
-    "name": "PANTRY LIFT",
     "unlocks": ""
    }
   ],

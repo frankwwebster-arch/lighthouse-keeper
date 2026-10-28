@@ -31,7 +31,7 @@ Floor pieces: width 1, 2 or 3 bays (1.0 / 2.0 / 3.0 m = 168 / 336 / 504 px) × o
 | Table | 0.76 m | 128 | table, desk, shoe station |
 | Appliance | 0.9 m | 151 | washing machine, basin, tumble dryer |
 | Worktop | 1.0 m | 168 | base units, sink (one continuous worktop per run) |
-| Tall | 2.0 m | 336 | fridge, cooker, larder, wardrobe, hat stand; may carry a counter at worktop height (dresser) |
+| Tall | 2.0 m | 336 | fridge, cooker, wardrobe, hat stand; may carry a counter at worktop height (dresser) |
 
 Small props: floor prop 0.5 × 0.5 m (84 px); desktop S 44 × 36, M 64 × 60, L 84 × 84 px (stand on the surface beneath them); wall item S 60 × 60, M 100 × 90; shelf ×1 / ×2 (20 px deep); wall cupboard ×1 136 × 101 / ×2 304 × 101 at y 140–241; ceiling-hung ×2 336 × 110 at y 40–150.
 
