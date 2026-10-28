@@ -2,7 +2,7 @@
 
 Every floor of the lighthouse is planned the same way, on the same shell, with the same standard pieces. A schematic is GEOMETRY ONLY: it fixes where things go and how big they are, never how they look.
 
-Tool: the **Room Planner** artifact (https://claude.ai/artifact/KAvqrmWsYootZJLmEz22kL). Frank lays rooms out there by drag and drop; the planner enforces every rule below and exports the schematic JSON and PNG. Claude reads the saved rooms back from it.
+Tool: the **Room Planner** artifact (https://claude.ai/artifact/KAvqrmWsYootZJLmEz22kL). Frank lays rooms out there by drag and drop; the planner enforces every rule below and exports the schematic JSON and PNG. It also holds every piece's upgrades, reference images, draft history and Frank's feedback. Codex reads the mirror in `docs/planner/`.
 
 ## 1. The shell (identical on every floor)
 - Module 2048 × 576 px. 1 m = 168 px. Keeper stops at x = 370 + 84(n−1), n = 1–20.
@@ -10,6 +10,10 @@ Tool: the **Room Planner** artifact (https://claude.ai/artifact/KAvqrmWsYootZJLm
 - Windows: x 622–790 and 1294–1462, y 106–274. Switchable per room (the lobby has none). No door on any back wall, ever.
 - LEFT side-wall door: always present; leads to the stairs (in the lobby: the hallway with the stairs and the front door).
 - RIGHT side-wall door: OPTIONAL per room: the cupboard of myriads, a WC, or none.
+
+## 1a. Fixed shell + finishes
+- The shell above is ONE drawing for every floor, painted once and never redrawn: ceiling edge, side walls, side doors, window frames, skirting, floor edge.
+- Finishes are separate layers painted to the shell's fixed masks, in its perspective: floor (boards, lino, flagstones, carpet, tiles), walls (paint, whitewashed stone, panelling, wallpaper, tiles), ceiling (beams, plain). Each room picks one of each; changing them never touches the shell.
 
 ## 2. Clear walking lane — ABSOLUTE (Frank, 28 Oct)
 - The side doors' width must never overlap the depth of any furniture. All furniture stands within 0.9 m of the back wall (front faces on y 485). Each side door is 1.0 m wide and spans 1.0–2.0 m out from the back wall (floor y 488–516), straddling the keeper's walking line (y 502).
@@ -19,7 +23,7 @@ Tool: the **Room Planner** artifact (https://claude.ai/artifact/KAvqrmWsYootZJLm
 Unit fronts y 485 · keeper soles y 502 · worktop surface y 326 (worktop reveal y 317–334, front edge 334–348) · hob level with the worktop · stop centres · window rectangles · door positions · ceiling y 32.
 
 ## 4. Standard pieces
-Floor pieces: width 1, 2 or 3 bays (1.0 / 2.0 / 3.0 m = 168 / 336 / 504 px) × one of five heights. A 1-bay piece is centred on a stop (left edges on x = 202 + 84k).
+Floor pieces: width 1, 2 or 3 bays (1.0 / 2.0 / 3.0 m = 168 / 336 / 504 px) × one of five heights, snapped to the approved bays: 9 as standard, left edges on x = 286 + 168k (bays 1–9 = x 286–1798; the windows fill bays 3 and 7). The strips x 160–286 and 1798–1888 are wall only. A room can be given more bays (wider room: a bulge or widening, rare). When the right door is the cupboard of myriads, the last bay (next to it) stays completely empty.
 
 | Height class | Height | px | Typical |
 |---|---|---|---|

@@ -1,0 +1,2231 @@
+[
+ {
+  "about": "Seen side-on.",
+  "brief": "",
+  "drafts": [],
+  "id": "bedroom-bed",
+  "name": "Bed",
+  "order": 1,
+  "perk": "Wakes with more energy.",
+  "refs": [],
+  "room": "bedroom",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Creaky single bed"
+   },
+   {
+    "desc": "",
+    "name": "Comfy double bed"
+   },
+   {
+    "desc": "Four-poster: canopy, automatic curtains, bedside tea-maker.",
+    "name": "SLEEP ENGINE",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Basic piece, no upgrades. Electrical (status lamp). If it breaks he oversleeps.",
+  "brief": "",
+  "drafts": [],
+  "id": "bedroom-radio-alarm",
+  "name": "Radio alarm",
+  "order": 2,
+  "perk": "Wakes him in the morning.",
+  "refs": [],
+  "room": "bedroom",
+  "shape": "d-s",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Bedside radio alarm"
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "",
+  "brief": "",
+  "drafts": [],
+  "id": "bedroom-telephone",
+  "name": "Telephone",
+  "order": 3,
+  "perk": "Ring friends more often; friends arrive sooner.",
+  "refs": [],
+  "room": "bedroom",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Old dial phone"
+   },
+   {
+    "desc": "",
+    "name": "Push-button phone"
+   },
+   {
+    "desc": "Little switchboard with plugs and lights.",
+    "name": "TELEPHONIC EXCHANGE",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "",
+  "brief": "",
+  "drafts": [],
+  "id": "bedroom-desk",
+  "name": "Desk",
+  "order": 4,
+  "perk": "Links to workshop gadgets.",
+  "refs": [],
+  "room": "bedroom",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Little desk"
+   },
+   {
+    "desc": "",
+    "name": "Writing bureau"
+   },
+   {
+    "desc": "Drafting arm, magnifier, sparking gizmos.",
+    "name": "INVENTOR'S DESK",
+    "unlocks": "Workshop"
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "En-suite bathroom.",
+  "brief": "",
+  "drafts": [],
+  "id": "bedroom-basin",
+  "name": "Basin (en-suite)",
+  "order": 5,
+  "perk": "Quicker morning wash.",
+  "refs": [],
+  "room": "bedroom",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Chipped basin"
+   },
+   {
+    "desc": "",
+    "name": "Pedestal basin"
+   },
+   {
+    "desc": "A mirror on a swinging arm and a toothbrush rinser.",
+    "name": "BRUSH-O-MATIC",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "",
+  "brief": "",
+  "drafts": [],
+  "id": "bedroom-bath",
+  "name": "Bath (en-suite)",
+  "order": 6,
+  "perk": "Washing cheers him up.",
+  "refs": [],
+  "room": "bedroom",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Tin bath"
+   },
+   {
+    "desc": "",
+    "name": "Roll-top bath"
+   },
+   {
+    "desc": "Bellows that froth the bath.",
+    "name": "BUBBLE ENGINE",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "",
+  "brief": "",
+  "drafts": [],
+  "id": "bedroom-shower",
+  "name": "Shower (en-suite)",
+  "order": 7,
+  "perk": "Quicker, more refreshing.",
+  "refs": [],
+  "room": "bedroom",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Bucket shower"
+   },
+   {
+    "desc": "",
+    "name": "Power shower"
+   },
+   {
+    "desc": "A spinning brass rose and pipework.",
+    "name": "RAINMAKER",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Behind the WC door; sound only.",
+  "brief": "",
+  "drafts": [],
+  "id": "bedroom-toilet",
+  "name": "Toilet (never seen)",
+  "order": 8,
+  "perk": "Joke only.",
+  "refs": [],
+  "room": "bedroom",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Clanky loo"
+   },
+   {
+    "desc": "",
+    "name": "Quiet-flush loo"
+   },
+   {
+    "desc": "He doesn't want to come out.",
+    "name": "Musical loo",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "The whole furnished kitchen painted as ONE picture from the approved schematic, then cut into pieces (method changed 27 Oct).",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "08c4928678c4d68f2825b7130d4c7723",
+    "date": "2026-10-28 00:30",
+    "id": "d001",
+    "label": "Redo v3: one painted room",
+    "notes": "",
+    "pins": [],
+    "source": "review/kitchen-v14-redo-v3-coherent-room/outputs/kitchen-v14-v3-coherent-room-1x.png",
+    "tier": 1,
+    "verdict": "",
+    "image": "review/kitchen-v14-redo-v3-coherent-room/outputs/kitchen-v14-v3-coherent-room-1x.png"
+   },
+   {
+    "blob": "4dad325688a0c78e063e68d1fc9a1f26",
+    "date": "2026-10-27 21:50",
+    "id": "d002",
+    "label": "Redo v2: stickers assembled",
+    "notes": "Pieces drawn well, but glued together like stickers: the worktop floats above the units; gaps between units; sink cabinet shorter and narrower with the sink below the worktop; hob about 25 px above the worktop; each piece has its own perspective; larder reads as a door; fridge is a blank slab.",
+    "pins": [],
+    "source": "review/kitchen-v14-redo-v2/outputs/kitchen-v14-redo-assembled-room-1x.png",
+    "tier": 1,
+    "verdict": "reject",
+    "image": "review/kitchen-v14-redo-v2/outputs/kitchen-v14-redo-assembled-room-1x.png"
+   },
+   {
+    "blob": "bdfb72b77614314ab9f66d2c0eb70b47",
+    "date": "2026-10-27 18:00",
+    "id": "d003",
+    "label": "v14 build: drawn in code",
+    "notes": "Flat clip-art with no perspective: every piece was drawn in code with rectangles.",
+    "pins": [],
+    "source": "review/kitchen-v14-build/outputs/kitchen-v14-assembled-room-1x.png",
+    "tier": 1,
+    "verdict": "reject",
+    "image": "review/kitchen-v14-build/outputs/kitchen-v14-assembled-room-1x.png"
+   },
+   {
+    "blob": "f4b82194561d525f5474a98eb63a5d3e",
+    "date": "2026-10-27 12:00",
+    "id": "d004",
+    "label": "v8 room proof",
+    "notes": "The v8 pieces are the approved style, but the room scaling was wrong: table at knee height, counter items floating, side doors wrong.",
+    "pins": [],
+    "source": "review/kitchen-proof-v8-room-shell-v1/outputs/kitchen-v8-room-furnished-1x.png",
+    "tier": 1,
+    "verdict": "mixed",
+    "image": "review/kitchen-proof-v8-room-shell-v1/outputs/kitchen-v8-room-furnished-1x.png"
+   },
+   {
+    "blob": "86ba373825093b3c2d8ddb8fc862cf81",
+    "date": "2026-10-26 22:00",
+    "id": "d005",
+    "label": "v7 free room",
+    "notes": "Oven too tall; wrong floor; gutter around the keeper; too shiny; too American. Go UK cottage.",
+    "pins": [],
+    "source": "review/kitchen-proof-v7/outputs/kitchen-v7-free-room-with-prime-precut.png",
+    "tier": 1,
+    "verdict": "reject",
+    "image": "review/kitchen-proof-v7/outputs/kitchen-v7-free-room-with-prime-precut.png"
+   }
+  ],
+  "id": "kitchen-room",
+  "name": "Whole kitchen (painted room)",
+  "order": 0,
+  "perk": "",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "",
+  "status": "review",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Tall 1950s fridge-freezer, 1.0 x 1.8 m. Separate door over a complete interior; status lamp.",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "027f8a809001102b337312289bc2a332",
+    "date": "2026-10-27 21:50",
+    "id": "d006",
+    "label": "Redo v2 fridge",
+    "notes": "A blank white slab: needs a visible freezer/fridge split, a chrome badge and a top reveal.",
+    "pins": [],
+    "source": "review/kitchen-v14-redo-v2/parts/fridge_t1.png",
+    "tier": 1,
+    "verdict": "reject",
+    "image": "review/kitchen-v14-redo-v2/parts/fridge_t1.png"
+   },
+   {
+    "blob": "d64819a8599fc001aac0341053967123",
+    "date": "2026-10-27 09:00",
+    "id": "d007",
+    "label": "v8 cream larder fridge",
+    "notes": "Approved v8 style (low larder fridge, since replaced by the tall fridge-freezer).",
+    "pins": [],
+    "source": "review/kitchen-proof-v8-assets-v1/outputs/cream_larder_fridge-1x.png",
+    "tier": 1,
+    "verdict": "keep",
+    "image": "review/kitchen-proof-v8-assets-v1/outputs/cream_larder_fridge-1x.png"
+   }
+  ],
+  "id": "kitchen-fridge",
+  "name": "Fridge-freezer",
+  "order": 1,
+  "perk": "Holds more; food keeps longer; ice.",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "f-tall-1",
+  "status": "drafting",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Tall fridge-freezer"
+   },
+   {
+    "desc": "",
+    "name": "American-style double-door"
+   },
+   {
+    "desc": "",
+    "name": "FROST ENGINE",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Old-school cooker with an eye-level grill; hob level with the worktop. Separate oven door; contents cooking or burnt; light behind the oven glass; status lamp.",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "85203cd4c9271e19ee76c92c6eae2407",
+    "date": "2026-10-27 21:50",
+    "id": "d008",
+    "label": "Redo v2 cooker",
+    "notes": "Hob sits about 25 px above the worktop line.",
+    "pins": [],
+    "source": "review/kitchen-v14-redo-v2/parts/cooker_t1.png",
+    "tier": 1,
+    "verdict": "reject",
+    "image": "review/kitchen-v14-redo-v2/parts/cooker_t1.png"
+   },
+   {
+    "blob": "2e7127fab80a245e3880c06977be1256",
+    "date": "2026-10-27 09:00",
+    "id": "d009",
+    "label": "v8 old-school cooker",
+    "notes": "Frank: 'I like the eye-level grill.'",
+    "pins": [],
+    "source": "review/kitchen-proof-v8-assets-v1/outputs/old_school_cooker-1x.png",
+    "tier": 1,
+    "verdict": "keep",
+    "image": "review/kitchen-proof-v8-assets-v1/outputs/old_school_cooker-1x.png"
+   }
+  ],
+  "id": "kitchen-cooker",
+  "name": "Cooker",
+  "order": 2,
+  "perk": "Cooks faster; two dishes at once; posh recipes.",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "f-tall-1",
+  "status": "drafting",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Old-school cooker with eye-level grill"
+   },
+   {
+    "desc": "",
+    "name": "Cottage range"
+   },
+   {
+    "desc": "",
+    "name": "BAKE-O-MATIC",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Belfast sink set INTO the worktop, its rim flush; compact copper taps; the bin lives inside the cabinet. Same height and width as the cupboards beside it. No upgrades.",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "0fc2c65312043e524e66764d7ba0e103",
+    "date": "2026-10-27 21:50",
+    "id": "d010",
+    "label": "Redo v2 sink cabinet",
+    "notes": "Shorter and narrower than its neighbours; the sink sits below and in front of the worktop instead of in it.",
+    "pins": [],
+    "source": "review/kitchen-v14-redo-v2/parts/sink_cabinet.png",
+    "tier": 1,
+    "verdict": "reject",
+    "image": "review/kitchen-v14-redo-v2/parts/sink_cabinet.png"
+   },
+   {
+    "blob": "048d10a990231be338c2e011a7787b78",
+    "date": "2026-10-27 09:00",
+    "id": "d011",
+    "label": "v8 Belfast sink",
+    "notes": "Approved v8 piece (it was freestanding; it now has to sit in the run).",
+    "pins": [],
+    "source": "review/kitchen-proof-v8-assets-v1/outputs/belfast_sink_cabinet-1x.png",
+    "tier": 1,
+    "verdict": "keep",
+    "image": "review/kitchen-proof-v8-assets-v1/outputs/belfast_sink_cabinet-1x.png"
+   }
+  ],
+  "id": "kitchen-sink",
+  "name": "Belfast sink cabinet",
+  "order": 3,
+  "perk": "",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "f-work-1",
+  "status": "drafting",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Painted duck-egg double-door front, 1.0 m; one continuous worktop runs over each run (single worktop with healing).",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "58f42ec548983bf038d1873185621ef1",
+    "date": "2026-10-27 21:50",
+    "id": "d012",
+    "label": "Redo v2 cupboard A1",
+    "notes": "Fine on its own; in the room there were gaps between units.",
+    "pins": [],
+    "source": "review/kitchen-v14-redo-v2/parts/cupboard_A1.png",
+    "tier": 1,
+    "verdict": "mixed",
+    "image": "review/kitchen-v14-redo-v2/parts/cupboard_A1.png"
+   },
+   {
+    "blob": "2e7364a91624395991d0eaf26ccf719e",
+    "date": "2026-10-27 09:00",
+    "id": "d013",
+    "label": "v8 painted base cupboard",
+    "notes": "Approved v8 piece.",
+    "pins": [],
+    "source": "review/kitchen-proof-v8-assets-v1/outputs/painted_base_cupboard-1x.png",
+    "tier": 1,
+    "verdict": "keep",
+    "image": "review/kitchen-proof-v8-assets-v1/outputs/painted_base_cupboard-1x.png"
+   }
+  ],
+  "id": "kitchen-base-cupboard",
+  "name": "Base cupboard",
+  "order": 4,
+  "perk": "",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "f-work-1",
+  "status": "drafting",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Two-door wall cupboard; belongs to the base cabinet below it. Above eye level, so a sliver of underside shows.",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "54ab945eeff9dd60344403c917c17713",
+    "date": "2026-10-27 21:50",
+    "id": "d014",
+    "label": "Redo v2 wall cupboard",
+    "notes": "Drawn flat: needs a sliver of underside.",
+    "pins": [],
+    "source": "review/kitchen-v14-redo-v2/parts/wall_cupboard_1.png",
+    "tier": 1,
+    "verdict": "mixed",
+    "image": "review/kitchen-v14-redo-v2/parts/wall_cupboard_1.png"
+   },
+   {
+    "blob": "3ea89a55c7b40e935f7d58321d80f61d",
+    "date": "2026-10-27 09:00",
+    "id": "d015",
+    "label": "v8 painted wall cupboard",
+    "notes": "Approved v8 piece.",
+    "pins": [],
+    "source": "review/kitchen-proof-v8-assets-v1/outputs/painted_wall_cupboard-1x.png",
+    "tier": 1,
+    "verdict": "keep",
+    "image": "review/kitchen-proof-v8-assets-v1/outputs/painted_wall_cupboard-1x.png"
+   }
+  ],
+  "id": "kitchen-wall-cupboard",
+  "name": "Wall cupboard",
+  "order": 5,
+  "perk": "",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "w-cup1",
+  "status": "drafting",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Painted dresser with blue-and-white plates; counter at worktop height carrying the toaster and mixer.",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "74ee1d954847fd8a16469627d2e0256a",
+    "date": "2026-10-27 21:50",
+    "id": "d016",
+    "label": "Redo v2 dresser",
+    "notes": "The best piece in redo v2.",
+    "pins": [],
+    "source": "review/kitchen-v14-redo-v2/parts/dresser.png",
+    "tier": 1,
+    "verdict": "keep",
+    "image": "review/kitchen-v14-redo-v2/parts/dresser.png"
+   },
+   {
+    "blob": "a70d78c2f57a6d742f0c83731959f128",
+    "date": "2026-10-27 09:00",
+    "id": "d017",
+    "label": "v8 painted dresser",
+    "notes": "Approved v8 piece.",
+    "pins": [],
+    "source": "review/kitchen-proof-v8-assets-v1/outputs/painted_dresser-1x.png",
+    "tier": 1,
+    "verdict": "keep",
+    "image": "review/kitchen-proof-v8-assets-v1/outputs/painted_dresser-1x.png"
+   }
+  ],
+  "id": "kitchen-dresser",
+  "name": "Dresser",
+  "order": 6,
+  "perk": "",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "f-tall-1",
+  "status": "drafting",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Tall double-door pantry cupboard with a cornice and a small fly-screen vent, so it can never read as a door. Separate door over a stocked interior.",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "aea9a90c94960db5ef2dc1a8f321520d",
+    "date": "2026-10-27 21:50",
+    "id": "d018",
+    "label": "Redo v2 larder",
+    "notes": "Reads as a door to another room.",
+    "pins": [],
+    "source": "review/kitchen-v14-redo-v2/parts/larder.png",
+    "tier": 1,
+    "verdict": "reject",
+    "image": "review/kitchen-v14-redo-v2/parts/larder.png"
+   }
+  ],
+  "id": "kitchen-larder",
+  "name": "Larder",
+  "order": 7,
+  "perk": "Fewer shopping trips.",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "f-tall-1",
+  "status": "drafting",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Larder cupboard"
+   },
+   {
+    "desc": "",
+    "name": "Auto-restocking pantry"
+   },
+   {
+    "desc": "",
+    "name": "PANTRY LIFT",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Brown Betty teapot with two cream cups, on the worktop.",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "6184991da7351aa44b753b3578b64845",
+    "date": "2026-10-27 21:50",
+    "id": "d019",
+    "label": "Redo v2 teapot",
+    "notes": "",
+    "pins": [],
+    "source": "review/kitchen-v14-redo-v2/parts/teapot.png",
+    "tier": 1,
+    "verdict": "",
+    "image": "review/kitchen-v14-redo-v2/parts/teapot.png"
+   },
+   {
+    "blob": "d751ad2e11e212c2e2c2ca881f1d776f",
+    "date": "2026-10-27 09:00",
+    "id": "d020",
+    "label": "v8 enamel kettle",
+    "notes": "Replaced by the Brown Betty teapot.",
+    "pins": [],
+    "source": "review/kitchen-proof-v8-assets-v1/outputs/enamel_electric_kettle-1x.png",
+    "tier": 1,
+    "verdict": "reject",
+    "image": "review/kitchen-proof-v8-assets-v1/outputs/enamel_electric_kettle-1x.png"
+   }
+  ],
+  "id": "kitchen-hot-drinks",
+  "name": "Hot drinks (teapot)",
+  "order": 8,
+  "perk": "More cheering; quicker.",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "d-s",
+  "status": "drafting",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Brown Betty teapot"
+   },
+   {
+    "desc": "",
+    "name": "Coffee machine (teapot on its warmer)"
+   },
+   {
+    "desc": "",
+    "name": "GRAND ESPRESSO CONTRAPTION",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Cream two-slot toaster on the dresser counter; status lamp.",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "13df4893aa4751bf6dd0c565b28ee8b0",
+    "date": "2026-10-27 21:50",
+    "id": "d021",
+    "label": "Redo v2 toaster",
+    "notes": "",
+    "pins": [],
+    "source": "review/kitchen-v14-redo-v2/parts/toaster.png",
+    "tier": 1,
+    "verdict": "",
+    "image": "review/kitchen-v14-redo-v2/parts/toaster.png"
+   },
+   {
+    "blob": "e3b86590f8559efaff85f691d90a51da",
+    "date": "2026-10-27 09:00",
+    "id": "d022",
+    "label": "v8 cream toaster",
+    "notes": "Approved v8 piece.",
+    "pins": [],
+    "source": "review/kitchen-proof-v8-assets-v1/outputs/cream_toaster-1x.png",
+    "tier": 1,
+    "verdict": "keep",
+    "image": "review/kitchen-proof-v8-assets-v1/outputs/cream_toaster-1x.png"
+   }
+  ],
+  "id": "kitchen-toaster",
+  "name": "Toaster",
+  "order": 9,
+  "perk": "Faster breakfast; more filling.",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "d-s",
+  "status": "drafting",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Two-slice toaster"
+   },
+   {
+    "desc": "",
+    "name": "Four-slice toaster"
+   },
+   {
+    "desc": "",
+    "name": "TOAST CATAPULT",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Duck-egg stand mixer with a cream bowl, on the dresser counter; status lamp.",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "2fb0e749aa0e7647a83d8494df03527e",
+    "date": "2026-10-27 21:50",
+    "id": "d023",
+    "label": "Redo v2 mixer",
+    "notes": "",
+    "pins": [],
+    "source": "review/kitchen-v14-redo-v2/parts/mixer.png",
+    "tier": 1,
+    "verdict": "",
+    "image": "review/kitchen-v14-redo-v2/parts/mixer.png"
+   },
+   {
+    "blob": "c1d8659456979960160f988b655cea46",
+    "date": "2026-10-27 09:00",
+    "id": "d024",
+    "label": "v8 stand mixer",
+    "notes": "Approved v8 piece.",
+    "pins": [],
+    "source": "review/kitchen-proof-v8-assets-v1/outputs/stand_mixer-1x.png",
+    "tier": 1,
+    "verdict": "keep",
+    "image": "review/kitchen-proof-v8-assets-v1/outputs/stand_mixer-1x.png"
+   }
+  ],
+  "id": "kitchen-mixer",
+  "name": "Mixer",
+  "order": 10,
+  "perk": "Baking unlocked / faster.",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "d-m",
+  "status": "drafting",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Stand mixer"
+   },
+   {
+    "desc": "",
+    "name": "Food processor"
+   },
+   {
+    "desc": "",
+    "name": "BAKING CAROUSEL",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "A new purchase: fits the dishwasher-slot cupboard.",
+  "brief": "",
+  "drafts": [],
+  "id": "kitchen-dishwasher",
+  "name": "Dishwasher",
+  "order": 11,
+  "perk": "No washing-up; never stacks up.",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "f-work-1",
+  "status": "layout",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Dishwasher"
+   },
+   {
+    "desc": "",
+    "name": "Quiet, fast dishwasher"
+   },
+   {
+    "desc": "",
+    "name": "SELF-LOADER",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Lives inside the sink cabinet in the v14 layout.",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "7fde000f0e06912f06f800bb316426f0",
+    "date": "2026-10-27 09:00",
+    "id": "d025",
+    "label": "v8 enamel pedal bin",
+    "notes": "Approved v8 piece.",
+    "pins": [],
+    "source": "review/kitchen-proof-v8-assets-v1/outputs/enamel_pedal_bin-1x.png",
+    "tier": 1,
+    "verdict": "keep",
+    "image": "review/kitchen-proof-v8-assets-v1/outputs/enamel_pedal_bin-1x.png"
+   }
+  ],
+  "id": "kitchen-bin",
+  "name": "Bin",
+  "order": 12,
+  "perk": "Tidier; feeds the garden.",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "p-floor",
+  "status": "drafting",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Pedal bin"
+   },
+   {
+    "desc": "",
+    "name": "Recycling bins"
+   },
+   {
+    "desc": "Pipe marked 'TO GARDEN'.",
+    "name": "COMPOST ENGINE",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Honey-timber wall clock showing game time.",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "adf49bd34621c194269b17b5ef6f73cc",
+    "date": "2026-10-27 21:50",
+    "id": "d026",
+    "label": "Redo v2 clock",
+    "notes": "",
+    "pins": [],
+    "source": "review/kitchen-v14-redo-v2/parts/clock.png",
+    "tier": 1,
+    "verdict": "",
+    "image": "review/kitchen-v14-redo-v2/parts/clock.png"
+   }
+  ],
+  "id": "kitchen-clock",
+  "name": "Wall clock",
+  "order": 13,
+  "perk": "",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "w-sm",
+  "status": "drafting",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Blank calendar; the game day is an engine overlay.",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "3cbb478807b93e393af6ac5c5a5b2bf8",
+    "date": "2026-10-27 21:50",
+    "id": "d027",
+    "label": "Redo v2 calendar",
+    "notes": "",
+    "pins": [],
+    "source": "review/kitchen-v14-redo-v2/parts/calendar.png",
+    "tier": 1,
+    "verdict": "",
+    "image": "review/kitchen-v14-redo-v2/parts/calendar.png"
+   }
+  ],
+  "id": "kitchen-calendar",
+  "name": "Calendar",
+  "order": 14,
+  "perk": "",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "w-sm",
+  "status": "drafting",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Lives behind the right door (the cupboard of myriads); swapped while he is out of sight.",
+  "brief": "",
+  "drafts": [],
+  "id": "cupboard-cleaning",
+  "name": "Cleaning kit",
+  "order": 15,
+  "perk": "Tidies faster.",
+  "refs": [],
+  "room": "kitchen",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Broom"
+   },
+   {
+    "desc": "",
+    "name": "Hoover"
+   },
+   {
+    "desc": "",
+    "name": "Super hoover",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "",
+  "brief": "",
+  "drafts": [],
+  "id": "lamp-lamp",
+  "name": "Lamp",
+  "order": 1,
+  "perk": "Burns all night; never needs polishing.",
+  "refs": [],
+  "room": "lamp",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Oil lamp"
+   },
+   {
+    "desc": "",
+    "name": "Electric lamp"
+   },
+   {
+    "desc": "Clockwork-turned giant lens with gears.",
+    "name": "MEGA BEAM",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "",
+  "brief": "",
+  "drafts": [],
+  "id": "lamp-telescope",
+  "name": "Telescope",
+  "order": 2,
+  "perk": "Spotting game sees further and rarer things.",
+  "refs": [],
+  "room": "lamp",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Brass telescope"
+   },
+   {
+    "desc": "",
+    "name": "Spyglass on a stand"
+   },
+   {
+    "desc": "Geared telescope with star charts.",
+    "name": "OBSERVATORY ENGINE",
+    "unlocks": "Observatory"
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Lives in the living room until the Aquarium exists.",
+  "brief": "",
+  "drafts": [],
+  "id": "later-fish-tank",
+  "name": "Fish tank",
+  "order": 1,
+  "perk": "",
+  "refs": [],
+  "room": "later",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Small fish tank"
+   },
+   {
+    "desc": "",
+    "name": "Big tank"
+   },
+   {
+    "desc": "Bubbling pipework, feeding chute.",
+    "name": "REEF ENGINE",
+    "unlocks": "Aquarium"
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "",
+  "brief": "",
+  "drafts": [],
+  "id": "later-workbench",
+  "name": "Workshop bench",
+  "order": 2,
+  "perk": "",
+  "refs": [],
+  "room": "later",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Workbench"
+   },
+   {
+    "desc": "",
+    "name": "Gadget bench"
+   },
+   {
+    "desc": "",
+    "name": "ROBOT LAB",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "",
+  "brief": "",
+  "drafts": [],
+  "id": "later-computer",
+  "name": "Computer",
+  "order": 3,
+  "perk": "",
+  "refs": [],
+  "room": "later",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Old computer"
+   },
+   {
+    "desc": "",
+    "name": "Gaming computer"
+   },
+   {
+    "desc": "",
+    "name": "SUPERCOMPUTER WALL",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Always directly above the kitchen.",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "8408d7cffa41eafed60337f71456e933",
+    "date": "2026-10-27 09:00",
+    "id": "d028",
+    "label": "v8 scrubbed pine table",
+    "notes": "Approved v8 piece (drawn for the kitchen before the table moved upstairs).",
+    "pins": [],
+    "source": "review/kitchen-proof-v8-assets-v1/outputs/scrubbed_pine_table-1x.png",
+    "tier": 1,
+    "verdict": "keep",
+    "image": "review/kitchen-proof-v8-assets-v1/outputs/scrubbed_pine_table-1x.png"
+   }
+  ],
+  "id": "living-dining-table",
+  "name": "Dining table",
+  "order": 1,
+  "perk": "Meals more satisfying; visitors stay.",
+  "refs": [],
+  "room": "living",
+  "shape": "f-table-2",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Scrubbed pine table"
+   },
+   {
+    "desc": "",
+    "name": "Extending dining table"
+   },
+   {
+    "desc": "A turning centrepiece that serves each dish.",
+    "name": "BANQUETING CAROUSEL",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "CRT family.",
+  "brief": "",
+  "drafts": [],
+  "id": "living-tv",
+  "name": "TV",
+  "order": 2,
+  "perk": "More fun per show; film nights.",
+  "refs": [],
+  "room": "living",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Old box telly"
+   },
+   {
+    "desc": "",
+    "name": "Big wooden-cabinet colour telly"
+   },
+   {
+    "desc": "Valve-lit cabinet on brass gimbals with twin aerials.",
+    "name": "TELEVISOR",
+    "unlocks": "Cinema"
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "",
+  "brief": "",
+  "drafts": [],
+  "id": "living-bookshelf",
+  "name": "Bookshelf",
+  "order": 3,
+  "perk": "Reading hints for quizzes.",
+  "refs": [],
+  "room": "living",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Wobbly shelf"
+   },
+   {
+    "desc": "",
+    "name": "Proper bookcase"
+   },
+   {
+    "desc": "Rolling ladder and a book-fetching arm.",
+    "name": "LIBRARY ENGINE",
+    "unlocks": "Library"
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "",
+  "brief": "",
+  "drafts": [],
+  "id": "living-armchair",
+  "name": "Armchair",
+  "order": 4,
+  "perk": "Rest recovers more energy.",
+  "refs": [],
+  "room": "living",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Old armchair"
+   },
+   {
+    "desc": "",
+    "name": "Rocking chair"
+   },
+   {
+    "desc": "Lever footrest and a tea-holding arm.",
+    "name": "RECLINE-O-MATIC",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Music.",
+  "brief": "",
+  "drafts": [],
+  "id": "living-radio",
+  "name": "Radio",
+  "order": 5,
+  "perk": "Music lifts his mood; more tunes.",
+  "refs": [],
+  "room": "living",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Crackly valve radio"
+   },
+   {
+    "desc": "",
+    "name": "Big wireless"
+   },
+   {
+    "desc": "Radio and record player with an automatic record-changing arm.",
+    "name": "RADIOGRAM ENGINE",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "",
+  "brief": "",
+  "drafts": [],
+  "id": "living-piano",
+  "name": "Piano",
+  "order": 6,
+  "perk": "Visitors ask him to play.",
+  "refs": [],
+  "room": "living",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Old upright piano"
+   },
+   {
+    "desc": "",
+    "name": "Polished upright piano"
+   },
+   {
+    "desc": "Self-playing with punched paper rolls.",
+    "name": "PIANOLA ENGINE",
+    "unlocks": "Music Room"
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "On the wall beside the left door. The front door itself is never seen: it is in the hallway behind the left door. Rings when a visitor knocks.",
+  "brief": "",
+  "drafts": [],
+  "id": "lobby-doorbell",
+  "name": "Doorbell",
+  "order": 1,
+  "perk": "See visitors sooner; visitors wait longer.",
+  "refs": [],
+  "room": "lobby",
+  "shape": "w-sm",
+  "status": "layout",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Bell"
+   },
+   {
+    "desc": "",
+    "name": "Intercom"
+   },
+   {
+    "desc": "Periscope, bell-pull and pulleys that open the front door for visitors.",
+    "name": "DOOR-O-MATIC",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Holds his outdoor gear: oilskin and sou'wester; winter coat, woolly hat and scarf. Each garment is a separate sprite, hidden while he is out wearing it. Wet gear goes to the airer instead. No upgrades.",
+  "brief": "",
+  "drafts": [],
+  "id": "lobby-hat-stand",
+  "name": "Hat stand",
+  "order": 2,
+  "perk": "",
+  "refs": [],
+  "room": "lobby",
+  "shape": "f-tall-1",
+  "status": "layout",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Bench with wellies and snow boots beneath (boot sprites hidden while worn).",
+  "brief": "",
+  "drafts": [],
+  "id": "lobby-boot-bench",
+  "name": "Boot bench",
+  "order": 3,
+  "perk": "No mud tracked in (less cleaning).",
+  "refs": [],
+  "room": "lobby",
+  "shape": "f-bench-1",
+  "status": "layout",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Boot rack"
+   },
+   {
+    "desc": "",
+    "name": "Boot-drying rack"
+   },
+   {
+    "desc": "Spinning brushes that clean and polish boots.",
+    "name": "BOOT-BUFFING MACHINE",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "On the wall near the left door: he checks the weather before going out.",
+  "brief": "",
+  "drafts": [],
+  "id": "lobby-weather",
+  "name": "Weather instrument",
+  "order": 4,
+  "perk": "Earlier and clearer storm warnings.",
+  "refs": [],
+  "room": "lobby",
+  "shape": "w-sm",
+  "status": "layout",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Thermometer"
+   },
+   {
+    "desc": "",
+    "name": "Barometer"
+   },
+   {
+    "desc": "Satellite dish on an aerial mast up the wall, ticker tape printing the forecast, needles and flashing bulbs.",
+    "name": "WEATHER ENGINE",
+    "unlocks": "Weather Station"
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Boot-cleaning station: scraper, brushes, polish box. No upgrades.",
+  "brief": "",
+  "drafts": [],
+  "id": "lobby-shoe-station",
+  "name": "Shoe station",
+  "order": 5,
+  "perk": "",
+  "refs": [],
+  "room": "lobby",
+  "shape": "f-table-1",
+  "status": "layout",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Ceiling pulley airer with washing on it; wet outdoor gear hangs here until dry and cannot be worn while wet (LATER). Tier 2 replaces it with a floor tumble dryer beside the washing machine.",
+  "brief": "",
+  "drafts": [],
+  "id": "lobby-airer",
+  "name": "Airer / tumble dryer",
+  "order": 6,
+  "perk": "Wet clothes and gear wearable again sooner.",
+  "refs": [],
+  "room": "lobby",
+  "shape": "c-h2",
+  "status": "layout",
+  "tiers": [
+   {
+    "desc": "Slow drying.",
+    "name": "Ceiling airer (Sheila Maid)"
+   },
+   {
+    "desc": "Fast drying; status lamp; a fault stops drying until fixed.",
+    "name": "Tumble dryer (replaces the airer)"
+   },
+   {
+    "desc": "The LAUNDRY ENGINE takes over drying: near-instant.",
+    "name": "None of its own",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Laundry basket sits on top. Electrical: status lamp.",
+  "brief": "",
+  "drafts": [],
+  "id": "lobby-washing-machine",
+  "name": "Washing machine",
+  "order": 7,
+  "perk": "Faster, bigger loads; hangs washing itself.",
+  "refs": [],
+  "room": "lobby",
+  "shape": "f-appl-1",
+  "status": "layout",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Twin-tub"
+   },
+   {
+    "desc": "",
+    "name": "Front-loader"
+   },
+   {
+    "desc": "Mangle rollers and a pulley line that carries washing out to the line.",
+    "name": "LAUNDRY ENGINE",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Wicker basket on top of the washing machine.",
+  "brief": "",
+  "drafts": [],
+  "id": "lobby-laundry-basket",
+  "name": "Laundry basket",
+  "order": 8,
+  "perk": "",
+  "refs": [],
+  "room": "lobby",
+  "shape": "d-l",
+  "status": "layout",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Basin on a painted vanity cabinet beside the WC door, with a mirror above. No upgrades.",
+  "brief": "",
+  "drafts": [],
+  "id": "lobby-hand-basin",
+  "name": "Hand basin",
+  "order": 9,
+  "perk": "",
+  "refs": [],
+  "room": "lobby",
+  "shape": "f-appl-1",
+  "status": "layout",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Above the hand basin.",
+  "brief": "",
+  "drafts": [],
+  "id": "lobby-mirror",
+  "name": "Mirror",
+  "order": 10,
+  "perk": "",
+  "refs": [],
+  "room": "lobby",
+  "shape": "w-md",
+  "status": "layout",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "Outdoor tools.",
+  "brief": "",
+  "drafts": [],
+  "id": "outside-shed",
+  "name": "Garden shed",
+  "order": 1,
+  "perk": "Better tools.",
+  "refs": [],
+  "room": "outside",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Lean-to shed"
+   },
+   {
+    "desc": "",
+    "name": "Proper shed"
+   },
+   {
+    "desc": "Chimney, whirligig and gadget hatch.",
+    "name": "INVENTOR'S SHED",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "",
+  "brief": "",
+  "drafts": [],
+  "id": "outside-lawnmower",
+  "name": "Lawnmower",
+  "order": 2,
+  "perk": "Mows faster.",
+  "refs": [],
+  "room": "outside",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Push mower"
+   },
+   {
+    "desc": "",
+    "name": "Petrol mower"
+   },
+   {
+    "desc": "",
+    "name": "MOW-O-MATIC",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "",
+  "brief": "",
+  "drafts": [],
+  "id": "outside-veg",
+  "name": "Vegetable garden",
+  "order": 3,
+  "perk": "Grows faster, even in storms.",
+  "refs": [],
+  "room": "outside",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Veg patch"
+   },
+   {
+    "desc": "",
+    "name": "Raised beds"
+   },
+   {
+    "desc": "Glasshouse with sprinklers.",
+    "name": "GREENHOUSE ENGINE",
+    "unlocks": "Greenhouse"
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "",
+  "brief": "",
+  "drafts": [],
+  "id": "outside-jetty",
+  "name": "Jetty",
+  "order": 4,
+  "perk": "Better fishing; boat trips start here.",
+  "refs": [],
+  "room": "outside",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Rickety jetty"
+   },
+   {
+    "desc": "",
+    "name": "Proper jetty"
+   },
+   {
+    "desc": "Winch and hoist for the boat.",
+    "name": "JETTY CRANE",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "",
+  "brief": "",
+  "drafts": [],
+  "id": "outside-boat",
+  "name": "Boat",
+  "order": 5,
+  "perk": "Quicker trips.",
+  "refs": [],
+  "room": "outside",
+  "shape": "",
+  "status": "idea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": "Rowing boat"
+   },
+   {
+    "desc": "",
+    "name": "Tug"
+   },
+   {
+    "desc": "Paddles, propeller, balloon.",
+    "name": "AMPHIBIOUS CONTRAPTION",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:00:00Z"
+ },
+ {
+  "about": "ONE drawing for every floor, never redrawn: ceiling edge, side walls, the two side doors on the walking line (1.0-2.0 m out from the back wall), window frames, skirting and the floor's front edge. Floor, wall and ceiling finishes sit underneath it in fixed masks, so a room can change its carpet or wallpaper without anyone repainting the shell.",
+  "brief": "",
+  "drafts": [
+   {
+    "blob": "2c43738a2f743145ce5d92429090a461",
+    "date": "2026-10-28 00:30",
+    "id": "d101",
+    "label": "Redo v3 empty room",
+    "notes": "",
+    "pins": [],
+    "source": "review/kitchen-v14-redo-v3-coherent-room/outputs/kitchen-v14-v3-coherent-room-empty-1x.png",
+    "tier": 1,
+    "verdict": "",
+    "image": "review/kitchen-v14-redo-v3-coherent-room/outputs/kitchen-v14-v3-coherent-room-empty-1x.png"
+   },
+   {
+    "blob": "340df14c2e341a7d26d93a1c19c88683",
+    "date": "2026-10-27 12:00",
+    "id": "d102",
+    "label": "v8 room shell",
+    "notes": "Approved v8 shell style, but the side doors were wrong. Doors must now sit on the walking line, 1.0-2.0 m out from the back wall, with no furniture in their way.",
+    "pins": [],
+    "source": "review/kitchen-proof-v8-room-shell-v1/outputs/kitchen-v8-room-shell-empty-1x.png",
+    "tier": 1,
+    "verdict": "mixed",
+    "image": "review/kitchen-proof-v8-room-shell-v1/outputs/kitchen-v8-room-shell-empty-1x.png"
+   }
+  ],
+  "finish": "",
+  "id": "shell-fixed",
+  "name": "Room shell (fixed)",
+  "order": 0,
+  "perk": "",
+  "refs": [],
+  "room": "shell",
+  "shape": "",
+  "status": "drafting",
+  "swatch": "",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:10:00Z"
+ },
+ {
+  "about": "A floor finish: painted once to the shell's floor mask, painted in the room's perspective (boards and tile lines run to the vanishing point). Swapped per room without touching the shell.",
+  "brief": "",
+  "drafts": [],
+  "finish": "floor",
+  "id": "floor-boards",
+  "name": "Floorboards (honey pine)",
+  "order": 1,
+  "perk": "",
+  "refs": [],
+  "room": "shell",
+  "shape": "",
+  "status": "idea",
+  "swatch": "#e3c99a",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:10:00Z"
+ },
+ {
+  "about": "A floor finish: painted once to the shell's floor mask, painted in the room's perspective (boards and tile lines run to the vanishing point). Swapped per room without touching the shell.",
+  "brief": "",
+  "drafts": [],
+  "finish": "floor",
+  "id": "floor-checker",
+  "name": "Checkerboard lino",
+  "order": 2,
+  "perk": "",
+  "refs": [],
+  "room": "shell",
+  "shape": "",
+  "status": "idea",
+  "swatch": "#d6d2c6",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:10:00Z"
+ },
+ {
+  "about": "A floor finish: painted once to the shell's floor mask, painted in the room's perspective (boards and tile lines run to the vanishing point). Swapped per room without touching the shell.",
+  "brief": "",
+  "drafts": [],
+  "finish": "floor",
+  "id": "floor-flagstones",
+  "name": "Flagstones",
+  "order": 3,
+  "perk": "",
+  "refs": [],
+  "room": "shell",
+  "shape": "",
+  "status": "idea",
+  "swatch": "#cbc5b6",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:10:00Z"
+ },
+ {
+  "about": "A floor finish: painted once to the shell's floor mask, painted in the room's perspective (boards and tile lines run to the vanishing point). Swapped per room without touching the shell.",
+  "brief": "",
+  "drafts": [],
+  "finish": "floor",
+  "id": "floor-carpet",
+  "name": "Carpet",
+  "order": 4,
+  "perk": "",
+  "refs": [],
+  "room": "shell",
+  "shape": "",
+  "status": "idea",
+  "swatch": "#c9a99e",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:10:00Z"
+ },
+ {
+  "about": "A floor finish: painted once to the shell's floor mask, painted in the room's perspective (boards and tile lines run to the vanishing point). Swapped per room without touching the shell.",
+  "brief": "",
+  "drafts": [],
+  "finish": "floor",
+  "id": "floor-tiles",
+  "name": "Bathroom tiles",
+  "order": 5,
+  "perk": "",
+  "refs": [],
+  "room": "shell",
+  "shape": "",
+  "status": "idea",
+  "swatch": "#dce6e5",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:10:00Z"
+ },
+ {
+  "about": "A wall finish: painted once to the shell's back-wall and side-wall masks (side walls in perspective). Swapped per room without touching the shell.",
+  "brief": "",
+  "drafts": [],
+  "finish": "wall",
+  "id": "wall-cream",
+  "name": "Cream paint",
+  "order": 6,
+  "perk": "",
+  "refs": [],
+  "room": "shell",
+  "shape": "",
+  "status": "idea",
+  "swatch": "#fbf6e9",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:10:00Z"
+ },
+ {
+  "about": "A wall finish: painted once to the shell's back-wall and side-wall masks (side walls in perspective). Swapped per room without touching the shell.",
+  "brief": "",
+  "drafts": [],
+  "finish": "wall",
+  "id": "wall-stone",
+  "name": "Whitewashed stone",
+  "order": 7,
+  "perk": "",
+  "refs": [],
+  "room": "shell",
+  "shape": "",
+  "status": "idea",
+  "swatch": "#eeebe3",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:10:00Z"
+ },
+ {
+  "about": "A wall finish: painted once to the shell's back-wall and side-wall masks (side walls in perspective). Swapped per room without touching the shell.",
+  "brief": "",
+  "drafts": [],
+  "finish": "wall",
+  "id": "wall-panelling",
+  "name": "Tongue-and-groove panelling",
+  "order": 8,
+  "perk": "",
+  "refs": [],
+  "room": "shell",
+  "shape": "",
+  "status": "idea",
+  "swatch": "#dfe7dd",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:10:00Z"
+ },
+ {
+  "about": "A wall finish: painted once to the shell's back-wall and side-wall masks (side walls in perspective). Swapped per room without touching the shell.",
+  "brief": "",
+  "drafts": [],
+  "finish": "wall",
+  "id": "wall-wallpaper",
+  "name": "Wallpaper",
+  "order": 9,
+  "perk": "",
+  "refs": [],
+  "room": "shell",
+  "shape": "",
+  "status": "idea",
+  "swatch": "#f2e5d5",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:10:00Z"
+ },
+ {
+  "about": "A wall finish: painted once to the shell's back-wall and side-wall masks (side walls in perspective). Swapped per room without touching the shell.",
+  "brief": "",
+  "drafts": [],
+  "finish": "wall",
+  "id": "wall-tiles",
+  "name": "Tiles (en-suite)",
+  "order": 10,
+  "perk": "",
+  "refs": [],
+  "room": "shell",
+  "shape": "",
+  "status": "idea",
+  "swatch": "#e4eef0",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:10:00Z"
+ },
+ {
+  "about": "A ceiling finish: painted once to the shell's ceiling mask. Swapped per room without touching the shell.",
+  "brief": "",
+  "drafts": [],
+  "finish": "ceiling",
+  "id": "ceil-beams",
+  "name": "Timber beams",
+  "order": 11,
+  "perk": "",
+  "refs": [],
+  "room": "shell",
+  "shape": "",
+  "status": "idea",
+  "swatch": "#e9e3d6",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:10:00Z"
+ },
+ {
+  "about": "A ceiling finish: painted once to the shell's ceiling mask. Swapped per room without touching the shell.",
+  "brief": "",
+  "drafts": [],
+  "finish": "ceiling",
+  "id": "ceil-plain",
+  "name": "Plain painted",
+  "order": 12,
+  "perk": "",
+  "refs": [],
+  "room": "shell",
+  "shape": "",
+  "status": "idea",
+  "swatch": "#f5f2ea",
+  "tiers": [
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": ""
+   },
+   {
+    "desc": "",
+    "name": "",
+    "unlocks": ""
+   }
+  ],
+  "updatedAt": "2026-10-28T09:10:00Z"
+ }
+]

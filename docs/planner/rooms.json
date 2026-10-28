@@ -1,0 +1,254 @@
+[
+ {
+  "ceilingFinish": "ceil-beams",
+  "floorFinish": "floor-flagstones",
+  "id": "lobby",
+  "items": [
+   {
+    "id": "doorbell",
+    "label": "Doorbell",
+    "piece": "lobby-doorbell",
+    "t": "w-sm",
+    "x": 189,
+    "y": 230
+   },
+   {
+    "id": "hatstand",
+    "label": "Hat stand",
+    "piece": "lobby-hat-stand",
+    "t": "f-tall-1",
+    "x": 286
+   },
+   {
+    "id": "bootbench",
+    "label": "Boot bench",
+    "piece": "lobby-boot-bench",
+    "reserve": true,
+    "t": "f-bench-1",
+    "x": 454
+   },
+   {
+    "id": "weather",
+    "label": "Weather instrument",
+    "piece": "lobby-weather",
+    "t": "w-sm",
+    "x": 672,
+    "y": 200
+   },
+   {
+    "id": "shoestation",
+    "label": "Shoe station",
+    "piece": "lobby-shoe-station",
+    "t": "f-table-1",
+    "x": 790
+   },
+   {
+    "id": "airer",
+    "label": "Clothes airer (t2: tumble dryer)",
+    "piece": "lobby-airer",
+    "t": "c-h2",
+    "x": 1113
+   },
+   {
+    "id": "washer",
+    "label": "Washing machine",
+    "piece": "lobby-washing-machine",
+    "reserve": true,
+    "t": "f-appl-1",
+    "x": 1462
+   },
+   {
+    "id": "basket",
+    "label": "Laundry basket",
+    "piece": "lobby-laundry-basket",
+    "t": "d-l",
+    "x": 1512
+   },
+   {
+    "id": "basin",
+    "label": "Hand basin",
+    "piece": "lobby-hand-basin",
+    "t": "f-appl-1",
+    "x": 1630
+   },
+   {
+    "id": "mirror",
+    "label": "Mirror",
+    "piece": "lobby-mirror",
+    "t": "w-md",
+    "x": 1659,
+    "y": 200
+   }
+  ],
+  "keeper": true,
+  "keeperX": 1210,
+  "leftLabel": "Stairs + front door",
+  "name": "Lobby",
+  "order": 0,
+  "rightDoor": "wc",
+  "updatedAt": "2026-10-28T09:10:00Z",
+  "wallFinish": "wall-stone",
+  "windows": false
+ },
+ {
+  "ceilingFinish": "ceil-beams",
+  "floorFinish": "floor-boards",
+  "id": "kitchen",
+  "items": [
+   {
+    "id": "clock",
+    "label": "Clock",
+    "piece": "kitchen-clock",
+    "t": "w-sm",
+    "x": 210,
+    "y": 60
+   },
+   {
+    "id": "calendar",
+    "label": "Calendar",
+    "piece": "kitchen-calendar",
+    "t": "w-sm",
+    "x": 210,
+    "y": 140
+   },
+   {
+    "id": "fridge",
+    "label": "Fridge-freezer",
+    "piece": "kitchen-fridge",
+    "t": "f-tall-1",
+    "x": 286
+   },
+   {
+    "id": "cupA1",
+    "label": "Cupboard A1",
+    "piece": "kitchen-base-cupboard",
+    "t": "f-work-1",
+    "x": 454
+   },
+   {
+    "id": "sink",
+    "label": "Belfast sink",
+    "piece": "kitchen-sink",
+    "t": "f-work-1",
+    "x": 622
+   },
+   {
+    "id": "dwslot",
+    "label": "Dishwasher slot",
+    "piece": "kitchen-base-cupboard",
+    "t": "f-work-1",
+    "x": 790
+   },
+   {
+    "id": "wallcup1",
+    "label": "Wall cupboard 1",
+    "piece": "kitchen-wall-cupboard",
+    "t": "w-cup1",
+    "x": 806
+   },
+   {
+    "id": "teapot",
+    "label": "Teapot",
+    "piece": "kitchen-hot-drinks",
+    "t": "d-s",
+    "x": 861
+   },
+   {
+    "id": "cooker",
+    "label": "Cooker",
+    "piece": "kitchen-cooker",
+    "t": "f-tall-1",
+    "x": 958
+   },
+   {
+    "id": "cupB1",
+    "label": "Cupboard B1",
+    "piece": "kitchen-base-cupboard",
+    "t": "f-work-1",
+    "x": 1126
+   },
+   {
+    "id": "wallcup2",
+    "label": "Wall cupboard 2",
+    "piece": "kitchen-wall-cupboard",
+    "t": "w-cup1",
+    "x": 1142
+   },
+   {
+    "id": "cupB2",
+    "label": "Cupboard B2",
+    "piece": "kitchen-base-cupboard",
+    "t": "f-work-1",
+    "x": 1294
+   },
+   {
+    "counter": true,
+    "id": "dresser",
+    "label": "Dresser",
+    "piece": "kitchen-dresser",
+    "t": "f-tall-1",
+    "x": 1462
+   },
+   {
+    "id": "toaster",
+    "label": "Toaster",
+    "piece": "kitchen-toaster",
+    "t": "d-s",
+    "x": 1491
+   },
+   {
+    "id": "mixer",
+    "label": "Mixer",
+    "piece": "kitchen-mixer",
+    "t": "d-m",
+    "x": 1554
+   },
+   {
+    "id": "larder",
+    "label": "Larder",
+    "piece": "kitchen-larder",
+    "t": "f-tall-1",
+    "x": 1630
+   }
+  ],
+  "keeper": true,
+  "keeperX": 1210,
+  "leftLabel": "Stairs",
+  "name": "Kitchen",
+  "order": 1,
+  "rightDoor": "cupboard",
+  "updatedAt": "2026-10-28T09:10:00Z",
+  "wallFinish": "wall-cream",
+  "windows": true
+ },
+ {
+  "ceilingFinish": "ceil-beams",
+  "floorFinish": "floor-boards",
+  "id": "living",
+  "items": [],
+  "keeper": true,
+  "keeperX": 1210,
+  "leftLabel": "Stairs",
+  "name": "Living room",
+  "order": 2,
+  "rightDoor": "cupboard",
+  "updatedAt": "2026-10-28T09:10:00Z",
+  "wallFinish": "wall-wallpaper",
+  "windows": true
+ },
+ {
+  "ceilingFinish": "ceil-beams",
+  "floorFinish": "floor-carpet",
+  "id": "bedroom",
+  "items": [],
+  "keeper": true,
+  "keeperX": 1210,
+  "leftLabel": "Stairs",
+  "name": "Bedroom",
+  "order": 3,
+  "rightDoor": "wc",
+  "updatedAt": "2026-10-28T09:10:00Z",
+  "wallFinish": "wall-cream",
+  "windows": true
+ }
+]
