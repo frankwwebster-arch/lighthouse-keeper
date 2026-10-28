@@ -1,6 +1,6 @@
 # Lighthouse Keeper: notes for Claude
 
-> **Shared spec (Frank, 26 Oct 2026):** `docs/SPEC.md` is the single working spec and the shared channel with Codex. `git pull` and read it before every task; it overrides older graphics and geometry rules below. Update it and leave notes for Codex per its "Shared channel" rules (section 19). The working copy is `~/Documents/ChatGPT/Lighthouse Keeper`; `~/Projects/lighthouse-keeper` is an old duplicate — don't work there.
+> **Shared spec (Frank, 26 Oct 2026):** `docs/SPEC.md` is the single working spec and the shared channel with Codex. `git pull` and read it before every task; it overrides older graphics and geometry rules below. Update it and track work in GitHub Issues (labels `needs-frank`, `go`, `codex`, `claude`, `agent`); after changing issues regenerate `docs/ISSUES.md` for Codex and move `docs/CODEX_REPLIES.md` entries onto their issues. Room pieces, drafts and feedback live in the Room Planner (https://claude.ai/artifact/KAvqrmWsYootZJLmEz22kL), mirrored to `docs/planner/`; the spec's history is `docs/SPEC_HISTORY.md`. The working copy is `~/Documents/ChatGPT/Lighthouse Keeper`; `~/Projects/lighthouse-keeper` is an old duplicate — don't work there.
 
 Project page (the record of every decision, and the user guide): https://claude.ai/artifact/Ehjz6SdSEvsDYLTLWuKZP4. Read it with the Artifact tool, and re-read it before every republish.
 

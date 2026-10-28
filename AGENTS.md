@@ -1,6 +1,8 @@
 # Lighthouse Keeper: notes for coding agents (Codex and others)
 
-> **Vercel guard (Frank, 27 Oct):** never deploy to show review art; deploy only when `docs/SPEC.md` section 19 has a GO'd DEPLOY note, at most once per day. No GIFs or review images over ~2 MB committed. See the guard in `docs/SPEC.md`.
+> **Vercel guard (Frank, 27 Oct):** never deploy to show review art; deploy only when a GitHub issue labelled `go` says DEPLOY, at most once per day. No GIFs or review images over ~2 MB committed. See the guard in `docs/SPEC.md`.
+
+> **Work items (Frank, 28 Oct 2026):** tasks live in GitHub Issues; your read-only list is `docs/ISSUES.md`. Start ONLY issues labelled `codex` + `go`; close with `Fixes #n` in the commit; questions go in `docs/CODEX_REPLIES.md`. Room pieces, drafts and Frank's feedback: `docs/planner/`.
 
 > **Shared spec (Frank, 26 Oct 2026):** `docs/SPEC.md` is the single working spec and the shared channel between Codex and Claude. `git pull` and read it before every task; where it conflicts with older rules below or with `docs/CODEX_BRIEF.md`, the spec wins. Follow its "Shared channel" rules to update it and leave notes for Claude in its section 19.
 
