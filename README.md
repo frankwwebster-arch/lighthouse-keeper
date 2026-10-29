@@ -266,16 +266,18 @@ new art uses the exact 2048 × 576 grid in `docs/SPEC.md`. Any
 runtime migration must preserve approved historical bytes and receive a
 separate review.
 
-The current Kitchen v14 build review candidate is
-[`review/kitchen-v14-build/`](review/kitchen-v14-build/). It follows the
-approved `docs/layout/kitchen_v14_schematic.json` at exact 1:1 geometry: all
-ordinary kitchen units are 168 px / 1.0 m wide, the tall pieces pass the
-height-at-most-twice-width chunky rule, the two side-wall doors are at the
-stage front, and both 168 px windows run from y106 to y274. The package includes
-the assembled room, a complete exact-canvas contact sheet, a three-scale sheet,
-and separate fridge/cooker/larder door, interior, oven-content, light and status
-demonstrations. It is review-only; the 252 px range remains deferred and no live
-runtime art has changed.
+The current kitchen art review candidate is Kitchen v15 painted-room v4 in
+[`review/kitchen-v15-painted-room-v4/`](review/kitchen-v15-painted-room-v4/).
+It starts from Frank's liked 2172 × 724 brighter duck-egg room, preserves that
+source byte-for-byte, and changes only the layout to the approved
+`docs/layout/kitchen_v15_schematic.json`: no larder, cupboard B3 at
+x1462–1630, a three-cupboard run B, and the dresser ending the run at
+x1630–1843 with separate toaster and mixer cuts. All 19 pieces have exact v15
+canvases on the 2048 × 576 module. The package includes the Day-1 room, the
+full-upgrade reservation check, both approved side doors open with measured
+furniture clearance, the two viewing scales and a machine-readable gate report.
+It is review-only and awaiting Frank; no live runtime art has changed. The
+earlier `review/kitchen-v14-build/` is retained as rejected historical evidence.
 
 The earlier Kitchen v8 room-shell review candidate is retained as historical
 style and shell evidence in
@@ -841,7 +843,7 @@ The runtime notes below describe the currently shipped compatibility art. They
 do not override the new non-pixel 2048 × 576 authoring target in `docs/SPEC.md`, and no approved
 asset byte changes until a separate versioned migration is reviewed.
 
-- Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The legacy runtime pixel batch still supplies the red/white shell bands and three 105 × 35 compatibility plates; interactive furniture remains separate. The new target uses exact 2048 × 576 modules. Kitchen v14 is the current review-only candidate and has not replaced the installed legacy room. The toilet and wash basin are both in the en suite.
+- Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The legacy runtime pixel batch still supplies the red/white shell bands and three 105 × 35 compatibility plates; interactive furniture remains separate. The new target uses exact 2048 × 576 modules. Kitchen v15 painted-room v4 is the current review-only candidate and has not replaced the installed legacy room. The toilet and wash basin are both in the en suite.
 - Future standard floors remain non-linear: kitchen anchors the base, lamp room stays topmost, bedroom stays directly below it, and each other floor receives a one-time random saved middle position. New tower art is straight-sided with no taper and may grow to three equal modules wide.
 - Missions run side by side, so floors arrive in any order; a finished floor appears the next morning in a random middle place that the save keeps (kitchen at the bottom, bedroom under the lamp room).
 - Every object renderer currently accepts `standard`, `on`, and `broken`; active gameplay drives `on`. New item masters must not bake broken, dirty or alert states into the item: the engine owns smoke, sparks, drips and other overlays. Existing compatibility sprites remain unchanged until migration. Add `?broken=tv,cooker` (or `?broken=all`) to the URL for the internal art-state preview.

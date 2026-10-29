@@ -1,0 +1,20 @@
+[
+  {
+    "piece": "kitchen-room",
+    "tier": 1,
+    "label": "Kitchen v15 painted room v4 — Day-1 room",
+    "path": "review/kitchen-v15-painted-room-v4/outputs/kitchen-v15-check-3-day1-room.png"
+  },
+  {
+    "piece": "kitchen-room",
+    "tier": 3,
+    "label": "Kitchen v15 painted room v4 — full-upgrade fit check",
+    "path": "review/kitchen-v15-painted-room-v4/outputs/kitchen-v15-check-1-full-upgrade-fit.png"
+  },
+  {
+    "piece": "kitchen-room",
+    "tier": 1,
+    "label": "Kitchen v15 painted room v4 — both doors open and clear",
+    "path": "review/kitchen-v15-painted-room-v4/outputs/kitchen-v15-check-2-both-doors-open-clear.png"
+  }
+]

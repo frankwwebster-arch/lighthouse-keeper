@@ -1,0 +1,724 @@
+{
+  "schema": "lighthouse-keeper/kitchen-v15-painted-room-v4-gate@1",
+  "layoutAuthority": "docs/layout/kitchen_v15_schematic.json",
+  "modulePx": [
+    2048,
+    576
+  ],
+  "sourcePreservation": {
+    "path": "sources/liked-kitchen-source-2172x724.png",
+    "expectedSha256": "404c4b095ee64b1b5ba37f5cea23d24081b0e1a6c70f824563e5edef93846e15",
+    "actualSha256": "404c4b095ee64b1b5ba37f5cea23d24081b0e1a6c70f824563e5edef93846e15",
+    "unchanged": true
+  },
+  "hardDatums": {
+    "unitBaseY": 485,
+    "worktopSurfaceY": 326,
+    "worktopBoxY": [
+      317,
+      348
+    ],
+    "hobLevelWithWorktop": true,
+    "keeperSolesY": 502,
+    "keeperRect": [
+      1150,
+      204,
+      1270,
+      502
+    ],
+    "stopCentres": [
+      {
+        "id": "fridge_t1",
+        "declaredStopX": 370,
+        "boxCentreX": 370.0,
+        "exact": true
+      },
+      {
+        "id": "sink_cabinet",
+        "declaredStopX": 706,
+        "boxCentreX": 706.0,
+        "exact": true
+      },
+      {
+        "id": "teapot",
+        "declaredStopX": 874,
+        "boxCentreX": 874.0,
+        "exact": true
+      },
+      {
+        "id": "cooker_t1",
+        "declaredStopX": 1042,
+        "boxCentreX": 1042.0,
+        "exact": true
+      },
+      {
+        "id": "toaster",
+        "declaredStopX": 1714,
+        "boxCentreX": 1714.0,
+        "exact": true
+      },
+      {
+        "id": "mixer",
+        "declaredStopX": 1798,
+        "boxCentreX": 1798.0,
+        "exact": true
+      },
+      {
+        "id": "prime_keeper",
+        "declaredStopX": 1210,
+        "boxCentreX": 1210.0,
+        "exact": true
+      }
+    ],
+    "windowClearAreas": [
+      {
+        "window": "window_L",
+        "rect": [
+          622,
+          106,
+          790,
+          274
+        ],
+        "collisions": [],
+        "pass": true
+      },
+      {
+        "window": "window_R",
+        "rect": [
+          1294,
+          106,
+          1462,
+          274
+        ],
+        "collisions": [],
+        "pass": true
+      }
+    ],
+    "doorLeaves": {
+      "leftOpenRect": [
+        0,
+        208,
+        168,
+        544
+      ],
+      "rightOpenRect": [
+        1880,
+        208,
+        2048,
+        544
+      ],
+      "leftFurnitureClearancePx": 118,
+      "rightFurnitureClearancePx": 37,
+      "pass": true
+    }
+  },
+  "roomChecks": {
+    "fullUpgradeReservations": {
+      "count": 5,
+      "pass": true
+    },
+    "bothDoorsOpenAndClear": {
+      "pass": true
+    },
+    "day1RoomAssembledFromCuts": {
+      "pass": true
+    }
+  },
+  "pieces": [
+    {
+      "id": "clock",
+      "kind": "wall",
+      "v15Rect": [
+        200,
+        60,
+        260,
+        120
+      ],
+      "requiredCanvasPx": [
+        60,
+        60
+      ],
+      "actualCanvasPx": [
+        60,
+        60
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        0,
+        60,
+        60
+      ],
+      "placementPx": [
+        200,
+        60
+      ],
+      "stop": null,
+      "cutMethod": "approved painted source: clock_60x60.png",
+      "fitsV15Box": true
+    },
+    {
+      "id": "calendar",
+      "kind": "wall",
+      "v15Rect": [
+        200,
+        140,
+        260,
+        210
+      ],
+      "requiredCanvasPx": [
+        60,
+        70
+      ],
+      "actualCanvasPx": [
+        60,
+        70
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        0,
+        59,
+        70
+      ],
+      "placementPx": [
+        200,
+        140
+      ],
+      "stop": null,
+      "cutMethod": "approved painted source: calendar_60x70.png",
+      "fitsV15Box": true
+    },
+    {
+      "id": "fridge_t1",
+      "kind": "freestanding",
+      "v15Rect": [
+        286,
+        183,
+        454,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        302
+      ],
+      "actualCanvasPx": [
+        168,
+        302
+      ],
+      "alphaBoundsOnCanvas": [
+        23,
+        0,
+        145,
+        302
+      ],
+      "placementPx": [
+        286,
+        183
+      ],
+      "stop": 370,
+      "cutMethod": "complete painted-object crop [286, 136, 428, 488] uniformly fitted bottom into v15 box",
+      "fitsV15Box": true
+    },
+    {
+      "id": "cupboard_A1",
+      "kind": "fitted",
+      "v15Rect": [
+        454,
+        348,
+        622,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        137
+      ],
+      "actualCanvasPx": [
+        168,
+        137
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        0,
+        168,
+        137
+      ],
+      "placementPx": [
+        454,
+        348
+      ],
+      "stop": null,
+      "cutMethod": "hard v15 box cut from the single coherent painted master",
+      "fitsV15Box": true
+    },
+    {
+      "id": "sink_cabinet",
+      "kind": "fitted",
+      "v15Rect": [
+        622,
+        348,
+        790,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        137
+      ],
+      "actualCanvasPx": [
+        168,
+        137
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        0,
+        168,
+        137
+      ],
+      "placementPx": [
+        622,
+        348
+      ],
+      "stop": 706,
+      "cutMethod": "hard v15 box cut from the single coherent painted master",
+      "fitsV15Box": true
+    },
+    {
+      "id": "dw_slot_cupboard",
+      "kind": "fitted",
+      "v15Rect": [
+        790,
+        348,
+        958,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        137
+      ],
+      "actualCanvasPx": [
+        168,
+        137
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        0,
+        168,
+        137
+      ],
+      "placementPx": [
+        790,
+        348
+      ],
+      "stop": null,
+      "cutMethod": "hard v15 box cut from the single coherent painted master",
+      "fitsV15Box": true
+    },
+    {
+      "id": "wall_cupboard_1",
+      "kind": "wall",
+      "v15Rect": [
+        806,
+        140,
+        942,
+        241
+      ],
+      "requiredCanvasPx": [
+        136,
+        101
+      ],
+      "actualCanvasPx": [
+        136,
+        101
+      ],
+      "alphaBoundsOnCanvas": [
+        11,
+        0,
+        124,
+        101
+      ],
+      "placementPx": [
+        806,
+        140
+      ],
+      "stop": null,
+      "cutMethod": "complete painted-object crop [783, 60, 975, 232] uniformly fitted centre into v15 box",
+      "fitsV15Box": true
+    },
+    {
+      "id": "runA_worktop",
+      "kind": "worktop",
+      "v15Rect": [
+        454,
+        317,
+        958,
+        348
+      ],
+      "requiredCanvasPx": [
+        504,
+        31
+      ],
+      "actualCanvasPx": [
+        504,
+        31
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        0,
+        504,
+        31
+      ],
+      "placementPx": [
+        454,
+        317
+      ],
+      "stop": null,
+      "cutMethod": "hard v15 box cut from the single coherent painted master",
+      "fitsV15Box": true
+    },
+    {
+      "id": "teapot",
+      "kind": "counter",
+      "v15Rect": [
+        852,
+        290,
+        896,
+        326
+      ],
+      "requiredCanvasPx": [
+        44,
+        36
+      ],
+      "actualCanvasPx": [
+        44,
+        36
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        0,
+        44,
+        36
+      ],
+      "placementPx": [
+        852,
+        290
+      ],
+      "stop": 874,
+      "cutMethod": "complete painted-object crop [452, 258, 517, 311] uniformly fitted bottom into v15 box",
+      "fitsV15Box": true
+    },
+    {
+      "id": "cooker_t1",
+      "kind": "slot-in",
+      "v15Rect": [
+        958,
+        149,
+        1126,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        336
+      ],
+      "actualCanvasPx": [
+        168,
+        336
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        63,
+        168,
+        336
+      ],
+      "placementPx": [
+        958,
+        149
+      ],
+      "stop": 1042,
+      "cutMethod": "complete painted-object crop [943, 233, 1100, 488] uniformly fitted bottom into v15 box",
+      "fitsV15Box": true
+    },
+    {
+      "id": "cupboard_B1",
+      "kind": "fitted",
+      "v15Rect": [
+        1126,
+        348,
+        1294,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        137
+      ],
+      "actualCanvasPx": [
+        168,
+        137
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        0,
+        168,
+        137
+      ],
+      "placementPx": [
+        1126,
+        348
+      ],
+      "stop": null,
+      "cutMethod": "hard v15 box cut from the single coherent painted master",
+      "fitsV15Box": true
+    },
+    {
+      "id": "wall_cupboard_2",
+      "kind": "wall",
+      "v15Rect": [
+        1142,
+        140,
+        1278,
+        241
+      ],
+      "requiredCanvasPx": [
+        136,
+        101
+      ],
+      "actualCanvasPx": [
+        136,
+        101
+      ],
+      "alphaBoundsOnCanvas": [
+        19,
+        0,
+        117,
+        101
+      ],
+      "placementPx": [
+        1142,
+        140
+      ],
+      "stop": null,
+      "cutMethod": "complete painted-object crop [1086, 64, 1255, 238] uniformly fitted centre into v15 box",
+      "fitsV15Box": true
+    },
+    {
+      "id": "cupboard_B2",
+      "kind": "fitted",
+      "v15Rect": [
+        1294,
+        348,
+        1462,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        137
+      ],
+      "actualCanvasPx": [
+        168,
+        137
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        0,
+        168,
+        137
+      ],
+      "placementPx": [
+        1294,
+        348
+      ],
+      "stop": null,
+      "cutMethod": "hard v15 box cut from the single coherent painted master",
+      "fitsV15Box": true
+    },
+    {
+      "id": "cupboard_B3",
+      "kind": "fitted",
+      "v15Rect": [
+        1462,
+        348,
+        1630,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        137
+      ],
+      "actualCanvasPx": [
+        168,
+        137
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        0,
+        168,
+        137
+      ],
+      "placementPx": [
+        1462,
+        348
+      ],
+      "stop": null,
+      "cutMethod": "hard v15 box cut from the single coherent painted master",
+      "fitsV15Box": true
+    },
+    {
+      "id": "runB_worktop",
+      "kind": "worktop",
+      "v15Rect": [
+        1126,
+        317,
+        1630,
+        348
+      ],
+      "requiredCanvasPx": [
+        504,
+        31
+      ],
+      "actualCanvasPx": [
+        504,
+        31
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        0,
+        504,
+        31
+      ],
+      "placementPx": [
+        1126,
+        317
+      ],
+      "stop": null,
+      "cutMethod": "hard v15 box cut from the single coherent painted master",
+      "fitsV15Box": true
+    },
+    {
+      "id": "dresser",
+      "kind": "freestanding",
+      "v15Rect": [
+        1630,
+        149,
+        1843,
+        485
+      ],
+      "requiredCanvasPx": [
+        213,
+        336
+      ],
+      "actualCanvasPx": [
+        213,
+        336
+      ],
+      "alphaBoundsOnCanvas": [
+        17,
+        0,
+        208,
+        331
+      ],
+      "placementPx": [
+        1630,
+        149
+      ],
+      "stop": null,
+      "cutMethod": "approved painted source: dresser-clear-counter-transparent.png",
+      "fitsV15Box": true
+    },
+    {
+      "id": "toaster",
+      "kind": "counter",
+      "v15Rect": [
+        1688,
+        300,
+        1740,
+        334
+      ],
+      "requiredCanvasPx": [
+        52,
+        34
+      ],
+      "actualCanvasPx": [
+        52,
+        34
+      ],
+      "alphaBoundsOnCanvas": [
+        2,
+        0,
+        49,
+        34
+      ],
+      "placementPx": [
+        1688,
+        300
+      ],
+      "stop": 1714,
+      "cutMethod": "complete painted-object crop [1600, 252, 1684, 313] uniformly fitted bottom into v15 box",
+      "fitsV15Box": true
+    },
+    {
+      "id": "mixer",
+      "kind": "counter",
+      "v15Rect": [
+        1766,
+        275,
+        1830,
+        334
+      ],
+      "requiredCanvasPx": [
+        64,
+        59
+      ],
+      "actualCanvasPx": [
+        64,
+        59
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        18,
+        64,
+        59
+      ],
+      "placementPx": [
+        1766,
+        275
+      ],
+      "stop": 1798,
+      "cutMethod": "complete painted-object crop [1708, 243, 1818, 314] uniformly fitted bottom into v15 box",
+      "fitsV15Box": true
+    },
+    {
+      "id": "prime_keeper",
+      "kind": "keeper",
+      "v15Rect": [
+        1150,
+        204,
+        1270,
+        502
+      ],
+      "requiredCanvasPx": [
+        120,
+        298
+      ],
+      "actualCanvasPx": [
+        120,
+        298
+      ],
+      "alphaBoundsOnCanvas": [
+        9,
+        0,
+        111,
+        298
+      ],
+      "placementPx": [
+        1150,
+        204
+      ],
+      "stop": 1210,
+      "cutMethod": "approved painted source: prime_keeper_120x298.png",
+      "fitsV15Box": true
+    }
+  ],
+  "summary": {
+    "pieceCount": 19,
+    "exactCanvasPassCount": 19,
+    "allPiecesFit": true,
+    "allHardDatumsPass": true
+  }
+}
