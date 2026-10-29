@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "name": "room-door-compass-rose-wiring-handoff-2026-10-29-v1",
+  "status": "approved visual and choreography; ready for game wiring",
+  "files": {
+    "assets/room-door-compass-rose-paint-source-337x674.png": {
+      "width": 337,
+      "height": 674,
+      "mode": "RGBA",
+      "sha256": "6bf5d92820580ee03748d9425d43d4cc80f6bc506531921c995ce991ae717a95"
+    },
+    "assets/room-door-compass-rose-room-168x336.png": {
+      "width": 168,
+      "height": 336,
+      "mode": "RGBA",
+      "sha256": "dcf43fec6dd3de41d7904699c88394fa985c0a4f505d4ac67adf391039c8ecbd"
+    },
+    "assets/room-door-compass-rose-lighthouse-20x40.png": {
+      "width": 20,
+      "height": 40,
+      "mode": "RGBA",
+      "sha256": "794a0818abb46cad4694c269a6c3f4fad6d47dce21f9327d8ef87bfd4f2b9bdf"
+    },
+    "review/room-door-compass-rose-correct-scale-v3.mp4": {
+      "sha256": "ddf0b8dabb22077b73a91f0abf7830cd7e3be2c8d8c818595a6db75774a73cad"
+    }
+  }
+}
