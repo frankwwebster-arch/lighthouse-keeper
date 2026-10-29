@@ -1,0 +1,19 @@
+{
+  "schema": "lighthouse-keeper/reversible-room-draft@1",
+  "canonicalReview": {
+    "path": "review/kitchen-v15-painted-room-v5/outputs/kitchen-v15-check-3-day1-room.png",
+    "sha256": "483a138d8fe042ee042418ca11de36a2eca4009f2c656891f8ff941cf4503f58",
+    "status": "unchanged"
+  },
+  "draftReview": {
+    "path": "review/kitchen-v15-painted-room-v6/outputs/kitchen-v15-check-3-day1-room.png",
+    "sha256": "e07910ae5553ff4f4ea436e064029af6a3ca1cdddceb972af79439720e9ddd97",
+    "status": "awaiting-frank"
+  },
+  "sourcePin": {
+    "path": "review/kitchen-v15-painted-room-v6/sources/liked-kitchen-source-2172x724.png",
+    "sha256": "404c4b095ee64b1b5ba37f5cea23d24081b0e1a6c70f824563e5edef93846e15",
+    "unchanged": true
+  },
+  "rejection": "Discard review/kitchen-v15-painted-room-v6 only; v5 and all production art remain unchanged."
+}

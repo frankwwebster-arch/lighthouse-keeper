@@ -266,16 +266,18 @@ new art uses the exact 2048 × 576 grid in `docs/SPEC.md`. Any
 runtime migration must preserve approved historical bytes and receive a
 separate review.
 
-The current kitchen art review candidate is Kitchen v15 painted-room v5 in
-[`review/kitchen-v15-painted-room-v5/`](review/kitchen-v15-painted-room-v5/).
-It corrects v4's arbitrary rectangular room crops: all 19 pieces are now
-standalone transparent painted-edge assets on their exact v15 canvases. The
-five ordinary 168 × 137 base cupboards are byte-identical copies of one master,
-as are the two 136 × 101 wall cupboards and two 504 × 31 worktops. The visible
-wall-cupboard gaps to the cooker are 16 px on both sides. The unchanged liked
-2172 × 724 brighter duck-egg source remains hash-pinned; the v15 layout, Day-1
-room, full-upgrade reservations, both-open-door clearances and two viewing
-scales remain review-only and machine-verified.
+The current kitchen art review candidate is Kitchen v15 painted-room v6 in
+[`review/kitchen-v15-painted-room-v6/`](review/kitchen-v15-painted-room-v6/).
+It retains v5's 19 transparent actual-edge pieces, identical cabinet masters
+and 16 px wall-cupboard/cooker gaps, while correcting the room shell, Belfast
+sink and dresser depth. The shell now has a leaf-free structural state and one
+approved 168 × 336 door leaf per side in mutually exclusive closed/open poses,
+all on y208–544. The sink rim and taps are set into run A's worktop while the
+cabinet body matches the standard base master below local y42. The dresser and
+fitted run share the same 31 px depth band at room y317–348. The unchanged liked
+2172 × 724 brighter duck-egg source remains hash-pinned; the Day-1 room,
+full-upgrade reservations, both-open-door clearances and two viewing scales
+remain review-only and machine-verified.
 It is review-only and awaiting Frank; no live runtime art has changed. The
 earlier `review/kitchen-v14-build/` is retained as rejected historical evidence.
 
@@ -843,7 +845,7 @@ The runtime notes below describe the currently shipped compatibility art. They
 do not override the new non-pixel 2048 × 576 authoring target in `docs/SPEC.md`, and no approved
 asset byte changes until a separate versioned migration is reviewed.
 
-- Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The legacy runtime pixel batch still supplies the red/white shell bands and three 105 × 35 compatibility plates; interactive furniture remains separate. The new target uses exact 2048 × 576 modules. Kitchen v15 painted-room v4 is the current review-only candidate and has not replaced the installed legacy room. The toilet and wash basin are both in the en suite.
+- Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The legacy runtime pixel batch still supplies the red/white shell bands and three 105 × 35 compatibility plates; interactive furniture remains separate. The new target uses exact 2048 × 576 modules. Kitchen v15 painted-room v6 is the current review-only candidate and has not replaced the installed legacy room. The toilet and wash basin are both in the en suite.
 - Future standard floors remain non-linear: kitchen anchors the base, lamp room stays topmost, bedroom stays directly below it, and each other floor receives a one-time random saved middle position. New tower art is straight-sided with no taper and may grow to three equal modules wide.
 - Missions run side by side, so floors arrive in any order; a finished floor appears the next morning in a random middle place that the save keeps (kitchen at the bottom, bedroom under the lamp room).
 - Every object renderer currently accepts `standard`, `on`, and `broken`; active gameplay drives `on`. New item masters must not bake broken, dirty or alert states into the item: the engine owns smoke, sparks, drips and other overlays. Existing compatibility sprites remain unchanged until migration. Add `?broken=tv,cooker` (or `?broken=all`) to the URL for the internal art-state preview.

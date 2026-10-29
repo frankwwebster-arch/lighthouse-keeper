@@ -1,0 +1,390 @@
+{
+  "schema": "lighthouse-keeper/kitchen-v15-painted-room-v6@3",
+  "status": "review-candidate-awaiting-frank",
+  "runtimeMutation": false,
+  "deployment": false,
+  "modulePx": [
+    2048,
+    576
+  ],
+  "source": {
+    "likedUnchanged": {
+      "path": "sources/liked-kitchen-source-2172x724.png",
+      "sha256": "404c4b095ee64b1b5ba37f5cea23d24081b0e1a6c70f824563e5edef93846e15",
+      "canvasPx": [
+        2172,
+        724
+      ]
+    },
+    "v15PaintedMaster": {
+      "path": "sources/imagegen/kitchen-v15-painted-master.png",
+      "sha256": "3e70153cea6c258013d28ec97070f1226d122ef8993c9c469f85eaaeabf1bea2",
+      "canvasPx": [
+        2172,
+        724
+      ]
+    },
+    "emptyShellCompanion": {
+      "path": "sources/imagegen/kitchen-v15-empty-shell-companion.png",
+      "sha256": "3fb0207b51a5bbd486b95ee06da585f263e0cdbb9635c8aedcc7d0ff285c1ad6",
+      "canvasPx": [
+        2172,
+        724
+      ],
+      "role": "subtraction/assembly companion only"
+    },
+    "jambsOnlyShellSource": {
+      "path": "sources/imagegen/kitchen-v15-jambs-only-shell-source.png",
+      "sha256": "6b64d2590b030e2d68bbe1270b9aa2ccd62c2dca43a3416ed3b05f2ba07162d7",
+      "canvasPx": [
+        2172,
+        724
+      ],
+      "role": "precise image edit used only for the two side-door regions of the structural shell"
+    },
+    "cleanAlphaMasters": {
+      "approved-v8-belfast-sink-master.png": {
+        "sha256": "ac38e75e5ac990e6234b675789faa556c7af0e40a592c73f5f118ebc63b52927",
+        "canvasPx": [
+          168,
+          211
+        ],
+        "role": "approved hand-painted actual-edge source; never placed as a room crop"
+      },
+      "base-cupboard-master.png": {
+        "sha256": "9368ee9f56abf5da8add288b103205eb9b4ee37dc3ac650fa1e59f1e0ddfdf6e",
+        "canvasPx": [
+          168,
+          137
+        ],
+        "role": "approved hand-painted actual-edge source; never placed as a room crop"
+      },
+      "cooker-master.png": {
+        "sha256": "3513318eb0ad12e1fde92d154293e039b0c4a176de2b12c8c4e37a4fad378fc9",
+        "canvasPx": [
+          168,
+          336
+        ],
+        "role": "approved hand-painted actual-edge source; never placed as a room crop"
+      },
+      "fridge-master.png": {
+        "sha256": "f86f78ef5da92e6b58e59eeea1661e60f31ad65bc1590642f7c4c8b46f4c687f",
+        "canvasPx": [
+          168,
+          302
+        ],
+        "role": "approved hand-painted actual-edge source; never placed as a room crop"
+      },
+      "mixer-master.png": {
+        "sha256": "e1fb51bef211d57b2039911a6c6559cd9ed5ed654664d18dbb2e1fe1707eb3b4",
+        "canvasPx": [
+          64,
+          59
+        ],
+        "role": "approved hand-painted actual-edge source; never placed as a room crop"
+      },
+      "teapot-master.png": {
+        "sha256": "fcb0a2ec2116bc609e10c5cc4cf6589c6d7f2321f83cc58b96da5a1728e624c1",
+        "canvasPx": [
+          44,
+          36
+        ],
+        "role": "approved hand-painted actual-edge source; never placed as a room crop"
+      },
+      "toaster-master.png": {
+        "sha256": "f6d9a2635f3c4b7664c06e01d67a622602dfc8e60bb3804d3a40d12e96179a4e",
+        "canvasPx": [
+          52,
+          34
+        ],
+        "role": "approved hand-painted actual-edge source; never placed as a room crop"
+      },
+      "v5-dresser-painted-donor.png": {
+        "sha256": "1edc689dcc772fe4920a2f5ece9090d6460b4f41774418f4e4653ed13419b760",
+        "canvasPx": [
+          213,
+          336
+        ],
+        "role": "approved hand-painted actual-edge source; never placed as a room crop"
+      },
+      "wall-cupboard-master.png": {
+        "sha256": "891bf5f79ad3f4ec7b5b6b4111b28a5147b61831ef47d3ab084b01fcd32512bd",
+        "canvasPx": [
+          136,
+          101
+        ],
+        "role": "approved hand-painted actual-edge source; never placed as a room crop"
+      },
+      "worktop-504-master.png": {
+        "sha256": "550f7576e5a8559f4e55b5f0f2d375079134d8c639cf85a7d4ccd360a0a9c5af",
+        "canvasPx": [
+          504,
+          31
+        ],
+        "role": "approved hand-painted actual-edge source; never placed as a room crop"
+      }
+    }
+  },
+  "registration": {
+    "uniformScaleToPx": [
+      2048,
+      683
+    ],
+    "cropPx": [
+      0,
+      68,
+      2048,
+      644
+    ]
+  },
+  "partCount": 19,
+  "parts": {
+    "calendar.png": {
+      "canvasPx": [
+        60,
+        70
+      ],
+      "sha256": "caecb96f7e1c7fc137621f9b1f9d0e584d1950f4e6d965dd01001c2da1230967"
+    },
+    "clock.png": {
+      "canvasPx": [
+        60,
+        60
+      ],
+      "sha256": "b9caf0ae6cfa432f52e8e838e70b53d668e1e6a14023cb72acdb165e91ce58f4"
+    },
+    "cooker_t1.png": {
+      "canvasPx": [
+        168,
+        336
+      ],
+      "sha256": "3513318eb0ad12e1fde92d154293e039b0c4a176de2b12c8c4e37a4fad378fc9"
+    },
+    "cupboard_A1.png": {
+      "canvasPx": [
+        168,
+        137
+      ],
+      "sha256": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53"
+    },
+    "cupboard_B1.png": {
+      "canvasPx": [
+        168,
+        137
+      ],
+      "sha256": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53"
+    },
+    "cupboard_B2.png": {
+      "canvasPx": [
+        168,
+        137
+      ],
+      "sha256": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53"
+    },
+    "cupboard_B3.png": {
+      "canvasPx": [
+        168,
+        137
+      ],
+      "sha256": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53"
+    },
+    "dresser.png": {
+      "canvasPx": [
+        213,
+        336
+      ],
+      "sha256": "05db58bfa7711055c39d8894026ef69f1178f0e7f8638ac53ef9e5b92210d99c"
+    },
+    "dw_slot_cupboard.png": {
+      "canvasPx": [
+        168,
+        137
+      ],
+      "sha256": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53"
+    },
+    "fridge_t1.png": {
+      "canvasPx": [
+        168,
+        302
+      ],
+      "sha256": "f86f78ef5da92e6b58e59eeea1661e60f31ad65bc1590642f7c4c8b46f4c687f"
+    },
+    "mixer.png": {
+      "canvasPx": [
+        64,
+        59
+      ],
+      "sha256": "e1fb51bef211d57b2039911a6c6559cd9ed5ed654664d18dbb2e1fe1707eb3b4"
+    },
+    "prime_keeper.png": {
+      "canvasPx": [
+        120,
+        298
+      ],
+      "sha256": "756f0a723c55997a3d5c38c625765b4077e7d959b7cd5827bcf69c17e27f4444"
+    },
+    "runA_worktop.png": {
+      "canvasPx": [
+        504,
+        31
+      ],
+      "sha256": "467681593ccd9475259a9547e12a499909987dd774000d4893cd13756ea21716"
+    },
+    "runB_worktop.png": {
+      "canvasPx": [
+        504,
+        31
+      ],
+      "sha256": "4645c9222a1dd601e2a4267e9aaf3253b2237e1b729610d0154f236dabce5bdc"
+    },
+    "sink_cabinet.png": {
+      "canvasPx": [
+        168,
+        137
+      ],
+      "sha256": "a4620fc1b889bc906f86290979f093b134699b8b3e0182e772bb469f79cd161c"
+    },
+    "teapot.png": {
+      "canvasPx": [
+        44,
+        36
+      ],
+      "sha256": "fcb0a2ec2116bc609e10c5cc4cf6589c6d7f2321f83cc58b96da5a1728e624c1"
+    },
+    "toaster.png": {
+      "canvasPx": [
+        52,
+        34
+      ],
+      "sha256": "f6d9a2635f3c4b7664c06e01d67a622602dfc8e60bb3804d3a40d12e96179a4e"
+    },
+    "wall_cupboard_1.png": {
+      "canvasPx": [
+        136,
+        101
+      ],
+      "sha256": "f60eccededdb001ebd09c9d6e1472f9fa6c63b27961906330548194f47432e00"
+    },
+    "wall_cupboard_2.png": {
+      "canvasPx": [
+        136,
+        101
+      ],
+      "sha256": "f60eccededdb001ebd09c9d6e1472f9fa6c63b27961906330548194f47432e00"
+    }
+  },
+  "outputs": {
+    "kitchen-v15-both-doors-open-room-1x.png": {
+      "canvasPx": [
+        2048,
+        576
+      ],
+      "sha256": "2a8d9414adace718ac2435a3d51488975b17da744ae400c5e4d389d21f446103",
+      "bytes": 944525
+    },
+    "kitchen-v15-cabinet-edge-gate.png": {
+      "canvasPx": [
+        2180,
+        1260
+      ],
+      "sha256": "25b6ff332fcbb3d1eea734b9b65316016f72876e76d106fc216cd034641acab7",
+      "bytes": 426294
+    },
+    "kitchen-v15-check-1-full-upgrade-fit.png": {
+      "canvasPx": [
+        2180,
+        740
+      ],
+      "sha256": "f70d801f73e52c998003e8b3ce6e9706b90149fa5e763e64bd0bb403f301bf19",
+      "bytes": 314013
+    },
+    "kitchen-v15-check-2-both-doors-open-clear.png": {
+      "canvasPx": [
+        2180,
+        740
+      ],
+      "sha256": "345053551ceb33453a237cb9b5ded1d0562dd144ae435c8a6d699a8d8e3da976",
+      "bytes": 316695
+    },
+    "kitchen-v15-check-3-day1-room.png": {
+      "canvasPx": [
+        2180,
+        740
+      ],
+      "sha256": "e07910ae5553ff4f4ea436e064029af6a3ca1cdddceb972af79439720e9ddd97",
+      "bytes": 330540
+    },
+    "kitchen-v15-correction-gate.png": {
+      "canvasPx": [
+        2180,
+        1260
+      ],
+      "sha256": "5e4d8cff6b960eb7080116adc5ca8a93ee086bd20c052bf51fbe1b1a31106786",
+      "bytes": 208979
+    },
+    "kitchen-v15-day1-room-1x.png": {
+      "canvasPx": [
+        2048,
+        576
+      ],
+      "sha256": "aec460bd444b638d5d7364ec0d5a1f31249d12ebe06f4f840d14a31c93a55aa5",
+      "bytes": 976207
+    },
+    "kitchen-v15-day1-room-no-keeper-1x.png": {
+      "canvasPx": [
+        2048,
+        576
+      ],
+      "sha256": "5f3b81a41a67a4dd1b667c90a225fdadaa9afd533c94b12273fedddc511cfcba",
+      "bytes": 936667
+    },
+    "kitchen-v15-empty-shell-1x.png": {
+      "canvasPx": [
+        2048,
+        576
+      ],
+      "sha256": "c30a6ffeed97058fe4c258a625da86984b5374d5688e69624145db887b9cb139",
+      "bytes": 801277
+    },
+    "kitchen-v15-liked-source-layout-comparison.png": {
+      "canvasPx": [
+        2180,
+        880
+      ],
+      "sha256": "4dcaf537fc29c16707b90e4f9ed61c5e6fb6e82a5f2e0f7e54d3ae27ce2774ce",
+      "bytes": 327841
+    },
+    "kitchen-v15-piece-gate-sheet.png": {
+      "canvasPx": [
+        3000,
+        1900
+      ],
+      "sha256": "ff6b93297b20d6146a1b3342e0f480100bf126f263b35a2b4030bcfffa7b2b3a",
+      "bytes": 296027
+    },
+    "kitchen-v15-registered-painted-master-1x.png": {
+      "canvasPx": [
+        2048,
+        576
+      ],
+      "sha256": "04259f0ee2b045a41ee159eebb436b5fd690ac25b8763cab08b16a6803be6272",
+      "bytes": 1263706
+    },
+    "kitchen-v15-structural-shell-jambs-only-1x.png": {
+      "canvasPx": [
+        2048,
+        576
+      ],
+      "sha256": "d913ad82f763f076e8c33cd74467d0ac71260deec87ddeb08bdd3681b649c355",
+      "bytes": 756461
+    },
+    "kitchen-v15-two-viewing-scales.png": {
+      "canvasPx": [
+        2300,
+        980
+      ],
+      "sha256": "8aa5ebb75831c0e6b9c42c357ae81e6ce142a82d06354f9ed79378e3436baeab",
+      "bytes": 348989
+    }
+  }
+}

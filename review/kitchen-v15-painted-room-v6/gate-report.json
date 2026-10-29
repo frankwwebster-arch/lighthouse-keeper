@@ -1,0 +1,934 @@
+{
+  "schema": "lighthouse-keeper/kitchen-v15-painted-room-v6-gate@3",
+  "layoutAuthority": "docs/layout/kitchen_v15_schematic.json",
+  "modulePx": [
+    2048,
+    576
+  ],
+  "sourcePreservation": {
+    "path": "sources/liked-kitchen-source-2172x724.png",
+    "expectedSha256": "404c4b095ee64b1b5ba37f5cea23d24081b0e1a6c70f824563e5edef93846e15",
+    "actualSha256": "404c4b095ee64b1b5ba37f5cea23d24081b0e1a6c70f824563e5edef93846e15",
+    "unchanged": true
+  },
+  "hardDatums": {
+    "unitBaseY": 485,
+    "worktopSurfaceY": 326,
+    "worktopBoxY": [
+      317,
+      348
+    ],
+    "hobLevelWithWorktop": true,
+    "keeperSolesY": 502,
+    "keeperRect": [
+      1150,
+      204,
+      1270,
+      502
+    ],
+    "stopCentres": [
+      {
+        "id": "fridge_t1",
+        "declaredStopX": 370,
+        "boxCentreX": 370.0,
+        "exact": true
+      },
+      {
+        "id": "sink_cabinet",
+        "declaredStopX": 706,
+        "boxCentreX": 706.0,
+        "exact": true
+      },
+      {
+        "id": "teapot",
+        "declaredStopX": 874,
+        "boxCentreX": 874.0,
+        "exact": true
+      },
+      {
+        "id": "cooker_t1",
+        "declaredStopX": 1042,
+        "boxCentreX": 1042.0,
+        "exact": true
+      },
+      {
+        "id": "toaster",
+        "declaredStopX": 1714,
+        "boxCentreX": 1714.0,
+        "exact": true
+      },
+      {
+        "id": "mixer",
+        "declaredStopX": 1798,
+        "boxCentreX": 1798.0,
+        "exact": true
+      },
+      {
+        "id": "prime_keeper",
+        "declaredStopX": 1210,
+        "boxCentreX": 1210.0,
+        "exact": true
+      }
+    ],
+    "windowClearAreas": [
+      {
+        "window": "window_L",
+        "rect": [
+          622,
+          106,
+          790,
+          274
+        ],
+        "collisions": [],
+        "pass": true
+      },
+      {
+        "window": "window_R",
+        "rect": [
+          1294,
+          106,
+          1462,
+          274
+        ],
+        "collisions": [],
+        "pass": true
+      }
+    ],
+    "doorLeaves": {
+      "sourceSha256": "dcf43fec6dd3de41d7904699c88394fa985c0a4f505d4ac67adf391039c8ecbd",
+      "closedPerspectiveQuads": {
+        "left": [
+          [
+            29,
+            208
+          ],
+          [
+            94,
+            224
+          ],
+          [
+            94,
+            528
+          ],
+          [
+            29,
+            544
+          ]
+        ],
+        "right": [
+          [
+            1954,
+            224
+          ],
+          [
+            2019,
+            208
+          ],
+          [
+            2019,
+            544
+          ],
+          [
+            1954,
+            528
+          ]
+        ]
+      },
+      "leftOpenRect": [
+        0,
+        208,
+        168,
+        544
+      ],
+      "rightOpenRect": [
+        1880,
+        208,
+        2048,
+        544
+      ],
+      "leftFurnitureClearancePx": 118,
+      "rightFurnitureClearancePx": 37,
+      "structuralShellHasNoLeaf": true,
+      "closedAndOpenStatesExclusive": true,
+      "closedVsStructuralCentralPixelsIdentical": true,
+      "pass": true
+    }
+  },
+  "roomChecks": {
+    "fullUpgradeReservations": {
+      "count": 5,
+      "pass": true
+    },
+    "bothDoorsOpenAndClear": {
+      "pass": true
+    },
+    "day1RoomAssembledFromCuts": {
+      "pass": true
+    }
+  },
+  "actualEdgeGate": {
+    "ordinaryCupboardIds": [
+      "cupboard_A1",
+      "cupboard_B1",
+      "cupboard_B2",
+      "cupboard_B3",
+      "dw_slot_cupboard"
+    ],
+    "ordinaryCupboardCanvasPx": [
+      168,
+      137
+    ],
+    "ordinaryCupboardSha256": {
+      "cupboard_A1": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53",
+      "cupboard_B1": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53",
+      "cupboard_B2": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53",
+      "cupboard_B3": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53",
+      "dw_slot_cupboard": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53"
+    },
+    "ordinaryCupboardsByteIdentical": true,
+    "wallCupboardIds": [
+      "wall_cupboard_1",
+      "wall_cupboard_2"
+    ],
+    "wallCupboardCanvasPx": [
+      136,
+      101
+    ],
+    "wallCupboardSha256": {
+      "wall_cupboard_1": "f60eccededdb001ebd09c9d6e1472f9fa6c63b27961906330548194f47432e00",
+      "wall_cupboard_2": "f60eccededdb001ebd09c9d6e1472f9fa6c63b27961906330548194f47432e00"
+    },
+    "wallCupboardsByteIdentical": true,
+    "worktopSha256": {
+      "runA_worktop": "467681593ccd9475259a9547e12a499909987dd774000d4893cd13756ea21716",
+      "runB_worktop": "4645c9222a1dd601e2a4267e9aaf3253b2237e1b729610d0154f236dabce5bdc"
+    },
+    "worktopsByteIdentical": false,
+    "wallCupboardToCookerVisibleGapPx": {
+      "left": 16,
+      "right": 16
+    },
+    "wallCupboardToCookerSpacingSymmetrical": true,
+    "baseModuleCutLinesX": [
+      454,
+      622,
+      790,
+      958,
+      1126,
+      1294,
+      1462,
+      1630
+    ],
+    "sinkBodyMatchesBaseCabinetBelowLocalY": 42,
+    "sinkBodyMatchesBaseCabinet": true,
+    "dresserDepthBandLocalY": [
+      168,
+      199
+    ],
+    "dresserDepthBandRoomY": [
+      317,
+      348
+    ],
+    "dresserDepthPx": 31,
+    "dresserSharesWorktopDepthPixels": true,
+    "allFurnitureCutsContainTransparency": true
+  },
+  "pieces": [
+    {
+      "id": "clock",
+      "kind": "wall",
+      "v15Rect": [
+        200,
+        60,
+        260,
+        120
+      ],
+      "requiredCanvasPx": [
+        60,
+        60
+      ],
+      "actualCanvasPx": [
+        60,
+        60
+      ],
+      "alphaBoundsOnCanvas": [
+        2,
+        2,
+        58,
+        58
+      ],
+      "transparentPixelCount": 958,
+      "nonTransparentPixelCount": 2642,
+      "paintTouchesLeftCut": false,
+      "paintTouchesRightCut": false,
+      "placementPx": [
+        200,
+        60
+      ],
+      "stop": null,
+      "cutMethod": "actual-alpha crop from approved painted source: clock_60x60.png",
+      "sharedMasterGroup": null,
+      "fitsV15Box": true
+    },
+    {
+      "id": "calendar",
+      "kind": "wall",
+      "v15Rect": [
+        200,
+        140,
+        260,
+        210
+      ],
+      "requiredCanvasPx": [
+        60,
+        70
+      ],
+      "actualCanvasPx": [
+        60,
+        70
+      ],
+      "alphaBoundsOnCanvas": [
+        2,
+        2,
+        58,
+        68
+      ],
+      "transparentPixelCount": 609,
+      "nonTransparentPixelCount": 3591,
+      "paintTouchesLeftCut": false,
+      "paintTouchesRightCut": false,
+      "placementPx": [
+        200,
+        140
+      ],
+      "stop": null,
+      "cutMethod": "actual-alpha crop from approved painted source: calendar_60x70.png",
+      "sharedMasterGroup": null,
+      "fitsV15Box": true
+    },
+    {
+      "id": "fridge_t1",
+      "kind": "freestanding",
+      "v15Rect": [
+        286,
+        183,
+        454,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        302
+      ],
+      "actualCanvasPx": [
+        168,
+        302
+      ],
+      "alphaBoundsOnCanvas": [
+        23,
+        0,
+        145,
+        302
+      ],
+      "transparentPixelCount": 13892,
+      "nonTransparentPixelCount": 36844,
+      "paintTouchesLeftCut": false,
+      "paintTouchesRightCut": false,
+      "placementPx": [
+        286,
+        183
+      ],
+      "stop": 370,
+      "cutMethod": "actual-alpha crop from approved painted source: fridge-master.png",
+      "sharedMasterGroup": null,
+      "fitsV15Box": true
+    },
+    {
+      "id": "cupboard_A1",
+      "kind": "fitted",
+      "v15Rect": [
+        454,
+        348,
+        622,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        137
+      ],
+      "actualCanvasPx": [
+        168,
+        137
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        1,
+        168,
+        137
+      ],
+      "transparentPixelCount": 911,
+      "nonTransparentPixelCount": 22105,
+      "paintTouchesLeftCut": true,
+      "paintTouchesRightCut": true,
+      "placementPx": [
+        454,
+        348
+      ],
+      "stop": null,
+      "cutMethod": "actual-alpha crop from one base-cupboard master; uniformly fitted to exact v15 width",
+      "sharedMasterGroup": "base-cupboard-168",
+      "fitsV15Box": true
+    },
+    {
+      "id": "sink_cabinet",
+      "kind": "fitted",
+      "v15Rect": [
+        622,
+        348,
+        790,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        137
+      ],
+      "actualCanvasPx": [
+        168,
+        137
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        0,
+        168,
+        137
+      ],
+      "transparentPixelCount": 591,
+      "nonTransparentPixelCount": 22425,
+      "paintTouchesLeftCut": true,
+      "paintTouchesRightCut": true,
+      "placementPx": [
+        622,
+        348
+      ],
+      "stop": 706,
+      "cutMethod": "exact shared base-cupboard body plus approved v8 Belfast apron above y42; taps/rim are in run A worktop",
+      "sharedMasterGroup": "base-cupboard-168-body",
+      "fitsV15Box": true
+    },
+    {
+      "id": "dw_slot_cupboard",
+      "kind": "fitted",
+      "v15Rect": [
+        790,
+        348,
+        958,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        137
+      ],
+      "actualCanvasPx": [
+        168,
+        137
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        1,
+        168,
+        137
+      ],
+      "transparentPixelCount": 911,
+      "nonTransparentPixelCount": 22105,
+      "paintTouchesLeftCut": true,
+      "paintTouchesRightCut": true,
+      "placementPx": [
+        790,
+        348
+      ],
+      "stop": null,
+      "cutMethod": "actual-alpha crop from one base-cupboard master; uniformly fitted to exact v15 width",
+      "sharedMasterGroup": "base-cupboard-168",
+      "fitsV15Box": true
+    },
+    {
+      "id": "wall_cupboard_1",
+      "kind": "wall",
+      "v15Rect": [
+        806,
+        140,
+        942,
+        241
+      ],
+      "requiredCanvasPx": [
+        136,
+        101
+      ],
+      "actualCanvasPx": [
+        136,
+        101
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        1,
+        136,
+        100
+      ],
+      "transparentPixelCount": 272,
+      "nonTransparentPixelCount": 13464,
+      "paintTouchesLeftCut": true,
+      "paintTouchesRightCut": true,
+      "placementPx": [
+        806,
+        140
+      ],
+      "stop": null,
+      "cutMethod": "actual-alpha crop from one wall-cupboard master; uniformly fitted to exact v15 width",
+      "sharedMasterGroup": "wall-cupboard-136",
+      "fitsV15Box": true
+    },
+    {
+      "id": "runA_worktop",
+      "kind": "worktop",
+      "v15Rect": [
+        454,
+        317,
+        958,
+        348
+      ],
+      "requiredCanvasPx": [
+        504,
+        31
+      ],
+      "actualCanvasPx": [
+        504,
+        31
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        0,
+        504,
+        31
+      ],
+      "transparentPixelCount": 998,
+      "nonTransparentPixelCount": 14626,
+      "paintTouchesLeftCut": true,
+      "paintTouchesRightCut": true,
+      "placementPx": [
+        454,
+        317
+      ],
+      "stop": null,
+      "cutMethod": "504 px worktop master with approved v8 Belfast taps/rim set into the middle 168 px",
+      "sharedMasterGroup": "sink-integrated-worktop-504",
+      "fitsV15Box": true
+    },
+    {
+      "id": "teapot",
+      "kind": "counter",
+      "v15Rect": [
+        852,
+        290,
+        896,
+        326
+      ],
+      "requiredCanvasPx": [
+        44,
+        36
+      ],
+      "actualCanvasPx": [
+        44,
+        36
+      ],
+      "alphaBoundsOnCanvas": [
+        2,
+        2,
+        42,
+        34
+      ],
+      "transparentPixelCount": 563,
+      "nonTransparentPixelCount": 1021,
+      "paintTouchesLeftCut": false,
+      "paintTouchesRightCut": false,
+      "placementPx": [
+        852,
+        290
+      ],
+      "stop": 874,
+      "cutMethod": "actual-alpha crop from approved painted source: teapot-master.png",
+      "sharedMasterGroup": null,
+      "fitsV15Box": true
+    },
+    {
+      "id": "cooker_t1",
+      "kind": "slot-in",
+      "v15Rect": [
+        958,
+        149,
+        1126,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        336
+      ],
+      "actualCanvasPx": [
+        168,
+        336
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        63,
+        168,
+        336
+      ],
+      "transparentPixelCount": 10584,
+      "nonTransparentPixelCount": 45864,
+      "paintTouchesLeftCut": true,
+      "paintTouchesRightCut": true,
+      "placementPx": [
+        958,
+        149
+      ],
+      "stop": 1042,
+      "cutMethod": "actual-alpha crop from approved painted source: cooker-master.png",
+      "sharedMasterGroup": null,
+      "fitsV15Box": true
+    },
+    {
+      "id": "cupboard_B1",
+      "kind": "fitted",
+      "v15Rect": [
+        1126,
+        348,
+        1294,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        137
+      ],
+      "actualCanvasPx": [
+        168,
+        137
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        1,
+        168,
+        137
+      ],
+      "transparentPixelCount": 911,
+      "nonTransparentPixelCount": 22105,
+      "paintTouchesLeftCut": true,
+      "paintTouchesRightCut": true,
+      "placementPx": [
+        1126,
+        348
+      ],
+      "stop": null,
+      "cutMethod": "actual-alpha crop from one base-cupboard master; uniformly fitted to exact v15 width",
+      "sharedMasterGroup": "base-cupboard-168",
+      "fitsV15Box": true
+    },
+    {
+      "id": "wall_cupboard_2",
+      "kind": "wall",
+      "v15Rect": [
+        1142,
+        140,
+        1278,
+        241
+      ],
+      "requiredCanvasPx": [
+        136,
+        101
+      ],
+      "actualCanvasPx": [
+        136,
+        101
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        1,
+        136,
+        100
+      ],
+      "transparentPixelCount": 272,
+      "nonTransparentPixelCount": 13464,
+      "paintTouchesLeftCut": true,
+      "paintTouchesRightCut": true,
+      "placementPx": [
+        1142,
+        140
+      ],
+      "stop": null,
+      "cutMethod": "actual-alpha crop from one wall-cupboard master; uniformly fitted to exact v15 width",
+      "sharedMasterGroup": "wall-cupboard-136",
+      "fitsV15Box": true
+    },
+    {
+      "id": "cupboard_B2",
+      "kind": "fitted",
+      "v15Rect": [
+        1294,
+        348,
+        1462,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        137
+      ],
+      "actualCanvasPx": [
+        168,
+        137
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        1,
+        168,
+        137
+      ],
+      "transparentPixelCount": 911,
+      "nonTransparentPixelCount": 22105,
+      "paintTouchesLeftCut": true,
+      "paintTouchesRightCut": true,
+      "placementPx": [
+        1294,
+        348
+      ],
+      "stop": null,
+      "cutMethod": "actual-alpha crop from one base-cupboard master; uniformly fitted to exact v15 width",
+      "sharedMasterGroup": "base-cupboard-168",
+      "fitsV15Box": true
+    },
+    {
+      "id": "cupboard_B3",
+      "kind": "fitted",
+      "v15Rect": [
+        1462,
+        348,
+        1630,
+        485
+      ],
+      "requiredCanvasPx": [
+        168,
+        137
+      ],
+      "actualCanvasPx": [
+        168,
+        137
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        1,
+        168,
+        137
+      ],
+      "transparentPixelCount": 911,
+      "nonTransparentPixelCount": 22105,
+      "paintTouchesLeftCut": true,
+      "paintTouchesRightCut": true,
+      "placementPx": [
+        1462,
+        348
+      ],
+      "stop": null,
+      "cutMethod": "actual-alpha crop from one base-cupboard master; uniformly fitted to exact v15 width",
+      "sharedMasterGroup": "base-cupboard-168",
+      "fitsV15Box": true
+    },
+    {
+      "id": "runB_worktop",
+      "kind": "worktop",
+      "v15Rect": [
+        1126,
+        317,
+        1630,
+        348
+      ],
+      "requiredCanvasPx": [
+        504,
+        31
+      ],
+      "actualCanvasPx": [
+        504,
+        31
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        1,
+        504,
+        30
+      ],
+      "transparentPixelCount": 1168,
+      "nonTransparentPixelCount": 14456,
+      "paintTouchesLeftCut": true,
+      "paintTouchesRightCut": true,
+      "placementPx": [
+        1126,
+        317
+      ],
+      "stop": null,
+      "cutMethod": "actual-alpha crop from one 504 px worktop master; uniformly fitted to exact v15 width",
+      "sharedMasterGroup": "worktop-504",
+      "fitsV15Box": true
+    },
+    {
+      "id": "dresser",
+      "kind": "freestanding",
+      "v15Rect": [
+        1630,
+        149,
+        1843,
+        485
+      ],
+      "requiredCanvasPx": [
+        213,
+        336
+      ],
+      "actualCanvasPx": [
+        213,
+        336
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        0,
+        213,
+        329
+      ],
+      "transparentPixelCount": 18542,
+      "nonTransparentPixelCount": 53026,
+      "paintTouchesLeftCut": true,
+      "paintTouchesRightCut": true,
+      "placementPx": [
+        1630,
+        149
+      ],
+      "stop": null,
+      "cutMethod": "retained v5 painted dresser fitted around the exact shared 31 px worktop-depth band",
+      "sharedMasterGroup": "worktop-depth-31",
+      "fitsV15Box": true
+    },
+    {
+      "id": "toaster",
+      "kind": "counter",
+      "v15Rect": [
+        1688,
+        300,
+        1740,
+        334
+      ],
+      "requiredCanvasPx": [
+        52,
+        34
+      ],
+      "actualCanvasPx": [
+        52,
+        34
+      ],
+      "alphaBoundsOnCanvas": [
+        2,
+        0,
+        49,
+        34
+      ],
+      "transparentPixelCount": 170,
+      "nonTransparentPixelCount": 1598,
+      "paintTouchesLeftCut": false,
+      "paintTouchesRightCut": false,
+      "placementPx": [
+        1688,
+        300
+      ],
+      "stop": 1714,
+      "cutMethod": "actual-alpha crop from approved painted source: toaster-master.png",
+      "sharedMasterGroup": null,
+      "fitsV15Box": true
+    },
+    {
+      "id": "mixer",
+      "kind": "counter",
+      "v15Rect": [
+        1766,
+        275,
+        1830,
+        334
+      ],
+      "requiredCanvasPx": [
+        64,
+        59
+      ],
+      "actualCanvasPx": [
+        64,
+        59
+      ],
+      "alphaBoundsOnCanvas": [
+        0,
+        18,
+        64,
+        59
+      ],
+      "transparentPixelCount": 1152,
+      "nonTransparentPixelCount": 2624,
+      "paintTouchesLeftCut": true,
+      "paintTouchesRightCut": true,
+      "placementPx": [
+        1766,
+        275
+      ],
+      "stop": 1798,
+      "cutMethod": "actual-alpha crop from approved painted source: mixer-master.png",
+      "sharedMasterGroup": null,
+      "fitsV15Box": true
+    },
+    {
+      "id": "prime_keeper",
+      "kind": "keeper",
+      "v15Rect": [
+        1150,
+        204,
+        1270,
+        502
+      ],
+      "requiredCanvasPx": [
+        120,
+        298
+      ],
+      "actualCanvasPx": [
+        120,
+        298
+      ],
+      "alphaBoundsOnCanvas": [
+        9,
+        0,
+        111,
+        298
+      ],
+      "transparentPixelCount": 12863,
+      "nonTransparentPixelCount": 22897,
+      "paintTouchesLeftCut": false,
+      "paintTouchesRightCut": false,
+      "placementPx": [
+        1150,
+        204
+      ],
+      "stop": 1210,
+      "cutMethod": "actual-alpha crop from approved painted source: prime_keeper_120x298.png",
+      "sharedMasterGroup": null,
+      "fitsV15Box": true
+    }
+  ],
+  "summary": {
+    "pieceCount": 19,
+    "exactCanvasPassCount": 19,
+    "allPiecesFit": true,
+    "allRepeatedMastersExact": true,
+    "ovenSpacingSymmetrical": true,
+    "sinkSharesBaseBody": true,
+    "dresserSharesWorktopDepth": true,
+    "doorStatesExclusive": true,
+    "actualEdgeCutsPass": true,
+    "allHardDatumsPass": true
+  }
+}
