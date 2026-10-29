@@ -266,16 +266,16 @@ new art uses the exact 2048 × 576 grid in `docs/SPEC.md`. Any
 runtime migration must preserve approved historical bytes and receive a
 separate review.
 
-The current kitchen art review candidate is Kitchen v15 painted-room v4 in
-[`review/kitchen-v15-painted-room-v4/`](review/kitchen-v15-painted-room-v4/).
-It starts from Frank's liked 2172 × 724 brighter duck-egg room, preserves that
-source byte-for-byte, and changes only the layout to the approved
-`docs/layout/kitchen_v15_schematic.json`: no larder, cupboard B3 at
-x1462–1630, a three-cupboard run B, and the dresser ending the run at
-x1630–1843 with separate toaster and mixer cuts. All 19 pieces have exact v15
-canvases on the 2048 × 576 module. The package includes the Day-1 room, the
-full-upgrade reservation check, both approved side doors open with measured
-furniture clearance, the two viewing scales and a machine-readable gate report.
+The current kitchen art review candidate is Kitchen v15 painted-room v5 in
+[`review/kitchen-v15-painted-room-v5/`](review/kitchen-v15-painted-room-v5/).
+It corrects v4's arbitrary rectangular room crops: all 19 pieces are now
+standalone transparent painted-edge assets on their exact v15 canvases. The
+five ordinary 168 × 137 base cupboards are byte-identical copies of one master,
+as are the two 136 × 101 wall cupboards and two 504 × 31 worktops. The visible
+wall-cupboard gaps to the cooker are 16 px on both sides. The unchanged liked
+2172 × 724 brighter duck-egg source remains hash-pinned; the v15 layout, Day-1
+room, full-upgrade reservations, both-open-door clearances and two viewing
+scales remain review-only and machine-verified.
 It is review-only and awaiting Frank; no live runtime art has changed. The
 earlier `review/kitchen-v14-build/` is retained as rejected historical evidence.
 
