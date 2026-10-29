@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "handoffStatus": "approved visual and choreography; ready for game wiring",
+  "scope": "ordinary room doors only",
+  "art": {
+    "runtimeAsset": "assets/room-door-compass-rose-room-168x336.png",
+    "lighthouseMip": "assets/room-door-compass-rose-lighthouse-20x40.png",
+    "paintSource": "assets/room-door-compass-rose-paint-source-337x674.png",
+    "behaviourReferenceOnly": "review/room-door-compass-rose-correct-scale-v3.mp4",
+    "redrawInCode": false,
+    "useReferenceVideoAtRuntime": false
+  },
+  "scale": {
+    "roomPixelsPerMetre": 168,
+    "lighthousePixelsPerMetre": 20,
+    "doorLeafMetres": [1.0, 2.0],
+    "doorLeafRoomPixels": [168, 336],
+    "doorLeafLighthousePixels": [20, 40],
+    "canonicalKeeperPixels": [120, 298],
+    "canonicalKeeperOpaqueHeightPixels": 298,
+    "canonicalKeeperMetres": 1.77,
+    "canonicalKeeperMustBeResized": false,
+    "keeperToDoorHeightRatio": 0.8869047619047619,
+    "doorHeadClearanceRoomPixels": 38
+  },
+  "handedness": {
+    "leftRoomDoor": "hinge on outer/left edge; handle on free/right edge",
+    "rightRoomDoor": "mirror geometry and handle placement",
+    "allowDoubleHinges": false,
+    "openDirection": "toward stage front into the gutter"
+  },
+  "motion": {
+    "closedDegrees": 0,
+    "openDegrees": 90,
+    "openEndpoint": "full face parallel to the player/camera",
+    "openDurationMs": 722,
+    "closeDurationMs": 722,
+    "minimumOpenHoldMs": 222,
+    "easing": "cosine ease-in-out",
+    "doorMayMoveWhileKeeperIntersectsSweep": false,
+    "defaultAfterCrossing": "auto-close only after keeper clears the swept volume",
+    "heldOpen": "explicit scripted override only"
+  },
+  "stateMachine": {
+    "states": ["closed", "opening", "open", "keeper-crossing", "clearance-hold", "closing"],
+    "sequence": ["closed", "opening", "open", "keeper-crossing", "clearance-hold", "closing"],
+    "invariant": "the keeper never intersects a moving door leaf"
+  },
+  "renderOrder": [
+    "room shell and frame",
+    "keeper",
+    "open door leaf and jamb",
+    "foreground overlays"
+  ],
+  "occlusion": {
+    "openLeafIsForegroundOccluder": true,
+    "keeperMustBeFullyCoveredDuringHiddenCrossing": true
+  },
+  "proof": {
+    "note": "Reference-video coordinates are inspection geometry, not absolute room anchors.",
+    "panelRoomPixels": [444, 444],
+    "closedQuad": [[38.5, 45.5], [94, 68], [94, 349], [38.5, 377]],
+    "openQuad": [[39, 41], [207, 41], [207, 377], [39, 377]],
+    "keeperSoleY": 377,
+    "openLeafFreeEdgeX": 207,
+    "keeperClearX": 221,
+    "minimumClearancePixels": 14,
+    "fps": 18,
+    "frames": 128
+  },
+  "applicability": {
+    "decorativeStylesAndStainedGlass": "room doors only",
+    "cupboardAndSecretCupboardDoors": "opaque monotone; match surrounding cabinetry",
+    "cabinetDoors": "outside this handoff"
+  }
+}
