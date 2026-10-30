@@ -1,0 +1,9 @@
+{
+  "schema": "lighthouse-keeper/reversible-review-export@1",
+  "status": "awaiting-frank",
+  "canonicalSource": "review/kitchen-v15-painted-room-v7/parts",
+  "draftExport": "review/kitchen-v15-isolated-assets-v1/assets-5x",
+  "sourceModified": false,
+  "promotion": null,
+  "rejection": "Delete only review/kitchen-v15-isolated-assets-v1; the v7 source remains unchanged."
+}

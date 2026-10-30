@@ -283,6 +283,17 @@ remain review-only and machine-verified.
 It is review-only and awaiting Frank; no live runtime art has changed. The
 earlier `review/kitchen-v14-build/` is retained as rejected historical evidence.
 
+For object-by-object review, the companion package
+[`review/kitchen-v15-isolated-assets-v1/`](review/kitchen-v15-isolated-assets-v1/)
+contains all 19 v15 pieces as separate transparent PNGs rather than a gate
+sheet. Each export is cut to the painted alpha edge with a transparent safety
+gutter. The dresser uses its native 999 × 1575 source matching Frank's example;
+the mixer and toaster use their clean native transparent donors instead of the
+backdrop-contaminated room cuts. The package records both the pinned v7 room
+part and presentation-source provenance, verifies the five ordinary cabinets
+and two wall cupboards remain identical, and makes no runtime or deployment
+change.
+
 The earlier Kitchen v8 room-shell review candidate is retained as historical
 style and shell evidence in
 [`review/kitchen-proof-v8-room-shell-v1/`](review/kitchen-proof-v8-room-shell-v1/):

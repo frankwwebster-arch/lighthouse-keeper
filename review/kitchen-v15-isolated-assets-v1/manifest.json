@@ -1,0 +1,734 @@
+{
+  "schema": "lighthouse-keeper/kitchen-v15-isolated-assets-v1@1",
+  "status": "review-export-awaiting-frank",
+  "sourcePackage": "review/kitchen-v15-painted-room-v7",
+  "sourceMutation": false,
+  "runtimeMutation": false,
+  "deployment": false,
+  "assetCount": 19,
+  "format": "RGBA PNG; source actual-edge crop; native full-resolution donor where available, otherwise 5x Lanczos; 24px transparent export gutter",
+  "assets": {
+    "calendar.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/calendar.png",
+      "sourceSha256": "caecb96f7e1c7fc137621f9b1f9d0e584d1950f4e6d965dd01001c2da1230967",
+      "sourceCanvasPx": [
+        60,
+        70
+      ],
+      "sourceActualEdgeBoundsPx": [
+        2,
+        2,
+        58,
+        68
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/calendar.png",
+      "presentationSourceSha256": "caecb96f7e1c7fc137621f9b1f9d0e584d1950f4e6d965dd01001c2da1230967",
+      "presentationSourceCanvasPx": [
+        60,
+        70
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        2,
+        2,
+        58,
+        68
+      ],
+      "actualEdgeCropPx": [
+        56,
+        66
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/calendar.png",
+      "exportCanvasPx": [
+        328,
+        378
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "d0d9140919a4a2c1a019ea7d329773ad393d5bd103df3220937479792dd98cda"
+    },
+    "clock.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/clock.png",
+      "sourceSha256": "b9caf0ae6cfa432f52e8e838e70b53d668e1e6a14023cb72acdb165e91ce58f4",
+      "sourceCanvasPx": [
+        60,
+        60
+      ],
+      "sourceActualEdgeBoundsPx": [
+        2,
+        2,
+        58,
+        58
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/clock.png",
+      "presentationSourceSha256": "b9caf0ae6cfa432f52e8e838e70b53d668e1e6a14023cb72acdb165e91ce58f4",
+      "presentationSourceCanvasPx": [
+        60,
+        60
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        2,
+        2,
+        58,
+        58
+      ],
+      "actualEdgeCropPx": [
+        56,
+        56
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/clock.png",
+      "exportCanvasPx": [
+        328,
+        328
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "80a644462c91a269bde8e70c3b3364cda8fc5376171ab6b349ee054f9e498f4b"
+    },
+    "cooker_t1.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/cooker_t1.png",
+      "sourceSha256": "3513318eb0ad12e1fde92d154293e039b0c4a176de2b12c8c4e37a4fad378fc9",
+      "sourceCanvasPx": [
+        168,
+        336
+      ],
+      "sourceActualEdgeBoundsPx": [
+        0,
+        63,
+        168,
+        336
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/cooker_t1.png",
+      "presentationSourceSha256": "3513318eb0ad12e1fde92d154293e039b0c4a176de2b12c8c4e37a4fad378fc9",
+      "presentationSourceCanvasPx": [
+        168,
+        336
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        0,
+        63,
+        168,
+        336
+      ],
+      "actualEdgeCropPx": [
+        168,
+        273
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/cooker_t1.png",
+      "exportCanvasPx": [
+        888,
+        1413
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "f0ab2d339914e9f05fc5be9a59bbc8f02e7d372d13e8f03aabf5192e00858194"
+    },
+    "cupboard_A1.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/cupboard_A1.png",
+      "sourceSha256": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53",
+      "sourceCanvasPx": [
+        168,
+        137
+      ],
+      "sourceActualEdgeBoundsPx": [
+        0,
+        1,
+        168,
+        137
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/cupboard_A1.png",
+      "presentationSourceSha256": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53",
+      "presentationSourceCanvasPx": [
+        168,
+        137
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        0,
+        1,
+        168,
+        137
+      ],
+      "actualEdgeCropPx": [
+        168,
+        136
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/cupboard_A1.png",
+      "exportCanvasPx": [
+        888,
+        728
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "43b53d6b77413e92e932b70846c876d152f0547363a8a82c6f09aa5b288636ad"
+    },
+    "cupboard_B1.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/cupboard_B1.png",
+      "sourceSha256": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53",
+      "sourceCanvasPx": [
+        168,
+        137
+      ],
+      "sourceActualEdgeBoundsPx": [
+        0,
+        1,
+        168,
+        137
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/cupboard_B1.png",
+      "presentationSourceSha256": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53",
+      "presentationSourceCanvasPx": [
+        168,
+        137
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        0,
+        1,
+        168,
+        137
+      ],
+      "actualEdgeCropPx": [
+        168,
+        136
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/cupboard_B1.png",
+      "exportCanvasPx": [
+        888,
+        728
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "43b53d6b77413e92e932b70846c876d152f0547363a8a82c6f09aa5b288636ad"
+    },
+    "cupboard_B2.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/cupboard_B2.png",
+      "sourceSha256": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53",
+      "sourceCanvasPx": [
+        168,
+        137
+      ],
+      "sourceActualEdgeBoundsPx": [
+        0,
+        1,
+        168,
+        137
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/cupboard_B2.png",
+      "presentationSourceSha256": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53",
+      "presentationSourceCanvasPx": [
+        168,
+        137
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        0,
+        1,
+        168,
+        137
+      ],
+      "actualEdgeCropPx": [
+        168,
+        136
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/cupboard_B2.png",
+      "exportCanvasPx": [
+        888,
+        728
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "43b53d6b77413e92e932b70846c876d152f0547363a8a82c6f09aa5b288636ad"
+    },
+    "cupboard_B3.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/cupboard_B3.png",
+      "sourceSha256": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53",
+      "sourceCanvasPx": [
+        168,
+        137
+      ],
+      "sourceActualEdgeBoundsPx": [
+        0,
+        1,
+        168,
+        137
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/cupboard_B3.png",
+      "presentationSourceSha256": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53",
+      "presentationSourceCanvasPx": [
+        168,
+        137
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        0,
+        1,
+        168,
+        137
+      ],
+      "actualEdgeCropPx": [
+        168,
+        136
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/cupboard_B3.png",
+      "exportCanvasPx": [
+        888,
+        728
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "43b53d6b77413e92e932b70846c876d152f0547363a8a82c6f09aa5b288636ad"
+    },
+    "dresser.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/dresser.png",
+      "sourceSha256": "aea552c7a17ed64a2f8677c1bdd819193a84eae17dbaeacc0c7881f384215bff",
+      "sourceCanvasPx": [
+        213,
+        336
+      ],
+      "sourceActualEdgeBoundsPx": [
+        0,
+        0,
+        213,
+        336
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v5/sources/imagegen/dresser-clear-counter-transparent.png",
+      "presentationSourceSha256": "194de29c91685f3ae29b39c24d09a22a00bb840f9b27f76f8790588861a36d57",
+      "presentationSourceCanvasPx": [
+        999,
+        1575
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        0,
+        21,
+        937,
+        1575
+      ],
+      "actualEdgeCropPx": [
+        937,
+        1554
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/dresser.png",
+      "exportCanvasPx": [
+        985,
+        1602
+      ],
+      "exportScale": 1,
+      "transparentGutterPx": 24,
+      "exportSha256": "ba65ded8188ac1282111681ad1378d98e20d5dd50e90cbcce37e6fc45b882731"
+    },
+    "dw_slot_cupboard.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/dw_slot_cupboard.png",
+      "sourceSha256": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53",
+      "sourceCanvasPx": [
+        168,
+        137
+      ],
+      "sourceActualEdgeBoundsPx": [
+        0,
+        1,
+        168,
+        137
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/dw_slot_cupboard.png",
+      "presentationSourceSha256": "f3ea9f7bd8c38a57e2a36c3761f752558908ce814f8e9d244ef103b7482afe53",
+      "presentationSourceCanvasPx": [
+        168,
+        137
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        0,
+        1,
+        168,
+        137
+      ],
+      "actualEdgeCropPx": [
+        168,
+        136
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/dw_slot_cupboard.png",
+      "exportCanvasPx": [
+        888,
+        728
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "43b53d6b77413e92e932b70846c876d152f0547363a8a82c6f09aa5b288636ad"
+    },
+    "fridge_t1.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/fridge_t1.png",
+      "sourceSha256": "f86f78ef5da92e6b58e59eeea1661e60f31ad65bc1590642f7c4c8b46f4c687f",
+      "sourceCanvasPx": [
+        168,
+        302
+      ],
+      "sourceActualEdgeBoundsPx": [
+        23,
+        0,
+        145,
+        302
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/fridge_t1.png",
+      "presentationSourceSha256": "f86f78ef5da92e6b58e59eeea1661e60f31ad65bc1590642f7c4c8b46f4c687f",
+      "presentationSourceCanvasPx": [
+        168,
+        302
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        23,
+        0,
+        145,
+        302
+      ],
+      "actualEdgeCropPx": [
+        122,
+        302
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/fridge_t1.png",
+      "exportCanvasPx": [
+        658,
+        1558
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "4a802c1afb02c698bc1a581e467156a2c71ddf957c46d5aa4211d6cce8a34978"
+    },
+    "mixer.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/mixer.png",
+      "sourceSha256": "e1fb51bef211d57b2039911a6c6559cd9ed5ed654664d18dbb2e1fe1707eb3b4",
+      "sourceCanvasPx": [
+        64,
+        59
+      ],
+      "sourceActualEdgeBoundsPx": [
+        0,
+        18,
+        64,
+        59
+      ],
+      "presentationSourcePath": "review/kitchen-proof-v8-assets-v1/sources/selected/stand_mixer.png",
+      "presentationSourceSha256": "b52a0c670687bbee558591981fdd4ba03c523cdf5e9cecde297dea406bdd342c",
+      "presentationSourceCanvasPx": [
+        1142,
+        1377
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        0,
+        37,
+        1141,
+        1377
+      ],
+      "actualEdgeCropPx": [
+        1141,
+        1340
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/mixer.png",
+      "exportCanvasPx": [
+        1189,
+        1388
+      ],
+      "exportScale": 1,
+      "transparentGutterPx": 24,
+      "exportSha256": "62405cdc27b6c8b28d6ab5a8c1bf0382533af830047ae2485804cb6d2633ce65"
+    },
+    "prime_keeper.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/prime_keeper.png",
+      "sourceSha256": "756f0a723c55997a3d5c38c625765b4077e7d959b7cd5827bcf69c17e27f4444",
+      "sourceCanvasPx": [
+        120,
+        298
+      ],
+      "sourceActualEdgeBoundsPx": [
+        9,
+        0,
+        111,
+        298
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/prime_keeper.png",
+      "presentationSourceSha256": "756f0a723c55997a3d5c38c625765b4077e7d959b7cd5827bcf69c17e27f4444",
+      "presentationSourceCanvasPx": [
+        120,
+        298
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        9,
+        0,
+        111,
+        298
+      ],
+      "actualEdgeCropPx": [
+        102,
+        298
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/prime_keeper.png",
+      "exportCanvasPx": [
+        558,
+        1538
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "30c7e3ba2421e7e196543f236367890ae773dc2ef482e7f4971cb453ca345d55"
+    },
+    "runA_worktop.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/runA_worktop.png",
+      "sourceSha256": "467681593ccd9475259a9547e12a499909987dd774000d4893cd13756ea21716",
+      "sourceCanvasPx": [
+        504,
+        31
+      ],
+      "sourceActualEdgeBoundsPx": [
+        0,
+        0,
+        504,
+        31
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/runA_worktop.png",
+      "presentationSourceSha256": "467681593ccd9475259a9547e12a499909987dd774000d4893cd13756ea21716",
+      "presentationSourceCanvasPx": [
+        504,
+        31
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        0,
+        0,
+        504,
+        31
+      ],
+      "actualEdgeCropPx": [
+        504,
+        31
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/runA_worktop.png",
+      "exportCanvasPx": [
+        2568,
+        203
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "d3359fc874156ed26ab4f411402e3b80d2f3c4740294c54fe62209703bef19fd"
+    },
+    "runB_worktop.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/runB_worktop.png",
+      "sourceSha256": "4645c9222a1dd601e2a4267e9aaf3253b2237e1b729610d0154f236dabce5bdc",
+      "sourceCanvasPx": [
+        504,
+        31
+      ],
+      "sourceActualEdgeBoundsPx": [
+        0,
+        1,
+        504,
+        30
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/runB_worktop.png",
+      "presentationSourceSha256": "4645c9222a1dd601e2a4267e9aaf3253b2237e1b729610d0154f236dabce5bdc",
+      "presentationSourceCanvasPx": [
+        504,
+        31
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        0,
+        1,
+        504,
+        30
+      ],
+      "actualEdgeCropPx": [
+        504,
+        29
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/runB_worktop.png",
+      "exportCanvasPx": [
+        2568,
+        193
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "9b0385e46fb0ba79d51cbce91116af7e116d6efc8f30f8112e3fb1a33442c9df"
+    },
+    "sink_cabinet.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/sink_cabinet.png",
+      "sourceSha256": "a4620fc1b889bc906f86290979f093b134699b8b3e0182e772bb469f79cd161c",
+      "sourceCanvasPx": [
+        168,
+        137
+      ],
+      "sourceActualEdgeBoundsPx": [
+        0,
+        0,
+        168,
+        137
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/sink_cabinet.png",
+      "presentationSourceSha256": "a4620fc1b889bc906f86290979f093b134699b8b3e0182e772bb469f79cd161c",
+      "presentationSourceCanvasPx": [
+        168,
+        137
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        0,
+        0,
+        168,
+        137
+      ],
+      "actualEdgeCropPx": [
+        168,
+        137
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/sink_cabinet.png",
+      "exportCanvasPx": [
+        888,
+        733
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "97987310fd20e96fdb4704dbd6bc2e0806fa6c49f28211443b0831f113891efd"
+    },
+    "teapot.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/teapot.png",
+      "sourceSha256": "fcb0a2ec2116bc609e10c5cc4cf6589c6d7f2321f83cc58b96da5a1728e624c1",
+      "sourceCanvasPx": [
+        44,
+        36
+      ],
+      "sourceActualEdgeBoundsPx": [
+        2,
+        2,
+        42,
+        34
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/teapot.png",
+      "presentationSourceSha256": "fcb0a2ec2116bc609e10c5cc4cf6589c6d7f2321f83cc58b96da5a1728e624c1",
+      "presentationSourceCanvasPx": [
+        44,
+        36
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        2,
+        2,
+        42,
+        34
+      ],
+      "actualEdgeCropPx": [
+        40,
+        32
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/teapot.png",
+      "exportCanvasPx": [
+        248,
+        208
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "c46c45468e3af9d17e83ca2e61ecce2446358ec8933af1207f11cbb0c198dbae"
+    },
+    "toaster.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/toaster.png",
+      "sourceSha256": "f6d9a2635f3c4b7664c06e01d67a622602dfc8e60bb3804d3a40d12e96179a4e",
+      "sourceCanvasPx": [
+        52,
+        34
+      ],
+      "sourceActualEdgeBoundsPx": [
+        2,
+        0,
+        49,
+        34
+      ],
+      "presentationSourcePath": "review/kitchen-proof-v8-assets-v1/sources/selected/cream_toaster.png",
+      "presentationSourceSha256": "2cefcab9040fec30f024c531ee37d72465d099515e299a9074ae98e71db17025",
+      "presentationSourceCanvasPx": [
+        1387,
+        1134
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        0,
+        116,
+        1371,
+        1110
+      ],
+      "actualEdgeCropPx": [
+        1371,
+        994
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/toaster.png",
+      "exportCanvasPx": [
+        1419,
+        1042
+      ],
+      "exportScale": 1,
+      "transparentGutterPx": 24,
+      "exportSha256": "02f7aa4fd5d0c1585e295ae0b75e2f79b272ba3af4c549bc376635126f116851"
+    },
+    "wall_cupboard_1.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/wall_cupboard_1.png",
+      "sourceSha256": "f60eccededdb001ebd09c9d6e1472f9fa6c63b27961906330548194f47432e00",
+      "sourceCanvasPx": [
+        136,
+        101
+      ],
+      "sourceActualEdgeBoundsPx": [
+        0,
+        1,
+        136,
+        100
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/wall_cupboard_1.png",
+      "presentationSourceSha256": "f60eccededdb001ebd09c9d6e1472f9fa6c63b27961906330548194f47432e00",
+      "presentationSourceCanvasPx": [
+        136,
+        101
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        0,
+        1,
+        136,
+        100
+      ],
+      "actualEdgeCropPx": [
+        136,
+        99
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/wall_cupboard_1.png",
+      "exportCanvasPx": [
+        728,
+        543
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "a79c6f97fc54cae4196a1f93e7623e3ef364ed8df72feb8c685f4ea6d464e2d7"
+    },
+    "wall_cupboard_2.png": {
+      "sourcePath": "review/kitchen-v15-painted-room-v7/parts/wall_cupboard_2.png",
+      "sourceSha256": "f60eccededdb001ebd09c9d6e1472f9fa6c63b27961906330548194f47432e00",
+      "sourceCanvasPx": [
+        136,
+        101
+      ],
+      "sourceActualEdgeBoundsPx": [
+        0,
+        1,
+        136,
+        100
+      ],
+      "presentationSourcePath": "review/kitchen-v15-painted-room-v7/parts/wall_cupboard_2.png",
+      "presentationSourceSha256": "f60eccededdb001ebd09c9d6e1472f9fa6c63b27961906330548194f47432e00",
+      "presentationSourceCanvasPx": [
+        136,
+        101
+      ],
+      "presentationSourceActualEdgeBoundsPx": [
+        0,
+        1,
+        136,
+        100
+      ],
+      "actualEdgeCropPx": [
+        136,
+        99
+      ],
+      "exportPath": "review/kitchen-v15-isolated-assets-v1/assets-5x/wall_cupboard_2.png",
+      "exportCanvasPx": [
+        728,
+        543
+      ],
+      "exportScale": 5,
+      "transparentGutterPx": 24,
+      "exportSha256": "a79c6f97fc54cae4196a1f93e7623e3ef364ed8df72feb8c685f4ea6d464e2d7"
+    }
+  }
+}
