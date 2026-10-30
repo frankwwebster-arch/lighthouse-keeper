@@ -8,6 +8,7 @@ This review package presents every Kitchen v15 v7 cut asset as its own high-reso
 - `assets-5x/dresser.png` — the dresser in the requested tall isolated format.
 - `isolated-assets-contact-sheet.png` — a labelled preview of all 19 files. Its checkerboard is only a preview background; the individual files have genuine transparency.
 - `manifest.json` — source hash, original v15 canvas, actual painted-edge bounds and export dimensions for every asset.
+- `CLAUDE_CODE_HANDOFF.md` — the self-contained continuation note for Claude Code.
 
 The five ordinary base cabinets remain separate named files but are verified byte-identical. The two wall cupboards are likewise separate and byte-identical. Worktops and counter props remain separate because they are separate v15 pieces.
 
